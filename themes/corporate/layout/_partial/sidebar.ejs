@@ -1,0 +1,46 @@
+<!-- OSS LOGO START -->
+<%- partial('_widget/oss.ejs') %>
+<!-- OSS LOGO START -->
+
+<!-- CATEGORIES START -->
+<h2 class="margin-top-30">Categories</h2>
+<%- partial('_widget/category.ejs') %>
+<!-- CATEGORIES END -->
+
+<!-- BEGIN FEATURED POSTS -->
+<h2>Featured Posts</h2>
+<div class="recent-news margin-bottom-10">
+  <% var count = 0  %>
+  <% (site.posts.reverse()).each(function(post, i){ %>
+    <% if (post.featured == true){ %>
+      <% if (count++ < theme.featured_count){ %>
+        <a href="<%- post.permalink %>">
+          <div class="row margin-bottom-10">
+            <div class="col-md-4">
+              <%- image_tag(post.thumbnail, {class: "img-responsive "}) %>
+            </div>
+            <div class="col-md-8">
+              <h3><%- post.title %></h3>
+            </div>
+          </div>
+        </a>
+      <% } %>
+	<% } %>
+  <% }) %>
+</div>
+<!-- END FEATURED POSTS -->
+
+<!-- BEGIN BLOG TAGS -->
+<div class="blog-tags margin-bottom-20">
+  <h2>Tags</h2>
+  <%- partial('_widget/tag.ejs') %>
+</div>
+<!-- END BLOG TAGS -->
+
+<!-- START ADVENT CALENDAR -->
+<div class="margin-bottom-20">
+  <h2>Advent Calendar</h2>
+  <%- partial('_widget/advent-calendar.ejs') %>
+</div>
+<!-- END ADVENT CALENDAR -->
+

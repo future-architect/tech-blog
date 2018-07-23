@@ -1,0 +1,48 @@
+<div class="row">
+<div class="col-md-9 col-sm-9 blog-posts">
+<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %> blog-item" itemscope itemprop="blogPost">
+  <div class="article-meta">
+  </div>
+  <div class="article-inner">
+    <% if (post.link || post.title){ %>
+    <header class="article-header">
+      <ul class="blog-info">
+	<li><i class="fa fa-user"></i> <%- post.author || theme.default_author || "Anonymous" %></li>
+	<li><i class="fa fa-calendar"></i>
+	  <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY/MM/DD'}) %>
+	</li>
+
+    <li class="hidden-xs"><i class="fa fa-tags"></i>
+	  <%- partial('post/tag') %>
+	</li>
+      </ul>
+      <%- partial('_partial/post/category') %>
+    </header>
+    <% } %>
+    <div class="article-entry" itemprop="articleBody">
+      <% if (post.excerpt && index){ %>
+        <%- post.excerpt %>
+        <% if (theme.excerpt_link){ %>
+          <p class="article-more-link">
+            <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+          </p>
+        <% } %>
+      <% } else { %>
+        <%- post.content %>
+      <% } %>
+    </div>
+  </div>
+    
+  <%- partial('social-button') %>
+
+  <% if (!index){ %>
+    <%- partial('post/nav') %>
+  <% } %>
+  <br>
+</article>
+
+</div>
+<div class="col-md-3 col-sm-3 blog-sidebar">
+  <%- partial('sidebar') %>
+</div>
+</div>

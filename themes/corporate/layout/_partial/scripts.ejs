@@ -1,0 +1,23 @@
+<!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+<!--[if lt IE 9]>
+<%- js('metronic/assets/plugins/respond.min.js') %>
+<![endif]-->
+<%- js('metronic/assets/plugins/jquery.min.js') %>
+<%- js('metronic/assets/plugins/jquery-migrate.min.js') %>
+<%- js('metronic/assets/plugins/bootstrap/js/bootstrap.min.js') %>
+<%- js('metronic/assets/corporate/scripts/back-to-top.js') %>
+<%- js('metronic/assets/corporate/scripts/layout.js') %>
+<%- js('js/script.js') %>
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        Layout.init();
+        Layout.initTwitter();
+        Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
+        Layout.initNavScrolling();
+    });
+</script>
+<!-- END CORE PLUGINS -->
+<!-- START INTEGRATIONS -->
+<%- partial('google-analytics') %>
+<!-- END INTEGRATIONS -->

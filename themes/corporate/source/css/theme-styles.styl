@@ -1,0 +1,713 @@
+/* General Overrides of Metronic */
+@import "_variables"
+@import "highlight"
+
+.content-page {
+  margin-right: 0px !important;
+}
+
+/* Paginator styles */
+.pagination > a,
+.pagination > span {
+  display: inline-block;
+  margin-left: 5px;
+  border-radius: 25px !important;
+  border: none;
+  color: #868c93;
+  padding: 6px 12px;
+  position: relative;
+  float: left;
+  margin-left: -12px;
+  margin-right: 17px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.pagination > a:hover {
+  color: #23527c;
+  background-color: #eee;
+  border-color: #ddd;
+  z-index: 3;
+}
+
+
+.pagination > a:first-child,
+.pagination > a:last-child {
+  padding: 4px 12px 8px;
+}
+
+.pagination span {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+
+#page-nav {
+  float: none !important;
+  margin-bottom: 20px !important;
+  margin-left: 5px;
+}
+
+/* Extra info topbar tweaks */
+
+@media (max-width: 480px) {
+  .pre-header .list-inline li {
+    margin-bottom: 2px;
+  }
+
+  .page-header-fixed .pre-header {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 767px){
+  .pre-header .pull-right {
+      float: right !important;
+  }
+}
+
+/* Menu tweak */
+
+@media (max-width: 1024px) {
+  .page-header-fixed .header-navigation {
+	  height: auto !important;
+  }
+}
+
+/* Typography and Posts */
+
+p {
+  line-height: 1.5;
+}
+
+h4 {
+  line-height: 1.5 !important;
+}
+
+.article-entry p, .article-entry li {
+  text-align: inherit !important;
+  line-height: 1.75em !important;
+  font-size: 1.2em;
+  max-width: 52em;
+  color: #333;
+}
+
+.article-entry li li {
+  font-size: 1.0em;
+}
+
+.article-entry blockquote  {
+  font-size: 0.9em;
+}
+
+.article-entry h1 {
+  border-bottom: solid 2px #ECEBEB;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  margin-top: 64px;
+  padding-bottom: 8px;
+}
+
+.article-entry h2 {
+  margin-top: 40px;
+  font-size: 24px;
+  border-bottom: solid 1px #ECEBEB;
+  line-height: 1.225;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+}
+
+.article-entry h3 {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.article-entry h4 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.article-entry h5 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.blog-item .blog-info {
+  margin-top: 10px !important;
+}
+
+.blog-item img {
+  width: 100%;
+  margin: 16px 0px;
+}
+
+.blog-item .img-middle-size {
+  width: 65%;
+}
+
+.blog-item .img-small-size {
+  width: 45%;
+}
+
+.blog-item .img-reset-size {
+  width: initial;
+}
+
+.image-strip {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+
+/* Index styles */
+.row-corporate {
+  height: 600px;
+  background-size: cover !important;
+  overflow: hidden;
+  height: 600px;
+}
+
+
+.flush-with-header {
+  margin-top: -23px;
+}
+
+.row-corporate img {
+  height: 500px;
+  margin-top: 100px;
+}
+
+.row-corporate-text-container {
+  height: 600px;
+}
+
+.bg-light-1 {
+  background: url('/metronic/assets/pages/img/frontend-slider/bg2_BK.jpg') no-repeat center;
+}
+
+.bg-light-2 {
+  background: url('/metronic/assets/pages/img/frontend-slider/bg4.jpg') no-repeat center;
+}
+
+/* Pseudo-element used to push text to center */
+.row-corporate-text-container:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+.row-corporate-text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 99%;
+}
+
+/* Project Page Styles */
+
+.mix-info {
+  display: none;
+}
+
+.mix_all {
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.mix_all img {
+  width: 100%;
+}
+
+.btn-primary {
+  color: white !important;
+  border: 1px solid #e94d1c !important;
+}
+
+/* add share button */
+.social-area {
+	width: 0% ;
+	min-height: 190px ;
+	padding: 1.5em 0 ;
+}
+
+/* デスクトップPCでは高さを拡張する */
+@media screen and ( min-width:380px ) {
+	.social-area {
+		min-height: 119px ;
+	}
+}
+
+.activities a, .oss a{
+    font-size: 1.4em;
+    color: #3e4d5c;
+}
+
+.activities ul, .oss ul {
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-box;
+    display:-webkit-flexbox;
+    display:-moz-flexbox;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:-moz-flex;
+    display:-ms-flex;
+    display:flex;
+    -webkit-box-lines:multiple;
+    -moz-box-lines:multiple;
+    -webkit-flex-wrap:wrap;
+    -moz-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap; 
+    list-style:none;
+}
+
+.activities li {
+    float: left;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 4px;
+    margin-bottom: 5px;
+    border:1px solid #d8d8d8;
+}
+
+.activities li:hover {
+    background-color: #f9f9f9;
+    text-decoration: none;
+}
+
+.activities li .event {
+    margin-left: 0px;
+}
+
+.oss li {
+    float: left;
+    padding: 10px;
+    margin-right: 4px;
+    margin-bottom: 10px;
+}
+.oss li img {
+    height: 40px;
+}
+.widget .oss li {
+    float: none;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+.widget .oss ul {
+    margin-bottom: 40px;
+}
+
+.main-events h1 {
+    font-size: 22px;
+    background-color: #fff;
+    padding: 14px;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 4px;
+    margin-bottom: 10px;
+    border:1px solid #d8d8d8;
+}
+
+.main-events h2 {
+    margin-left: 16px;
+    font-size: 20px;
+}
+
+
+.main-events img {
+    margin-bottom : 5px;
+    max-width: 75%;
+    max-height: 85px;
+}
+
+.main-events p {
+    margin-left: 20px;
+}
+
+.main-slides ul {
+    flex-wrap:wrap; 
+    list-style:none;
+    overflow: hidden;
+}
+
+.main-slides li {
+    float: left;
+    border:1px solid #d8d8d8;    
+    list-style-type: none;
+    margin: 0 8px 8px 0;
+    display: block;
+}
+
+.main-slides a {
+    display: table-cell;
+    width: 212px;
+    height: 159px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.main-slides img {
+    border: none;
+    max-width: 212px;
+    max-height: 159px;
+    margin: 0;
+    display: block;
+}
+
+
+/******************************
+ 全体レイアウト
+******************************/
+
+body {
+  font: 400 13px "Hiragino Kaku Gothic Pro",Meiryo,"メイリオ","MS PGothic",sans-serif;
+  overflow-x: hidden;
+}
+
+#article-nav {
+    clear: both;
+}
+
+
+.header {
+  position: relative !important;
+  height: 300px;
+  background-image: url("../banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.header .container {
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+}
+.header .mobi-toggler {
+  background: #000 url("/metronic/assets/corporate/img/icons/toggler1.png") no-repeat 9px 10px;
+  margin-right: 15px;
+  width: 38px;
+  height: 38px;
+}
+.header .mobi-toggler:hover {
+  background: #e34f00 url("/metronic/assets/corporate/img/icons/toggler1.png") no-repeat 9px -26px;
+  border-color: #e34f00;
+  color: #fff;
+}
+.header .mobi-toggler i {
+  font-size: 35px;
+}
+body.page-header-fixed {
+  padding-top: 0px !important;
+}
+body.page-header-fixed .header {
+  position: relative !important;
+}
+
+.header-overlay {
+  height: 300px;
+  background-color: rgba(0,0,0,0.3);
+}
+.header-menu {
+  height: 86px;
+  background-color: rgba(0,0,0,0.6);
+}
+.header-title {
+  margin-top: 30px;
+  font-size: 100px;
+  font-family: 'Audiowide', cursive;
+  color: #ddd;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+.header-title-sub {
+  margin-top: 5px;
+  font-size: 18px
+  font-family: 'Audiowide', cursive;
+  color: #ddd;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+.site-logo {
+  padding: 0px;
+  margin: 20px 0px 20px 10px;
+}
+
+.header-navigation ul li a {
+  font-size: 18px;
+}
+@media (max-width: 1024px) {
+  body.page-header-fixed {
+    padding-top: 0px !important;
+  }
+  .header-navigation {
+    background-color: rgba(255,255,255,0.8);
+  }
+  .header-title {
+    margin-top: 60px;
+    font-size: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .header .header-navigation {
+      margin: 0;
+      padding: 0 0 0 15px;
+  }
+  .header-title {
+    margin-top: 60px;
+    font-size: 60px;
+  }
+}
+@media (max-width: 1205px) and (min-width: 1025px) {
+  .header .header-navigation {
+    display: block !important;
+    margin-top: -60px;
+    float: right !important;
+  }
+}
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  padding: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+}
+/******************************
+ 見出し
+******************************/
+
+@media (max-width: 1024px) {
+  .h1, h1 {
+    font-size: 28px;
+  }
+  .h2, h2 {
+    font-size: 24px;
+  }
+}
+
+/******************************
+ [ul]要素
+******************************/
+/* スマホ */
+ul.social-button {
+	width: 238px ;
+	margin: 24px auto ;
+	padding: 0 ;
+	border: none ;
+	list-style-type: none ;
+}
+
+/* デスクトップ */
+@media screen and ( min-width:480px ) {
+	ul.social-button {
+		width: 710px ;
+		list-style-type: none ;
+	}
+}
+
+/******************************
+ [li]要素
+******************************/
+ul.social-button li {
+	float: left ;
+	text-align: center ;
+	padding:0 ;
+    color: #fff;
+    height: 30px;
+    margin: 0 3px;
+}
+
+.header-navigation ul > li > a {
+    color: #fff;
+}
+.header-navigation ul > li > a:hover {
+    color: #e02222;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    background: transparent;
+}
+
+.header-navigation ul > li.active > a {
+    color: #fff;
+    border: none;
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    background: transparent;
+}
+.header-navigation ul > li.active > a:hover {
+    color: #e02222;
+    background: transparent;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+.header-navigation li.menu-search i {
+    color: #fff;
+}
+
+@media (max-width: 1205px) and (min-width: 1025px) {
+  .header-navigation ul > li.active > a:hover {
+      color: #e02222;
+      background: transparent;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header .header-navigation {
+    background: rgba(255,255,255,0.8) !important;
+    width: 100%;
+  }
+  .header-navigation ul > li > a:hover {
+    text-shadow: none;
+  }
+  .header-navigation li.menu-search i {
+    color: #333;
+  }
+}
+
+/******************************
+ 各種ボタン
+******************************/
+
+ul.social-button li a {
+    color: #fff;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto ;
+	padding-top: 6px ;
+	display: block ;
+	font-size: 12px ;
+	font-weight: 700 ;
+	text-decoration: none ;
+	letter-spacing: .5px ;
+	border-radius: 2px ;
+}
+
+/* [Twitter] */
+
+.sc-tw a {
+	background:#1B95E0;
+	box-shadow:0 5px 0 #0092ca;
+}
+
+.sc-tw a:hover {
+	color: #fff ;
+	background: #0092ca ;
+}
+
+.sc-tw span:before {
+	white-space: pre ;
+	content: '\A' ;
+}
+
+/* [Facebook] */
+
+.sc-fb a {
+	background:#3b5998;
+	box-shadow:0 5px 0 #2c4373;
+}
+.sc-fb a:hover {
+	background:#2c4373;
+}
+
+/* [LINE] */
+.sc-li {
+/*	width: 50px ;*/
+}
+
+.sc-li-img {
+	border: none ;
+	margin: 0 auto ;
+	padding:0 ;
+	width: 36px ;
+	height: 60px ;
+}
+
+/* デスクトップPCではLINEボタンを表示しない */
+@media screen and ( min-width:480px ) {
+	.sc-li {
+		display: none ;
+	}
+}
+
+table {
+  table-layout:auto;
+  width: 100%;
+  border-collapse: collapse;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #d9d9d9;
+  margin: 1em 0;
+  margin-top: 2em;
+  margin-right: 2px;
+  margin-bottom: 2em;
+  margin-left: 2px;
+}
+
+.thead td, th {
+  font-weight: 900;
+  background-color: #fff;
+  border-top: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+  padding: 8px 10px;
+}
+
+tr {
+  display: table-row;
+  border-bottom: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+  padding: 8px 10px;
+  padding-top: 8px;
+}
+
+td {
+  border-bottom: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+  padding: 8px 10px;
+  padding-top: 8px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.highlight table {
+  table-layout:auto;
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+.highlight tr {
+  border: none;
+}
+.highlight .gutter .line {
+  font-size: 12px;
+  color: lightgray;
+}
+
+/* リンクの折り返し */
+article a {
+  word-wrap: break-word;
+  word-break: break-all;
+  width: 100%;
+}
+
+/* ワンライナーの折り返し */
+code {
+  word-wrap: break-word;
+  width: 100%;
+}
+
+/* トップページのリンク */
+.archive-article-title {
+    color: #424242;
+}
+
+.article-title {
+    color: #424242;
+}
