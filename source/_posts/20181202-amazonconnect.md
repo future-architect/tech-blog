@@ -11,6 +11,9 @@ featured: true
 lede: "AmazonConnect BootCampセッションでハンズオン受けた知識を活かし、実際にコールセンターを作ってみました"
 ---
 
+本記事は [フューチャー Advent Calendar 2018 2日目](https://qiita.com/advent-calendar/2018/future)の記事です。
+
+
 # まえがき
 近々東京リージョンに提供されることがアナウンスされたAmazonConnectのBootCampセッション@目黒に2018年10月に参加しました。
 
