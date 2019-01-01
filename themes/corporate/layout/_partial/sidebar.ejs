@@ -16,10 +16,7 @@
       <% if (count++ < theme.featured_count){ %>
         <a href="<%- post.permalink %>">
           <div class="row margin-bottom-10">
-            <div class="col-md-4">
-              <%- image_tag(post.thumbnail, {class: "img-responsive "}) %>
-            </div>
-            <div class="col-md-8">
+            <div class="col-md-10">
               <h3><%- post.title %></h3>
             </div>
           </div>
@@ -29,13 +26,6 @@
   <% }) %>
 </div>
 <!-- END FEATURED POSTS -->
-
-<!-- BEGIN BLOG TAGS -->
-<div class="blog-tags margin-bottom-20">
-  <h2>Tags</h2>
-  <%- partial('_widget/tag.ejs') %>
-</div>
-<!-- END BLOG TAGS -->
 
 <!-- START ADVENT CALENDAR -->
 <div class="margin-bottom-20">
