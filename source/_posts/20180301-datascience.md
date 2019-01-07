@@ -4,7 +4,7 @@ tags:
   - Conference
   - MachineLearning
 category:
-  - Custure
+  - Culture
 thumbnail: /images/20180301/thumbnail_20180301.jpeg
 author: "貞光九月"
 featured: true
