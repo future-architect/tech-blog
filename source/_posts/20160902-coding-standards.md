@@ -4,7 +4,7 @@ tags:
   - Java
   - Styleguide
 category:
-  - Development
+  - Programming
 thumbnail: /images/20160902/thumbnail_20160902.png
 author: "星賢一"
 featured: true

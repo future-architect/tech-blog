@@ -5,7 +5,6 @@ tags:
   - AWS
 category:
   - Cloud
-thumbnail: /images/20181202/thumbnail.jpeg
 author: "市川諒"
 featured: true
 lede: "AmazonConnect BootCampセッションでハンズオン受けた知識を活かし、実際にコールセンターを作ってみました"
