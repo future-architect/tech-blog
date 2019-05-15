@@ -4,7 +4,7 @@ tags:
   - Elastic-Stack
   - Conference
 category:
-  - Event
+  - Culture
 thumbnail: /images/20170322/thumbnail_20170322.jpg
 author: "前原応光"
 featured: false

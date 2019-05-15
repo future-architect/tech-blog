@@ -6,7 +6,6 @@ tags:
   - Oracle
 category:
   - DB
-thumbnail: /images/20161013/thumbnail_20161013.jpg
 author: "岸田聡"
 featured: false
 lede: "エンタープライズ領域においてマイグレーション例が多いOracleからPostgreSQLについて、考慮すべき事項について2回にわたり紹介します"
