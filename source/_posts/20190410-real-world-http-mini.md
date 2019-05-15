@@ -1,10 +1,10 @@
 title: Real World HTTPミニ版リリース記念勉強会の実施報告
-date: 2019/03/10 11:00:00
+date: 2019/04/10 11:00:00
 tags:
   - Network
   - Education
 category:
-  - Event
+  - Culture
 author: "真野隼記"
 featured: false
 lede: "Real World HTTPミニ版を記念にフューチャーのオフィスで勉強会を実施しましたら、リアル渋川さんに出会えました話です"

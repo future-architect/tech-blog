@@ -5,7 +5,7 @@ tags:
   - DesignThinking
   - Conference
 category:
-  - Event
+  - Culture
 thumbnail: /images/20170321/thumbnail_20170321.jpg
 author: "前原応光"
 featured: false
