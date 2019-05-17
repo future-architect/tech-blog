@@ -1,5 +1,11 @@
 # Header Menu
 menu:
+  Home:
+    icon: fa-home
+    url: /
+  Blog:
+    icon: fa-newspaper-o
+    url: /articles/ # can set archive-dir in root config to custom value
   GitHub:
     icon: fa-github
     url: https://github.com/future-architect
@@ -13,7 +19,7 @@ rss: /atom.xml
 excerpt_link: Read More
 
 # Featured Post Display Count
-featured_count: 8
+featured_count: 5
 
 # Integrations
 google_analytics: UA-74047147-1
