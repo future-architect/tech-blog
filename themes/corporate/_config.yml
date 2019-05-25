@@ -6,21 +6,12 @@ menu:
   Blog:
     icon: fa-newspaper-o
     url: /articles/ # can set archive-dir in root config to custom value
-  Event: 
-    icon: fa-flag-o
-    url: /events/
-  Slide: 
-    icon: fa-slideshare
-    url: /slides/
   GitHub:
     icon: fa-github
     url: https://github.com/future-architect
   Qiita:
     icon: fa-users
     url: http://qiita.com/organizations/future
-  Facebook:
-    icon: fa-facebook-square
-    url: https://www.facebook.com/future.saiyo/ 
   
 rss: /atom.xml
 
@@ -28,7 +19,7 @@ rss: /atom.xml
 excerpt_link: Read More
 
 # Featured Post Display Count
-featured_count: 8
+featured_count: 5
 
 # Integrations
 google_analytics: UA-74047147-1
