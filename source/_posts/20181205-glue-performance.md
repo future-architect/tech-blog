@@ -3,7 +3,7 @@ date: 2018/12/05 23:18:17
 tags:
   - AWS
 category:
-  - Cloud
+  - Infrastructure
 author: "千葉駿"
 featured: true
 lede: "大量データをさばくために、Glueの性能についてあれやこれややった検証結果の一部を公開します"
