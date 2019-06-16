@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.4.3"
+    "version": "3.8.0"
   },
   "dependencies": {
     "hexo": "^3.8.0",
+    "hexo-article-emoji": "git+https://github.com/frapples/hexo-article-emoji.git",
     "hexo-footnotes": "^1.0.2",
     "hexo-fs": "^0.2.3",
     "hexo-generator-archive": "^0.1.5",
@@ -20,6 +21,7 @@
     "hexo-renderer-ejs": "^0.2.0",
     "hexo-renderer-marked": "^0.2.4",
     "hexo-renderer-stylus": "^0.3.3",
-    "hexo-server": "^0.2.2"
+    "hexo-server": "^0.2.2",
+    "npm": "^6.9.0"
   }
 }
