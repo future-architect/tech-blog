@@ -7,7 +7,6 @@
   },
   "dependencies": {
     "hexo": "^3.9.0",
-    "hexo-article-emoji": "git+https://github.com/frapples/hexo-article-emoji.git",
     "hexo-footnotes": "^1.0.2",
     "hexo-fs": "^1.0.2",
     "hexo-generator-archive": "^0.1.5",
@@ -22,6 +21,6 @@
     "hexo-renderer-marked": "^1.0.1",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.3",
-    "npm": "^6.9.0"
+    "npm": "^6.10.1"
   }
 }
