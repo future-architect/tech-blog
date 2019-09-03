@@ -6,7 +6,6 @@ tags:
   - Conference
 category:
   - Culture
-thumbnail: /images/20170321/thumbnail_20170321.jpg
 author: "前原応光"
 featured: false
 lede: "Elastic{ON}への参加のためにサンフランシスコにやって来ましたので、まず現地レポートをお届けします！"
