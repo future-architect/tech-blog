@@ -5,7 +5,6 @@ tags:
   - Conference
 category:
   - Culture
-thumbnail: /images/20170322/thumbnail_20170322.jpg
 author: "前原応光"
 featured: false
 lede: "前回の記事に続いて、シリコンバレーのIT企業についての現地レポートをお届けします！"

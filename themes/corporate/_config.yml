@@ -19,7 +19,7 @@ rss: /atom.xml
 excerpt_link: Read More
 
 # Featured Post Display Count
-featured_count: 5
+featured_count: 10
 
 # Integrations
 google_analytics: UA-74047147-1
