@@ -33,6 +33,9 @@
   if (page.path == 'index.html'){ 
     options['image'] = 'metronic/assets/corporate/img/site_logo.png';
   }
+  if (page.eyecatch != "") {
+    options['image'] = page.eyecatch
+  }
   %>
   <%- open_graph(options) %>
   <% if (theme.rss){ %>
