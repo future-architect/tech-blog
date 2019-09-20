@@ -4,8 +4,8 @@
 
 # Site
 title: 'Future Tech Blog - フューチャーアーキテクト'
-subtitle: フューチャーアーキテクト開発者ブログ
-description: フューチャーアーキテクトの開発者による公式Tech Blogです。IoTやAI(MachineLearning)・Security・VR・Cloud・BigDataといった内容の記事を中心に、業務で利用する幅広い技術について紹介します。また、OSSへの貢献やカンファレンスなどへの登壇、フューチャーへのエンジニア文化についても触れていきますのでお楽しみに！
+subtitle: フューチャー開発者ブログ
+description: フューチャーの開発者による公式Tech Blogです。IoTやAI(MachineLearning)・Security・VR・Cloud・BigDataといった内容の記事を中心に、業務で利用する幅広い技術について紹介します。また、OSSへの貢献やカンファレンスなどへの登壇、フューチャーへのエンジニア文化についても触れていきますのでお楽しみに！
 author: Future Architect Consultants
 language: ja
 timezone: Asia/Tokyo
@@ -57,7 +57,7 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 20
+per_page: 15
 pagination_dir: page
 
 # Extensions

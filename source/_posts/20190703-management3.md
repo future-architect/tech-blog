@@ -233,3 +233,11 @@ https://metabase.com/docs/latest/users-guide/start.html
 
 今後ともよろしくお願い致します。
 
+
+シリーズとして連載しています。こちらもぜひどうぞ。
+
+* [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！](https://future-architect.github.io/articles/20160920/)
+* [マネージャーがうれしいRedmineデータのEVM表示方法を公開します！！](https://future-architect.github.io/articles/20170119/)
+* [マネージャーがうれしいRedmineデータのダッシュボード表示方法を公開します！！](https://future-architect.github.io/articles/20170510/)
+* マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！（Metabase編）
+

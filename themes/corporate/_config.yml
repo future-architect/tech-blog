@@ -38,7 +38,7 @@ favicon: /favicon.ico # path from root of hexo site
 twitter_widget_id: "732749663766372354" # as a string, from https://twitter.com/settings/widgets
 twitter_username: future_techblog # twitter username without the @
 
-about: 経営とITをデザインする、フューチャーアーキテクトの技術ブログです。IoTやAI(MachineLearning)・Security・VR・Cloud・BigDataといった内容の記事を中心に、業務で利用する幅広い技術について紹介します。また、OSSへの貢献やカンファレンスなどへの登壇など、フューチャーへのエンジニア文化についてもドシドシ紹介していきますのでぜひウォッチ下さい！<br /><br /><a href="http://www.future.co.jp/">http://www.future.co.jp/</a>
+about: 経営とITをデザインする、フューチャーの技術ブログです。IoTやAI(MachineLearning)・Security・VR・Cloud・BigDataといった内容の記事を中心に、業務で利用する幅広い技術について紹介します。また、OSSへの貢献やカンファレンスなどへの登壇など、フューチャーへのエンジニア文化についてもドシドシ紹介していきますのでぜひウォッチ下さい！<br /><br /><a href="http://www.future.co.jp/">http://www.future.co.jp/</a>
 email: techblog@future.co.jp
 address_1: 東京都品川区大崎
 address_2: 1-2-2

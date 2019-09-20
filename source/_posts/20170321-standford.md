@@ -71,7 +71,7 @@ lede: "Elastic{ON}への参加のためにサンフランシスコにやって�
 
 <img src="/images/20170321/photo_20170321_06.jpeg">
 
-<img src="/images/20170321/photo_20170321_07.png">
+<img src="/images/20170321/photo_20170321_07.jpg">
 
 
 # Jen-Hsun Huang Engineering Center
