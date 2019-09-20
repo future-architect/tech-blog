@@ -352,3 +352,12 @@ RedmineをKibana＋Timelionと組み合わせることで、グラフ表示が�
 これらの記事が、みなさまにとって参考になりそうでしたら「いいね！」をクリックして頂けますと幸いです。執筆の励みになります。＾＾
 
 今後ともよろしくお願い致します。
+
+
+シリーズとして連載しています。こちらもぜひどうぞ。
+
+* [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！](https://future-architect.github.io/articles/20160920/)
+* マネージャーがうれしいRedmineデータのEVM表示方法を公開します！！
+* [マネージャーがうれしいRedmineデータのダッシュボード表示方法を公開します！！](https://future-architect.github.io/articles/20170510/)
+* [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！（Metabase編）](https://future-architect.github.io/articles/20190703/)
+

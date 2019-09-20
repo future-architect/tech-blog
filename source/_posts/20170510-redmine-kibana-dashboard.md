@@ -370,3 +370,12 @@ EVMグラフの大きさを調整すると、
 
 なお、次回以降私がブログを執筆する際は、ダッシュボード画像のメール配信に関する方法を記載する予定。
 今後ともよろしくお願い致します。
+
+
+シリーズとして連載しています。こちらもぜひどうぞ。
+
+* [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！](https://future-architect.github.io/articles/20160920/)
+* [マネージャーがうれしいRedmineデータのEVM表示方法を公開します！！](https://future-architect.github.io/articles/20170119/)
+* マネージャーがうれしいRedmineデータのダッシュボード表示方法を公開します！！
+* [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！（Metabase編）](https://future-architect.github.io/articles/20190703/)
+
