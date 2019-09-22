@@ -7,16 +7,16 @@
       <% title=post.title %>
     <% } %>
     <!-- twitter -->
-    <li class="sc-tw social-button-twitter">
+    <li class="sc-tw social-button-twitter" style="position: static; width:75px; height:20px">
       <a href="https://twitter.com/share" class="twitter-share-button" data-via="future_techblog" data-lang="ja" data-text="<%- title %>" data-url="<%- link %>">ツイート</a>
     </li>
     <!-- Facebookいいね -->
-    <li class="social-button-fb">
+    <li class="social-button-fb" style="width:120px; height:20px">
      <div class="fb-like" data-href="<%- link %>" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
     </li>
     <!-- はてなブックマーク -->
-    <li class="social-button-hatebu">
-      <a href="http://b.hatena.ne.jp/entry/<%- link %>" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="はてなブックマークに追加">はてブする</a>
+    <li class="social-button-hatebu" style="width:115px; height:20px">
+       <a href="http://b.hatena.ne.jp/entry/<%- link %>" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="はてなブックマークに追加">はてブする</a>
     </li>
     <!-- pocket -->
     <li class="social-button-pocket">

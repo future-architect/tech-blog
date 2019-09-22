@@ -6,7 +6,6 @@
           <div class="col-md-4 col-sm-6 pre-footer-col">
             <h2>About Us</h2>
             <p><%- theme.about %></p>
-            <%- partial('_partial/social-button') %>
           </div>
           <!-- END BOTTOM ABOUT BLOCK -->
 
@@ -27,8 +26,7 @@
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
-      js.async = true;
-      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -58,6 +56,7 @@
     <div class="col-md-4 col-sm-6 pre-footer-col">
       <!-- Twitterフォローボタン -->
       <a href="https://twitter.com/<%= theme.twitter_username %>" class="twitter-follow-button" data-show-count="false" data-lang="ja">/<%= theme.twitter_username %>さんをフォロー</a>
+      <!-- 組み込みTwitterウィジェット -->
       <a data-tweet-limit="1" class="twitter-timeline" href="https://twitter.com/<%= theme.twitter_username %>" data-widget-id="<%= theme.twitter_widget_id %>">Tweets by @<%= theme.twitter_username %></a>
     </div>
     <!-- END TWITTER BLOCK -->
