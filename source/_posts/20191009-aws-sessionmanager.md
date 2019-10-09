@@ -39,10 +39,6 @@ https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/session-manag
 ### 手順4　似たような画面で同名のボタンですがセッションの開始をクリック
 <img src="/images/20191009/4.png" style="border:solid 1px #000000" >
 
-
-### 手順5　インスタンスを選択してセッションの開始をクリック
-<img src="/images/20191009/5.png" style="border:solid 1px #000000" >
-
 するとSession Managerのコンソールが表示されます。
 あとはSSHと同じ要領でコマンドが実行できます。
 <img src="/images/20191009/6.png" style="border:solid 1px #000000" >
