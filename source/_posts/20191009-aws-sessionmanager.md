@@ -36,7 +36,7 @@ https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/session-manag
 ### 手順3　セッションの開始をクリック
 <img src="/images/20191009/3.png" style="border:solid 1px #000000" >
 
-### 手順4　似たような画面で同名のボタンですがセッションの開始をクリック
+### 手順4　似たような画面で同名のボタンですがインスタンスを選択してセッションの開始をクリック
 <img src="/images/20191009/5.png" style="border:solid 1px #000000" >
 
 するとSession Managerのコンソールが表示されます。
