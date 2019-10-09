@@ -28,10 +28,10 @@ https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/session-manag
 # 利用方法
 
 ### 手順1　サービスメニューからSystems Managerをクリック
-<img src="/images/20191009/1.png" style="border:solid 1px #000000" >
+<img src="/images/20191009/1-a.png" style="border:solid 1px #000000" >
 
 ### 手順2　セッションマネージャーをクリック
-<img src="/images/20191009/2.png" style="border:solid 1px #000000" >
+<img src="/images/20191009/2-a.png" style="border:solid 1px #000000" >
 
 ### 手順3　セッションの開始をクリック
 <img src="/images/20191009/3.png" style="border:solid 1px #000000" >
