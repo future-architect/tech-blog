@@ -100,3 +100,10 @@ Software Design 1/3/9月号を振り返りながら機械学習を学ぶ際の�
 - 基礎徹底
 
 以上を具体的に実践してみたい方は、ぜひ[Software Design](https://gihyo.jp/magazine/SD/backnumber)を読んでみてください。
+
+----
+関連記事：
+
+* [人工知能学会（JSAI2019） 参加報告](https://future-architect.github.io/articles/20190627/)
+* [その問い合わせ、AIが解決します！～Redmineチケットレコメンドシステムのご紹介～](https://future-architect.github.io/articles/20181031/)
+* [最新で最強、AlphaGo Zero の解説](https://future-architect.github.io/articles/20171030/)
