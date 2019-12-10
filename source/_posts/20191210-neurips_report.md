@@ -4,7 +4,7 @@ tags:
   - MachineLearning
 category:
   - DataScience
-author: "上野貴史"
+author: "上野貴史, 田中駿"
 featured: true
 lede: "こんにちは、Strategic AI Group(SAIG)の田中、上野です。私たちは現在、NeurIPSという学会に参加するためにカナダに来ています。NeurIPS(Conference on Neural Information Processing Systems)は、機械学習分野のトップカンファレンスで、今年が33回目の開催となります。"
 ---
@@ -76,10 +76,9 @@ Belonaさんは、AIMSでヘルスケア分野における機械学習を専門�
 今回、Belonaさんは下記のタイトルで発表しています。
 時系列データに対して、複数のモデルをアンサンブルすることで、非線形で分散の大きいデータに対する予測精度を向上する取り組みを紹介してくれました。
 
-```
-AdaBoost-Models Ensemble Learning to forecast Time series with high variance and nonlinear Trend,
-Belona Mary SONNA MOMO (AIMS)
-```
+
+「AdaBoost-Models Ensemble Learning to forecast Time series with high variance and nonlinear Trend,
+Belona Mary SONNA MOMO (AIMS)」
 
 <img src="/images/20191210/WiML.jpg" class="img-middle-size">
 
