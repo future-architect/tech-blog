@@ -4,7 +4,7 @@ tags:
   - Go
 category:
   - Programming
-author: "澁川喜規"
+author: "辻大志郎,澁川喜規"
 featured: true
 lede: "こんにちは。TIG の辻です。先日開催された golang.tokyo #28 に当社から2名、登壇しましたのでそのレポートをします。LT 景品で頂いた CNCF のキャラクターです。かわいいです。"
 ---
