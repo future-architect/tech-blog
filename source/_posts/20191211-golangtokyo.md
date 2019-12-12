@@ -52,7 +52,7 @@ LT の資料は以下です。
 
 渋川は「あなたはContextの挙動を説明できますか？」というお題で発表してきました。
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS7Q7TjUa-CwPucCq8-wHSC3Hr__ScOtpCVy9SJu6sLNFLf7gQQdQqd3PwwEcBFfJMU5pNnyGNBhIOS/embed?start=false&loop=false&delayms=3000" frameborder="0" width="800" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<script async class="speakerdeck-embed" data-id="9db3caf5b84a42ee80561f9d9def0a67" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 `Context`にはタイムアウトやらデッドラインの指定やらができますが、時間というものを外部からいじることができない以上、これらのテストにはその時間分かかってしまいかねません。モックを作ってみようと思ったものの、`Context`の正確な挙動ってそういえばよくわからないなと思い、調べてみたのがきっかけです。
 
