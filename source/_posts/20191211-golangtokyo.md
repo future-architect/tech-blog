@@ -2,6 +2,7 @@ title: "golang.tokyoで発表してきました"
 date: 2019/12/11 13:10:53
 tags:
   - Go
+  - 登壇資料
 category:
   - Programming
 author: "辻大志郎,澁川喜規"
