@@ -4,6 +4,8 @@ tags:
   - GCP
   - OpenCensus
   - Go
+  - Monitoring
+  - GCP連載
 category:
   - Infrastructure
 author: "真野隼記"
@@ -308,14 +310,15 @@ Stackdriverの [LogEntry](https://cloud.google.com/logging/docs/reference/v2/res
 話しが少しそれますが、一度Stackdriver Traceでビジュアライズを始めるとのウォーターフォールビューの見た目にこだわりたくなります。これらをうまく出すコツについてはまた別途ブログ化したいと思います。
 
 
----
+-----
+
+連載リンク：
+
+* [GCP連載企画](https://future-architect.github.io/tags/GCP%98A%8D%DA/)
 
 関連記事：
 
-* [OpenCensus(OpenTelemetry)とは
-](https://future-architect.github.io/articles/20190604/)
-* [Go Cloud#1 概要とBlobへの活用方法
-](https://future-architect.github.io/articles/20191111/)
-* [Goを学ぶときにつまずきやすいポイントFAQ
-](https://future-architect.github.io/articles/20190713/)
+* [OpenCensus(OpenTelemetry)とは](https://future-architect.github.io/articles/20190604/)
+* [Go Cloud#1 概要とBlobへの活用方法](https://future-architect.github.io/articles/20191111/)
+* [Goを学ぶときにつまずきやすいポイントFAQ](https://future-architect.github.io/articles/20190713/)
 

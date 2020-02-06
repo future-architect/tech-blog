@@ -1,7 +1,7 @@
 title: "GCPインスタンスを自動で停止させるツールの公開"
 date: 2019/07/16 09:12:58
 tags:
-  - gcp
+  - GCP
 category:
   - Infrastructure
 author: "真野隼記"
