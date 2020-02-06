@@ -16,7 +16,7 @@ lede: "GCPをテーマにした連載企画を始めるということで、初�
 ---
 # はじめに
 
-GCPをテーマにした連載企画を始めるということで、初回はStackdriver Loggingの活用方法をまとめます。1記事でまとめるには手が余るほど様々な機能があるため、初回はログの出力とビューア周りといったアプリケーション開発者視点での機能に絞って説明していきます。利用コードはGoで書かれていますが、汎用的な内容なので他の言語でもある程度通じる内容にしているつもりです。
+[GCPをテーマにした連載企画](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)を始めるということで、初回はStackdriver Loggingの活用方法をまとめます。1記事でまとめるには手が余るほど様々な機能があるため、初回はログの出力とビューア周りといったアプリケーション開発者視点での機能に絞って説明していきます。利用コードはGoで書かれていますが、汎用的な内容なので他の言語でもある程度通じる内容にしているつもりです。
 
 連載企画は以下の10本をほぼ連日投稿する予定です。お楽しみに！
 
@@ -314,7 +314,7 @@ Stackdriverの [LogEntry](https://cloud.google.com/logging/docs/reference/v2/res
 
 連載リンク：
 
-* [GCP連載企画](https://future-architect.github.io/tags/GCP%98A%8D%DA/)
+* [GCP連載企画](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
 
 関連記事：
 
