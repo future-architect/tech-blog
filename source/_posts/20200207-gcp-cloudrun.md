@@ -9,7 +9,7 @@ category:
   - Programming
 author: "澁川喜規"
 featured: true
-lede: "---"
+lede: "Go + Vue + Cloud Runでかんたんな管理画面を作ろうと思います。ストレージ側にもサーバーレスがあります。MySQLやPostgreSQLのクラウドサービス（Cloud SQLとかRDS）は、サーバーマシンを可動させて、その上にDBMSが稼働しますので、起動している時間だけお金がかかってしまします。一方、FireStoreやDynamoDBの場合は容量と通信（と、キャパシティユニット）にしかお金がかからないモデルになっており、サーバーレスです。今回はかんたん化のためにストレージは扱いません。"
 ---
 [GCP集中連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)の3回目です。今回はCloud Runを使ったサーバーレスウェブアプリケーションの作り方について紹介します。
 
