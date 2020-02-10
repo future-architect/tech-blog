@@ -22,8 +22,8 @@ lede: "GCPをテーマにした連載企画を始めるということで、初�
 
 1. Stackdriver Loggingへ良い感じのログ出力方法を考える（この記事です）
 2. Istio on GKEではじめるサービスメッシュ
-3. Cloud RunかCloud Functionsでウェブアプリケーションを動かしてみる
-4. Life ScienceとかHealthcare
+3. Goでサーバーレスな管理画面アプリを作る
+4. Cloud Life Sciencesを見てみた
 5. Secret ManagerとBerglas
 6. Forseti Config Validator 
 7. s3→BigQuery
