@@ -24,7 +24,7 @@ lede: "GCPをテーマにした連載企画を始めるということで、初�
 2. Istio on GKEではじめるサービスメッシュ
 3. Goでサーバーレスな管理画面アプリを作る
 4. Cloud Life Sciencesを見てみた
-5. Secret ManagerとBerglas
+5. 【もう鍵なくさない】GCPのSecret ManagerとBerglasで幸せになる
 6. Forseti Config Validator 
 7. s3→BigQuery
 8. Firewall Ruleのタグ命名規則について考えて
