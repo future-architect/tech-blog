@@ -1,4 +1,4 @@
-title: "gcloud compute sshじゃなくてsshコマンドを使いたいあなたへ"
+title: "GCP連載#8 gcloud compute sshじゃなくてsshコマンドを使いたいあなたへ"
 date: 2020/02/17 10:56:29
 tags:
   - GCP連載
