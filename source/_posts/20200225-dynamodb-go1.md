@@ -1,4 +1,4 @@
-title: "Go×DynamoDB連載#1 GoでDynamoDBでおなじみのguregu/dynamoを利用する"
+title: "DynamoDB×Go連載#1 GoでDynamoDBでおなじみのguregu/dynamoを利用する"
 date: 2020/02/25 10:32:43
 tags:
   - Go
@@ -16,7 +16,7 @@ lede: "Go言語でWebサーバを実装していた際にDynamoDBを扱うライ
 
 当時Go初心者だった私は「go dynamo」とすぐさまGoogle先生に問い合わせ、「guregu/dynamoがオススメ」とのエントリーを多数発見しました。オブジェクトの取り回しが隠蔽化されていてとにかく実装が簡単だと記事にも書いてありましたし、私自身も実際そう感じました。
 
-すでにタイトルからお察しかと思いますが、本記事は連載第1回目です。時代の移ろいに合わせてGo×DynamoDB界隈の事情も刻一刻と変化しています。まずは私の利用していたSDK(guregu/dynamo)についてから本連載をスタートします。
+すでにタイトルからお察しかと思いますが、本記事は連載第1回目です。時代の移ろいに合わせてDynamoDB×Go界隈の事情も刻一刻と変化しています。まずは私の利用していたSDK(guregu/dynamo)についてから本連載をスタートします。
 
 # SDK(guregu/dynamo)を使ってDynamoDBへアクセスする
 
@@ -265,7 +265,7 @@ $ go run main.go
 
 続きはこちらです。
 
-* [Go×DynamoDB連載企画](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)
+* [DynamoDB×Go連載企画](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)
 
 ## 関連リンク
 

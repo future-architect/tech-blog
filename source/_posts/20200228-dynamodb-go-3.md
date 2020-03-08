@@ -332,7 +332,7 @@ DynamoDBのConditional Expressionsほど万能では無いですが、多くの�
 
 
 -----
-[Go×DynamoDB連載企画](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)以外にも多くの連載企画があります。特にGo Cloud連載が今回のテーマに近いです。
+[DynamoDB×Go連載企画](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)以外にも多くの連載企画があります。特にGo Cloud連載が今回のテーマに近いです。
 
 * [Go Cloud 連載](https://future-architect.github.io/tags/GoCDK/)
 * [GCP 連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
