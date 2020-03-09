@@ -1,4 +1,4 @@
-title: "Go×DynamoDB連載#2 AWS SDKによるDynamoDBの基本操作"
+title: "DynamoDB×Go連載#2 AWS SDKによるDynamoDBの基本操作"
 date: 2020/02/27 08:25:12
 tags:
   - Go
@@ -8,7 +8,7 @@ category:
   - Programming
 author: "武田大輝"
 featured: true
-lede: "Go×DynamoDB連載企画の第2弾の記事となります。本記事ではサードパーティ製のライブラリを利用せずaws-sdkを素で利用した場合のDynamoDBの基本操作について見ていきましょう。"
+lede: "DynamoDB×Go連載企画の第2弾の記事となります。本記事ではサードパーティ製のライブラリを利用せずaws-sdkを素で利用した場合のDynamoDBの基本操作について見ていきましょう。"
 ---
 
 こんにちは。TIG DXユニット[^1]の武田です。
@@ -17,8 +17,8 @@ lede: "Go×DynamoDB連載企画の第2弾の記事となります。本記事で
 
 ## はじめに
 
-[Go×DynamoDB連載企画](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)第2弾の記事となります。
-[Go×DynamoDB連載#1 GoでDynamoDBでおなじみのguregu/dynamoを利用する](https://future-architect.github.io/articles/20200225/) では [guregu/dynamo](https://github.com/guregu/dynamo) を利用したDynamoDBの基本操作をご紹介しました。
+[DynamoDB×Go連載企画](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)第2弾の記事となります。
+[DynamoDB×Go連載#1 GoでDynamoDBでおなじみのguregu/dynamoを利用する](https://future-architect.github.io/articles/20200225/) では [guregu/dynamo](https://github.com/guregu/dynamo) を利用したDynamoDBの基本操作をご紹介しました。
 
 本記事ではサードパーティ製のライブラリを利用せずaws-sdkを素で利用した場合のDynamoDBの基本操作について見ていきましょう。
 なお、公式のドキュメントは下記になりますので、より詳細な情報はこちらを参照してください。
@@ -286,7 +286,7 @@ gureguなどサードパーティ製のライブラリの利用と迷ってい�
 
 それでは、明日の投稿もお楽しみに。
 
-[Go×DynamoDB連載企画](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)以外にも多くの連載企画があります。特にGo Cloud連載が今回のテーマに近いです。
+[DynamoDB×Go連載企画](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)以外にも多くの連載企画があります。特にGo Cloud連載が今回のテーマに近いです。
 
 * [Go Cloud 連載](https://future-architect.github.io/tags/GoCDK/)
 * [GCP 連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
