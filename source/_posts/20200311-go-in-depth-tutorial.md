@@ -941,6 +941,6 @@ Goに関連した連載企画があります。
 
 * [Goを学ぶときにつまずきやすいポイントFAQ](https://future-architect.github.io/articles/20190713/)
 * [Go Cloud 連載](https://future-architect.github.io/tags/GoCDK/)
-* [DynamoDB×Go連載]([DynamoDB×Go連載](https://future-architect.github.io/tags/DynamoDB%C3%97Go/))
+* [DynamoDB×Go連載](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)
 * [GCP 連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
 
