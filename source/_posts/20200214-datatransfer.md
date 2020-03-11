@@ -7,7 +7,7 @@ tags:
 category:
   - Infrastructure
 author: "加部達郎"
-featured: true
+featured: false
 lede: "突然ですがAWSを利用しているけどビッグデータの蓄積や解析はBigQueryで実施したい、なんて意見も最近多くなってきているようですね。実際にS3からBigQueryのデータ転送について検索すると、自前でデータ転送を作成してみましたや、データ転送をサービスとして販売しているような会社もあります。そんな中GCPが提供しているBigQeryへのデータ転送サービス[DataTransferService](https://cloud.google.com/bigquery/transfer/)のソース元としてS3が追加され、簡単にS3からBigQueryのデータ転送のジョブを作成できるようになりました。まだ、ベータ版でのリリースのみですが今回は実際にS3からのデータ転送を試してみましょう。"
 ---
 [GCP集中連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)の7回目です。
