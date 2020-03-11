@@ -495,7 +495,7 @@ p.a = 1 // (*p).a = 1 に等しい
 
 新しくできたスライスは`a`が参照しているものと同一の配列を参照します。つまり、新しいスライスで要素が変更された場合、`a`の要素も同じように変更されます[^8]。
 
-[^8]:サンプルコード(https://play.golang.org/p/J3JBKvSmYJW)
+[^8]: サンプルコード ( <https://play.golang.org/p/J3JBKvSmYJW> )
 
 新しいスライスの容量は、純粋に`a`から`i`を引いた差分となります。配列の容量と配列の長さはイコールです。
 
@@ -508,7 +508,7 @@ s = a[:] // s = a[0:len(a)]の短縮形
 
 もし、`[100]byte`型の値（`byte`100個分の配列、例えばバッファ）を作り、関数に参照渡しをしたいのであれば、`[]byte`型の引数を持つ関数を宣言し、配列をスライスに変えて、その引数に渡してあげるのが良いでしょう[^9]。スライスは、[下記](https://yourbasic.org/golang/go-java-tutorial/#making-values)に書いてあるような`make`関数でも作り出すことができます。
 
-[^9]: サンプルコード(https://play.golang.org/p/jTKvVIBqwMa)
+[^9]: サンプルコード ( <https://play.golang.org/p/jTKvVIBqwMa> )
 
 スライスには組み込み関数`append`が備え付けられており、Javaの`ArrayList`とほぼ同様の機能を持っています。
 
