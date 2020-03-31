@@ -46,6 +46,11 @@ GitHubを見る限りではGoのSDKが一番開発進んでいるのかなと思
 
 今回は『CloudEvents仕様のメッセージをローカル端末からCloud Pub/Sub経由でCloud Functionsに渡し、個々の値を取り出しプログラムで扱える形にすること』を目的とします。
 
+以下のような形を目指します。
+
+<img src="/images/20200331/d1.png">
+
+
 ### SDKバージョンについての補足
 現在v2は `work in progress` とのことで、今回は雰囲気を掴むためにLatest Releaseの `v1.1.2` のソースコードをいじってみます。
 
@@ -63,6 +68,10 @@ https://github.com/cloudevents/sdk-go/blob/master/README_v1.md
 
 ## まずは、シンプルにローカルで繋げる
 まずはローカル端末内で完結する形で実装します。
+
+<img src="/images/20200331/d2.png">
+
+
 [公式のリポジトリ](https://github.com/cloudevents/sdk-go/tree/v1.1.2/cmd/samples)にしっかりサンプル実装があるので、それを参考にしつつ進めることができました。
 
 まずはReceiver側の実装です。
@@ -155,6 +164,9 @@ Data,
 ## 次に、Cloud Pub/Sub経由の形に変えてみる
 実際にはイベントデータの受け渡しはキューを経由するなどして非同期なやりとりになるかと思います。
 というわけで、私が普段GCPを利用しているということもありGCPのCloud Pub/Subを経由する形で実装したいと思います。
+
+<img src="/images/20200331/d3.png">
+
 
 まずはReceiverの実装です。
 
@@ -362,6 +374,9 @@ GCPコンソールからもメッセージがしっかりPub/Subに届いてい�
 
 さて、Pub/SubキューはCloud Functionsに渡してあげたいと思うのは私だけでしょうか？（求ム、同志）
 というわけでラストは先程Cloud Pub/Subに到達したメッセージをCloud Functionsで受け取りたいと思います。
+
+<img src="/images/20200331/d4.png">
+
 
 先程までのReceiverをCluod Functions仕様に書き換えてあげます。また、さっきまでは受け取ったメッセージの中に含まれるpayloadをプログラム上で扱える形にまでparseしきってなかったのでそこも一緒にやりたいと思います。
 
