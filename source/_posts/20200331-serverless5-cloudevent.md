@@ -423,7 +423,7 @@ func Receiver(ctx context.Context, msg *pubsub.Message) error {
 ```
 Cloud Pub/Subの `Message` 型で受け取った電文を、CloudEventsの `Message` 型に変換し、データの中身を `Model` 型へ変換しています。これにより `Sequence` および `Message` という個々の値を扱える状態にできました。
 
-### CloudEventのメッセージの取り扱いについての考察
+### CloudEventsのメッセージの取り扱いについての考察
 
 ReceiverとSenderで同一の `Model` を準備してデータをやりとりし合うこと自体は一般的な実装ですが、今回ひとつミソになるのは `pubsub.Message` ⇔ `cepubsub.Message` の変換だと思います。
 
@@ -475,13 +475,13 @@ https://github.com/cloudevents/sdk-go/blob/v1.1.2/pkg/cloudevents/transport/pubs
 [INFO] message.Data: {"id":0,"message":"HELLO"}
 ```
 
-私は今回Cloud Pub/Subを利用しましたが、同様な形でCloudEventが各イベント型の情報とのIFを定義してくれて、実装者はCloudEventとのIFだけを気にすれば良くなっていくんだろうなと思います。
+私は今回Cloud Pub/Subを利用しましたが、同様な形でCloudEventsが各イベント型の情報とのIFを定義してくれて、実装者はCloudEventsとのIFだけを気にすれば良くなっていくんだろうなと思います。
 
 現在v2は絶賛開発中ですが、たとえば `pubsub.Message` ⇔ `cepubsub.Message` の変換をやってくれるutility的なものがSDKの中に登場するとすごく便利だろうなと思いました。
 
 また、もう一点気になったポイントは以下のように実装されている `CloudEventsVersion` の存在です。
 
-```go CloudEventVersion
+```go CloudEventsVersion
 func (m Message) CloudEventsVersion() string {
 	// Check as Binary encoding first.
 	if m.Attributes != nil {
@@ -549,7 +549,7 @@ Cloud Functionsのログにてメッセージが届いていることが確認�
 
 # さいごに
 
-今回は主にCloud Pub/Subにフォーカスする形でCloudEventの実装について紹介させて頂きました。SDKは絶賛開発中なステータスですが、世に蔓延る様々なイベント形式に悩まされる実装者が幸せになれる未来が待っていると思うと非常に楽しみですし、CloudEventの動向からますます目が離せませんね。
+今回は主にCloud Pub/Subにフォーカスする形でCloudEventsの実装について紹介させて頂きました。SDKは絶賛開発中なステータスですが、世に蔓延る様々なイベント形式に悩まされる実装者が幸せになれる未来が待っていると思うと非常に楽しみですし、CloudEventsの動向からますます目が離せませんね。
 
 
 ## 関連リンク
