@@ -33,10 +33,11 @@ Swaggerや周辺ツールについては [某先輩の記事](https://future-arc
 
 というわけで、今回は下記のツールを利用することを前提として規約を作成しています。
 
-* [go-swagger](https://github.com/go-swagger/go-swagger)[^2]: Goアプリケーションのハンドラ、リクエスト/レスポンスのドメインモデル、バリデーション
-[^2]: go-swaggerについては [WAFとして go-swagger を選択してみた](https://future-architect.github.io/articles/20190814/) で詳しく紹介されています。
+* [go-swagger](https://github.com/go-swagger/go-swagger): Goアプリケーションのハンドラ、リクエスト/レスポンスのドメインモデル、バリデーションています。[^2]
 * [openapi-generator/typescript-axios](https://github.com/OpenAPITools/openapi-generator): フロントエンドのHTTPクライアント、リクエスト/レスポンスのインターフェイス
 * [Prism](https://stoplight.io/open-source/prism): フロントエンド開発時に利用するモックサーバー
+
+[^2]: go-swaggerについては [WAFとして go-swagger を選択してみた](https://future-architect.github.io/articles/20190814/) で詳しく紹介され
 
 ## 設計規約
 
