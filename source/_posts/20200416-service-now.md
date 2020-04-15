@@ -110,29 +110,30 @@ Terraform Server に送るためのアクションの定義は以下です。大
 これで SNOW の準備は終わりです。大した事はなかったです。
 
 # 3. Terraform のディレクトリとファイル構成 @ Terraform Server
-さて、地味に一番苦労した Terraform の構成です。何が難しかったかというと。。
+
+さて、地味に一番苦労した Terraform の構成です。何が難しかったかというと...
 
 - 自動的に構築対象のインスタンス（インベントリ）が増えるのに対して、GCE の tf ファイル自体を Go が作るのは簡単だが、それだと可読性が著しく下がり、同じプロジェクトに対して個別対応が入った際に、運用者にかなりの負担を強いる
 - よって、tfファイルの定義はメニューに対して1つだけ用意し、インベントリ分だけループしてインスタンスを作るファイル構成にしたい。
 - 一方で、構築メニューは互いに依存させたくないので、GCE, GCS 毎にインベントリファイルを持たせたい。
 - しかし、tfvars は 1 ファイルしか許容されていないので、temporary として各メニュー毎に tfvars を作り、それをファイル結合する方法を選択した。
 
-。。言葉だけじゃわからないですよね。。ディレクトリ構成は以下です。
+...言葉だけじゃわからないですよね。。ディレクトリ構成は以下です。
 
 ```bash tree
 /terraform
 ├── project-a
-│   ├── compute_instance.tf         ← GCEのインスタンス定義。
+│   ├── compute_instance.tf         # ← GCEのインスタンス定義。
 │   ├── storage_bucket.tf   
-│   ├── terraform.tfvars            ← 自動生成されるterraform の変数ファイル
-│   ├── tfplan.sh                   ← plan実行用。bashの色を付けるための特殊文字を消すsedがパイプされている
-│   ├── tfapply.sh                  ← 同上
-│   ├── variables.tf                ← メニュー化しているリストを定義。メニューが変わらない限りstatic
-│   ├── vars                        ← Go が使う、インベントリファイル組み立ての作業用dir
-│   │   ├── compute_instance.tfvars ← GCE のインベントリリスト
-│   │   ├── filejoin.sh             ← cat ./*.tfvars > ../terraform.tfvars と書かれているだけ
-│   │   ├── project.tfvars          ← GCP Project の変数定義ファイル
-│   │   └── storage_bucket.tfvars   ← GCS のインベントリリスト
+│   ├── terraform.tfvars            # ← 自動生成されるterraform の変数ファイル
+│   ├── tfplan.sh                   # ← plan実行用。bashの色を付けるための特殊文字を消すsedがパイプされている
+│   ├── tfapply.sh                  # ← 同上
+│   ├── variables.tf                # ← メニュー化しているリストを定義。メニューが変わらない限りstatic
+│   ├── vars                        # ← Go が使う、インベントリファイル組み立ての作業用dir
+│   │   ├── compute_instance.tfvars # ← GCE のインベントリリスト
+│   │   ├── filejoin.sh             # ← cat ./*.tfvars > ../terraform.tfvars と書かれているだけ
+│   │   ├── project.tfvars          # ← GCP Project の変数定義ファイル
+│   │   └── storage_bucket.tfvars   # ← GCS のインベントリリスト
 │   └── version.tf
 └── project-b
     ├── 同上
@@ -229,9 +230,9 @@ project = {
 cat *.tfvars > ../terraform.tfvars
 ```
 
-よって、Go は GCE, GCS のメニュー毎に対応する vars/ 配下の tfvars ファイルにだけ要素を追加し、filejoin.sh を叩けば terraform 系のファイルは揃うという事になります。Go でファイル操作は頑張らない（笑）
+よって、Go は GCE, GCS のメニュー毎に対応する vars/ 配下の tfvars ファイルにだけ要素を追加し、filejoin.sh を叩けば Terraform 系のファイルは揃うという事になります。Go でファイル操作は頑張らない（笑）
 
-# 4. FlowDesigner からのリクエストを応じて terraform を実行し、結果を返す @ Terraform Server
+# 4. FlowDesigner からのリクエストを応じて Terraform を実行し、結果を返す @ Terraform Server
 さて、SNOW と Terraform の間をつなぐ API-SV の Go です。
 処理を整理すると、以下です。
 
@@ -320,7 +321,9 @@ func addGCETfvars(project, gce_instance string) {
 	// 最初の"["までの文字列を捨て、arrayに変換
 	filetext = filetext[strings.Index(string(raw), "["):]
 	var strarr []string
-	json.Unmarshal([]byte(filetext), &strarr)
+	if err := json.Unmarshal([]byte(filetext), &strarr); err != nil {
+		// エラー処理
+	}
 
 	// すでにインスタンスが登録されている場合のエラー処理は省略する
 	// 新しいインスタンスを登録する。
@@ -367,14 +370,15 @@ func execTF(project, action string) string {
 ```
 
 ```bash tfplan.sh
-terraform plan | sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g"
+terraform plan -no-color
 ```
 
 ```bash tfapply.sh
-terraform apply -auto-approve | sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g"
+terraform apply -auto-approve -no-color
 ```
 
-Terraformが返す文字列は、bashに色を付けたりする特殊文字が入っているので、それを`sed`で削除し、単純な文字列にします。
+`-no-color` オプションで terraformコマンドの出力する特殊文字を無効化して、単純な文字列にしています。
+
 また、わざわざshを作り、それをGoで実行する様にしたのは、複数の引数指定でos/execがうまく動作しなかったからです。[こちらの記事](https://qiita.com/tng527/items/c44b943da93041a8355b)の最後を参考にしました。
 
 # 動作確認
@@ -386,6 +390,7 @@ Service Catalog のダッシュボードに、GCP infra の widget を追加す�
 
 画面ではGCSも追加しています。手順はGCEの時と全く同じです。
 <img src="/images/20200416/u3.png" class="img-middle-size" style="border:solid 1px #000000">
+<img src="/images/20200416/u4.png" class="img-middle-size" style="border:solid 1px #000000">
 
 Shoppingっぽくなっているのは、あんまり気にしないでください。SaaSで細部を気にし始めると工数が跳ね上がります。（※初期構築だけ考えるとそうでもないですが、保守や機能拡張を考えると雪だるま式に増えます。）
 
@@ -433,6 +438,7 @@ ServiceNow社的には、以下をメッセージとして強く主張してい�
 - それを同じレベルまで簡単に持っていくのが ServiceNow である。
 
 本記事で取り上げた Service Catalog なんかはまさに当てはまりますよね。事業部門が使う備品の調達と同じ様なノリで GCP のクラウドリソースを注文できる仕組み。それがシステム化されており、承認行為と構築行為がシームレスに行われる。
+
 通常この手の調達をしようと思ったら、インフラとしての申請＆承認行為と、セキュリティとしての申請＆承認行為、そして調達行為は分断されていて、それぞれの部門に対して申請だったり打ち合わせだったりで調整しないといけないですよね。
 
 一方で、私が捉えているイメージは以下です。
@@ -452,3 +458,10 @@ ServiceNow社的には、以下をメッセージとして強く主張してい�
 今回、私にとって最も実装が簡単だったのはSNOWでした。逆に一番大変だったのがGoでの実装です。ただ、こういう製品と製品の間に落ちる部分の処理って、どうしてもカスタム実装が必要になるんですよね。なので、実際のサービス連携を考えた際も同じ様な比率になるんじゃないかと考えています。
 まだまだGithubやJenkinsなど課題は多々ありますが、まずは本質的なインフラ構築の自動化を中心に置いて実装してみました。今回利用した製品/サービスは別に他のなんでも代替は可能だと思ってますので、考え方の1つとして捕えてもらえれば幸いです。
 
+
+関連記事：
+
+* [GCP連載企画](https://future-architect.github.io/tags/GCP%98A%8D%DA/)
+* [OpenCensus(OpenTelemetry)とは](https://future-architect.github.io/articles/20190604/)
+* [Go Cloud#1 概要とBlobへの活用方法](https://future-architect.github.io/articles/20191111/)
+* [Goを学ぶときにつまずきやすいポイントFAQ](https://future-architect.github.io/articles/20190713/)
