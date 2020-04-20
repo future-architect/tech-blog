@@ -2,7 +2,7 @@ title: " Goの標準ライブラリのコードリーディングのすすめ"
 date: 2020/03/10 08:55:28
 tags:
   - Go
-  - CodeReadomg
+  - CodeReading
 category:
   - Programming
 author: "辻大志郎"
