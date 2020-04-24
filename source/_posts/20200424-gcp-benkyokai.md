@@ -19,7 +19,7 @@ lede: "TIG/DXチームの伊藤です。この技術ブログでGCPネタをよ�
 ## 話したこと
 今回話した内容はここからになります。発表時のスライドは以下になりますので、時折記事と照らし合わせながら見てもらえればと思います。一部社内向けにしていたものを社外向けにしたり、不要なスライドは削っている部分はありますが、基本的に同じ内容になります。
 
-https://speakerdeck.com/kaedemalu/gcpshe-nei-mian-qiang-hui
+<script async class="speakerdeck-embed" data-id="1a60e1e45b3a4b3d9b8137568d04a3c9" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 今回は大きく4つの内容に分けて話しました。
 
