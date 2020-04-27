@@ -22,6 +22,10 @@ lede: "今回はVue.jsの最初の難関（だと思っている）「props down
 ちなみに、私自身もアサインされて半年未満。Vue.jsを触り始めて4か月くらいです。
 では、簡単なおさらいから始めていきます。
 
+続編が公開されました。
+
+* [Vue.jsのslotの機能を初心者にわかるように解説してみた](/articles/20200428/)
+
 # Vue.jsとMVVM
 
 props down, event upの理解のためにMVVMについて簡単に触れておきましょう。
@@ -361,6 +365,7 @@ Vue.jsとしてそういった要望に対応できるにmodelオプションと
 ----
 関連記事：
 
+* [Vue.jsのslotの機能を初心者にわかるように解説してみた](/articles/20200428/)
 * [その値、Vue.jsは監視していますか？～Vue.jsで値が更新されないときに気をつけるところ～](https://future-architect.github.io/articles/20200316/)
 * [【Figma】を使ってチームでUI/UX設計するといいこと](https://future-architect.github.io/articles/20200318/)
 * [今あえてTypeScriptのビルド＆バンドルツールを探してみる](https://future-architect.github.io/articles/20200319/)
