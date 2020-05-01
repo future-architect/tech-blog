@@ -2,7 +2,9 @@ title: "Reduxを分かりやすく解説してみた"
 date: 2020/04/29 17:05:22
 tags:
   - React
+  - Redux
   - Frontend
+  - フロントエンド記事集中投稿
 category:
   - Programming
 thumbnail: /images/20200429/thumbnail.png
@@ -10,6 +12,8 @@ author: "丸野大輔"
 featured: true
 lede: "はじめまして、2019年4月入社_FRX_DigitalLibraryチームの丸野です。研修修了後PJにアサインされて約4ヶ月ほどReact.jsを使って開発を行ってきましたが、Reduxの理解にとても苦しみました。そこで今回はReduxの概要を噛み砕いて説明していきます。同じ悩みを持つ人の理解の助けになればと思います。"
 ---
+
+フロントエンド記事集中投稿ウィークの2本目です。
 
 # はじめに
 
