@@ -5,6 +5,7 @@ tags:
   - Frontend
   - AtomicDesign
   - Figma
+  - フロントエンド記事集中投稿
 category:
   - Design
 thumbnail: /images/20200511/thumbnail.png
@@ -25,7 +26,7 @@ PJでは**最高の顧客業務**を目標に、業務、UX、UIの設計と、�
 
 Atomic Designは、Webページやアプリケーションを作成する際に、UIの最小要素（原子）からの組み合わせで構築していく考え方です。Atomic Designの提唱者はHTMLタグを元素周期表に見立ててそれを原子と表現しており、とてもおもしろいです。
 
-詳しくは[Atomic Design本家](:https://atomicdesign.bradfrost.com/)やGoogle先生が優しく教えてくれます。
+詳しくは[Atomic Design本家](https://atomicdesign.bradfrost.com/)やGoogle先生が優しく教えてくれます。
 
 それでは早速Atomic Designを導入したPJの話にうつりたいと思います。
 
