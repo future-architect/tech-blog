@@ -3,6 +3,7 @@ date: 2020/04/01 10:30:55
 tags:
   - Vue.js
   - Frontend
+  - フロントエンド記事集中投稿
 category:
   - Programming
 thumbnail: /images/20200401/thumbnail.png
