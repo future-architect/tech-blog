@@ -1,4 +1,4 @@
-title: "AWSのStep FunctionsとLambdaでServelessなBatch処理を実現する"
+title: "Serverless連載6: AWSのStep FunctionsとLambdaでServelessなBatch処理を実現する"
 date: 2020/05/15 22:25:58
 tags:
   - Serverless
@@ -13,7 +13,7 @@ lede: "AWS StepFunctionsとLambdaを活用してバッチ処理を行う記事�
 ---
 # はじめに
 
-AWS StepFunctionsとLambdaを活用してバッチ処理を行う記事です。
+AWS StepFunctionsとLambdaを活用してバッチ処理を行う記事です。[サーバレス連載企画](https://future-architect.github.io/tags/Serverless%E9%80%A3%E8%BC%89/)の6回目です。
 
 2020年はServerlessアーキテクチャが当たり前のように採用される時代になってきていると実感します。フロントエンドからアクセスされるBackendのAPIはAWS環境だと、AppsyncやAPI Gateway+Lambaの利用、IoTなどイベントドリブンなメッセージに対してはAWS IoT、その後続はKinesisを使い、さらにその後続でLambdaやKinesis AnalyticsでETL処理を行い、データストアとしてDynamoDBやS3に格納するといった一連の流れ全てフルマネージドなサービスに寄せて構築することも当たり前ですし、そういった事例も珍しく無くなってきました。
 
@@ -580,3 +580,12 @@ func HandleRequest(e InEvent) (*OutEvent, error) {
 * DynamoDBの並列Scanが便利で、10万件Scanが1並列で30秒ほどが目安
 * S3が入力だとしてもS3 Selectで入力を分割する設計で対応できる
 * StepFunctionsの動的並列実行を利用することでLambdaの実行時間制約に引っかからないように、事前で入力を分割しそれぞれのLambdaに渡す仕組みが作れる
+
+
+## 関連リンク
+
+* [サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)
+* [GCP 連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
+* [Go Cloud 連載](https://future-architect.github.io/tags/GoCDK/)
+* [DynamoDB×Go連載](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)
+* [Goを学ぶときにつまずきやすいポイントFAQ](https://future-architect.github.io/articles/20190713/)
