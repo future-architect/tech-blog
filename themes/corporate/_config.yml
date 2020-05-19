@@ -9,9 +9,6 @@ menu:
   GitHub:
     icon: fa-github
     url: https://github.com/future-architect
-  Qiita:
-    icon: fa-users
-    url: http://qiita.com/organizations/future
   
 rss: /atom.xml
 
