@@ -15,7 +15,7 @@ lede: "ホワイトリストProxy申請するときのGo依存ライブラリURL
 
 # はじめに
 
-[Go Tips連載1](/tags/GoTips連載/)の第1弾目です。
+[Go Tips連載](/tags/GoTips連載/)の第1弾目です。
 
 TIG DXユニットの宮崎です。これまでRuby、Java中心に仕事をしてきましたが、ここ1年は某鉄道会社のID連携基盤サーバサイドをGolangで作っています。今回はGo Tips連載の第一回として、ホワイトリストProxy申請するときのGo依存ライブラリURLドメインの調べ方を記載します。
 
