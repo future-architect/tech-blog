@@ -6,7 +6,7 @@ tags:
 category:
   - Programming
 thumbnail: /images/20200520/thumbnail.png
-author: "X辻大志郎XX"
+author: "辻大志郎"
 featured: true
 lede: "筆者は普段ファイルを扱って何か簡単な処理をする場合は、シェルスクリプトで実装することが多かったのですが、実は Go で書くと簡単に、かつ Testable でスクリプトちっくに書くことでできて、幸せになるんじゃないか？と最近考えています。"
 ---
