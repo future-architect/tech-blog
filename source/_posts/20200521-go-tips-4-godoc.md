@@ -1,4 +1,4 @@
-title: "Go Tips連載3: GoDocの読み方"
+title: "Go Tips連載4: GoDocの読み方"
 date: 2020/05/21 22:23:40
 tags:
   - Go
