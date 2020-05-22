@@ -1,4 +1,4 @@
-title: "Go Tips連載3: GoDocの読み方"
+title: "Go Tips連載4: GoDocの読み方"
 date: 2020/05/21 22:23:40
 tags:
   - Go
@@ -237,6 +237,6 @@ type MyStruct struct {
 Goに関連した他の連載企画です。
 
 * [Serverless連載](/tags/Serverless%E9%80%A3%E8%BC%89/)
-* [DynamoDB×Go](tags/DynamoDB×Go/)
-* [GCP連載](tags/GCP連載/)
+* [DynamoDB×Go](tags/DynamoDB%C3%97Go/)
+* [GCP連載](tags/GCP%E9%80%A3%E8%BC%89/)
 * [GoCDK](/tags/GoCDK/)
