@@ -1,4 +1,4 @@
-title: "Go Tips連載7: Error wrappingされた各クラウドSDKの独自型エラーを扱う"
+title: "Go Tips連載6: Error wrappingされた各クラウドSDKの独自型エラーを扱う"
 date: 2020/05/23 11:12:30
 tags:
   - Go
@@ -14,7 +14,7 @@ lede: "フューチャー社内には「Go相談室」というチャットル�
 <img src="/images/20200523/top.png">
 
 
-[Go Tips連載](/tags/GoTips%E9%80%A3%E8%BC%89/)の第7弾です。
+[Go Tips連載](/tags/GoTips%E9%80%A3%E8%BC%89/)の第6弾です。
 
 # はじめに
 
