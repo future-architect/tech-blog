@@ -237,6 +237,6 @@ type MyStruct struct {
 Goに関連した他の連載企画です。
 
 * [Serverless連載](/tags/Serverless%E9%80%A3%E8%BC%89/)
-* [DynamoDB×Go](tags/DynamoDB%C3%97Go/)
-* [GCP連載](tags/GCP%E9%80%A3%E8%BC%89/)
+* [DynamoDB×Go](/tags/DynamoDB%C3%97Go/)
+* [GCP連載](/tags/GCP%E9%80%A3%E8%BC%89/)
 * [GoCDK](/tags/GoCDK/)
