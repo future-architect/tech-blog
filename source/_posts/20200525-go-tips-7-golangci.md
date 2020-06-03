@@ -1,4 +1,4 @@
-title: "Go Tips 連載7:【golngci-lint】lint issueを新たに作り出さないためのTips"
+title: "Go Tips 連載7:【golangci-lint】lint issueを新たに作り出さないためのTips"
 date: 2020/05/25 09:30:35
 tags:
   - Go
@@ -17,13 +17,13 @@ lede: "今回はgolangci-lintを取り上げます。Goのコード品質のベ�
 
 Gopherの佐藤です。今回は`golangci-lint`の軽めのGoTipsネタを取り上げます。
 
-Goのコード品質のベースラインを上げる目的で[golngci-lint](https://golangci-lint.run/)というlintアグリゲーターを利用されているかたも多いかと思います。
+Goのコード品質のベースラインを上げる目的で[golangci-lint](https://golangci-lint.run/)というlintアグリゲーターを利用されているかたも多いかと思います。
 
 コードベースがlint issue(Linterにより検出された問題)がないクリーンな状態に保たれていることが望ましいのですが、必ずしもそういった状態を維持できるとはかぎりません。
 
 例えば以下のような場合、コードベースにlint issueが大量に存在している状態で、`golngci-lint`を利用していかなければなりません。
 
-* 既にあるコードベースにgolngci-lintを新たに適用しようとした場合
+* 既にあるコードベースにgolangci-lintを新たに適用しようとした場合
 * 何らかの理由でbaseブランチ(develop, master etc...)にlint issueが大量に混入してしまった場合
 
 このような場合、いったんbaseブランチに存在しているlint issueを無視して開発を進め、あとでまとめてlint issueの改修を行うというのか定石かと思います。
