@@ -100,7 +100,7 @@ DXチームで推進中の顧客プラットフォームサービスのエンハ
 
 * Vue.js＋TypeScriptでのフロントエンド開発（エンドユーザー向け機能開発や、管理者向け機能）
 * Go言語でのAPI設計、開発、テスト、データモデリング
-* Terraformを用いたInfrastructure As a Codeで実現するAWS構築、エンハンス
+* Terraformを用いたInfrastructure as Codeで実現するAWS構築、エンハンス
 
 こんな人にオススメ。
 
@@ -172,7 +172,7 @@ DXチームで推進中の顧客プラットフォームサービスのエンハ
 ## ⑦マルチクラウド環境の技術検証・開発☁
 社会的な影響を与えるクリティカルなシステムをマルチクラウド環境に構築するためインフラの技術検証、先行開発にチャレンジできます。以下の中から要望とスキルセットにあったものを経験していただきます。
 
-* AWS、GCP上へのTerraformによるInfrastracture As a Codeな基盤構築
+* AWS、GCP上へのTerraformによるInfrastracture as Codeな基盤構築
 * AWS、GCP上の複数環境へのデプロイをゴールとしたCI/CD環境構築
 * 電話、SMSなどを利用するコミュニケーションAPIの技術検証
 
@@ -193,7 +193,7 @@ DXチームで推進中の顧客プラットフォームサービスのエンハ
 ## ⑨Webサービスのクラウドインフラ構築📰
 
 メディア業界の業務を支えるフルクラウドWebアプリケーションサービスを支えるインフラ構築を経験します。
-Terraform、Ansibleで実現する完全なInfrastructure As a Codeの世界にふれます。
+Terraform、Ansibleで実現する完全なInfrastructure as Codeの世界にふれます。
 
 * Terraform、Ansibleによるコードベースのインフラ構築・管理
 * スクリプト言語による各種ツール開発
