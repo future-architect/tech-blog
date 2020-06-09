@@ -11,7 +11,9 @@ lede: "フューチャーのサマーインターン🌞Summer Camp🏄が6月�
 ---
 
 <img src="/images/20200606/photo_20200606_01.png">
+
 https://www.future.co.jp/recruit/new/internship/
+
 
 # はじめに
 
@@ -56,7 +58,7 @@ https://www.future.co.jp/recruit/new/internship/
 締切②(最終)　2020年6月28日（日） 23時59分
 
   * マイページの登録は6月25日（木）までにご登録ください。
-  * 登録はこちら（https://job.axol.jp/cr/s/future_22/mypage/login）
+  * 登録はこちら: https://job.axol.jp/cr/s/future_22/mypage/login
 
 
 # その他
