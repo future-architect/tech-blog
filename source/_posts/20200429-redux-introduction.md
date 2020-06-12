@@ -5,6 +5,7 @@ tags:
   - Redux
   - Frontend
   - フロントエンド記事集中投稿
+  - 初心者向け
 category:
   - Programming
 thumbnail: /images/20200429/thumbnail.png

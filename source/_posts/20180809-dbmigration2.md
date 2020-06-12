@@ -2,7 +2,7 @@ title: データベースマイグレーション ～OracleからPostgreSQLへ�
 date: 2018/08/09 15:00:36
 tags:
   - Migration
-  - PostgresSQL
+  - PostgreSQL
   - Oracle
 category:
   - DB

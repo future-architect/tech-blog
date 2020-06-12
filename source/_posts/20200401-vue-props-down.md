@@ -4,6 +4,7 @@ tags:
   - Vue.js
   - Frontend
   - フロントエンド記事集中投稿
+  - 初心者向け
 category:
   - Programming
 thumbnail: /images/20200401/thumbnail.png
