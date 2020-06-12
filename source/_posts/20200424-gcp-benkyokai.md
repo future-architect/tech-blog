@@ -2,6 +2,7 @@ title: "社内勉強会で発表したGCP資料を公開します"
 date: 2020/04/24 10:23:37
 tags:
   - GCP
+  - 初心者向け
 category:
   - Infrastructure
 thumbnail: /images/20200424/thumbnail.png
