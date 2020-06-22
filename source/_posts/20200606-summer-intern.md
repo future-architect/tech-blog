@@ -15,8 +15,9 @@ lede: "フューチャーのサマーインターン🌞Summer Camp🏄が6月�
 https://www.future.co.jp/recruit/new/internship/
 
 
-* **2020/06/10: ⑩のインターン内容を追記**
-* **2020/06/10: 交通費について説明を追記**
+* 2020/06/10: ⑩のインターン内容を追記
+* 2020/06/10: 交通費について説明を追記
+* 2020/06/22: Project Campのリンクを追加
 
 
 # はじめに
@@ -31,6 +32,11 @@ https://www.future.co.jp/recruit/new/internship/
 2. **Project Camp**: だれでも応募OKのプロジェクト業務を体験するコース
 
 それぞれに良いところがありますが、せっかく技術ブログで紹介するので **Engineer Camp** について細かく説明します。
+
+
+Project Campに興味がある方は、ぜひ未来報の記事をご覧ください。
+
+<iframe class="note-embed" src="https://note.future.co.jp/embed/notes/n3d3b635c4c1b" style="border: 0; display: block; max-width: 99%; width: 494px; padding: 0px; margin: 10px 0px; position: static; visibility: visible;" height="400"></iframe><script async src="https://note.future.co.jp/scripts/embed.js" charset="utf-8"></script>
 
 
 # 2020年はフルリモート開催
