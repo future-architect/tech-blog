@@ -2,6 +2,7 @@ title: "GCPインスタンスを自動で停止させるツールの公開"
 date: 2019/07/16 09:12:58
 tags:
   - GCP
+  - Kubernetes
 category:
   - Infrastructure
 author: "真野隼記"

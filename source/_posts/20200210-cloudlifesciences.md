@@ -3,6 +3,7 @@ date: 2020/02/10 11:53:19
 tags:
   - GCP
   - GCP連載
+  - BigQuery
 category:
   - Infrastructure
 author: "伊藤太斉"
