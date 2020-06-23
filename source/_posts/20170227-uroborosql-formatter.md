@@ -3,7 +3,7 @@ date: 2017-02-28 12:00:00
 tags:
   - SQL
   - uroboroSQL
-  - Styleguide
+  - コーディング規約
 category:
   - DB
 thumbnail: /images/20170227/thumbnail_20170227.png

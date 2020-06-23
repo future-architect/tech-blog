@@ -2,7 +2,7 @@
 title: "ソースコードを綺麗にするためにまず心がけたい３点"
 date: 2019/06/10 09:20:47
 tags:
-  - Styleguide
+  - コーディング規約
 category:
   - Programming
 author: "王紹宇"
