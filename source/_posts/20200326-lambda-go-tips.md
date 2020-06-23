@@ -5,6 +5,7 @@ tags:
   - AWS
   - Serverless
   - Serverless連載
+  - Lambda
 category:
   - Programming
 author: "真野隼記"

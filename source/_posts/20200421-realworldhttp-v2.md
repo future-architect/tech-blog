@@ -1,7 +1,7 @@
 title: "Real World HTTP 第2版はなぜ1.5倍になったのか"
 date: 2020/04/21 09:55:14
 tags:
-  - Book
+  - 出版
 category:
   - Culture
 thumbnail: /images/20200421/thumbnail.jpeg
