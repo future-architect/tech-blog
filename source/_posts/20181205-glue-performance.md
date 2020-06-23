@@ -2,6 +2,8 @@ title: "5TB/日 のデータをAWS Glueでさばくためにやったこと（�
 date: 2018/12/05 23:18:17
 tags:
   - AWS
+  - Spark
+  - Glue
 category:
   - Infrastructure
 author: "千葉駿"
