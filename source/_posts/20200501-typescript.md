@@ -2,7 +2,7 @@ title: "TypeScriptでReactをやるときは、小さいアプリでもReduxを�
 date: 2020/05/01 10:19:34
 tags:
   - React
-  - redux
+  - Redux
   - Frontend
   - フロントエンド記事集中投稿
 category:
