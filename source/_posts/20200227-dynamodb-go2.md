@@ -5,6 +5,7 @@ tags:
   - AWS
   - DynamoDB×Go
   - KVS
+  - DynamoDB
 category:
   - Programming
 author: "武田大輝"

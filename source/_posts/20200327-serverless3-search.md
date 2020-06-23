@@ -6,6 +6,7 @@ tags:
   - AWS
   - GoCloud
   - Serverless連載
+  - DynamoDB
 category:
   - Programming
 thumbnail: /images/20200327/thumbnail.png
