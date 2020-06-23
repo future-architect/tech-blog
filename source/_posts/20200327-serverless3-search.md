@@ -4,7 +4,7 @@ tags:
   - Go
   - Serverless
   - AWS
-  - GoCloud
+  - GoCDK
   - Serverless連載
   - DynamoDB
 category:
