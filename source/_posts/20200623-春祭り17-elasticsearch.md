@@ -3,6 +3,7 @@ date: 2020/06/23 10:14:50
 tags:
   - Elasticsearch
   - Elastic-Stack
+  - 初心者向け
 category:
   - Infrastructure
 thumbnail: /images/20200623/thumbnail.png

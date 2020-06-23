@@ -4,6 +4,7 @@ tags:
   - Serverless
   - AWS
   - Serverless連載
+  - DynamoDB
 category:
   - Programming
 thumbnail: /images/20200515/thumbnail.png
