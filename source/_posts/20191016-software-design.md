@@ -2,6 +2,8 @@ title: "Software Design 後記"
 date: 2019/10/16 08:56:31
 tags:
   - MachineLearning
+  - Algorithm
+  - 出版
 category:
   - DataScience
 author: "上野貴史"

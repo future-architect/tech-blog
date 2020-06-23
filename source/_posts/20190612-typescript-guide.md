@@ -2,6 +2,8 @@ title: "TypeScript教育用コンテンツ公開のお知らせ"
 date: 2019/06/12 15:04:53
 tags:
   - TypeScript
+  - 出版
+  - Frontend
 category:
   - Programming
 author: "澁川喜規"

@@ -1,9 +1,9 @@
 title: データベースマイグレーション ～OracleからPostgreSQLへ～　－第２回ー
 date: 2018/08/09 15:00:36
 tags:
-  - Migration
   - PostgreSQL
   - Oracle
+  - DB移行
 category:
   - DB
 thumbnail: /images/20180809/thumbnail.png

@@ -3,6 +3,7 @@ date: 2019/04/10 11:00:00
 tags:
   - Network
   - Education
+  - 出版
 category:
   - Culture
 author: "真野隼記"

@@ -1,9 +1,9 @@
 title: "データベースマイグレーション ～OracleからPostgreSQLへ～　ー第１回ー"
 date: 2018/05/29 11:06:05
 tags:
-  - Migration
   - PostgreSQL
   - Oracle
+  - DB移行
 category:
   - DB
 author: "岸田聡"
