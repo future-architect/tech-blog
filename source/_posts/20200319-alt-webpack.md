@@ -4,6 +4,8 @@ tags:
   - TypeScript
   - JavaScript
   - Frontend
+  - webpack
+  - Node.js
 category:
   - Programming
 author: "澁川喜規"

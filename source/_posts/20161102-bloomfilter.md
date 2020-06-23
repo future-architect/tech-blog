@@ -3,6 +3,8 @@ date: 2016-10-31 12:21:10
 tags:
   - DB
   - SQL
+  - DataModel
+  - Algorithm
 category:
   - DB
 author: "杉江伸祐"

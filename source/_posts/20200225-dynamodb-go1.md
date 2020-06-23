@@ -4,6 +4,7 @@ tags:
   - Go
   - AWS
   - DynamoDB×Go
+  - KVS
 category:
   - Programming
 author: "村田靖拓"
