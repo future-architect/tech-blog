@@ -2,8 +2,11 @@ title: "新米エンジニアが１か月のトラブルシューティングで
 date: 2020/05/26 09:27:03
 tags:
   - Network
-  - Troubleshooting
+  - トラブルシュート
+  - Go
   - 初心者向け
+  - WireShark
+  - アルバイト
 category:
   - Infrastructure
 thumbnail: /images/20200526/thumbnail.png

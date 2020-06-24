@@ -1,7 +1,7 @@
 title: "フューチャー夏のインターン2020。リモート開催予定です"
 date: 2020/06/06 14:32:59
 tags:
-  - Intern
+  - インターン
 category:
   - Culture
 thumbnail: /images/20200606/thumbnail.png

@@ -1,7 +1,7 @@
 title: "世論調査の内閣支持率を統計学的に解釈すると…?"
 date: 2017-03-14 14:00:00
 tags:
-  - Statistics
+  - 統計
 category:
   - DataScience
 thumbnail: /images/20170310/thumbnail_20170310.jpg

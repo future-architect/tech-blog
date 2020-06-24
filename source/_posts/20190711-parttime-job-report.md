@@ -1,7 +1,9 @@
 title: "アルバイト生から見たフューチャーのTIG DXユニット"
 date: 2019/07/12 09:00:00
 tags:
-  - アルバイト報告
+  - アルバイト
+  - Go
+  - Terraform
 category:
   - Culture
 author: "棚井龍之介"
