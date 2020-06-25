@@ -5,7 +5,7 @@ tags:
   - トラブルシュート
   - Go
   - 初心者向け
-  - WireShark
+  - Wireshark
   - アルバイト
 category:
   - Infrastructure
