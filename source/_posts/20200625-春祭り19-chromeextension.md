@@ -158,7 +158,11 @@ https://jquery.com/
   "description" : "calendar",
   "version": "1.0",
   "manifest_version": 2,
-
+  "browser_action": {
+    "default_icon": {
+      "16": "calendar.png"
+    }
+  },
   "content_scripts":[
     {
       "matches":[
