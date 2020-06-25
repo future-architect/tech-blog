@@ -199,12 +199,12 @@ $('#searchform').append(`<div id="calendar"></div>`)
 フォルダの中身は以下となります。上記により、calendar.htmlは不要となります。
 
 ```sh
- └ Myextension
- ├ manifest.json # 拡張機能の仕様を記載するファイル
- ├ calendar.png  # アイコン
- ├ calendar.css  # 表示したい画面、今回はカレンダー
- ├ calendar.js   # 表示したい画面、今回はカレンダー
- └ jquery.js     # wwww.google.comにdivを追加するために使用
+Myextension
+  ├ manifest.json # 拡張機能の仕様を記載するファイル
+  ├ calendar.png  # アイコン
+  ├ calendar.css  # 表示したい画面、今回はカレンダー
+  ├ calendar.js   # 表示したい画面、今回はカレンダー
+  └ jquery.js     # wwww.google.comにdivを追加するために使用
 ```
 
 
