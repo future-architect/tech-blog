@@ -134,6 +134,17 @@ MDNにも詳しく載っています。
 
 <img src="/images/20200625/photo_20200625_02.png" class="img-middle-size" style="border:solid 1px #000000">
 
+ちなみに、以下のkuma.html、kuma.pngを同一フォルダに配置し、"default_popup"をkuma.htmlに変更すると、こうなります。
+
+```html kuma.html
+<body>
+  <p><img src="kuma.png"></p>
+</body>
+```
+
+<img src="/images/20200625/kuma.png" class="img-middle-size" style="border:solid 1px #000000">
+
+
 
 ## jQueryを用いた拡張
 
@@ -177,13 +188,25 @@ https://jquery.com/
 動作させるjsファイルを記載します。ここにjquery.jsも記載します。
 
 `www.google.com` には、searchformというidのdivがあります。
-calendar.jsに以下を記載し、https://www.google.com/ を開いたときに、`www.google.com`のsearchformというidを持ったdivにcalendarというidを持ったdivが追加され、calendar.jsに記載されているカレンダーが表示されるようにします。
+calendar.jsに以下を追記し、https://www.google.com/ を開いたときに、`www.google.com`のsearchformというidを持ったdivにcalendarというidを持ったdivが追加され、calendar.jsに記載されているカレンダーが表示されるようにします。
 
 jQueryのappendメソッドは、要素を追加できるメソッドで、HTMLを直接指定することができます。
 
 ```js calendar.js
 $('#searchform').append(`<div id="calendar"></div>`)
 ```
+
+フォルダの中身は以下となります。上記により、calendar.htmlは不要となります。
+
+```sh
+Myextension
+  ├ manifest.json # 拡張機能の仕様を記載するファイル
+  ├ calendar.png  # アイコン
+  ├ calendar.css  # 表示したい画面、今回はカレンダー
+  ├ calendar.js   # 表示したい画面、今回はカレンダー
+  └ jquery.js     # wwww.google.comにdivを追加するために使用
+```
+
 
 拡張機能を読み込み直し、”matches”で指定したhttps://www.google.com/ を開くと、カレンダーを表示することができました。
 <img src="/images/20200625/photo_20200625_03.png" class="img-middle-size" style="border:solid 1px #000000">
