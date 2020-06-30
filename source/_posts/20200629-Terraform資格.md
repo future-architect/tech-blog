@@ -80,7 +80,7 @@ lede: "5/24に受験したHashiCorpから出た資格の1つである、Terrafor
 先日、[Terraformの入門記事](/articles/20200624/)も書きましたので、これからTerraform Associateを受験しようという方は参考にしてみてください。
 
 ## 参考リンク
-- [技術ブログ Terraform一覧](tags/Terraform/)
+- [技術ブログ Terraform一覧](/tags/Terraform/)
 
 
 ## 関連記事
