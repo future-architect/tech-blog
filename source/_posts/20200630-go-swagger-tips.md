@@ -129,7 +129,7 @@ go-swaggerで生成した[サーバ起動時オプション](https://goswagger.i
 `--host`は`$HOST`、`--port`は`$PORT`という環境変数でも利用できるので、コンテナ化するときなどはこちらを利用するのも良いと思います。特に[GCPのCloudRunは$PORTで待ち受けるのが必須](https://cloud.google.com/run/docs/reference/container-contract)なので、この場合はGCP側にポート設定は任せましょう。
 
 
-## 5. OpenAPIのバージョンを見間違え内容に注意
+## 5. OpenAPIのバージョンを見間違えないように注意
 
 go-swaggerが対応しているのは `OAS2` であるので注意です。最新は `OAS3` ですが、その記法は利用できないことがあります。特にググった時に出てくる公式ドキュメントが `OAS2`であることをよく確認しましょう
 
@@ -561,9 +561,9 @@ if _, err := api.user.GetUserContract(params); err != nil {
 
 ## 16. NewXxxの関数を利用する
 
-16でもちょっと実装が出ましたが、go-swaggerで生成したクライアントコードを利用して、サーバにリクエストする場合について注意があります。リクエストパラメータの生成には、 `NewXxx`を利用してStructを作らないと、timeout=0になって、`context deadline exceeded` エラーとなり上手く動作しません。[このあたりのIssue](https://github.com/go-swagger/go-swagger/issues/919#)でも話題にしています。
+15でもちょっと実装が出ましたが、go-swaggerで生成したクライアントコードを利用して、サーバにリクエストする場合について注意があります。リクエストパラメータの生成には、 `NewXxx`を利用してStructを作らないと、timeout=0になって、`context deadline exceeded` エラーとなり上手く動作しません。[このあたりのIssue](https://github.com/go-swagger/go-swagger/issues/919#)でも話題にしています。
 
-NewXxxの関数を用いるときは、`WithContext`付きの方を利用すると便利です。あらにチェーンスタイルでパラメータも設定できます。必須属性については `swag.String` などで *string 型への変換が必要です。
+NewXxxの関数を用いるときは、`WithContext`付きの方を利用すると便利です。さらにチェーンスタイルでパラメータも設定できます。必須属性については `swag.String` などで *string 型への変換が必要です。
 
 ```go
 params := user.NewPostUserParamsWithContext(ctx).
