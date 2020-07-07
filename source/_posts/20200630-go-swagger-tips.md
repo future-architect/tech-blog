@@ -584,7 +584,7 @@ Swaggerに記載するホスト名と開発中のホスト名は異なるため�
 
 ```go ホスト名やBASE_PATHの書き換え
 import (
-	"github.com/nichigas/{project name}/gen/client"
+	"github.com/future-architect/{project name}/gen/client"
 )
 
 api = client.NewHTTPClientWithConfig(nil, &client.TransportConfig{
