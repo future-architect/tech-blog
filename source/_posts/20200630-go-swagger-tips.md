@@ -54,6 +54,8 @@ TypeScriptのフロントエンド側の生成は[openapi-generator](https://ope
 
 <img src="/images/20200630/photo_20200630_01.png">
 
+The Gopher character is based on the Go mascot designed by [Renée French](http://reneefrench.blogspot.com/).
+
 
 # Tips
 
