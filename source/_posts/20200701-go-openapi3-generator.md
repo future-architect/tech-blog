@@ -14,6 +14,8 @@ lede: "go-swagger は Swagger 2.0 にのみ対応しており、OpenAPI 3.0 系�
 
 <img src="/images/20200701/top.png" class="img-middle-size">
 
+The Gopher character is based on the Go mascot designed by [Renée French](http://reneefrench.blogspot.com/).
+
 
 ## 概要
 

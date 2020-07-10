@@ -12,6 +12,9 @@ lede: "最近Goで主にバックエンドのWebAPIや、AWS Lambdaで動くETL�
 
 <img src="/images/20200709/photo_20200709_01.png" class="img-small-size">
 
+The Gopher character is based on the Go mascot designed by [Renée French](http://reneefrench.blogspot.com/).
+
+
 
 # はじめに
 
@@ -360,7 +363,7 @@ func init() {
 ```go
 // 💬 毎回フィールドでDynamoDBクライアントを生成
 func handler(w http.ResponseWriter, r *http.Request) {
-    var db dynamodb.New(session.Must(session.NewSession())
+    var db = dynamodb.New(session.Must(session.NewSession())
 
     // 中略
     out, err := db.UpdateItemWithContext(ctx, &dynamodb.GetItemInput{
@@ -375,7 +378,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 // 🚀 goroutine Safeなものはフィールドに置いて再利用
-var db dynamodb.New(session.Must(session.NewSession())
+var db = dynamodb.New(session.Must(session.NewSession())
 
 func handler(w http.ResponseWriter, r *http.Request) {
     // 中略
