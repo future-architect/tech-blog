@@ -1,7 +1,9 @@
 title: PythonユーザーのためのGraalVM
 date: 2020/07/21 00:00:00
 tag:
-  - graalvm
+  - GraalVM
+  - Python
+  - Java
 category:
   - Programming
 thumbnail: /images/20200721/thumbnail.png
