@@ -4,6 +4,7 @@ tags:
   - OpenAPI
   - Swagger
   - Go
+  - Lambda
 category:
   - Programming
 thumbnail: /images/20200630/thumbnail.png

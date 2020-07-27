@@ -5,6 +5,7 @@ tag:
   - Serverless
   - LocalStack
   - Serverless連載
+  - Lambda
   - DynamoDB
   - Go
 category:

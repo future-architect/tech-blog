@@ -3,6 +3,7 @@ date: 2020/07/17 00:00:00
 tag:
   - CORS
   - Go
+  - Web
 category:
   - Infrastructure
 thumbnail: /images/20200717/thumbnail.png

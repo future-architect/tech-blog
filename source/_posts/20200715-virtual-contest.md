@@ -4,7 +4,7 @@ tags:
   - 競技プログラミング
   - 新人研修
 category:
-  - Programming
+  - Culture
 thumbnail: /images/20200715/thumbnail.png
 author: "佐藤尭彰"
 featured: true
