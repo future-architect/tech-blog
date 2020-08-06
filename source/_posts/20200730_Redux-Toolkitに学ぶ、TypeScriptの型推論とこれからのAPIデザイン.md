@@ -15,7 +15,7 @@ lede: "TypeScriptは、JavaScriptのさまざまなフリーダムな書き方�
 
 TypeScriptは、JavaScriptのさまざまなフリーダムな書き方を受け入れ、漸進的な型付けを行えるようにするという~~狂った~~高難易度な目的のために作成されているのですが、そろそろ、TypeScriptファーストで、利用者にとって使いやすいAPIみたいな方向性で使われることも増えるのでは、という思いを強く持ちました。「既存のJSプロジェクトをTypeScript化して〜」みたいな紹介のされ方はもはや過去のものになったのではないかと。
 
-すでに[State of JavaScript 2019](https://2019.stateofjs.com/javascript-flavors/typescript/)では2/3のユーザーがすでにTypeScriptを利用したことがある（使っている）と答え、残りの2/3も学びたい、と答えている状況です。この勢いだと、2年後には80%を超えそうです。僕自身も、TypeScriptファーストな世界がくることを想像して[説明に使える教科書](https://github.com/future-architect/typescript-guide/)を書き始めたわけですが、思ったよりもその世界が来るのは早そうです。
+すでに[State of JavaScript 2019](https://2019.stateofjs.com/javascript-flavors/typescript/)では2/3のユーザーがすでにTypeScriptを利用したことがある（使っている）と答え、残りの1/3も学びたい、と答えている状況です。この勢いだと、2年後には80%を超えそうです。僕自身も、TypeScriptファーストな世界がくることを想像して[説明に使える教科書](https://github.com/future-architect/typescript-guide/)を書き始めたわけですが、思ったよりもその世界が来るのは早そうです。
 
 このエントリーでは、TypeScriptユーザーのTypeScriptユーザーによるTypeScriptユーザーのためのAPI設計について考えをまとめてみたいと思います。想定読者は、フレームワークを作るような人ですので、既存のライブラリを組み合わせてアプリケーションを作る人は想定外です。
 
