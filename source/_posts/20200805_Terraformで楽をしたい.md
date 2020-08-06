@@ -159,7 +159,7 @@ resource "google_compute_instance" "instance" {
 
 - メリット
     - コマンド実行回数が減る（手順が減る）
-    - Ansibleが以上終了した場合は`taint`フラグが付くので、コードに書かれていることはしっかり実行される
+    - Ansibleが異常終了した場合は`taint`フラグが付くので、コードに書かれていることはしっかり実行される
 - デメリット
     - Ansibleの世界とTerraformの世界の境界がなくなるのでそれぞれの責任を分けにくくなる
 
