@@ -14,6 +14,8 @@ lede: "Go は標準ライブラリが充実しているとよく言われます�
 
 <img src="/images/20200807/suffixarray.png" class="img-small-size">
 
+[フューチャー夏休みの自由研究連載](https://future-architect.github.io/articles/20200726/)の5回目です。
+
 # はじめに
 
 TIG の辻です。
