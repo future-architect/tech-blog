@@ -1,4 +1,4 @@
-title: API Meetup Online #3で限定公開URL（Capability URLs）について話をしてきました。
+title: "API Meetup Online #3で限定公開URL（Capability URLs）について話をしてきました。"
 date: 2020/08/09 00:00:00
 tag:
   - HTTP
@@ -16,7 +16,8 @@ lede: "[API Meetup Online #3]での登壇をお誘いをいただいたので、
 
 [API Meetup Online #3](https://api-meetup.doorkeeper.jp/events/109648)での登壇をお誘いをいただいたので、以前から調査していたものの、発表の機会のなかった限定公開URLについて調べていた内容を発表しました。
 
-https://docs.google.com/presentation/d/1aZ4zGNoD-PYElGmWJwRyW-8TNcXheNMuyPvQIUOt-VE/edit?usp=sharing
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRLdRFqBXd35VgVUCvrXsn3kN4rUu7HDzIoy0Kibs_ThTD3mnWpagkGkpNY1a7J8uWijf0lX8SdRBo3/embed?start=false&loop=false&delayms=3000" frameborder="0" width="820" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 
 Real World HTTPの第3版が出るとしたら（具体的な計画とかはないですが）入れるかも、なネタでした。どちらかというとコンシューマー向けな機能な気がしますが、hipchatは以前、共有したファイルがこのCapability URLsだったという噂も聞きますし、サービスによってはエンプラでも使っているものもあるかもしれません。自分で実装するにしても、利用する側だったりといろんな立場でこの機能に関わる場合に、その安全性を評価する物差しは持っておきたいな、ということで調べました。
 
