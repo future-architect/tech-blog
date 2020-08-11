@@ -4,6 +4,7 @@ tag:
   - CORS
   - Go
   - Web
+  - HTTP
 category:
   - Infrastructure
 thumbnail: /images/20200717/thumbnail.png
