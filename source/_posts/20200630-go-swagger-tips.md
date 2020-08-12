@@ -5,6 +5,7 @@ tags:
   - Swagger
   - Go
   - Lambda
+  - go-swagger
 category:
   - Programming
 thumbnail: /images/20200630/thumbnail.png

@@ -4,6 +4,7 @@ tags:
   - Go
   - OpenAPI
   - Swagger
+  - go-swagger
 category:
   - Programming
 thumbnail: /images/20200701/thumbnail.png
