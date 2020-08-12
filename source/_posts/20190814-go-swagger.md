@@ -4,6 +4,7 @@ tags:
   - Go
   - Swagger
   - OpenAPI
+  - go-swagger
 category:
   - Programming
 author: "多賀聡一朗"
