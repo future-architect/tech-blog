@@ -4,6 +4,7 @@ tags:
   - GCP
   - 初心者向け
   - BigQuery
+  - Kubernetes
 category:
   - Infrastructure
 thumbnail: /images/20200424/thumbnail.png
