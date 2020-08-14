@@ -119,8 +119,7 @@ https://cloud.google.com/about/locations?hl=ja#network
 
 理論値というか、UDPベースではこの様になります。
 
-- Region 間：`2Gbps` が上限
-- 同一Region：`2Gbps/CPU` が割り当てられる。が、上限は 8CPU の `16Gbps`
+- インスタンス間のスループットは、`2Gbps/CPU` となる。上限は 8CPU の `16Gbps`
     - n1-standard-1 : `2 Gbps`
     - n1-standard-4 : `8 Gbps`
     - n1-standard-8 : `16 Gbps`（以降、CPUを増やしてもスループットは増えない）
