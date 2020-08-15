@@ -45,8 +45,6 @@ $ npm install hexo-generator-feed --save
 $ npm install hexo-generator-seo-friendly-sitemap --save
 $ npm install hexo-footnotes --save
 $ npm install hexo-math --save
-$ npm install hexo-footnotes --save
-$ npm install hexo-math --save
 
 $ hexo server
  --> http://localhost:4000 にページが表示されたら完了
