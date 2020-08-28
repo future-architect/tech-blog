@@ -6,6 +6,7 @@ tags:
   - Go
   - TypeScript
   - 設計
+  - チーム開発
 category:
   - Programming
 thumbnail: /images/20200409/thumbnail.png
