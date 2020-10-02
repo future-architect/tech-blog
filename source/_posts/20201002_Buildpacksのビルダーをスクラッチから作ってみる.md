@@ -3,6 +3,8 @@ date: 2020/10/02 00:00:00
 tag:
   - CNCF
   - Buildpacks
+  - Docker
+  - Python
 category:
   - Infrastructure
 thumbnail: /images/20201002/thumbnail.png
