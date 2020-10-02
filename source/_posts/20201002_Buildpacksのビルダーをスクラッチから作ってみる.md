@@ -185,7 +185,7 @@ WORKDIR /home/builder
 ENV CNB_STACK_ID="io.github.future-architect.samples.debian"
 ENV CNB_USER_ID="1000"
 ENV CNB_GROUP_ID="1000"
-```                                               
+```
 
 ```bash
 $ pushd images
