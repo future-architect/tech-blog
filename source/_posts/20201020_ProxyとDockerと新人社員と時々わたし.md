@@ -316,7 +316,7 @@ Docker for MacをProxy環境下で利用したい場合は、URLエンコード�
 
 ### Docker saveとload
 
-dockerはイメージをファイルに出力して共有することができます。今回はsave/loadコマンドを紹介します。適当なdockerイメージをpullしたのち、それをファイルに出力して、再度取り込んでみます。
+dockerはイメージをファイルに出力して共有することができます。今回はsave/loadを紹介します。適当なdockerイメージをpullしたのち、それをファイルに出力して、再度取り込んでみます。
 
 ```bash
 # ここはDocker for Mac用の特殊対応を想定してMac環境に対するコマンド例を記載していますが、
