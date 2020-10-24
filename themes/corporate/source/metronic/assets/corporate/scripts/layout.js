@@ -356,6 +356,7 @@ var Layout = function () {
             $(".quantity-up").html("<i class='fa fa-angle-up'></i>");
         },
 
+        /*
         initFixHeaderWithPreHeader: function () {
             jQuery(window).scroll(function() {
                 if (jQuery(window).scrollTop()>37){
@@ -366,7 +367,9 @@ var Layout = function () {
                 }
             });
         },
+        */
 
+        /*
         initNavScrolling: function () {
             function NavScrolling () {
                 if (jQuery(window).scrollTop()>60){
@@ -383,6 +386,7 @@ var Layout = function () {
                 NavScrolling ();
             });
         },
+        */
 /*
         initOWL: function () {
             $(".owl-carousel6-brands").owlCarousel({

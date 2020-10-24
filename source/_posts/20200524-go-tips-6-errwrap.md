@@ -84,7 +84,7 @@ func AnyFunc() error {
 
 ```go AWS-SDKの通常版エラーハンドリング
 if err != nil {
-    if aerr, ok := err.(*awserr.Error); ok {
+    if aerr, ok := err.(awserr.Error); ok {
         switch aerr.Code() {
         case dynamodb.ErrCodeConditionalCheckFailedException:
             // エラーハンドリング
@@ -111,7 +111,7 @@ func AnyFunc() error {
 
 func main() {
     if err := AnyFunc(); err != nil {
-        if aErr, ok := err.(*awserr.Error); ok { // 🆖型アサーションでは判定できない
+        if aerr, ok := err.(awserr.Error); ok { // 🆖型アサーションでは判定できない
             // AWS操作エラー特有のエラーハンドリング
         } else {
             // その他のエラーハンドリング
@@ -128,9 +128,9 @@ func main() {
 
 ```go OKなコード
 if err := AnyFunc(); err != nil {
-    var aErr *awserr.Error
-    if ok := errors.As(err, &aErr); ok {
-        switch aErr.Code() {
+    var aerr awserr.Error
+    if ok := errors.As(err, &aerr); ok {
+        switch aerr.Code() {
         case dynamodb.ErrCodeConditionalCheckFailedException:
             // 何かしらのエラーハンドリング
         case dynamodb.ErrCodeProvisionedThroughputExceededException:

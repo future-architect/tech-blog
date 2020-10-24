@@ -6,12 +6,17 @@ tags:
   - DynamoDB×Go
   - KVS
   - DynamoDB
+  - GoCDK
 category:
   - Programming
+thumbnail: /images/20200228/thumbnail.png
 author: "真野隼記"
 featured: true
 lede: "DynamoDB×Go連載の第3弾目です。今までは AWS SDK Go やそれをラップしたguregu/dynamo について説明していましたが、 Go CDK（Go Cloud Development Kit） を用いたDynamoDB操作について説明します。"
 ---
+
+<img src="/images/20200228/go-cdk-logo-gopherblue.png" class="img-middle-size">
+
 # はじめに
 
 こんにちは、TIG DXユニット[真野](https://twitter.com/laqiiz)です。この技術ブログの運営もしています。

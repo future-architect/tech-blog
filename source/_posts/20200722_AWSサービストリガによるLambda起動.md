@@ -112,7 +112,14 @@ func main() {
 }
 ```
 
-ソースをbuildして、zipで圧縮しLambdaをデプロイします
+ソースをbuildして、zipで圧縮します。
+
+```sh ビルド&zip圧縮
+GOOS=linux GOARCH=amd64 go build -o ./main ./main.go
+zip main.zip ./main
+```
+
+Lambdaをデプロイします。
 
 ```sh
 aws lambda create-function \
