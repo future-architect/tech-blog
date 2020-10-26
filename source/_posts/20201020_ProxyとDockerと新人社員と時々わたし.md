@@ -312,7 +312,51 @@ Docker for WindowsやDocker for Macでは、ターミナルにProxy設定があ�
 
 先程 `@などの特殊記号がある場合はURLエンコードしてProxyに含める` と述べましたが、[Docker for MacではURLエンコードが効きません（少なくともv19.03.13時点）](https://github.com/docker/for-win/issues/369#issuecomment-392390823)。
 
-Docker for MacをProxy環境下で利用したい場合は、URLエンコードが不要なユーザー名とパスワードを使うか、あるいは一時的にProxyの外に出るしかありません。
+Docker for MacをProxy環境下で利用したい場合は、URLエンコードが不要なユーザー名とパスワードを使うか、一時的にProxyの外に出るか、あるいは次に示すようにdocker imageをファイルでやり取りするなどして対応する必要があります。
+
+### Docker saveとload
+
+dockerはイメージをファイルに出力して共有することができます。今回はsave/loadを紹介します。適当なdockerイメージをpullしたのち、それをファイルに出力して、再度取り込んでみます。
+
+```bash
+# ここはDocker for Mac用の特殊対応を想定してMac環境に対するコマンド例を記載していますが、
+# Windows環境でも同じはずなので、適宜読み替えてください
+# 今回はlocalstack/localstack:0.11.5をサンプルとして、最初にdocker pullします
+docker pull localstack/localstack:0.11.5
+# > 0.11.5: Pulling from localstack/localstack
+# > bdcbb82ec212: Pull complete 
+# > Digest: sha256:2740b5509173e0efbd509bdd949217f42c97e1ab1f5b354430fdf659c2b9a152
+# > Status: Downloaded newer image for localstack/localstack:0.11.5
+# > docker.io/localstack/localstack:0.11.5
+docker images
+# > REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
+# > localstack/localstack   0.11.5              e0eb37bb47b8        5 weeks ago         682MB
+
+# saveを使ってdocker imageをファイル出力します
+# イメージをそのままtarファイルにしますが、localstack/localstack:0.11.5の場合、720MBほどあります
+docker save localstack/localstack:0.11.5 -o localstack.0.11.5.tar
+ls
+# > localstack.0.11.5.tar
+
+# このあとにファイルからdocker imageを取り込みますが、そのために一度imageを削除します
+docker rmi e0eb37bb47b8                                          
+# > Untagged: localstack/localstack:0.11.5
+# > Deleted: sha256:e0eb37bb47b8526e2cbd860e643e8b47656d529c0168b8f43fff0eb5f7a577b6
+# > Deleted: sha256:18944735543f1604652717378abb7dd986534d7de46017fb87d928db521313cf
+docker images                                                    
+# > REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+
+# loadを使ってimageを取り込みます
+docker load -i localstack.0.11.5.tar                             
+# > 18944735543f: Loading layer [==================================================>]  722.3MB/722.3MB
+# > Loaded image: localstack/localstack:0.11.5
+# > docker images
+# > REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
+# > localstack/localstack   0.11.5              e0eb37bb47b8        5 weeks ago         682MB
+```
+
+ファイルのサイズこそ大きいですが、確かにdocker imageをファイルを介してやり取りできます。たとえばProxy環境下でdocker pullできない人がいたとしても、開発時に使われる各種イメージは早々変わらないと考えると、このようにイメージをファイル共有するのも一つの手段となりえるかなと考えます。
+なお、ここではdocker imageを対象とする場合としてsave/loadを使いましたが、containerを対象とする場合はexport/importを使います。export/importに関する説明については割愛しますが、必要に応じてお使いください。
 
 ## Dockerコンテナビルドする時
 
