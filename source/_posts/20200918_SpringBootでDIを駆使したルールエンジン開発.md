@@ -6,6 +6,7 @@ tag:
   - Java
   - Spring
   - DI
+  - GlyphFeeds
 category:
   - Programming
 thumbnail: /images/20200918/thumbnail.png

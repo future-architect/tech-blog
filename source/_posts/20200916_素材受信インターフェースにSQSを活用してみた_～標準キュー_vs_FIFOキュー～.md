@@ -3,6 +3,7 @@ date: 2020/09/16 00:00:00
 tag:
   - AWS
   - sqs
+  - GlyphFeeds
 category:
   - Infrastructure
 thumbnail: /images/20200916/thumbnail.png
