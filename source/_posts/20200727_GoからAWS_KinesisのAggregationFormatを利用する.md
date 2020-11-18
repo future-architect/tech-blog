@@ -11,7 +11,7 @@ category:
   - Programming
 thumbnail: /images/20200727/thumbnail.png
 author: laqiiz
-featured: true
+featured: false
 lede: "[サーバレス連載企画]の8回目です。TIG DXユニットの真野です。ここ数年は産業向けのIoT（例えば工場IoTやモビリティIoT）を行っています。[工場をハックするための基本知識] の記事を書いた棚井さんと同じチームに所属しています。[サーバレス連載企画] の第8弾目として、Serverlessの代表格であるAWS LambdaでGoを用いてKinesisに対するKPL/KCL相当の処理についてまとめていきます。"
 ---
 [サーバレス連載企画](https://future-architect.github.io/tags/Serverless%E9%80%A3%E8%BC%89/)の8回目です。

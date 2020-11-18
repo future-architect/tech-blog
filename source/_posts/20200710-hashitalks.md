@@ -9,7 +9,7 @@ category:
   - Infrastructure
 thumbnail: /images/20200710/thumbnail.png
 author: "伊藤太斉"
-featured: true
+featured: false
 lede: "本記事の内容はHashiTalks: Japanに登壇したのでその時に話したことを書いていきます。大きめなイベントには初の登壇だったのでなかなかドキドキしましたが、なんとかやりきりました。"
 ---
 

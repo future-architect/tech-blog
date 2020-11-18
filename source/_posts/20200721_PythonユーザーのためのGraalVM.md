@@ -8,7 +8,7 @@ category:
   - Programming
 thumbnail: /images/20200721/thumbnail.png
 author: 澁川喜規
-featured: true
+featured: false
 lede: "ちょうど一年ぐらい前にGraalVMが商用利用可能な安定版に達し、Enterprise版もリリースされたというニュースがあります。 GraalVMにはPython機能もあると宣伝されているものの、詳しい説明が行われることがなく、それが何者で、どのようなステータスで、どこを目指しているのか、きちんと答えられる人は（日本どころか世界でも）ほぼいないでしょう。GraalVMそのものの説明はちょくちょく出てくるようになってきたと思いますが、そのPythonの機能についてはあまり説明されていないため、Python部分にフォーカスして紹介します。"
 ---
 ちょうど一年ぐらい前にGraalVMが商用利用可能な安定版に達し、Enterprise版もリリースされたというニュースがあります。

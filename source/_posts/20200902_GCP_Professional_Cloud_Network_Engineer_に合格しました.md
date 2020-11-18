@@ -8,7 +8,7 @@ category:
   - Infrastructure
 thumbnail: /images/20200902/thumbnail.png
 author: 西田好孝
-featured: true
+featured: false
 lede: "今回、GCP の `Professional Cloud Network Engineer` という資格に合格したので、その際の体験を記載しておきます。"
 ---
 

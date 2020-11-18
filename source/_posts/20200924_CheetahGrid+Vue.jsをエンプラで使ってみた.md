@@ -8,7 +8,7 @@ category:
   - Infrastructure
 thumbnail: /images/20200924/thumbnail.png
 author: 信田和哉
-featured: true
+featured: false
 lede: "こんにちは！今回は[CheetahGrid][cheetahgrid-hp]＋[Vue.js][vue-hp]でエンプラ系システムを構築した際の、採用した理由と実装のポイントのご紹介をしようと思います。[CheetahGrid][cheetahgrid-hp]について存じ上げないよーとか、触ったことがないよーという方は、[入門編][beginner-link]も御覧くださいね。初めての投稿ですが、最後までお付き合いいただければ嬉しいです。"
 ---
 
