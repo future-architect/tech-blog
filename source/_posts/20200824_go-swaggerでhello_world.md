@@ -113,7 +113,7 @@ URLのクエリパラメータに`name`を持たせることができる。
 レスポンスのbodyに単一の文字列が返ってくる。
 ...という事が`swagger.yaml`の内容から推測できます。
 
-作成したファイルはOpenAPI Previewで確認することが可能です。[Chorome拡張](https://chrome.google.com/webstore/detail/openapi-preview/ijjbiodnicjakhbfkffnlbekpgnmmggo?hl=en-GB)、[vscode向けのプラグイン](https://marketplace.visualstudio.com/items?itemName=zoellner.openapi-preview)などで利用可能です。[editor.swagger.io](https://editor.swagger.io/)のようなウェブサイトとしても公開されています。
+作成したファイルはOpenAPI Previewで確認することが可能です。[Chrome拡張](https://chrome.google.com/webstore/detail/openapi-preview/ijjbiodnicjakhbfkffnlbekpgnmmggo?hl=en-GB)、[vscode向けのプラグイン](https://marketplace.visualstudio.com/items?itemName=zoellner.openapi-preview)などで利用可能です。[editor.swagger.io](https://editor.swagger.io/)のようなウェブサイトとしても公開されています。
 [vimプラグイン](https://github.com/xavierchow/vim-swagger-preview)もありますね...素晴らしい。
 
 ![](/images/20200824/open_api_preview.jpg)

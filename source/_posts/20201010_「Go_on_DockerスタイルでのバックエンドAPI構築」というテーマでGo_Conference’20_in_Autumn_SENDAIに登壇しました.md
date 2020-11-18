@@ -118,7 +118,7 @@ RUN env GOOS=linux GOARCH=amd64 GIN_MODE=release go build -o /go-api
 FROM node:12.7.0-alpine
 WORKDIR /myapp
 COPY --from=builder /go-api .
-# install choromedriver
+# install chromedriver
 RUN apk add --update \
     wget \
     udev \
