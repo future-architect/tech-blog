@@ -8,7 +8,7 @@ category:
   - Infrastructure
 thumbnail: /images/20200805/thumbnail.JPG
 author: 伊藤太斉
-featured: true
+featured: false
 lede: "TIG/DX所属のインフラエンジニア兼カメラマンの[伊藤太斉]です。今回のアイキャッチは私が昨年撮ったひまわり畑にしました。Infrastructure as Codeでキャッチアップやインフラのリリースができることに越したことはありません。この記事では、Terraformの数多くの機能を使って他のIaCツールと可能な限り代用したり、Terraformの世界でリソース作成を完結させるために使い方を改めて突き詰めた内容になります"
 ---
 

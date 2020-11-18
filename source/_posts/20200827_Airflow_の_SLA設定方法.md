@@ -7,7 +7,7 @@ category:
   - Infrastructure
 thumbnail: /images/20200827/thumbnail.png
 author: 多賀聡一朗
-featured: true
+featured: false
 lede: "TIG DXチームの多賀です。Airflowの SLA 設定方法を紹介します。sla_miss_callback 関数は以下の引数が必要"
 ---
 
