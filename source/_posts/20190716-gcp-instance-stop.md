@@ -6,7 +6,7 @@ tags:
 category:
   - Infrastructure
 author: "真野隼記"
-featured: true
+featured: false
 lede: "GCPのインスタンス（GCE, SQL, GKE）を自動で停止させるGoで書かれたツールをGitHubに公開しました。"
 ---
 # はじめに

@@ -5,7 +5,7 @@ tags:
 category:
   - Infrastructure
 author: "二木秀之"
-featured: true
+featured: false
 lede: "ソースコード以外は全てインフラ領域である、が信念であるフューチャーにおける「インフラ設計技法の知財化」を進める活動について報告します。"
 ---
 
