@@ -8,7 +8,7 @@ category:
   - Programming
 thumbnail: /images/20201117/thumbnail.png
 author: 富山龍之介
-featured: false
+featured: true
 lede: "私の使用するテキストエディタはVim一択でしたが、最近はVSCodeに浮気気味です。（言わずもがなVimプラグインは入れていますが）今回はVSCodeでGo言語用のデバッグ環境をテーマに執筆してみたいと思います！"
 ---
 ![](/images/20201117/image.png)
