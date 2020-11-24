@@ -8,7 +8,7 @@ category:
   - Infrastructure
 thumbnail: /images/20201120/thumbnail.png
 author: 八巻達紀
-featured: true
+featured: false
 lede: "前回記事「[CloudEndure Migration - 導入編]」の続きです。今回は、実際にCloudEndure Migrationを使った移行を実践したいと思います。"
 ---
 # はじめに
