@@ -1,5 +1,5 @@
 <!-- BEGIN FEATURED POSTS -->
-<h2>Featured Posts</h2>
+<h2>人気の記事</h2>
 <div class="recent-news margin-bottom-10">
   <% var count = 0  %>
   <% (site.posts.reverse()).each(function(post, i){ %>
@@ -21,7 +21,7 @@
 <!-- END FEATURED POSTS -->
 
 <!-- CATEGORIES START -->
-<h2 class="margin-top-30">Categories</h2>
+<h2 class="margin-top-30">カテゴリー</h2>
 <%- partial('_widget/category.ejs') %>
 <!-- CATEGORIES END -->
 
@@ -40,3 +40,9 @@
 </div>
 <!-- END ADVENT CALENDAR -->
 
+<!-- START Conpass -->
+<div class="margin-bottom-20">
+  <h2>勉強会</h2>
+  <%- partial('_widget/conpass.ejs') %>
+</div>
+<!-- END Conpass -->
