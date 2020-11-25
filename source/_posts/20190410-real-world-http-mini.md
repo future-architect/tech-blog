@@ -8,14 +8,16 @@ tags:
   - 出版
 category:
   - Culture
+thumbnail: /images/20190410/thumbnail.png
 author: "真野隼記"
 featured: false
 lede: "Real World HTTPミニ版を記念にフューチャーのオフィスで勉強会を実施しましたら、リアル渋川さんに出会えました話です"
 ---
 
+<img src="/images/20190410/top.png" class="img-small-size">
+
 こんにちは、フーチャーのTIG所属、真野です。
 パネルディスカッションとして参加したらとても良い経験になったため、その流れで開催報告記事を担当させていただくことになりました。
-
 
 # 勉強会の背景
 
