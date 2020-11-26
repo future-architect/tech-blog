@@ -4,6 +4,7 @@ tag:
   - Qiita
   - AdventCalendar
   - AdventCalendar2020
+  - TechBlog
 category:
   - Culture
 thumbnail: /images/20201125/thumbnail.png

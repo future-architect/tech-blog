@@ -3,7 +3,7 @@ date: 2020/09/27 00:00:00
 tag:
   - Go
   - AWS
-  - サーバレス
+  - Serverless
   - go-swagger
   - Terraform
 category:

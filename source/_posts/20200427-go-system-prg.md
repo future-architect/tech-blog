@@ -3,6 +3,7 @@ date: 2020/04/27 10:03:55
 tags:
   - Go
   - 出版
+  - 書籍
 category:
   - Programming
 thumbnail: /images/20200427/thumbnail.jpeg

@@ -4,6 +4,7 @@ tags:
   - TypeScript
   - 出版
   - Frontend
+  - 書籍
 category:
   - Programming
 author: "澁川喜規"

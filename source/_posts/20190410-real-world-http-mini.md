@@ -6,6 +6,7 @@ tags:
   - Web
   - HTTP
   - 出版
+  - 書籍
 category:
   - Culture
 thumbnail: /images/20190410/thumbnail.png
