@@ -5,6 +5,7 @@ tag:
   - Buildpacks
   - Docker
   - Python
+  - CloudNative
 category:
   - Infrastructure
 thumbnail: /images/20201002/thumbnail.png
