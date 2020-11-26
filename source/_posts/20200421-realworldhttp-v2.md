@@ -4,6 +4,7 @@ tags:
   - 出版
   - Web
   - HTTP
+  - 書籍
 category:
   - Culture
 thumbnail: /images/20200421/thumbnail.jpeg
