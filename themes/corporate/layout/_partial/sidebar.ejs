@@ -1,19 +1,19 @@
 <!-- BEGIN FEATURED POSTS -->
-<h2>人気の記事</h2>
-<div class="recent-news margin-bottom-10">
+<h3>人気の記事</h3>
+<div class="widget-wrap">
   <% var count = 0  %>
   <% (site.posts.reverse()).each(function(post, i){ %>
     <% if (post.featured == true){ %>
       <% if (count++ < theme.featured_count){ %>
-        <a href="<%- post.permalink %>">
-          <div class="row margin-bottom-10">
-            <div class="col-md-10">
-              <li>
+        <div class="widget">
+          <ul class="nav">
+            <li>
+              <a href="<%- post.permalink %>">
                 <%- post.title %>
-              </li>
-            </div>
-          </div>
-        </a>
+              </a>
+            </li>
+          </ul>
+        </div>
       <% } %>
 	<% } %>
   <% }) %>
@@ -27,7 +27,7 @@
 
 <!-- START Blog -->
 <div class="margin-bottom-20">
-  <h2>リンク</h2>
+  <h3>リンク</h3>
   <%- partial('_widget/other-blog.ejs') %>
 </div>
 <!-- END Blog -->
@@ -35,14 +35,14 @@
 
 <!-- START ADVENT CALENDAR -->
 <div class="margin-bottom-20">
-  <h2>Advent Calendar</h2>
+  <h3>アドベントカレンダー</h3>
   <%- partial('_widget/advent-calendar.ejs') %>
 </div>
 <!-- END ADVENT CALENDAR -->
 
 <!-- START Conpass -->
 <div class="margin-bottom-20">
-  <h2>勉強会</h2>
+  <h3>勉強会</h3>
   <%- partial('_widget/conpass.ejs') %>
 </div>
 <!-- END Conpass -->
