@@ -5,7 +5,7 @@
 # Site
 title: 'フューチャー技術ブログ'
 subtitle: Future Tech Blog
-description: フューチャーの開発者による公式Tech Blogです。IoTやAI(MachineLearning)・Security・VR・Cloud・BigDataといった内容の記事を中心に、業務で利用する幅広い技術について紹介します。また、OSSへの貢献やカンファレンスなどへの登壇、フューチャーへのエンジニア文化についても触れていきますのでお楽しみに！
+description: フューチャーの開発者による公式技術ブログです。業務で利用している技術を幅広く紹介します。
 author: Future Architect Consultants
 language: ja
 timezone: Asia/Tokyo
