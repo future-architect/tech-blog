@@ -2,15 +2,7 @@
 <div class="col-md-6 col-sm-6">
   <ul class="social-footer list-unstyled list-inline pull-right">
     <% for(var s in theme.social) { %>
-      <% if(s == "qiita") { %>
-      <li>
-        <a href="<%- url_for(theme.social[s]) %>">
-            <i class="fa fa-pencil-square-o"></i>
-        </a>
-      </li>
-      <% } else { %>
       <li><a href="<%- url_for(theme.social[s]) %>"><i class="fa fa-<%= s %>"></i></a></li>
-      <% } %>
   <% } %>
   </ul>
 </div>
