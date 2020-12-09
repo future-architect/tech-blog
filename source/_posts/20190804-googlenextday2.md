@@ -4,13 +4,13 @@ tags:
   - GCP
 category:
   - Infrastructure
-author: "DXチーム統合思念体"
+author: "村田靖拓"
 featured: false
 lede: "Google Cloud Next ’19 in Tokyo Day2 にチームメンバーで参加しましたので参加レポートをお送りします。"
 ---
 ## はじめに
 
-こんにちは、TIG DXチーム[^1]の統合思念体です。[Google Cloud Next ’19 in Tokyo](https://cloud.withgoogle.com/next/tokyo/) Day2 にチームメンバーで参加しましたので参加レポートをお送りします。
+こんにちは、TIG DXチーム[^1]の村田です。[Google Cloud Next ’19 in Tokyo](https://cloud.withgoogle.com/next/tokyo/) Day2 にチームメンバーで参加しましたので参加レポートをお送りします。
 
 [^1]: Technology Innovation Groupの略で、フューチャーの中でも特にIT技術に特化した部隊です。その中でもDXチームは特にデジタルトランスフォーメーションに関わる仕事を推進していくチームです。 
 

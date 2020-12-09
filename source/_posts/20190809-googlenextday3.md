@@ -4,13 +4,13 @@ tags:
   - GCP
 category:
   - Infrastructure
-author: "DXチーム統合思念体"
+author: "村田靖拓"
 featured: false
 lede: "Google Cloud Next ’19 in Tokyo Day3にも少し顔を出していたのでそちらの参加レポートをお送りします。"
 ---
 
 # はじめに
-こんにちは、TIG DXチームの統合思念体です。[Google Cloud Next ’19 in Tokyo Day3](https://cloud.withgoogle.com/next/tokyo/)に少し顔を出していたので参加レポートをお送りします。
+こんにちは、TIG DXチームの村田です。[Google Cloud Next ’19 in Tokyo Day3](https://cloud.withgoogle.com/next/tokyo/)に少し顔を出していたので参加レポートをお送りします。
 
 * [Day2 の参加レポート](https://future-architect.github.io/articles/20190804/)はこちらです。
 
