@@ -6,9 +6,6 @@ menu:
   Blog:
     icon: fa-newspaper-o
     url: /articles/ # can set archive-dir in root config to custom value
-  GitHub:
-    icon: fa-github
-    url: https://github.com/future-architect
   
 rss: /atom.xml
 
@@ -25,7 +22,6 @@ google_analytics: UA-74047147-1
 social:
   github: https://github.com/future-architect
   twitter: https://twitter.com/future_techblog
-  facebook: https://www.facebook.com/future.saiyo
   rss: atom.xml
 
 # Miscellaneous

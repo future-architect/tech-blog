@@ -6,7 +6,7 @@ tag:
   - AWS
   - 基幹システム
 category:
-  - Product
+  - Culture
 thumbnail: /images/20200914/thumbnail.jpg
 author: 山上燦
 featured: false
