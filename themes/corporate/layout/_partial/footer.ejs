@@ -34,8 +34,7 @@
   <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
   <!-- Twitter Shareボタン. ページ毎に1度初期化できれば良いのでフッターに配備 -->
   <script>window.twttr = (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0],
-      t = window.twttr || {};
+    var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
     if (d.getElementById(id)) return t;
     js = d.createElement(s);
     js.id = id;
@@ -48,6 +47,7 @@
     };
     return t;
   }(document, "script", "twitter-wjs"));</script>
+
   <!-- はてぶ Shareボタン. ページ毎に1度初期化できれば良いのでフッターに配備 -->
   <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
 
@@ -57,7 +57,7 @@
       <!-- Twitterフォローボタン -->
       <a href="https://twitter.com/<%= theme.twitter_username %>" class="twitter-follow-button" data-show-count="false" data-lang="ja">/<%= theme.twitter_username %>さんをフォロー</a>
       <!-- 組み込みTwitterウィジェット -->
-      <a data-tweet-limit="1" class="twitter-timeline" href="https://twitter.com/<%= theme.twitter_username %>" data-widget-id="<%= theme.twitter_widget_id %>">Tweets by @<%= theme.twitter_username %></a>
+      <a data-tweet-limit="1" class="twitter-timeline" href="https://twitter.com/<%= theme.twitter_username %>?ref_src=<%= theme.twitter_widget_id %>" data-lang="ja" data-dnt="true">Tweets by @<%= theme.twitter_username %></a>
     </div>
     <!-- END TWITTER BLOCK -->
 	<% } %>
