@@ -4,6 +4,7 @@ tag:
   - AWS
   - Electron
   - 登壇資料
+  - Vue.js
 category:
   - Programming
 thumbnail: /images/20210125/thumbnail.png
@@ -14,7 +15,7 @@ lede: "先日July Tech Festa 2021 winterに登壇させていただきました�
 
 TIGの伊藤真彦です。
 
-先日July Tech Festa 2021 winterに登壇させていただきました。  
+先日[July Tech Festa 2021 winter](https://techfesta.connpass.com/event/193966/)に登壇させていただきました。  
   
 昨今の情勢的に当然のごとくオンラインイベントでの参加です、手軽で良いのですが少し寂しさもあります。
 
