@@ -9,7 +9,7 @@ category:
   - Programming
 thumbnail: /images/20210125/thumbnail.png
 author: 伊藤真彦
-featured: true
+featured: false
 lede: "先日July Tech Festa 2021 winterに登壇させていただきました。一足先にElectronの使い方 Web開発の技術でデスクトップアプリを作ろうというタイトルで入門記事を技術ブログでも書きました。その内容と重複する部分も..."
 ---
 
