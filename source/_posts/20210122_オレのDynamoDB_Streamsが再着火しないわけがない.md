@@ -9,7 +9,7 @@ category:
   - Programming
 thumbnail: /images/20210122/thumbnail.png
 author: 真野隼記
-featured: true
+featured: false
 lede: "DynamoDB Streamsは、DynamoDBに対する項目の追加、変更、削除をイベントとして検出できる機能です。テーブルの項目が変更されるとすぐに、新しいレコードがテーブルのストリームに表示されます"
 ---
 
