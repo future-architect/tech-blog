@@ -8,7 +8,7 @@ category:
   - Programming
 thumbnail: /images/20210203/thumbnail.jpg
 author: 久保勇暉
-featured: true
+featured: false
 lede: "私はフロントエンドエンジニアとして約1年くらいVue2でのフロントエンド開発を行っています。そんなVue3を全く触ったことにのないエンジニアが読んだ｢WEB+DB PRESS Vol.120｣に掲載されている｢最新Vue.js3入門｣の記事感想文となります｡ "
 ---
 # はじめに
