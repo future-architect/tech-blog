@@ -3,6 +3,7 @@ date: 2020/01/21 08:52:16
 tags:
   - AWS
   - GCP
+  - リトライ
 category:
   - Infrastructure
 author: "村瀬善則"
