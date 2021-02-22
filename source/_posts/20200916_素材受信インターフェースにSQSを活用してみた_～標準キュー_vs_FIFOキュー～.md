@@ -2,7 +2,7 @@ title: "素材受信インターフェースにSQSを活用してみた ～標�
 date: 2020/09/16 00:00:00
 tag:
   - AWS
-  - sqs
+  - SQS
   - GlyphFeeds
 category:
   - Infrastructure
