@@ -4,6 +4,7 @@ tags:
   - Elastic-Stack
   - Redmine
   - Kibana
+  - Elasticsearch
 category:
   - Management
 thumbnail: /images/20170510/thumbnail_20170510.jpg

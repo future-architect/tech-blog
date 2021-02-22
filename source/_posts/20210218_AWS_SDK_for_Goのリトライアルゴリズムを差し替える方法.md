@@ -3,7 +3,7 @@ date: 2021/02/18 00:00:00
 tag:
   - Go
   - リトライ
-  - aws
+  - AWS
 category:
   - Programming
 thumbnail: /images/20210218/thumbnail.png
