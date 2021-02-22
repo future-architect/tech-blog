@@ -4,6 +4,7 @@ tags:
   - Go
   - Java
   - 翻訳
+  - 入門
 category:
   - Programming
 author: "柏木祥子,佐藤尚至"

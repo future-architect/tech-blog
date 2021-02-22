@@ -3,6 +3,7 @@ date: 2020/05/25 09:30:35
 tags:
   - Go
   - GoTips連載
+  - Linter
 category:
   - Programming
 thumbnail: /images/20200525/top.png
