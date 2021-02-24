@@ -2,6 +2,7 @@ title: "Future Tech Night(第5弾：AWS＆DataPlatform MaaSビジネス編)を�
 date: 2020/12/28 00:00:00
 tag:
   - AWS
+  - データレイク
 category:
   - Programming
 thumbnail: /images/20201228/thumbnail.png
