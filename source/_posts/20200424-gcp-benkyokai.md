@@ -3,6 +3,7 @@ date: 2020/04/24 10:23:37
 tags:
   - GCP
   - 初心者向け
+  - 登壇資料
   - BigQuery
   - Kubernetes
 category:
