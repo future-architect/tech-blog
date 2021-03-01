@@ -4,6 +4,7 @@ tags:
   - Python
   - MachineLearning
   - DeepLearning
+  - データ分析
 category:
   - DataScience
 author: "小池優希"
