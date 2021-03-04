@@ -33,7 +33,7 @@ Webアプリで利用しやすい、JavaScript製のライブラリの代表的�
 
 この中で、本記事でははVis Networkを用いて階層グラフを表示する方法をご紹介します。
 
-mxGraphについて次の記事で紹介する予定ですのでお楽しみに。
+mxGraphについて[次の記事](/articles/20210303/)で紹介する予定ですのでお楽しみに。
 
 ## Vis Networkとは
 
@@ -233,6 +233,9 @@ https://www.future.co.jp/recruit/
 [^2]: [fix\(xss\)\!: don't set popup content via innerHTML by Thomaash · Pull Request \#1275 · visjs/vis\-network · GitHub](https://github.com/visjs/vis-network/pull/1275)
 [^3]: [Goでコールグラフを自作してみた \- Qiita](https://qiita.com/tanzaku/items/d21ce5c61505a8710fbe#%E8%A7%A3%E6%9E%90%E7%B5%90%E6%9E%9C-%E3%81%9D%E3%81%AE3%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%81%AE%E3%83%8E%E3%83%BC%E3%83%89%E3%82%92%E8%BF%BD%E5%8A%A0)
 [^4]: [None of the examples work on 6\.2\.0? · Issue \#183 · visjs/vis\-network · GitHub](https://github.com/visjs/vis-network/issues/183)
+
+
+続きの記事も[こちら](/articles/20210303/)に公開されました。併せて確認してもらえると嬉しいです！
 
 
 # 関連記事
