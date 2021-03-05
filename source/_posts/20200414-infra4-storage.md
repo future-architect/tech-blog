@@ -3,6 +3,7 @@ date: 2020/04/14 11:07:29
 tags:
   - Storage
   - インフラ入門
+  - 入門
 category:
   - Infrastructure
 thumbnail: /images/20200414/thumbnail.png
@@ -26,6 +27,7 @@ lede: "インフラ、興味深いですよね。今はクラウドサービス�
 2. [インフラ入門vol.2(ネットワーク)](https://future-architect.github.io/articles/20170704/)：ネットワークって何さ？から仕様検討の上での入門知識が書かれた記事です。
 3. [インフラ入門vol.3(ネットワーク冗長化構成)](https://future-architect.github.io/articles/20191107/)：冗長構成にスポットライトをあてた若干ニッチな記事です。
 4. インフラ入門vol.4(ストレージ)：この記事。ストレージの主流となるHDDやSSDの特徴についての記事です。
+5. [インフラ要件定義編](https://future-architect.github.io/articles/20210305/)
 
 
 # そもそもストレージって？

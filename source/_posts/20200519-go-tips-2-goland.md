@@ -8,7 +8,7 @@ category:
   - Programming
 thumbnail: /images/20200519/thumbnail.png
 author: "真野隼記"
-featured: true
+featured: false
 lede: "今回はGoでアプリ開発するときにお世話になっている人が多い、GolandのTipsを紹介します。"
 ---
 

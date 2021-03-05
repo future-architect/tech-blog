@@ -8,7 +8,7 @@ category:
   - DB
 thumbnail: /images/20170227/thumbnail_20170227.png
 author: "太田洋介"
-featured: true
+featured: false
 lede: "弊社謹製のSQLフォーマッターuroboroSQL formatterを公開しましたので、その紹介をさせていただきます。"
 ---
 

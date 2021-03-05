@@ -5,7 +5,7 @@ tags:
 category:
   - Infrastructure
 author: "市川諒"
-featured: true
+featured: false
 lede: "AmazonConnect BootCampセッションでハンズオン受けた知識を活かし、実際にコールセンターを作ってみました"
 ---
 

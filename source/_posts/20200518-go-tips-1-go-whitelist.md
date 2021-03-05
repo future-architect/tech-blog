@@ -8,7 +8,7 @@ category:
   - Programming
 thumbnail: /images/20200518/thumbnail.png
 author: "宮崎将太"
-featured: true
+featured: false
 lede: "ホワイトリストProxy申請するときのGo依存ライブラリURLドメインの調べ方を記載します。"
 ---
 

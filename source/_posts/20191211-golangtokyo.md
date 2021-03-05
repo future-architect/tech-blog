@@ -6,8 +6,8 @@ tags:
   - 勉強会
 category:
   - Programming
-author: "辻大志郎,澁川喜規"
-featured: true
+author: "辻大志郎"
+featured: false
 lede: "こんにちは。TIG の辻です。先日開催された golang.tokyo #28 に当社から2名、登壇しましたのでそのレポートをします。LT 景品で頂いた CNCF のキャラクターです。かわいいです。"
 ---
 

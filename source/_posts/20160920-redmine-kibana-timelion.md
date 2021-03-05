@@ -4,6 +4,7 @@ tags:
   - Elastic-Stack
   - Kibana
   - Redmine
+  - マネジメント
 category:
   - Management
 thumbnail: /images/20160928/thumbnail_20160928.jpg
