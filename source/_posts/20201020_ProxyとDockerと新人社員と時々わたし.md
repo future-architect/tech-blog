@@ -364,7 +364,7 @@ docker load -i localstack.0.11.5.tar
 
 ```bash
 ## Windows/Mac共通
-docekr-compose build \
+docker-compose build \
   --build-arg HTTP_PROXY=http://<user>:<pass>@proxy.example.com:8000 \
   --build-arg HTTPS_PROXY=http://<user>:<pass>@proxy.example.com:8000 \
   --build-arg http_proxy=http://<user>:<pass>@proxy.example.com:8000 \
