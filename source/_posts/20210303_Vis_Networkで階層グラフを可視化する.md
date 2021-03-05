@@ -33,7 +33,7 @@ Webアプリで利用しやすい、JavaScript製のライブラリの代表的�
 
 この中で、本記事でははVis Networkを用いて階層グラフを表示する方法をご紹介します。
 
-mxGraphについて[次の記事](/articles/20210303/)で紹介する予定ですのでお楽しみに。
+mxGraphについて[次の記事](/articles/20210304/)で紹介する予定ですのでお楽しみに。
 
 ## Vis Networkとは
 
@@ -218,6 +218,8 @@ Graphvizほど洗練されたレイアウトにはなりませんが、非常に
 
 次回の記事ではmxGraphをご紹介いたします。
 
+* 続きの記事も[こちら](/articles/20210303/)に公開されました。併せて確認してもらえると嬉しいです！
+
 階層グラフのレイアウト問題そのものに興味がある方は [階層グラフの可視化](http://www.orsj.or.jp/archive2/or63-1/or63_1_20.pdf) などを見ると楽しめるかなと思います。
 
 # まとめ
@@ -235,7 +237,6 @@ https://www.future.co.jp/recruit/
 [^4]: [None of the examples work on 6\.2\.0? · Issue \#183 · visjs/vis\-network · GitHub](https://github.com/visjs/vis-network/issues/183)
 
 
-続きの記事も[こちら](/articles/20210303/)に公開されました。併せて確認してもらえると嬉しいです！
 
 
 # 関連記事
