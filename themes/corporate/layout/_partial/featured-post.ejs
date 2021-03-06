@@ -1,0 +1,22 @@
+<!-- BEGIN FEATURED POSTS -->
+<div class="widget-wrap">
+  <% var count = 0  %>
+  <% (site.posts.reverse()).each(function(post, i){ %>
+    <% if (post.featured == true){ %>
+      <% if (Math.round(Math.random()*100) < 20) { %>
+        <% if (count++ < theme.featured_count + 5){ %>
+          <div class="widget">
+            <ul class="nav">
+              <li>
+                <a href="<%- post.permalink %>">
+                  <%- post.title %>
+                </a>
+              </li>
+            </ul>
+          </div>
+        <% } %>
+      <% } %>
+    <% } %>
+  <% }) %>
+</div>
+<!-- END FEATURED POSTS -->
