@@ -4,6 +4,7 @@ tag:
   - Airflow
   - AWS
   - Python
+  - ジョブ設計
 category:
   - Programming
 thumbnail: /images/20201206/thumbnail.png

@@ -5,6 +5,7 @@ tag:
   - DynamoDB
   - DynamoDBStream
   - Go
+  - トラブルシュート
 category:
   - Programming
 thumbnail: /images/20210122/thumbnail.png

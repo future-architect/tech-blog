@@ -4,6 +4,8 @@ tags:
   - RDB
   - DB
   - KVS
+  - 技術選定
+  - 要件定義
 category:
   - DB
 thumbnail: /images/20200703/thumbnail.png
