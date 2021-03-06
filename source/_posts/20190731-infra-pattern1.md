@@ -2,6 +2,7 @@ title: "俺のインフラデザインパターン　～過去の失敗に学ぶ
 date: 2019/07/31 09:47:37
 tags:
   - Infrastructure
+  - 要件定義
 category:
   - Infrastructure
 author: "二木秀之"
