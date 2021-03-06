@@ -6,7 +6,7 @@ category:
   - IoT
 thumbnail: /images/20171207/thumbnail_20171207.png
 author: "山本力世"
-featured: true
+featured: false
 lede: "今年、社内のR&Dチームにて開発し利用を開始した汎用IoTデバイスについて紹介したいと思います。"
 ---
 
