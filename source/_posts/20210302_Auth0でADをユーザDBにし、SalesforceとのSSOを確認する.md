@@ -9,7 +9,7 @@ category:
   - Infrastructure
 thumbnail: /images/20210302/thumbnail.png
 author: 山田勇一
-featured: true
+featured: false
 lede: "エンタープライズの領域ではAD認証が多く利用されており、また同時にCRMとしてSalesforceが導入されているケースが多くあります。この場合、社内システムにおける「統合認証」の要件として、これらを繋げてログインする必要が出てきます。これらの要求に対応するため、以下2点を確認し、Active Directory（以降AD）を中心とした統合認証を試してみます。"
 ---
 

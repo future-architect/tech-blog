@@ -5,7 +5,7 @@ tags:
 category:
   - DataScience
 author: "上野貴史, 田中駿"
-featured: true
+featured: false
 lede: "こんにちは、Strategic AI Group(SAIG)の田中、上野です。私たちは現在、NeurIPSという学会に参加するためにカナダに来ています。NeurIPS(Conference on Neural Information Processing Systems)は、機械学習分野のトップカンファレンスで、今年が33回目の開催となります。"
 ---
 

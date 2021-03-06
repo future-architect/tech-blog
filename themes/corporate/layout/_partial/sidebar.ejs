@@ -4,18 +4,20 @@
   <% var count = 0  %>
   <% (site.posts.reverse()).each(function(post, i){ %>
     <% if (post.featured == true){ %>
-      <% if (count++ < theme.featured_count){ %>
-        <div class="widget">
-          <ul class="nav">
-            <li>
-              <a href="<%- post.permalink %>">
-                <%- post.title %>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <% if (Math.round(Math.random()*100) < 33) { %>
+        <% if (count++ < theme.featured_count){ %>
+          <div class="widget">
+            <ul class="nav">
+              <li>
+                <a href="<%- post.permalink %>">
+                  <%- post.title %>
+                </a>
+              </li>
+            </ul>
+          </div>
+        <% } %>
       <% } %>
-	<% } %>
+    <% } %>
   <% }) %>
 </div>
 <!-- END FEATURED POSTS -->
