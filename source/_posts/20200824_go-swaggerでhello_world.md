@@ -3,6 +3,7 @@ date: 2020/08/24 00:00:00
 tag:
   - Go
   - go-swagger
+  - 入門
 category:
   - Programming
 thumbnail: /images/20200824/thumbnail.png
