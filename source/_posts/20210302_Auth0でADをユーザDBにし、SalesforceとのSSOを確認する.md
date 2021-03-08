@@ -6,7 +6,7 @@ tag:
   - SSO
   - ActiveDirectory
 category:
-  - Infrastructure
+  - 認証認可
 thumbnail: /images/20210302/thumbnail.png
 author: 山田勇一
 featured: false
