@@ -6,6 +6,7 @@ tags:
   - Go
   - Monitoring
   - GCP連載
+  - CloudOperations
 category:
   - Infrastructure
 author: "真野隼記"
