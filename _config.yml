@@ -96,7 +96,7 @@ math:
       }
     }
   katex:
-    css: custom_css_source
-    js: custom_js_source # not used
+#    css: custom_css_source
+#    js: custom_js_source # not used
     config:
       # KaTeX config
