@@ -8,7 +8,7 @@ tags:
   - Lambda
 category:
   - Programming
-author: "真野隼記"
+author: 真野隼記
 featured: false
 lede: "サーバレス連載の第2弾はLambdaアプリをGoで開発する中で調べた内容や、Tipsを紹介します。"
 ---

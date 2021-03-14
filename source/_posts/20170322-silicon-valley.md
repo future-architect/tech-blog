@@ -5,7 +5,7 @@ tags:
   - Conference
 category:
   - Culture
-author: "前原応光"
+author: 前原応光
 featured: false
 lede: "前回の記事に続いて、シリコンバレーのIT企業についての現地レポートをお届けします！"
 ---

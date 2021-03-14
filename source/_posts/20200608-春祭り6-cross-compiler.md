@@ -6,7 +6,7 @@ tags:
 category:
   - Programming
 thumbnail: /images/20200608/thumbnail.png
-author: "栗田真"
+author: 栗田真
 featured: false
 lede: "TIG/DXチームの栗田です。もともと宇宙物理を専攻しており、前職では製鉄メーカーでプラントエンジニアをしていました。
 最近ではもっぱら工場IoT案件で制御系システムとクラウドをつなぐようなことをしていますが、その前は組み込みマイコンで制御系開発をしていました（人工衛星時代の話）"

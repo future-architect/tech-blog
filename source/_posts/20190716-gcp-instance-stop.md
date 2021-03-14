@@ -5,7 +5,7 @@ tags:
   - Kubernetes
 category:
   - Infrastructure
-author: "真野隼記"
+author: 真野隼記
 featured: false
 lede: "GCPのインスタンス（GCE, SQL, GKE）を自動で停止させるGoで書かれたツールをGitHubに公開しました。"
 ---

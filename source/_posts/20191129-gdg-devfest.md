@@ -5,7 +5,7 @@ tags:
   - 登壇資料
 category:
   - Infrastructure
-author: "伊藤太斉"
+author: 伊藤太斉
 featured: false
 lede: "普段はGCPの開発支援を行なっているインフラエンジニアです。今回は私の地元である長野で開催された GDG Devfest 信州 に参加しました。今回でこちらの勉強会の参加は2回目になるのですが、登壇する機会をいただいたのでその時のことを書いていきます。"
 ---

@@ -8,7 +8,7 @@ tags:
 category:
   - Management
 thumbnail: /images/20160928/thumbnail_20160928.jpg
-author: "近藤雅章"
+author: 近藤雅章
 featured: true
 lede: "Redmineにはデータの可視化機能が標準で搭載されていないという課題があります。そこで、Kibana＋Timelionを使ってRedmineデータをグラフ表示する方法を紹介します"
 ---

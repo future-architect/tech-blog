@@ -6,7 +6,7 @@ tags:
   - DB移行
 category:
   - DB
-author: "岸田聡"
+author: 岸田聡
 featured: false
 lede: "エンタープライズ領域においてマイグレーション例が多いOracleからPostgreSQLについて、考慮すべき事項について2回にわたり紹介します"
 ---

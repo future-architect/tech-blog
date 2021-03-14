@@ -5,7 +5,7 @@ tags:
   - コーディング規約
 category:
   - Programming
-author: "王紹宇"
+author: 王紹宇
 featured: true
 lede: "若手中心の開発チームで1~2年ほど過ごしました。その時の経験を通して、こうすればもっとソースコードが綺麗になると感じたことを3点まとめます。"
 ---

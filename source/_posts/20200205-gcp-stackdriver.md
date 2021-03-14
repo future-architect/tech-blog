@@ -9,7 +9,7 @@ tags:
   - CloudOperations
 category:
   - Infrastructure
-author: "真野隼記"
+author: 真野隼記
 featured: true
 lede: "GCPをテーマにした連載企画を始めるということで、初回はStackdriver Loggingの活用方法をまとめます。
 

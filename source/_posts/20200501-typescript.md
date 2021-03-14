@@ -8,7 +8,7 @@ tags:
 category:
   - Programming
 thumbnail: /images/20200501/thumbnail.png
-author: "澁川喜規"
+author: 澁川喜規
 featured: true
 lede: "フロントエンド記事集中投稿ウィークの3本目です。"
 ---

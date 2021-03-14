@@ -5,7 +5,7 @@ tags:
 category:
   - VR
 thumbnail: /images/20160512/thumbnail_20160512.jpg
-author: "真野隼記"
+author: 真野隼記
 featured: false
 lede: "Space Apps Challenge 2016 のPeople's Choiceの投票方法をまとめました"
 ---

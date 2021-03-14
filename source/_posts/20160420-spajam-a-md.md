@@ -7,7 +7,7 @@ tags:
 category:
   - IoT
 thumbnail: /images/20160420/thumbnail_20160420.jpg
-author: "清田侑"
+author: 清田侑
 featured: false
 lede: "こんにちは。FutureArchitectの清田です。
 先日、弊社デザインワークスチームにて、2度目のハッカソン挑戦となるSPAJAM2016に参加しました。

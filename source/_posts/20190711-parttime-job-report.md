@@ -6,7 +6,7 @@ tags:
   - Terraform
 category:
   - Culture
-author: "棚井龍之介"
+author: 棚井龍之介
 featured: false
 lede: "アルバイトの視点から見た「Future ってこんな会社なんだ」について紹介いたします。"
 ---
