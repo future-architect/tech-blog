@@ -5,7 +5,7 @@ tags:
 category:
   - Culture
 thumbnail: /images/20200606/thumbnail.png
-author: "真野隼記"
+author: 真野隼記
 featured: false
 lede: "フューチャーのサマーインターン🌞Summer Camp🏄が6月より募集を開始しました。夏季インターンを「Summer Camp」と称して提供しており、現在2つのコースがあります。それぞれに良いところがありますが、せっかく技術ブログで紹介するので Engineer Camp について細かく説明します。"
 ---

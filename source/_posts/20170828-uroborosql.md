@@ -7,7 +7,7 @@ tags:
   - SpringBoot
 category: Programming
 thumbnail: /images/20170828/thumbnail_20170828.jpg
-author: "星賢一"
+author: 星賢一
 featured: true
 
 lede: "弊社発のOSSプロダクト「uroboroSQL」をSpring Boot上で動かすサンプルアプリケーションを作ってみました。"

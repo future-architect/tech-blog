@@ -5,7 +5,7 @@ tags:
   - Session-Manager
 category:
   - Infrastructure
-author: "村瀬善則"
+author: 村瀬善則
 featured: false
 lede: "世の中コンテナ化の流れでEC2インスタンスを直接利用する機会が減ってきていますが、まだまだサーバにSSH接続する機会もあるかと思います。今回はSSH相当の処理をよりセキュアに行えるSession Managerについて調査・検証してみました。"
 ---

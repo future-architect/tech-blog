@@ -6,7 +6,7 @@ tags:
   - Terraform
 category:
   - Infrastructure
-author: "齋場俊太朗"
+author: 齋場俊太朗
 featured: true
 lede: "Terraform Validatorを使って、組織のセキュリティポリシーの自動チェックを継続的に行う方法を紹介します。併せて、ポリシーをコードとして管理する方法も紹介します。Policy as code です。もちろんセキュリティポリシーのみだけではなく、命名規則やリージョン制限なども扱えます。"
 ---

@@ -7,7 +7,7 @@ tags:
 category:
   - Programming
 thumbnail: /images/20200427/thumbnail.jpeg
-author: "澁川喜規"
+author: 澁川喜規
 featured: false
 lede: "Goならわかるシステムプログラミングが増刷されました。増刷される場合にはたいてい誤字が修正されたりするんですが、今回12ページほど増量しております。前回の3刷でも16ページ増えたので、初版と比べると28ページ増です。写真は1刷〜4刷の比較です。"
 ---

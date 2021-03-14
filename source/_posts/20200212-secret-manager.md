@@ -7,7 +7,7 @@ tags:
   - Go
 category:
   - Infrastructure
-author: "市川諒"
+author: 市川諒
 featured: true
 lede: "突然ですが、普段生活するうえでカギ🔑をなくした、忘れたことはないでしょうか。私はあります。なくしたことはないけど、うっかり置き忘れちゃうんですよね。
 

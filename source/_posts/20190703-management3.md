@@ -6,7 +6,7 @@ tags:
 category:
   - Management
 thumbnail: /images/20190703/photo_20190703_01.jpeg
-author: "近藤雅章"
+author: 近藤雅章
 featured: false
 lede: "OSSのBIツールであるMetabaseを利用して、Redmineのデータをグラフ表示する方法を紹介します"
 ---

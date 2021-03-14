@@ -5,7 +5,7 @@ tags:
   - GCP連載
 category:
   - Infrastructure
-author: "前原応光"
+author: 前原応光
 featured: true
 lede: "普段は、Terraform を使っているのですが、ふとCloud Deployment Manager を使ったことないことに気づきました。そこで、Cloud Deployment Manager について紹介したいと思います。"
 ---

@@ -6,7 +6,7 @@ tags:
 category:
   - Culture
 thumbnail: /images/20180301/thumbnail_20180301.jpeg
-author: "貞光九月"
+author: 貞光九月
 featured: true
 lede: "Future AI EXPO 開催！"
 ---

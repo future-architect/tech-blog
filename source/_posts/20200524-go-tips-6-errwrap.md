@@ -6,7 +6,7 @@ tags:
 category:
   - Programming
 thumbnail: /images/20200523/thumbnail.png
-author: "真野隼記"
+author: 真野隼記
 featured: false
 lede: "フューチャー社内には「Go相談室」というチャットルームがあり、そこでGoに関連する疑問を投げたら、大体1日くらいで強い人が解決してくれるという神対応が行われています。そこでAWSやGCPの独自エラーをError warppingされた時にどうやってハンドリングすればよいの？と聞いた時にやり取りした内容をまとめました。"
 ---

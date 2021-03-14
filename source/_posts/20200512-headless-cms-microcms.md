@@ -8,7 +8,7 @@ tags:
 category:
   - Programming
 thumbnail: /images/20200512/thumbnail.png
-author: "三村遼"
+author: 三村遼
 featured: true
 lede: "TIG DXチーム　アルバイターの三村です．今回はHeadlessCMSを利用したタスクをやることになりました．私自身HeadlessCMSどころかCMSを聞いたことすら無かったので，初めてCMS使ってみるにあたって感じたことを共有出来たらと思い本記事を作成させていただいております．"
 ---

@@ -7,7 +7,7 @@ tags:
   - 書籍
 category:
   - Programming
-author: "澁川喜規"
+author: 澁川喜規
 featured: true
 lede: "2019年頭より少しずつ書いていたTypeScriptの教育コンテンツを[クリエイティブ・コモンズ4.0の表示 - 継承 （CC BY-SA 4.0）]で公開します。といっても完成版ではなく、アーリーアクセス版のような品質であることをご了承ください。"
 ---

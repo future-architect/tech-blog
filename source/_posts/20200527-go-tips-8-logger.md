@@ -6,7 +6,7 @@ tags:
 category:
   - Programming
 thumbnail: /images/20200527/thumbnail.png
-author: "澁川喜規"
+author: 澁川喜規
 featured: false
 lede: "Go tipsということで、シンプルネタを投稿します。
 

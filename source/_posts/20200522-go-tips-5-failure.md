@@ -6,7 +6,7 @@ tags:
 category:
   - Programming
 thumbnail: /images/20200522/thumbnail.png
-author: "多賀聡一朗"
+author: 多賀聡一朗
 featured: false
 lede: "今回は、errors package を一部利用して、エラーコードベースのエラーハンドリング処理を実装しました。また、morikuni/failure を利用した実装への書き換えも試してみています。"
 ---

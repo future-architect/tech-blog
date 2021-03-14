@@ -7,7 +7,7 @@ tags:
   - Algorithm
 category:
   - DB
-author: "杉江伸祐"
+author: 杉江伸祐
 featured: true
 lede: "重要なアルゴリズムであるにもかかわらず、まとまった情報が少ないSQL実行時のブルームフィルタ(Bloom Filter)アルゴリズムについて紹介します。"
 ---

@@ -10,7 +10,7 @@ tags:
 category:
   - Infrastructure
 thumbnail: /images/20200526/thumbnail.png
-author: "本田直樹"
+author: 本田直樹
 featured: false
 lede: "今回は、アルバイト業務でシステム開発するにあたり、ProxyやDNSなどのネットワーク周りで一か月強も溶かしてしまったので、その過程で学んだトラブルとの向き合い方についてまとめます。"
 ---

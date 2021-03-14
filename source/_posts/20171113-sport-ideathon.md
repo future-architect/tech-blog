@@ -6,7 +6,7 @@ tags:
 category:
   - VR
 thumbnail: /images/20171113/thumbnail_20171113.png
-author: "姜恵林"
+author: 姜恵林
 featured: false
 lede: "最新テクノロジーでスポーツアイデアソンをやって中高生に教わった大事なこと
 スポーツアイデアソン2017～ティーンが最新テクノロジーと出会ったら～"
