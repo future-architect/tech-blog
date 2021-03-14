@@ -1,4 +1,4 @@
-title: データベースマイグレーション ～OracleからPostgreSQLへ～　－第２回ー
+title: データベースマイグレーション ～OracleからPostgreSQLへ～　−第２回ー
 date: 2018/08/09 15:00:36
 tags:
   - PostgreSQL
