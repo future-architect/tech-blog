@@ -1,7 +1,8 @@
 title: "Text-to-Speechを試してみる"
 date: 2021/03/12 00:00:00
 tag:
-  - gcp
+  - GCP
+  - GCP連載
   - TextToSpeech
 category:
   - Infrastructure
@@ -185,3 +186,5 @@ certutil -decode base64.txt future.mp3
 公式によるユースケースは[こちら](https://cloud.google.com/text-to-speech?hl=ja#section-6)を参照
 
 今回作成したプロジェクトを削除して終わりです。
+
+明日は前原さんの[Cloud Build を知ってみよう](/articles/20210315/)です。

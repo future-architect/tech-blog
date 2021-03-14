@@ -3,6 +3,10 @@ date: 2021/01/28 00:00:00
 tag:
   - AWS
   - 登壇資料
+  - 勉強会
+  - 開催レポート
+  - 登壇レポート
+  - TechNight
 category:
   - Culture
 thumbnail: /images/20210128/thumbnail.png
@@ -18,11 +22,12 @@ lede: "2020/8/17にオンラインにてFuture Tech Nightという社外勉強�
 
 今回は第3弾としてAWS＆DataPlatform を活用した、船舶IoTプロジェクトの事例を紹介しました。
 
-- [Future Tech Night #1 ~メディア業界変革編～](https://future.connpass.com/event/177093/)
-- [Future Tech Night #2 ～MaaS ビジネス編～](https://future.connpass.com/event/179387/)
-- [Future Tech Night #3 ～船舶IoT Platform編～                               ](https://future.connpass.com/event/185051/)← 今回はここ
-- [Future Tech Night #4 〜Go x AWS スマート工場編〜](https://future.connpass.com/event/188742/)
-- [Future Tech Night #5 〜AWS＆DataPlatform MaaSビジネス編〜](https://future.connpass.com/event/195568/)
+1. [ ~メディア業界変革編～](https://future.connpass.com/event/177093/)
+2. [ ～MaaS ビジネス編～](https://future.connpass.com/event/179387/)
+3. [ ～船舶IoT Platform編～](https://future.connpass.com/event/185051/)← 今回はここ
+4. [ 〜Go x AWS スマート工場編〜](https://future.connpass.com/event/188742/)
+5. [ 〜AWS＆DataPlatform MaaSビジネス編〜](https://future.connpass.com/event/195568/)
+6. [GCP x インフラ構築編](https://future.connpass.com/event/201478/)
 
 ![](/images/20210128/ブログ＿図1.png)
 
