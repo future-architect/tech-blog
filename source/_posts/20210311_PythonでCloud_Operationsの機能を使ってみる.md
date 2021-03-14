@@ -204,5 +204,5 @@ CPU時間のグラフはこんな感じです。きっとプログラムがヘ�
 
 StackdriverあらためCloud OperationsのDebuggerとProfilerを試してみました。Goサポートがまだだったり、Cloud Run対応がまだだったりとかはありますが、OpenCensus/OpenTelemetryなみに頑張らなくてもちょっとmainのところにコードを足すだけで本番環境の中身を覗いたりプロファイルが取れるのは面白いですね。そのうち、ローカルのデバッグよりもリモートの方が簡単、みたいになってくれそうな気がしました。
 
-明日は村瀬さんのText To Speechです。
+明日は村瀬さんの[Text To Speech](/articles/20210312/)です。
 

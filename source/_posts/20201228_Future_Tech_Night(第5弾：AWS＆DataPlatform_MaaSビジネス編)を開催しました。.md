@@ -3,6 +3,10 @@ date: 2020/12/28 00:00:00
 tag:
   - AWS
   - データレイク
+  - 勉強会
+  - 登壇レポート
+  - 開催レポート
+  - TechNight
 category:
   - Programming
 thumbnail: /images/20201228/thumbnail.png
@@ -51,7 +55,7 @@ lede: "こんにちは、TIGの山田、町田、多賀です。先日2020/11/25
 
 発表時は Firehose の GAがまだだったためと回答いたしましたが、 GA が 2017/08/25 であることから誤りでした。 採用理由ですが、配置先の S3 Bucket と prefix を柔軟に切り替えたかったためが正でした。
 
-### Q. Glueは、CloudWatchなどで定期実行でしょうか？ 
+### Q. Glueは、CloudWatchなどで定期実行でしょうか？
 
 いえ、Airflow を利用して定期実行しております。
 

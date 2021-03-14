@@ -5,6 +5,9 @@ tag:
   - Go
   - AWS
   - 勉強会
+  - TechNight
+  - 開催レポート
+  - TechNight
 category:
   - Programming
 thumbnail: /images/20200925/thumbnail.png
