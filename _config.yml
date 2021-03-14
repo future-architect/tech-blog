@@ -80,7 +80,7 @@ feed:
   hub:
 
 math:
-  engine: 'mathjax' # or 'katex'
+  engine: 'mathjax'
   mathjax:
     src: "//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
     config: {
@@ -95,8 +95,11 @@ math:
         }
       }
     }
-  katex:
-#    css: custom_css_source
-#    js: custom_js_source # not used
-    config:
-      # KaTeX config
+    options:
+      conversion:
+        em: 14
+      tex:
+        tags: 'ams'
+      svg:
+        exFactor: 0.03
+
