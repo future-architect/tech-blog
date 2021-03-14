@@ -24,7 +24,7 @@ lede: "エンタープライズ領域においてマイグレーション例が�
 
 OSSデータベースで広く採用されているのはPostgreSQLとMySQLがあります。今回は、エンタープライズ領域においてマイグレーション例が多いOracleからPostgreSQLについて、考慮すべき事項について2回にわたり紹介していきます。
 
-* [データベースマイグレーション ～OracleからPostgreSQLへ～　－第２回ー
+* [データベースマイグレーション ～OracleからPostgreSQLへ～　−第２回ー
 ](https://future-architect.github.io/articles/20180809/) もぜひ参考ください
 
 ## 2. マイグレーションの流れ
@@ -365,5 +365,5 @@ AWS DMSの詳細は[こちら](https://aws.amazon.com/jp/dms/)を参照してく
 
 次回は、一般的に利用されているマイグレーションツールと、実際のアプリケーションにてマイグレーションの評価をおこなった例ついて記載していきたいと思います。
 
-* [データベースマイグレーション ～OracleからPostgreSQLへ～　－第２回ー
+* [データベースマイグレーション ～OracleからPostgreSQLへ～　−第２回ー
 ](https://future-architect.github.io/articles/20180809/) もぜひ参考ください
