@@ -10,6 +10,7 @@
     "hexo-footnotes": "^1.0.2",
     "hexo-fs": "^3.1.0",
     "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-author": "^0.0.5",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^2.0.0",
