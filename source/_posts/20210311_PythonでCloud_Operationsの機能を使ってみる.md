@@ -7,6 +7,7 @@ tag:
   - Monitoring
   - CloudOperations
   - GCP連載
+  - CloudRun
 category:
   - Programming
 thumbnail: /images/20210311/thumbnail.png
