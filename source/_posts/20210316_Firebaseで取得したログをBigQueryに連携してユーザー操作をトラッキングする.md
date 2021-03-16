@@ -264,5 +264,5 @@ FirebaseとBigQueryの合わせ技で、モバイルアプリのユーザー操�
 最終的に[DataStudio](https://datastudio.google.com/overview)など連携させればGUIで綺麗に表示させることができそうです。
 複数のサービスを組み合わせれば痒いところにも手が届く、それがGCPの魅力のひとつかもしれません。
 
-明日はTechBlogの編集もされている伊藤さんのDataprocです。
+明日はTechBlogの編集もされている伊藤さんの[Google Cloud BuildpacksとCloud Runで簡単コンテナアプリ開発](/articles/20210317/)です。
 

@@ -6,6 +6,7 @@ tag:
   - Docker
   - Python
   - CloudNative
+  - コンテナデプロイ
 category:
   - Infrastructure
 thumbnail: /images/20201002/thumbnail.png
@@ -220,7 +221,7 @@ build-image = "distroless:python-builder"
 ```bash
 $ pack create-builder python:distroless --config ./builder.toml
 Downloading from https://github.com/buildpacks/lifecycle/releases/download/v0.9.1/lifecycle-v0.9.1+linux.x86-64.tgz
-5.2 MB/5.2 MB 
+5.2 MB/5.2 MB
 Successfully created builder image python:distroless
 Tip: Run pack build <image-name> --builder python:distroless to use this builder
 ```
@@ -493,7 +494,7 @@ Successfully built image webapp
 きちんと実行もできました。めでたしめでたし。
 
 ```bash
-$ docker run --rm -it -p "8000:8000" webapp                                     
+$ docker run --rm -it -p "8000:8000" webapp
 INFO:     Started server process [1]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.

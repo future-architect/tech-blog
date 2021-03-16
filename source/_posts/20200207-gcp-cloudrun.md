@@ -5,6 +5,7 @@ tags:
   - GCP
   - Serverless
   - GCP連載
+  - CloudRun
 category:
   - Programming
 author: 澁川喜規
