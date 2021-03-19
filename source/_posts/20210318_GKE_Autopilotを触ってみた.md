@@ -1,7 +1,7 @@
 title: "GKE Autopilotを触ってみた"
 date: 2021/03/18 00:00:00
 tag:
-  - kubernetes
+  - Kubernetes
   - GKE
   - GCP
   - GCP連載
@@ -327,5 +327,8 @@ kubectl delete -f service.yaml
 シンプルに、ワーカーノードのことを一切考えなくて良くなるのは魅力です。
 インフラの最適化を自動でやってくれるので、リソースとしてのノードの過不足を気にせずにマニフェストに集中できるので、ワーカーノードの運用の難しさやそれに伴う導入障壁を感じているのであれば、恩恵を受けられると思います。
 
-さて、明日は村田さんのAnthosです。お楽しみに！
+さて、明日は越島さんの[Anthosの話についていくための最低限の知識をまとめてみた](/articles/20210319/)です。お楽しみに！
 
+# 関連記事
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20191025/index.html" data-iframely-url="//cdn.iframe.ly/GSevbOV?iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
