@@ -27,7 +27,7 @@
 
   <%
   var options = {twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id};
-  if (page.path == 'index.html'){ 
+  if (page.path == 'index.html'){
     options['image'] = 'metronic/assets/corporate/img/site_logo.png';
   }
   if (page.eyecatch != "") {
@@ -46,15 +46,12 @@
   <meta content="<% if (title){ %><%= title %>,<%= config.title %>,<% } %>フューチャーアーキテクト,Future Architect,フューチャー技術ブログ" name="keywords">
   <meta content="Future Architect Consultant" name="author">
 
-  <!-- Global styles START -->
-  <%- css('metronic/assets/plugins/font-awesome/css/font-awesome.min.css') %>
-  <%- css('metronic/assets/plugins/bootstrap/css/bootstrap.min.css') %>
-  <!-- Global styles END -->
-
-  <!-- Theme styles START -->
-  <%- css('metronic/assets/corporate/css/style.css') %>
-  <%- css('metronic/assets/corporate/css/style-responsive.css') %>
-  <%- css('metronic/assets/corporate/css/themes/' + theme.color_scheme + '.css') %>
-  <%- css('css/theme-styles.css') %>
-  <!-- Theme styles END -->
+  <!-- Styles START -->
+  <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/style.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/style-responsive.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/themes/custom.css">
+  <link rel="stylesheet" href="/css/theme-styles.css">
+  <!-- Styles END -->
 </head>
