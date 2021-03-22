@@ -4,6 +4,8 @@ tag:
   - AWS
   - CloudEndure
   - 移行ツール
+  - クラウドマイグレーション
+  - クラウドリフト
 category:
   - Infrastructure
 thumbnail: /images/20201120/thumbnail.png
@@ -108,7 +110,7 @@ Python 2.7.5
 
 ### ブートローダーの確認
 ```bash 実行結果
-[root@cloudendure-source ~]# ll /boot/grub2/grub.cfg 
+[root@cloudendure-source ~]# ll /boot/grub2/grub.cfg
 -rw-r--r--. 1 root root 5323 Oct 13 05:43 /boot/grub2/grub.cfg
 ```
 
@@ -180,7 +182,7 @@ Connecting to console.cloudendure.com (console.cloudendure.com)|52.72.172.158|:4
 HTTP request sent, awaiting response... 200 OK
 Length: 7659 (7.5K) [application/octet-stream]
 Saving to: ‘./installer_linux.py’
-100%[=========================================================================>] 7,659       --.-K/s   in 0s      
+100%[=========================================================================>] 7,659       --.-K/s   in 0s
 2020-11-05 14:20:05 (1.17 GB/s) - ‘./installer_linux.py’ saved [7659/7659]
 ```
 実行時のログにもありますが、「console.cloudendure.com」を名前解決して、
@@ -401,7 +403,7 @@ SSHでログインできたので、WordPress接続に向けた設定修正を�
 
 ```bash 実行結果
 [root@ip-192-168-2-77 ~]# mysql -u wordpress -p
-Enter password: 
+Enter password:
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
 Your MariaDB connection id is 20
 Server version: 5.5.65-MariaDB MariaDB Server
