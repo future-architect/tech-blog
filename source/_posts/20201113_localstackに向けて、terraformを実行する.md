@@ -6,6 +6,7 @@ tag:
   - Terraform
   - Docker
   - Go
+  - DockerCompose
 category:
   - Infrastructure
 thumbnail: /images/20201113/thumbnail.png
@@ -137,12 +138,12 @@ $ docker-compose -f docker-compose.yml up -d localstack
 Creating localstack_main ... done
 
 $ docker-compose ps
-     Name               Command          State                                                        Ports                                                     
+     Name               Command          State                                                        Ports
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-localstack_main   docker-entrypoint.sh   Up      127.0.0.1:4566->4566/tcp, 4567/tcp, 4568/tcp, 4569/tcp, 4570/tcp, 4571/tcp, 4572/tcp, 4573/tcp, 4574/tcp,      
-                                                 4575/tcp, 4576/tcp, 4577/tcp, 4578/tcp, 4579/tcp, 4580/tcp, 4581/tcp, 4582/tcp, 4583/tcp, 4584/tcp, 4585/tcp,  
-                                                 4586/tcp, 4587/tcp, 4588/tcp, 4589/tcp, 4590/tcp, 4591/tcp, 4592/tcp, 4593/tcp, 4594/tcp, 4595/tcp, 4596/tcp,  
-                                                 4597/tcp, 8080/tcp  
+localstack_main   docker-entrypoint.sh   Up      127.0.0.1:4566->4566/tcp, 4567/tcp, 4568/tcp, 4569/tcp, 4570/tcp, 4571/tcp, 4572/tcp, 4573/tcp, 4574/tcp,
+                                                 4575/tcp, 4576/tcp, 4577/tcp, 4578/tcp, 4579/tcp, 4580/tcp, 4581/tcp, 4582/tcp, 4583/tcp, 4584/tcp, 4585/tcp,
+                                                 4586/tcp, 4587/tcp, 4588/tcp, 4589/tcp, 4590/tcp, 4591/tcp, 4592/tcp, 4593/tcp, 4594/tcp, 4595/tcp, 4596/tcp,
+                                                 4597/tcp, 8080/tcp
 ```
 
 ## 3. Terraformファイルを編集
@@ -193,7 +194,7 @@ providerは `aws` ですが、以下4つの引数をtrueに設定することで
 
 providerがawsの場合、各awsサービスのendpointsをカスタマイズ可能です。endpointsの向き先を調整することにより、ローカル完結のterraform環境が実現可能という訳です。
 
-localstackは [2020-09-15リリース](https://github.com/localstack/localstack#announcements) から 
+localstackは [2020-09-15リリース](https://github.com/localstack/localstack#announcements) から
 > all services are now exposed via the edge service (port 4566) only
 
 なので、endpointsのURLは全て `http://localhost:4566` になります。

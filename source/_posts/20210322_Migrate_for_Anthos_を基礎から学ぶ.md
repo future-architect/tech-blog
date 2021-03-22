@@ -289,5 +289,5 @@ $ kubectl apply -f deployment_spec.yaml
 
 この記事が Migrate for Anthos に初めて触れる方のガイドラインになれば幸いです。
 
-明日はついにGCP連載2021のラスト、齋場さんによる Spanner 記事です。お楽しみに！
+明日はついにGCP連載2021のラスト、齋場さんによる [Cloud Spannerのローカル開発環境をdocker-composeでサクッと立ち上げる](/articles/20210323/) 記事です。お楽しみに！
 

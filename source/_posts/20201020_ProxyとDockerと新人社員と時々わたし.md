@@ -5,6 +5,7 @@ tag:
   - Firewall
   - Docker
   - NW
+  - DockerCompose
 category:
   - Infrastructure
 thumbnail: /images/20201020/thumbnail.png
@@ -165,7 +166,7 @@ Windows10の場合、「Windowsの設定」>「ネットワークとインター
 ## ちなみに、setxを使う場合、あいだの「=」が不要になります
 ## 新人さんは最初迷うかもしれませんが、setを使っている限りにおいてはコマンドプロンプトを起動しなおせば何度でも試せます
 ## 理解できたところでsetxで永続的な設定にしましょう
-## 
+##
 ## なお、コマンドプロンプトの場合、一度設定した変数は%で挟むことで再利用できます。
 set http_proxy=http://proxy.example.com:8000
 set https_proxy=%http_proxy%
@@ -324,7 +325,7 @@ dockerはイメージをファイルに出力して共有することができ�
 # 今回はlocalstack/localstack:0.11.5をサンプルとして、最初にdocker pullします
 docker pull localstack/localstack:0.11.5
 # > 0.11.5: Pulling from localstack/localstack
-# > bdcbb82ec212: Pull complete 
+# > bdcbb82ec212: Pull complete
 # > Digest: sha256:2740b5509173e0efbd509bdd949217f42c97e1ab1f5b354430fdf659c2b9a152
 # > Status: Downloaded newer image for localstack/localstack:0.11.5
 # > docker.io/localstack/localstack:0.11.5
@@ -339,15 +340,15 @@ ls
 # > localstack.0.11.5.tar
 
 # このあとにファイルからdocker imageを取り込みますが、そのために一度imageを削除します
-docker rmi e0eb37bb47b8                                          
+docker rmi e0eb37bb47b8
 # > Untagged: localstack/localstack:0.11.5
 # > Deleted: sha256:e0eb37bb47b8526e2cbd860e643e8b47656d529c0168b8f43fff0eb5f7a577b6
 # > Deleted: sha256:18944735543f1604652717378abb7dd986534d7de46017fb87d928db521313cf
-docker images                                                    
+docker images
 # > REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 
 # loadを使ってimageを取り込みます
-docker load -i localstack.0.11.5.tar                             
+docker load -i localstack.0.11.5.tar
 # > 18944735543f: Loading layer [==================================================>]  722.3MB/722.3MB
 # > Loaded image: localstack/localstack:0.11.5
 # > docker images
