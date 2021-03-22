@@ -1,14 +1,16 @@
 <div class="container">
   <ul class="breadcrumb">
     <li><a href="/">Home</a></li>
-    <li><a href="/articles">Blog</a></li>
+    <li><a href="/authors">authors</a></li>
     <li class="active"><%- page.author %></li>
   </ul>
 <section id="main">
  <h3><%- page.author %>が執筆した記事</h3>
  <%- partial('_partial/archive', {pagination: config.author, index: true}) %>
- <div class="blog-tags">
+
+ <h3>執筆者一覧</h3>
+ <div class="blog-info"">
  <%- list_authors() %>
- <</div>
+ </div>
 </section>
 </div>
