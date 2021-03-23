@@ -4,6 +4,8 @@ tag:
   - AWS
   - 移行ツール
   - CloudEndure
+  - クラウドマイグレーション
+  - クラウドリフト
 category:
   - Infrastructure
 thumbnail: /images/20201021/thumbnail.png
@@ -261,7 +263,7 @@ AWSやオンプレミス環境、その他クラウド環境にあるサーバ�
 
 チェックボックスをオンにした場合、移行元のサーバー台数ごとにレプリケーションサーバーが起動することになるため、コスト超過など注意が必要です。
 
-##### Choose the default disk type to be used by the Replication Servers (SSD disks are faster; HDD disks cost less 
+##### Choose the default disk type to be used by the Replication Servers (SSD disks are faster; HDD disks cost less
 レプリケーションサーバーのディスクタイプを選設定します。
 移行元サーバーにマウントされているディスクのサイズによって、ディスクタイプが自動で選択されます。
 ![](/images/20201021/StagingDiskType.png)
