@@ -2,10 +2,11 @@ title: "Elixir Conf Japan 2017 参加レポート"
 date: 2017/04/14 12:00:00
 tags:
   - Elixir
+  - 参加レポート
 category:
   - Programming
 thumbnail: /images/20170412/thumbnail_20170412.png
-author: 前川 喜洋
+author: 前川喜洋
 featured: false
 lede: "Elixir Conf Japan 2017 参加レポート"
 ---
@@ -46,7 +47,7 @@ Elixirのコミュニティの活動としては、 [Sapporo.beam](http://sappor
  * 日本語でテストが書ける
  * ~~Emojiでソースが書ける~~
 ```elixir
-from 🍺 in 🍻, 
+from 🍺 in 🍻,
     order_by: 🍺.💰,
     join: 🍗 in assoc(🎉, :🍴)
     |> Repo.all
@@ -171,7 +172,7 @@ nine nines(99.9999999%)のSLAを実現できると知って以来Erlang/OTPに�
 * Elixir client from OpenAPI(Swagger) definition
  * by niku_nameさん
  * SwaggerでElixirクライアントソースを生成
-* AngulaとElixirの新しい関係 
+* AngulaとElixirの新しい関係
  * by isyumi_netさん
  * [[スライド](https://www.slideshare.net/ssuserd34c39/angulaelixir)]
  * サーバとクライアントの2階建てMVC辛い。FluxのView部分だけAngularで書いて、後は全部Elixir/Phoenixで提供して1階建てMVCにするという夢のような悪夢のような試み。この方式、個人的に将来性がとても気になります
