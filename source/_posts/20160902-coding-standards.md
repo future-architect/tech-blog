@@ -3,6 +3,7 @@ date: 2016/09/02 13:00:00
 tags:
   - Java
   - コーディング規約
+  - エンタープライズ
 category:
   - Programming
 thumbnail: /images/20160902/thumbnail_20160902.png
