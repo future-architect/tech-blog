@@ -5,6 +5,7 @@ tag:
   - CMS
   - AWS
   - 基幹システム
+  - エンタープライズ
 category:
   - Culture
 thumbnail: /images/20200914/thumbnail.jpg

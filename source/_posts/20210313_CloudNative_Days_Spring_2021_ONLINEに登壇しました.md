@@ -9,7 +9,7 @@ category:
   - Infrastructure
 thumbnail: /images/20210313/thumbnail.png
 author: 伊藤太斉
-featured: true
+featured: false
 lede: "こんにちは。TIGの伊藤太斉です。今回は先日開催されました、CloudNative Days Spring 2021 ONLINEに登壇しましたので、その内容について書いていきます。はじめにイベントの概要について簡単に説明します。"
 ---
 こんにちは。TIGの伊藤太斉です。
@@ -83,11 +83,11 @@ resource "aws_instance" "mail-instance" {
 
 ```go
 package test
-                              
+
 lint[msg] {
     resource := input.resource_changes[index]
     resource.type == "aws_instance"
-    
+
     result := count(split(resource.name, "-")) == 1
     msg := sprintf("Test result of %v.%v is %v", [resource.type, resource.name, result])
 }

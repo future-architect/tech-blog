@@ -9,7 +9,7 @@ category:
   - Programming
 thumbnail: /images/20210318/thumbnail.jpg
 author: 関靖秀
-featured: true
+featured: false
 lede: "テーマは、2021年2月24日に公開されたGKE Autopilotです。この記事は、Kubernetesに触ったことがない方でもわかるように、最も簡単な構成で試してみました。Kubernetesを触ったことがない方にもみていただけるとありがたく思います。"
 ---
 # はじめに

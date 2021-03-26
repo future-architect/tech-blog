@@ -11,7 +11,7 @@ category:
   - Programming
 thumbnail: /images/20210317/thumbnail.png
 author: 伊藤太斉
-featured: true
+featured: false
 lede: "みなさん、コンテナを利用してアプリケーション開発していますか？最近は新規開発になると大体アーキテクチャを検討する段階で「アプリケーションをコンテナ化するか」と話題になるのではないでしょうか？単純にコンテナをデプロイして利用するだけならまだしも、Kubernetesをベースとしてアプリケーションを動かすとなると..."
 ---
 こんにちは。TIGの[伊藤太斉](https://twitter.com/kaedemalu)です。

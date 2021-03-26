@@ -12,7 +12,7 @@ category:
   - Programming
 thumbnail: /images/20210311/thumbnail.png
 author: 澁川喜規
-featured: true
+featured: false
 lede: "DebuggerとProfilerを試してみます。本当は仕事で使っているGoでやってみようと思ったのですが、Debuggerのドキュメントをみたら、現時点でGoはまだ実験的サポートで..."
 ---
 
