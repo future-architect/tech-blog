@@ -1,6 +1,6 @@
 title: "フューチャーのインターンEngineer Campに参加した話"
 date: 2020/09/21 00:00:00
-tag:
+tags:
   - インターン
   - 採用
 category:

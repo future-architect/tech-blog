@@ -1,6 +1,6 @@
 title: "July Tech Festa 2021 winterで発表しました"
 date: 2021/01/25 00:00:00
-tag:
+tags:
   - AWS
   - Electron
   - 登壇資料

@@ -1,6 +1,6 @@
 title: "Goのデバッグ環境 on VSCode"
 date: 2020/11/17 00:00:00
-tag:
+tags:
   - Go
   - デバッグ
   - VSCode

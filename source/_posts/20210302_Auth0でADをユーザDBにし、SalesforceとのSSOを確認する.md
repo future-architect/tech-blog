@@ -1,6 +1,6 @@
 title: "Auth0でADをユーザDBにし、SalesforceとのSSOを確認する"
 date: 2021/03/02 00:00:00
-tag:
+tags:
   - Auth0
   - Salesforce
   - SSO

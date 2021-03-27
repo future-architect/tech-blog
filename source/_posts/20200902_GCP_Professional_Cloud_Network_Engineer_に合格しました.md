@@ -1,6 +1,6 @@
 title: "GCP Professional Cloud Network Engineer に合格しました"
 date: 2020/09/02 00:00:00
-tag:
+tags:
   - GCP
   - 合格記
   - Network

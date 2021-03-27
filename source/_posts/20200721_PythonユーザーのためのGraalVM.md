@@ -1,6 +1,6 @@
 title: PythonユーザーのためのGraalVM
 date: 2020/07/21 00:00:00
-tag:
+tags:
   - GraalVM
   - Python
   - Java

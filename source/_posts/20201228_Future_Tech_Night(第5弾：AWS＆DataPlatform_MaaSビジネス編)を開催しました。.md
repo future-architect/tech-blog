@@ -1,6 +1,6 @@
 title: "Future Tech Night(第5弾：AWS＆DataPlatform MaaSビジネス編)を開催しました。"
 date: 2020/12/28 00:00:00
-tag:
+tags:
   - AWS
   - データレイク
   - 勉強会

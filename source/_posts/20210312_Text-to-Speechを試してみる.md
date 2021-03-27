@@ -1,6 +1,6 @@
 title: "Text-to-Speechを試してみる"
 date: 2021/03/12 00:00:00
-tag:
+tags:
   - GCP
   - GCP連載
   - TextToSpeech

@@ -1,6 +1,6 @@
 title: "Firebaseで取得したログをBigQueryに連携してユーザー操作をトラッキングする"
 date: 2021/03/16 00:00:00
-tag:
+tags:
   - GCP
   - GCP連載
   - Java

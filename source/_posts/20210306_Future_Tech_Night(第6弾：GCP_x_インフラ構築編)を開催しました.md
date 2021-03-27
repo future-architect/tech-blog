@@ -1,6 +1,6 @@
 title: "Future Tech Night(第6弾：GCP x インフラ構築編)を開催しました"
 date: 2021/03/06 00:00:00
-tag:
+tags:
   - GCP
   - 勉強会
   - 登壇レポート

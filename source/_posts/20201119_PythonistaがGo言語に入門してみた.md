@@ -1,6 +1,6 @@
 title: "PythonistaがGo言語に入門してみた"
 date: 2020/11/19 00:00:00
-tag:
+tags:
   - Python
   - Go
   - 入門

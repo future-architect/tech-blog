@@ -1,6 +1,6 @@
 title: "Qiita Advent Calendar 2020 に参加します"
 date: 2020/11/25 00:00:00
-tag:
+tags:
   - Qiita
   - AdventCalendar
   - AdventCalendar2020

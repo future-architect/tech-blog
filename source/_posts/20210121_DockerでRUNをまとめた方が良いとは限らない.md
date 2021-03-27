@@ -1,6 +1,6 @@
 title: "DockerでRUNをまとめた方が良いとは限らない"
 date: 2021/01/21 00:00:00
-tag:
+tags:
   - Docker
 category:
   - Programming

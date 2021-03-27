@@ -1,6 +1,6 @@
 title: "CloudNative Days Spring 2021 ONLINEに登壇しました"
 date: 2021/03/13 00:00:00
-tag:
+tags:
   - 登壇資料
   - OpenPolicyAgent
   - CNCF
