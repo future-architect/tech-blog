@@ -1,11 +1,12 @@
 title: "uroboroSQL x Spring BootによるWebアプリケーション開発"
 date: 2017/08/28 12:00:00
-tags:
+tag:
   - uroboroSQL
   - Java
   - SQL
   - SpringBoot
-category: Programming
+category:
+  - Programming
 thumbnail: /images/20170828/thumbnail_20170828.jpg
 author: 星賢一
 featured: true
@@ -26,10 +27,10 @@ JavaでRDBにアクセスするアプリケーションを開発する場合、J
 uroboroSQLもこういったJavaにおけるDB永続化ライブラリの一つであり、ORマッピングの機能も持っていますが、基本的にはJavaからSQLを生成することよりも、SQLに足りないところをJavaで補うアプローチを採用しているのが特徴です。
 
 > uroboroSQLに興味を持たれた方は、公式サイトおよび私がオープンソースカンファレンス2017 Nagoyaにて、講演した資料をご覧ください。
-> 
+>
 > uroboroSQL公式サイト
 > https://future-architect.github.io/uroborosql-doc/
-> 
+>
 > uroboroSQLの紹介 (OSC2017 Nagoya) #oscnagoya
 > https://www.slideshare.net/KenichiHoshi1/uroborosql-osc2017-nagoya-oscnagoya
 

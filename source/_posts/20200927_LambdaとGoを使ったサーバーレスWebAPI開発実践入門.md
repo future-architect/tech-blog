@@ -430,7 +430,7 @@ consumes:
   - "application/json"
 produces:
   - "application/json"
-tags:
+tag:
   - name: user
     description: ユーザAPI
 paths:

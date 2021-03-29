@@ -1,6 +1,6 @@
 title: "DynamoDB×Go連載#2 AWS SDKによるDynamoDBの基本操作"
 date: 2020/02/27 08:25:12
-tags:
+tag:
   - Go
   - AWS
   - DynamoDB×Go

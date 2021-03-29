@@ -1,6 +1,6 @@
 title: "春の入門祭り🌸 #19 Chromeの拡張機能作ってみた！"
 date: 2020/06/25 10:34:33
-tags:
+tag:
   - JavaScript
   - JSON
   - ChromeExtension

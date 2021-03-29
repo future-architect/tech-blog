@@ -1,7 +1,8 @@
 title: "リモートワークを促進させるDaily Stand-up Meeting"
 date: 2020/01/29 10:02:04
-tags:
+tag:
   - 会議
+  - マネジメント
 category:
   - Management
 author: 村田靖拓

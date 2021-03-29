@@ -1,6 +1,6 @@
 title: "SQL開発者を幸せにする！？ Sublime Text 3でも使える uroboroSQL Formatter を公開しました"
 date: 2017-02-28 12:00:00
-tags:
+tag:
   - SQL
   - uroboroSQL
   - コーディング規約

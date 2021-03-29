@@ -1,6 +1,6 @@
 title: "DynamoDB×Go#3 Go CDKでどこまでいける？機能を調べてみた"
 date: 2020/02/28 10:13:26
-tags:
+tag:
   - Go
   - AWS
   - DynamoDB×Go

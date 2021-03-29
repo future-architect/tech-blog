@@ -1,6 +1,6 @@
 title: "マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！（Metabase編） "
 date: 2019/07/03 09:00:00
-tags:
+tag:
   - Metabase
   - Redmine
 category:

@@ -1,6 +1,6 @@
 title: "HashiTalks: Japanに登壇しました"
 date: 2020/07/10 10:19:54
-tags:
+tag:
   - 登壇資料
   - Terraform
   - 勉強会

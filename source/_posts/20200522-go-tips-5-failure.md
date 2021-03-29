@@ -1,6 +1,6 @@
 title: "Go Tips 連載5: エラーコードベースの例外ハンドリングの実装＋morikuni/failureサンプル"
 date: 2020/05/22 00:14:52
-tags:
+tag:
   - Go
   - GoTips連載
 category:

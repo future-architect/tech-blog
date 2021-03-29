@@ -1,6 +1,6 @@
 title: "GDG DevFest in 信州2019に登壇しました"
 date: 2019/11/29 13:58:44
-tags:
+tag:
   - GCP
   - 登壇資料
 category:

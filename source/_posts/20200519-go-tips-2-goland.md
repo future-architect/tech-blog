@@ -1,6 +1,6 @@
 title: "Go Tips連載2: Golandで環境変数をさっと貼る方法 "
 date: 2020/05/19 21:52:54
-tags:
+tag:
   - Go
   - Goland
   - GoTips連載

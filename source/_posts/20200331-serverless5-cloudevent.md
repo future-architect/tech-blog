@@ -1,6 +1,6 @@
 title: "Serverless連載5: CloudEventsのGo版SDKをいじってみる"
 date: 2020/03/31 09:39:23
-tags:
+tag:
   - Serverless
   - Serverless連載
   - Go

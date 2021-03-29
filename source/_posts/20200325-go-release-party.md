@@ -1,6 +1,6 @@
 title: "Go1.14のRelease Partyに登壇しました🎉"
 date: 2020/03/25 14:44:32
-tags:
+tag:
   - Go
   - 登壇資料
 category:
