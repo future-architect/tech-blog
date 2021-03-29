@@ -130,7 +130,7 @@ Slackであれば、リアクションのスタンプ（Add reaction）を持つ
 
 フューチャーでは多くのアルバイトerやインターン生を受け入れています。中にはNDA（秘密保持契約書）を結んで業務してもらう方もいるそうですが、それ以外のOSS開発などに携わってもらっているメンバーには、**就職活動でも使えるように**ドンドン記事を書いてもらっています。アルバイトやインターンの業務内容の生の声を外部に発信できて、多分フューチャー的にもハッピー、きっと世の中にある幸せの総量を増やせます。
 
-最初は[Unity未経験者がHoloLensアプリの開発をしてみた](https://future-architect.github.io/articles/20170421/)の澤田さん（その後入社を決めてくれた）が1つ目でこれは3年前くらいの事例です。最近だと[日本製HeadlessCMSのmicroCMSを触ってみた](https://future-architect.github.io/articles/20200512/)の三村さんや、[新米エンジニアが１か月のトラブルシューティングで学んだこと](https://future-architect.github.io/articles/20200526/)を書いてくれた本田さんなど、様々です。もちろんQiitaなど別のブログ媒体にも、業務で得たプログラミングなど汎用的な内容はドンドン書くように背中をおしています。
+最初は[Unity未経験者がHoloLensアプリの開発をしてみた](https://future-architect.github.io/articles/20170421/)の澤田さん（その後入社を決めてくれた）が1つ目でこれは3年前くらいの事例です。最近だと[日本製HeadlessCMSのmicroCMSを触ってみた](https://future-architect.github.io/articles/20200512/)の三村さんなど、様々です。もちろんQiitaなど別のブログ媒体にも、業務で得たプログラミングなど汎用的な内容はドンドン書くように背中をおしています。
 
 # Advent Calendar時期の運営
 
