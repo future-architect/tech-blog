@@ -1,6 +1,6 @@
 title: "AWS SDK for Goのリトライアルゴリズムを差し替える方法"
 date: 2021/02/18 00:00:00
-tags:
+tag:
   - Go
   - リトライ
   - AWS

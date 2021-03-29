@@ -1,6 +1,6 @@
 title: Terraformで楽をしたい
 date: 2020/08/05 00:00:00
-tags:
+tag:
   - Terraform
   - GCP
   - 夏休み自由研究

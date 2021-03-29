@@ -1,6 +1,6 @@
 title: CORSのプリフライトリクエスト（OPTIONメソッド）はAPI Keyの認証なしでOKにしておかないと失敗する話
 date: 2020/07/17 00:00:00
-tags:
+tag:
   - CORS
   - Go
   - Web

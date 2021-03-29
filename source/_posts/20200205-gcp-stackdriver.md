@@ -1,6 +1,6 @@
 title: "GCP連載#1 Stackdriver Loggingへ良い感じのログ出力方法を考える"
 date: 2020/02/05 09:23:10
-tags:
+tag:
   - GCP
   - OpenCensus
   - Go

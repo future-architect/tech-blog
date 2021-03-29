@@ -1,6 +1,6 @@
 title: "GCPのRegion間レイテンシからサービスのRegion集約を考察する"
 date: 2020/08/13 00:00:00
-tags:
+tag:
   - GCP
   - Network
   - 夏休み自由研究

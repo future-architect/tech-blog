@@ -1,6 +1,6 @@
 title: "Future AI EXPO 開催！"
 date: 2018/03/01 12:01:22
-tags:
+tag:
   - Conference
   - MachineLearning
 category:

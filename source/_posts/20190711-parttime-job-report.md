@@ -1,6 +1,6 @@
 title: "アルバイト生から見たフューチャーのTIG DXユニット"
 date: 2019/07/12 09:00:00
-tags:
+tag:
   - アルバイト
   - Go
   - Terraform

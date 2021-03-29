@@ -1,6 +1,6 @@
 title: "GoでWebアプリ開発時にあるあるだったレビューコメント"
 date: 2020/07/09 11:09:27
-tags:
+tag:
   - Go
   - コードレビュー
 category:

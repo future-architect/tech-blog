@@ -1,6 +1,6 @@
 title: "JavaプログラマーのためのGo言語入門"
 date: 2020/03/11 09:39:47
-tags:
+tag:
   - Go
   - Java
   - 翻訳

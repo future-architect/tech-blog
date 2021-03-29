@@ -1,6 +1,6 @@
 title: "マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！"
 date: 2016/09/20 18:00:00
-tags:
+tag:
   - Elastic-Stack
   - Kibana
   - Redmine

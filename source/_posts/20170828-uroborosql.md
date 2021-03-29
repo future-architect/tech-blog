@@ -1,6 +1,6 @@
 title: "uroboroSQL x Spring BootによるWebアプリケーション開発"
 date: 2017/08/28 12:00:00
-tags:
+tag:
   - uroboroSQL
   - Java
   - SQL

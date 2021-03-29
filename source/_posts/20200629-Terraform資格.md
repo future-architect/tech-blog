@@ -1,6 +1,6 @@
 title: "Terraform Associate合格記"
 date: 2020/06/29 10:03:42
-tags:
+tag:
   - Terraform
   - 合格記
 category:

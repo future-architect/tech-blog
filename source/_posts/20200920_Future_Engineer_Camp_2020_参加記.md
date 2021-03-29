@@ -1,6 +1,6 @@
 title: "Future Engineer Camp 2020 参加記"
 date: 2020/09/20 00:00:00
-tags:
+tag:
   - Go
   - インターン
   - 工場

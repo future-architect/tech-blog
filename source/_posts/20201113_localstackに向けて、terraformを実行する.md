@@ -1,6 +1,6 @@
 title: "LocalStackに向けてTerraformを実行する"
 date: 2020/11/13 00:00:00
-tags:
+tag:
   - LocalStack
   - AWS
   - Terraform

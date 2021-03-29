@@ -1,6 +1,6 @@
 title: "SpringBootでDIを駆使したルールエンジン開発"
 date: 2020/09/18 00:00:00
-tags:
+tag:
   - ルールエンジン
   - SpringBoot
   - Java

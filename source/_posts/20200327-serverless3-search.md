@@ -1,6 +1,6 @@
 title: "Serverless連載3: Goでサーバーレス用の検索エンジンwatertowerを作ってみました"
 date: 2020/03/27 09:51:22
-tags:
+tag:
   - Go
   - Serverless
   - AWS

@@ -1,6 +1,6 @@
 title: "GKE Autopilotを触ってみた"
 date: 2021/03/18 00:00:00
-tags:
+tag:
   - Kubernetes
   - GKE
   - GCP

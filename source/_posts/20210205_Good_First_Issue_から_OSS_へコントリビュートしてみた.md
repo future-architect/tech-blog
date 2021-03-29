@@ -1,6 +1,6 @@
 title: "Good First Issue から OSS へコントリビュートしてみた"
 date: 2021/02/05 00:00:00
-tags:
+tag:
   - OSS
   - go-swagger
 category:

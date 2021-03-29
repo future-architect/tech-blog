@@ -1,6 +1,6 @@
 title: "Cloud Spannerのローカル開発環境をdocker-composeでサクッと立ち上げる"
 date: 2021/03/23 00:00:00
-tags:
+tag:
   - Spanner
   - GCP
   - GCP連載

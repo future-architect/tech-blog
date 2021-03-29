@@ -1,6 +1,6 @@
 title: "マネージャーがうれしいRedmineデータのダッシュボード表示方法を公開します！！"
 date: 2017/05/10 18:00:00
-tags:
+tag:
   - Elastic-Stack
   - Redmine
   - Kibana

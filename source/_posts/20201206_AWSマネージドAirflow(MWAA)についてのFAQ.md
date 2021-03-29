@@ -1,6 +1,6 @@
 title: "AWSマネージドAirflow(MWAA)についてのFAQ"
 date: 2020/12/06 00:00:00
-tags:
+tag:
   - Airflow
   - AWS
   - Python

@@ -1,6 +1,6 @@
 title: "CloudEndure Migration - 導入編"
 date: 2020/10/21 00:00:00
-tags:
+tag:
   - AWS
   - 移行ツール
   - CloudEndure

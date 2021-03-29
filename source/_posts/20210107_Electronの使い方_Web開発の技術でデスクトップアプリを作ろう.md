@@ -1,6 +1,6 @@
 title: "Electronの使い方 Web開発の技術でデスクトップアプリを作ろう"
 date: 2021/01/07 00:00:00
-tags:
+tag:
   - Vue.js
   - Electron
   - クロスプラットフォーム

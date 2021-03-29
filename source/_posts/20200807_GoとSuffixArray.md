@@ -1,6 +1,6 @@
 title: GoとSuffixArray
 date: 2020/08/07 00:00:00
-tags:
+tag:
   - データ構造
   - Go
   - 夏休み自由研究

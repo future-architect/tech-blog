@@ -1,6 +1,6 @@
 title: "Cloud Build を知ってみよう"
 date: 2021/03/15 00:00:00
-tags:
+tag:
   - GCP
   - GCP連載
   - CloudBuild

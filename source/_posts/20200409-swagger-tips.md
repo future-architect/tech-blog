@@ -1,6 +1,6 @@
 title: "スキーマファースト開発のためのOpenAPI（Swagger）設計規約"
 date: 2020/04/09 10:38:04
-tags:
+tag:
   - OpenAPI
   - Swagger
   - Go
@@ -59,15 +59,15 @@ Swaggerや周辺ツールについては [某先輩の記事](https://future-arc
 
 ```yaml
 # good
-tags:
+tag:
   - product # GoアプリケーションのhandlerやTypeScriptのclassの単位となる
 
 # bad
-tags:
+tag:
   - products
 
 # bad
-tags:
+tag:
   - user
   - product
 ```

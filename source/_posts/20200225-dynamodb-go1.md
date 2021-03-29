@@ -1,6 +1,6 @@
 title: "DynamoDB×Go連載#1 GoでDynamoDBでおなじみのguregu/dynamoを利用する"
 date: 2020/02/25 10:32:43
-tags:
+tag:
   - Go
   - AWS
   - DynamoDB×Go

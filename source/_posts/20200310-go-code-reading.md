@@ -1,6 +1,6 @@
-title: " Goの標準ライブラリのコードリーディングのすすめ"
+title: "Goの標準ライブラリのコードリーディングのすすめ"
 date: 2020/03/10 08:55:28
-tags:
+tag:
   - Go
   - CodeReading
 category:

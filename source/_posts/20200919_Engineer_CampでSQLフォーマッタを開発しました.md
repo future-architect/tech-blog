@@ -1,6 +1,6 @@
 title: "Engineer CampでSQLフォーマッタを開発しました"
 date: 2020/09/19 00:00:00
-tags:
+tag:
   - SQL
   - インターン
   - Antlr

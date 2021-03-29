@@ -1,6 +1,6 @@
 title: "チームで推奨するVSCode拡張機能を共有するtips"
 date: 2020/08/28 00:00:00
-tags:
+tag:
   - VSCode
   - チーム開発
 category:

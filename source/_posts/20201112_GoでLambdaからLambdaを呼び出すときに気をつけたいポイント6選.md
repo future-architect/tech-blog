@@ -1,6 +1,6 @@
 title: "GoでLambdaからLambdaを呼び出すときに気をつけたいポイント6選"
 date: 2020/11/12 00:00:00
-tags:
+tag:
   - AWS
   - Go
   - Lambda
