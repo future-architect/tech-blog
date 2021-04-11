@@ -1,5 +1,6 @@
 title: "Future IoT デバイス"
 date: 2017/12/07 13:00:00
+postid: ""
 tag:
   - IoT
 category:

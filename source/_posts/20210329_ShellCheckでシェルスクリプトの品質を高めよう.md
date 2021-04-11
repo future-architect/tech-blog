@@ -1,5 +1,6 @@
 title: "ShellCheckでシェルスクリプトの品質を高めよう"
 date: 2021/03/29 00:00:00
+postid: ""
 tag:
   - ShellScript
   - シェルスクリプト連載

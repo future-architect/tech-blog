@@ -1,5 +1,6 @@
 title: "WAFとして go-swagger を選択してみた"
 date: 2019/08/14 10:30:07
+postid: ""
 tag:
   - Go
   - Swagger

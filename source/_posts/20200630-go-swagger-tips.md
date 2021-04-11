@@ -1,5 +1,6 @@
 title: "go-swaggerを用いたWebアプリケーション開発Tips19選"
 date: 2020/06/30 10:06:15
+postid: ""
 tag:
   - OpenAPI
   - Swagger

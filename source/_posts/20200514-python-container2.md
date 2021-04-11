@@ -1,5 +1,6 @@
 title: "仕事でPythonコンテナをデプロイする人向けのDockerfile (2): distroless編"
 date: 2020/05/14 08:51:53
+postid: ""
 tag:
   - Python
   - Docker

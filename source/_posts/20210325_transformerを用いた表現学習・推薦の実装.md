@@ -1,5 +1,6 @@
 title: "Transformerを用いた表現学習・推薦の実装"
 date: 2021/03/25 00:00:00
+postid: ""
 tag:
   - TensorFlow
   - MachineLearning

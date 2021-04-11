@@ -1,5 +1,6 @@
 title: "Go の Open API 3.0 のジェネレータ oapi-codegen を試してみた"
 date: 2020/07/01 09:40:40
+postid: ""
 tag:
   - Go
   - OpenAPI

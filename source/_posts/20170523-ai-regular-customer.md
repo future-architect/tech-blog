@@ -1,5 +1,6 @@
 title: "AIを使って顔画像から「常連さん」を判定しよう！"
 date: 2017/05/26 16:15:31
+postid: ""
 tag:
   - Python
   - MachineLearning

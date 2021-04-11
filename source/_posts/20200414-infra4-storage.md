@@ -1,5 +1,6 @@
 title: "インフラ入門vol.4（ストレージ）"
 date: 2020/04/14 11:07:29
+postid: ""
 tag:
   - Storage
   - インフラ入門

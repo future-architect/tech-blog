@@ -1,5 +1,6 @@
 title: "Airflow の SLA設定方法"
 date: 2020/08/27 00:00:00
+postid: ""
 tag:
   - Airflow
   - Python

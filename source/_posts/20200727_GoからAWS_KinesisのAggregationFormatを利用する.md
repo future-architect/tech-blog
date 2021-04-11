@@ -1,5 +1,6 @@
 title: GoからAWS KinesisのAggregationFormatを利用する
 date: 2020/07/27 00:00:00
+postid: ""
 tag:
   - AWS
   - Go

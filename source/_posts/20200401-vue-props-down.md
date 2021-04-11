@@ -1,5 +1,6 @@
 title: "Vue.js最初の難関、「props down, event up」を初心者にわかるように解説してみた"
 date: 2020/04/01 10:30:55
+postid: ""
 tag:
   - Vue.js
   - Frontend

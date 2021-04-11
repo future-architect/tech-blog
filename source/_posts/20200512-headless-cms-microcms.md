@@ -1,5 +1,6 @@
 title: "日本製HeadlessCMSのmicroCMSを触ってみた"
 date: 2020/05/12 09:48:20
+postid: ""
 tag:
   - Vue.js
   - HeadlessCMS

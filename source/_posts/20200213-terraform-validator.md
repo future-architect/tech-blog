@@ -1,5 +1,6 @@
 title: "GCP連載#6 Terraform Validatorを使って、GCPのセキュリティポリシーの自動チェックを行う"
 date: 2020/02/13 10:26:28
+postid: ""
 tag:
   - GCP
   - GCP連載

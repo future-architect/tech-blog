@@ -1,5 +1,6 @@
 title: "GoがApple Siliconにネイティブ対応したのでベンチマークをとってみました"
 date: 2020/12/03 00:00:00
+postid: ""
 tag:
   - Go
 category:

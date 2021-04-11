@@ -1,5 +1,6 @@
 title: "GCP連載#7 GCPのData Transfer Serviceを使って簡単にS3からBigQueryにデータ転送をしてみる"
 date: 2020/02/14 09:39:28
+postid: ""
 tag:
   - GCP
   - GCP連載

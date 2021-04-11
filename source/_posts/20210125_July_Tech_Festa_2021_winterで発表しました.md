@@ -1,5 +1,6 @@
 title: "July Tech Festa 2021 winterで発表しました"
 date: 2021/01/25 00:00:00
+postid: ""
 tag:
   - AWS
   - Electron
@@ -15,8 +16,8 @@ lede: "先日July Tech Festa 2021 winterに登壇させていただきました�
 
 TIGの伊藤真彦です。
 
-先日[July Tech Festa 2021 winter](https://techfesta.connpass.com/event/193966/)に登壇させていただきました。  
-  
+先日[July Tech Festa 2021 winter](https://techfesta.connpass.com/event/193966/)に登壇させていただきました。
+
 昨今の情勢的に当然のごとくオンラインイベントでの参加です、手軽で良いのですが少し寂しさもあります。
 
 <img src="/images/20210125/photo_20210125_01.png">
@@ -38,7 +39,7 @@ July Tech Festaは有志のボランティアにより開催されるイベン�
 今回は朝10時からの60分枠で発表させていただけました、ありがとうございます。
 
 ## 発表の内容
-  
+
 発表資料のダイジェスト版をアップロードしました。
 
 <script async class="speakerdeck-embed" data-id="958c38fb19314907aa93bf91e2f0c562" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>

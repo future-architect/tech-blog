@@ -1,5 +1,6 @@
 title: "Space Apps Challenge 2016への投票方法"
 date: 2016-05-12 09:05:59
+postid: ""
 tag:
   - Hackathon
 category:

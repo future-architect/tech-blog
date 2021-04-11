@@ -1,5 +1,6 @@
 title: "Go Tips 連載7:【golangci-lint】lint issueを新たに作り出さないためのTips"
 date: 2020/05/25 09:30:35
+postid: ""
 tag:
   - Go
   - GoTips連載
