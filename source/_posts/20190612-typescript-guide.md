@@ -1,5 +1,6 @@
 title: "TypeScript教育用コンテンツ公開のお知らせ"
 date: 2019/06/12 15:04:53
+postid: ""
 tag:
   - TypeScript
   - 出版

@@ -1,5 +1,6 @@
 title: "Go Tips連載3: ファイルを扱うちょっとしたスクリプトをGoで書くときのTips5選"
 date: 2020/05/20 09:43:46
+postid: ""
 tag:
   - Go
   - GoTips連載

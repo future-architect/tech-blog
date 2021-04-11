@@ -1,5 +1,6 @@
 title: "Migrate for Anthos を基礎から学ぶ"
 date: 2021/03/22 00:00:00
+postid: ""
 tag:
   - GCP
   - GCP連載

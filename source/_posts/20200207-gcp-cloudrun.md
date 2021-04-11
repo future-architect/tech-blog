@@ -1,5 +1,6 @@
 title: "GCP連載#3 Goでサーバーレスな管理画面アプリを作る"
 date: 2020/02/07 10:54:41
+postid: ""
 tag:
   - Go
   - GCP

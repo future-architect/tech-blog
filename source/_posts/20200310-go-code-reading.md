@@ -1,5 +1,6 @@
 title: "Goの標準ライブラリのコードリーディングのすすめ"
 date: 2020/03/10 08:55:28
+postid: ""
 tag:
   - Go
   - CodeReading

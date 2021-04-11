@@ -1,5 +1,6 @@
 title: "Google Cloud Next '19 in Tokyo Day3 セッションレポート"
 date: 2019/08/09 08:29:54
+postid: ""
 tag:
   - GCP
 category:

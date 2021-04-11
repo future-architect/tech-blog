@@ -1,5 +1,6 @@
 title: "API Meetup Online #3で限定公開URL（Capability URLs）について話をしてきました。"
 date: 2020/08/09 00:00:00
+postid: ""
 tag:
   - HTTP
   - Web

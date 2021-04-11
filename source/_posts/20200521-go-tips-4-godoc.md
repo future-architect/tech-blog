@@ -1,5 +1,6 @@
 title: "Go Tips連載4: GoDocの読み方"
 date: 2020/05/21 22:23:40
+postid: ""
 tag:
   - Go
   - Document

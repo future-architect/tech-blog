@@ -1,5 +1,6 @@
 title: "Terraformのベストなプラクティスってなんだろうか"
 date: 2019/09/03 15:20:52
+postid: ""
 tag:
   - Terraform
 category:

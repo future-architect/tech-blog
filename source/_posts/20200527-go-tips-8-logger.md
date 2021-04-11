@@ -1,5 +1,6 @@
 title: "Go Tips連載8: logパッケージでログ出力している場所の情報を出す"
 date: 2020/05/27 10:36:36
+postid: ""
 tag:
   - Go
   - GoTips連載

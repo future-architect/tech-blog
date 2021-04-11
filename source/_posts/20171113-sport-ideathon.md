@@ -1,5 +1,6 @@
 title: "最新テクノロジーでスポーツアイデアソンをやって中高生に教わった大事なこと"
 date: 2017/11/13 13:08:13
+postid: ""
 tag:
   - DesignThinking
   - CoSpaces

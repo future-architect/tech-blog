@@ -14,7 +14,7 @@ timezone: Asia/Tokyo
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://future-architect.github.io
 root: /
-permalink: articles/:year:month:day/
+permalink: articles/:year:month:day:postid/
 permalink_defaults:
 
 # Directory

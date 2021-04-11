@@ -1,5 +1,6 @@
 title: "CloudEndure Migration - 実践編"
 date: 2020/11/20 00:00:00
+postid: ""
 tag:
   - AWS
   - CloudEndure

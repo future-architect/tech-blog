@@ -1,5 +1,6 @@
 title: "go-swaggerでhello world"
 date: 2020/08/24 00:00:00
+postid: ""
 tag:
   - Go
   - go-swagger

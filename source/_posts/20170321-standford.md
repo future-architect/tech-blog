@@ -1,5 +1,6 @@
 title: "スタンフォード大学で食べたピーナッツサラダは、格別だった♥"
 date: 2017/03/21 12:00:00
+postid: ""
 tag:
   - Elastic-Stack
   - DesignThinking
