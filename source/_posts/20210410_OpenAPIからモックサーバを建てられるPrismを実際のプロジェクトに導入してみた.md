@@ -1,6 +1,6 @@
 title: "OpenAPIからモックサーバを建てられるPrismを実際のプロジェクトに導入してみた"
 date: 2021/04/10 00:00:00
-postid: "a"
+postid: ""
 tag:
   - Swagger
   - OpenAPI
