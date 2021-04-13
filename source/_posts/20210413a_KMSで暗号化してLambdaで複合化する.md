@@ -1,4 +1,4 @@
-title: "KMSで暗号化してLambdaで複合化する"
+title: "KMSで暗号化してLambdaで復号化する"
 date: 2021/04/13 00:00:00
 postid: "a"
 tag:
@@ -8,12 +8,12 @@ tag:
   - Terraform
 category:
   - Infrastructure
-thumbnail: /images/20210413/thumbnail.png
+thumbnail: /images/20210413a/thumbnail.png
 author: 棚井龍之介
 featured: true
-lede: "認証情報を Lambda の環境変数に渡す要件が発生したため認証情報を KMS で暗号化して、リポジトリには暗号化した値を登録し、Lambda 内で複合化する構成を取りました。"
+lede: "認証情報を Lambda の環境変数に渡す要件が発生したため認証情報を KMS で暗号化して、リポジトリには暗号化した値を登録し、Lambda 内で復号化する構成を取りました。"
 ---
-![](/images/20210413/Screen_Shot_2021-03-24_at_2.18.57.png)
+![](/images/20210413a/Screen_Shot_2021-03-24_at_2.18.57.png)
 
 # はじめに
 フューチャーの棚井龍之介です。
@@ -24,14 +24,14 @@ lede: "認証情報を Lambda の環境変数に渡す要件が発生したた�
 - コードは全て GitHub で履歴管理している
 - 生の認証情報はリポジトリに Push すべきでない
 
-となったため、認証情報を KMS で暗号化して、リポジトリには暗号化した値を登録し、Lambda 内で複合化する構成を取りました。
+となったため、認証情報を KMS で暗号化して、リポジトリには暗号化した値を登録し、Lambda 内で復号化する構成を取りました。
 
 認証情報のコード管理について、Terraform 作業とローカル作業を組み合わせて対応できたため、備忘録も兼ねて手順をブログ化しました。
 
 ## KMS とは
 公式: [AWS Key Management Service (KMS)](https://aws.amazon.com/jp/kms/)
 
-AWS の提供する、データの暗号化・複合化サービスです。共通鍵暗号の仕組みを使い、データベースの接続キーや認証情報の暗号化・複合化機能を提供します。他サービスと組み合わせることにより、KMS でアクセスキーで暗号化して、EC2 から RDS への接続時にのみ複合化する、といった柔軟な対応も可能です。
+AWS の提供する、データの暗号化・復号化サービスです。共通鍵暗号の仕組みを使い、データベースの接続キーや認証情報の暗号化・復号化機能を提供します。他サービスと組み合わせることにより、KMS でアクセスキーで暗号化して、EC2 から RDS への接続時にのみ復号化する、といった柔軟な対応も可能です。
 
 KMS の仕組み自体は、Classmethod さんの書かれた「[10分でわかる！Key Management Serviceの仕組み](https://dev.classmethod.jp/articles/10minutes-kms/)」が詳しいのです。
 
@@ -47,10 +47,10 @@ Terraform やってみたいという方は、以下の記事がオススメで�
 - [春の入門祭り🌸 #18 Terraform 101](/articles/20200624/)
 
 # 本記事の流れ
-KMS の暗号化・複合化操作を、以下の流れで説明します。
+KMS の暗号化・復号化操作を、以下の流れで説明します。
 
 - Terraform で KMS マスターキーの生成
-- AWS CLI で暗号化・複合化
+- AWS CLI で暗号化・復号化
 - Lambda で KMS 操作
 
 また、本記事では一部 Terraform による操作を前提としていますが、基本的な Terraform 操作の説明は省略しています。
@@ -86,8 +86,8 @@ Terraform 定義パラメータ
 
 リソース定義を追加後、`$ terraform plan/apply` により KMS マスターキーと Alias を作成します。
 
-# AWS CLI で暗号化・複合化
-作成した Alias を用いて、テキスト情報の暗号化・複合化作業を実施してみます。
+# AWS CLI で暗号化・復号化
+作成した Alias を用いて、テキスト情報の暗号化・復号化作業を実施してみます。
 
 暗号化作業で `AliasArn` の値を使うため、環境変数 **$KEYID** に登録します。
 
@@ -128,8 +128,8 @@ $ aws kms encrypt \
 以上で「平文を暗号化して、暗号文を取得するまで」が完了です。
 
 
-## 複合化
-暗号文 `CiphertextBlob` の値を複合化してみましょう。
+## 復号化
+暗号文 `CiphertextBlob` の値を復号化してみましょう。
 
 先ほどの操作で生成した暗号文 `CiphertextBlob` を、`CiphertextFile` に保存します。
 
@@ -141,8 +141,8 @@ $ aws kms encrypt \
   --output text | base64 --decode > CiphertextFile
 ```
 
-複合化コマンドを実行すると、最初に暗号化した平文が取得できます。
-暗号文自体に KEYID の情報が格納されているので、複合化のコマンドには `--key-id $KEYID` の指定が不要です。
+復号化コマンドを実行すると、最初に暗号化した平文が取得できます。
+暗号文自体に KEYID の情報が格納されているので、復号化のコマンドには `--key-id $KEYID` の指定が不要です。
 
 ```bash
 $ aws kms decrypt \
@@ -152,17 +152,17 @@ $ aws kms decrypt \
 Hello, World!
 ```
 
-以上で「暗号文の複合化」が完了しました。
+以上で「暗号文の復号化」が完了しました。
 
 
 # Lambda で KMS 操作
-KMS で生成した暗号文を、Lambda の中で複合化します。
+KMS で生成した暗号文を、Lambda の中で復号化します。
 
-先ほどの暗号化作業で作成した `CiphertextBlob` の値を、Lambda 内で複合化します。
+先ほどの暗号化作業で作成した `CiphertextBlob` の値を、Lambda 内で復号化します。
 
-KMS の複合化には `kms:Decrypt` のポリシーが必須なので、demo 用の Lambda に以下のインラインポリシーを追加します。
+KMS の復号化には `kms:Decrypt` のポリシーが必須なので、demo 用の Lambda に以下のインラインポリシーを追加します。
 
-```json KMS複合化用のインラインポリシー
+```json KMS復号化用のインラインポリシー
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -180,8 +180,8 @@ KMS の複合化には `kms:Decrypt` のポリシーが必須なので、demo �
 }
 ```
 
-## Lambda で複合化
-以下のコードを Lambda にデプロイして、複合化結果を取得してみます。
+## Lambda で復号化
+以下のコードを Lambda にデプロイして、復号化結果を取得してみます。
 `encryptedKey` には、`CiphertextBlob` の値を直接代入しています。
 
 ```go kms-demo-lambda
@@ -249,14 +249,14 @@ $ cat outfile.txt
 "Decrypted text is: Hello, World!"
 ```
 
-暗号化されていた `CiphertextBlob` の値が、正しく複合化されたことを確認できました。
+暗号化されていた `CiphertextBlob` の値が、正しく復号化されたことを確認できました。
 
 
 # まとめ
 
 本記事では、KMS のマスターキー生成を Terraform で行い、暗号化は AWS CLI で手動実施するというハイブリッド方式をご紹介しました。
 
-`CiphertextBlob` の値は KMS で暗号化済みのため、Terraform やアプリケーションコードに直接追記しても問題ありません（Lambdaで利用するならば、ハードコードではなく環境変数に追記すべきですが）。GitHub 管理するコード上には暗号文のまま登録して、呼び出し先で複合化する機能配置ならば、生の認証情報がリポジトリに残らないようにできます。
+`CiphertextBlob` の値は KMS で暗号化済みのため、Terraform やアプリケーションコードに直接追記しても問題ありません（Lambdaで利用するならば、ハードコードではなく環境変数に追記すべきですが）。GitHub 管理するコード上には暗号文のまま登録して、呼び出し先で復号化する機能配置ならば、生の認証情報がリポジトリに残らないようにできます。
 
 以上、長文にお付き合いいただき、ありがとうございました。
 
