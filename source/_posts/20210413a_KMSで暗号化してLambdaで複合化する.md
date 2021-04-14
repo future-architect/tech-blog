@@ -181,6 +181,7 @@ KMS の復号化には `kms:Decrypt` のポリシーが必須なので、demo �
 ```
 
 Terraformでのlambdaのリソース構築設定に`kms_key_arn`を追記することで、lambdaはデフォルトのAWS KMSキーではなく作成したKMSのキーを利用するようになります。
+
 ```go lambda
 resource "aws_lambda_function" "kms_lambda" {
   filename      = "lambda_initial_script.zip"
@@ -193,6 +194,7 @@ resource "aws_lambda_function" "kms_lambda" {
   kms_key_arn   = aws_kms_key.demo.arn
 }
 ```
+
 手動で設定を行う場合は環境変数の設定から暗号化設定を有効化します。
 ![](/images/20210413a/lambda.png)
 
