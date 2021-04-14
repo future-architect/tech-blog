@@ -180,6 +180,22 @@ KMS の復号化には `kms:Decrypt` のポリシーが必須なので、demo �
 }
 ```
 
+Terraformでのlambdaのリソース構築設定に`kms_key_arn`を追記することで、lambdaはデフォルトのAWS KMSキーではなく作成したKMSのキーを利用するようになります。
+```go lambda
+resource "aws_lambda_function" "kms_lambda" {
+  filename      = "lambda_initial_script.zip"
+  function_name = "kms-lambda"
+  role          = aws_iam_role.lambdarole.arn
+  handler       = "lambda"
+  runtime       = "go1.x"
+  memory_size   = 1024
+  timeout       = 900
+  kms_key_arn   = aws_kms_key.demo.arn
+}
+```
+手動で設定を行う場合は環境変数の設定から暗号化設定を有効化します。
+![](/images/20210413a/lambda.png)
+
 ## Lambda で復号化
 以下のコードを Lambda にデプロイして、復号化結果を取得してみます。
 `encryptedKey` には、`CiphertextBlob` の値を直接代入しています。
