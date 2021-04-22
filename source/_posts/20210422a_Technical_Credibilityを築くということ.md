@@ -9,7 +9,7 @@ tag:
   - 春の入門連載
 category:
   - Programming
-thumbnail: /images/20210422a/thumbnail.png
+thumbnail: /images/20210422a/thumbnail.jpg
 author: 須田桂伍
 featured: true
 lede: "私は新卒でフューチャーへ入社しITの世界でのキャリアが始まりました。その後、一度フューチャーを離れIoTプラットフォーマーのソリューションアーキテクトとして多くのお客様へ自社サービスの導入支援やIoTシステムの設計や構築の支援をしておりました。そうしたソリューションアーキテクトとしてのロールを通じて、多くの経験や学びを得ることができたのですが、その中でも特にTechnical Credibilityというキーワードについて自分の経験を交えて本ブログにて書いてみたいと思います。"
@@ -21,20 +21,28 @@ lede: "私は新卒でフューチャーへ入社しITの世界でのキャリ�
 
 こんにちは、TIGの須田です。
 
-私は新卒でフューチャーへ入社しITの世界でのキャリアが始まりました。その後、一度フューチャーを離れIoTプラットフォーマーのソリューションアーキテクトとして多くのお客様へ自社サービスの導入支援やIoTシステムの設計や構築の支援をしておりました。そうしたソリューションアーキテクトとしてのロールを通じて、多くの経験や学びを得ることができたのですが、その中でも特にTechnical Credibilityというキーワードについて自分の経験を交えて本ブログにて書いてみたいと思います。本ブログのシリーズが、春の入門記事＆新人だった頃の自分に伝えたい内容を書こう、というテーマであったので迷わずこのテーマについて取り上げようと決めました。
+私は新卒でフューチャーへ入社しITの世界でのキャリアが始まりました。その後、一度フューチャーを離れIoTプラットフォーマーのソリューションアーキテクトとして多くのお客様へ自社サービスの導入支援やIoTシステムの設計や構築の支援をしておりました。そうしたソリューションアーキテクトとしてのロールを通じて、多くの経験や学びを得ることができたのですが、その中でも特にTechnical Credibilityというキーワードについて自分の経験を交えて本ブログにて書いてみたいと思います。
+
+本ブログのシリーズが、春の入門記事＆新人だった頃の自分に伝えたい内容を書こう、というテーマであったので迷わずこのテーマについて取り上げようと決めました。
 
 ## Technical Credibilityとはなにか
+
+<img src="/images/20210422a/climbing-4514507_640.jpg" class="img-middle-size">
+
+> <a href="https://pixabay.com/ja/users/rappellingusa-13786882/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4514507">Rappellingusa</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4514507">Pixabay</a>からの画像
 
 Technical Credibilityとは無理やり日本語に訳すと技術的信頼？信頼度？となります。Technical Credibilityの厳密な説明や定義が少ししにくいのですが、技術力やそのナレッジを通して信頼を得ていくこと、そのプロセス、と自分は解釈しています。
 
 私はこの言葉をソリューションアーキテクトとして活動していた際に初めて知りました。ソリューションアーキテクトというロールはお客様の抱える課題や実現したいことに対して、主にテクニカルサイドからどのようにそれらを解決・実現できるかについて具体的なアドバイスやご支援するものです。そうしたロールであることからも、技術的なアドバイスを求められることが大きく期待されています。
 
 こうした技術的なやり取りを通じてお客さんの信頼を得ていくプロセスをTechnical Credibilityを得る、とここでは表現したいと思います。
+
 ソリューションアーキテクトの仕事そのものについてはこちらのエントリがとても参考になります。またこちらのエントリにもTechnical Credibilityの大切さについての言及があるのでこちらもぜひおすすめです。
 
 <iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fimai-factory.hatenablog.com%2Fentry%2F2017%2F12%2F12%2F192439" style="border: 0; width: 100%; height: 190px;" allowfullscreen scrolling="no"></iframe>
 
 フューチャーは経営とITをデザインするという言葉が示す通り、ソフトウェアエンジニアであってもお客様の業務を理解し、一緒にシステムを作り上げていくことが求められます。そのためTechnical Credibilityの考え方が同じく重要だと考えています。
+
 ここからはTechnical Credibilityを築くことの重要性や、その際にどのような考えやアクションが重要になってくるのか、またその中でのちょっとしたTipsなんかにふれていきたいと思います。
 
 
