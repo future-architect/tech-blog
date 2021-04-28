@@ -35,7 +35,7 @@ TIG 多賀です。
 
 ### API ドキュメントベースで Web API 開発 (go-swagger)
 
-<iframe src="https://docs.google.com/presentation/d/1P1ntgrIZ_zYhlxQh8UjV1fBCIIObP-ZJPhm7Dn1yc04/embed?start=false&loop=false&delayms=3000" frameborder="0" width="800" height="550" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/1P1ntgrIZ_zYhlxQh8UjV1fBCIIObP-ZJPhm7Dn1yc04/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="550" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
 ブログで Go の Open API 関連ツールについていくつか記事を書いており、そのまとめ的な内容と実際に案件で使ってみての感想について話しています。
