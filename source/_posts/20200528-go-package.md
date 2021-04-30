@@ -20,6 +20,10 @@ Goでプロジェクトのフォルダ構成どうしよう、とググると見
 
 あと、再利用という言葉の意味が同僚と話をしていて、人によって違いそうだなと思ったので「そのまま利用」「コピーして利用」というのは適宜追記しています。
 
+（2021/04/28追記）golang-standards/project-layoutに関してはRussが言及していますね！
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">this is not a standard Go project layout #117 <a href="https://t.co/uF8QblkJdF">https://t.co/uF8QblkJdF</a> <a href="https://twitter.com/hashtag/reddit?src=hash&amp;ref_src=twsrc%5Etfw">#reddit</a></p>&mdash; Go News (@golang_news) <a href="https://twitter.com/golang_news/status/1387144854979940356?ref_src=twsrc%5Etfw">April 27, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 # 事前知識
 
@@ -60,10 +64,10 @@ Go以外の他のルールとしては、GitHubがGitHub pagesのウェブサイ
  + cmd
  | + <application1> (mainパッケージ)
  | |  + main.go
- | + <application2> (mainパッケージ) 
+ | + <application2> (mainパッケージ)
  |    + main.go
  + project.go
-   : 
+   :
 ```
 
 cmdもなくして、全部をmainパッケージにしてしまうというさらにエクストリームな方法もありますが、起動部分とコアの部分を分けることは、再利用（そのまま呼ぶ）やテストのしやすさの観点では最低限守るべきラインかと思います。また、コードが育って大きくなったときに、mainの位置を変える、パッケージ名を変えるというのはコード全般に影響のある大きな変更になるので、仮に全部mainパッケージでおさまる程度の小さいコードであっても、大した手間ではないので、cmdフォルダを作ってその中でやる方が変更時の手間も削減できます。
