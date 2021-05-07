@@ -23,7 +23,7 @@
   %>
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <%
   var options = {twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id};
@@ -42,7 +42,6 @@
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
 
-  <meta content="<% if (title){ %><%= title %> | <% } %><%= config.title %>" name="description">
   <meta content="<% if (title){ %><%= title %>,<%= config.title %>,<% } %>フューチャーアーキテクト,Future Architect,フューチャー技術ブログ" name="keywords">
   <meta content="Future Architect Consultant" name="author">
 
