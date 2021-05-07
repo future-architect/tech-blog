@@ -1,24 +1,7 @@
 <!-- BEGIN FEATURED POSTS -->
 <h3>注目の記事</h3>
 <div class="widget-wrap">
-  <% var count = 0  %>
-  <% (site.posts.reverse()).each(function(post, i){ %>
-    <% if (post.featured == true){ %>
-      <% if (Math.round(Math.random()*100) < 33) { %>
-        <% if (count++ < theme.featured_count){ %>
-          <div class="widget">
-            <ul class="nav">
-              <li>
-                <a href="<%- post.permalink %>">
-                  <%- post.title %>
-                </a>
-              </li>
-            </ul>
-          </div>
-        <% } %>
-      <% } %>
-    <% } %>
-  <% }) %>
+  <%- featured_posts(20) %>
 </div>
 <!-- END FEATURED POSTS -->
 
