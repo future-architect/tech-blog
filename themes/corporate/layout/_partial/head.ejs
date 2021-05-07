@@ -7,7 +7,9 @@
 <head>
   <meta charset="utf-8">
   <%
-    var title = page.title;
+    let title = page.title;
+    let description = config.description
+
     if (is_archive()){
       title = 'Archives';
     if (is_month()){
@@ -17,18 +19,28 @@
       }
     } else if (is_category()){
       title = page.category + ' の記事一覧';
+      description = page.category + ' カテゴリの記事一覧 | '　+ config.description
     } else if (is_tag()){
       title = page.tag + ' の記事一覧';
-    } else if (Boolean(page.author)) {
+      description = page.tag + ' タグの記事一覧 | '　+ config.description
+    } else if (path.indexOf('authors/' + page.author) >= 0) {
       title = page.author;
+      description = page.author + ' が執筆した記事一覧 | '　+ config.description
     }
+
+    if (title) {
+      title = title + ' | ' + config.title
+    } else {
+      title = config.title
+    }
+
   %>
-  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <title><%= title %></title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <%
-  var options = {twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id};
+  var options = {title:title, description:description, twitter_id:theme.twitter, google_plus:theme.google_plus, fb_admins:theme.fb_admins, fb_app_id:theme.fb_app_id};
   if (page.path == 'index.html'){
     options['image'] = 'metronic/assets/corporate/img/site_logo.jpg';
   }
@@ -44,7 +56,7 @@
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
 
-  <meta content="<% if (title){ %><%= title %>,<%= config.title %>,<% } %>フューチャーアーキテクト,Future Architect,フューチャー技術ブログ" name="keywords">
+  <meta content="<%= title %>,フューチャーアーキテクト,Future Architect,フューチャー技術ブログ" name="keywords">
   <meta content="Future Architect Consultant" name="author">
 
   <!-- Styles START -->
