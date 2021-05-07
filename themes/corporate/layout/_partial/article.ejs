@@ -7,7 +7,7 @@
     <% if (post.link || post.title){ %>
     <header class="article-header">
     <ul class="blog-info">
-    <li><i class="fa fa-user"></i> <a href="<%- url_for('/authors/' + post.author || theme.default_author || 'Anonymous') %>"><%- post.author || theme.default_author || 'Anonymous' %></li>
+    <li><i class="fa fa-user"></i> <a href="<%- url_for('/authors/' + post.author || theme.default_author || 'Anonymous') %>"><%- post.author || theme.default_author || 'Anonymous' %></a></li>
     <li><i class="fa fa-calendar"></i>
 	  <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY/MM/DD'}) %>
     </li>
