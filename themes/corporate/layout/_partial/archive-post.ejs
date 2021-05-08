@@ -13,14 +13,8 @@
   <% } %>
     <%- partial('post/title', {class_name: 'archive-article-title'}) %>
     <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i>
-        <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY/MM/DD'}) %>
-      </li>
-      <li>
-        <i class="fa fa-tags"></i>
-        <%- partial('post/tag') %>
-      </li>
+      <li><%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY/MM/DD'}) %></li>
+      <li><%- partial('post/tag') %></li>
     </ul>
     <div class="blog-item">
       <% if (index == true){ %>
