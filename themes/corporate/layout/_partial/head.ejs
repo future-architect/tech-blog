@@ -50,20 +50,18 @@
   %>
   <%- open_graph(options) %>
   <% if (theme.rss){ %>
-    <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+  <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
   <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- theme.favicon %>">
+  <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
 
   <meta content="<%= title %>,フューチャーアーキテクト,Future Architect,フューチャー技術ブログ" name="keywords">
   <meta content="Future Architect Consultant" name="author">
 
-  <!-- Styles START -->
   <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/metronic/assets/corporate/css/style.css">
   <link rel="stylesheet" href="/metronic/assets/corporate/css/style-responsive.css">
   <link rel="stylesheet" href="/metronic/assets/corporate/css/themes/custom.css">
   <link rel="stylesheet" href="/css/theme-styles.css">
-  <!-- Styles END -->
 </head>
