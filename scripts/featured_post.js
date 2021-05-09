@@ -7,7 +7,7 @@ hexo.extend.helper.register('featured_posts', function(rate) {
     ;
 
   const links = featureds.map(post => `
-    <li><a href="/${post.path}" title="${post.lede}">${post.title}</a></li>`).join("\n")
+    <li>${post.date.format('YYYY.MM.DD')}<a href="/${post.path}" title="${post.lede}">${post.title}</a></li>`).join("\n")
 
   return `
   <div class="widget">
