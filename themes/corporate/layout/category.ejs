@@ -5,8 +5,7 @@
     <li class="active"><%- page.category %></li>
   </ul>
 <section id="main">
-<h1><%- page.category %> カテゴリの記事一覧</h1>
- <%= site.posts.map(post => post.categories).filter(category => true)[0][1] %>
+<h1><%- page.category %> カテゴリの記事一覧 <%= count_category(page.category) %>件</h1>
  <%- partial('_partial/archive', {pagination: config.category, index: true}) %>
 </section>
 </div>
