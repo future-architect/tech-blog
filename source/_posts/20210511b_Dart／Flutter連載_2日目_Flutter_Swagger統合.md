@@ -489,4 +489,4 @@ class ApiClient {
 </div></details>
 
 
-[Dart/Flutter連載](/articles/20210510a/)の2記事目でした。次回は澁川さんの[/articles/20210512a](Goのサーバーの管理画面をFlutter Webで作ってみるための調査)です。
+[Dart/Flutter連載](/articles/20210510a/)の2記事目でした。次回は澁川さんの [Goのサーバーの管理画面をFlutter Webで作ってみるための調査](/articles/20210512a/) です。
