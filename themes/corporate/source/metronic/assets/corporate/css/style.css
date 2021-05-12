@@ -970,11 +970,12 @@ Notes
 
 .blog-tags li span {
   background: #f5f5f5;
+  padding: 3px 0px 3px 0px;
 }
 
 .blog-tags li a:hover {
   color: #fff;
-  background: #424242;
+  background: #129299;
   text-decoration: none;
 }
 .blog-tags li a:hover i {
