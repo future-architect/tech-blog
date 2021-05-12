@@ -16,7 +16,7 @@ Flutter 2になって、Web向けに出力する機能もStableになりまし�
 
 Flutter for Webは標準のHTMLにするHTMLレンダラーと、CanvasKitレンダラーと2種類あります。後者はSkiaという2DグラフィックスのライブラリをWebAssembly化したものを使います。Skiaはウェブ向けではないFlutterでも使っているため、モバイルとの互換性の高さが期待されます。
 
-現状では明示的に指定しなければauto（モバイルはHTMLレンダラー、PCはCanvasKitレンダラー）になりますが、明示的に指定もできます。これらの違いはまた後で触れますが、せっかくウェブが出せるようになったので、ウェブフロントエンドをFlutterで作ってみるための色々調査をしてみました。そろそろ、React/Vue/Angularを一通り業務で使ってみましたし、フロントエンド開発周りもここ5-6年ぐらい、書き方が違うぐらいでやっていることはあんまり変わらなくて個人的に飽きてきたこともあります。
+現状では明示的に指定しなければauto（モバイルはHTMLレンダラー、PCはCanvasKitレンダラー）になりますが、明示的に指定もできます。これらの違いはまた後で触れますが、せっかくウェブが出せるようになったので、ウェブフロントエンドをFlutterで作ってみるための色々調査をしてみました。React/Vue/Angularを一通り業務で使ってみましたし、フロントエンド開発周りもここ5-6年ぐらい、書き方が違うぐらいでやっていることはあんまり変わらなくて個人的に飽きてきたこともあります。
 
 # ウェブアプリといえばRouter
 
@@ -34,9 +34,9 @@ https://medium.com/flutter/learning-flutters-new-navigation-and-routing-system-7
 * named navigator routesでデフォルトはハッシュを挟んだパスになる（AngularでいうところのHashLocationStrategy）が、PathLocationStrategyも設定可能
 * パスの一部をパラメータとして利用しようとすると面倒
 
-あとは次のあたりも僕がFlutterを見て悩んだポイントです。
+あとは次のあたりも僕がFlutterを学び始めたときにちょっと悩んだポイントです。
 
-* statefulとstatelessでウィジェットを作り分ける
+* statefulとstatelessでウィジェットを作り分ける必要がある
 * buildメソッドはReactのrender
 * builderという言葉はVueのslot的な、特定のライフサイクルで呼ばれてビューの一部を返す何か←某握力王の人に教えてもらいました
 * debug(）関数でconsole.logに出力できる
@@ -414,6 +414,18 @@ class _KenAllState extends State<KenAll> {
 }
 ```
 
+このHTTPアクセスには外部パッケージが必要なため、pubspec.yamlとHTTPリクエストを送っているコードへのimportの追加を行いま。
+
+```yaml:pubspec.yaml
+dependencies:
+ http: ^0.13.3
+```
+
+```dart:lib/main.dart
+import 'package:http/http.dart' as http;
+```
+
+
 無事動いたようです。
 
 
@@ -421,10 +433,11 @@ class _KenAllState extends State<KenAll> {
 
 # まとめ
 
-そろそろReact/Vue/Angularに飽きてきたかも？な人の新たなおもちゃとしてFlutter Webの紹介をしました。機能的には以下の2つを紹介しました
+そろそろReact/Vue/Angularに飽きてきたかも？な人の新たなおもちゃとしてFlutter Webの紹介をしました。機能的には以下の3つを紹介しました
 
 * Router周り
 * ビルドした成果物がどうなっていて他の言語(Go)のサーバーにどう組み込めばいいのか
+* サーバーへのHTTPアクセス
 
 モバイルアプリ開発案件じゃなくてもFlutterができてしまうので、スカンクワークスにぴったりですね。用途が広くていつの間にかシェアを広げていた黎明期のGoと同じように、上司に内緒でこっそり導入に最適です。
 
