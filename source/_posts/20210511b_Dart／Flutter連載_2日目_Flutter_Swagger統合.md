@@ -77,7 +77,7 @@ flutter create flutter_swagger
 
 ※Flutter基本的なディレクトリ構造に関しての説明は今回は割愛します。
 
-<img src="/images/20210511b/image.png" alt="ディレクトリ構成" width="580" height="758">
+<img src="/images/20210511b/image.png" alt="ディレクトリ構成" width="580" height="758" loading="lazy">
 
 ## swagger.yaml配置
 
@@ -140,7 +140,7 @@ openapi-generator generate -i ./swagger.yaml -g dart -o ./client
 
 ※コンパイルエラーが発生している場合は`client`配下で`flutter pub get`を実行して依存ライブラリを解決してください。
 
-<img src="/images/20210511b/image_2.png" alt="openapi-generatorでの生成先ディレクトリ" width="554" height="1102">
+<img src="/images/20210511b/image_2.png" alt="openapi-generatorでの生成先ディレクトリ" width="554" height="1102"  loading="lazy">
 
 
 主たる生成コードの役割は以下の通りです。
@@ -488,3 +488,5 @@ class ApiClient {
 ```
 </div></details>
 
+
+[Dart/Flutter連載](/articles/20210510a/)の2記事目でした。次回は澁川さんの[/articles/20210512a](Goのサーバーの管理画面をFlutter Webで作ってみるための調査)です。

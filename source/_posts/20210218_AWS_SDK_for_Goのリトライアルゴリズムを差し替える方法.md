@@ -216,6 +216,8 @@ func init() {
 
 # 関連記事
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200121/index.html" data-iframely-url="//cdn.iframe.ly/raMwXJI?iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200121/index.html" data-iframely-url="//cdn.iframe.ly/raMwXJI?iframe=card-small"></a></div></div>
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201112/index.html" data-iframely-url="//cdn.iframe.ly/l2eSPH0?iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201112/index.html" data-iframely-url="//cdn.iframe.ly/l2eSPH0?iframe=card-small"></a></div></div>
+
+<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>

@@ -15,7 +15,7 @@ lede: "私はフロントエンドエンジニアとして約1年くらいVue2�
 # はじめに
 こんにちは、Technology Innovation Group所属の久保です。
 
-私はフロントエンドエンジニアとして約1年くらいVue2でのフロントエンド開発を行っています。そんなVue3を全く触ったことにのないエンジニアが読んだ｢WEB+DB PRESS Vol.120｣に掲載されている｢最新Vue.js3入門｣の記事感想文となります｡  
+私はフロントエンドエンジニアとして約1年くらいVue2でのフロントエンド開発を行っています。そんなVue3を全く触ったことにのないエンジニアが読んだ｢WEB+DB PRESS Vol.120｣に掲載されている｢最新Vue.js3入門｣の記事感想文となります｡
 
 とても面白く良い雑誌なので是非定期購入をおすすめします｡
 
@@ -51,9 +51,9 @@ lede: "私はフロントエンドエンジニアとして約1年くらいVue2�
 
 ## 1章
 - Vueの歴史
-- Vueの特徴  
-    -  HTMLベースでの制御について  
-    -  コンポーネントによる構成  
+- Vueの特徴
+    -  HTMLベースでの制御について
+    -  コンポーネントによる構成
 - 環境構築
     - VScode
     - Vite
@@ -126,7 +126,7 @@ lede: "私はフロントエンドエンジニアとして約1年くらいVue2�
 # 感想
 約30ページながらVueの歴史や特徴､開発環境の構築からToDOアプリケーション実装、Vue3のプラグイン紹介までがかなり濃厚な内容となっています｡また本書はコーディングしながら読み進める構成となっており楽しみながら読める内容だとと思います｡
 
-1章ではVueの環境構築からHello worldやv-if､コンポーネントの構成など書いてます。ページが少ないながら環境構築までしっかりと書いてあるのは初心者にとってありがたいと思いました｡  
+1章ではVueの環境構築からHello worldやv-if､コンポーネントの構成など書いてます。ページが少ないながら環境構築までしっかりと書いてあるのは初心者にとってありがたいと思いました｡
 
 2章ではVue2でのToDoアプリケーションの実装方法が書いてあります｡
 
@@ -134,7 +134,7 @@ lede: "私はフロントエンドエンジニアとして約1年くらいVue2�
 
 3章では2章で実装したものをコンポーネント単位（部品単位）での分け方の紹介となっています｡
 
-別コンポーネントへのデータの渡し方､アニメーション効果の実装方法などが記載されています｡このデータの渡し方が1パターンでなく（props/emit、slot、provide/inject）の複数のパターンで紹介しており、パターン毎のメリット､デメリットなど詳細に記載してありかなり勉強になりました。  
+別コンポーネントへのデータの渡し方､アニメーション効果の実装方法などが記載されています｡このデータの渡し方が1パターンでなく（props/emit、slot、provide/inject）の複数のパターンで紹介しており、パターン毎のメリット､デメリットなど詳細に記載してありかなり勉強になりました。
 
 4章では今まで2-3章で実装したアプリケーションをVue3への移行方法､実装方法が書いてあります｡
 
@@ -165,7 +165,7 @@ Vue3の新機能である <teleport> を試しましょう
 この機能を活用することでVue2では大変だったモーダルウィンドウなどのZ-indexの表示問題を回避することができるようになります。（詳しくは本を読んでみましょう）
 
 このような機能を知るとVue3すげー!やってみたい!という気持ちが奮い立ちます｡またVue2からVue3へのマイグレーションツールの紹介もあります｡Vue2で実装経験のある人には有益な情報だと思います。
- 
+
 5章では4章のVue3で実装したアプリケーションで使わなったもので代表的なプラグインが紹介されています｡まだRC版ですがVue2でアプリケーションを実装したことあるにも人は馴染み深いプラグインも多くあります｡今後の正式版リリースがたのしみですね。
 
 # まとめ
@@ -179,8 +179,10 @@ Vue3の新機能である <teleport> を試しましょう
 
 # 関連記事
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201013/index.html" data-iframely-url="//cdn.iframe.ly/SAxxrkF?iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201013/index.html" data-iframely-url="//cdn.iframe.ly/SAxxrkF?iframe=card-small"></a></div></div>
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200924/index.html" data-iframely-url="//cdn.iframe.ly/dsvZVOu?iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200924/index.html" data-iframely-url="//cdn.iframe.ly/dsvZVOu?iframe=card-small"></a></div></div>
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200428/index.html" data-iframely-url="//cdn.iframe.ly/2dHfIIG"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200428/index.html" data-iframely-url="//cdn.iframe.ly/2dHfIIG"></a></div></div>
+
+<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>

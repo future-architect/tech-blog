@@ -70,11 +70,14 @@ ITの世界に限らずTechnical Credibilityは私たちの日常のいたると
 
 例えばこのように普段使っている便利な小技だったり、やってみて分かったはまりどころ、がっつり業務導入した知見などを技術ブログとして共有することも社内、社外問わず自分のラベリングを作るのに効果的な手法ですね。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200116/index.html" data-iframely-url="//cdn.iframe.ly/AJ0a9bh?iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200116/index.html" data-iframely-url="//cdn.iframe.ly/AJ0a9bh?iframe=card-small"></a></div></div>
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200803/index.html" data-iframely-url="//cdn.iframe.ly/vWZNkTt?iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201013/index.html" data-iframely-url="//cdn.iframe.ly/SAxxrkF?iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200803/index.html" data-iframely-url="//cdn.iframe.ly/vWZNkTt?iframe=card-small"></a></div></div>
+
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201013/index.html" data-iframely-url="//cdn.iframe.ly/SAxxrkF?iframe=card-small"></a></div></div>
+
 
 ### 常に最新の情報をキャッチアップする
 
@@ -110,7 +113,9 @@ Architecture Decision Records(以下ADRs)をご存じでしょうか。私はロ
 
 具体的なADRの例ですがADRの具体的な作り方はこちらがとても分かりやすく整理されていておすすめです。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://scrapbox.io/kawasima/%25E5%25AE%259F%25E8%25B7%25B5ADR" data-iframely-url="//cdn.iframe.ly/ca2LjZK"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://scrapbox.io/kawasima/%25E5%25AE%259F%25E8%25B7%25B5ADR" data-iframely-url="//cdn.iframe.ly/ca2LjZK"></a></div></div>
+
+<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 ## おわりに
 

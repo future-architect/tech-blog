@@ -106,6 +106,8 @@ OSS コントリビュートしてみた経験談について記載してみま�
 
 ## 関連記事
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200701/index.html" data-iframely-url="//cdn.iframe.ly/eYAtY3Z?iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200701/index.html" data-iframely-url="//cdn.iframe.ly/eYAtY3Z?iframe=card-small"></a></div></div>
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200522/index.html" data-iframely-url="//cdn.iframe.ly/UQdi94o?iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200522/index.html" data-iframely-url="//cdn.iframe.ly/UQdi94o?iframe=card-small"></a></div></div>
+
+<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>

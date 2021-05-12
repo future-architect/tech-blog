@@ -194,12 +194,13 @@ RUNコンソールの`VARIABLES`部分にて、ブレークポイントで設定
 
 VSCodeのGo周りでは多賀さんの記事もオススメです。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201117/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20201117%2F&amp;key=eed90a27f7b47e9333aee373cceb6203&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
-
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201117/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20201117%2F&amp;key=eed90a27f7b47e9333aee373cceb6203&amp;iframe=card-small"></a></div></div>
 
 市川さんの記事のVSCodeの拡張機能の共有方法すると便利です。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200828/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20200828%2F&amp;key=eed90a27f7b47e9333aee373cceb6203&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200828/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20200828%2F&amp;key=eed90a27f7b47e9333aee373cceb6203&amp;iframe=card-small"></a></div></div>
+
+<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 # おわりに
 これでデバッグ用にPrint文を埋め込んだままcommitしてしまう自分にオサラバです👋
