@@ -3,6 +3,8 @@ date: 2021/04/30 00:00:00
 postid: a
 tag:
   - Go
+  - 登壇資料
+  - 登壇レポート
 category:
   - Programming
 thumbnail: /images/20210430a/thumbnail.png
