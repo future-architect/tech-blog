@@ -1118,3 +1118,15 @@ Notes
 @media (max-width:320px){
   .site-logo{margin-right:0}
 }
+
+/* 折りたたみ */
+summary {
+  padding-top: 10px;
+  cursor: pointer;
+}
+summary:hover {
+  color: #129299;
+}
+details {
+  padding-bottom: 24px;
+}
