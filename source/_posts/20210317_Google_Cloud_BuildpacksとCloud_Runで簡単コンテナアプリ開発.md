@@ -39,7 +39,7 @@ lede: "みなさん、コンテナを利用してアプリケーション開発�
 
 CN Buildpacksについて実際に検証を行っている記事もありますので、こちらもご覧ください。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201002/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20201002%2F&key=42622142e53a4cc5ab36703bcee5415f"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201002/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20201002%2F&key=42622142e53a4cc5ab36703bcee5415f"></a></div></div>
 
 
 ## 環境について
@@ -132,5 +132,7 @@ Cloud Runが発表された2019年のGoogle Cloud Nextはかなり盛り上が�
 
 ## 関連記事
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20210307/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20210307%2F&key=42622142e53a4cc5ab36703bcee5415f"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20210307/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20210307%2F&key=42622142e53a4cc5ab36703bcee5415f"></a></div></div>
+
+<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 

@@ -36,9 +36,9 @@ lede: "エンタープライズの領域ではAD認証が多く利用されて�
 `メニュー　-> Connections -> Enterprise -> Active Directory / LDAP -> CREATE CONNECTION`
 メニューからConnectorを追加し、今回は2つのオプションを有効にしています
 
-* Use Windows Integrated Auth (Kerberos)  
-Auth0はWindows統合認証（Kerberos認証）に対応しており、WindowsでAD認証でログインしており、かつ `IP Ranges` のIPでログインすると認証をスキップできます。  
-* Sync user profile attributes at each login  
+* Use Windows Integrated Auth (Kerberos)
+Auth0はWindows統合認証（Kerberos認証）に対応しており、WindowsでAD認証でログインしており、かつ `IP Ranges` のIPでログインすると認証をスキップできます。
+* Sync user profile attributes at each login
 こちらはシンプルに認証時に最新のプロファイルをADから取得できる設定となっています。
 
 <img src="/images/20210302/スクリーンショット_2021-02-24_10.03.37.png"  style="border:solid 1px #000000">
@@ -179,6 +179,8 @@ Auth0のSalesforce設定ページにチュートリアルページあるので�
 
 # 関連記事
 
-<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 35.9551%; padding-top: 120px;"><a href="https://future-architect.github.io/articles/20210222/index.html" data-iframely-url="//cdn.iframe.ly/MKovoVl"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 35.9551%; padding-top: 120px;"><a href="https://future-architect.github.io/articles/20210222/index.html" data-iframely-url="//cdn.iframe.ly/MKovoVl"></a></div></div>
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200123/index.html" data-iframely-url="//cdn.iframe.ly/6rr8LwH?iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200123/index.html" data-iframely-url="//cdn.iframe.ly/6rr8LwH?iframe=card-small"></a></div></div>
+
+<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
