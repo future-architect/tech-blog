@@ -10,3 +10,7 @@ hexo.extend.helper.register('count_tag', function(name) {
 hexo.extend.helper.register('count_category', function(name) {
   return this.site.posts.filter(post => post.categories.filter(category => category.name === name).length > 0).length;
 });
+
+hexo.extend.helper.register('join_pagetag', function(name) {
+  return this.page.tags.map(tag => tag.name).join(',');
+});

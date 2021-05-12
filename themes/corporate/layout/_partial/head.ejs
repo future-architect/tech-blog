@@ -9,6 +9,8 @@
   <%
     let title = page.title;
     let description;
+    let keywords = 'フューチャーアーキテクト,技術ブログ,ITコンサル';
+    let author = 'フューチャー技術ブログ';
 
     if (is_archive()){
       title = 'Archives';
@@ -20,18 +22,30 @@
     } else if (is_category()){
       title = page.category + ' の記事一覧';
       description = page.category + ' カテゴリの記事一覧 | '　+ config.description
+      keywords = keywords + ',' + page.category;
     } else if (is_tag()){
       title = page.tag + ' の記事一覧';
       description = page.tag + ' タグの記事一覧 | '　+ config.description
+      keywords = keywords + ',' + page.tag;
     } else if (path.indexOf('authors/' + page.author) >= 0) {
       title = page.author;
       description = page.author + ' が執筆した記事一覧 | '　+ config.description
+      keywords = keywords + ',' + page.author;
+      author = page.author;
     }
 
     if (title) {
       title = title + ' | ' + config.title
     } else {
       title = config.title
+    }
+
+    if (page.tags?.length > 0) {
+      keywords = join_pagetag()
+    }
+
+    if (page.author) {
+      author = page.author;
     }
 
   %>
@@ -55,9 +69,8 @@
   <% if (theme.favicon){ %>
   <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
-
-  <meta content="<%= title %>,フューチャーアーキテクト,Future Architect,フューチャー技術ブログ" name="keywords">
-  <meta content="Future Architect Consultant" name="author">
+  <meta content="<%= keywords %>" name="keywords">
+  <meta content="<%= author %>" name="author">
 
   <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/metronic/assets/corporate/css/style.css">
