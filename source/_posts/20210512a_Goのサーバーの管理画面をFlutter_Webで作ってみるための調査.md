@@ -3,6 +3,10 @@ date: 2021/05/12 00:00:00
 postid: a
 tag:
   - Flutter
+  - Go
+  - Flutter連載
+  - ケンオール
+  - SPA
 category:
   - Programming
 thumbnail: /images/20210512a/thumbnail.png
