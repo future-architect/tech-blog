@@ -1,4 +1,4 @@
-  <!-- BEGIN PRE-FOOTER -->
+    <!-- BEGIN PRE-FOOTER -->
     <div class="pre-footer">
       <div class="container">
         <div class="row">
@@ -8,7 +8,6 @@
             <p><%- theme.about %></p>
           </div>
           <!-- END BOTTOM ABOUT BLOCK -->
-
           <!-- BEGIN BOTTOM CONTACTS -->
           <div class="col-md-4 col-sm-6 pre-footer-col">
             <h2>Contact</h2>
@@ -19,64 +18,58 @@
             </address>
           </div>
           <!-- END BOTTOM CONTACTS -->
-
-  <!-- FacebookのShareボタン用. ページに1度初期化できればよいのでフッターに配備 -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-  <!-- Pocket Shareボタン. ページ毎に1度初期化できれば良いのでフッターに配備 -->
-  <script>!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
-  <!-- Twitter Shareボタン. ページ毎に1度初期化できれば良いのでフッターに配備 -->
-  <script>window.twttr = (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
-    if (d.getElementById(id)) return t;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "https://platform.twitter.com/widgets.js";
-    fjs.parentNode.insertBefore(js, fjs);
-
-    t._e = [];
-    t.ready = function(f) {
-      t._e.push(f);
-    };
-    return t;
-  }(document, "script", "twitter-wjs"));</script>
-
-  <!-- はてぶ Shareボタン. ページ毎に1度初期化できれば良いのでフッターに配備 -->
-  <script src="https://b.st-hatena.com/js/bookmark_button.js" async="async"></script>
-
-	<% if (theme.twitter_widget_id){ %>
-    <!-- BEGIN TWITTER BLOCK -->
-    <div class="col-md-4 col-sm-6 pre-footer-col">
-      <!-- Twitterフォローボタン -->
-      <a href="https://twitter.com/<%= theme.twitter_username %>" class="twitter-follow-button" data-show-count="false" data-lang="ja">/<%= theme.twitter_username %>さんをフォロー</a>
-      <!-- 組み込みTwitterウィジェット -->
-      <a data-tweet-limit="1" class="twitter-timeline" href="https://twitter.com/<%= theme.twitter_username %>?ref_src=<%= theme.twitter_widget_id %>" data-lang="ja" data-dnt="true">Tweets by @<%= theme.twitter_username %></a>
-    </div>
-    <!-- END TWITTER BLOCK -->
-	<% } %>
+          <!-- Facebook Share. ページに1度初期化できればよい -->
+          <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+          </script>
+          <!-- Pocket Share. ページ毎に1度初期化できれば良い -->
+          <script>!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+          <!-- Twitter Share. ページ毎に1度初期化できれば良い -->
+          <script>window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+            t._e = [];
+            t.ready = function(f) {
+              t._e.push(f);
+            };
+            return t;
+          }(document, "script", "twitter-wjs"));</script>
+          <!-- はてぶ Shareボタン. ページ毎に1度初期化できれば良いのでフッターに配備 -->
+          <script src="https://b.st-hatena.com/js/bookmark_button.js" async="async"></script>
+          <% if (theme.twitter_widget_id){ %>
+            <!-- BEGIN TWITTER BLOCK -->
+            <div class="col-md-4 col-sm-6 pre-footer-col">
+              <!-- Twitterフォローボタン -->
+              <a href="https://twitter.com/<%= theme.twitter_username %>" class="twitter-follow-button" data-show-count="false" data-lang="ja">/<%= theme.twitter_username %>さんをフォロー</a>
+              <!-- 組み込みTwitterウィジェット -->
+              <a data-tweet-limit="1" class="twitter-timeline" href="https://twitter.com/<%= theme.twitter_username %>?ref_src=<%= theme.twitter_widget_id %>" data-lang="ja" data-dnt="true">Tweets by @<%= theme.twitter_username %></a>
+            </div>
+            <!-- END TWITTER BLOCK -->
+          <% } %>
         </div>
       </div>
     </div>
     <!-- END PRE-FOOTER -->
-
     <!-- BEGIN FOOTER -->
     <div class="footer">
       <div class="container">
         <div class="row">
           <!-- BEGIN COPYRIGHT -->
           <div class="col-md-6 col-sm-6 padding-top-10">
-                  &copy; <%= date(new Date(), 'YYYY') %> <%= config.title %><br>
- <!-- <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a> -->
+            &copy; <%= date(new Date(), 'YYYY') %> <%= config.title %><br>
           </div>
           <!-- END COPYRIGHT -->
-	  <%- partial('_partial/social') %>
+	        <%- partial('_partial/social') %>
         </div>
       </div>
     </div>
