@@ -4,13 +4,13 @@
     <li><a href="/authors">authors</a></li>
     <li class="active"><%- page.author %></li>
   </ul>
-<section id="main">
- <h1><%- page.author %>が執筆した記事一覧 <%= count_author(page.author) %>件</h1>
- <%- partial('_partial/archive', {pagination: config.author, index: true}) %>
+  <section id="main">
+  <h1><%- page.author %>が執筆した記事一覧 <%= count_author(page.author) %>件</h1>
+  <%- partial('_partial/archive', {pagination: config.author, index: true}) %>
 
- <h3>執筆者一覧</h3>
- <div class="blog-info"">
- <%- list_authors() %>
- </div>
-</section>
+  <h3>執筆者一覧</h3>
+  <div class="blog-info"">
+  <%- list_authors() %>
+  </div>
+  </section>
 </div>

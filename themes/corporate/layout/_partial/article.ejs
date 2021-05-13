@@ -1,15 +1,13 @@
 <div class="row">
 <div class="col-md-9 col-sm-9 blog-posts">
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %> blog-item" itemscope itemprop="blogPost">
-  <div class="article-meta">
-  </div>
   <div class="article-inner">
     <% if (post.link || post.title){ %>
     <header class="article-header">
     <ul class="blog-info">
-    <li><a href="<%- url_for('/authors/' + post.author || theme.default_author || 'Anonymous') %>"><%- post.author || theme.default_author || 'Anonymous' %></a></li>
-    <li><%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY/MM/DD'}) %></li>
-    <li><%- partial('post/tag') %></li>
+      <li><a href="<%- url_for('/authors/' + post.author || theme.default_author || 'Anonymous') %>"><%- post.author || theme.default_author || 'Anonymous' %></a></li>
+      <li><%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY/MM/DD'}) %></li>
+      <li><%- partial('post/tag') %></li>
     </ul>
     <%- partial('_partial/post/category') %>
     </header>
