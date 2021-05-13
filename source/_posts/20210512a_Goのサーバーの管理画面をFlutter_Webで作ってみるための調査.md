@@ -445,4 +445,4 @@ import 'package:http/http.dart' as http;
 
 モバイルアプリ開発案件じゃなくてもFlutterができてしまうので、スカンクワークスにぴったりですね。用途が広くていつの間にかシェアを広げていた黎明期のGoと同じように、上司に内緒でこっそり導入に最適です。
 
-[Dart/Flutter連載](/articles/20210510a/)の3記事目でした。次回は鶴巻さんの記事です。
+[Dart/Flutter連載](/articles/20210510a/)の3記事目でした。次回は鶴巻さんの[Flutterレイアウト入門](/articles/20210513b/)です。
