@@ -2,14 +2,14 @@
   <a href="<%- url_for(post.path) %>">
     <div class="col-md-4 col-sm-4">
       <% if (post.thumbnail) { %>
-        <%- image_tag(post.thumbnail, {class: "img-responsive"}) %>
+        <img src="<%= post.thumbnail %>" class="img-responsive" alt="" loading="lazy">
       <% } %>
     </div>
   </a>
   <% if (post.thumbnail) { %>
-    <div class="col-md-8 col-sm-8">
+  <div class="col-md-8 col-sm-8">
   <% } else { %>
-    <div class="col-xs-12">
+  <div class="col-xs-12">
   <% } %>
     <%- partial('post/title', {class_name: 'archive-article-title'}) %>
     <ul class="blog-info">
@@ -18,9 +18,9 @@
     </ul>
     <div class="blog-item">
       <% if (index == true){ %>
-	<%- post.lede || post.excerpt || post.content %>
+    	<%- post.lede || post.excerpt || post.content %>
       <% } else { %>
-	<%- post.lede || post.excerpt %>
+    	<%- post.lede || post.excerpt %>
       <% } %>
     </div>
     <a href="/<%- post.path %>" class="more">Read more <i class="icon-angle-right"></i></a>
