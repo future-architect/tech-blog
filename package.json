@@ -22,7 +22,7 @@
     "hexo-renderer-marked": "^4.0.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
-    "node-fetch": "^2.6.1",
+    "image-size": "^1.0.0",
     "npm": "^7.6.3",
     "sync-fetch": "^0.3.0"
   }
