@@ -36,8 +36,12 @@
             <!-- BEGIN TWITTER BLOCK -->
             <div class="col-md-4 col-sm-6 pre-footer-col">
               <!-- Twitterフォローボタン -->
-              <a href="https://twitter.com/<%= theme.twitter_username %>" class="twitter-follow-button" data-show-count="false" data-lang="ja">/<%= theme.twitter_username %>さんをフォロー</a>
-              <!-- 組み込みTwitterウィジェット -->
+              <li class="twitter-btn">
+                <a href="https://twitter.com/intent/follow?screen_name=future_techblog %>" target="_blank" rel="nofollow noopener">
+                  <i></i><span class="tw-btn-label">@future_techblogさんをフォロー</span>
+                </a>
+              </li>
+              <!-- Twitterタイムライン -->
               <a data-tweet-limit="1" class="twitter-timeline" href="https://twitter.com/<%= theme.twitter_username %>?ref_src=<%= theme.twitter_widget_id %>" data-lang="ja" data-dnt="true">Tweets by @<%= theme.twitter_username %></a>
             </div>
             <!-- END TWITTER BLOCK -->
