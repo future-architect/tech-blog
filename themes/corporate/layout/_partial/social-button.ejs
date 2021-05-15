@@ -1,11 +1,13 @@
 <!-- シェアボタン START -->
   <ul class="social-button">
-    <% let link = page.permalink
-       let title = ""
+    <%
+       let link = full_url_for(path).replace("index.html", "");
+       let title = "";
        if (typeof post != 'undefined') {
-           link = post.permalink
-           title = post.title
+           link = post.permalink;
+           title = post.title;
        }
+       const posts = site.posts;
     %>
     <!-- Twitter -->
     <li class="twitter-btn">
@@ -21,14 +23,14 @@
     <li class="hatebu-btn">
       <a href="https://b.hatena.ne.jp/entry/s/<%- encodeURI(link).replace('https://', '') %>"
         onclick="window.open(this.href, 'hatebuwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow">
-        <i></i><span class="hatebu-btn-label">1234</span>
+        <i></i><span class="hatebu-btn-label"><%= get_hatebu_count(link) %></span>
       </a>
     </li>
     <!-- pocket -->
     <li class="pocket-btn">
       <a href="https://getpocket.com/save?url=<%- encodeURI(link) %>"
         onclick="window.open(this.href, 'pocketwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow">
-        <i></i><span class="pocket-btn-label">0</span>
+        <i></i><span class="pocket-btn-label"><%= get_pocket_count(link) %></span>
       </a>
     </li>
   </ul>
