@@ -6,7 +6,7 @@ let hatebuCnt = {};
 
 hexo.extend.helper.register("get_pocket_count", (url) => {
   const count = pocketCnt[url];
-  if (count) {
+  if (count >= 0) {
     return count
   }
   console.log("start fetch pocket count");
@@ -22,7 +22,7 @@ hexo.extend.helper.register("get_pocket_count", (url) => {
 
 hexo.extend.helper.register("get_hatebu_count", (url) => {
   const count = hatebuCnt[url];
-  if (count) {
+  if (count >= 0) {
     return count
   }
   console.log("start fetch hatebu count");
