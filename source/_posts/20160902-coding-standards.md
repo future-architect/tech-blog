@@ -41,7 +41,7 @@ lede: "システム屋さんがうれしいJava8対応のコーディング規�
 
 ## Future Enterprise Coding Standards
 
-![](/images/20160902/photo_20160902_01.png)
+!["フューチャーコーディング規約のイメージキャラクター"](/images/20160902/photo_20160902_01.png)
 
 
 世の中になければ自分たちで作るというのは弊社の行動理念でもあるので、社内で伝統的に受け継がれ、細かな改善をしてきたコーディング規約をベースに技術チーム有志にてJava8対応版を作りました。
@@ -122,7 +122,7 @@ List<Character> alphabetLower = list.stream()
 Java8を使っているし、せっかくだからStream APIで実装しようと思っても、
 実は性能がシビアに求められる処理だったりしませんか？
 
-#### 計測結果  
+#### 計測結果
 
 | 処理するListの件数 | 拡張for文 (ms) | StreamAPI (ms) |
 |------------------:|------------------:|------------------:|
@@ -148,7 +148,7 @@ https://github.com/future-architect/coding-standards
 
 ## 参考：イメージキャラクターについて
 
-<img src="/images/20160902/photo_20160902_01.png" style="width:200px;" />
+<img src="/images/20160902/photo_20160902_01.png" alt="フューチャーコーディング規約のイメージキャラクター" style="width:200px;" />
 
 ### 特徴
 
