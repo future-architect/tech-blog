@@ -18,18 +18,6 @@
             </address>
           </div>
           <!-- END BOTTOM CONTACTS -->
-          <!-- Facebook Share. ページに1度初期化できればよい -->
-          <div id="fb-root"></div>
-          <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-          </script>
-          <!-- Pocket Share. ページ毎に1度初期化できれば良い -->
-          <script>!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
           <!-- Twitter Share. ページ毎に1度初期化できれば良い -->
           <script>window.twttr = (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
@@ -44,14 +32,16 @@
             };
             return t;
           }(document, "script", "twitter-wjs"));</script>
-          <!-- はてぶ Shareボタン. ページ毎に1度初期化できれば良いのでフッターに配備 -->
-          <script src="https://b.st-hatena.com/js/bookmark_button.js" async="async"></script>
           <% if (theme.twitter_widget_id){ %>
             <!-- BEGIN TWITTER BLOCK -->
             <div class="col-md-4 col-sm-6 pre-footer-col">
               <!-- Twitterフォローボタン -->
-              <a href="https://twitter.com/<%= theme.twitter_username %>" class="twitter-follow-button" data-show-count="false" data-lang="ja">/<%= theme.twitter_username %>さんをフォロー</a>
-              <!-- 組み込みTwitterウィジェット -->
+              <li class="twitter-btn">
+                <a href="https://twitter.com/intent/follow?screen_name=future_techblog %>" target="_blank" rel="nofollow noopener">
+                  <i></i><span class="tw-btn-label">@future_techblogさんをフォロー</span>
+                </a>
+              </li>
+              <!-- Twitterタイムライン -->
               <a data-tweet-limit="1" class="twitter-timeline" href="https://twitter.com/<%= theme.twitter_username %>?ref_src=<%= theme.twitter_widget_id %>" data-lang="ja" data-dnt="true">Tweets by @<%= theme.twitter_username %></a>
             </div>
             <!-- END TWITTER BLOCK -->

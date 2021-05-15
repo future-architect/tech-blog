@@ -17,9 +17,13 @@
       </a>
     </li>
     <!-- Facebook -->
-    <li class="social-button-fb" style="width:120px; height:20px">
-     <div class="fb-like" data-href="<%- link %>" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <li class="fb-btn">
+      <a href="http://www.facebook.com/share.php?u=<%- link %>&t=<%- encodeURI(title) %>"
+        onclick="window.open(this.href, 'fbsharewindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow">
+        <i></i><span class="fb-btn-label">シェア</span>
+      </a>
     </li>
+    <!-- hatebu -->
     <li class="hatebu-btn">
       <a href="https://b.hatena.ne.jp/entry/s/<%- encodeURI(link).replace('https://', '') %>"
         onclick="window.open(this.href, 'hatebuwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow">
