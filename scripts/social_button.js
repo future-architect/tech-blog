@@ -7,6 +7,7 @@ let hatebuCnt = {};
 if (fs.existsSync("cache_pocket.json")) {
   let pocketCache = fs.readFileSync("cache_pocket.json", 'utf-8');
   if (pocketCache) {
+    console.log(`cache reuse: cache_pocket.json`);
     pocketCnt = JSON.parse(pocketCache);
   }
 }
@@ -14,6 +15,7 @@ if (fs.existsSync("cache_pocket.json")) {
 if (fs.existsSync("cache_hatebu.json")) {
   let hatebuCache = fs.readFileSync("cache_hatebu.json", 'utf-8');
   if (hatebuCache) {
+    console.log(`cache reuse: cache_hatebu.json`);
     hatebuCnt = JSON.parse(hatebuCache);
   }
 }
@@ -28,7 +30,6 @@ hexo.extend.helper.register("get_pocket_count", (url) => {
   if (count >= 0) {
     return count
   }
-  console.log("start fetch pocket count");
 
   let pocketURL = `https://widgets.getpocket.com/api/saves?url=${url}`
   const saveCnt = fetch(pocketURL).json().saves;
@@ -44,7 +45,6 @@ hexo.extend.helper.register("get_hatebu_count", (url) => {
   if (count >= 0) {
     return count
   }
-  console.log("start fetch hatebu count");
 
   let hatebuURL = `https://bookmark.hatenaapis.com/count/entry?url=${encodeURI(url)}`
   const bookmarkCnt = fetch(hatebuURL).json();
