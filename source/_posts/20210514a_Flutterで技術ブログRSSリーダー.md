@@ -274,7 +274,7 @@ RSSを読み込んでスワイプで記事を管理できるシンプルなリ�
 
 初めてのFlutterでしたが、大きなハマりもなくレイアウトをXMLではなく、コードで記載することは新鮮でした。
 
-[Dart/Flutter連載](/articles/20210510a/)の5日目でした。次は越島さんの「FlutterでMONETマーケットプレイスAPIを使ってみた」です。
+[Dart/Flutter連載](/articles/20210510a/)の5日目でした。次は越島さんの [FlutterでMONETマーケットプレイスAPIを使ってみた](/articles/20210517a/)です。
 
 
 
