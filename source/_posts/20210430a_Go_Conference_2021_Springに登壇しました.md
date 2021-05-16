@@ -41,9 +41,11 @@ Goでは `net` パッケージを使うと簡単にTCPクライアントを実�
 
 セッションを見ていただいた皆様、twitterでコメントくださった皆様、ありがとうございました！
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Goでソケットを直接触る機会、ありそうでなかなかないのでこういった知識の復習大事 <a href="https://twitter.com/hashtag/gocon?src=hash&amp;ref_src=twsrc%5Etfw">#gocon</a> <a href="https://twitter.com/hashtag/goconA?src=hash&amp;ref_src=twsrc%5Etfw">#goconA</a></p>&mdash; castaneai (@castanea) <a href="https://twitter.com/castanea/status/1385837483384995841?ref_src=twsrc%5Etfw">April 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Goでソケットを直接触る機会、ありそうでなかなかないのでこういった知識の復習大事 <a href="https://twitter.com/hashtag/gocon?src=hash&amp;ref_src=twsrc%5Etfw">#gocon</a> <a href="https://twitter.com/hashtag/goconA?src=hash&amp;ref_src=twsrc%5Etfw">#goconA</a></p>&mdash; castaneai (@castanea) <a href="https://twitter.com/castanea/status/1385837483384995841?ref_src=twsrc%5Etfw">April 24, 2021</a></blockquote>
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">コネクションプーリングしていてそのコネクションが悪くなっていることがあるって怖いね。<a href="https://twitter.com/hashtag/gocon?src=hash&amp;ref_src=twsrc%5Etfw">#gocon</a> <a href="https://twitter.com/hashtag/goconA?src=hash&amp;ref_src=twsrc%5Etfw">#goconA</a></p>&mdash; Kabo (@kabochapo) <a href="https://twitter.com/kabochapo/status/1385841331365310464?ref_src=twsrc%5Etfw">April 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">コネクションプーリングしていてそのコネクションが悪くなっていることがあるって怖いね。<a href="https://twitter.com/hashtag/gocon?src=hash&amp;ref_src=twsrc%5Etfw">#gocon</a> <a href="https://twitter.com/hashtag/goconA?src=hash&amp;ref_src=twsrc%5Etfw">#goconA</a></p>&mdash; Kabo (@kabochapo) <a href="https://twitter.com/kabochapo/status/1385841331365310464?ref_src=twsrc%5Etfw">April 24, 2021</a></blockquote>
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">TCP面白かったです！！！<a href="https://twitter.com/hashtag/gocon?src=hash&amp;ref_src=twsrc%5Etfw">#gocon</a> <a href="https://twitter.com/hashtag/goconA?src=hash&amp;ref_src=twsrc%5Etfw">#goconA</a></p>&mdash; luccafort (@luccafort) <a href="https://twitter.com/luccafort/status/1385841179648872452?ref_src=twsrc%5Etfw">April 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">TCP面白かったです！！！<a href="https://twitter.com/hashtag/gocon?src=hash&amp;ref_src=twsrc%5Etfw">#gocon</a> <a href="https://twitter.com/hashtag/goconA?src=hash&amp;ref_src=twsrc%5Etfw">#goconA</a></p>&mdash; luccafort (@luccafort) <a href="https://twitter.com/luccafort/status/1385841179648872452?ref_src=twsrc%5Etfw">April 24, 2021</a></blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
