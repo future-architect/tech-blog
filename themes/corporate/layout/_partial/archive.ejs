@@ -25,17 +25,15 @@
       </div>
     <% } %>
   </section>
+<% } %>
+  <div class="margin-bottom-20 nav">
+    <h3>注目の記事</h3>
+    <%- partial('../_partial/featured-post.ejs') %>
+  </div>
   <div class="blog-tags margin-bottom-20">
     <h3>タグから記事を探す</h3>
     <%- partial('../_widget/tag.ejs') %>
   </div>
-<% } %>
-
-<div class="margin-bottom-20 nav">
-  <h3>注目の記事</h3>
-  <%- partial('../_partial/featured-post.ejs') %>
-</div>
-
 </div>
 <% if(index == true){ %>
 <div class="col-xs-12 col-sm-12 col-md-2 blog-sidebar">
