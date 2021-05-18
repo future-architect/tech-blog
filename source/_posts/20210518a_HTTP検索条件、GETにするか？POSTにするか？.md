@@ -29,7 +29,7 @@ RESTfullとかRESTishな方針でWebAPIの横断検索を設計する際にチ�
 
 ## 背景と論点
 
-<img src="/images/20210518a/choice-2692575_640.jpg" alt="" width="" height="" loading="lazy">
+<img src="/images/20210518a/choice-2692575_640.jpg" alt="アイキャッチ" width="640" height="237" loading="lazy">
 
 <a href="https://pixabay.com/ja/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2692575">Gerd Altmann</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2692575">Pixabay</a>からの画像
 
@@ -105,10 +105,17 @@ RESTfullとかRESTishな方針でWebAPIの横断検索を設計する際にチ�
 
 私もあるべき論は置いておいて、業務ではPOSTメソッドで検索APIを設計する方向で舵を切るようになりました。
 
+## FAQ
+
+1. 僕はGET/POSTの両方用意したい派です
+    * LSUDsとかOSSツールならそれの方が良い気がします
+    * SSKDsだと、誤ってGET版を触って動かないんだけどなんで？とか問い合わせを受けそうなので、利用者側の設計の余地を狭めるためにどっちか片方だけ（POSTだけ）の提供にしたいです
 
 ## HTTP SEARCH メソッドの提案がある
 
 2021/05/01時点ではDraftフェーズですが、何度かHTTP SEARCH メソッドの仕様検討があるようです。
+
+簡単に言うと、GETのように参照（検索）の意味を持つSEARCHメソッドで、条件はPOSTのようにリクエストボディに記載することができます
 
 * https://tools.ietf.org/html/draft-snell-search-method-02
     * Expiresが2021/03/06なので、もう無効になっているので注意です。過去には00, 01版もあり定期的に検討されていそう
