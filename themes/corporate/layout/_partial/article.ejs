@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-md-9 col-sm-9 blog-posts">
+  <main class="col-md-9 col-sm-9 blog-posts">
     <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %> blog-item" itemscope itemprop="blogPost">
       <div class="article-inner">
         <% if (post.link || post.title){ %>
@@ -24,13 +24,19 @@
             <%- post.content %>
           <% } %>
         </div>
-        <div class="social-area">
-        <%- partial('social-button') %>
-        </div>
+        <footer>
+          <section class="social-area">
+          <%- partial('social-button') %>
+          </section>
+          <section class="featured-post margin-bottom-20 nav">
+            <h2>注目の記事</h2>
+            <%- partial('featured-post') %>
+          </section>
+        </footer>
       </div>
     </article>
-  </div>
+  </main>
   <aside class="col-md-3 col-sm-3 blog-sidebar">
-    <%- partial('sidebar') %>
+    <%- partial('sidebar-top') %>
   </aside>
 </div>

@@ -1,64 +1,66 @@
     <!-- BEGIN PRE-FOOTER -->
-    <div class="pre-footer">
-      <div class="container">
-        <div class="row">
-          <!-- BEGIN BOTTOM ABOUT BLOCK -->
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2>About Us</h2>
-            <p><%- theme.about %></p>
-          </div>
-          <!-- END BOTTOM ABOUT BLOCK -->
-          <!-- BEGIN BOTTOM CONTACTS -->
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2>Contact</h2>
-            <address class="margin-bottom-40">
-              <%= theme.address_1 %><%= theme.address_2 %><br>
-              <%= theme.address_3 %><br><br>
-              Email: <a href="mailto:<%= theme.email %>"><%= theme.email %></a><br>
-            </address>
-          </div>
-          <!-- END BOTTOM CONTACTS -->
-          <!-- Twitter Share. ページ毎に1度初期化できれば良い -->
-          <script>window.twttr = (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
-            if (d.getElementById(id)) return t;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
-            t._e = [];
-            t.ready = function(f) {
-              t._e.push(f);
-            };
-            return t;
-          }(document, "script", "twitter-wjs"));</script>
-          <% if (theme.twitter_widget_id){ %>
-            <!-- BEGIN TWITTER BLOCK -->
+    <footer>
+      <div class="pre-footer">
+        <div class="container">
+          <div class="row">
+            <!-- BEGIN BOTTOM ABOUT BLOCK -->
             <div class="col-md-4 col-sm-6 pre-footer-col">
-              <!-- Twitterフォローボタン -->
-              <div class="twitter-btn twitter-follow-btn">
-                <a href="https://twitter.com/intent/follow?screen_name=future_techblog %>" target="_blank" rel="nofollow noopener">
-                  <i></i><span class="tw-btn-label">@future_techblogさんをフォロー</span>
-                </a>
-              </div>
-              <!-- Twitterタイムライン -->
-              <a data-tweet-limit="1" class="twitter-timeline" href="https://twitter.com/<%= theme.twitter_username %>?ref_src=<%= theme.twitter_widget_id %>" data-lang="ja" data-dnt="true">Tweets by @<%= theme.twitter_username %></a>
+              <h2>About Us</h2>
+              <p><%- theme.about %></p>
             </div>
-            <!-- END TWITTER BLOCK -->
-          <% } %>
-        </div>
-      </div>
-    </div>
-    <!-- END PRE-FOOTER -->
-    <!-- BEGIN FOOTER -->
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <!-- BEGIN COPYRIGHT -->
-          <div class="col-md-6 col-sm-6 padding-top-10">
-            &copy; <%= date(new Date(), 'YYYY') %> <%= config.title %><br>
+            <!-- END BOTTOM ABOUT BLOCK -->
+            <!-- BEGIN BOTTOM CONTACTS -->
+            <div class="col-md-4 col-sm-6 pre-footer-col">
+              <h2>Contact</h2>
+              <address class="margin-bottom-40">
+                <%= theme.address_1 %><%= theme.address_2 %><br>
+                <%= theme.address_3 %><br><br>
+                Email: <a href="mailto:<%= theme.email %>"><%= theme.email %></a><br>
+              </address>
+            </div>
+            <!-- END BOTTOM CONTACTS -->
+            <!-- Twitter Share. ページ毎に1度初期化できれば良い -->
+            <script>window.twttr = (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+              if (d.getElementById(id)) return t;
+              js = d.createElement(s);
+              js.id = id;
+              js.src = "https://platform.twitter.com/widgets.js";
+              fjs.parentNode.insertBefore(js, fjs);
+              t._e = [];
+              t.ready = function(f) {
+                t._e.push(f);
+              };
+              return t;
+            }(document, "script", "twitter-wjs"));</script>
+            <% if (theme.twitter_widget_id){ %>
+              <!-- BEGIN TWITTER BLOCK -->
+              <div class="col-md-4 col-sm-6 pre-footer-col">
+                <!-- Twitterフォローボタン -->
+                <div class="twitter-btn twitter-follow-btn">
+                  <a href="https://twitter.com/intent/follow?screen_name=future_techblog %>" target="_blank" rel="nofollow noopener">
+                    <i></i><span class="tw-btn-label">@future_techblogさんをフォロー</span>
+                  </a>
+                </div>
+                <!-- Twitterタイムライン -->
+                <a data-tweet-limit="1" class="twitter-timeline" href="https://twitter.com/<%= theme.twitter_username %>?ref_src=<%= theme.twitter_widget_id %>" data-lang="ja" data-dnt="true">Tweets by @<%= theme.twitter_username %></a>
+              </div>
+              <!-- END TWITTER BLOCK -->
+            <% } %>
           </div>
         </div>
       </div>
-    </div>
+      <!-- END PRE-FOOTER -->
+      <!-- BEGIN FOOTER -->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- BEGIN COPYRIGHT -->
+            <div class="col-md-6 col-sm-6 padding-top-10">
+              &copy; <%= date(new Date(), 'YYYY') %> <%= config.title %><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- END FOOTER -->
