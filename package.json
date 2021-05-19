@@ -24,6 +24,7 @@
     "hexo-server": "^2.0.0",
     "image-size": "^1.0.0",
     "npm": "^7.6.3",
+    "random-seed": "^0.3.0",
     "sync-fetch": "^0.3.0"
   }
 }
