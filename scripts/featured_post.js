@@ -1,8 +1,12 @@
+var gen = require('random-seed');
 
-hexo.extend.helper.register('featured_posts', function(rate) {
+hexo.extend.helper.register('featured_posts', function(seed, rate) {
   let count = 0;
+
+  var rand = gen.create(seed);
+
   const featureds = this.site.posts.reverse()
-    .filter(post => post.featured == true && Math.round(Math.random()*100) < rate)
+    .filter(post => post.featured == true && rand(100) < rate)
     .filter(_  => count++ < this.theme.featured_count)
     ;
 
