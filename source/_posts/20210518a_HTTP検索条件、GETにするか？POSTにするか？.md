@@ -93,8 +93,8 @@ RESTfullとかRESTishな方針でWebAPIの横断検索を設計する際にチ�
         * `GET, DELETE and HEAD are no longer allowed to have request body because it does not have defined semantics as per RFC 7231.` と書かれている
         * https://swagger.io/docs/specification/describing-request-body/
 * ライブラリ対応しているのか？
-    * AixisだとGETでBodyを送ってくれないようだ。[Issue](https://github.com/axios/axios/issues/787)にその話がある
-        * フロントエンドがAixisに依存していると厳しい..
+    * AxiosだとGETでBodyを送ってくれないようだ。[Issue](https://github.com/axios/axios/issues/787)にその話がある
+        * フロントエンドがAxiosに依存していると厳しい..
 * [GETメソッドでリクエストボディを指定してはいけない(Swift) - Qiita](https://qiita.com/uhooi/items/e82c8d294a8465a3e6f3)
     * iOSがクライアントにいるとマズイかも
 * AWSのCloudFrontは[GETリクエストでリクエストボディを含むと403(Forbidden)を返す](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/RequestAndResponseBehaviorCustomOrigin.html#RequestCustom-get-body)
@@ -107,9 +107,9 @@ RESTfullとかRESTishな方針でWebAPIの横断検索を設計する際にチ�
 
 ## FAQ
 
-1. 僕はGET/POSTの両方用意したい派です
+1. GET/POSTの両方用意したら良いのでは？
     * LSUDsとかOSSツールならそれの方が良い気がします
-    * SSKDsだと、誤ってGET版を触って動かないんだけどなんで？とか問い合わせを受けそうなので、利用者側の設計の余地を狭めるためにどっちか片方だけ（POSTだけ）の提供にしたいです
+    * SSKDsだと、誤ってGET版を触って動かないんだけどなんで？とか問い合わせを受けそうなので、利用者側の設計の余地を狭めるためにどっちか片方だけ（POSTだけ）の提供にしたいと思っています
 
 ## HTTP SEARCH メソッドの提案がある
 
