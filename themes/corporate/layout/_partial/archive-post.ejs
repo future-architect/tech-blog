@@ -2,7 +2,7 @@
   <a href="<%- url_for(post.path) %>">
     <div class="col-md-4 col-sm-4">
       <% if (post.thumbnail) { %>
-        <img src="<%= post.thumbnail %>" class="img-responsive" alt="" <%= image_size_attribute(post.thumbnail) %> loading="lazy">
+      <img src="<%= post.thumbnail %>" class="img-responsive" alt="" <%= image_size_attribute(post.thumbnail) %> loading="lazy">
       <% } %>
     </div>
   </a>

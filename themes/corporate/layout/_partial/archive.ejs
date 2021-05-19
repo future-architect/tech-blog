@@ -12,17 +12,13 @@
   <section class="archives-wrap">
     <div class="archives">
       <% page.posts.each(function(post, i){ %>
-	<%- partial('archive-post', {post: post, even: i % 2 == 0, index: index}) %>
+	    <%- partial('archive-post', {post: post, even: i % 2 == 0, index: index}) %>
       <% }) %>
     </div>
     <% if (page.posts.length){ %>
-      <div id="page-nav" class="pagination">
-	<%- paginator({
-	  prev_text: 'Prev',
-	  next_text: 'Next',
-    end_size: '2'
-          }) %>
-      </div>
+    <div id="page-nav" class="pagination">
+      <%- paginator({prev_text: 'Prev', next_text: 'Next', end_size: '2'}) %>
+    </div>
     <% } %>
   </section>
 <% } %>
