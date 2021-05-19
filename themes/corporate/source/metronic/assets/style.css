@@ -1160,3 +1160,7 @@ details {
 .article-header .article-category {
   padding-bottom: 24px;
 }
+
+aside h2 {
+  font-size: 25px;
+}
