@@ -74,12 +74,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <%
-  var options = {title:title, description:description, twitter_id:theme.twitter, google_plus:theme.google_plus, fb_admins:theme.fb_admins, fb_app_id:theme.fb_app_id};
+  var options = {title:title, description:description, twitter_id:theme.twitter, fb_admins:theme.fb_admins, fb_app_id:theme.fb_app_id};
   if (page.path == 'index.html'){
     options['image'] = 'metronic/assets/corporate/img/site_logo.jpg';
-  }
-  if (page.eyecatch != "") {
-    options['image'] = page.eyecatch
+  } else if (page.eyecatch) {
+    options['image'] = page.eyecatch;
+  } else {
+    const content  = page.content;
+    let images = [];
+    if (!images.length && content) {
+      images = images.slice();
+      if (content.includes('<img')) {
+        let img;
+        const imgPattern = /<img [^>]*src=['"]([^'"]+)([^>]*>)/gi;
+        while ((img = imgPattern.exec(content)) !== null) {
+          images.push(img[1]);
+        }
+      }
+    }
+    options['image'] = images.filter(path => !(path.endsWith(".svg")));
   }
   %>
   <%- open_graph(options) %>
