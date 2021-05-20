@@ -100,15 +100,32 @@ hexo.extend.helper.register("get_fb_count", (url) => {
 
   if (!fetchableDate(url)) {
     const count = fbCnt[url];
-    if (count >= 0) {
-      return count
+    if (count > 0) {
+      return count;
+    } else if(count == 0) {
+      return "シェア";
     }
   }
 
   let fbURL = `https://graph.facebook.com/v10.0/?fields=og_object{engagement}&id=${encodeURI(url)}&access_token=${token}`
   const resp = fetch(fbURL).json();
 
-  const bookmarkCnt = resp && resp.og_object && resp.og_object.engagement && resp.og_object.engagement.count || 0;
+  if (resp?.error) {
+    /* response example:
+      {
+        "error": {
+          "message": "(#4) Application request limit reached",
+          "type": "OAuthException",
+          "is_transient": true,
+          "code": 4,
+          "fbtrace_id": "A0LtXEmI9dFA9DpCPbEx8wC"
+          }
+        }
+   */
+    return "シェア";
+  }
+
+  const bookmarkCnt = resp?.og_object?.engagement?.count || 0;
   fbCnt[url] = bookmarkCnt;
   console.log(`finish facebook ${url} ${bookmarkCnt}`);
 
