@@ -1,6 +1,9 @@
 var gen = require('random-seed');
 
 hexo.extend.helper.register('featured_posts', function(seed, rate) {
+  if (!seed) {
+    seed = 'future';
+  }
   let count = 0;
 
   var rand = gen.create(seed);
