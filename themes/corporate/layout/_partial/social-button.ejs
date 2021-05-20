@@ -20,7 +20,7 @@
     <li class="fb-btn">
       <a href="http://www.facebook.com/share.php?u=<%- link %>&t=<%- encodeURI(title) %>"
         onclick="window.open(this.href, 'fbsharewindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow">
-        <i></i><span class="fb-btn-label">シェア</span>
+        <i></i><span class="fb-btn-label"><%= get_fb_count(link) %></span>
       </a>
     </li>
     <!-- hatebu -->

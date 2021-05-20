@@ -3,11 +3,11 @@ const fs = require("fs");
 
 let pocketCnt = {};
 let hatebuCnt = {};
+let fbCnt = {};
 
 if (fs.existsSync("cache_pocket.json")) {
   let pocketCache = fs.readFileSync("cache_pocket.json", 'utf-8');
   if (pocketCache) {
-    console.log(`cache reuse: cache_pocket.json`);
     pocketCnt = JSON.parse(pocketCache);
   }
 }
@@ -15,14 +15,22 @@ if (fs.existsSync("cache_pocket.json")) {
 if (fs.existsSync("cache_hatebu.json")) {
   let hatebuCache = fs.readFileSync("cache_hatebu.json", 'utf-8');
   if (hatebuCache) {
-    console.log(`cache reuse: cache_hatebu.json`);
     hatebuCnt = JSON.parse(hatebuCache);
+  }
+}
+
+if (fs.existsSync("cache_facebook.json")) {
+  let fbCache = fs.readFileSync("cache_facebook.json", 'utf-8');
+  if (fbCache) {
+    console.log(`cache reuse: cache_facebook.json`);
+    fbCnt = JSON.parse(fbCache);
   }
 }
 
 process.on('exit', function() {
   fs.writeFileSync("cache_pocket.json", JSON.stringify(pocketCnt, null, 2));
   fs.writeFileSync("cache_hatebu.json", JSON.stringify(hatebuCnt, null, 2));
+  fs.writeFileSync("cache_facebook.json", JSON.stringify(fbCnt, null, 2));
 });
 
 // url example: https://future-architect.github.io/articles/20210519a/
@@ -83,6 +91,30 @@ hexo.extend.helper.register("get_hatebu_count", (url) => {
   hatebuCnt[url] = bookmarkCnt;
 
   console.log(`finish hatebu ${url}`);
+
+  return bookmarkCnt;
+});
+
+hexo.extend.helper.register("get_fb_count", (url) => {
+  let token = process.env.FB_TOKEN;
+
+  if (!fetchableDate(url)) {
+    const count = fbCnt[url];
+    if (count >= 0) {
+      return count
+    }
+  }
+
+  let fbURL = `https://graph.facebook.com/v10.0/?fields=og_object{engagement}&id=${encodeURI(url)}&access_token=${token}`
+  const resp = fetch(fbURL).json();
+
+  const bookmarkCnt = resp && resp.og_object && resp.og_object.engagement && resp.og_object.engagement.count || 0;
+  fbCnt[url] = bookmarkCnt;
+  console.log(`finish facebook ${url} ${bookmarkCnt}`);
+
+  if (bookmarkCnt == 0) {
+    return "シェア";
+  }
 
   return bookmarkCnt;
 });
