@@ -1,9 +1,10 @@
 const fetch = require('sync-fetch');
 const fs = require("fs");
 
-let pocketCnt = {};
-let hatebuCnt = {};
-let fbCnt = {};
+let pocketCnt, hatebuCnt, fbCnt = {};
+let currentPocket = {};
+let currentHatebu = {};
+let currentFb = {};
 
 if (fs.existsSync("cache_pocket.json")) {
   let pocketCache = fs.readFileSync("cache_pocket.json", 'utf-8');
@@ -61,6 +62,10 @@ const fetchableDate = (url)=> {
 }
 
 hexo.extend.helper.register("get_pocket_count", (url) => {
+  if (currentPocket[url]) {
+    return currentPocket[url];
+  }
+
   if (!fetchableDate(url)) {
     const count = pocketCnt[url];
     if (count >= 0) {
@@ -71,6 +76,7 @@ hexo.extend.helper.register("get_pocket_count", (url) => {
   let pocketURL = `https://widgets.getpocket.com/api/saves?url=${url}`
   const saveCnt = fetch(pocketURL).json().saves;
   pocketCnt[url] = saveCnt;
+  currentPocket[url] = saveCnt;
 
   console.log(`finish pocket ${url}`);
 
@@ -78,6 +84,10 @@ hexo.extend.helper.register("get_pocket_count", (url) => {
 });
 
 hexo.extend.helper.register("get_hatebu_count", (url) => {
+  if (currentHatebu[url]) {
+    return currentHatebu[url];
+  }
+
   if (!fetchableDate(url)) {
     const count = hatebuCnt[url];
     if (count >= 0) {
@@ -88,6 +98,8 @@ hexo.extend.helper.register("get_hatebu_count", (url) => {
   let hatebuURL = `https://bookmark.hatenaapis.com/count/entry?url=${encodeURI(url)}`
   const bookmarkCnt = fetch(hatebuURL).json();
   hatebuCnt[url] = bookmarkCnt;
+  currentHatebu[url] = bookmarkCnt;
+  currentFb[url] = bookmarkCnt;
 
   console.log(`finish hatebu ${url}`);
 
@@ -95,6 +107,10 @@ hexo.extend.helper.register("get_hatebu_count", (url) => {
 });
 
 hexo.extend.helper.register("get_fb_count", (url) => {
+  if (currentFb[url]) {
+    return currentFb[url];
+  }
+
   let token = process.env.FB_TOKEN;
 
   if (!fetchableDate(url)) {
@@ -140,3 +156,10 @@ hexo.extend.helper.register("get_fb_count", (url) => {
   return bookmarkCnt;
 });
 
+hexo.extend.helper.register("totalSNSCnt", (url) => {
+  const pocket = pocketCnt[url] || 0;
+  const hatebu = hatebuCnt[url] || 0;
+  const fb = fbCnt[url] || 0;
+
+  return pocket + hatebu + fb;
+});
