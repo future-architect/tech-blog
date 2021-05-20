@@ -22,7 +22,6 @@ if (fs.existsSync("cache_hatebu.json")) {
 if (fs.existsSync("cache_facebook.json")) {
   let fbCache = fs.readFileSync("cache_facebook.json", 'utf-8');
   if (fbCache) {
-    console.log(`cache reuse: cache_facebook.json`);
     fbCnt = JSON.parse(fbCache);
   }
 }
@@ -122,6 +121,11 @@ hexo.extend.helper.register("get_fb_count", (url) => {
           }
         }
    */
+    // 制限にかかった場合は、キャッシュを再利用
+    const count = fbCnt[url];
+    if (count > 0) {
+      return count;
+    }
     return "シェア";
   }
 
