@@ -82,7 +82,7 @@
   } else {
     const content  = page.content;
     let images = [];
-    if (!images.length && content) {
+    if (content) {
       images = images.slice();
       if (content.includes('<img')) {
         let img;
@@ -91,6 +91,13 @@
           images.push(img[1]);
         }
       }
+    }
+
+    // カテゴリ、タグ、著者ページでは取得できないので、サムネイルから取得
+    if (images.length == 0) {
+      page.posts.map(post => post.thumbnail).forEach(path => {
+        images.push(path);
+      })
     }
     options['image'] = images.filter(path => !(path.endsWith(".svg")));
   }
