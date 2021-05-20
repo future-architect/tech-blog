@@ -1,5 +1,6 @@
 <!-- BEGIN FEATURED POSTS -->
 <div class="widget-wrap">
-  <%- featured_posts(page.permalink, 20) %>
+  <% let snsCnt = totalSNSCnt(page.permalink); %>
+  <%- featured_posts(page.permalink, 20, snsCnt) %>
 </div>
 <!-- END FEATURED POSTS -->
