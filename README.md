@@ -25,13 +25,32 @@ $ npm config set proxy http://proxy.future.co.jp:8000
   $ hexo init blog
   $ cd blog
   $ npm install
-  
+
 # run sever(`ctrl * C` で停止)
   $ hexo server
-  
+
 # browser
   $ http://localhost:4000
 ```
+
+## SNSカウントを表示させるために、Facebook開発者用のトークンが必要
+
+1. 開発者キーが必要
+    * https://developers.facebook.com/apps/576262853337658/settings/basic/
+
+2. アクセストークンを取得
+    * https://graph.facebook.com/oauth/access_token?client_id=xxx&client_secret=xxx&grant_type=client_credentials
+    * 次のようなJSONが取得できるので、このaccess tokenの値を取得
+{
+"access_token": "xxx|xxx",
+"token_type": "bearer"
+}
+
+3. アクセストークンが正常か確認
+https://graph.facebook.com?id=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20210313%2F&fields=engagement&access_token=xxx|xxx
+
+4. 環境変数に設定
+    * export FB_TOKEN=xxx|xxx
 
 
 ## techblog sources
