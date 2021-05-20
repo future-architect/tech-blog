@@ -1173,3 +1173,7 @@ aside h2 {
 .featured-post h2{
   font-size: 25px;
 }
+.MathJax {
+  background-color:#ebebeb;
+  padding: 1px 8px 1px 8px;
+}
