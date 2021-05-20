@@ -76,7 +76,7 @@
   <%
   var options = {title:title, description:description, twitter_id:theme.twitter, fb_admins:theme.fb_admins, fb_app_id:theme.fb_app_id};
   if (page.path == 'index.html'){
-    options['image'] = 'metronic/assets/corporate/img/site_logo.jpg';
+    options['image'] = '/ogp_techblog.jpg';
   } else if (page.eyecatch) {
     options['image'] = page.eyecatch;
   } else {
@@ -94,9 +94,11 @@
     }
 
     // カテゴリ、タグ、著者ページでは取得できないので、サムネイルから取得
-    if (images.length == 0) {
+    if (images.length == 0 && page.posts) {
       page.posts.map(post => post.thumbnail).forEach(path => {
-        images.push(path);
+        if (path) {
+          images.push(path);
+        }
       })
     }
     options['image'] = images.filter(path => !(path.endsWith(".svg")));
