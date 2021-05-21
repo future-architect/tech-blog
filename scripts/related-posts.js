@@ -7,11 +7,11 @@ hexo.extend.helper.register('list_related_posts', function() {
     return `<p class="related-posts-none">No related post.</p>`;
   }
 
-  const sameAuthorPosts = this.site.posts.data.filter(p => p.author === post.author).filter(p => p !== undefined);
-  const tagRelatedPosts = post.tags.data.flatMap(tag => tag.posts.data).filter(p => p !== undefined);
-  const postList = sameAuthorPosts.concat(tagRelatedPosts).filter(p => p._id !== post._id).filter(p => p !== undefined);
+  const sameAuthorPosts = this.site.posts.data.filter(p => p.author === post.author);
+  const tagRelatedPosts = post.tags.data.flatMap(tag => tag.posts.data);
+  const postList = sameAuthorPosts.concat(tagRelatedPosts).filter(p => p._id !== post._id);
 
-  let relatedPosts = reduceTag(postList).filter(p => p !== undefined);
+  let relatedPosts = reduceTag(postList);
   relatedPosts.sort(dynamicSort('date', false));
   relatedPosts.sort(dynamicSort('count', false));
 
