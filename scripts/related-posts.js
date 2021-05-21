@@ -1,26 +1,31 @@
 const maxCount = 3;
 
-hexo.extend.helper.register('list_related_posts', function(post) {
+hexo.extend.helper.register('list_related_posts', function() {
+  const post = this.post;
+  if (post.tags === undefined) {
+    // 404.html
+    return `<p class="related-posts-none">No related post.</p>`;
+  }
 
-  // 同じ著者の一覧
   const sameAuthorPosts = this.site.posts.data.filter(p => p.author === post.author);
-
-  // 記事が持つタグに紐づく記事をすべて収集
   const tagRelatedPosts = post.tags.data.flatMap(tag => tag.posts.data);
-
-  const postList = sameAuthorPosts.concat(tagRelatedPosts).filter(tagPost => tagPost._id !== post._id);
+  const postList = sameAuthorPosts.concat(tagRelatedPosts).filter(p => p._id !== post._id);
 
   let relatedPosts = reduceTag(postList);
   relatedPosts.sort(dynamicSort('date', false));
   relatedPosts.sort(dynamicSort('count', false));
 
-  const count = Math.min(maxCount, postList.length);
+  const count = Math.min(maxCount, relatedPosts.length);
   if(count === 0){
     return `<p class="related-posts-none">No related post.</p>`;
   }
 
   let result = "";
   for (var i = 0; i < count; i++) {
+    if (relatedPosts[i] == undefined) {
+      continue;
+    }
+
     result += `<li class="related-posts-item"><span>${relatedPosts[i].date.format('YYYY.MM.DD')}</span><a class="related-posts-link" href=/${relatedPosts[i].path}>${relatedPosts[i].title}</a></li>`;
   }
 

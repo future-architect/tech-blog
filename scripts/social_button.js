@@ -40,7 +40,7 @@ const fetchableDate = (url)=> {
     const ymd = path.replace("/", "").substring(0, 9);
 
     let dt = new Date();
-    var pastDate = dt.getDate() - 10;
+    var pastDate = dt.getDate() - 5;
     dt.setDate(pastDate);
 
     const y = dt.getFullYear();
@@ -54,7 +54,7 @@ const fetchableDate = (url)=> {
   }
 
   // 1%
-  if (Math.random() * 100 <= 1) {
+  if (Math.random() * 100 < 1) {
     return true;
   }
 
@@ -78,8 +78,6 @@ hexo.extend.helper.register("get_pocket_count", (url) => {
   pocketCnt[url] = saveCnt;
   currentPocket[url] = saveCnt;
 
-  console.log(`finish pocket ${url}`);
-
   return saveCnt;
 });
 
@@ -100,8 +98,6 @@ hexo.extend.helper.register("get_hatebu_count", (url) => {
   hatebuCnt[url] = bookmarkCnt;
   currentHatebu[url] = bookmarkCnt;
   currentFb[url] = bookmarkCnt;
-
-  console.log(`finish hatebu ${url}`);
 
   return bookmarkCnt;
 });
