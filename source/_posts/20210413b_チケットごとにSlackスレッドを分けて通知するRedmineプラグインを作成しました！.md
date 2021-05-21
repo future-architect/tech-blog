@@ -5,6 +5,7 @@ tag:
   - Redmine
   - Slack
   - OSS
+  - コアテク
 category:
   - Infrastructure
 thumbnail: /images/20210413b/thumbnail.png

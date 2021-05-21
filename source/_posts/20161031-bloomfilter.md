@@ -4,8 +4,8 @@ postid: ""
 tag:
   - DB
   - SQL
-  - DataModel
-  - Algorithm
+  - データモデル
+  - アルゴリズム
 category:
   - DB
 author: 杉江伸祐

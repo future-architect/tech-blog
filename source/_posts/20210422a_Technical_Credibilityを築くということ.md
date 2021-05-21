@@ -7,7 +7,7 @@ tag:
   - 技術的信頼
   - 春の入門連載
 category:
-  - Programming
+  - Culture
 thumbnail: /images/20210422a/thumbnail.jpg
 author: 須田桂伍
 featured: true

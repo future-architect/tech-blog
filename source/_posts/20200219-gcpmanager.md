@@ -4,10 +4,11 @@ postid: ""
 tag:
   - GCP
   - GCP連載
+  - IaC
 category:
   - Infrastructure
 author: 前原応光
-featured: true
+featured: false
 lede: "普段は、Terraform を使っているのですが、ふとCloud Deployment Manager を使ったことないことに気づきました。そこで、Cloud Deployment Manager について紹介したいと思います。"
 ---
 ## はじめに
@@ -91,7 +92,7 @@ resources:
 詳細は、[こちら](https://cloud.google.com/sdk/gcloud/reference/deployment-manager/deployments)を参考にしてください。
 
 ```bash
-$ gcloud deployment-manager deployments COMMAND DEPLOYMENT_NAME --config [FILE_PATH] --preview 
+$ gcloud deployment-manager deployments COMMAND DEPLOYMENT_NAME --config [FILE_PATH] --preview
 ```
 
 * COMMAND: create, delete, update などを指定

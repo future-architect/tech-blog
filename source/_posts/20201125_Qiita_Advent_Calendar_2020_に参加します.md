@@ -3,8 +3,7 @@ date: 2020/11/25 00:00:00
 postid: ""
 tag:
   - Qiita
-  - AdventCalendar
-  - AdventCalendar2020
+  - アドベントカレンダー
   - TechBlog
 category:
   - Culture

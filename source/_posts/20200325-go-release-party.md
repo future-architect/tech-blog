@@ -4,6 +4,7 @@ postid: ""
 tag:
   - Go
   - 登壇資料
+  - 登壇レポート
 category:
   - Programming
 thumbnail: /images/20200325/thumbnail.png

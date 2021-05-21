@@ -4,6 +4,7 @@ postid: ""
 tag:
   - Go
   - VSCode
+  - ショートカット
 category:
   - Programming
 thumbnail: /images/20200707/thumbnail.png
@@ -50,7 +51,7 @@ VSCode を開いて以下ショートカットキーで出てきます。
 
 gopls を再起動するコマンドです。
 コードを実装していて、何かしらうまく動かない (おかしなエラーが出る、補完が効かなくなる、etc) 場合に即座に試します。 **大体治ります** 。
-   
+
 ### 2. Go: Generate Unit Tests For Function
 
 <img src="/images/20200707/photo_20200707_02.png">

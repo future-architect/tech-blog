@@ -3,6 +3,8 @@ date: 2019/08/04 09:00:00
 postid: ""
 tag:
   - GCP
+  - 参加レポート
+  - GoogleCloudNext
 category:
   - Infrastructure
 author: 村田靖拓
@@ -13,7 +15,7 @@ lede: "Google Cloud Next ’19 in Tokyo Day2 にチームメンバーで参加�
 
 こんにちは、TIG DXチーム[^1]の村田です。[Google Cloud Next ’19 in Tokyo](https://cloud.withgoogle.com/next/tokyo/) Day2 にチームメンバーで参加しましたので参加レポートをお送りします。
 
-[^1]: Technology Innovation Groupの略で、フューチャーの中でも特にIT技術に特化した部隊です。その中でもDXチームは特にデジタルトランスフォーメーションに関わる仕事を推進していくチームです。 
+[^1]: Technology Innovation Groupの略で、フューチャーの中でも特にIT技術に特化した部隊です。その中でもDXチームは特にデジタルトランスフォーメーションに関わる仕事を推進していくチームです。
 
 チームでの参加に至った理由ですが、社内の中でも特にDXチームではGCPの活用事例が非常に増えており、著しい変化を見せるGCPの最新動向を知ること、またGCPサービスの深い理解すること、他社事例などに刺激を貰うことで、自社のFuture IoTサービス[^2]をさらに成長させたい、という思いがあったことが背景にあります。
 
@@ -189,7 +191,7 @@ Concurrencyの値を大きくした時に注意すべきことは、コールド
   - BigQuery＋PostgresQL、MySQL、CloudCqlの組み合わせで使う場面が多い
   - External query functionを利用してBigQueryからCloudCqlへクエリを投げることができる。Joinも可能。
 - BigQueryStorage APIs
-  - BigQueryからデータを取り出すための新しいAPIです。 
+  - BigQueryからデータを取り出すための新しいAPIです。
   - BigQueryのストレージ層に対してgRPCでクエリを投げることによって、従来のAPIと比較して高速かつリアルタイムにデータを取得できる。
 - BigQueryBI Engine
   - レポートで頻繁に必要とされるデータをインメモリ処理にしてくれることで、パフォーマンスを向上させる

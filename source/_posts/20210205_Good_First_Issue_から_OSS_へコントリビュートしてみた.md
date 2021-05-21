@@ -3,6 +3,7 @@ date: 2021/02/05 00:00:00
 postid: ""
 tag:
   - OSS
+  - OSSコントリビュート
   - go-swagger
   - OSS推進タスクフォース
 category:

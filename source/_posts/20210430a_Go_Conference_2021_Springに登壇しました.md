@@ -3,6 +3,7 @@ date: 2021/04/30 00:00:00
 postid: a
 tag:
   - Go
+  - GoConference
   - 登壇資料
   - 登壇レポート
 category:

@@ -5,6 +5,7 @@ tag:
   - OSS
   - OSS推進タスクフォース
   - ApacheWay
+  - コミュニティ
 category:
   - Programming
 author: 藤野圭一

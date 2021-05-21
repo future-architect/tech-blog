@@ -3,7 +3,7 @@ date: 2019/10/16 08:56:31
 postid: ""
 tag:
   - MachineLearning
-  - Algorithm
+  - アルゴリズム
   - 出版
   - SoftwareDesign
   - 線形代数
