@@ -8,6 +8,7 @@ tag:
   - Python
   - CloudNative
   - コンテナデプロイ
+  - コンテナビルド
 category:
   - Infrastructure
 thumbnail: /images/20201002/thumbnail.png

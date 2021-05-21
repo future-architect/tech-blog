@@ -9,7 +9,7 @@ category:
   - Culture
 thumbnail: /images/20210227/thumbnail.jpg
 author: 松本妹子
-featured: true
+featured: false
 lede: "『現場力を活かす最適化とは？～企業の成長を阻害する“属人化した業務”からの脱却～』と題しまして、ウェビナー配信を行います。「最適化」というと皆さん、どのようなイメージを持たれるでしょうか？DX推進の一環として.."
 ---
 

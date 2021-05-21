@@ -3,6 +3,7 @@ date: 2021/01/21 00:00:00
 postid: ""
 tag:
   - Docker
+  - コンテナビルド
 category:
   - Programming
 thumbnail: /images/20210121/thumbnail.png
