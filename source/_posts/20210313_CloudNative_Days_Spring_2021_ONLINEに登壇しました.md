@@ -155,8 +155,7 @@ JSONで出力できる範囲ならかなり強力に押さえ込むことがで�
 OPAはリソースを使用する範囲を決めるという文脈ではかなり強力に制限してくれることを感じました。一方、Terraformそのままのコードを制限するためにはLinterなどの別のツールが必要だと思いました。単一のツールではなくて、複合的に利用していくことで、出来上がるリソース、記述するコードの両方を整えられると考えました。
 社内のIaCの平和を守るために、まだ考え始めた段階ですが、規約は作って浸透させるまでが仕事だと思うので、まだまだ先は長いです。
 
-## 関連記事
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200930/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20200930&amp;key=42622142e53a4cc5ab36703bcee5415f"></a></div></div>
+## オススメの連載です
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200928/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20200928&amp;key=42622142e53a4cc5ab36703bcee5415f"></a></div></div>
 

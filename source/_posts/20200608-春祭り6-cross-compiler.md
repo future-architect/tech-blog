@@ -117,10 +117,10 @@ gcc4.3以降で依存しているMPC, GMP, MPFRをインストールします。
 
 ```bash
 $ sudo port -v install libmpc
-$ port deps libmpc                              
+$ port deps libmpc
 Full Name: libmpc @1.1.0_1
 Library Dependencies: gmp, mpfr
-$ port installed | grep -e mpc -e gmp -e mpfr      
+$ port installed | grep -e mpc -e gmp -e mpfr
   gmp @6.2.0_1 (active)
   libmpc @1.1.0_1 (active)
   mpfr @4.0.2_1 (active)
@@ -134,14 +134,14 @@ $ port installed | grep -e mpc -e gmp -e mpfr
 
 ```bash
 $ sudo port -v install gcc10
-$ port select --list gcc 
+$ port select --list gcc
 Available versions for gcc:
 	mp-gcc10
 	none
 $ sudo port -v select --set gcc mp-gcc10
 Password:
 Selecting 'mp-gcc10' for 'gcc' succeeded. 'mp-gcc10' is now active.
-$ gcc -v                            
+$ gcc -v
 Using built-in specs.
 COLLECT_GCC=gcc
 COLLECT_LTO_WRAPPER=/opt/local/libexec/gcc/x86_64-apple-darwin19/10.1.0/lto-wrapper
@@ -149,7 +149,7 @@ Target: x86_64-apple-darwin19
 Configured with: /opt/local/var/macports/build/_opt_bblocal_var_buildworker_ports_build_ports_lang_gcc10/gcc10/work/gcc-10.1.0/configure --prefix=/opt/local --build=x86_64-apple-darwin19 --enable-languages=c,c++,objc,obj-c++,lto,fortran --libdir=/opt/local/lib/gcc10 --includedir=/opt/local/include/gcc10 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-10 --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-10 --with-gxx-include-dir=/opt/local/include/gcc10/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-isl=/opt/local --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-build-config=bootstrap-debug --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --disable-tls --with-pkgversion='MacPorts gcc10 10.1.0_0' --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk
 Thread model: posix
 Supported LTO compression algorithms: zlib
-gcc version 10.1.0 (MacPorts gcc10 10.1.0_0) 
+gcc version 10.1.0 (MacPorts gcc10 10.1.0_0)
 ```
 
 確かに、gccが切り替わりました。
@@ -243,9 +243,3 @@ AWS Lambdaで提供されるgoのランタイムはgo1.xなのですが、これ
 そのため使いたければ各種パッケージ管理ツールでインストールすればいいだけですが、自分が今使用しているツールがどのようにして作られているかを知ることは、原理原則を理解するには非常に大切かと思います。
 
 例えば新人さんなど、最初はひたすらポチポチコマンドの写経から始まるかもしれませんが、コマンド一つ一つの意味を考えながら、「このオプションにはこういう意味があるのだ」「今自分はこういうことをしているのだ」ということを理解しながらお仕事していければいいなと思います。
-
-
-# 関連記事:
-
-* [Goの標準ライブラリのコードリーディングのすすめ](https://future-architect.github.io/articles/20200310/)
-* [Goならわかるシステムプログラミングが増刷されて初版4刷になりました](https://future-architect.github.io/articles/20200427/)

@@ -24,7 +24,7 @@ TIG DXユニットの宮崎です。これまでRuby、Java中心に仕事をし
 ※パッケージ管理にはGo Modulesを使用している前提です。
 
 # 背景
-社内CIサーバからのインターネットアクセスがやんごとなき事情でホワイトリスト形式で許可されており、ライブラリダウンロードでアクセスするドメインへの接続解除申請を上げようとしたのが契機。  
+社内CIサーバからのインターネットアクセスがやんごとなき事情でホワイトリスト形式で許可されており、ライブラリダウンロードでアクセスするドメインへの接続解除申請を上げようとしたのが契機。
 
 go.modでrequireしているドメインへのアクセスを全て許可したのにも関わらず一部のライブラリが落とせなく、(;´･ω･)? となったのでこれ以上の犠牲者を出さないためTips連載ネタにします。
 
@@ -32,23 +32,13 @@ go.modでrequireしているドメインへのアクセスを全て許可した�
 # 結論
 
 * インターネットアクセスできる環境にて`go mod download -v`でアクセス先を全て表示させる。
-* この時、ライブラリによってはrequireドメインではないリポジトリにリダイレクトされているので、アクセス許可ドメインとして見逃さないこと。(ハマりポイント)　  
+* この時、ライブラリによってはrequireドメインではないリポジトリにリダイレクトされているので、アクセス許可ドメインとして見逃さないこと。(ハマりポイント)　
   * ↓の場合だとrequire先は`cloud.google.com`だがライブラリダウンロード自体は`code.googlesource.com`から実施される。
 
 ```bash
-get "cloud.google.com/go": found meta tag get.metaImport{Prefix:"cloud.google.com/go", VCS:"git", 
+get "cloud.google.com/go": found meta tag get.metaImport{Prefix:"cloud.google.com/go", VCS:"git",
 RepoRoot:"https://code.googlesource.com/gocloud"} at https://cloud.google.com/go?go-get=1
 ```
 
 <br>
 この記事で少しでも犠牲者が減ることを祈っています。
-
-
-## 関連記事 
-
-Goに関連した他の連載企画です。
-
-* [Serverless連載](/tags/Serverless%E9%80%A3%E8%BC%89/)
-* [DynamoDB×Go](/tags/DynamoDB%C3%97Go/)
-* [GCP連載](/tags/GCP%E9%80%A3%E8%BC%89/)
-* [GoCDK](/tags/GoCDK/)

@@ -179,7 +179,7 @@ writerの種類を**テキストフィールド**から**コンテンツ参照**
 
 「作成者」の選択が済んだらコンテンツを公開し，先ほどのように「APIプレビュー」からAPIリクエストをしてレスポンスの確認をしましょう！「writer」には指定した「ブログ作成者」が対応しています！
 <img src="/images/20200512/photo_20200512_17.png" style="border:solid 1px #000000">
- 
+
 # リスト形式の要素を持たせる
 リスト形式で要素を与えようとした際に，どのAPIを利用して実現できるか分からず少しハマりました．
 例えばAWS lambdaについてのブログ記事を作成したとして，
@@ -278,11 +278,3 @@ https://qiita.com/to4-yanagi/items/4e431b99b78401ef65ca
 https://webkikaku.co.jp/homepage/blog/hpseisaku/htmlcss/headless-cms/
 https://microcms.io/blog/lets-relation/
 
-
----
-
-関連記事: 
-
-* [フロントエンド記事集中投稿](/tags/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E8%A8%98%E4%BA%8B%E9%9B%86%E4%B8%AD%E6%8A%95%E7%A8%BF/)
-* [【Figma】を使ってチームでUI/UX設計するといいこと](/articles/20200318/)
-* [TypeScript教育用コンテンツ公開のお知らせ](/articles/20190612/)

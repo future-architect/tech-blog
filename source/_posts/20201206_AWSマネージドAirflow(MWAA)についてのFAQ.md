@@ -18,7 +18,7 @@ lede: "AWS マネージド Airflow  が 2020/11/24 にリリースされまし�
 
 [フューチャー Advent Calendar 6日目](https://qiita.com/advent-calendar/2020/future) です。TIG DXチーム所属の多賀です。
 
-AWS マネージド Airflow (MWAA) が 2020/11/24 にリリースされました。 
+AWS マネージド Airflow (MWAA) が 2020/11/24 にリリースされました。
 
 * [Introducing Amazon Managed Workflows for Apache Airflow (MWAA)](https://aws.amazon.com/jp/blogs/aws/introducing-amazon-managed-workflows-for-apache-airflow-mwaa/)
 
@@ -164,7 +164,7 @@ aws mwaa create-cli-token --name ${airflow name}
 }
 ```
 
-② airflow cli を実行  
+② airflow cli を実行
 リクエスト Body にコマンドを指定します。標準出力と、標準エラー出力が base64 エンコードされて返ってきます。
 
 ```sh
@@ -214,13 +214,6 @@ MWAA を利用するにあたって、気になる点を調べてみました。
 EC2 上への構築では、EC2複数台、RDS、Redis と管理するコンポーネントが多かったので、マネージドで気軽に利用できるようになり、より今後広がりを見せるかなと思います。
 
 現状、機能的には十分足りており、実利用は問題なさそうです。ただ、metadata DBの移行はできないので機能としてサポートされると嬉しいですね。
-
-
-## 関連記事
-
-Airflow 利用にあたって知っておいたほうが良いんじゃないかなと思う情報をまとめました。
-
-* [AirflowのTips 11選](https://future-architect.github.io/articles/20200131/)
 
 
 ## 参考

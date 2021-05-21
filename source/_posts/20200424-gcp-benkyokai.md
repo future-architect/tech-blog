@@ -88,11 +88,3 @@ GCPを使い始めたとき、VPCの設計がリージョンもまたいで使�
 
 の2点を感じました。Organizationの設計はマイクロサービス化するためにはとてもフィットしていて、それぞれ分担して機能を担うことも可能にしているのではないかと思いました。また、Zoneをまたいでサブネットを決定できるのもKubernetesを扱う上で無駄なくIPレンジを使用できる設計ではと考えています。この辺は今回資料を作るにあたり、いい気づきになりました。
 今回はGCPがAWSに比べていい、みたいな意見が多いと思いますが、ユースケースなど様々だとなので、どちらも良いところはあると思います。
-
----
-
-関連記事:
-
-* [GDG DevFest in 信州2019に登壇しました](https://future-architect.github.io/articles/20191129/)
-* [GCP連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Go Cloud#6 GCPのローカルエミュレータを活用する](https://future-architect.github.io/articles/20191119/)

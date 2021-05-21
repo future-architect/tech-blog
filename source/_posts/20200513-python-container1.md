@@ -172,10 +172,3 @@ Pythonを仕事で使う人のための堅いイメージ作成について紹�
 **公開しました(2020/05/14)**
 
 https://future-architect.github.io/articles/20200514/
-
-
-----
-関連記事:
-* [PyConJP 2019に登壇しました](https://future-architect.github.io/articles/20200422/)
-* [AirflowのTips 11選](https://future-architect.github.io/articles/20200131/)
-* [GCP連載#5【もう鍵なくさない】GCPのSecret ManagerとBerglasで幸せになる](https://future-architect.github.io/articles/20200212/)

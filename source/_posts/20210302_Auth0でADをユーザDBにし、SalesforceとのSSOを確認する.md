@@ -177,8 +177,6 @@ Auth0のSalesforce設定ページにチュートリアルページあるので�
 ログインできれば成功です。
 お疲れ様でした。
 
-# 関連記事
-
 <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 35.9551%; padding-top: 120px;"><a href="https://future-architect.github.io/articles/20210222/index.html" data-iframely-url="//cdn.iframe.ly/MKovoVl"></a></div></div>
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200123/index.html" data-iframely-url="//cdn.iframe.ly/6rr8LwH?iframe=card-small"></a></div></div>

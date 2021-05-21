@@ -105,12 +105,3 @@ RUNを連結してrmしたのと同じイメージサイズになりましたね
 マルチステージビルドの場合、実行に必要なファイル群の準備は別イメージ内で完了し、結果を実行イメージにコピーする使い方が一般的です。RUNはそのイメージ内部でyumとかapt-getで追加のライブラリなりツールをインストールする場合のみ使われるはずなので、&&の結合が登場するとしたらそこだけじゃないですかね。
 
 なにもデメリットがなければ「シノゴの言わず結合せよ」でもいいとは思うんですが、デメリットもありますし、特に電力供給が逼迫しているというこの時期ですので、不要な結合をしてキャッシュを効かなくして消費電力を増やさないようにしたいものです。
-
-# 関連記事
-
-* [「Go on DockerスタイルでのバックエンドAPI構築」というテーマでGo Conference’20 in Autumn SENDAIに登壇しました](https://future-architect.github.io/articles/20201010/)
-* [
-「2020年代のコンテナ時代のPythonアーキテクチャ&デプロイ」というテーマでPyCon.jp 2020で発表してきました](https://future-architect.github.io/articles/20200910/)
-* [仕事でPythonコンテナをデプロイする人向けのDockerfile (2): distroless編](https://future-architect.github.io/articles/20200514/)
-* [仕事でPythonコンテナをデプロイする人向けのDockerfile (1): オールマイティ編](https://future-architect.github.io/articles/20200513/)
-

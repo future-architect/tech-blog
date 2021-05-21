@@ -3,6 +3,7 @@ date: 2021/02/03 00:00:00
 postid: ""
 tag:
   - Vue.js
+  - Vue3
   - 書評
   - 書籍
 category:
@@ -177,12 +178,7 @@ Vue3の新機能である <teleport> を試しましょう
 
 * https://gihyo.jp/magazine/wdpress/archive/2021/vol120
 
-# 関連記事
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201013/index.html" data-iframely-url="//cdn.iframe.ly/SAxxrkF?iframe=card-small"></a></div></div>
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200924/index.html" data-iframely-url="//cdn.iframe.ly/dsvZVOu?iframe=card-small"></a></div></div>
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200428/index.html" data-iframely-url="//cdn.iframe.ly/2dHfIIG"></a></div></div>
 
 <script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>

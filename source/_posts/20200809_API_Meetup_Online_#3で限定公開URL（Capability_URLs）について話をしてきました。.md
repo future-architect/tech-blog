@@ -5,6 +5,9 @@ tag:
   - HTTP
   - Web
   - 登壇資料
+  - 署名付きURL
+  - APIMeetup
+  - 登壇レポート
 category:
   - Programming
 thumbnail: /images/20200809/thumbnail.png
@@ -44,7 +47,7 @@ func genPublicKey() string {
         io.ReadFull(rand, baseCode)
         publicKey := base64.StdEncoding.EncodeToString(baseCode)
         if _, ok := existingImages[publicKey]; !ok {
-            return publicKey;        
+            return publicKey;
         }
     }
 }

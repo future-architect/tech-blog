@@ -173,6 +173,3 @@ resource "google_compute_instance" "instance" {
 
 これからさらに夏休み記事は出てきますので、今後の記事もぜひ読んでください！
 
-## 関連記事
-- [夏休み連載](/tags/%E5%A4%8F%E4%BC%91%E3%81%BF%E8%87%AA%E7%94%B1%E7%A0%94%E7%A9%B6/)
-- [Terraform](/tags/Terraform/)

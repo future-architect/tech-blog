@@ -182,11 +182,3 @@ export const testReducer = ({ testStateA = "", testStateB = "" } = {}, action) =
 今回はReduxの基礎的な部分の解説をさせていただきました。Redux理解の足がかりにしていただければ幸いです。
 
 また、今後もよりReactの実装に踏み込んだ内容を投稿できたらと思っております。
-
-----
-
-関連記事:
-
-* [フロントエンドでシステム開発を2年半続けてハマったことから得た教訓3つ](https://future-architect.github.io/articles/20191029/)
-* [その値、Vue.jsは監視していますか？～Vue.jsで値が更新されないときに気をつけるところ～](https://future-architect.github.io/articles/20200316/)
-* [【Figma】を使ってチームでUI/UX設計するといいこと](https://future-architect.github.io/articles/20200318/)

@@ -501,13 +501,7 @@ pagination:
 # さいごに
 
 今回はSwaggerやREST APIの設計に慣れてないメンバーを含む複数人で設計していくことを踏まえて、Swaggerに精通している方には自明な内容を含めやや細かめに規約を設定してみました。
+
 結果として品質の高いスキーマ定義でコードを自動生成することでテスト工数も削減できますし、TypeScriptの恩恵をしっかり享受できました。
+
 よいソースコードを書くために正しく美しいスキーマ定義を設計しましょう。
-
-----
-関連記事：
-
-* [スキーマファースト開発のためのOpenAPI（Swagger）設計規約](https://future-architect.github.io/articles/20200409/)
-* [本当に使ってよかったOpenAPI (Swagger) ツール](https://future-architect.github.io/articles/20191008/)
-* [今あえてTypeScriptのビルド＆バンドルツールを探してみる](https://future-architect.github.io/articles/20200319/)
-* [フロントエンドでシステム開発を2年半続けてハマったことから得た教訓3つ](https://future-architect.github.io/articles/20191029/)

@@ -257,9 +257,8 @@ go run gen/cmd/factory-server/main.go --host 0.0.0.0 --port 3000
 今回はhello world編ということでここまでになります、是非皆さんも実際に試してみてください。
 
 
-# 関連記事
+# go-swaggerの関してはこちらの記事もおすすめです
 
 * [go-swaggerを用いたWebアプリケーション開発Tips19選](https://future-architect.github.io/articles/20200630/)
 * [スキーマファースト開発のためのOpenAPI（Swagger）設計規約](https://future-architect.github.io/articles/20200409/)
 * [WAFとして go-swagger を選択してみた](https://future-architect.github.io/articles/20190814/)
-* [本当に使ってよかったOpenAPI (Swagger) ツール](https://future-architect.github.io/articles/20191008/)

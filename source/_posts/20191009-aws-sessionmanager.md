@@ -4,6 +4,7 @@ postid: ""
 tag:
   - AWS
   - Session-Manager
+  - 踏み台
 category:
   - Infrastructure
 author: 村瀬善則
@@ -154,11 +155,5 @@ Session Managerは不意に切断されてしまうことがありますが、�
 なお、この記事を作成する上で以下のページを参考にさせていただきました。
 https://qiita.com/serima/items/7260cef8a05d13ec6a47
 
-----
-関連記事：
 
-* [Session Manager と踏み台サーバの共存構成](/articles/20200423/)
-* [AWS IAMロールの信頼関係の気になる動作](/articles/20190902/)
-* [一周回って、人間が読み書きする設定ファイルはJSONが良いと思った](/articles/20191001/)
-* [はじめてのTerraform 0.12 ～環境構築～](/articles/20190816/)
-* [5TB/日 のデータをAWS Glueでさばくためにやったこと（性能編）](/articles/20181205/)
+こちらの[Session Manager と踏み台サーバの共存構成](/articles/20200423/) 記事もおすすめです。

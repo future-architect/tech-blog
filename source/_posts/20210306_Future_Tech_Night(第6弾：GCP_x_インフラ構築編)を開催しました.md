@@ -80,14 +80,3 @@ GKEのPrivateクラスタ作成時にはVPC Peeringが自動的に作成され�
 フューチャーでは引き続きFuture Tech Nightを中心に[様々なイベントを開催](https://future.connpass.com/)しております。今後も皆様のご参加をお待ちしております。
 
 connpassのフューチャーグループイベントのメンバー登録やTwitter(@future_recruit_)のフォローもお忘れなく📝
-
-# 関連記事
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200925/index.html" data-iframely-url="//cdn.iframe.ly/YpB7olh?iframe=card-small"></a></div></div>
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201228/index.html" data-iframely-url="//cdn.iframe.ly/RWuBJfe?iframe=card-small"></a></div></div>
-
-<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
-
-
-

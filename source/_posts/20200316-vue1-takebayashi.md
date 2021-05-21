@@ -5,6 +5,7 @@ tag:
   - Frontend
   - Vue.js
   - フロントエンド記事集中投稿
+  - 初心者向け
 category:
   - Programming
 author: 竹林康太
@@ -197,11 +198,5 @@ onLoad () {
 ## おわりに
 
 今回のトラブルを通じてVue.jsの仕組みについてより理解が深まりました。
+
 Vue.jsは便利で手軽ですが、このあたりの内部的な仕組みもしっかりと把握しておきたいですね。
-
-
-----
-関連記事：
-
-* [TypeScript教育用コンテンツ公開のお知らせ](/articles/20190612/)
-* [フロントエンドでシステム開発を2年半続けてハマったことから得た教訓3つ](https://future-architect.github.io/articles/20191029/)

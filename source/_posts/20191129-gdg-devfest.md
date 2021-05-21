@@ -4,6 +4,7 @@ postid: ""
 tag:
   - GCP
   - 登壇資料
+  - 登壇レポート
 category:
   - Infrastructure
 author: 伊藤太斉
@@ -91,13 +92,5 @@ Googlerの[Proppy](https://twitter.com/proppy)がアメリカに住んでいた�
 最後になりますが、本記事を読んでくださった方も、足を伸ばして遠くの勉強会へ行ってみてはいかがでしょうか？
 
 ## 当日のまとめサイト
+
 [DevFest in 信州2019](https://sites.google.com/site/gdgshinshu/home/archive/devfest19)
-
-
-----
-関連記事：
-
-* [初めてのGCPで環境構築してハマったこと](/articles/20190820/)
-* [Let's Try GCP #2 ～Cloud FunctionをVPC connectorと一緒に使ってみる～](/articles/20190927/)
-* [Let's Try GCP #1 ～Cloud Run Buttonを使った楽々コンテナデプロイをやってみた～](/articles/20190909/)
-* [GKEのPodから異なるプロジェクトのIPアドレスへ接続できずハマった話](/articles/20190827/)

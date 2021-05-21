@@ -6,6 +6,7 @@ tag:
   - Redmine
   - Kibana
   - Elasticsearch
+  - マネジメント
 category:
   - Management
 thumbnail: /images/20170510/thumbnail_20170510.jpg
@@ -20,9 +21,9 @@ lede: "Redmineにはデータの可視化機能が標準で搭載されていな
 
 こんにちは。近藤です。
 
-前回までの関連記事です
-  * [1記事目](https://future-architect.github.io/articles/20160920/) はRedmineのデータをKibanaで表示しました
-  * [2記事目](https://future-architect.github.io/articles/20170119/) はRedmineのデータからEVMグラフを作成しKibanaで表示しました
+前回までの記事です
+  * [1記事目](/articles/20160920/) はRedmineのデータをKibanaで表示しました
+  * [2記事目](/articles/20170119/) はRedmineのデータからEVMグラフを作成しKibanaで表示しました
 
 3記事目となる本記事ではRedmineデータを可視化するダッシュボードをKibana上に構築します。Kibanaを使うことによって例えば、担当者別のタスク量、トラッカー別のタスク量、EVMグラフを同時に把握できます。
 
@@ -43,7 +44,7 @@ lede: "Redmineにはデータの可視化機能が標準で搭載されていな
 
 1. 環境構築
 2. データ投入
-3. ダッシュボード構築 
+3. ダッシュボード構築
 
 ## 1.環境構築
 
@@ -373,11 +374,10 @@ EVMグラフの大きさを調整すると、
 なお、次回以降私がブログを執筆する際は、ダッシュボード画像のメール配信に関する方法を記載する予定。
 今後ともよろしくお願い致します。
 
-
 シリーズとして連載しています。こちらもぜひどうぞ。
 
-* [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！](https://future-architect.github.io/articles/20160920/)
-* [マネージャーがうれしいRedmineデータのEVM表示方法を公開します！！](https://future-architect.github.io/articles/20170119/)
+* [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！](/articles/20160920/)
+* [マネージャーがうれしいRedmineデータのEVM表示方法を公開します！！](/articles/20170119/)
 * マネージャーがうれしいRedmineデータのダッシュボード表示方法を公開します！！
-* [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！（Metabase編）](https://future-architect.github.io/articles/20190703/)
+* [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！（Metabase編）](/articles/20190703/)
 

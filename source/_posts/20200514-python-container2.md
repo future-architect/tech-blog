@@ -203,10 +203,4 @@ $ docker run -it --rm -p "8000:8000" pytest
 
 なお、このエントリーの調査過程でdistroless/python3にはmanなどの使われない（シェルもないので）ドキュメントファイルが1.6MBほど入っていることがわかり、それを[報告](https://github.com/GoogleContainerTools/distroless/issues/508)しつつ、PRを用意していたのですが、ビルドエラーが発生→[Debianの配信サーバーのバグ？](https://github.com/GoogleContainerTools/distroless/issues/509)と大事になってきています。本当はサイズをさらに小さくしました、とかっこよく報告できればよかったんですけどね。
 
-
-----
-関連記事:
-* [仕事でPythonコンテナをデプロイする人向けのDockerfile (1): オールマイティ編](https://future-architect.github.io/articles/20200513/)
-* [PyConJP 2019に登壇しました](https://future-architect.github.io/articles/20200422/)
-* [AirflowのTips 11選](https://future-architect.github.io/articles/20200131/)
-* [GCP連載#5【もう鍵なくさない】GCPのSecret ManagerとBerglasで幸せになる](https://future-architect.github.io/articles/20200212/)
+前回の記事である [仕事でPythonコンテナをデプロイする人向けのDockerfile (1): オールマイティ編](/articles/20200513/) を未読の方は合わせて確認ください。

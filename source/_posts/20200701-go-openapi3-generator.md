@@ -383,11 +383,3 @@ var swaggerSpec = []string{
 
 ざっとコード生成を試して、コード側の確認をしてみました。
 結構利用できそうだなというのが全体的な感想で、OpenAPI3.0系の制約がある場合は、oapi-codegen を実際に利用してみたいです。
-
-
-# 関連記事
-
-* [スキーマファースト開発のためのOpenAPI（Swagger）設計規約](https://future-architect.github.io/articles/20200409/)
-* [本当に使ってよかったOpenAPI (Swagger) ツール](https://future-architect.github.io/articles/20191008/)
-* [WAFとして go-swagger を選択してみた](https://future-architect.github.io/articles/20190814/)
-* [go-swaggerを用いたWebアプリケーション開発Tips19選](https://future-architect.github.io/articles/20200630/)

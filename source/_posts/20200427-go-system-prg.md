@@ -29,7 +29,7 @@ TeeReaderのTeeはUNIXのteeコマンドが由来というのは知っていた�
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">&gt; 区切り用のパイプの形がアルファベットのTに似ていることから<br><br>ｿｯﾁｶｰ (´・ω・`)<a href="https://t.co/GWMqZRXzFb">https://t.co/GWMqZRXzFb</a></p>&mdash; MURAOKA Taro (@kaoriya) <a href="https://twitter.com/kaoriya/status/1052060869780156416?ref_src=twsrc%5Etfw">October 16, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-あとは、[Songmuさんの福岡の発表](https://songmu.jp/riji/entry/2019-07-16-gocon-fukuoka.html)がとてもシステムプログラミングだったので、シグナルの扱いとかいくつか引用させていただきました。``exec.CommandContext()``でタイムアウトとかキャンセルされるとSIGKILLが飛ぶんですよとか。シグナル周りでは、doi-t氏のブログエントリーの「[読了、Goならわかるシステムプログラミング: Linuxシグナル再訪 in Go](http://doi-t.hatenablog.com/entry/revisit-linux-signals-in-go)」も参照先にくわえさせていただきました。循環参照ですね。 
+あとは、[Songmuさんの福岡の発表](https://songmu.jp/riji/entry/2019-07-16-gocon-fukuoka.html)がとてもシステムプログラミングだったので、シグナルの扱いとかいくつか引用させていただきました。``exec.CommandContext()``でタイムアウトとかキャンセルされるとSIGKILLが飛ぶんですよとか。シグナル周りでは、doi-t氏のブログエントリーの「[読了、Goならわかるシステムプログラミング: Linuxシグナル再訪 in Go](http://doi-t.hatenablog.com/entry/revisit-linux-signals-in-go)」も参照先にくわえさせていただきました。循環参照ですね。
 
 メモリ周りも[AlpineのDockerイメージを使うとPythonのパフォーマンスが落ちる話](https://superuser.com/questions/1219609/why-is-the-alpine-docker-image-over-50-slower-than-the-ubuntu-image)とか、メモリとパフォーマンスに関する説明をちょっと追記したりしました。あとは``sync.Pool``は``sync``パッケージではありますがスラブアロケータとかパフォーマンス改善の文脈で説明した方がよかろう、とメモリの章に移動しました。かの有名なLinuxコミッターの小崎さんが、メモリ管理のページテーブルで消費されるメモリを「天使のわけまえ」と呼んでいて、さすがオシャレだなぁ、と思って引用したり。
 
@@ -46,12 +46,3 @@ TeeReaderのTeeはUNIXのteeコマンドが由来というのは知っていた�
 # どこで買える？
 
 本日から、いろいろな書店とかには並んでいるようです。確実なのは[ラムダノートのウェブサイト](https://www.lambdanote.com/products/go)から購入ですね。あと、すでにラムダノートの直販サイトで購入してくださった方で、ユーザー登録している方は最新版のPDFのダウンロードができるようになっています。
-
-
-----
-
-関連記事：
-
-* [Real World HTTP 第2版はなぜ1.5倍になったのか](https://future-architect.github.io/articles/20200421/)
-* [TypeScript教育用コンテンツ公開のお知らせ](https://future-architect.github.io/articles/20190612/)
-* [Go Conferenceの📛を作る](https://future-architect.github.io/articles/20191203/)

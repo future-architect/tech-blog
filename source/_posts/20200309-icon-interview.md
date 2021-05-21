@@ -169,9 +169,3 @@ https://future-architect.github.io/articles/20160721/
 
 <img src="/images/20200308/インタビュア.jpg" class="img-middle-size">
 
-
-----
-関連記事:
-
-* [これさえあればサービス構成図がだいたい描けるアイコンセットを公開します！](https://future-architect.github.io/articles/20200204/)
-

@@ -44,14 +44,3 @@ golangci-lint run --new-from-rev=`git merge-base HEAD origin/develop` ./...
 これを`golangci-lint`の`--new-from-rev=`オプションに渡してあげると、そのコミット断面から作業ブランチのHEADまでに新たに生み出してしまったlint issueのみがレポートされます。
 
 PullRequestを出す前に、このコマンドでlint issueがないかのチェックをしてあげるとよいのではないかと思います！
-
-
-
-## 関連記事 
-
-Goに関連した他の連載企画です。
-
-* [Serverless連載](/tags/Serverless%E9%80%A3%E8%BC%89/)
-* [DynamoDB×Go](/tags/DynamoDB%C3%97Go/)
-* [GCP連載](/tags/GCP%E9%80%A3%E8%BC%89/)
-* [GoCDK](/tags/GoCDK/)

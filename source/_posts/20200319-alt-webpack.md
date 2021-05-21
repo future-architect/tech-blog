@@ -7,6 +7,10 @@ tag:
   - Frontend
   - webpack
   - Node.js
+  - Parcel
+  - Fusebox
+  - ncc
+  - Rome.js
 category:
   - Programming
 author: 澁川喜規
@@ -134,7 +138,7 @@ task("dist", async ctx => {
 ビルドは高速で快適です。tsconfig.jsonがなくても実行できます。なお、Node.js 10.xや11.xのバージョンではまだexperimentalなworker_threadパッケージを使っているので、12以降を使うか、``--experimental-worker``オプションが必要です。開発サーバーもあり、HMRもできて、ウェブフロントエンド開発でTypeScriptでやりたい人には良いですね。
 
 ```sh
-% npm start 
+% npm start
 
 > fuse-box-test@1.0.0 start /Users/shibukawa/fuse-box-test
 > ts-node -T fuse
@@ -286,12 +290,3 @@ $ npm install -D ../rome/dist
 まだ正式リリースしていないバージョンも含めて、TypeScriptに最初から対応しているビルド・バンドルツールをいくつか紹介してきました。webpack一強だからこそ、そのwebpackにはない強みを出そうと活発に開発されています。このあたりのエコシステムの活発さはNode.js界隈はやはり強いですね。
 
 まあ、お金をいただいてやる仕事はまだまだwebpackでいいかな・・・と思いつつ、手元でちょっと新しいライブラリを試行錯誤する時とかに、新しいものも使ってみようと思います。とりあえず、FuseBox@nextと、nccはすでに実用に耐えられるレベルかな、と思います。今回はウェブフロントエンド開発をするという前提で開発サーバーの有無とかも紹介しましたが、そうなるとFuseBoxは良さそうです。本当は使い捨てのサンプルで活用したかったので、そのユースケースにいちばんマッチしているParcel 2もリリースされたら使ってみようと思います。Rome.jsも新しい開発体験を目指していそうだし、開発者が強い人たちなので楽しみです。
-
-----
-関連記事：
-
-* [【Figma】を使ってチームでUI/UX設計するといいこと](https://future-architect.github.io/articles/20200318/)
-* [SPA + Tableau Online + Auth0 SSO](https://future-architect.github.io/articles/20200317/)
-* [その値、Vue.jsは監視していますか？～Vue.jsで値が更新されないときに気をつけるところ～](/articles/20200316/)
-* [TypeScript教育用コンテンツ公開のお知らせ](/articles/20190612/)
-* [フロントエンドでシステム開発を2年半続けてハマったことから得た教訓3つ](https://future-architect.github.io/articles/20191029/)
