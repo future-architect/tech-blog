@@ -9,7 +9,7 @@ category:
   - Programming
 thumbnail: /images/20210514a/thumbnail.png
 author: 真野隼記
-featured: true
+featured: false
 lede: "FlutterでRSSを用いてフューチャー技術ブログリーダーを作ろうと思います。"
 ---
 # はじめに
