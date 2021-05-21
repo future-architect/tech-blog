@@ -3,6 +3,8 @@ date: 2019/12/10 16:22:02
 postid: ""
 tag:
   - MachineLearning
+  - NeurIPS
+  - 参加レポート
 category:
   - DataScience
 author: 上野貴史

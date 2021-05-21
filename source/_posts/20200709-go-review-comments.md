@@ -4,6 +4,7 @@ postid: ""
 tag:
   - Go
   - コードレビュー
+  - チーム開発
 category:
   - Programming
 thumbnail: /images/20200709/thumbnail.png
@@ -77,7 +78,7 @@ Goを初めて使うよってメンバーも多いので、インプット情報
 ちなみに、golangci-lintの設定は、スピード重視で最低限にしています。
 
 ```bash:golangciの設定
-golangci-lint run --tests --disable-all \ 
+golangci-lint run --tests --disable-all \
   --enable=goimports --enable=govet --enable=errcheck --enable=staticcheck
 ```
 
@@ -260,7 +261,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 	// 省略
-} 
+}
 ```
 
 今利用しているSDKがどういうエラーを返すかは、[こういったドキュメントを探す](https://docs.aws.amazon.com/sdk-for-go/api/service/dynamodb/#DynamoDB.UpdateItem)か、コードを探すかになると思います。何にしろ、正常系以外のエラーパスのハンドリングはどうしても後回しになりがちですが、この辺はレビュアー視点でも抜け漏れガチなので、相互にチェックしあえると良いかなって思います。
@@ -453,7 +454,7 @@ func ReadValue(r SensorReading) int64 {
 	if r.SensorType == "D001" {
 		return r.Value * 1/100 // 何かしらの補正ロジック
 	}
-	return r.Value * 1/10 // 何かしらの補正ロジック 
+	return r.Value * 1/10 // 何かしらの補正ロジック
 }
 
 // 🚀 レシーバに実装する
@@ -465,7 +466,7 @@ func (r SensorData) ReadValue() int64 {
 	if r.SensorType == "振動系" {
 		return r.Value * 1/100 // 何かしらの補正ロジック
 	}
-	return r.Value * 1/10 // 何かしらの補正ロジック 
+	return r.Value * 1/10 // 何かしらの補正ロジック
 }
 ```
 
@@ -603,7 +604,7 @@ func example() error {
 ```go
 // 💬 一時変数への代入
 func countTextLength(text string) int {
-	text := utf8.RuneCountInString(text)	
+	text := utf8.RuneCountInString(text)
 	return text
 }
 
@@ -651,7 +652,7 @@ func bar(argstring) (*Example, error) {
 ### 17. 単体テストの変数名
 
 出身や育った環境の違い？で期待値と実際値を、`input/actual/expected`と呼んだり、`in/want/got`と呼んだりいくつかの文化圏があるようです。Goは `in/want/got`を採用することが多いようです。
- 
+
 ```go
 // 💬 正直、好みの世界だが..
 cases := []struct {

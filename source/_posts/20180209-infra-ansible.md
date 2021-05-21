@@ -6,6 +6,7 @@ tag:
   - Infrastructure
   - 登壇資料
   - 登壇レポート
+  - IaC
 category:
   - Infrastructure
 thumbnail: /images/20180209/thumbnail_20180209.png

@@ -5,6 +5,8 @@ tag:
   - vis.js
   - 可視化
   - JavaScript
+  - コアテク
+  - 技術選定
 category:
   - Programming
 thumbnail: /images/20210303/thumbnail.png

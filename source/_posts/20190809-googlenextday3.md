@@ -3,6 +3,8 @@ date: 2019/08/09 08:29:54
 postid: ""
 tag:
   - GCP
+  - 参加レポート
+  - GoogleCloudNext
 category:
   - Infrastructure
 author: 村田靖拓
@@ -13,7 +15,7 @@ lede: "Google Cloud Next ’19 in Tokyo Day3にも少し顔を出していたの
 # はじめに
 こんにちは、TIG DXチームの村田です。[Google Cloud Next ’19 in Tokyo Day3](https://cloud.withgoogle.com/next/tokyo/)に少し顔を出していたので参加レポートをお送りします。
 
-* [Day2 の参加レポート](https://future-architect.github.io/articles/20190804/)はこちらです。
+* [Day2 の参加レポート](/articles/20190804/)はこちらです。
 
 
 # Google Cloud Next ’19 in Tokyoとは
@@ -43,7 +45,7 @@ k8s、ハイブリッド・マルチクラウド、という単語に惹かれ�
 
 以下セッションメモです。
 
-### 複数のk8sクラスタを運用する際の課題 
+### 複数のk8sクラスタを運用する際の課題
 * クラウドごと、あるいはオンプレでクラスタのオペレーションが微妙に異なる
 * 複数クラスタをどうやって接続するか
 * ステートフルなデータをどういったストレージで管理するか（本日のメイントピック）
@@ -293,7 +295,8 @@ k8sとIstioを使っていかにカナリアデプロイを実現するか、デ
 * Spinnakerを使ったDEMOを行った[サンフランシスコでのセッション動画](https://youtu.be/CmZWau04ZS4)をぜひみてください！
 
 # 最後に
-[Day2のレポート](https://future-architect.github.io/articles/20190804/)でも書きましたが、Anthos含めKubernetesに関連するセッションが非常に充実していました。AnthosのセッションはまさにGoogle Cloudがどこに向かっていくかをありのまま伝えてくれたように思います。
+
+[Day2のレポート](/articles/20190804/)でも書きましたが、Anthos含めKubernetesに関連するセッションが非常に充実していました。AnthosのセッションはまさにGoogle Cloudがどこに向かっていくかをありのまま伝えてくれたように思います。
 
 Anthosのセッションを担当されていた長谷部さんが「実はGoogleは数年前からコンテナを使っているが、昨今いろいろな所でコンテナという言葉を耳にする。コンテナ技術は今流行っていると言える。」と発言されていました。Kubernetes・Istio・Knativeなどをはじめ、いまデファクトスタンダードになりつつある様々なOSSは例えばBorgなど元々Googleの社内システムにて利用されていたシステムが起源となっています。彼らは数年かけてブラッシュアップさせてきたものをOSSとして公開し、そしてそれを今GCPにてマネージドサービスとして提供しています。
 

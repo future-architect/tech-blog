@@ -3,6 +3,11 @@ date: 2019/12/03 10:31:11
 postid: ""
 tag:
   - Go
+  - GoConference
+  - スポンサー
+  - PDF
+  - スクレイピング
+  - アドベントカレンダー
 category:
   - Programming
 author: 澁川喜規
