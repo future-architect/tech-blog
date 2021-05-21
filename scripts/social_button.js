@@ -97,7 +97,6 @@ hexo.extend.helper.register("get_hatebu_count", (url) => {
   const bookmarkCnt = fetch(hatebuURL).json();
   hatebuCnt[url] = bookmarkCnt;
   currentHatebu[url] = bookmarkCnt;
-  currentFb[url] = bookmarkCnt;
 
   return bookmarkCnt;
 });
@@ -143,6 +142,8 @@ hexo.extend.helper.register("get_fb_count", (url) => {
 
   const bookmarkCnt = resp?.og_object?.engagement?.count || 0;
   fbCnt[url] = bookmarkCnt;
+  currentFb[url] = bookmarkCnt;
+
   console.log(`finish facebook ${url} ${bookmarkCnt}`);
 
   if (bookmarkCnt == 0) {
