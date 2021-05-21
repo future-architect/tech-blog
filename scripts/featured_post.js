@@ -16,7 +16,7 @@ hexo.extend.helper.register('featured_posts', function(url, rate, limit) {
   const snsCnt = hexo.extend.helper.get('totalSNSCnt').bind(hexo);
 
   const links = featureds.map(post => `
-    <li><span>${post.date.format('YYYY.MM.DD')}</span><span class="snscount">♥${snsCnt(post.permalink)}</span> <a href="/${post.path}" title="${post.lede}">${post.title}</a></li>`).join("\n")
+    <li><span>${post.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${snsCnt(post.permalink)}</span> <a href="/${post.path}" title="${post.lede}">${post.title}</a></li>`).join("\n")
 
   return `
   <div class="widget">
