@@ -55,7 +55,7 @@ Pythonユーザーは基本的にAlpineを選んではいけません。いろ�
 
 アプリケーションはDjangoのチュートリアルの最初の1ステップだけ作ったものをuwsgiを使ってデプロイすることを想定します。フォルダ＆ファイル構成はこんな感じ。
 
-<img src="/images/20200513/1.png" class="img-middle-size">
+<img src="/images/20200513/1.png" alt="フォルダ＆ファイル構成" width="794" height="1178" loading="lazy" class="img-middle-size">
 
 
 依存パッケージは今回はこれだけです。ただこのファイルは開発環境を設定するときに書くぐらいですね。あまり重要ではないです。
@@ -133,7 +133,7 @@ $ docker run -it --rm -p "8000:8000" pytest
 
 ブラウザでアクセスするとうまくいきました。
 
-<img src="/images/20200513/2.png" class="img-middle-size">
+<img src="/images/20200513/2.png" alt="HelloWorldと表示されたブラウザ画面" width="1580" height="974" loading="lazy">
 
 
 ## Pythonでどうやってマルチステージビルドを実現するのか
@@ -161,7 +161,7 @@ RUN pip3 install -r requirements.txt
 
 フルセットのbusterには開発者向けのライブラリ類も含めていろいろ入っているのでビルドが成功するも、slim側にライブラリがなくて実行時エラーになる可能性があります。実行時にライブラリがロードできないというエラーが出たら、[こちらのサイト](https://packages.debian.org/search?lang=ja&arch=amd64&mode=filename&searchon=contents&keywords=libxml2.so.2)にライブラリ名を入れて、それをインストールするのに必要なパッケージを探し、apt installの項目に追加してください。
 
-<img src="/images/20200513/3.png" class="img-middle-size">
+<img src="/images/20200513/3.png" alt="Debianのパッケージ検索画面" width="2586" height="1610" loading="lazy">
 
 Pythonだと関数の中でimportできます。名前空間を汚さないので、こちらの方が良いのかな、と思って僕も以前やっていましたが、ファイルのグローバルなところだけにimportがあると、ちょっとした実行すると必要なモジュールを全部読み込んでくれて、この手のロードエラーはすぐにわかります。関数内importはなるべく避けた方が良いでしょう（先日もそれで問題を見つけきれなかった）。
 

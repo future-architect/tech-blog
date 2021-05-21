@@ -12,10 +12,10 @@ featured: true
 lede: "Goではそこそこ実績も増えつつある気がするdistroless。シェルが入っていないくて、ログインされることもなく安全というGoogle製のDockerイメージです。Python3はまだexperimentalですが、実は小さいと言われるalpine版よりも、イメージサイズが半分ぐらいだったりもします。distrolessでは3.7しかないので、3.7のイメージ同士の比較です。"
 ---
 
-<img src="/images/20200514/top.png">
+<img src="/images/20200514/top.png" alt="アイキャッチのDockerfileコード" width="1260" height="675">
 
 
-[前回のエントリー](https://future-architect.github.io/articles/20200513/)では、Debianベースの堅実な仕事向けのDockerイメージ作成方法について紹介しました。
+[前回のエントリー](/articles/20200513/)では、Debianベースの堅実な仕事向けのDockerイメージ作成方法について紹介しました。
 
 Goではそこそこ実績も増えつつある気がするdistroless。シェルが入っていないくて、ログインされることもなく安全というGoogle製のDockerイメージです。Python3はまだexperimentalですが、実は小さいと言われるalpine版よりも、イメージサイズが半分ぐらいだったりもします。distrolessでは3.7しかないので、3.7のイメージ同士の比較です。
 
@@ -194,7 +194,7 @@ $ docker run -it --rm -p "8000:8000" pytest
 
 うまくいきました。manylinux1であれば、distrolessでも動作することが確認できました。機械学習系もそこそこいけるんじゃないでしょうか？
 
-<img src="/images/20200514/1.png" class="img-middle-size">
+<img src="/images/20200514/1.png" alt="フューチャーのロゴ画像を表示したブラウザ" widht="1684" height="1202" loading="lazy" class="img-middle-size">
 
 
 # まとめ
