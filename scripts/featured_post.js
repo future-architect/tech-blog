@@ -1,15 +1,16 @@
 var gen = require('random-seed');
 
-hexo.extend.helper.register('featured_posts', function(url, rate) {
+hexo.extend.helper.register('featured_posts', function(url, rate, limit) {
   url = url || 'future'; // seed value
 
+  const postsLimit = limit ?? this.theme.featured_count;
   let count = 0;
 
   var rand = gen.create(url);
 
   const featureds = this.site.posts.reverse()
     .filter(post => post.featured == true && rand(100) < rate)
-    .filter(_  => count++ < this.theme.featured_count)
+    .filter(_  => count++ < postsLimit)
     ;
 
   const snsCnt = hexo.extend.helper.get('totalSNSCnt').bind(hexo);
