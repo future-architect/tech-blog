@@ -6,7 +6,6 @@ tag:
   - 新人向け
   - 技術的信頼
   - 春の入門連載
-  - 春の入門連載
 category:
   - Programming
 thumbnail: /images/20210422a/thumbnail.jpg

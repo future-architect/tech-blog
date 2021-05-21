@@ -10,7 +10,7 @@ category:
   - Programming
 thumbnail: /images/20210426a/thumbnail.jpg
 author: 辻大志郎
-featured: true
+featured: false
 lede: "AWSのIAMユーザのセキュリティ上、IAMユーザにMFAを導入するケースがあります。MFAを有効にしているIAMユーザでGUI経由でログインする場合は、ログイン時に認証情報が求められて、MFAデバイスが出力するトークンを入力することでログインできます。一方AWS CLIを用いてリソースにアクセス場合はコマンド発行時に認証情報は求められません。代わりに以下のような記事にかかれているような..."
 ---
 
