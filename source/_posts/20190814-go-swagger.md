@@ -302,9 +302,3 @@ type ApiResponse struct {
 
 ドキュメントベースで開発して、コミュニケーションコストを下げたい目的があれば、`go-swagger` の利用はおすすめできると思います。
 開発進めてみて知見が溜まってきたら、また公開していきます。
-
-----
-関連する記事：
-
-* [本当に使ってよかったOpenAPI (Swagger) ツール](https://future-architect.github.io/articles/20191008/)
-* [一周回って、人間が読み書きする設定ファイルはJSONが良いと思った](https://future-architect.github.io/articles/20191001/)

@@ -4,6 +4,7 @@ postid: ""
 tag:
   - AWS
   - MachineLearning
+  - 合格記
 category:
   - DataScience
 thumbnail: /images/20200729/thumbnail.png
@@ -14,7 +15,7 @@ lede: "TIGの伊藤真彦です。先日もう一人の伊藤さんが[Terraform
 
 TIGの伊藤真彦です。
 
-先日もう一人の伊藤さんが[Terraform Associate合格記](https://future-architect.github.io/articles/20200629/)を書いてくれました。この記事に続いて資格の記事を書いてみようと思います。余談ですがこちらの伊藤さんとの区別がつくように自己紹介はフルネームで書いています。
+先日もう一人の伊藤さんが[Terraform Associate合格記](/articles/20200629/)を書いてくれました。この記事に続いて資格の記事を書いてみようと思います。余談ですがこちらの伊藤さんとの区別がつくように自己紹介はフルネームで書いています。
 
 私はAWSの資格を4つほど持っているのですが、今回は[AWS認定 機械学習 - 専門知識](https://aws.amazon.com/jp/certification/certified-machine-learning-specialty/)について紹介します。ちなみに機械学習の資格は実務経験0から2カ月ほど学習して合格しました。
 
@@ -186,6 +187,7 @@ C: パブリックアクセスが有効なバケットは、デフォルトの�
 > 正解: B
 
 <a id="anchor3"></a>
+
 # 学習方法について
 
 ざっくりと内容を説明しましたが、合格への筋道は見えてきましたでしょうか。
@@ -215,10 +217,13 @@ AWSの試験に合格するには、Pythonの各種フレームワークを用�
 愚直に学習する時間の捻出が難しい場合、合格する自信が持てず副教材が必要な場合はudemyなどの学習サイトでカリキュラムや試験問題を購入することをお勧めします。
 
 <a id="anchor4"></a>
+
 # まとめ
 
 この記事が試験勉強の補助となれば、また試験を受けてみようと思っていただけるきっかけになれば幸いです。
+
 学習のハードルは高めなので、ソリューションアーキテクトのように１冊の本にまとまる日が来てほしいですね。
-関連記事としてフューチャー技術ブログの[合格記](https://future-architect.github.io/tags/%E5%90%88%E6%A0%BC%E8%A8%98/)、[Machine Learning](https://future-architect.github.io/tags/MachineLearning/)タグの記事も是非ご覧ください。
+
+類似の記事としてフューチャー技術ブログの[合格記](/tags/%E5%90%88%E6%A0%BC%E8%A8%98/)、[Machine Learning](/tags/MachineLearning/)タグの記事も是非ご覧ください。
 
 

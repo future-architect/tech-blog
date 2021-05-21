@@ -236,15 +236,3 @@ https://www.future.co.jp/recruit/
 [^2]: [fix\(xss\)\!: don't set popup content via innerHTML by Thomaash · Pull Request \#1275 · visjs/vis\-network · GitHub](https://github.com/visjs/vis-network/pull/1275)
 [^3]: [Goでコールグラフを自作してみた \- Qiita](https://qiita.com/tanzaku/items/d21ce5c61505a8710fbe#%E8%A7%A3%E6%9E%90%E7%B5%90%E6%9E%9C-%E3%81%9D%E3%81%AE3%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%81%AE%E3%83%8E%E3%83%BC%E3%83%89%E3%82%92%E8%BF%BD%E5%8A%A0)
 [^4]: [None of the examples work on 6\.2\.0? · Issue \#183 · visjs/vis\-network · GitHub](https://github.com/visjs/vis-network/issues/183)
-
-
-
-
-# 関連記事
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200901/index.html" data-iframely-url="//cdn.iframe.ly/MB3R2AH?iframe=card-small"></a></div></div>
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200203/index.html" data-iframely-url="//cdn.iframe.ly/J3rUEhc?iframe=card-small"></a></div></div>
-
-<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
-

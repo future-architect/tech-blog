@@ -73,11 +73,3 @@ FUTUREではFuture Tech Nightの他にも様々なイベントを開催してお
 * https://future.connpass.com/
 
 今後も皆様のご参加をお待ちしております。
-
-# 関連記事
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200925/index.html" data-iframely-url="//cdn.iframe.ly/YpB7olh?iframe=card-small"></a></div></div>
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201228/index.html" data-iframely-url="//cdn.iframe.ly/RWuBJfe?iframe=card-small"></a></div></div>
-
-<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>

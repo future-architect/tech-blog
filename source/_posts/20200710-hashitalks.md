@@ -102,10 +102,3 @@ resource "google_monitoring_alert_policy" "someone_alert_policy" {
 
 最後にこちらが話しているYouTubeになりますのでよければご覧ください。
 [Cloud MonitoringとTerraformの付き合い方 - YouTube](https://www.youtube.com/watch?v=SiCCwE9a1iY&list=PL81sUbsFNc5aWJJrpaclnwARJAzf1-2bV&index=14&t=0s)
-
-## 関連記事
-- [Terraform Associate合格記](/articles/20200629/)
-- [Terraform 101](/articles/20200624/)
-- [Tech Blog内のTerraform記事](tags/Terraform/)
-
-

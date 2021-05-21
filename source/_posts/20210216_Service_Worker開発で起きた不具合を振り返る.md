@@ -5,6 +5,7 @@ tag:
   - JavaScript
   - Frontend
   - ServiceWorker
+  - Vue.js
 category:
   - Programming
 thumbnail: /images/20210216/thumbnail.png
@@ -151,12 +152,3 @@ if ('serviceWorker' in navigator) {
 Service Worker開発で起きた不具合を２例紹介しました。
 
 なかなか解決策が見つからず辛いと感じることもありましたが、こうして考えた解決策を公開することができて、大変嬉しく思っています。
-
-# 関連記事
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201013/index.html" data-iframely-url="//cdn.iframe.ly/SAxxrkF?iframe=card-small"></a></div></div>
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200428/index.html" data-iframely-url="//cdn.iframe.ly/2dHfIIG"></a></div></div>
-
-<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
-

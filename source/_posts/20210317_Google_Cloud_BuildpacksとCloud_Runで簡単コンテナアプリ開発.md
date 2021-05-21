@@ -129,10 +129,3 @@ Cloud Runが発表された2019年のGoogle Cloud Nextはかなり盛り上が�
 基本的にどんなアプリでもコンテナにしてくれるBuildpacks、そして簡単にコンテナを実行してくれるCloud Runから、「**考えるな、感じろ！！**」な精神を垣間見た気がしました。使って楽しかったプロダクトたちなのでもっと広めて行こうと思います。
 
 明日は、関さんの[GKE Autopilotを触ってみた](/articles/20210318/)です。何がくるかお楽しみに！！
-
-## 関連記事
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20210307/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20210307%2F&key=42622142e53a4cc5ab36703bcee5415f"></a></div></div>
-
-<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
-

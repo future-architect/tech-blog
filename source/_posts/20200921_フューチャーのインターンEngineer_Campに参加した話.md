@@ -104,15 +104,3 @@ Slackに今日やる予定のタスクを書きだし、メールや社内チャ
 他のインターン生の方だけではなく、社員の方も忙しい中でしっかりと学習やそれらのアウトプットをされている方ばかりだったので、良い影響を受けることができこれからにつながるインターンだったと感じています。
 
 最後になりますが、受入先のプロジェクトの皆様はもちろん、この期間を通じて私と関わってくださった皆様、ありがとうございました！
-
-## 関連記事
-
-* [Future Engineer Camp 2020 参加記](https://future-architect.github.io/articles/20200920/)
-* [Engineer CampでSQLフォーマッタを開発しました](https://future-architect.github.io/articles/20200919/)
-* [フューチャーの2020 夏季インターンに参加してみた](https://future-architect.github.io/articles/20200913/)
-
-
-## 画像について
-
-* [立ち乗り二輪車に乗る人のイラスト（女性）](https://www.irasutoya.com/2017/07/blog-post_41.html )｜いらすとや 
-* [立ち乗り二輪車に乗る人のイラスト（男性）]( https://www.irasutoya.com/2017/07/blog-post_86.html )｜いらすとや

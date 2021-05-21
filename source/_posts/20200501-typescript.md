@@ -5,6 +5,7 @@ tag:
   - React
   - Redux
   - Frontend
+  - TypeScript
   - フロントエンド記事集中投稿
 category:
   - Programming
@@ -15,8 +16,8 @@ lede: "フロントエンド記事集中投稿ウィークの3本目です。"
 ---
 フロントエンド記事集中投稿ウィークの3本目です。
 
-* [Vue.jsのslotの機能を初心者にわかるように解説してみた](https://future-architect.github.io/articles/20200428/)
-* [Reduxを分かりやすく解説してみた](https://future-architect.github.io/articles/20200429/)
+* [Vue.jsのslotの機能を初心者にわかるように解説してみた](/articles/20200428/)
+* [Reduxを分かりやすく解説してみた](/articles/20200429/)
 
 前日の丸野さんがReduxの基本的な記事でした。Reduxはコンパクトなライブラリながらよく考えられた仕組みです。Jetpack ComposeやらFlutterやら、ReactインスパイアなGUIフレームワークも増えているので、JavaScript（TypeScriptではなく） + Reduxをやってみるのは、ウェブに限らず、今後のユーザーインタフェース関連のコードを触るための理解力向上には良いと思います。本エントリーは、実際にプロダクションコードでたくさんRedux周りにもreducerなどを実装しなくてはいけなくなったときの次のステップとして、Redux Toolkitの紹介をします。
 
@@ -350,14 +351,3 @@ function reducer(state: State, action: RootAction) {
 ```
 
 どのファイルからどの順番でコードを書けばよかったんですかね？何度かトライしているものの、いつもなんかいまいちに感じていました。
-
-
-
-----
-
-関連記事:
-
-* [フロントエンドでシステム開発を2年半続けてハマったことから得た教訓3つ](https://future-architect.github.io/articles/20191029/)
-* [その値、Vue.jsは監視していますか？～Vue.jsで値が更新されないときに気をつけるところ～](https://future-architect.github.io/articles/20200316/)
-* [【Figma】を使ってチームでUI/UX設計するといいこと](https://future-architect.github.io/articles/20200318/)
-

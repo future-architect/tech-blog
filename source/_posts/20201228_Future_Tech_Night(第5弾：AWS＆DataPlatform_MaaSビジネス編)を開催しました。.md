@@ -93,8 +93,3 @@ S3 を中心としたデータレイク構築が要件としてあり、 AWS 製
 
 ご参加いただいた方々、ありがとうございました。
 FutureではFuture Tech Nightの他にも様々なイベントを開催しております。今後も皆様のご参加をお待ちしております。
-
-
-## 関連記事
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200925/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20200925%2F&key=eed90a27f7b47e9333aee373cceb6203&iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>

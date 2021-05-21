@@ -125,7 +125,7 @@ Terraform Server に送るためのアクションの定義は以下です。大
 /terraform
 ├── project-a
 │   ├── compute_instance.tf         # ← GCEのインスタンス定義。
-│   ├── storage_bucket.tf   
+│   ├── storage_bucket.tf
 │   ├── terraform.tfvars            # ← 自動生成されるterraform の変数ファイル
 │   ├── tfplan.sh                   # ← plan実行用。bashの色を付けるための特殊文字を消すsedがパイプされている
 │   ├── tfapply.sh                  # ← 同上
@@ -457,12 +457,5 @@ ServiceNow社的には、以下をメッセージとして強く主張してい�
 # 最後に
 
 今回、私にとって最も実装が簡単だったのはSNOWでした。逆に一番大変だったのがGoでの実装です。ただ、こういう製品と製品の間に落ちる部分の処理って、どうしてもカスタム実装が必要になるんですよね。なので、実際のサービス連携を考えた際も同じ様な比率になるんじゃないかと考えています。
+
 まだまだGithubやJenkinsなど課題は多々ありますが、まずは本質的なインフラ構築の自動化を中心に置いて実装してみました。今回利用した製品/サービスは別に他のなんでも代替は可能だと思ってますので、考え方の1つとして捕えてもらえれば幸いです。
-
-
-関連記事：
-
-* [GCP連載企画](https://future-architect.github.io/tags/GCP%98A%8D%DA/)
-* [OpenCensus(OpenTelemetry)とは](https://future-architect.github.io/articles/20190604/)
-* [Go Cloud#1 概要とBlobへの活用方法](https://future-architect.github.io/articles/20191111/)
-* [Goを学ぶときにつまずきやすいポイントFAQ](https://future-architect.github.io/articles/20190713/)

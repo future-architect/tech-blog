@@ -34,7 +34,7 @@ Go1.13から`fmt.Errorf` 関数に `%w`という[新しい構文が追加サポ�
 func main() {
     if err := AnyFunc(); err != nil {
         // 2009/11/10 23:00:00 main process: any func: strconv.Atoi: parsing "ABC": invalid syntax
-        log.Fatalf("main process: %v", err) 
+        log.Fatalf("main process: %v", err)
     }
 }
 
@@ -264,13 +264,3 @@ stacktrace: anyFunc any error - internal failed:
 * Sentinel errorの場合は、`errors.Is` で、独自Error型を宣言している場合は、 `errors.As` を利用してハンドリングする
 * Stacktrace情報が必要な場合は、xerrorsパッケージを利用する
 * xerrorsでWrapしても `errors.Is`, `errors.As` で扱える
-
-
-## 関連記事 
-
-Goに関連した他の連載企画です。
-
-* [Serverless連載](/tags/Serverless%E9%80%A3%E8%BC%89/)
-* [DynamoDB×Go](/tags/DynamoDB%C3%97Go/)
-* [GCP連載](/tags/GCP%E9%80%A3%E8%BC%89/)
-* [GoCDK](/tags/GoCDK/)

@@ -97,11 +97,3 @@ func (w OrigWriter) Write(b []byte) (int, error) {
 ファイル名の出力を入れると便利です。また、絵文字を今回サンプルに使いましたが、絵文字って色がつくので（たとえ[go playground](https://play.golang.org/p/-wnBrYmGqwI)であっても）視認性がいいんですよね。絵文字を``log.SetPrefix()``に入れてあげるのもおすすめです。絵文字を使う場合はグリフが半角相当の幅か全角相当の幅かはターミナルの設定によって出力のされ方が変わることがあり、半角の幅だと絵に次の文字がめり込んでよみにくくなるため、絵文字の後ろには半角スペースを入れておくのをおすすめします。
 
 <img src="/images/20200527/2.png">
-
-
-
-# 関連記事
-
-* [OpenCensus(OpenTelemetry)とは](https://future-architect.github.io/articles/20190604/)
-* [GoCDK](/tags/GoCDK/)
-* [Serverless連載](/tags/Serverless%E9%80%A3%E8%BC%89/)

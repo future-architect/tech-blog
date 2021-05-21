@@ -200,7 +200,7 @@ https://github.com/go-swagger/go-swagger/blob/master/generator/types.go#L45
 
 ## 10. DateTimeを活用しよう
 
-`type=string`を指定した時に、`format`には、`date`, `date-time` などが[指定できます](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types)。 
+`type=string`を指定した時に、`format`には、`date`, `date-time` などが[指定できます](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types)。
 
 ```yml:設定例
 event_time:
@@ -241,7 +241,7 @@ const (
 )
 
 var (
-	dateTimeFormats = []string{RFC3339Micro, RFC3339Millis, time.RFC3339, time.RFC3339Nano, 
+	dateTimeFormats = []string{RFC3339Micro, RFC3339Millis, time.RFC3339, time.RFC3339Nano,
 		ISO8601LocalTime, ISO8601TimeWithReducedPrecision, ISO8601TimeWithReducedPrecisionLocaltime
 	}
 )
@@ -497,7 +497,7 @@ go-swaggerの入力Validationでエラーが発生したときは、デフォル
 import "github.com/go-openapi/errors"
 
 func configureAPI(api *myapp.MyApplicationAPI) http.Handler {
-	errors.DefaultHTTPCode = http.StatusBadRequest 
+	errors.DefaultHTTPCode = http.StatusBadRequest
 }
 ```
 
@@ -593,7 +593,7 @@ import (
 )
 
 api = client.NewHTTPClientWithConfig(nil, &client.TransportConfig{
-	Host:     os.Getenv("API_HOST"), 
+	Host:     os.Getenv("API_HOST"),
 	BasePath: os.Getenv("BASE_PATH"),
 })
 
@@ -715,10 +715,3 @@ func main() {
 最初は3,4つのTipsをまとめて終わりにしようかと思いましたが、書いていると非常に長くなってしまいました。go-swaggerは良いプロダクトだと思うのですが、定義情報からコードを自動生成する関係上、どこまで何ができるのかイメージがつきにくかったり、そもそもOpenAPI（Swagger）の知識も必要のため敷居が高かったりと、最初はハマる箇所が多いからかも知れません。（さらにはサーバサイドとクライアントサイドの2種類のコードも生成できるためネタが増える..）
 
 上手く使えば、WebAPI定義と実装が完全に一致する（定義からコードを生成しているため）で強力なツールだと思いますしオススメです。すでに使っている方にも今回のTipsを活用していただければ幸いです。
-
-
-# 関連記事
-
-* [スキーマファースト開発のためのOpenAPI（Swagger）設計規約](https://future-architect.github.io/articles/20200409/)
-* [WAFとして go-swagger を選択してみた](https://future-architect.github.io/articles/20190814/)
-* [本当に使ってよかったOpenAPI (Swagger) ツール](https://future-architect.github.io/articles/20191008/)

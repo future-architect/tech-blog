@@ -32,7 +32,7 @@ TIG DX所属の多賀です。最近は設計をしつつ Go も触れて引き�
 
 エラーコード表 (例)
 
-| エラーコード | エラー名 | 
+| エラーコード | エラー名 |
 | :-- | :-- |
 | XXX0001	 | クライアントエラー |
 | XXX0002	 | DBコネクションエラー |
@@ -50,7 +50,7 @@ TIG DX所属の多賀です。最近は設計をしつつ Go も触れて引き�
 ```sh
 .
 ├── handler    # httpリクエストをハンドリングする層
-├── service    # ビジネスロジック層 
+├── service    # ビジネスロジック層
 └── infra      # DBや外部API等の外部リソースへアクセスする層
 ```
 
@@ -99,12 +99,12 @@ type User struct {}
 
 func (h User) Search(id string) (string, error) {
 	// 処理...
-	
+
 	if err != nil {
 		// err を wrap してエラー情報を追加する
 		return "", apperror.ClientError{Err: fmt.Errorf("invalid id = %v: %w", id, err)}
 	}
-	
+
 }
 ```
 
@@ -196,7 +196,7 @@ type User struct{}
 
 func (h User) Search(id string) (string, error) {
 	// 処理...
-	
+
 	if err != nil {
 		// err を wrap してエラー情報を追加する
 		return "", failure.Translate(err, apperror.ClientError, failure.Messagef("invalid id=%v", id))
@@ -269,12 +269,3 @@ failureは実戦で使えてないので、次回チャレンジしてみたい�
 - [Working with Errors in Go 1.13 - The Go Blog](https://blog.golang.org/go1.13-errors)
 - [failure package · go.dev](https://pkg.go.dev/github.com/morikuni/failure?tab=doc)
 - [エラー設計について / Designing Errors - Speaker Deck](https://speakerdeck.com/morikuni/designing-errors)
-
-## 関連記事 
-
-Goに関連した他の連載企画です。
-
-* [Serverless連載](/tags/Serverless%E9%80%A3%E8%BC%89/)
-* [DynamoDB×Go](/tags/DynamoDB%C3%97Go/)
-* [GCP連載](/tags/GCP%E9%80%A3%E8%BC%89/)
-* [GoCDK](/tags/GoCDK/)

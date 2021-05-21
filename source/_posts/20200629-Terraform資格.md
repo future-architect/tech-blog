@@ -20,7 +20,7 @@ lede: "5/24に受験したHashiCorpから出た資格の1つである、Terrafor
 まず、はじめに受験者の私についてです。（読み飛ばしていただいて良いです）
 
 - Terraform歴: 9ヶ月
-- 他の資格: 
+- 他の資格:
     - AWS Solution Architect Associate
     - Google Cloud Certified: Professional Cloud Architect
 - **英語**
@@ -81,10 +81,5 @@ lede: "5/24に受験したHashiCorpから出た資格の1つである、Terrafor
 先日、[Terraformの入門記事](/articles/20200624/)も書きましたので、これからTerraform Associateを受験しようという方は参考にしてみてください。
 
 ## 参考リンク
+
 - [技術ブログ Terraform一覧](/tags/Terraform/)
-
-
-## 関連記事
-
-* [【合格記】GCP Professional Cloud Architect認定資格を振り返る](/articles/20190530/)
-

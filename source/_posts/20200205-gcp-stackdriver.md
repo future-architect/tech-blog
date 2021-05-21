@@ -27,7 +27,7 @@ lede: "GCPをテーマにした連載企画を始めるということで、初�
 3. Goでサーバーレスな管理画面アプリを作る
 4. Cloud Life Sciencesを見てみた
 5. 【もう鍵なくさない】GCPのSecret ManagerとBerglasで幸せになる
-6. Forseti Config Validator 
+6. Forseti Config Validator
 7. s3→BigQuery
 8. Firewall Ruleのタグ命名規則について考えて
 9. 初めてのGCP 画像AI(VISION API)をさわってみた
@@ -310,17 +310,3 @@ Stackdriverの [LogEntry](https://cloud.google.com/logging/docs/reference/v2/res
 * Stackdriver Traceを設定するとパフォーマンス可視化とログが紐づくと捗るのでオススメ
 
 話しが少しそれますが、一度Stackdriver Traceでビジュアライズを始めるとのウォーターフォールビューの見た目にこだわりたくなります。これらをうまく出すコツについてはまた別途ブログ化したいと思います。
-
-
------
-
-連載リンク：
-
-* [GCP連載企画](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-
-関連記事：
-
-* [OpenCensus(OpenTelemetry)とは](https://future-architect.github.io/articles/20190604/)
-* [Go Cloud#1 概要とBlobへの活用方法](https://future-architect.github.io/articles/20191111/)
-* [Goを学ぶときにつまずきやすいポイントFAQ](https://future-architect.github.io/articles/20190713/)
-
