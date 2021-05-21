@@ -102,6 +102,9 @@
       })
     }
     options['image'] = images.filter(path => !(path.endsWith(".svg")));
+    if (options['image'].length === 0) {
+      options['image'] = '/ogp_techblog.jpg';
+    }
   }
   %>
   <%- open_graph(options) %>
