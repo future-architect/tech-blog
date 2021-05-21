@@ -6,7 +6,7 @@
         <header class="article-header">
           <ul class="blog-info">
             <li class="blog-info-item"><a href="<%- url_for('/authors/' + post.author || theme.default_author || 'Anonymous') %>"><%- post.author || theme.default_author || 'Anonymous' %></a></li>
-            <li class="blog-info-item"><%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY/MM/DD'}) %></li>
+            <li class="blog-info-item"><%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY.MM.DD'}) %></li>
             <li class="blog-info-item"><%- partial('post/tag') %></li>
           </ul>
           <%- partial('_partial/post/category') %>
@@ -28,9 +28,13 @@
           <section class="social-area">
           <%- partial('social-button') %>
           </section>
+          <section class="related-post margin-bottom-20 nav">
+            <h2>関連記事</h2>
+            <%- list_related_posts(post) %>
+          </section>
           <section class="featured-post margin-bottom-20 nav">
             <h2>注目の記事</h2>
-            <%- partial('featured-post') %>
+            <%- partial('featured-post', {limit:5}) %>
           </section>
         </footer>
       </div>
