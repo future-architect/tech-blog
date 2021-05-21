@@ -6,11 +6,12 @@ tag:
   - Lambda
   - AWS
   - Terraform
+  - 暗号化
 category:
   - Infrastructure
 thumbnail: /images/20210413a/thumbnail.png
 author: 棚井龍之介
-featured: true
+featured: false
 lede: "認証情報を Lambda の環境変数に渡す要件が発生したため認証情報を KMS で暗号化して、リポジトリには暗号化した値を登録し、Lambda 内で復号化する構成を取りました。"
 ---
 ![アイキャッチ](/images/20210413a/Screen_Shot_2021-03-24_at_2.18.57.png)
