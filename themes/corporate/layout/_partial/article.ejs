@@ -28,14 +28,16 @@
           <section class="social-area">
           <%- partial('social-button') %>
           </section>
-          <section class="related-post margin-bottom-20 nav">
-            <h2>関連記事</h2>
-            <%- list_related_posts(post) %>
-          </section>
-          <section class="featured-post margin-bottom-20 nav">
-            <h2>注目の記事</h2>
-            <%- partial('featured-post', {limit:5}) %>
-          </section>
+          <aside>
+            <section class="related-post margin-bottom-20 nav">
+              <h2>関連記事</h2>
+              <%- list_related_posts(post) %>
+            </section>
+            <section class="featured-post margin-bottom-20 nav">
+              <h2>注目の記事</h2>
+              <%- partial('featured-post', {limit:5}) %>
+            </section>
+          </aside>
         </footer>
       </div>
     </article>

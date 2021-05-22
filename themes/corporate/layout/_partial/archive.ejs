@@ -18,16 +18,18 @@
       <% } %>
     </section>
   <% } %>
-    <section>
-      <div class="margin-bottom-20 nav">
-        <h2>注目の記事</h2>
-        <%- partial('../_partial/featured-post.ejs', {limit:10}) %>
-      </div>
-      <div class="blog-tags margin-bottom-20">
-        <h2>タグから記事を探す</h2>
-        <%- partial('../_widget/tag.ejs') %>
-      </div>
-    </section>
+    <aside>
+      <section>
+        <div class="margin-bottom-20 nav">
+          <h2>注目の記事</h2>
+          <%- partial('../_partial/featured-post.ejs', {limit:10}) %>
+        </div>
+        <div class="blog-tags margin-bottom-20">
+          <h2>タグから記事を探す</h2>
+          <%- partial('../_widget/tag.ejs') %>
+        </div>
+      </section>
+    </aside>
   </main>
   <aside class="col-xs-12 col-sm-12 col-md-2 blog-sidebar">
     <%- partial('sidebar-top') %>
