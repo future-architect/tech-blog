@@ -203,10 +203,7 @@ TOTAL                          813          18141          30192         112991
 社内で取り組んでいるコードリーディング会の内容と運営方法を紹介しました。Goの標準ライブラリのコードリーディング会は標準ライブラリを学べ、またGoらしいコードを学べる良い会です。本記事がみなさんの会社でコードリーディング会を実施するときの参考になれば幸いです。
 
 
-## 関連リンク
+Goに関連した連載企画がありますので宣伝です。
 
-Goに関連した連載企画があります。
-
-* [DynamoDB×Go連載]([DynamoDB×Go連載](https://future-architect.github.io/tags/DynamoDB%C3%97Go/))
-* [Go Cloud 連載](https://future-architect.github.io/tags/GoCDK/)
-* [GCP 連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
+* [DynamoDB×Go連載](/tags/DynamoDB%C3%97Go/)
+* [Go Cloud 連載](/tags/GoCDK/)

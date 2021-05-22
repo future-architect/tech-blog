@@ -585,10 +585,5 @@ func HandleRequest(e InEvent) (*OutEvent, error) {
 * StepFunctionsの動的並列実行を利用することでLambdaの実行時間制約に引っかからないように、事前で入力を分割しそれぞれのLambdaに渡す仕組みが作れる
 
 
-## 関連リンク
+ [サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)の6本目でした。次は加部さんの[AWSサービストリガによるLambda起動](/articles/20200722/)です。
 
-* [サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)
-* [GCP 連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Go Cloud 連載](https://future-architect.github.io/tags/GoCDK/)
-* [DynamoDB×Go連載](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)
-* [Goを学ぶときにつまずきやすいポイントFAQ](https://future-architect.github.io/articles/20190713/)

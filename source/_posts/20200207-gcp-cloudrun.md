@@ -13,7 +13,7 @@ author: 澁川喜規
 featured: true
 lede: "Go + Vue + Cloud Runでかんたんな管理画面を作ろうと思います。ストレージ側にもサーバーレスがあります。MySQLやPostgreSQLのクラウドサービス（Cloud SQLとかRDS）は、サーバーマシンを可動させて、その上にDBMSが稼働しますので、起動している時間だけお金がかかってしまします。一方、FirestoreやDynamoDBの場合は容量と通信（と、キャパシティユニット）にしかお金がかからないモデルになっており、サーバーレスです。今回はかんたん化のためにストレージは扱いません。"
 ---
-[GCP集中連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)の3回目です。今回はCloud Runを使ったサーバーレスウェブアプリケーションの作り方について紹介します。
+[GCP連載](/tags/GCP%E9%80%A3%E8%BC%89/)の3回目です。今回はCloud Runを使ったサーバーレスウェブアプリケーションの作り方について紹介します。
 
 # サーバーレスとは
 
@@ -459,12 +459,8 @@ Cloud Functionsと比べると、動作するアプリケーションが普通�
 
 とはいえ、きちんとした画面付きの管理画面がかんたんに稼働できます。常時稼働しない管理画面の稼働にはうってつけです。1コンテナという制約がありますが、そのおかげでFargateのような設定ファイルを作成する必要もありません。
 
-今回は使いませんでしたが、アプリケーションの実装がローカルで単体で動くサーバーを作れば良い、ということで、以前本ブログで紹介した[Go Cloud](https://future-architect.github.io/tags/GoCDK/)を使えば、他のクラウドサービスでも動作するようなマルチクラウドな管理画面もかんたんに作れそうです。
+今回は使いませんでしたが、アプリケーションの実装がローカルで単体で動くサーバーを作れば良い、ということで、以前本ブログで紹介した[Go Cloud](/tags/GoCDK/)を使えば、他のクラウドサービスでも動作するようなマルチクラウドな管理画面もかんたんに作れそうです。
 
-## 関連リンク
 
-* [Let's Try GCP #1 ～Cloud Run Buttonを使った楽々コンテナデプロイをやってみた～](https://future-architect.github.io/articles/20190909/)
-* [Let's Try GCP #2 ～Cloud FunctionをVPC connectorと一緒に使ってみる～](https://future-architect.github.io/articles/20190927/)
-* [GCP連載企画](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Go Cloud連載](https://future-architect.github.io/tags/GoCDK/)
+[GCP連載](/tags/GCP%E9%80%A3%E8%BC%89/)の3回目でした。次は伊藤さんの[Cloud Life Sciencesを見てみた](/articles/20200210/)です。
 

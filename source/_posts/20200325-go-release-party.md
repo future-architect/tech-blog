@@ -58,14 +58,3 @@ https://qiita.com/shibukawa/items/d483889731c34d3e5faa
 ## 質疑応答
 
 オンライン上の開催もあって、質疑応答はツイッター上で気になることをツイートし、それに答えていく形式で行われました。辻への質問は Context は社内の Go のコードリーディング会でとりあげていたのもあり、コードリーディング会の取り組みに関する質問をいただきました。オンライン上でも回答したのですが、補足として [Goの標準ライブラリのコードリーディングのすすめ](https://future-architect.github.io/articles/20200310/) という記事も書きました。合わせて見てみてください。
-
-
-## 関連リンク
-
-Goに関連した記事です。
-
-* [サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)
-* [Go Cloud 連載](https://future-architect.github.io/tags/GoCDK/)
-* [DynamoDB×Go連載](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)
-* [GCP 連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Goを学ぶときにつまずきやすいポイントFAQ](https://future-architect.github.io/articles/20190713/)

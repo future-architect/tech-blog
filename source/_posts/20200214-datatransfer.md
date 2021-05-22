@@ -11,15 +11,16 @@ author: 加部達郎
 featured: false
 lede: "突然ですがAWSを利用しているけどビッグデータの蓄積や解析はBigQueryで実施したい、なんて意見も最近多くなってきているようですね。実際にS3からBigQueryのデータ転送について検索すると、自前でデータ転送を作成してみましたや、データ転送をサービスとして販売しているような会社もあります。そんな中GCPが提供しているBigQeryへのデータ転送サービス[DataTransferService](https://cloud.google.com/bigquery/transfer/)のソース元としてS3が追加され、簡単にS3からBigQueryのデータ転送のジョブを作成できるようになりました。まだ、ベータ版でのリリースのみですが今回は実際にS3からのデータ転送を試してみましょう。"
 ---
-[GCP集中連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)の7回目です。
+[GCP集中連載](/tags/GCP%E9%80%A3%E8%BC%89/)の7回目です。
 
-まずは簡単に自己紹介をさせてください。TIGのDXチームに所属している加部です。入社してからは主にインフラやデータベースを中心に仕事をしており、現在はGOでバックエンドのAPIの開発なんかもしています。
+TIGのDXチームに所属している加部です。入社してからは主にインフラやデータベースを中心に仕事をしており、現在はGOでバックエンドのAPIの開発なんかもしています。
+
 突然ですがAWSを利用しているけどビッグデータの蓄積や解析はBigQueryで実施したい、なんて意見も最近多くなってきているようですね。実際にS3からBigQueryのデータ転送について検索すると、自前でデータ転送を作成してみましたや、データ転送をサービスとして販売しているような会社もあります。そんな中GCPが提供しているBigQeryへのデータ転送サービス[DataTransferService](https://cloud.google.com/bigquery/transfer/)のソース元としてS3が追加され、簡単にS3からBigQueryのデータ転送のジョブを作成できるようになりました。まだ、ベータ版でのリリースのみですが今回は実際にS3からのデータ転送を試してみましょう。
 
 
-# そもそもDataTransferServiceとは
-<img src="/images/20200214/photo_20200214_01.png" class="img-very-small-size">
+# DataTransferServiceとは
 
+<img src="/images/20200214/photo_20200214_01.png" class="img-very-small-size">
 
 > BigQuery Data Transfer Service は、あらかじめ設定されたスケジュールに基づき、BigQuery BigQuery Data Transfer Service は、あらかじめ設定されたスケジュールに基づき、BigQuery へのデータの移動を自動化するマネージド サービスです。そのため、アナリティクス チームが BigQuery データ ウェアハウス基盤を構築する際にコードの作成はまったく必要ありません。
 > https://cloud.google.com/bigquery/transfer
@@ -27,7 +28,7 @@ lede: "突然ですがAWSを利用しているけどビッグデータの蓄積�
 要はBigQueryに対してデータを転送するジョブをマネージドサービスで簡単に作成できるよということですね。
 マニュアルによると現在下記のようなサービスとの連携が可能となっています。
 
-* AWS S3 
+* AWS S3
 * キャンペーンマネージャー
 * Cloud Strage
 * Google アドマネージャー
@@ -116,7 +117,7 @@ bq mk \
 "field_delimiter":",",
 "skip_leading_rows":"0",
 "allow_quoted_newlines":"true",
-"allow_jagged_rows":"false"}' 
+"allow_jagged_rows":"false"}'
 ```
 
 簡単にコマンドラインのオプションについて抜粋して説明を記載します。
@@ -144,12 +145,9 @@ bq mk \
 <img src="/images/20200214/3.png" class="img-middle-size">
 
 # まとめ
-今回はGCPのコマンドラインで作成しましたがInfrastructure as Codeで有名なTerraformなどでも作成することができます。今回の機能を実運用で利用するとなるとS3のパス設計など検討することは他にもあるとは思いますが、AWSを使いつつGCPのBigQueryを利用するなどのマルチクラウドの夢が広がるような機能ですね。今後もさらなる機能拡張を期待します。
 
+今回はGCPのコマンドラインで作成しましたがInfrastructure as Codeで有名なTerraformなどでも作成することができます。
 
-## 関連リンク
+今回の機能を実運用で利用するとなるとS3のパス設計など検討することは他にもあるとは思いますが、AWSを使いつつGCPのBigQueryを利用するなどのマルチクラウドの夢が広がるような機能ですね。今後もさらなる機能拡張を期待します。
 
-* [GCP連載企画](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Let's Try GCP #1 ～Cloud Run Buttonを使った楽々コンテナデプロイをやってみた～](https://future-architect.github.io/articles/20190909/)
-* [Terraformのベストなプラクティスってなんだろうか](https://future-architect.github.io/articles/20190903/)
-* [Go Cloud連載](https://future-architect.github.io/tags/GoCDK/)
+[GCP集中連載](/tags/GCP%E9%80%A3%E8%BC%89/)の7回目でした。次は木村さんの[gcloud compute sshじゃなくてsshコマンドを使いたいあなたへ](/articles/20200217/)です。

@@ -266,11 +266,8 @@ $ go run main.go
 # 最後に
 連載初日の記事はいかがだったでしょうか？レベル的には初学者の方に向けた内容だったかなと思います。「まずはGo言語でDynamoDBをつついてみたい」という方が本記事を通じて簡単にチャレンジできたら幸いです。
 
-続きはこちらです。
+[DynamoDB×Go連載企画](/tags/DynamoDB%C3%97Go/) の1本目でした。次は武田さんの[AWS SDKによるDynamoDBの基本操作](/articles/20200227/)です。
 
-* [DynamoDB×Go連載企画](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)
-
-## 関連リンク
 
 DynamoDB×Go以外にも多くの連載企画があります。特にGo Cloud連載が今回のテーマに近いです。
 

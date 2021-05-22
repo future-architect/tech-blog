@@ -223,13 +223,4 @@ Firebase Crashlyticsは本当にさくっと導入することができます。
 
 ぜひお試しください！
 
-
-## 関連リンク
-
-* [ハッカソン道中記#2～世界はチャンスであふれてる～](https://future-architect.github.io/articles/20160420/)
-* [GCP 連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)
-* [Go Cloud 連載](https://future-architect.github.io/tags/GoCDK/)
-* [DynamoDB×Go連載](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)
-* [Goを学ぶときにつまずきやすいポイントFAQ](https://future-architect.github.io/articles/20190713/)
-
+[サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)の4本目でした。次は村田さんの[CloudEventsのGo版SDKをいじってみる](/articles/20200331/)です。
