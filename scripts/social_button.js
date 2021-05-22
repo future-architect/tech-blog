@@ -1,36 +1,35 @@
 const fetch = require('sync-fetch');
 const fs = require("fs");
 
-let pocketCnt, hatebuCnt, fbCnt = {};
-let currentPocket = {};
-let currentHatebu = {};
-let currentFb = {};
+let [pocketCnt, hatebuCnt, fbCnt, twCnt] = [{}, {}, {}, {}];
+let [currentPocket, currentHatebu, currentFb, currentTw] = [{}, {}, {}, {}];
 
-if (fs.existsSync("cache_pocket.json")) {
-  let pocketCache = fs.readFileSync("cache_pocket.json", 'utf-8');
-  if (pocketCache) {
-    pocketCnt = JSON.parse(pocketCache);
-  }
-}
+const cacheFiles = ["cache_pocket.json", "cache_hatebu.json", "cache_facebook.json", "cache_twitter.json"];
 
-if (fs.existsSync("cache_hatebu.json")) {
-  let hatebuCache = fs.readFileSync("cache_hatebu.json", 'utf-8');
-  if (hatebuCache) {
-    hatebuCnt = JSON.parse(hatebuCache);
+cacheFiles.forEach((path, i) => {
+  if (!fs.existsSync(path)) {
+    return;
   }
-}
 
-if (fs.existsSync("cache_facebook.json")) {
-  let fbCache = fs.readFileSync("cache_facebook.json", 'utf-8');
-  if (fbCache) {
-    fbCnt = JSON.parse(fbCache);
+  let cache = fs.readFileSync(path, 'utf-8');
+  if (cache) {
+    if (i == 0) {
+      pocketCnt = JSON.parse(cache);
+    } else if (i == 1) {
+      hatebuCnt = JSON.parse(cache);
+    } else if (i == 2) {
+      fbCnt = JSON.parse(cache);
+    } else if (i == 3) {
+      twCnt = JSON.parse(cache);
+    }
   }
-}
+});
 
 process.on('exit', function() {
   fs.writeFileSync("cache_pocket.json", JSON.stringify(pocketCnt, null, 2));
   fs.writeFileSync("cache_hatebu.json", JSON.stringify(hatebuCnt, null, 2));
   fs.writeFileSync("cache_facebook.json", JSON.stringify(fbCnt, null, 2));
+  fs.writeFileSync("cache_twitter.json", JSON.stringify(twCnt, null, 2));
 });
 
 // url example: https://future-architect.github.io/articles/20210519a/
@@ -67,18 +66,18 @@ hexo.extend.helper.register("get_pocket_count", (url) => {
   }
 
   if (!fetchableDate(url)) {
-    const count = pocketCnt[url];
-    if (count >= 0) {
-      return count
+    const cnt = pocketCnt[url];
+    if (cnt >= 0) {
+      return cnt
     }
   }
 
-  let pocketURL = `https://widgets.getpocket.com/api/saves?url=${url}`
-  const saveCnt = fetch(pocketURL).json().saves;
-  pocketCnt[url] = saveCnt;
-  currentPocket[url] = saveCnt;
+  const apiURL = `https://widgets.getpocket.com/api/saves?url=${url}`
+  const respCnt = fetch(apiURL).json().saves;
+  pocketCnt[url] = respCnt;
+  currentPocket[url] = respCnt;
 
-  return saveCnt;
+  return respCnt;
 });
 
 hexo.extend.helper.register("get_hatebu_count", (url) => {
@@ -87,26 +86,24 @@ hexo.extend.helper.register("get_hatebu_count", (url) => {
   }
 
   if (!fetchableDate(url)) {
-    const count = hatebuCnt[url];
-    if (count >= 0) {
-      return count
+    const cnt = hatebuCnt[url];
+    if (cnt >= 0) {
+      return cnt
     }
   }
 
-  let hatebuURL = `https://bookmark.hatenaapis.com/count/entry?url=${encodeURI(url)}`
-  const bookmarkCnt = fetch(hatebuURL).json();
-  hatebuCnt[url] = bookmarkCnt;
-  currentHatebu[url] = bookmarkCnt;
+  const apiURL = `https://bookmark.hatenaapis.com/count/entry?url=${encodeURI(url)}`
+  const respCnt = fetch(apiURL).json();
+  hatebuCnt[url] = respCnt;
+  currentHatebu[url] = respCnt;
 
-  return bookmarkCnt;
+  return respCnt;
 });
 
 hexo.extend.helper.register("get_fb_count", (url) => {
   if (currentFb[url]) {
     return currentFb[url];
   }
-
-  let token = process.env.FB_TOKEN;
 
   if (!fetchableDate(url)) {
     const count = fbCnt[url];
@@ -117,8 +114,9 @@ hexo.extend.helper.register("get_fb_count", (url) => {
     }
   }
 
-  let fbURL = `https://graph.facebook.com/v10.0/?fields=og_object{engagement}&id=${encodeURI(url)}&access_token=${token}`
-  const resp = fetch(fbURL).json();
+  const token = process.env.FB_TOKEN;
+  const apiURL = `https://graph.facebook.com/v10.0/?fields=og_object{engagement}&id=${encodeURI(url)}&access_token=${token}`
+  const resp = fetch(apiURL).json();
 
   if (resp?.error) {
     /* response example:
@@ -133,30 +131,59 @@ hexo.extend.helper.register("get_fb_count", (url) => {
         }
    */
     // 制限にかかった場合は、キャッシュを再利用
-    const count = fbCnt[url];
-    if (count > 0) {
-      return count;
+    const cnt = fbCnt[url];
+    if (cnt > 0) {
+      return cnt;
     }
     return "シェア";
   }
 
-  const bookmarkCnt = resp?.og_object?.engagement?.count || 0;
-  fbCnt[url] = bookmarkCnt;
-  currentFb[url] = bookmarkCnt;
+  const respCnt = resp?.og_object?.engagement?.count || 0;
+  fbCnt[url] = respCnt;
+  currentFb[url] = respCnt;
 
-  console.log(`finish facebook ${url} ${bookmarkCnt}`);
+  console.log(`finish facebook ${url} ${respCnt}`);
 
-  if (bookmarkCnt == 0) {
+  if (respCnt == 0) {
     return "シェア";
   }
 
-  return bookmarkCnt;
+  return respCnt;
+});
+
+hexo.extend.helper.register("get_tw_count", (url) => {
+  if (currentTw[url]) {
+    return currentTw[url];
+  }
+
+  if (!fetchableDate(url)) {
+    const cnt = twCnt[url];
+    if (cnt == 0) {
+      return "ツイート";
+    } else if (cnt > 0) {
+      return cnt;
+    }
+  }
+
+  const apiURL = `https://jsoon.digitiminimi.com/twitter/count.json?url=${encodeURI(url)}`
+  const resp = fetch(apiURL).json();
+  const respCnt = resp.count + resp.likes;
+
+  twCnt[url] = respCnt;
+  currentTw[url] = respCnt;
+
+  if (respCnt == 0) {
+    return "ツイート"
+  }
+
+  return respCnt;
 });
 
 hexo.extend.helper.register("totalSNSCnt", (url) => {
   const pocket = pocketCnt[url] || 0;
   const hatebu = hatebuCnt[url] || 0;
   const fb = fbCnt[url] || 0;
+  const tw = twCnt[url] || 0;
 
-  return pocket + hatebu + fb;
+  return pocket + hatebu + fb + tw;
 });

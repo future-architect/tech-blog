@@ -140,6 +140,5 @@ hoge@test-instance:~$
 これで快適なsshライフ??が送れますね
 
 
-[GCP連載企画](/tags/GCP%E9%80%A3%E8%BC%89/)の8日目でした。次は
-
+[GCP連載企画](/tags/GCP%E9%80%A3%E8%BC%89/)の8日目でした。次は村瀬さんの[初めてのGCP 画像AI(Vision API)をさわってみた](/articles/20200218/)です。
 
