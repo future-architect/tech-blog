@@ -5,7 +5,6 @@ tag:
   - Go
   - AWS
   - DynamoDB×Go
-  - KVS
   - DynamoDB
   - GoCDK
 category:
@@ -269,7 +268,7 @@ func main() {
 	// メインスレッドでも無限書き込み
 	UpdateLoop()
 
-	// => optimistic locking: docstore (code=FailedPrecondition): 
+	// => optimistic locking: docstore (code=FailedPrecondition):
 	// ConditionalCheckFailedException: The conditional request failed
 }
 

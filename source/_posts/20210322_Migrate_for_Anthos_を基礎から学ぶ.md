@@ -3,10 +3,9 @@ date: 2021/03/22 00:00:00
 postid: ""
 tag:
   - GCP
-  - GCP連載
   - クラウドマイグレーション
   - Anthos
-  - コンテナ
+  - 移行ツール
 category:
   - Infrastructure
 thumbnail: /images/20210322/thumbnail.png

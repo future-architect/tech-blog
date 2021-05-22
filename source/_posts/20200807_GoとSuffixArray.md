@@ -4,7 +4,6 @@ postid: ""
 tag:
   - データ構造
   - Go
-  - 夏休み自由研究
   - アルゴリズム
   - 文字列処理
 category:
@@ -404,5 +403,5 @@ Go の標準ライブラリで私が面白いと思った `suffixarray` パッ�
 - 岡野原大輔 (2012) 『高速文字列解析の世界』岩波書店
 
 [^1]: 秋葉拓哉、岩田陽一、北川宜稔 (2012) 『プログラミングコンテストチャレンジブック [第2版]』 マイナビ出版
-[^2]: Two Efficient Algorithms for Linear Time Suffix Array Construction (https://ieeexplore.ieee.org/document/5582081)
+[^2]: [Two Efficient Algorithms for Linear Time Suffix Array Construction](https://ieeexplore.ieee.org/document/5582081)
 [^3]: 文字 a と b を `strings.Compare(a, b)` で辞書順で比較したときに a < b であれば -1、a = b であれば 0、a > b であれば +1 で返り値として取得できます。返り値が 0 以上の index を探索しているため a ≧ b である最小の index が取得できます。

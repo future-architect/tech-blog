@@ -4,7 +4,6 @@ postid: ""
 tag:
   - Spanner
   - GCP
-  - GCP連載
   - DockerCompose
 category:
   - Infrastructure

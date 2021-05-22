@@ -2,11 +2,11 @@ title: "マネージャーがうれしいRedmineデータのダッシュボー�
 date: 2017/05/10 18:00:00
 postid: ""
 tag:
-  - Elastic-Stack
   - Redmine
   - Kibana
   - Elasticsearch
   - マネジメント
+  - 可視化
 category:
   - Management
 thumbnail: /images/20170510/thumbnail_20170510.jpg

@@ -3,9 +3,9 @@ date: 2020/10/20 00:00:00
 postid: ""
 tag:
   - プロキシ
-  - Firewall
+  - ファイアウォール
   - Docker
-  - NW
+  - Network
   - DockerCompose
 category:
   - Infrastructure

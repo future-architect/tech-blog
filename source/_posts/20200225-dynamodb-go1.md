@@ -5,7 +5,6 @@ tag:
   - Go
   - AWS
   - DynamoDB×Go
-  - KVS
   - DynamoDB
 category:
   - Programming

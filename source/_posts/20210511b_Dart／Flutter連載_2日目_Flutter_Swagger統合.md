@@ -6,7 +6,6 @@ tag:
   - Dart
   - OpenAPI
   - Swagger
-  - Flutter連載
 category:
   - Infrastructure
 thumbnail: /images/20210511b/thumbnail.png

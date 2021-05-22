@@ -5,6 +5,7 @@ tag:
   - Metabase
   - Redmine
   - マネジメント
+  - 可視化
 category:
   - Management
 thumbnail: /images/20190703/photo_20190703_01.jpeg

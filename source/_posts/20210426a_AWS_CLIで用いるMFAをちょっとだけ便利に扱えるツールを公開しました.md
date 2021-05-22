@@ -3,6 +3,7 @@ date: 2021/04/26 00:00:00
 postid: a
 tag:
   - AWS
+  - IAM
   - OSS
   - OSS推進タスクフォース
   - Go

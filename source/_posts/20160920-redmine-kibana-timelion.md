@@ -2,10 +2,10 @@ title: "マネージャーがうれしいRedmineデータのグラフ表示方�
 date: 2016/09/20 18:00:00
 postid: ""
 tag:
-  - Elastic-Stack
   - Kibana
   - Redmine
   - マネジメント
+  - 可視化
 category:
   - Management
 thumbnail: /images/20160920/thumbnail_20160920.jpg

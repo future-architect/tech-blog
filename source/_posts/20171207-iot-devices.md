@@ -3,6 +3,7 @@ date: 2017/12/07 13:00:00
 postid: ""
 tag:
   - IoT
+  - FutureIoT
 category:
   - IoT
 thumbnail: /images/20171207/thumbnail_20171207.png
@@ -74,7 +75,7 @@ MPUとしては、Wi-Fi、BLEも内蔵した比較的安価なESP32を採用し�
     * [BLE](https://ja.wikipedia.org/wiki/Bluetooth_Low_Energy)
     * [LTE](https://ja.wikipedia.org/wiki/Long_Term_Evolution)(オプション)
     * [LoRaWAN](https://ja.wikipedia.org/wiki/LPWA_(%E7%84%A1%E7%B7%9A)#LoRa)(オプション)
-    
+
 ### コネクタ
 コネクタとしては、PCなどの通信や充電のためのmicroUSBと、センサーなどの外部モジュールや内蔵モジュールのためのGroveコネクタがあります。
 

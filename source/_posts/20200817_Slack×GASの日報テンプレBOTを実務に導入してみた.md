@@ -2,7 +2,6 @@ title: "Slack×GASの日報テンプレBOTを実務に導入してみた"
 date: 2020/08/17 00:00:00
 postid: ""
 tag:
-  - 夏休み自由研究
   - Slack
   - JavaScript
   - BOT
@@ -15,7 +14,7 @@ featured: false
 lede: "こんにちは。TIGメディアユニットの仁木です。Slackに投稿するための日報をBOT化・自動化したので自由研究企画に混ぜてもらい記事にすることにしました。毎日共通で書かなければいけないタイトルなどの固定項目やスケジュールの記載を自動化することで、作成時間を短縮し、重要な部分に時間を割けるようになりました"
 ---
 
-[フューチャー夏休み自由研究連載](https://future-architect.github.io/articles/20200726/)11本目の記事です
+[フューチャー夏休み自由研究連載](/articles/20200726/)11本目の記事です
 
 # はじめに
 
@@ -41,7 +40,7 @@ SlackのIncoming Webhookというアプリを利用しました。
 
 スプシと略して呼んでいたら上司が「スプシって略すのか..」と関心していました。Googleアカウントがあれば誰でも無料で使える表計算シートです。今回はスクリプトエディタ機能でスプレットシートに書いた情報を利用してSlackのWebhookURLへPOSTリクエストを送ります。
 ![](/images/20200817/スクリーンショット_2020-08-14_12.59.15.png)
- 
+
 ## Google Apps Script （GAS）
 
 Googleスプレットシートのスクリプトエディタ機能を利用して、スクリプトを書いていきます。書いたスクリプトはボタンひとつで簡単に実行でき、さらにトリガーで実行時間を指定する機能も備わっており、設定するだけで決まった時間にPOSTリクエストが実行できます。
@@ -63,8 +62,8 @@ let sheet = SpreadsheetApp.getActiveSheet();
 let message = "日報 \n";
 // ２行目から順番に行ごとのデータを取得し、messageに追加していく
 for(let i = 2; i<= sheet.getLastRow(); i++) {
-  let subtitle = sheet.getRange(i, 1).getValue(); 
-  let defmessage = sheet.getRange(i, 2).getValue(); 
+  let subtitle = sheet.getRange(i, 1).getValue();
+  let defmessage = sheet.getRange(i, 2).getValue();
   let option = sheet.getRange(i, 3).getValue();
   // １列目の項目名をmessageに追加
   message += "■"+subtitle+"\n";
@@ -100,7 +99,7 @@ const MY_CAL_ID = 'piyopiyoPPP@example.com';
 /**
  * 今日の予定(参加・主催・未定のみ表示)
  *
- * @return {string} 予定の文字列 
+ * @return {string} 予定の文字列
  */
 function addTodayCal() {
   let todayCal = CalendarApp.getCalendarById(MY_CAL_ID);
@@ -119,7 +118,7 @@ function addTodayCal() {
 /**
  * 明日の予定(参加・主催・未定のみ表示)
  *
- * @return {string} 予定の文字列 
+ * @return {string} 予定の文字列
  */
 function addTomorrowCal() {
   let tomorrowCal = CalendarApp.getCalendarById(MY_CAL_ID);
@@ -168,17 +167,17 @@ const SECOND_INDENT = '      ';
  * 日報テンプレをSlackに送信
  */
 function createNippo() {
-  let today = new Date();  
+  let today = new Date();
   if(isHoliday(today)) return;
-  
+
   let url = SLACK_WEBHOOK;
   // スプレットシートを取得
   let sheet = SpreadsheetApp.getActiveSheet();
   let message = "日報 \n";
   // ２行目から順番に行ごとのデータを取得し、messageに追加していく
   for(let i = 2; i<= sheet.getLastRow(); i++) {
-    let subtitle = sheet.getRange(i, 1).getValue(); 
-    let defmessage = sheet.getRange(i, 2).getValue(); 
+    let subtitle = sheet.getRange(i, 1).getValue();
+    let defmessage = sheet.getRange(i, 2).getValue();
     let option = sheet.getRange(i, 3).getValue();
     // １列目の項目名をmessageに追加
     message += "■"+subtitle+"\n";
@@ -214,7 +213,7 @@ function createNippo() {
 function isHoliday(date) {
   // 土日
   if(date.getDay()===0 || date.getDay()===6) return true;
-  
+
   // 祝日
   let holidayCal = CalendarApp.getCalendarById(JAP_HOLIDAY_CAL_ID);
   return (holidayCal.getEventsForDay(date).length>0);
@@ -233,7 +232,7 @@ function createOptions(date, message) {
   let json_data ={"username":"日報"+fdate,
     "text": message,
     "icon_emoji": ":slack:"}
-  
+
   let payload = JSON.stringify(json_data);
   let options = {
     "method": "post",
@@ -246,7 +245,7 @@ function createOptions(date, message) {
 /**
  * 今日の予定(参加・主催・未定のみ表示)
  *
- * @return {string} 予定の文字列 
+ * @return {string} 予定の文字列
  */
 function addTodayCal() {
   let todayCal = CalendarApp.getCalendarById(MY_CAL_ID);
@@ -265,7 +264,7 @@ function addTodayCal() {
 /**
  * 明日の予定(参加・主催・未定のみ表示)
  *
- * @return {string} 予定の文字列 
+ * @return {string} 予定の文字列
  */
 function addTomorrowCal() {
   let tomorrowCal = CalendarApp.getCalendarById(MY_CAL_ID);

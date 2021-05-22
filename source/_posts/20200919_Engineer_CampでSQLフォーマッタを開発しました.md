@@ -4,7 +4,7 @@ postid: ""
 tag:
   - SQL
   - インターン
-  - Antlr
+  - ANTLR4
   - 構文解析
   - VSCode
   - コアテク

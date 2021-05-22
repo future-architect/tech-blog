@@ -2,10 +2,9 @@ title: "Technical Credibilityを築くということ"
 date: 2021/04/22 00:00:00
 postid: a
 tag:
-  - 初心者向け
   - 新人向け
   - 技術的信頼
-  - 春の入門連載
+  - 技術習得
 category:
   - Culture
 thumbnail: /images/20210422a/thumbnail.jpg

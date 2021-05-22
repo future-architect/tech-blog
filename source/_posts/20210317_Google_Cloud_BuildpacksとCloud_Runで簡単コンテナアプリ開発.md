@@ -3,7 +3,6 @@ date: 2021/03/17 00:00:00
 postid: ""
 tag:
   - GCP
-  - GCP連載
   - Buildpacks
   - CloudRun
   - Docker
