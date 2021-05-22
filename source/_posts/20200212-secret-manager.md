@@ -19,7 +19,7 @@ lede: "突然ですが、普段生活するうえでカギ🔑をなくした、
 
 ## 前書き
 
-こんにちは、TIG所属インフラエンジニアの市川です。
+こんにちは、TIG所属インフラエンジニアの市川です。[GCP連載](/tags/GCP%E9%80%A3%E8%BC%89/)の5本目です。
 
 突然ですが、普段生活するうえでカギ🔑をなくした、忘れたことはないでしょうか。私はあります。なくしたことはないけど、うっかり置き忘れちゃうんですよね。
 
@@ -37,7 +37,7 @@ lede: "突然ですが、普段生活するうえでカギ🔑をなくした、
 > Berglasは、Google Cloudでシークレットを保存および取得するためのコマンドラインツールおよびライブラリです。シークレットはCloud KMSで暗号化され、Cloud Storageに保存されます。 Secret Managerには相互運用可能なレイヤーもあります。
 > * CLIとして：Berglasは、Google Cloudでのデータの暗号化、復号化、保存のプロセスを自動化します。
 > * ライブラリとして：BerglasはさまざまなGoogle Cloudランタイムへのシークレットの組み込みを自動化します
-> 
+>
 > Berglasは、公式にサポートされているGoogle製品ではありません。
 
 なるほど。GCPのリポジトリで開発されてるのに公式製品ではないのね。CLIとしてもライブラリとしても利用可能というところがイケてますね。
@@ -351,10 +351,4 @@ $ gcloud functions deploy print_secret \
 これでもう、カギの管理に困ることはなくなって、幸せな世界が待っていることでしょう。
 ご興味のある方は、ぜひ触ってみてはいかがでしょうか。
 
-
-## 関連リンク
-
-* [GCP連載企画](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Go Cloud連載](https://future-architect.github.io/tags/GoCDK/)
-* [Let's Try GCP #1 ～Cloud Run Buttonを使った楽々コンテナデプロイをやってみた～](https://future-architect.github.io/articles/20190909/)
-* [Let's Try GCP #2 ～Cloud FunctionをVPC connectorと一緒に使ってみる～](https://future-architect.github.io/articles/20190927/)
+[GCP連載](/tags/GCP%E9%80%A3%E8%BC%89/)の5本目でした。次は齋場さんの[Terraform Validatorを使って、GCPのセキュリティポリシーの自動チェックを行う](/articles/20200213/)です。

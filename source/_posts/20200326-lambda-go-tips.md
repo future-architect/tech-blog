@@ -18,11 +18,18 @@ lede: "サーバレス連載の第2弾はLambdaアプリをGoで開発する中�
 
 こんにちは、TIG/DXユニットの真野です。
 
-[サーバレスに関する連載](https://future-architect.github.io/tags/Serverless%E9%80%A3%E8%BC%89/)の第2弾ということで、典型的なAWSサービスであるLambdaアプリをGoで開発する中で調べた内容や、Tipsを紹介します。
+[サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)の第2弾は、典型的なAWSサービスであるLambdaアプリをGoで開発する中で調べた内容や、Tipsを紹介します。
 
 ## Lambdaの利用コア数は？
 
-結論⇨ 全ての場合で"2"でした。
+結論⇨ ~~全ての場合で"2"でした。~~
+
+(**2021/05/22追記**) アップデートがあり、最大6vCPUまで上限が上がりました。
+
+* [AWS News Blog: New for AWS Lambda – Functions with Up to 10 GB of Memory and 6 vCPUs](https://aws.amazon.com/jp/blogs/aws/new-for-aws-lambda-functions-with-up-to-10-gb-of-memory-and-6-vcpus/)
+
+
+**以下は2020.03時点の調査結果です。**
 
 Goで開発する場合、少しでも性能を稼ぐためgoroutineを使う場面も多いと思います。特にバックエンドのデータストアがDynamoDBである場合は負荷を気にする必要がほぼ無いため、わたしはデータの書き込み部分を良く並列化することが多いです。
 
@@ -227,7 +234,7 @@ func main() {
    // 省略
 ]
 2020-03-26T10:15:05.583+09:00 END RequestId: 8f41435e-5caa-4feb-a1ea-d1f1d6d56811
-2020-03-26T10:15:05.583+09:00 REPORT RequestId: 8f41435e-5caa-4feb-a1ea-d1f1d6d56811	Duration: 36.24 ms	Billed Duration: 100 ms	Memory Size: 1024 MB	Max Memory Used: 34 MB	Init Duration: 66.10 ms	
+2020-03-26T10:15:05.583+09:00 REPORT RequestId: 8f41435e-5caa-4feb-a1ea-d1f1d6d56811	Duration: 36.24 ms	Billed Duration: 100 ms	Memory Size: 1024 MB	Max Memory Used: 34 MB	Init Duration: 66.10 ms
 2020-03-26T10:15:05.583+09:00 BAD_REQUEST with panic string
 ```
 
@@ -244,12 +251,5 @@ panicということで予期せぬエラーの場合にはStackTraceを出し�
 * Lambda関数のパターンは決まっているのでmiddlewareを用意しても良いかも
 * `errorString null`の`null`はStackTrace項目で、通常は `null` が入るで問題なし
 
-## 関連リンク
-
-Goに関連した記事です。
-
-* [サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)
-* [Go Cloud 連載](https://future-architect.github.io/tags/GoCDK/)
-* [DynamoDB×Go連載](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)
-* [GCP 連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Goを学ぶときにつまずきやすいポイントFAQ](https://future-architect.github.io/articles/20190713/)
+[サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)の2本目でした。次は澁川さんの[Goでサーバーレス用の検索エンジンwatertowerを作ってみました
+](/articles/20200327/)でした。

@@ -140,7 +140,7 @@ $ ./watertower-server --port=8888
 # ドキュメントの登録
 $ curl -X POST "http://127.0.0.1:8888/index/_doc/"
 　　-H "content-type: application/json"
-　　-d '{ "unique_key": "id1", "title": "hello watertower", 
+　　-d '{ "unique_key": "id1", "title": "hello watertower",
 　　　　　"content": "watertower is a full text search engine with tag filtering", "lang": "en" }'
 {"_id":"d1","_index":"index","_type":"_doc","result":"created"}
 
@@ -154,7 +154,7 @@ $ curl -X GET "http://127.0.0.1:8888/index/_source/d1"
 (略)
 
 # 検索
-$ curl -X GET "http://127.0.0.1:8888/index/_search" 
+$ curl -X GET "http://127.0.0.1:8888/index/_search"
   -H "content-type: application/json"
   -d '{"query": {"bool": {"must": {"match_phrase": {"content": {"query": "stay", "analyzer": "en"}}}}}}'
 (略)
@@ -177,13 +177,4 @@ $ curl -X GET "http://127.0.0.1:8888/index/_search"
 検索エンジン自作入門以外にも手を動かす系書籍の[［ゲーム＆モダン JavaScript文法で2倍楽しい］グラフィックスプログラミング入門](https://amzn.to/2UIpdBm)も杉本さんから献本を頂いてしまっているので、今度は一年以内には・・・
 
 
-## 関連リンク
-
-Goに関連した記事です。
-
-* [サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)
-* [Go Cloud 連載](https://future-architect.github.io/tags/GoCDK/)
-* [DynamoDB×Go連載](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)
-* [GCP 連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Goを学ぶときにつまずきやすいポイントFAQ](https://future-architect.github.io/articles/20190713/)
-
+[サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)の3本目でした。次は佐藤さんの[Firebase CrashlyticsでAndroidアプリのエラーログをさくっと収集する](/articles/20200330/)です。

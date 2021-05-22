@@ -17,6 +17,7 @@ lede: "サーバレス連載企画の第5回はCloudEvents(https://cloudevents.i
 # はじめに
 
 こんにちは、TIG所属の[村田](https://twitter.com/famipapamart)です。
+
 サーバレス連載企画の第5回は[CloudEvents](https://cloudevents.io/)を取り上げたいと思います。
 
 ※本記事は2020.03.31時点の情報を元に執筆しています
@@ -449,17 +450,17 @@ https://github.com/cloudevents/sdk-go/blob/v1.1.2/pkg/cloudevents/transport/pubs
 実際にPub/Subから受け取った電文をそのまま標準出力したものを見てみると、以下のような形になっていました。
 
 ```log
-&{ 
-    [123 34 105 100 34 58 48 44 34 109 101 115 115 97 103 101 34 58 34 72 69 76 76 79 34 125] 
+&{
+    [123 34 105 100 34 58 48 44 34 109 101 115 115 97 103 101 34 58 34 72 69 76 76 79 34 125]
     map[
-        ce-datacontenttype:application/json 
-        ce-id:89142958-bdb1-4fc9-979a-5c45f6590207 
-        ce-source:github.com/cloudevents/sdk-go/cmd/samples/pubsub/sender/ 
-        ce-specversion:1.0 
-        ce-time:2020-03-30T16:25:40.473793Z 
-        ce-traceparent:00-a31200e4a4b2a5a0d41b5710b5f350bb-a348823d4ab87c62-00 
+        ce-datacontenttype:application/json
+        ce-id:89142958-bdb1-4fc9-979a-5c45f6590207
+        ce-source:github.com/cloudevents/sdk-go/cmd/samples/pubsub/sender/
+        ce-specversion:1.0
+        ce-time:2020-03-30T16:25:40.473793Z
+        ce-traceparent:00-a31200e4a4b2a5a0d41b5710b5f350bb-a348823d4ab87c62-00
         ce-type:com.cloudevents.sample.sent
-    ] 
+    ]
     0001-01-01 00:00:00 +0000 UTC {0 0 <nil>} <nil> 0 false <nil>
 }
 ```
@@ -516,14 +517,14 @@ https://github.com/cloudevents/sdk-go/blob/v1.1.2/pkg/cloudevents/transport/pubs
 
 ```log
     map[
-        ce-datacontenttype:application/json 
-        ce-id:89142958-bdb1-4fc9-979a-5c45f6590207 
-        ce-source:github.com/cloudevents/sdk-go/cmd/samples/pubsub/sender/ 
-        ce-specversion:1.0 
-        ce-time:2020-03-30T16:25:40.473793Z 
-        ce-traceparent:00-a31200e4a4b2a5a0d41b5710b5f350bb-a348823d4ab87c62-00 
+        ce-datacontenttype:application/json
+        ce-id:89142958-bdb1-4fc9-979a-5c45f6590207
+        ce-source:github.com/cloudevents/sdk-go/cmd/samples/pubsub/sender/
+        ce-specversion:1.0
+        ce-time:2020-03-30T16:25:40.473793Z
+        ce-traceparent:00-a31200e4a4b2a5a0d41b5710b5f350bb-a348823d4ab87c62-00
         ce-type:com.cloudevents.sample.sent
-    ] 
+    ]
 ```
 
 v1.1.2のSDKでは `specversion` のみの実装ですが、同様の形で `Attributes` からいわゆるメタデータを取り出して処理を行うかあるいは後続にイベントを伝播させるために再度なにかしらのオブジェクトに詰めるかといったことを行うことになるかなと思います。
@@ -553,10 +554,4 @@ Cloud Functionsのログにてメッセージが届いていることが確認�
 今回は主にCloud Pub/Subにフォーカスする形でCloudEventsの実装について紹介させて頂きました。SDKは絶賛開発中なステータスですが、世に蔓延る様々なイベント形式に悩まされる実装者が幸せになれる未来が待っていると思うと非常に楽しみですし、CloudEventsの動向からますます目が離せませんね。
 
 
-## 関連リンク
-
-* [サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)
-* [GCP 連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Go Cloud 連載](https://future-architect.github.io/tags/GoCDK/)
-* [DynamoDB×Go連載](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)
-* [Goを学ぶときにつまずきやすいポイントFAQ](https://future-architect.github.io/articles/20190713/)
+[サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)の5本目でした。次は[AWSのStep FunctionsとLambdaでServelessなBatch処理を実現する](/articles/20200515/)です。

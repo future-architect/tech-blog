@@ -13,9 +13,7 @@ featured: true
 lede: "本記事を書くためのモチベーションとしては、現在はインフラやネットワークエンジニアとして日々働いていますが、大学時代は化学を専攻し、大学院では感染症を専門に研究していました。最終的に遺伝子を触ることなく修了しましたが、生物系に少しでも在籍していたこともあり、今回はわずかな記憶を頼りながら調べています。この記事が最終的にかつての研究の何かに使えたかもしれない、と私の中で知識が落とし込めればいいなと思っています。"
 ---
 ## はじめに
-こんにちは。TIG/DXチームの[伊藤](https://twitter.com/kaedemalu)です。今回はGCP連載企画の4日目です。
-
-これまでの内容は[GCP連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)にあります。
+こんにちは。TIG/DXチームの[伊藤](https://twitter.com/kaedemalu)です。[GCP連載](/tags/GCP%E9%80%A3%E8%BC%89/)の4日目です。
 
 さて、私は業務ではGCPとTerraformを扱っています。コンピューティング・ネットワーキングなどが現在の業務領域でである一方で、ビッグデータ・機械学習関連のサービスはあまり使う機会がなく理解もまだまだな部分が多いです。今回は、Cloud Life Sciencesという、ビッグデータの中でも毛色の違うサービスを調べてみようと思いこの連載に参加しております。割と読み物に近くなったのでさらっと読み流していただければ幸いです。
 
@@ -171,21 +169,15 @@ WITH filtered_snp_calls AS (
 ## まとめ
 本記事では簡単ですが、Cloud Life Sciencesを触る記事を書いてきました。エンジニアとして分析に使うものはうっすら理解していても、実際に使うファイルフォーマットなどは知識が深くないとそもそも何もできないなと改めて感じたところです。今回はVCFファイルという専門的なファイルからBigQueryに流すところまで行いましたが、Cloud Life Sciencesはもともと Google Genomicsというサービスだったようで、以前よりGoogleが力を入れていた部分の一つであることが今回色々調べてわかりました。医療分野は正確さを求められる一方で、そのデータ量は膨大な量になります。大学院時代に肌で感じたことですが、ローカルで分析している先輩がかなり時間をかけていたことを思い出しました。このサービスの知名度が上がるとともに、研究ユース、非エンジニアでも使いやすいプラットフォームになるとより良いなと思いました。
 
-明日は祝日なので次回更新は水曜日です。お楽しみに！
+
+[GCP連載](/tags/GCP%E9%80%A3%E8%BC%89/)の4日目でした。次は市川さんの[【もう鍵なくさない】GCPのSecret ManagerとBerglasで幸せになる](/articles/20200212/)です。
 
 ## 最後に
+
 先日、GCPのProfessional Cloud Architectに合格しました！結果が出力される瞬間はなかなかドキドキでしたが、なんとか合格できました。私も参考にしましたが、本技術ブログでも合格体験記を出しておりますので、そちらもぜひご覧ください！
-[【合格記】GCP Professional Cloud Architect認定資格を振り返る](https://future-architect.github.io/articles/20190530/)
+
+[【合格記】GCP Professional Cloud Architect認定資格を振り返る](/articles/20190530/)
 
 ## 参考
+
 [VFC フォーマットファイルの特徴および Python でパースする方法](https://bi.biopapyrus.jp/gwas/vcf.html)
-
----
-
-## 関連リンク
-
-* [Let's Try GCP #1 ～Cloud Run Buttonを使った楽々コンテナデプロイをやってみた～](https://future-architect.github.io/articles/20190909/)
-* [Let's Try GCP #2 ～Cloud FunctionをVPC connectorと一緒に使ってみる～](https://future-architect.github.io/articles/20190927/)
-* [GCP連載企画](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Go Cloud連載](https://future-architect.github.io/tags/GoCDK/)
-

@@ -13,9 +13,9 @@ lede: "ssh先のGCEインスタンスとクライアント間で、キーペア(
 
 ## はじめに
 
-[GCP連載企画](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)の8日目です。
+[GCP連載企画](/tags/GCP%E9%80%A3%E8%BC%89/)の8日目です。
 
-いきなりですが、 `gcloud compute ssh`コマンドは便利ですよね。 
+いきなりですが、 `gcloud compute ssh`コマンドは便利ですよね。
 
 ssh先のGCEインスタンスとクライアント間で、キーペア(秘密鍵/公開鍵)の自動生成 -> GCEインスタンスへの鍵配置を自動で行ってくれて、ユーザーは鍵の存在を意識することなくsshできるコマンドですが、`gcloud compute ssh`コマンドじゃなくて、素のsshコマンドでGCEインスタンスにsshしたい、という方もいらっしゃるのではないでしょうか。
 
@@ -37,7 +37,7 @@ ssh先のGCEインスタンスとクライアント間で、キーペア(秘密�
 自動でキーペアを生成してくれていることがわかります。
 
 ```bash
-❯ gcloud compute ssh test-instance  --project test-project --zone asia-northeast1-a                                                 
+❯ gcloud compute ssh test-instance  --project test-project --zone asia-northeast1-a
 WARNING: The public SSH key file for gcloud does not exist.
 WARNING: The private SSH key file for gcloud does not exist.
 WARNING: You do not have an SSH key for gcloud.
@@ -94,7 +94,7 @@ For example, try running:
   $ ssh test-instance.asia-northeast1-a.test-project
 ```
 
- `~/.ssh/config` に `test-instance`が追加されていますね! 
+ `~/.ssh/config` に `test-instance`が追加されていますね!
 
 
 ```bash
@@ -140,10 +140,6 @@ hoge@test-instance:~$
 これで快適なsshライフ??が送れますね
 
 
-## 関連リンク
+[GCP連載企画](/tags/GCP%E9%80%A3%E8%BC%89/)の8日目でした。次は
 
-* [GCP連載企画](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Terraformのベストなプラクティスってなんだろうか](https://future-architect.github.io/articles/20190903/)
-* [Let's Try GCP #1 ～Cloud Run Buttonを使った楽々コンテナデプロイをやってみた～](https://future-architect.github.io/articles/20190909/)
-* [Go Cloud連載](https://future-architect.github.io/tags/GoCDK/)
 

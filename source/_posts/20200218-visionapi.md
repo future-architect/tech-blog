@@ -13,7 +13,7 @@ lede: "Google Cloud の Vision API は REST API や RPC API を使用して強�
 # はじめに
 こんにちは。TIG DXチームの村瀬です。
 
-今回は[GCP連載企画](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)の9日目です。私個人としてはGCPはほとんど利用したことがないので、せっかくだから面白そうなことを試してみようと思い、画像AIのサービスであるVision APIについて試してみることにしました。
+今回は[GCP連載企画](/tags/GCP%E9%80%A3%E8%BC%89/)の9日目です。私個人としてはGCPはほとんど利用したことがないので、せっかくだから面白そうなことを試してみようと思い、画像AIのサービスであるVision APIについて試してみることにしました。
 
 # Vision APIとは
 
@@ -259,9 +259,4 @@ curl -H 'Content-Type:application/json' -d '{"requests":[{"image":{"source":{"im
 今回は検証目的でプロジェクトを作成したのでプロジェクトを削除して完了です。
 
 
-## 関連リンク
-
-* [GCP連載企画](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Terraformのベストなプラクティスってなんだろうか](https://future-architect.github.io/articles/20190903/)
-* [Let's Try GCP #1 ～Cloud Run Buttonを使った楽々コンテナデプロイをやってみた～](https://future-architect.github.io/articles/20190909/)
-* [Go Cloud連載](https://future-architect.github.io/tags/GoCDK/)
+[GCP連載企画](/tags/GCP%E9%80%A3%E8%BC%89/)の9日目でした。次は前原さんの[Cloud Build を知ってみよう](/articles/20210315/)です。

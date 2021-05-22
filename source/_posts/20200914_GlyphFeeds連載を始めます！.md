@@ -7,8 +7,9 @@ tag:
   - AWS
   - 基幹システム
   - エンタープライズ
+  - インデックス
 category:
-  - Culture
+  - Business
 thumbnail: /images/20200914/thumbnail.jpg
 author: 山上燦
 featured: false
@@ -56,11 +57,10 @@ GlyphFeedsは、[毎日新聞社プロジェクト](https://prtimes.jp/main/html
 
 ※正確なタイトルは直前で変更するかも知れませんが、ご了承ください！
 
-# 参考/関連リンク
+# 参考リンク
 
 GlyphFeedsで採用している技術要素たち。
 
-* [ES2015 Web componentsと国産Web componentsフレームワークUrushi](https://future-architect.github.io/articles/20170605/)
-* [uroboroSQL x Spring BootによるWebアプリケーション開発](https://future-architect.github.io/articles/20170828/)
-* [DynamoDB×Go連載企画](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)
-
+* [ES2015 Web componentsと国産Web componentsフレームワークUrushi](/articles/20170605/)
+* [uroboroSQL x Spring BootによるWebアプリケーション開発](/articles/20170828/)
+* [DynamoDB×Go連載企画](/tags/DynamoDB%C3%97Go/)

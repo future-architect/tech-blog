@@ -12,7 +12,7 @@ featured: true
 lede: "Terraform Validatorを使って、組織のセキュリティポリシーの自動チェックを継続的に行う方法を紹介します。併せて、ポリシーをコードとして管理する方法も紹介します。Policy as code です。もちろんセキュリティポリシーのみだけではなく、命名規則やリージョン制限なども扱えます。"
 ---
 
-[GCP集中連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)の6回目です。今回は**Terraform Validatorを使って、組織のセキュリティポリシーの自動チェックを継続的に行う**方法を紹介します。併せて、ポリシーをコードとして管理する方法も紹介します。**Policy as code** です。もちろんセキュリティポリシーのみだけではなく、命名規則やリージョン制限なども扱えます。
+[GCP連載](/tags/GCP%E9%80%A3%E8%BC%89/)の6回目です。今回は**Terraform Validatorを使って、組織のセキュリティポリシーの自動チェックを継続的に行う**方法を紹介します。併せて、ポリシーをコードとして管理する方法も紹介します。**Policy as code** です。もちろんセキュリティポリシーのみだけではなく、命名規則やリージョン制限なども扱えます。
 
 # Infrastructure as code 理想と現実
 Infrastructure as code (以下 IaC)、ここ最近大分一般的になってきました。弊社でも大半のプロジェクトは導入しています。3年前とかに導入するために一苦労していた時代が懐かしい..
@@ -220,7 +220,7 @@ steps:
   dir: your-terraform-folder
   entrypoint: terraform
   args:
-  - plan 
+  - plan
   - -out=terraform.tfplan
 - name: gcr.io/config-validator/terraform-validator
   entrypoint: "/bin/bash"
@@ -246,11 +246,4 @@ PR上でのフィードバックのイメージ
 
 GCPのプロジェクト数がスケールする際に必ずぶち当たるであろうこの課題、私たちもTerraform Validatorを用いて解決しようと現在、試行錯誤中です。導入自体はシンプルにできるため、まずは簡単なポリシーのチェックから始めてみてはいかがでしょうか。
 
-## 関連リンク
-
-* [Terraformのベストなプラクティスってなんだろうか](https://future-architect.github.io/articles/20190903/)
-* [はじめてのTerraform 0.12 ～環境構築～](https://future-architect.github.io/articles/20190816/)
-* [GCP連載企画](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Go Cloud連載](https://future-architect.github.io/tags/GoCDK/)
-* [Let's Try GCP #1 ～Cloud Run Buttonを使った楽々コンテナデプロイをやってみた～](https://future-architect.github.io/articles/20190909/)
-* [Let's Try GCP #2 ～Cloud FunctionをVPC connectorと一緒に使ってみる～](https://future-architect.github.io/articles/20190927/)
+[GCP連載](/tags/GCP%E9%80%A3%E8%BC%89/)の6回目でした。次は加部さんの[GCPのData Transfer Serviceを使って簡単にS3からBigQueryにデータ転送をしてみる](/articles/20200214/)です。

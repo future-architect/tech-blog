@@ -452,8 +452,14 @@ GCP リソースをPython で操れることで、自由度の高いテンプレ
 また、Terraform は、tfstate というファイルをGCS やS3 に保存する必要があるので、アクセス権限や同時実行などを気にする必要がありますが、CloudFormation 同様に状態管理は、GCP 側でよしなにやってもらえるのもメリットだと感じました。
 
 ただ、Google 自体は[Terraformer](https://github.com/GoogleCloudPlatform/terraformer)などのツールを作成していることから割とTerraform 推しなのでは？と感じるところもあります（個人的見解）
-なので、個人的には、GCP だけでなくAWS や、最近ではAlibaba Cloud などのクラウドを利用する機会が多いので、Terraform 一択になってしまうのが本音です。
-とはいえ、今回のように触れたことのないサービスを使ってみるのも新たな知見として楽しめるので、今後もいろいろ触れていきたいと思います。
+
+そのため、個人的には、GCP だけでなくAWS や、最近ではAlibaba Cloud などのクラウドを利用する機会が多いので、Terraform 一択になってしまうのが本音です。とはいえ、今回のように触れたことのないサービスを使ってみるのも新たな知見として楽しめるので、今後もいろいろ触れていきたいと思います。
+
+
+この記事に類似するオススメする記事です。よければ合わせてチェックください。
+
+* [Terraformのベストなプラクティスってなんだろうか](/articles/20190903/)
+* [Let's Try GCP #1 ～Cloud Run Buttonを使った楽々コンテナデプロイをやってみた～](/articles/20190909/)
 
 
 ## 参考
@@ -464,11 +470,4 @@ GCP リソースをPython で操れることで、自由度の高いテンプレ
 [環境変数](https://cloud.google.com/deployment-manager/docs/configuration/templates/use-environment-variables?hl=ja)
 [サポートしているリソースタイプ](https://cloud.google.com/deployment-manager/docs/configuration/supported-resource-types?hl=en)
 
-
-## 関連リンク
-
-* [GCP連載企画](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Terraformのベストなプラクティスってなんだろうか](https://future-architect.github.io/articles/20190903/)
-* [Let's Try GCP #1 ～Cloud Run Buttonを使った楽々コンテナデプロイをやってみた～](https://future-architect.github.io/articles/20190909/)
-* [Go Cloud連載](https://future-architect.github.io/tags/GoCDK/)
 
