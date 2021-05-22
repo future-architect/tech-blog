@@ -5,7 +5,6 @@ tag:
   - Go
   - AWS
   - DynamoDB×Go
-  - KVS
   - DynamoDB
 category:
   - Programming
@@ -139,7 +138,7 @@ type Item struct {
 ### Update
 
 利用するメソッドは `UpdateItem` です。
-どのキーをどの値に更新するかを指定する必要があるため、少しコードが複雑になります。 
+どのキーをどの値に更新するかを指定する必要があるため、少しコードが複雑になります。
 
 ```go　Update処理
 	// Create an expression for update.

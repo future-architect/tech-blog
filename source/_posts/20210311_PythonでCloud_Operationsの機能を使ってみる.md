@@ -7,7 +7,6 @@ tag:
   - OpenCensus
   - Monitoring
   - CloudOperations
-  - GCP連載
   - CloudRun
 category:
   - Programming

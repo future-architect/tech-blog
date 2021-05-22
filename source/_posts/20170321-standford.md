@@ -2,9 +2,8 @@ title: "スタンフォード大学で食べたピーナッツサラダは、格
 date: 2017/03/21 12:00:00
 postid: ""
 tag:
-  - Elastic-Stack
+  - Elastic{ON}
   - DesignThinking
-  - Conference
 category:
   - Culture
 author: 前原応光

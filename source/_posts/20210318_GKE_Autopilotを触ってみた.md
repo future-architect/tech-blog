@@ -5,7 +5,6 @@ tag:
   - Kubernetes
   - GKE
   - GCP
-  - GCP連載
 category:
   - Programming
 thumbnail: /images/20210318/thumbnail.jpg

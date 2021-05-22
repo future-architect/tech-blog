@@ -6,6 +6,7 @@ tag:
   - MachineLearning
   - DeepLearning
   - データ分析
+  - 顔認証
 category:
   - DataScience
 author: 小池優希
@@ -71,7 +72,7 @@ lede: "AI(機械学習・Deep Learning等)を用いて、 **大量にある顔�
 ## 環境構築手順
 Dockerは導入されている前提で進めます。
 
-### 1. コンテナを取得 & 実行  
+### 1. コンテナを取得 & 実行
 bamosさんの作成したopenface(後に記述）の環境を使わせていただきます。
 python2,3、numpy、OpenCV、scikit-learn、Dlibが入っているのですぐに画像解析が始めることができます。
 

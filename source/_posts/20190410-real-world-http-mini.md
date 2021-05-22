@@ -8,6 +8,7 @@ tag:
   - HTTP
   - 出版
   - 書籍
+  - O'Reilly
 category:
   - Culture
 thumbnail: /images/20190410/thumbnail.png
@@ -71,7 +72,7 @@ Real World HTTPミニ版は、若手エンジニアの勉強会や、企業の�
 * 初版出版後から追加したい内容をGitHub Issueで管理していた
   * これから書きたいネタについて（膨大なネタが...!!!ぜひ続編に期待しましょう!!!)
 
-  
+
 # パネルディスカション
 
 フューチャー含めた3社でReal World HTTPや、それに絡めた新人研修についてディスカッションです。

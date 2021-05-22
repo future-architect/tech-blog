@@ -4,7 +4,7 @@ postid: b
 tag:
   - CircleCI
   - Markdown
-  - Document
+  - ドキュメント
 category:
   - CI/CD
 thumbnail: /images/20210422b/thumbnail.png

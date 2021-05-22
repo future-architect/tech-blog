@@ -6,7 +6,7 @@ tag:
   - Lambda
   - AWS
   - Terraform
-  - 暗号化
+  - 暗号
 category:
   - Infrastructure
 thumbnail: /images/20210413a/thumbnail.png

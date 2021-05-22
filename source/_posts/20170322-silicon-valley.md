@@ -2,8 +2,8 @@ title: "ぶらりシリコンバレー巡礼"
 date: 2017/03/22 12:00:00
 postid: ""
 tag:
-  - Elastic-Stack
-  - Conference
+  - Elastic{ON}
+  - シリコンバレー
 category:
   - Culture
 author: 前原応光

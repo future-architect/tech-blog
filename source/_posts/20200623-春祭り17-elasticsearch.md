@@ -1,9 +1,8 @@
-title: "春の入門祭り🌸 #17 Elasticsearch入門"
+title: "Elasticsearch入門"
 date: 2020/06/23 10:14:50
 postid: ""
 tag:
   - Elasticsearch
-  - Elastic-Stack
   - 初心者向け
 category:
   - Infrastructure
@@ -21,7 +20,7 @@ lede: "全文検索エンジンとして高い人気を誇る「Elasticsearch」
 こんにちは。TIGメディアユニットの町田です。2020年4月にフューチャーに転職してきました。
 当社を選んだきっかけの一つとしてこのTechブログの存在があったので、このように投稿できることをうれしく思います！
 
-本日の[春の入門祭り](https://future-architect.github.io/articles/20200529/)🌸 #17は、全文検索エンジンとして高い人気を誇る「Elasticsearch」についての入門記事です。
+[春の入門祭り](/articles/20200529/)🌸 #17は、全文検索エンジンとして高い人気を誇る「Elasticsearch」についての入門記事です。
 
 <img src="/images/20200623/photo_20200623_01.png" class="img-middle-size">
 
@@ -154,7 +153,7 @@ curlコマンドを使ってバシバシ叩いてみましょう。
 
 > - メソッド： POST
 > - URL： http://localhost:9200/my_index/my_type/?pretty
->     - localhost:9200/**{インデックス名を指定}**/**{ドキュメントタイプ名を指定}**/  
+>     - localhost:9200/**{インデックス名を指定}**/**{ドキュメントタイプ名を指定}**/
 >       ⇒インデックスとドキュメントタイプが存在しない場合は、自動的に作成される
 >     - ?prettyを付与するとJSONが整形された形で返却される
 > - ヘッダ： "Content-Type":"application/json"

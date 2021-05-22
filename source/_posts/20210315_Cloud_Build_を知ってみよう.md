@@ -3,7 +3,6 @@ date: 2021/03/15 00:00:00
 postid: ""
 tag:
   - GCP
-  - GCP連載
   - CloudBuild
   - GitOps
   - CI/CD

@@ -4,7 +4,6 @@ postid: a
 tag:
   - Flutter
   - RSS
-  - Flutter連載
 category:
   - Programming
 thumbnail: /images/20210514a/thumbnail.png

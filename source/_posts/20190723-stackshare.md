@@ -4,6 +4,7 @@ postid: ""
 tag:
   - IoT
   - 技術選定
+  - FutureIoT
 category:
   - IoT
 author: 武田大輝
@@ -14,7 +15,7 @@ Futureとしてstackshareを活用するのは初めての試みとなります�
 こんにちは。TIG[^1] DXユニット[^2] の武田です。
 
 先日「Future IoT」のstackshareを公開しました。
-https://stackshare.io/future-corporation/futureiot  
+https://stackshare.io/future-corporation/futureiot
 
 <img src="/images/20190723/photo_20190723_01.png" style="border:solid 1px #000000">
 
@@ -26,7 +27,7 @@ Futureとしてstackshareを活用するのは初めての試みとなります�
 <img src="/images/20190723/photo_20190723_02.png">
 
 https://stackshare.io
-世界中のツールやサービスがどのような技術スタックを使っているかチェックできるサービスになります。FacebookやTwitterといった有名企業もstackshareで自社の技術スタックを公開しています。  
+世界中のツールやサービスがどのような技術スタックを使っているかチェックできるサービスになります。FacebookやTwitterといった有名企業もstackshareで自社の技術スタックを公開しています。
 
 また「The Top 50 Developer Tools」という形で毎年、各企業が利用したツールのランキングも発表されています。
 https://stackshare.io/posts/top-developer-tools-2018

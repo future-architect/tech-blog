@@ -4,7 +4,9 @@ postid: ""
 tag:
   - Terraform
   - GCP
-  - 夏休み自由研究
+  - Ansible
+  - Packer
+  - IaC
 category:
   - Infrastructure
 thumbnail: /images/20200805/thumbnail.JPG

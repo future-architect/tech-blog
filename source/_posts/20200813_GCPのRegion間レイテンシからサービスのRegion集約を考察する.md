@@ -4,7 +4,6 @@ postid: ""
 tag:
   - GCP
   - Network
-  - 夏休み自由研究
   - Terraform
 category:
   - Infrastructure
@@ -14,7 +13,7 @@ featured: false
 lede: "フューチャー夏休みの自由研究連載の9回目です。こんにちは、TIG DXユニットの西田と申します。業務では `GCP` のインフラの設計/構築/運用を担当しております。私は前職でネットワーク領域のキャリアが長かった事もあり、現職では `GCP` の中でも特にネットワークに関する部分を見ています。今回の自由研究もそれに関連する考察をしていきます。クラウド上で、ワールドワイドのサービスを作るとき、『どれくらいの密度でどの Region にサーバを立てればよいのか？』って、悩みませんか？インターネット向けのWebサービスだったら `CDN` で対処すれば基本的にはOKですが、イントラネットだけからアクセスさせたい社内サービス、Backend 系のサービス、Webサービスではないアプリケーションなどはインスタンスを用意する必要が出てきますよね。"
 ---
 
-[フューチャー夏休み自由研究連載](https://future-architect.github.io/articles/20200726/)の9回目です。
+[フューチャー夏休み自由研究連載](/articles/20200726/)の9回目です。
 
 # はじめに
 
@@ -73,7 +72,7 @@ https://cloud.google.com/about/locations?hl=ja#network
 ※すいません、ムンバイだけ、QuotaがデフォルトでCPUS:0となっており、上げるリクエストを出したんですが、拒否されてしまいました。その関係で、ムンバイだけ計測が出来ませんでした🙇‍♂️
 ![](/images/20200813/2020-08-02_233921.png)
 
-### 
+###
 
 - フルメッシュで計測
 - Ping を 100ms 毎に 100 回打って、その返答の平均値
@@ -243,7 +242,7 @@ locals {
     { region = "asia-northeast3", zone = "asia-northeast3-a", name = "${local.gce_instance_name}-asia-northeast3-a" },
     { region = "asia-east1", zone = "asia-east1-b", name = "${local.gce_instance_name}-asia-east1-b" },
     { region = "asia-east2", zone = "asia-east2-a", name = "${local.gce_instance_name}-asia-east2-a" },
-//    { region = "asia-south1", zone = "asia-south1-c", name = "${local.gce_instance_name}-asia-south1-c" }, 
+//    { region = "asia-south1", zone = "asia-south1-c", name = "${local.gce_instance_name}-asia-south1-c" },
     { region = "asia-southeast1", zone = "asia-southeast1-b", name = "${local.gce_instance_name}-asia-southeast1-b" },
     { region = "asia-southeast2", zone = "asia-southeast2-a", name = "${local.gce_instance_name}-asia-southeast2-a" },
     { region = "australia-southeast1", zone = "australia-southeast1-b", name = "${local.gce_instance_name}-australia-southeast1-b" },
@@ -290,7 +289,7 @@ gce_list=`gcloud compute instances list --filter "networkInterfaces[].network:${
 
 for gce in ${gce_list}
 do
-  dst_host=`echo ${gce} | cut -d ',' -f 1` 
+  dst_host=`echo ${gce} | cut -d ',' -f 1`
   dst_zone=`echo ${gce} | cut -d ',' -f 2`
   dest_ip=`echo ${gce} | cut -d ',' -f 3`
   rs_ping=`sudo ping -i0.1 ${dest_ip} -c ${ping_count} -q`
@@ -314,7 +313,7 @@ gce_list=`gcloud compute instances list --filter "networkInterfaces[].network:${
 
 for gce in ${gce_list}
 do
-  host=`echo ${gce} | cut -d ',' -f 1` 
+  host=`echo ${gce} | cut -d ',' -f 1`
   zone=`echo ${gce} | cut -d ',' -f 2`
 
   gcloud compute scp ${shell_file} ${host}:~/${shell_file} --zone ${zone} --tunnel-through-iap

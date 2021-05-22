@@ -3,8 +3,9 @@ date: 2021/03/29 00:00:00
 postid: ""
 tag:
   - ShellScript
-  - シェルスクリプト連載
   - Linter
+  - ShellCheck
+  - 静的解析
 category:
   - Infrastructure
 thumbnail: /images/20210329/thumbnail.png
@@ -17,7 +18,7 @@ lede: "シェルスクリプト連載の第一弾です。シェルスクリプ�
 
 > [Hans](https://pixabay.com/ja/users/hans-2/)による[Pixabay](https://pixabay.com/ja/)からの画像
 
-[シェルスクリプト連載](/articles/20210321/)の第一弾です。
+[シェルスクリプト連載](/articles/20210321/)の第1弾です。
 
 シェルスクリプトは強力かつ便利で、いろいろなところで使われています。ただ、自由度が高い一方で、ちょっとしたミスを犯しやすく、かつミスに気づきにくい、ということも多いです。また、ミスに気づいたときには大きな影響が及んでいる、ということもあるでしょう。
 

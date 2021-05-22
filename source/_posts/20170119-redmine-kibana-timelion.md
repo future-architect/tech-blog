@@ -2,9 +2,9 @@ title: "マネージャーがうれしいRedmineデータのEVM表示方法を�
 date: 2017/01/19 18:00:00
 postid: ""
 tag:
-  - Elastic-Stack
   - Kibana
   - Redmine
+  - 可視化
 category:
   - Management
 thumbnail: /images/20170119/thumbnail_20170119.jpg
@@ -13,7 +13,7 @@ featured: false
 lede: "Redmineにはデータの可視化機能が標準で搭載されていないという課題があります。そこで、Kibana＋Timelionを使ってRedmineデータをEVM表示する方法を紹介します"
 ---
 
-![](/images/20160928/photo_20160928_00.jpg)
+![アイキャッチ](/images/20170119/top.jpg)
 
 ## はじめに
 
@@ -104,7 +104,7 @@ EVMを使うことで多角的にプロジェクトを把握する事ができ�
 
 1. 環境構築
 2. データ投入
-3. EVM 表示 
+3. EVM 表示
 
 ## 1.環境構築
 
@@ -203,7 +203,7 @@ C:\elastic
 └elasticsearch-5.1.2
 └kibana-5.1.2-windows-x86
 └logstash-5.1.2
- └bin 
+ └bin
   └mysql-connector-java-5.1.39-bin.jar
   └redmine.txt
 ```
@@ -271,7 +271,7 @@ Kibanaが起動しました。
 
 ![](/images/20170119/photo_20170119_25.png)
 
-## 3.EVM 表示 
+## 3.EVM 表示
 
 では、`.es(*)`という記載を
 `.es(metric='sum:pv', timefield='due_date').cusum().label('[累積]pv')`
