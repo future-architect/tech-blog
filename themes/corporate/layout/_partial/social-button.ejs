@@ -13,7 +13,7 @@
     <li class="twitter-btn">
       <a href="https://twitter.com/share?url=<%- link %>&via=future_techblog&related=twitterapi%2Ctwitter&text=<%- encodeURI(title) %>"
         onclick="window.open(this.href, 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow">
-        <i></i><span class="tw-btn-label">ツイート</span>
+        <i></i><span class="tw-btn-label"><%= get_tw_count(link) %></span>
       </a>
     </li>
     <!-- Facebook -->
