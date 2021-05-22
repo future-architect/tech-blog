@@ -67,8 +67,10 @@ hexo.extend.helper.register("get_pocket_count", (url) => {
 
   if (!fetchableDate(url)) {
     const cnt = pocketCnt[url];
-    if (cnt >= 0) {
+    if (cnt > 0) {
       return cnt
+    } else if (cnt == 0) {
+      return "Pocket"
     }
   }
 
@@ -76,6 +78,10 @@ hexo.extend.helper.register("get_pocket_count", (url) => {
   const respCnt = fetch(apiURL).json().saves;
   pocketCnt[url] = respCnt;
   currentPocket[url] = respCnt;
+
+  if (respCnt == 0) {
+    return "Pocket";
+  }
 
   return respCnt;
 });
@@ -87,8 +93,10 @@ hexo.extend.helper.register("get_hatebu_count", (url) => {
 
   if (!fetchableDate(url)) {
     const cnt = hatebuCnt[url];
-    if (cnt >= 0) {
+    if (cnt > 0) {
       return cnt
+    } else if (cnt == 0) {
+      return "はてな";
     }
   }
 
@@ -96,6 +104,10 @@ hexo.extend.helper.register("get_hatebu_count", (url) => {
   const respCnt = fetch(apiURL).json();
   hatebuCnt[url] = respCnt;
   currentHatebu[url] = respCnt;
+
+  if (respCnt == 0) {
+    return "はてな";
+  }
 
   return respCnt;
 });
@@ -106,10 +118,10 @@ hexo.extend.helper.register("get_fb_count", (url) => {
   }
 
   if (!fetchableDate(url)) {
-    const count = fbCnt[url];
-    if (count > 0) {
-      return count;
-    } else if(count == 0) {
+    const cnt = fbCnt[url];
+    if (cnt > 0) {
+      return cnt;
+    } else if(cnt == 0) {
       return "シェア";
     }
   }
