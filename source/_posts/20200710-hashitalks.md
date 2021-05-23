@@ -14,7 +14,7 @@ featured: false
 lede: "本記事の内容はHashiTalks: Japanに登壇したのでその時に話したことを書いていきます。大きめなイベントには初の登壇だったのでなかなかドキドキしましたが、なんとかやりきりました。"
 ---
 
-<img src="/images/20200710/top.png">
+<img src="/images/20200710/top.png" loading="lazy">
 
 
 ## はじめに

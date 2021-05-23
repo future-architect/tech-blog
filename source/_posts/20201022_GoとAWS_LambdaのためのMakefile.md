@@ -14,7 +14,7 @@ featured: false
 lede: "筒井です。GoとAWS LambdaのためのMakefileを整理しました。Lambda Functionの増加と同時に増えていくターゲットにはオサラバです。"
 ---
 
-<img src="/images/20201022/GNU-make.webp" class="img-middle-size">
+<img src="/images/20201022/GNU-make.webp" class="img-middle-size" loading="lazy">
 
 筒井です。
 
@@ -78,7 +78,7 @@ SUFFIX := .go
 .PHONY: all
 all: handlers
 
-DEPFILES := 
+DEPFILES :=
 
 LIBS := \
 	lib1 \
@@ -134,7 +134,7 @@ $(DIST_DIR)/%: $(LAMBDA_HANDLER_DIR)/% $(DEPFILES) go.sum
 `$(DEPFILES)` には、各パッケージ配下の `.go` ファイルを集めています。
 
 ```makefile
-DEPFILES := 
+DEPFILES :=
 LIBS := \
 	lib1 \
 	lib2

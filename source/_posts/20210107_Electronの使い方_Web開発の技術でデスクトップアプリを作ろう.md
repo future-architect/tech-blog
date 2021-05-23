@@ -58,7 +58,7 @@ $ cd electron-quick-start
 $ npm install && npm start
 ```
 
-<img src="/images/20210107/image.png"  style="border:solid 1px #000000">
+<img src="/images/20210107/image.png"  style="border:solid 1px #000000" loading="lazy">
 
 `npm start`コマンドでアプリケーションが実行されます、公式にしては少々素朴ですがHello Worldが表示されます。
 
@@ -126,7 +126,7 @@ Vue CLIの案内に従い、バージョンや構成をいくつか選択しま�
 
 <img src="/images/20210107/image_4.png" loading="lazy">
 
-<img src="/images/20210107/image_5.png"  style="border:solid 1px #000000">
+<img src="/images/20210107/image_5.png"  style="border:solid 1px #000000" loading="lazy">
 
 
 サーバーが立ち上がり、ブラウザで`localhost:8080`にアクセスするとHello Worldが表示されます。
@@ -257,15 +257,15 @@ npm run electron:build
 
 ビルドに成功すると、dist_electronフォルダ配下に成果物が配置されます。通常のVue.jsアプリケーションのdistフォルダに相当します。
 
-<img src="/images/20210107/image_11.png"  style="border:solid 1px #000000">
+<img src="/images/20210107/image_11.png"  style="border:solid 1px #000000" loading="lazy">
 
 dist_electronフォルダ配下は画像のような状態です。
 
-<img src="/images/20210107/image_12.png"  style="border:solid 1px #000000">
+<img src="/images/20210107/image_12.png"  style="border:solid 1px #000000" loading="lazy">
 
 
 vue-cli-electron-sample Setup 0.1.0をダブルクリックするとアプリケーションのインストールが開始されます。ちなみに、アプリケーションのバージョン情報は`package.json`記載のバージョンに依存します。
-<img src="/images/20210107/image_13.png" class="img-small-size">
+<img src="/images/20210107/image_13.png" class="img-small-size" loading="lazy">
 
 
 インストールが完了したアプリケーションは一般的なアプリケーション同様に起動することができます。
@@ -294,7 +294,7 @@ module.exports = {
 }
 ```
 
-<img src="/images/20210107/image_15.png" class="img-small-size">
+<img src="/images/20210107/image_15.png" class="img-small-size" loading="lazy">
 
 
 デフォルトの状態ではアイコンが無いため少々寂しいですが、デスクトップアイコンもvue.config.jsで指定することが可能です。
@@ -321,7 +321,7 @@ module.exports = {
 
 なお最小画像サイズ(256 x 256, macの場合512 x 512px)を下回るサイズの画像を指定した場合エラーが発生してビルドできません、ご注意ください。
 
-<img src="/images/20210107/image_16.png" class="img-small-size">
+<img src="/images/20210107/image_16.png" class="img-small-size" loading="lazy">
 
 
 アイコンを設定することでそれらしくなってきました。
@@ -378,7 +378,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" / loading="lazy">
         <p>
           Hello React with Electron
         </p>
@@ -543,7 +543,7 @@ npm run electron:build
 dis_electron配下にアプリケーションがビルドされました。
 package.jsonに何も設定が無いとdistディレクトリに生成されます。
 
-<img src="/images/20210107/image_21.png" class="img-small-size">
+<img src="/images/20210107/image_21.png" class="img-small-size" loading="lazy">
 
 
 作業の抜け漏れ、typoの確認や、理想のディレクトリ構成を検討して迷うコストを鑑みると体感でVue.jsの3倍くらいの時間がかかる感触でした。

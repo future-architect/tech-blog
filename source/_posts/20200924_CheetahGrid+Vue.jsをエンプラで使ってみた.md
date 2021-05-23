@@ -13,7 +13,7 @@ featured: false
 lede: "こんにちは！今回は[CheetahGrid][cheetahgrid-hp]＋[Vue.js][vue-hp]でエンプラ系システムを構築した際の、採用した理由と実装のポイントのご紹介をしようと思います。[CheetahGrid][cheetahgrid-hp]について存じ上げないよーとか、触ったことがないよーという方は、[入門編][beginner-link]も御覧くださいね。初めての投稿ですが、最後までお付き合いいただければ嬉しいです。"
 ---
 
-<img src="/images/20200924/top.png" class="img-small-size">
+<img src="/images/20200924/top.png" class="img-small-size" loading="lazy">
 
 # はじめに
 
@@ -301,7 +301,7 @@ export default {
 以下のようなExcel上のデータをコピーし、
 
 
-<img src="/images/20200924/2020-09-22_00h23_27.png" class="img-small-size">
+<img src="/images/20200924/2020-09-22_00h23_27.png" class="img-small-size" loading="lazy">
 
 `Ctrl+V`でペーストして反映します。
 
@@ -430,7 +430,7 @@ export default {
           return !rec.column1.match('^[0-9]{1,4}$') ? 'エラー：1から4桁の数値を入力してください。' : ''
         },
 ```
-<img src="/images/20200924/2020-09-23_21h08_40.png" class="img-small-size">
+<img src="/images/20200924/2020-09-23_21h08_40.png" class="img-small-size" loading="lazy">
 
 `:message="validateNumCol"`にてバリデーション用の関数を呼び出し、エラーの場合にエラーメッセージを返却するように実装します。カラム1のいずれかに4桁以内の数字**以外**を入力した場合にエクスクラメーションマークが表示されることが確認できるでしょう。
 
@@ -460,7 +460,7 @@ export default {
         },
 ```
 
-<img src="/images/20200924/2020-09-23_21h14_26.png" class="img-middle-size">
+<img src="/images/20200924/2020-09-23_21h14_26.png" class="img-middle-size" loading="lazy">
 
 今回は各`c-grid`コンポーネントの`changed-value`イベントの関数（`onChangedValueNumCol($event)`）内でダイアログ表示するようにしています。
 

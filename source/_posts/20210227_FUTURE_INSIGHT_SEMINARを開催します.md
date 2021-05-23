@@ -53,7 +53,7 @@ SESSION3は、パネルディスカッション形式で「最適化ツールや
 それぞれ違った専門領域のプロによる、生の声が聞けるセミナーとなっております。
 ぜひお申込みの上、ご参加くださいませ。
 
-<img src="/images/20210227/登壇者.jpg" class="img-middle-size">
+<img src="/images/20210227/登壇者.jpg" class="img-middle-size" loading="lazy">
 
 登壇者：
 (左)  塚本 祥太  フューチャー株式会社 Strategic AI Group アーキテクト

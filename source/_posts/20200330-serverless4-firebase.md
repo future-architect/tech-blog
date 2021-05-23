@@ -62,7 +62,7 @@ Android Studioで`Empty Activity`テンプレートをベースにした新規�
 ボタンを画像のように2つ追加します。
 
 
-<img src="/images/20200330/1.png" class="img-small-size">
+<img src="/images/20200330/1.png" class="img-small-size" loading="lazy">
 
 
 それぞれのボタンに`OnClickListener`を実装します。実装例は後述しますが、それぞれのボタンをクリックしたときの振る舞いを簡単に説明すると、以下のようになります。
@@ -79,7 +79,7 @@ https://firebase.google.com/docs/android/setup
 
 Firebaseコンソール画面も親切にナビゲートしてくれるので安心です。
 
-<img src="/images/20200330/2.png">
+<img src="/images/20200330/2.png" loading="lazy">
 
 
 
@@ -179,13 +179,13 @@ public class MainActivity extends AppCompatActivity {
 「評価」項目をみると「クラッシュレポート」なのか「非致命的な例外のレポート」なのかがひと目でわかりますね。
 
 
-<img src="/images/20200330/3.png">
+<img src="/images/20200330/3.png" loading="lazy">
 
 
 ### クラッシュレポート
 `Fatal`ボタンをクリックすることによって発生したクラッシュレポート(MainActivity.java - line 23)を見てみましょう。
 
-<img src="/images/20200330/4.png">
+<img src="/images/20200330/4.png" loading="lazy">
 
 
 以下がひと目でわかりますね。
@@ -200,13 +200,13 @@ public class MainActivity extends AppCompatActivity {
 また「スタックトレース」タブからクラッシュしたときのスタックトレースを見ることができます。
 なぜクラッシュしたのかが詳細にわかります。
 
-<img src="/images/20200330/5.png">
+<img src="/images/20200330/5.png" loading="lazy">
 
 
 ### ユーザーIDでの検索
 「ユーザーIDでの検索」も行うことができます。
 ユーザーから不具合の問い合わせがあった際に、ソースコードのどの箇所で異常があったがゆえにそのユーザーの端末で不具合が発生したのかを素早く知ることができます。
-<img src="/images/20200330/6.png">
+<img src="/images/20200330/6.png" loading="lazy">
 
 以下のようにSDKにユーザーIDを教えてあげることで、ユーザーIDでの検索が可能になります。
 

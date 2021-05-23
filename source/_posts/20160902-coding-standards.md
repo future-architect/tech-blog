@@ -41,7 +41,7 @@ lede: "システム屋さんがうれしいJava8対応のコーディング規�
 
 ## Future Enterprise Coding Standards
 
-<img src="/images/20160902/photo_20160902_01.png" alt=""フューチャーコーディング規約のイメージキャラクター"" loading="lazy">
+<img src="/images/20160902/photo_20160902_01.png" alt="フューチャーコーディング規約のイメージキャラクター" loading="lazy">
 
 
 世の中になければ自分たちで作るというのは弊社の行動理念でもあるので、社内で伝統的に受け継がれ、細かな改善をしてきたコーディング規約をベースに技術チーム有志にてJava8対応版を作りました。
@@ -148,7 +148,7 @@ https://github.com/future-architect/coding-standards
 
 ## 参考：イメージキャラクターについて
 
-<img src="/images/20160902/photo_20160902_01.png" alt="フューチャーコーディング規約のイメージキャラクター" style="width:200px;" />
+<img src="/images/20160902/photo_20160902_01.png" alt="フューチャーコーディング規約のイメージキャラクター" style="width:200px;" loading="lazy">
 
 ### 特徴
 

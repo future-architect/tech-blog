@@ -16,7 +16,7 @@ featured: true
 lede: "[API Meetup Online #3]での登壇をお誘いをいただいたので、以前から調査していたものの、発表の機会のなかった限定公開URLについて調べていた内容を発表しました。Real World HTTPの第3版が出るとしたら（具体的な計画とかはないですが）入れるかも、なネタでした。どちらかというとコンシューマー向けな機能な気がしますが、hipchatは以前、共有したファイルがこのCapability URLsだった...."
 ---
 
-<img src="/images/20200809/93281_normal.png" class="img-middle-size">
+<img src="/images/20200809/93281_normal.png" class="img-middle-size" loading="lazy">
 
 [API Meetup Online #3](https://api-meetup.doorkeeper.jp/events/109648)での登壇をお誘いをいただいたので、以前から調査していたものの、発表の機会のなかった限定公開URLについて調べていた内容を発表しました。
 

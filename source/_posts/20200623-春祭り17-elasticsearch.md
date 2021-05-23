@@ -12,7 +12,7 @@ featured: false
 lede: "全文検索エンジンとして高い人気を誇る「Elasticsearch」についての入門記事です。Elasticsearchは「全文検索システム」を提供するソフトウェアです。全文検索とは検索手法の一つで、文字列をキーにして複数の文書データをまたがって検索し、目的のデータを探し出す機能のことを指します。"
 ---
 
-<img src="/images/20200623/top.png">
+<img src="/images/20200623/top.png" loading="lazy">
 
 
 # はじめに
@@ -22,7 +22,7 @@ lede: "全文検索エンジンとして高い人気を誇る「Elasticsearch」
 
 [春の入門祭り](/articles/20200529/)🌸 #17は、全文検索エンジンとして高い人気を誇る「Elasticsearch」についての入門記事です。
 
-<img src="/images/20200623/photo_20200623_01.png" class="img-middle-size">
+<img src="/images/20200623/photo_20200623_01.png" class="img-middle-size" loading="lazy">
 
 Elasticsearchとは何か、どういうメリットがあるのかということから、ローカル環境へのインストールと簡単な活用事例を見ていきたいと思います。
 
@@ -58,10 +58,10 @@ Elasticsearchのメリットとして、以下が挙げられます。
 
 # Elasticsearchのインストール
 [公式ページ](https://www.elastic.co/jp/downloads/elasticsearch)からzipファイルをダウンロードします。（執筆時のバージョンは7.7.1です）
-<img src="/images/20200623/photo_20200623_02.jpeg">
+<img src="/images/20200623/photo_20200623_02.jpeg" loading="lazy">
 
 ダウンロードしたzipを解凍すると以下のような構成になっています。
-<img src="/images/20200623/photo_20200623_03.jpeg" class="img-middle-size">
+<img src="/images/20200623/photo_20200623_03.jpeg" class="img-middle-size" loading="lazy">
 
 ここで `bin/elasticsearch.bat` を実行するとコマンドプロンプトが立ち上がり、Elasticsearchが起動状態になります。
 

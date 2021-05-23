@@ -155,9 +155,9 @@ TOTAL                          813          18141          30192         112991
 
 このあたりは勉強会の運営に長けているメンバがアンケートを取ってくださり、フィードバックをもらいました。アンケートの一部を抜粋します。
 
-<img src="/images/20200310/photo_20200310_01.png">
+<img src="/images/20200310/photo_20200310_01.png" loading="lazy">
 
-<img src="/images/20200310/photo_20200310_02.png">
+<img src="/images/20200310/photo_20200310_02.png" loading="lazy">
 
 ## コードリーディング会の雰囲気
 

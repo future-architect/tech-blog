@@ -12,7 +12,7 @@ featured: false
 lede: "筆者は普段ファイルを扱って何か簡単な処理をする場合は、シェルスクリプトで実装することが多かったのですが、実は Go で書くと簡単に、かつ Testable でスクリプトちっくに書くことでできて、幸せになるんじゃないか？と最近考えています。"
 ---
 
-<img src="/images/20200518/Go-Logo_LightBlue.png" class="img-small-size">
+<img src="/images/20200518/Go-Logo_LightBlue.png" class="img-small-size" loading="lazy">
 
 
 [Go Tips連載](/tags/GoTips連載/)の第3弾目です。

@@ -17,7 +17,7 @@ lede: "みなさん、コンテナを利用してアプリケーション開発�
 こんにちは。TIGの[伊藤太斉](https://twitter.com/kaedemalu)です。
 [GCP連載2021](/articles/20210307)第7弾です。
 
-<img src="/images/20210317/GCP_Containers_Kubernetes.png">
+<img src="/images/20210317/GCP_Containers_Kubernetes.png" loading="lazy">
 
 > https://cloud.google.com/blog/ja/products/containers-kubernetes/google-cloud-now-supports-buildpacks より
 

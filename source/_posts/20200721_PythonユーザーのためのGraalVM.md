@@ -37,7 +37,7 @@ macOSはJavaに対するちょっとしたサポートがあるので、ちょ�
 ```sh
 % gu available
 Downloading: Component catalog from www.graalvm.org
-ComponentId              Version             Component name      Origin 
+ComponentId              Version             Component name      Origin
 --------------------------------------------------------------------------------
 llvm-toolchain           20.1.0              LLVM.org toolchain  github.com
 native-image             20.1.0              Native Image        github.com
@@ -55,10 +55,10 @@ Pythonをインストールするので、次のようにタイプします。
 
 # GraalVMとは何者か
 
-先ほどグローバルにパスを通すのはやめておいた方がよい、とお伝えしました。Python以外にnative-imageもインストールした状態ですが、/binフォルダの中は次のようになっています。　
+先ほどグローバルにパスを通すのはやめておいた方がよい、とお伝えしました。Python以外にnative-imageもインストールした状態ですが、/binフォルダの中は次のようになっています。
 
 ```sh
- % ls /Library/Java/JavaVirtualMachines/graalvm-ce-java11-20.1.0/Contents/Home/bin 
+ % ls /Library/Java/JavaVirtualMachines/graalvm-ce-java11-20.1.0/Contents/Home/bin
 graalpython	javac		jdb		jimage		jmod		jstack		lli		pack200		rmiregistry
 gu		javadoc		jdeprscan	jinfo		jps		jstat		native-image	polyglot	serialver
 jar		javap		jdeps		jjs		jrunscript	jstatd		node		rebuild-images	unpack200
@@ -82,7 +82,7 @@ Python 3.8.2 (Fri May 15 05:42:24 PDT 2020)
 [GraalVM CE, Java 11.0.7] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 Please note: This Python implementation is in the very early stages, and can run little more than basic benchmarks at this point.
->>> 
+>>>
 ```
 
 [README](https://github.com/graalvm/graalpython)によれば、scipyなどのパッケージ群をネイティブサポートしようというのが目下の目標らしいです。
@@ -128,13 +128,13 @@ print("Here is what we found: '%s'" % md[1])
 Pythonの互換実装で有名なものはいくつかありますが、Javaで実装されたものがJythonです。RPAツールのSikuliXとかでもスクリプト言語として組み込まれていたりします。Jythonは2.7互換で実装されており、3系の実装は安定版が出ていません。Graal.PythonはJavaで実装された3.x系実装で、Jythonと出自は似ています。コマンドラインオプションでJythonをエミュレーションするモードも有効にできます。
 
 ```sh
-% graalpython --jvm --experimental-options --python.EmulateJython 
+% graalpython --jvm --experimental-options --python.EmulateJython
 ```
 
 [ここのサンプルの通り](https://github.com/graalvm/graalpython/blob/master/docs/user/JYTHON.md)ですが、こんな感じで、AWTを使ってウインドウを表示できます。
 
 ```sh
- % graalpython --jvm --experimental-options --python.EmulateJython 
+ % graalpython --jvm --experimental-options --python.EmulateJython
 Python 3.8.2 (Sat Jun 13 16:19:51 JST 2020)
 [GraalVM CE, Java 11.0.7] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -148,7 +148,7 @@ Please note: This Python implementation is in the very early stages, and can run
 >>> win.show()
 ```
 
-<img src="/images/20200721/thumbnail.png" class="img-small-size">
+<img src="/images/20200721/thumbnail.png" class="img-small-size" loading="lazy">
 
 デフォルトはnativeモードでAoTコンパイルをします。CPythonと変わらない感覚で使えます。JVMモードにするとJITコンパイルになりますが、ちょっとしたコードはこちらの方が時間がかかるようになります。ただ、Jythonのコードを実行するにはJVMモードでないとダメです。
 
