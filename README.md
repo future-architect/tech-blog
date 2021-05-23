@@ -52,6 +52,9 @@ https://graph.facebook.com?id=https%3A%2F%2Ffuture-architect.github.io%2Farticle
 4. 環境変数に設定
     * export FB_TOKEN=xxx|xxx
 
+## 人気の記事を表示させるためGOOGLE_APPLICATION_CREDENTIALSが必要
+
+> set GOOGLE_APPLICATION_CREDENTIALS キーパス
 
 ## techblog sources
 
