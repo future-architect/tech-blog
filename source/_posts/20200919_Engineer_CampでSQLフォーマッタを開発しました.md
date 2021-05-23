@@ -68,22 +68,22 @@ ANTLRはパーサ（構文解析器）を生成するためのOSSです。パー
 
 今回作成したフォーマッタによる、フォーマット処理の流れを下図に示します。
 
-![](/images/20200919/format-flow1.PNG)
+<img src="/images/20200919/format-flow1.PNG" loading="lazy">
 
 フォーマット処理は2つのステップからなり、パーサとプリンタという2つのプログラムを用います。
 
 第1ステップでは、パーサがフォーマット対象のSQLコードを受け取り、コードをASTという表現に変換します。
 
-![](/images/20200919/format-flow2.PNG)
+<img src="/images/20200919/format-flow2.PNG" loading="lazy">
 
 
 第2ステップでは、プリンタがASTを受け取り、ASTの情報をもとにフォーマットされたコードを出力します。
 
-![](/images/20200919/format-flow3.PNG)
+<img src="/images/20200919/format-flow3.PNG" loading="lazy">
 
 この2ステップを組み合わせることで、SQLを入力として受け取り、成形したものを出力するという、フォーマッタの動作が実現できます！
 
-![](/images/20200919/format-flow4.PNG)
+<img src="/images/20200919/format-flow4.PNG" loading="lazy">
 
 
 # 行った作業
@@ -98,7 +98,7 @@ PrettierプラグインとしてSQLフォーマッタの開発を行ったので
 開発をしていく中で、SQLのパース処理にかかる時間がありえないほど長いという問題が発生しました。
 メンターの方と調査を行った結果、ANTLR内部の実装にミスがあることが判明し、ANTLRのリポジトリにissueが立つという一幕がありました。
 
-![](/images/20200919/image_(2).png)
+<img src="/images/20200919/image_(2).png" loading="lazy">
 
 現在は[修正](https://github.com/antlr/antlr4/pull/2905)されているのですが、この修正で今まで90分かけても終わらなかった処理が20秒で終わるようになり、特定の条件下において、約270倍（！）の高速化を行うことができました。
 

@@ -17,7 +17,7 @@ TIGの伊藤真彦です
 
 先日[Go Conference’20 in Autumn SENDAI](https://sendai.gocon.jp/)に登壇させていただきました、リモート登壇の為残念ながら現地には行きませんでした。
 
-![](/images/20201010/image.png)
+<img src="/images/20201010/image.png" loading="lazy">
 
 発表資料はこちらです。
 
@@ -30,7 +30,7 @@ TIGの伊藤真彦です
 発表で紹介したコードを詳しく確認できるようにまとめます。
 
 ### goqueryについて
-![](/images/20201010/image_2.png)
+<img src="/images/20201010/image_2.png" loading="lazy">
 
 goqueryはjqueryを意識した命名から想像できる通り、Find等のメソッドチェーンを繋いで直感的にスクレイピングを行う事ができます。
 
@@ -58,7 +58,7 @@ func scrapeYahoo(url string) string {
 ```
 
 ### agoutiについて
-![](/images/20201010/image_3.png)
+<img src="/images/20201010/image_3.png" loading="lazy">
 
 agoutiはスクレイピングを行うための補助として用いましたが、--headlessオプションを使わなければ普段お使いのウェブブラウザが自動で動く様を実際に目で確認できます。
 

@@ -18,7 +18,7 @@ TIGの辻です。サーバーレスなアプリケーションを開発する�
 
 本記事ではGoで[AWS LambdaからAWS Lambdaを同期的に呼び出すとき](https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/invocation-sync.html)のハマりどころやTipsを紹介します。以下のような構成です。
 
-![](/images/20201112/LambdaからLambda.png)
+<img src="/images/20201112/LambdaからLambda.png" loading="lazy">
 
 - ライブラリのバージョン
 
@@ -55,7 +55,7 @@ Lambda関数を呼び出す `InvokeWithContext` ですが `InvokeWithContext` �
 
 呼び出し先のLambda関数でエラーが発生していても、呼び出し元の処理は正常終了しています。
 
-![](/images/20201112/image.png)
+<img src="/images/20201112/image.png" loading="lazy">
 
 ### 修正例
 
@@ -77,7 +77,7 @@ Lambda関数を呼び出す `InvokeWithContext` ですが `InvokeWithContext` �
 
 `resp.FunctionError` を使ってエラーをチェックすれば、呼び出し先のLambda関数で発生したエラーをハンドリングできます。エラーの詳細は `resp.Payload` にJSONとして表現されています。今回の場合、呼び出し先のLambda関数で `errorString` のエラーが発生し、エラーの文字列として `"invoked err"` となっていることがわかります。
 
-![](/images/20201112/image_2.png)
+<img src="/images/20201112/image_2.png" loading="lazy">
 
 ## 2. Contextでは値を伝播できない
 
@@ -341,13 +341,13 @@ Transit Gatewayなどを使ってオンプレとクラウドを接続する場�
 
 以下のようにLambda関数をVPC内に配置する場合です。サブネットはプライベートサブネットとします。(なお通常VPC Lambda関数は可用性の観点から複数のサブネットに配置します)
 
-![](/images/20201112/LambdaからLambda-VPCLambda.png)
+<img src="/images/20201112/LambdaからLambda-VPCLambda.png" loading="lazy">
 
 ### VPCエンドポイントがなかった従来の場合
 
 同じVPCに含まれるLambda関数であるため、インターネットを経由せずにInternalな通信でLambda関数からLambda関数を呼び出せることを期待しますが、できません。`InvokeWithContext` で呼び出すと以下のようになります。
 
-![](/images/20201112/image_3.png)
+<img src="/images/20201112/image_3.png" loading="lazy">
 
 ログには以下のように出力されており、Lambda関数自体の呼び出しに失敗しています。
 
@@ -371,11 +371,11 @@ https://aws.amazon.com/jp/blogs/aws/new-use-aws-privatelink-to-access-aws-lambda
 
 VPCエンドポイントを作成します。
 
-![](/images/20201112/image_4.png)
+<img src="/images/20201112/image_4.png" loading="lazy">
 
 VPCエンドポイントの作成が完了すると、DNS名が払い出されます。払い出されたDNS名に対してリクエストするように実装します。
 
-![](/images/20201112/image_5.png)
+<img src="/images/20201112/image_5.png" loading="lazy">
 
 以下のようにLambda関数を呼び出すためのクライアントのConfigにエンドポイントをVPCエンドポイントから払い出されたDNS名を指定します。
 
@@ -390,7 +390,7 @@ func init() {
 
 再度ビルドしてLambda関数をデプロイします。Lambda関数を実行すると、Lambda関数呼び出しが成功するようになりました。
 
-![](/images/20201112/image_6.png)
+<img src="/images/20201112/image_6.png" loading="lazy">
 
 従来は以下の解決策に記載しているような
 
@@ -430,7 +430,7 @@ Lambda関数の呼び出しは2種類あります。1つは呼び出しのレス
 
 Lambda関数は「[同時実行数](https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/configuration-concurrency.html)」という設定を使って、同時に実行できるLambda関数に制約を付与することができます。非同期型の呼び出しの場合は、呼び出し元には成功のステータスが返されます。Lambda関数はキューイング後、遅延して実行されます。しかし、同期型として呼び出す場合、同時実行数以上の数を呼び出した場合は即座に呼び出し元に [`TooManyRequestsException`](https://pkg.go.dev/github.com/aws/aws-sdk-go@v1.35.7/service/lambda#TooManyRequestsException) のエラーが返ってきます。
 
-![](/images/20201112/image_7.png)
+<img src="/images/20201112/image_7.png" loading="lazy">
 
 ログには以下のように出力されます。
 
@@ -481,7 +481,7 @@ func Handler(ctx context.Context) error {
 
 またLambda関数に以下のように環境変数 `LOG_LEVEL` を設定しておきます。
 
-![](/images/20201112/image_8.png)
+<img src="/images/20201112/image_8.png" loading="lazy">
 
 `InvokeWithContext` を使って呼び出し元のLambda関数から呼び出し先の関数を呼び出したときのログ出力は以下です。
 

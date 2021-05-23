@@ -24,7 +24,7 @@ TIG DXチームの多賀です。[Good First Issue](https://goodfirstissue.dev/)
 サイトは、コードレビューツールを開発されている [deepsource](https://deepsource.io/?ref=gfi) 社によって、運営されています。対象のGitHub リポジトリは、[deepsourcelabs/good-first-issue](https://github.com/deepsourcelabs/good-first-issue#adding-a-new-project) にて、[コントリビュートしやすくするための条件](https://github.com/deepsourcelabs/good-first-issue#adding-a-new-project)をクリアしたものだけが管理されています。
 (PRを送ることで、リポジトリを追加することも歓迎されていそうです。)
 
-![](/images/20210205/image.png)
+<img src="/images/20210205/image.png" loading="lazy">
 
 
 ## OSS コントリビュート
@@ -57,7 +57,7 @@ PR を送ろうかと考えていたとき、 go-swagger のコントリビュ�
 
 commit の状態を復元するのに時間を使うか、修正箇所が少ないので最初からやり直すか悩んだ末、最初からやり直すことにしました。[Draft PR](https://github.com/go-swagger/go-swagger/pull/2500) を Closeし、Fork した master ブランチを汚していたので一度削除して再 Fork しました。今度は master からブランチを切り、修正を sign off 付きで commit して、再度 `Draft PR` を上げました。 説明は `fixs #${issue 番号}` を入れてほしいと合ったので、Draft なこともあり、一旦その文言のみをいれて [PR](https://github.com/go-swagger/go-swagger/pull/2507) を発行しました。
 
-![](/images/20210205/Pasted_image_20210203191633.png)
+<img src="/images/20210205/Pasted_image_20210203191633.png" loading="lazy">
 
 
 あとで、説明を追加すればよいかと思い、1日程度置いていると、レビュワーの方から `Approve` されてました。レビュワーの方から「どうして Draft なのか ?」と聞かれていたので、「CIを見たかったから」と返しつつ `Approve` 出ているので良いだろうと思い、そのまま `Open` にしました。

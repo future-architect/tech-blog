@@ -58,13 +58,13 @@ Firewallとしては社外からの攻撃を守ることはもちろんですが
 
 これは"PCの外からの防護壁"の役目を果たすもので、身近なものとしてはWindows Firewallかなと思います。このWindows Firewall、Windowsの通知などでたまに見かけるためFirewallのことをOSの機能とだけ認識されることもありますが、より広い概念になります。
 
-![](/images/20201020/firewall_overview.png)
+<img src="/images/20201020/firewall_overview.png" loading="lazy">
 
 ## Proxyサーバの位置
 
 Proxy・DMZ・Firewallの位置関係を図示すると、次のようになります。
 
-![](/images/20201020/Proxy_DMZ_Firewall.png)
+<img src="/images/20201020/Proxy_DMZ_Firewall.png" loading="lazy">
 
 ## 社内PCのProxy設定
 
@@ -106,7 +106,7 @@ Dockerは社外と通信する場合と社内（というか自端末）で完�
 Dockerはイメージをインターネット上からPullしてきますので、Docker自体にProxy設定をする必要があります。
 これがないと、Dockerイメージを用意できずそもそもDockerをstartできません。
 
-![](/images/20201020/Docker_pull.png)
+<img src="/images/20201020/Docker_pull.png" loading="lazy">
 
 
 ## 社内で通信するケース：自端末内で通信するケース
@@ -115,7 +115,7 @@ DockerイメージをpullしてDockerをstartできたら、外部インター�
 
 たまに新人さんで見かけるのが「とにもかくにもProxy設定だ！」ということでPJで使っている `docker-compose.yml` 内に独自にProxy設定した挙げ句localstackのリソース間で通信できません、などという悲しい事故がありますが、これも自端末内での通信なので、Proxy設定は必要ありません。
 
-![](/images/20201020/local_no_proxy.png)
+<img src="/images/20201020/local_no_proxy.png" loading="lazy">
 
 
 ## Docker上から社外と通信するケース：Docker上でDocker pullやpip install
@@ -130,14 +130,14 @@ Docker上であっても社外と通信する場合は、Proxy設定は必要で
 
 ブラウザであれば、起動した段階でユーザー名とパスワードが聞かれます。ユーザー名とパスワードを入力すれば、Proxyサーバを経由して社外へ接続できます。
 
-![](/images/20201020/proxy_chrome_comment.png)
+<img src="/images/20201020/proxy_chrome_comment.png" loading="lazy">
 
 Chromeの場合はOSに設定されたプロキシ情報を自動で参照します。
 
 Windows10の場合、「Windowsの設定」>「ネットワークとインターネット」>「プロキシ」を表示すると、手動プロキシの設定があります。Chromeはここに書いてあるProxyサーバの設定を使います。
 ちなみに手動でProxyサーバの設定を変更した場合は、必ず下部の「保存」ボタンを押して変更を反映させてください。
 
-![](/images/20201020/proxy_windows10_comment.png)
+<img src="/images/20201020/proxy_windows10_comment.png" loading="lazy">
 
 ブラウザによってはOSで設定しているのと別のProxyサーバを使うこともできて、例えばFirefox Browser（少なくとも81.0.1）では、OS以外のProxyサーバを使う設定が行なえます。テストなどの都合によってブラウザでProxyサーバを使いたくない場合は、利用を検討ください。
 
@@ -200,7 +200,7 @@ Windows10の場合、「コントロールパネル（カテゴリ表示）」>�
 
 上記setxコマンドを使わずとも、ここから手動で設定をしてもOKです。
 
-![](/images/20201020/env_comment.png)
+<img src="/images/20201020/env_comment.png" loading="lazy">
 
 ここを見るとわかりますが、 `http_proxy`と`https_proxy`しかありません。
 
@@ -308,7 +308,7 @@ export NO_PROXY=$no_proxy
 
 Docker for WindowsやDocker for Macでは、ターミナルにProxy設定があります。コンテナイメージをpullするときに必要になります。
 
-![](/images/20201020/image_(6).png)
+<img src="/images/20201020/image_(6).png" loading="lazy">
 
 ### Docker for Macにおける注意点
 

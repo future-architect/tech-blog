@@ -73,7 +73,7 @@ proxy認証が必要なネットワークの場合、環境変数の設定及び
 ```sh
 npm config set https-proxy http://id:pass@proxy.example.com:port
 npm config set proxy http://id:pass@proxy.example.com:port
-SET(linuxの場合export) ELECTRON_GET_USE_PROXY=true 
+SET(linuxの場合export) ELECTRON_GET_USE_PROXY=true
 SET GLOBAL_AGENT_HTTPS_PROXY=http://id:pass@proxy.example.com:port
 SET HTTPS_PROXY=http://id:pass@proxy.example.com:port
 SET HTTP_PROXY=http://id:pass@proxy.example.com:port
@@ -109,13 +109,13 @@ vue create vue-cli-electron-sample
 
 Vue CLIの案内に従い、バージョンや構成をいくつか選択します。
 
-![](/images/20210107/image_2.png)
+<img src="/images/20210107/image_2.png" loading="lazy">
 
 全てDefault設定で問題ありません。
 
 アプリケーションの構築が正常に完了すると画像のような案内が表示されます。
 
-![](/images/20210107/image_3.png)
+<img src="/images/20210107/image_3.png" loading="lazy">
 
 指示に従いひとまず起動してみましょう。
 
@@ -124,7 +124,7 @@ Vue CLIの案内に従い、バージョンや構成をいくつか選択しま�
  npm run serve
 ```
 
-![](/images/20210107/image_4.png)
+<img src="/images/20210107/image_4.png" loading="lazy">
 
 <img src="/images/20210107/image_5.png"  style="border:solid 1px #000000">
 
@@ -139,7 +139,7 @@ Vue CLIの案内に従い、バージョンや構成をいくつか選択しま�
 vue add electron-builder
 ```
 
-![](/images/20210107/image_6.png)
+<img src="/images/20210107/image_6.png" loading="lazy">
 
 Electronのバージョンを選択できます。
 
@@ -231,17 +231,17 @@ if (isDevelopment) {
 
 ここがVue CLIプラグインの最大の利点です。
 
-![](/images/20210107/image_7.png)
+<img src="/images/20210107/image_7.png" loading="lazy">
 
 package.jsonにelectronに関連するコマンドが追記されます。
 
 `npm run serve`の代わりに`npm run electron:serve`コマンドを実行してみます。
 
-![](/images/20210107/image_8.png)
+<img src="/images/20210107/image_8.png" loading="lazy">
 
 npm run serveコマンドと似ていますが、Electronアプリケーションが起動されます。
 
-![](/images/20210107/image_9.png)
+<img src="/images/20210107/image_9.png" loading="lazy">
 
 表示内容はVue.jsのHello Worldです、これをElectronアプリとして起動することに成功しました。
 
@@ -251,7 +251,7 @@ npm run serveコマンドと似ていますが、Electronアプリケーショ�
 npm run electron:build
 ```
 
-![](/images/20210107/image_10.png)
+<img src="/images/20210107/image_10.png" loading="lazy">
 
 ビルドコマンドを実行するとアプリケーションのビルドが走ります。基本的にはアプリケーションをビルドしている端末のOS向けのアプリケーションがビルドされますが、WindowsでMac向けのアプリケーションをビルドするようなことも可能です。詳しくは[公式ガイド](https://nklayman.github.io/vue-cli-plugin-electron-builder/guide/recipes.html#multi-platform-build)をご確認ください。
 
@@ -269,7 +269,7 @@ vue-cli-electron-sample Setup 0.1.0をダブルクリックするとアプリケ
 
 
 インストールが完了したアプリケーションは一般的なアプリケーション同様に起動することができます。
-![](/images/20210107/image_14.png)
+<img src="/images/20210107/image_14.png" loading="lazy">
 
 vue.config.jsに、下記のように、ビルド設定を`portable`に設定することで、インストール不要な、ダウンロードしたファイルを直接実行、起動できるようなものとしてアプリケーションをビルドする事もできます。
 
@@ -353,7 +353,7 @@ cd react-electron-sample
 create-react-app react-electron-sample
 ```
 
-![](/images/20210107/image_17.png)
+<img src="/images/20210107/image_17.png" loading="lazy">
 
 アプリケーションの構築に成功すると画像のような案内が表示されます。
 指示に従ってアプリケーションを起動してみましょう。
@@ -362,11 +362,11 @@ create-react-app react-electron-sample
 cd react-electron-sample
 npm start
 ```
-![](/images/20210107/image_18.png)
+<img src="/images/20210107/image_18.png" loading="lazy">
 
 無事にHello Worldが起動しました。
 
-![](/images/20210107/image_19.png)
+<img src="/images/20210107/image_19.png" loading="lazy">
 `Edit src/App.js`の文言を無視するのは忍びないので、Hello Worldらしいメッセージに修正しました。
 pタグの文言を修正するだけです。
 
@@ -485,7 +485,7 @@ function createWindow () {
 // Some APIs can only be used after this event occurs.
 app.whenReady().then(() => {
   createWindow()
-  
+
   app.on('activate', function () {
     // On macOS it's common to re-create a window in the app when the
     // dock icon is clicked and there are no other windows open.
@@ -532,7 +532,7 @@ npm run electron:serve
 
 無事に成功しました。
 
-![](/images/20210107/image_20.png)
+<img src="/images/20210107/image_20.png" loading="lazy">
 
 アプリケーションのビルドは下記コマンドです。
 

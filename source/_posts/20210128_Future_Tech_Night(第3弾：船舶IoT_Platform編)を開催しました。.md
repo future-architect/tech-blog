@@ -30,7 +30,7 @@ lede: "2020/8/17にオンラインにてFuture Tech Nightという社外勉強�
 5. [ 〜AWS＆DataPlatform MaaSビジネス編〜](https://future.connpass.com/event/195568/)
 6. [GCP x インフラ構築編](https://future.connpass.com/event/201478/)
 
-![](/images/20210128/ブログ＿図1.png)
+<img src="/images/20210128/ブログ＿図1.png" loading="lazy">
 
 # 概要
 
@@ -41,19 +41,19 @@ lede: "2020/8/17にオンラインにてFuture Tech Nightという社外勉強�
 4. プロジェクトの概況
 
 FutureとTechnology Innovation Groupの紹介では、グループ全体の紹介を代表的なプロジェクトを取り上げて紹介しました。
-![](/images/20210128/image01.png)
+<img src="/images/20210128/image01.png" loading="lazy">
 
 顧客・業界の紹介では、業界の構造を説明した後に、業界が抱えている課題を定義し、
-![](/images/20210128/image02.png)
+<img src="/images/20210128/image02.png" loading="lazy">
 
 その課題を解決するためにプロジェクトが提案した内容を説明しました。
-![](/images/20210128/図1.png)
+<img src="/images/20210128/図1.png" loading="lazy">
 
 プロジェクトの概況では、働き方や担当領域の紹介、プラットフォームの全体像と、設計事例、構築にあたって利用したシステムやサービスについて紹介をしました。
 
-![](/images/20210128/図2.png)
+<img src="/images/20210128/図2.png" loading="lazy">
 
-![](/images/20210128/図3.png)
+<img src="/images/20210128/図3.png" loading="lazy">
 
 
 # 登壇者からのコメント

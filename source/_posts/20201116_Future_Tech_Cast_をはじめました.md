@@ -17,7 +17,7 @@ lede: "この度フューチャー技術ブログから派生して、Future Tec
 
 この度、フューチャー技術ブログから派生して、[Future Tech Cast](https://anchor.fm/futuretechcast) という名前でポッドキャストを始めましたのでご報告です。
 
-![](/images/20201116/top.png)
+<img src="/images/20201116/top.png" loading="lazy">
 
 
 ▼Future Tech Cast

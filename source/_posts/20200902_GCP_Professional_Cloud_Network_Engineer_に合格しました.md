@@ -153,4 +153,4 @@ Cloud Architect の資格の体験記は[こちら](/articles/20190530/)
 # 合格後の特典
 
 やはりありました。`Cloud Architect` とは別なんですね。
-![](/images/20200902/2020-08-22_220718.png)
+<img src="/images/20200902/2020-08-22_220718.png" loading="lazy">

@@ -192,7 +192,7 @@ WHERE Item.age.N <= '30'
         AND Item.mobile.S = 'ios'
 ORDER BY  Item.age.N, Item.id.S
 ```
-![](/images/20210403/18.png)
+<img src="/images/20210403/18.png" loading="lazy">
 
 テーブルのJOINも、もちろんできます。
 
@@ -200,7 +200,7 @@ ORDER BY  Item.age.N, Item.id.S
 SELECT count(1) AS "15×15=225"
 FROM test_dynamodb_export.users_data, test_dynamodb_export.users_data
 ```
-![](/images/20210403/19.png)
+<img src="/images/20210403/19.png" loading="lazy">
 
 今回の記事では1テーブルしか作成していませんが、各テーブルごとに **Export S3 + Glue Crawler** を実施すれば、DynamoDBテーブル同士のJOINが可能となります。
 

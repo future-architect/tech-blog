@@ -75,13 +75,13 @@ JSONファイルがダウンロードされるので適切な場所に保存し�
 
 環境にもよると思いますが割と時間かかります。コーヒーでも飲んで待ちましょう。
 
-![](/images/20210312/09sdk.png)
+<img src="/images/20210312/09sdk.png" loading="lazy">
 
 コマンドプロンプトが起動するのでYを入力します。
 
-![](/images/20210312/13sdk.png)
+<img src="/images/20210312/13sdk.png" loading="lazy">
 
-![](/images/20210312/14sdk.png)
+<img src="/images/20210312/14sdk.png" loading="lazy">
 
 ブラウザが起動するのでアクセスを許可します。
 
@@ -136,7 +136,7 @@ Invoke-WebRequest `
 ```
 実行すると以下のエラーが発生しました。
 
-![](/images/20210312/16err.png)
+<img src="/images/20210312/16err.png" loading="lazy">
 
 [このページ](https://qiita.com/ponsuke0531/items/4629626a3e84bcd9398f)を参考にしてエラーを解消します。
 
