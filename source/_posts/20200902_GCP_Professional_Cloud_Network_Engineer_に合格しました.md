@@ -19,7 +19,7 @@ lede: "今回、GCP の `Professional Cloud Network Engineer` という資格に
 
 <img src="/images/20200902/1_zRKo4d8TLjscKiHqgk6u5w.png" class="img-small-size">
 
-Cloud Architect の資格の体験記は[こちら](https://future-architect.github.io/articles/20190530/)
+Cloud Architect の資格の体験記は[こちら](/articles/20190530/)
 
 # Professional Cloud Network Engineer とは？
 
@@ -70,7 +70,7 @@ Cloud Architect の資格の体験記は[こちら](https://future-architect.git
 * オンプレミスのサーバから、BigQuery, GCS にイントラネット経由で通信するためには？
     * 要するに[こちら](https://cloud.google.com/vpc/docs/configure-private-google-access-hybrid)
 * これらを押さえておけば、大丈夫でしょう。実際の現場的には、最初の選択肢が主流とは思います。Cloud SQL のプライベート接続は、Firewallを書けないため、逆に脆弱だとすら思います。
-    * [こちらの記事](https://future-architect.github.io/articles/20190820/) の `2-2` で詳しく触れられています。
+    * [こちらの記事](/articles/20190820/) の `2-2` で詳しく触れられています。
 
 
 ##### セキュリティアプライアンスがある場合のルーティング

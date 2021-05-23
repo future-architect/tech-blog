@@ -19,7 +19,7 @@ lede: "Redmineにはデータの可視化機能が標準で搭載されていな
 
 こんにちは。近藤です。
 
-[前回](https://future-architect.github.io/articles/20160920/)はRedmileのデータをKibanaで表示してみました。
+[前回](/articles/20160920/)はRedmileのデータをKibanaで表示してみました。
 
 今回はRedmineデータをEVMグラフとして表示します。
 
@@ -143,7 +143,7 @@ C:\elastic
 
 次に、JDBCドライバを用意します。
 
-[前回](https://future-architect.github.io/articles/20160920/)ダウンロードした「mysql-connector-java-5.1.39-bin.jar」というファイルを、
+[前回](/articles/20160920/)ダウンロードした「mysql-connector-java-5.1.39-bin.jar」というファイルを、
 「C:\elastic\logstash-5.1.2\bin」以下に配置します。
 
 次に、「redmine.txt」というファイルを作成。中身は下記のようにします。（★を含む箇所は皆様の環境に合わせた値へ変えて下さい。）
@@ -357,8 +357,8 @@ RedmineをKibana＋Timelionと組み合わせることで、グラフ表示が�
 
 シリーズとして連載しています。こちらもぜひどうぞ。
 
-* [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！](https://future-architect.github.io/articles/20160920/)
+* [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！](/articles/20160920/)
 * マネージャーがうれしいRedmineデータのEVM表示方法を公開します！！
-* [マネージャーがうれしいRedmineデータのダッシュボード表示方法を公開します！！](https://future-architect.github.io/articles/20170510/)
-* [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！（Metabase編）](https://future-architect.github.io/articles/20190703/)
+* [マネージャーがうれしいRedmineデータのダッシュボード表示方法を公開します！！](/articles/20170510/)
+* [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！（Metabase編）](/articles/20190703/)
 

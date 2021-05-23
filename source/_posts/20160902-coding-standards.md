@@ -155,7 +155,7 @@ https://github.com/future-architect/coding-standards
 - 目と触覚の配色はDukeをリスペクト
 - 針ではなく葉っぱが生えてる（「Javaハチ」 -> 「Java鉢」 -> 鉢植えには葉っぱが生えてる）
 
-イメージキャラクターは、[前回記事](https://future-architect.github.io/articles/20160721/)のアイコンセット作者の木村さん作成です。
+イメージキャラクターは、[前回記事](/articles/20160721/)のアイコンセット作者の木村さん作成です。
 
 
 

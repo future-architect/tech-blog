@@ -17,7 +17,7 @@ lede: "弊社謹製のSQLフォーマッターuroboroSQL formatterを公開し�
 # はじめに
 はじめまして、太田です。
 今回、弊社謹製のSQLフォーマッター[**uroboroSQL formatter**](https://github.com/future-architect/uroboroSQL-formatter)を公開しましたので、その紹介をさせていただきます。
-また、[弊社、星が昨年投稿した記事](https://future-architect.github.io/articles/20160902/)の中で[Javaのコーディング規約](https://future-architect.github.io/coding-standards/documents/forJava/Javaコーディング規約.html)を公開しましたが、今回その第2弾として、[SQLのコーディング規約（Oracle限定）](https://future-architect.github.io/coding-standards/documents/forSQL/SQLコーディング規約（Oracle）.html)も公開いたしましたので、こちらについても触れたいと思います。
+また、[弊社、星が昨年投稿した記事](/articles/20160902/)の中で[Javaのコーディング規約](https://future-architect.github.io/coding-standards/documents/forJava/Javaコーディング規約.html)を公開しましたが、今回その第2弾として、[SQLのコーディング規約（Oracle限定）](https://future-architect.github.io/coding-standards/documents/forSQL/SQLコーディング規約（Oracle）.html)も公開いたしましたので、こちらについても触れたいと思います。
 
 <a href="https://github.com/future-architect/uroboroSQL-formatter">
 <img src="/images/20170227/photo_20170227_01.png" class="img-middle-size" >
@@ -53,7 +53,7 @@ SublimeText3のプラグインとして利用できます。
 
 メニューバー→`Edit`→`SQL Format`で利用できます。
 
-設定は下記のgithubリポジトリのREADMEをご覧ください。  
+設定は下記のgithubリポジトリのREADMEをご覧ください。
 
 [Sublime-uroboroSQL-formatter](https://github.com/future-architect/Sublime-uroboroSQL-formatter)
 [日本語Readme](https://github.com/future-architect/Sublime-uroboroSQL-formatter/blob/master/Readme.ja.md)
@@ -62,7 +62,7 @@ SublimeText3のプラグインとして利用できます。
 ## コマンドライン実行
 
 SQLファイルを指定してコマンドラインから実行できるツールも用意しています。
-導入方法は下記のGitHubリポジトリのREADMEをご覧ください。  
+導入方法は下記のGitHubリポジトリのREADMEをご覧ください。
 
 [uroboroSQL-formatter#exeファイルの実行](https://github.com/future-architect/uroboroSQL-formatter#exeファイルの実行)
 [Latest release](https://github.com/future-architect/uroboroSQL-formatter/releases/latest)
@@ -77,7 +77,7 @@ SQLファイルを指定してコマンドラインから実行できるツー�
 * テーブル・カラム・条件式の行コメントのインデント揃え
 
 ※[uroboroSQL](https://github.com/future-architect/uroborosql)は2月末ごろOSS公開予定のSQL実行エンジンです。
-SublimeText3のプラグインをDoma2で利用される場合は下記のように設定してください。  
+SublimeText3のプラグインをDoma2で利用される場合は下記のように設定してください。
 
 ```json
 {
@@ -149,7 +149,7 @@ SublimeText3のプラグインをDoma2で利用される場合は下記のよう
 * フォーマット前(SQLテンプレート)
 
     ```sql
-    select * 
+    select *
     from emp
     where emp_id = /*empId*/123
     ```
@@ -167,9 +167,9 @@ SublimeText3のプラグインをDoma2で利用される場合は下記のよう
 
     ```sql
     select
-      * 
+      *
     from
-      emp 
+      emp
     where
       emp_id = /*empId*/
       123
@@ -210,7 +210,7 @@ Oracleの識別子の名前は30バイト以内という制限があります。
 （[MySQLも64バイト以内](https://dev.mysql.com/doc/refman/5.6/ja/identifiers.html)、[PostgreSQLにもデフォルト63バイト以内](http://www.postgresql.jp/document/9.5/html/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS)という制限があるようですね）
 
 この制限の中で、膨大にある全てのテーブル名・カラム名で、確実に意味の伝わる識別子名を考えるのは至難の業です。
-であれば、略語を考えるための規約を決めて運用するのが手っ取り早いです。（わたしは出会ったことはありませんがテーブル名をTBL001-TBL100のように連番定義していくなんて話も聞いたことがあります）  
+であれば、略語を考えるための規約を決めて運用するのが手っ取り早いです。（わたしは出会ったことはありませんがテーブル名をTBL001-TBL100のように連番定義していくなんて話も聞いたことがあります）
 
 仮にテーブル名を連番定義していく運用を行った場合には、コメントなしで作成されたSQLは読めたものではありません。もし新規参画した方であれば恐怖でしかないでしょう。
 1テーブル参照のみのSQLであればテーブルのコメントを確認し、かろうじて解読することができるかもしれませんが、サブクエリが現れた場合はどうでしょうか。いっそ匙を投げたくなるのではないでしょうか。

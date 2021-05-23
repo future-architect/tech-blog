@@ -20,7 +20,7 @@ lede: "TIGの渋川です。[CNCF連載]の第4回は、CNCFのSandboxプロジ�
 
 TIGの渋川です。
 
-[CNCF連載](https://future-architect.github.io/articles/20200928/)の第4回は、CNCFのSandboxプロジェクトのBuildpacksについて紹介します。
+[CNCF連載](/articles/20200928/)の第4回は、CNCFのSandboxプロジェクトのBuildpacksについて紹介します。
 
 * https://buildpacks.io
 
@@ -366,7 +366,7 @@ echo "---> Done"
 * フォルダ名.tomlというファイルを作ってlaunch = trueにすると、成果物のフォルダに含まれるようになります。pip installしたファイルをイメージに入れるために作成しています。
 * ここでは``main.py``というファイルがあるものとして、それを実行するようにしています。実行ファイルの場所とレイヤーの場所は別のフォルダなので、引数でレイヤーのvenvのフォルダを教えるようにしました。
 
-buildpackごとにlaunch.tomlファイルを作ると、実行時のエントリーポイントとなります。typeをwebにするとデフォルトで実行されるコマンドになります。なお、distrolessは[シェルも何も入っていないストイックなイメージ](https://future-architect.github.io/articles/20200514/)でしたね。その場合はdirect=trueにするとシェルを経由しなくなるのでdistrolessでもエラーにならなくなります。
+buildpackごとにlaunch.tomlファイルを作ると、実行時のエントリーポイントとなります。typeをwebにするとデフォルトで実行されるコマンドになります。なお、distrolessは[シェルも何も入っていないストイックなイメージ](/articles/20200514/)でしたね。その場合はdirect=trueにするとシェルを経由しなくなるのでdistrolessでもエラーにならなくなります。
 
 ここではコマンドを決め打ちにしていますが、たとえばカレントフォルダにENTRYPOINTというテキストファイルを置いて、それの中を実行コマンドにする、みたいなことも自由にできます。
 
@@ -383,7 +383,7 @@ uvicorn==0.12.1
 
 次にアプリケーションコードです。
 
-distrolessは[ライブラリの読み込み元が厳しく制約されているイメージ](https://future-architect.github.io/articles/20200514/)でしたね。
+distrolessは[ライブラリの読み込み元が厳しく制約されているイメージ](/articles/20200514/)でしたね。
 
 Buildpacksは決まったフォルダにしかファイルを保存できません。レイヤーというフォルダを用意するのはできても、実行イメージのどこに置くかは介入できず、Buildpackが自分のルールで配置します。/rootのsite-packagesにどうしてもおきたい！というのは実現不可能です。
 

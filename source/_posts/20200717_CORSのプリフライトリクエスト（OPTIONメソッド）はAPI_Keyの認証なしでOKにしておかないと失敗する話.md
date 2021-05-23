@@ -15,11 +15,11 @@ lede: こんにちは、TIG DXユニットの真野です。この技術ブロ�
 ---
 # はじめに
 
-こんにちは、TIG DXユニットの真野です。この技術ブログの運営や、ここ数年は産業向けのIoT（例えば工場IoTやモビリティIoT）を行っています。本エントリーのネタを書くキッカケになったのは、[GCP連載#7 GCPのData Transfer Serviceを使って簡単にS3からBigQueryにデータ転送をしてみる](https://future-architect.github.io/articles/20200214/)の記事を書いたり、最近は[アイコン作成にまで手を伸ばしている](https://future-architect.github.io/articles/20200204/)多芸な加部さんと某IoTな案件のバックエンドの接続テストをしているときに気がついたネタです。
+こんにちは、TIG DXユニットの真野です。この技術ブログの運営や、ここ数年は産業向けのIoT（例えば工場IoTやモビリティIoT）を行っています。本エントリーのネタを書くキッカケになったのは、[GCP連載#7 GCPのData Transfer Serviceを使って簡単にS3からBigQueryにデータ転送をしてみる](/articles/20200214/)の記事を書いたり、最近は[アイコン作成にまで手を伸ばしている](/articles/20200204/)多芸な加部さんと某IoTな案件のバックエンドの接続テストをしているときに気がついたネタです。
 
 # 記事の概要
 
-記事の内容ですが、[Real World HTTP 第2版はなぜ1.5倍になったのか | Future Tech Blog](https://future-architect.github.io/articles/20200421/) で触れられている、以下のCORS周りについて書いていきます。
+記事の内容ですが、[Real World HTTP 第2版はなぜ1.5倍になったのか | Future Tech Blog](/articles/20200421/) で触れられている、以下のCORS周りについて書いていきます。
 
 > **会社のチャットで、CORSのプリフライトリクエスト（OPTIONメソッド）は認証なしでOKにしておかないとCORSのやりとりが失敗する** というのを見て、なるほどぉ、と思ったりもあります。
 
@@ -112,7 +112,7 @@ Vary: Access-Control-Request-Headers
 
 # 切り分け
 
-Chromeブラウザだけかもしれませんが、プリフライトリクエストはデベロッパーツール上からは省略されていて分かりにくいです。これは `chrome://flags/#out-of-blink-cors` で`Out of blink CORS` を Disableにすれば表示することができます。 
+Chromeブラウザだけかもしれませんが、プリフライトリクエストはデベロッパーツール上からは省略されていて分かりにくいです。これは `chrome://flags/#out-of-blink-cors` で`Out of blink CORS` を Disableにすれば表示することができます。
 
 ![](/images/20200717/image.png)
 

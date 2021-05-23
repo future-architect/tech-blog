@@ -183,7 +183,7 @@ import (
 var assets embed.FS
 ```
 
-NotFoundHandlerハンドラーは[前回の記事のファイルの配信のハンドラー](https://future-architect.github.io/articles/20210408/)で紹介したコードとほぼ同じです。ファイルの置き場をプロジェクトルートにしてみたのと、パスがbuild/webになったぐらいです。main関数もほぼ以前と同じです。
+NotFoundHandlerハンドラーは[前回の記事のファイルの配信のハンドラー](/articles/20210408/)で紹介したコードとほぼ同じです。ファイルの置き場をプロジェクトルートにしてみたのと、パスがbuild/webになったぐらいです。main関数もほぼ以前と同じです。
 
 無事、GoでもFlutter Webのビルド結果をホストできました。
 
@@ -218,7 +218,7 @@ NotFoundHandlerハンドラーは[前回の記事のファイルの配信のハ�
 
 # サーバーへのHTTPアクセス
 
-静的HTMLを表示するだけでは管理画面にはなりませんので、HTTPアクセスを行ってみます。より高度なサービスになると、昨日のエントリーの[Swaggerを使ったサーバーアクセス](https://future-architect.github.io/articles/20210511b/)や、GraphQLやgRPCを使いたくなるかもしれません。今時なプロトコルはどれでも利用できるのも、Flutterの良いところですが、今回はシンプルなHTTPアクセスをします。
+静的HTMLを表示するだけでは管理画面にはなりませんので、HTTPアクセスを行ってみます。より高度なサービスになると、昨日のエントリーの[Swaggerを使ったサーバーアクセス](/articles/20210511b/)や、GraphQLやgRPCを使いたくなるかもしれません。今時なプロトコルはどれでも利用できるのも、Flutterの良いところですが、今回はシンプルなHTTPアクセスをします。
 
 題材としては今話題沸騰のイケてるWeb APIである[ケンオール](https://kenall.jp/)にアクセスしてみます。
 

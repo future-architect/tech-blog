@@ -17,7 +17,7 @@ lede: "前回は越島さんによる分かりやすい Anthos 概要紹介記�
 # はじめに
 こんにちは、TIGの[村田](https://twitter.com/famipapamart)です。
 
-[GCP連載2021](https://future-architect.github.io/articles/20210307/)の第10弾です。[前回](https://future-architect.github.io/articles/20210319/)は越島さんによる分かりやすい Anthos 概要紹介記事でしたが、今回も前回に続いての Anthos ネタです。
+[GCP連載2021](/articles/20210307/)の第10弾です。[前回](/articles/20210319/)は越島さんによる分かりやすい Anthos 概要紹介記事でしたが、今回も前回に続いての Anthos ネタです。
 
 ※本記事の情報は 2021.03.21 時点での情報であり、サービスの対応状況などは更新される可能性があります。
 

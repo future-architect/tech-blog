@@ -84,7 +84,7 @@ https://docs.docker.com/engine/api/sdk/
 
 オブザーバビリティではこれらのルールに従ったログを出すアプリケーションと、それを閲覧するビューアが二人三脚で必要となります。とりあえず先頭の要素を実現するものを実装してみます。ログ出力は[JSONを出力する構造化ロガーが各言語にあったり](https://github.com/ymotongpoo/cloud-logging-configurations)しますので、そのあたりを使って行区切りのJSON（JSONL）として出力したものをパースして色付けして出力します。
 
-このブログの[フューチャーOSS推進タスクフォース始めます](https://future-architect.github.io/articles/20201107/)の記事の中で、ログビューアというものがこっそり書かれていましたが、それがこれにあたります。
+このブログの[フューチャーOSS推進タスクフォース始めます](/articles/20201107/)の記事の中で、ログビューアというものがこっそり書かれていましたが、それがこれにあたります。
 
 ![構造ログビューアをやると書いているブログ記事](/images/20210427b/スクリーンショット_2021-04-23_1.24.57.png)
 
@@ -121,14 +121,14 @@ https://github.com/docker/cli
 
 なお、これの実装中に調べて書いたのが次のエントリーです。
 
-* [Go 1.16のembedとchiとSingle Page Application](https://future-architect.github.io/articles/20210408/)
+* [Go 1.16のembedとchiとSingle Page Application](/articles/20210408/)
 
 それ以外の実装部分の理解の助けになるエントリーもいくつもあります。
 
-* [Go 1.16のsignal.NotifyContext()](https://future-architect.github.io/articles/20210212/)
-* [Go 1.16からリリースされたgo:embedとは](https://future-architect.github.io/articles/20210208/)
-* [Parcel 2.0 beta.1を試す](https://future-architect.github.io/articles/20201111/)
-* [TypeScriptでReactをやるときは、小さいアプリでもReduxを最初から使ってもいいかもねというお話](https://future-architect.github.io/articles/20200501/)
+* [Go 1.16のsignal.NotifyContext()](/articles/20210212/)
+* [Go 1.16からリリースされたgo:embedとは](/articles/20210208/)
+* [Parcel 2.0 beta.1を試す](/articles/20201111/)
+* [TypeScriptでReactをやるときは、小さいアプリでもReduxを最初から使ってもいいかもねというお話](/articles/20200501/)
 
 他にも、サーバーレス連載などでDockerやCloud Runについて書いた記事も多数あります
 

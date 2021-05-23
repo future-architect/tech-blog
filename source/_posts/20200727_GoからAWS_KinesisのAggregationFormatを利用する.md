@@ -19,7 +19,7 @@ lede: "[サーバレス連載企画]の8回目です。TIG DXユニットの真�
 
 # はじめに
 
-TIG DXユニットの真野です。ここ数年は産業向けのIoT（例えば工場IoTやモビリティIoT）を行っています。[工場をハックするための基本知識](https://future-architect.github.io/articles/20191023/)や[PyConJP 2019に登壇しました](https://future-architect.github.io/articles/20200422/) の記事を書いた栗田さんや、[SORACOM USBドングルの自動接続](https://future-architect.github.io/articles/20191201/) の記事を書いた棚井さんと同じチームに所属しています。
+TIG DXユニットの真野です。ここ数年は産業向けのIoT（例えば工場IoTやモビリティIoT）を行っています。[工場をハックするための基本知識](/articles/20191023/)や[PyConJP 2019に登壇しました](/articles/20200422/) の記事を書いた栗田さんや、[SORACOM USBドングルの自動接続](/articles/20191201/) の記事を書いた棚井さんと同じチームに所属しています。
 
 [サーバレス連載企画](https://future-architect.github.io/tags/Serverless%E9%80%A3%E8%BC%89/) の第8弾目として、Serverlessの代表格であるAWS LambdaでGoを用いてKinesisに対するKPL/KCL相当の処理についてまとめていきます。
 
@@ -54,8 +54,8 @@ KinesisにはRecord Aggregation（レコードの集約）といった考え方�
 record 0 --|
 record 1   |        [ Aggregation ]
     ...    |--> Amazon Kinesis record -->  PutRecords Request
-    ...    |                              
-record A --|                              
+    ...    |
+record A --|
 ```
 
 
@@ -111,7 +111,7 @@ message Record {
 
 [AWS SDK for Go](https://aws.amazon.com/jp/sdk-for-go/) でKinesisに対するProduce/Consumeはできますが、標準ではAggregation/DeAggregationはできません。そのため以下のライブラリを利用します。
 
-* **Aggregation**:  [a8m/kinesis-producer](https://github.com/a8m/kinesis-producer) 
+* **Aggregation**:  [a8m/kinesis-producer](https://github.com/a8m/kinesis-producer)
 * **DeAggregation**: [awslabs/kinesis-aggregation](https://github.com/awslabs/kinesis-aggregation)
 
 DeAggregationに関してはAWSLabのリポジトリを利用できるのでちょっと安心できますね。利用方法は簡単かと言われると？でしたのでここに利用方法を残していきます。

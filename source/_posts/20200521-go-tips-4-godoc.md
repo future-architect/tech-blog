@@ -27,7 +27,7 @@ lede: "新しいプログラミング言語を学ぶときは、まず、情報�
 | [Go Wiki](https://github.com/golang/go/wiki)  | 一次  | |  文法の解説、コミュニティ情報などいろいろあったり |
 | [Release Notes](https://golang.org/doc/devel/release.html) | 一次 | Qiita等に有志が訳したものがあがる | 新バージョンの差分はここ |
 | [Go by Example](https://gobyexample.com/) | 二次 | [あり](https://oohira.github.io/gobyexample-jp/) | 細かい書き方のサンプルコード集 |
-| [Java to Go in-depth tutorial](https://yourbasic.org/golang/go-java-tutorial/) | 二次 | [あり](https://future-architect.github.io/articles/20200311/) | 既存の言語ユーザーのためのGo入門 |
+| [Java to Go in-depth tutorial](https://yourbasic.org/golang/go-java-tutorial/) | 二次 | [あり](/articles/20200311/) | 既存の言語ユーザーのためのGo入門 |
 
 今回は、GoDocについて取り上げます。
 

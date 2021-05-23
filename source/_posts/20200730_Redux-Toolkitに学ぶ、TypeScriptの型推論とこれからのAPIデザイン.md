@@ -32,7 +32,7 @@ TypeScriptは、JavaScriptのさまざまなフリーダムな書き方を受け
 
 TechBlogで以前、Redux Toolkitの紹介を書きました。今回のエントリーはその続きです。
 
-* [TypeScriptでReactをやるときは、小さいアプリでもReduxを最初から使ってもいいかもねというお話](https://future-architect.github.io/articles/20200501/)
+* [TypeScriptでReactをやるときは、小さいアプリでもReduxを最初から使ってもいいかもねというお話](/articles/20200501/)
 
 > 最近、僕が意識しているのはリーダブルなコードです。これはオライリーの本のReadableではなくて、コードが人を導いてくれる（Leadable）という意味です。一方で、ReduxとTypeScriptで感じていたのは、処理系を通すためにコードを書かされているという感覚ですね。オーダブル(Orderable)と呼んでいるけど、もっといい名前があったら教えてください。Redux Toolkitはだいぶ余計なことに頭を使わなくて済むので、とても良いです。
 > (略)

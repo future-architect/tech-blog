@@ -42,9 +42,9 @@ TIG 多賀です。
 
 参考記事
 
-* [Go の Open API 3.0 のジェネレータ oapi-codegen を試してみた | フューチャー技術ブログ](https://future-architect.github.io/articles/20200701/)
-* [go-swaggerを用いたWebアプリケーション開発Tips19選 | フューチャー技術ブログ](https://future-architect.github.io/articles/20200630/)
-* [WAFとして go-swagger を選択してみた | フューチャー技術ブログ](https://future-architect.github.io/articles/20190814/)
+* [Go の Open API 3.0 のジェネレータ oapi-codegen を試してみた | フューチャー技術ブログ](/articles/20200701/)
+* [go-swaggerを用いたWebアプリケーション開発Tips19選 | フューチャー技術ブログ](/articles/20200630/)
+* [WAFとして go-swagger を選択してみた | フューチャー技術ブログ](/articles/20190814/)
 
 
 ### 質問内容
@@ -82,7 +82,7 @@ go-swagger コマンドを開発端末で実行できるように、開発環境
 
 > go-swaggerがWAF(Webアプリケーションフレームワーク）というのは直感では理解しにくいですが、go-swaggerで生成したサーバサイドのコードは、実質的にechoやginのように多くの機能を持ちます。 例えば、URLのルーティング、入力Validation、クエリパラメータ、フォーム、リクエストヘッダ、リクエストボディなどの 入力modelへのバインディング、HTTPレスポンスコード別のmodelの作成や、Middlewareの設定専用の関数など多くをサポートしていますし、固有のビジネスロジックを書くルールもgo-swaggerの生成したコードによって決められています。
 
-引用: [go-swaggerを用いたWebアプリケーション開発Tips19選 | フューチャー技術ブログ](https://future-architect.github.io/articles/20200630/)
+引用: [go-swaggerを用いたWebアプリケーション開発Tips19選 | フューチャー技術ブログ](/articles/20200630/)
 
 あとは、考え方と優先度次第で決めることになるかと思います。
 

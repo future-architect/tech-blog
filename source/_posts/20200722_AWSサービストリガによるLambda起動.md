@@ -76,7 +76,7 @@ LocalStackを[こちら](https://github.com/localstack/localstack)からダウ�
 TMPDIR=/private$TMPDIR docker-compose up -d
 ```
 
-LocalStackの詳細については[こちらのブログ](https://future-architect.github.io/articles/20191115/)で解説しているので興味のある方は読んでみてください。
+LocalStackの詳細については[こちらのブログ](/articles/20191115/)で解説しているので興味のある方は読んでみてください。
 
 ## 同期型
 
@@ -129,7 +129,7 @@ aws lambda create-function \
   --runtime go1.x \
   --handler main \
   --zip-file fileb://main.zip \
-  --role r1 
+  --role r1
 ```
 
 Lambdaのデプロイが完了したらAPI GateAwayを作成します。
@@ -137,7 +137,7 @@ Lambdaのデプロイが完了したらAPI GateAwayを作成します。
 ```sh
 aws apigateway create-rest-api \
   --endpoint-url=http://localhost:4567 \
-  --name 'API Gateway Test' 
+  --name 'API Gateway Test'
 ```
 返ってきたidの値を後のコマンドで利用するので変数に入れておきます。
 
@@ -246,7 +246,7 @@ aws lambda create-function \
   --runtime go1.x \
   --handler main \
   --zip-file fileb://main.zip \
-  --role r1 
+  --role r1
 ```
 
 続いて今回のLambda起動となるS3バケットの作成です。
@@ -317,13 +317,13 @@ aws logs describe-log-streams \
 {
     "logStreams": [
         {
-            "firstEventTimestamp": 1585829767164, 
-            "lastEventTimestamp": 1585829767749, 
-            "creationTime": 1585829767942, 
-            "uploadSequenceToken": "1", 
-            "logStreamName": "+52222/12/12/[$LATEST]ec3fbc60", 
-            "lastIngestionTime": 1585829767947, 
-            "arn": "arn:aws:logs:us-east-1:0:log-group:/aws/lambda/s3-trigger-test:log-stream:+52222/12/12/[$LATEST]ec3fbc60", 
+            "firstEventTimestamp": 1585829767164,
+            "lastEventTimestamp": 1585829767749,
+            "creationTime": 1585829767942,
+            "uploadSequenceToken": "1",
+            "logStreamName": "+52222/12/12/[$LATEST]ec3fbc60",
+            "lastIngestionTime": 1585829767947,
+            "arn": "arn:aws:logs:us-east-1:0:log-group:/aws/lambda/s3-trigger-test:log-stream:+52222/12/12/[$LATEST]ec3fbc60",
             "storedBytes": 331
         }
     ]
@@ -343,29 +343,29 @@ aws logs get-log-events \
 
 ```json
 {
-    "nextForwardToken": "f/00000000000000000000000000000000000000000000000000000003", 
+    "nextForwardToken": "f/00000000000000000000000000000000000000000000000000000003",
     "events": [
         {
-            "ingestionTime": 1585829767947, 
-            "timestamp": 1585829767164, 
+            "ingestionTime": 1585829767947,
+            "timestamp": 1585829767164,
             "message": "\u001b[32mSTART RequestId: 43bd5e82-0bfc-1c43-b8cf-085bc34c3d36 Version: $LATEST\u001b[0m"
-        }, 
+        },
         {
-            "ingestionTime": 1585829767947, 
-            "timestamp": 1585829767359, 
+            "ingestionTime": 1585829767947,
+            "timestamp": 1585829767359,
             "message": "S3 trigger Lambda"
-        }, 
+        },
         {
-            "ingestionTime": 1585829767947, 
-            "timestamp": 1585829767554, 
+            "ingestionTime": 1585829767947,
+            "timestamp": 1585829767554,
             "message": "\u001b[32mEND RequestId: 43bd5e82-0bfc-1c43-b8cf-085bc34c3d36\u001b[0m"
-        }, 
+        },
         {
-            "ingestionTime": 1585829767947, 
-            "timestamp": 1585829767749, 
+            "ingestionTime": 1585829767947,
+            "timestamp": 1585829767749,
             "message": "\u001b[32mREPORT RequestId: 43bd5e82-0bfc-1c43-b8cf-085bc34c3d36\tInit Duration: 103.67 ms\tDuration: 2.44 ms\tBilled Duration: 100 ms\tMemory Size: 1536 MB\tMax Memory Used: 20 MB\t\u001b[0m"
         }
-    ], 
+    ],
     "nextBackwardToken": "b/00000000000000000000000000000000000000000000000000000000"
 }
 ```
@@ -452,29 +452,29 @@ aws logs get-log-events \
 
 ```json
 {
-    "nextForwardToken": "f/00000000000000000000000000000000000000000000000000000003", 
+    "nextForwardToken": "f/00000000000000000000000000000000000000000000000000000003",
     "events": [
         {
-            "ingestionTime": 1585830597603, 
-            "timestamp": 1585830596901, 
+            "ingestionTime": 1585830597603,
+            "timestamp": 1585830596901,
             "message": "\u001b[32mSTART RequestId: 38463daf-5f85-1220-65eb-9607f3f807fe Version: $LATEST\u001b[0m"
-        }, 
+        },
         {
-            "ingestionTime": 1585830597603, 
-            "timestamp": 1585830597075, 
+            "ingestionTime": 1585830597603,
+            "timestamp": 1585830597075,
             "message": " Data = test "
-        }, 
+        },
         {
-            "ingestionTime": 1585830597603, 
-            "timestamp": 1585830597250, 
+            "ingestionTime": 1585830597603,
+            "timestamp": 1585830597250,
             "message": "\u001b[32mEND RequestId: 38463daf-5f85-1220-65eb-9607f3f807fe\u001b[0m"
-        }, 
+        },
         {
-            "ingestionTime": 1585830597603, 
-            "timestamp": 1585830597425, 
+            "ingestionTime": 1585830597603,
+            "timestamp": 1585830597425,
             "message": "\u001b[32mREPORT RequestId: 38463daf-5f85-1220-65eb-9607f3f807fe\tInit Duration: 54.77 ms\tDuration: 3.63 ms\tBilled Duration: 100 ms\tMemory Size: 1536 MB\tMax Memory Used: 21 MB\t\u001b[0m"
         }
-    ], 
+    ],
     "nextBackwardToken": "b/00000000000000000000000000000000000000000000000000000000"
 }
 ```

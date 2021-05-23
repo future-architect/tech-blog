@@ -18,7 +18,7 @@ lede: "こんにちは、TIGの辻です。業務アプリケーションのビ�
 
 こんにちは、TIGの辻です。
 
-業務アプリケーションのビジネスロジックをサーバーレスで実装することも増えてきました。[AWSサービストリガによるLambda関数起動](https://future-architect.github.io/articles/20200722/)の記事にもあるようにAPI GatewayとLambda関数を組み合わせてHTTPサーバを提供することも容易にできます。バックエンドのWebAPIをLambda関数で動かすユースケースがよくあるパターンです。Lambda関数とアプリケーションロジックの実装は密結合になりやすいですが、HTTPサーバで動作するように実装して、Lambda関数として組み込むと、従来のHTTPサーバを実装するノウハウを活かしつつ、サーバレスで動作するバックエンドのWebAPIを構築できます。
+業務アプリケーションのビジネスロジックをサーバーレスで実装することも増えてきました。[AWSサービストリガによるLambda関数起動](/articles/20200722/)の記事にもあるようにAPI GatewayとLambda関数を組み合わせてHTTPサーバを提供することも容易にできます。バックエンドのWebAPIをLambda関数で動かすユースケースがよくあるパターンです。Lambda関数とアプリケーションロジックの実装は密結合になりやすいですが、HTTPサーバで動作するように実装して、Lambda関数として組み込むと、従来のHTTPサーバを実装するノウハウを活かしつつ、サーバレスで動作するバックエンドのWebAPIを構築できます。
 
 本記事ではGoを用いてサーバレスなWebAPIサーバをAWS上に1から構築するチュートリアルです。
 
@@ -90,8 +90,8 @@ AWS上に構築するインフラはTerraformで使います。一時的な動�
 
 Terraformに関しては
 
-- [はじめてのTerraform 0.12 ～環境構築～](https://future-architect.github.io/articles/20190816/)
-- [はじめてのTerraform 0.12 ～実践編～](https://future-architect.github.io/articles/20190816/)
+- [はじめてのTerraform 0.12 ～環境構築～](/articles/20190816/)
+- [はじめてのTerraform 0.12 ～実践編～](/articles/20190816/)
 
 の記事もあわせて見てみてください。その他にも技術ブログに[Terraform](https://future-architect.github.io/tags/Terraform/)に関する記事がたくさんあります。
 
@@ -413,7 +413,7 @@ $ go mod init example
 
 ## API定義
 
-GoのWebアプリケーションフレームワークはEchoやGinやchiやgo-swaggerなどいろいろありますが、今回はgo-swaggerを用いることにします。どのWebアプリケーションフレームワークを使うかはGopherの間でも意見が分かれるところなので、使い慣れたWebアプリケーションフレームがあれば、それを使うのもよしです。上記のメソッドとパスをSwaggerで記述していきます。`swagger.yaml` にすると以下のようになります。ちなみにSwaggerの書き方・規約は[スキーマファースト開発のためのOpenAPI（Swagger）設計規約](https://future-architect.github.io/articles/20200409/) の記事がオススメです。
+GoのWebアプリケーションフレームワークはEchoやGinやchiやgo-swaggerなどいろいろありますが、今回はgo-swaggerを用いることにします。どのWebアプリケーションフレームワークを使うかはGopherの間でも意見が分かれるところなので、使い慣れたWebアプリケーションフレームがあれば、それを使うのもよしです。上記のメソッドとパスをSwaggerで記述していきます。`swagger.yaml` にすると以下のようになります。ちなみにSwaggerの書き方・規約は[スキーマファースト開発のためのOpenAPI（Swagger）設計規約](/articles/20200409/) の記事がオススメです。
 
 <details><summary>swagger.yaml</summary><div>
 
@@ -595,7 +595,7 @@ data "aws_iam_policy_document" "example_lambda_policy" {
 
 ## パッケージ構成
 
-ちょっとしたLambda関数であれば `main.go` の1ファイルで良い場合もありますが、バックエンドのWebAPIを提供するとなるとそうはいかないでしょう。Goのパッケージ構成は悩みポイントの一つです。プロジェクトの規模や開発メンバのスキルセットなどにもよると思いますが、個人的にはフラットなパッケージ構成を導入することが多い気がします。[あなたのGoアプリ/ライブラリのパッケージ構成もっとシンプルでよくない？](https://future-architect.github.io/articles/20200528/)や[go-swaggerを用いたWebアプリケーション開発Tips19選](https://future-architect.github.io/articles/20200630/)の記事を参考にしてみてください。今回は以下のようなフラットパッケージとします。
+ちょっとしたLambda関数であれば `main.go` の1ファイルで良い場合もありますが、バックエンドのWebAPIを提供するとなるとそうはいかないでしょう。Goのパッケージ構成は悩みポイントの一つです。プロジェクトの規模や開発メンバのスキルセットなどにもよると思いますが、個人的にはフラットなパッケージ構成を導入することが多い気がします。[あなたのGoアプリ/ライブラリのパッケージ構成もっとシンプルでよくない？](/articles/20200528/)や[go-swaggerを用いたWebアプリケーション開発Tips19選](/articles/20200630/)の記事を参考にしてみてください。今回は以下のようなフラットパッケージとします。
 
 ```bash
 .
@@ -693,7 +693,7 @@ $ go get github.com/jessevdk/go-flags
 - [`guregu/dynamo`](https://github.com/guregu/dynamo)
 - [`google/go-cloud`](https://github.com/google/go-cloud)
 
-などがあります。個人的なおすすめは `guregu/dynamo` です。本チュートリアルでは `guregu/dynamo` を利用することにします。`guregu/dynamo` の使い方については「[DynamoDB×Go連載#1 GoでDynamoDBでおなじみのguregu/dynamoを利用する](https://future-architect.github.io/articles/20200225/)」の記事も見てみてください。
+などがあります。個人的なおすすめは `guregu/dynamo` です。本チュートリアルでは `guregu/dynamo` を利用することにします。`guregu/dynamo` の使い方については「[DynamoDB×Go連載#1 GoでDynamoDBでおなじみのguregu/dynamoを利用する](/articles/20200225/)」の記事も見てみてください。
 
 ```bash
 $ go get github.com/guregu/dynamo

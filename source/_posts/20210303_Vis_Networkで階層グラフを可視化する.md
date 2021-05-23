@@ -234,7 +234,7 @@ vis.jsを使い、ライトに階層グラフを表示・加工出来ること�
 https://www.future.co.jp/recruit/
 
 
-[^1]: フューチャー発のOSSであるCheetah Gridも高速に描画するためにcanvasを使用しています。興味がある方は[Vue\.jsで最速に始めるCheetah Grid \| フューチャー技術ブログ](https://future-architect.github.io/articles/20200901/)や[CheetahGrid\+Vue\.jsをエンプラで使ってみた \| フューチャー技術ブログ](https://future-architect.github.io/articles/20200924/)を御覧ください
+[^1]: フューチャー発のOSSであるCheetah Gridも高速に描画するためにcanvasを使用しています。興味がある方は[Vue\.jsで最速に始めるCheetah Grid \| フューチャー技術ブログ](/articles/20200901/)や[CheetahGrid\+Vue\.jsをエンプラで使ってみた \| フューチャー技術ブログ](/articles/20200924/)を御覧ください
 [^2]: [fix\(xss\)\!: don't set popup content via innerHTML by Thomaash · Pull Request \#1275 · visjs/vis\-network · GitHub](https://github.com/visjs/vis-network/pull/1275)
 [^3]: [Goでコールグラフを自作してみた \- Qiita](https://qiita.com/tanzaku/items/d21ce5c61505a8710fbe#%E8%A7%A3%E6%9E%90%E7%B5%90%E6%9E%9C-%E3%81%9D%E3%81%AE3%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%81%AE%E3%83%8E%E3%83%BC%E3%83%89%E3%82%92%E8%BF%BD%E5%8A%A0)
 [^4]: [None of the examples work on 6\.2\.0? · Issue \#183 · visjs/vis\-network · GitHub](https://github.com/visjs/vis-network/issues/183)

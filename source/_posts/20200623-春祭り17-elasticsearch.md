@@ -413,9 +413,9 @@ RDBMSでは「～と一致する」や「～を含む」などといったカッ
 
 本記事にてElasticsearchの基本に触れたのちは、当ブログの過去記事に高度な利用法も紹介されていますので、是非挑戦してみてください！
 
-- [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！](https://future-architect.github.io/articles/20160920/)
-- [マネージャーがうれしいRedmineデータのダッシュボード表示方法を公開します！！](https://future-architect.github.io/articles/20170510/)
-- [マネージャーがうれしいRedmineデータのEVM表示方法を公開します！！](https://future-architect.github.io/articles/20170119/)
+- [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！](/articles/20160920/)
+- [マネージャーがうれしいRedmineデータのダッシュボード表示方法を公開します！！](/articles/20170510/)
+- [マネージャーがうれしいRedmineデータのEVM表示方法を公開します！！](/articles/20170119/)
 
 # 参考文献
 - [Elasticsearch実践ガイド](https://www.amazon.co.jp/Elasticsearch%E5%AE%9F%E8%B7%B5%E3%82%AC%E3%82%A4%E3%83%89-impress-top-gear-%E6%83%A3%E9%81%93/dp/4295003913/ref=asc_df_4295003913/?tag=jpgo-22&linkCode=df0&hvadid=295706574430&hvpos=&hvnetw=g&hvrand=18123178779117293225&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1009309&hvtargid=pla-525424503079&psc=1&th=1&psc=1)

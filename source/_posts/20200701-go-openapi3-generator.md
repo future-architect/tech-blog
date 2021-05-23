@@ -25,8 +25,8 @@ TIG DXチーム所属の多賀です。最近はフロントのコードを書�
 Go で OpenAPI(Swagger) からコード生成する際には、 go-swagger をよく利用しています。
 go-swagger については他記事でもまとめられています。
 
-- [go-swaggerを用いたWebアプリケーション開発Tips19選](https://future-architect.github.io/articles/20200630/)
-- [WAFとして go-swagger を選択してみた](https://future-architect.github.io/articles/20190814/)
+- [go-swaggerを用いたWebアプリケーション開発Tips19選](/articles/20200630/)
+- [WAFとして go-swagger を選択してみた](/articles/20190814/)
 
 ただ、 go-swagger は Swagger 2.0 にのみ対応しており、OpenAPI 3.0 系が使えない問題がありました。最新に追従していく上でも Open API 3.0 系に寄せていきたいと考えていたので、なにか使えるツールはないか探したところ、以下を見つけました。
 
