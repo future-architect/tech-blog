@@ -30,7 +30,7 @@ lede: "私のチームでは、「システムの設計情報」や「実装に�
 
 ## 完成版コード
 
-<a href="https://github.com/r-ryu/markdown-link-checker"><img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/r-ryu/markdown-link-checker.png" width="460px"></a loading="lazy">
+<a href="https://github.com/r-ryu/markdown-link-checker"><img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/r-ryu/markdown-link-checker.png" width="460px"loading="lazy"></a>
 
 https://github.com/r-ryu/markdown-link-checker
 
