@@ -65,4 +65,4 @@ VSCode起動後、まず ctrl + O (Macの方は⌘ + O) を押下して、対象
 # 参考
 
 * [Extension Marketplace - Workspace recommended extensions](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions)
-* [VSCode の Go extension でよく利用するコマンド 7選](https://future-architect.github.io/articles/20200707/)
+* [VSCode の Go extension でよく利用するコマンド 7選](/articles/20200707/)

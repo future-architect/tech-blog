@@ -26,8 +26,8 @@ lede: "入社以降ずっと触ってきたTerraformについての様々な流�
 
 当社過去記事に解説があります。Terraformの概要や、0.12におけるシンタックス変更点や便利機能が詳細に記載されていますので、ぜひ併せてご覧ください。
 
-* [はじめてのTerraform 0.12 ～環境構築～](https://future-architect.github.io/articles/20190816/)
-* [はじめてのTerraform 0.12 ～実践編～](https://future-architect.github.io/articles/20190819/)
+* [はじめてのTerraform 0.12 ～環境構築～](/articles/20190816/)
+* [はじめてのTerraform 0.12 ～実践編～](/articles/20190819/)
 
 
 # 環境をどのように分けるか
@@ -198,14 +198,14 @@ resource "google_compute_disk" "template" {
   type  = "pd-ssd"
   size  = var.bootdisk_size
   image = centos-cloud/centos-7"
-  ...  
+  ...
 }
 ```
 
 ```bash production/main.tf(モジュール呼び出し側)
 module "gce_web" {
   source = "../module/gce"
-  
+
   name         = "web"
   internal_ip  = "10.xx.xx.xx"
   machine_type = "n1-standard-4"

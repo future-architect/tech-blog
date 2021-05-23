@@ -41,10 +41,10 @@ Goを初めて使うよってメンバーも多いので、インプット情報
 
 インプットは個人的なお勧め順に記載しています。Effective Goはそこそこ分量があるので、興味があるところだけザッと読むことが良いと思います。
 
-* **[JavaプログラマーのためのGo言語入門](https://future-architect.github.io/articles/20200311/)**
+* **[JavaプログラマーのためのGo言語入門](/articles/20200311/)**
   * 安心のフューチャー技術ブログ。翻訳本の出版ばりのクオリティーだと評判
   * 社内だと新人研修がJavaなので、新卒組には特に勧めています
-* **[Goを学ぶときにつまずきやすいポイントFAQ](https://future-architect.github.io/articles/20190713/)**
+* **[Goを学ぶときにつまずきやすいポイントFAQ](/articles/20190713/)**
   * 安心のフューチャー技術ブログ。読み応えたっぷりです
 * **[Effective Go](https://golang.org/doc/effective_go.html)**
   * 日本語訳もあるけど、ちょっと古いのでそちらは参考にする程度にしたほうが良いかも
@@ -61,7 +61,7 @@ Goを初めて使うよってメンバーも多いので、インプット情報
 
 もし、利用しているWebApplicationFrameworkがgo-swaggerであれば
 
-* [go-swaggerを用いたWebアプリケーション開発Tips19選](https://future-architect.github.io/articles/20200630/)
+* [go-swaggerを用いたWebアプリケーション開発Tips19選](/articles/20200630/)
 
 も軽く見てもらっています。
 
@@ -168,7 +168,7 @@ func writeToDB(ctx context.Context, v ExampleStruct) error {
 		WithUserID(userID)
 ```
 
-理由は、ファクトリー内で初期値を設定していたり、将来的にそういった処理が差し込まれる可能性があるためです。用意されているのであればそちらをまず優先して使いましょう。ファクトリー関数があるかどうかは、GoDocを探すことが多いと思います。GoDocの探し方にもコツがあるので、[Go Tips連載4: GoDocの読み方](https://future-architect.github.io/articles/20200521/) の記事をチェックしてみると勉強になります。
+理由は、ファクトリー内で初期値を設定していたり、将来的にそういった処理が差し込まれる可能性があるためです。用意されているのであればそちらをまず優先して使いましょう。ファクトリー関数があるかどうかは、GoDocを探すことが多いと思います。GoDocの探し方にもコツがあるので、[Go Tips連載4: GoDocの読み方](/articles/20200521/) の記事をチェックしてみると勉強になります。
 
 
 ### 3. 利用ライブラリがチェーンスタイルを提供していれば活用しよう

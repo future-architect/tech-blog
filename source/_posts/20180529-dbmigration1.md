@@ -26,7 +26,7 @@ lede: "エンタープライズ領域においてマイグレーション例が�
 OSSデータベースで広く採用されているのはPostgreSQLとMySQLがあります。今回は、エンタープライズ領域においてマイグレーション例が多いOracleからPostgreSQLについて、考慮すべき事項について2回にわたり紹介していきます。
 
 * [データベースマイグレーション ～OracleからPostgreSQLへ～　−第２回ー
-](https://future-architect.github.io/articles/20180809/) もぜひ参考ください
+](/articles/20180809/) もぜひ参考ください
 
 ## 2. マイグレーションの流れ
 
@@ -39,10 +39,10 @@ OSSデータベースで広く採用されているのはPostgreSQLとMySQLが�
 #### Quality（品質）
 「アプリケーション機能面」「システム非機能面」の両面について実現性を検討し、ノックアウト項目が存在しないかを評価します。システムによっては現行システムとのデータ連携や災害対策目的で別サイトへのレプリケーションを実現する必要が出てきます。この時点で抜け漏れが発生してしまわないように、現行の運用面を含めた細かい評価が必要となります。
 
-#### Cost（コスト）  
+#### Cost（コスト）
 マイグレーションに関連するコスト評価をおこないます。以下の2点が考えられます。
 
-1. マイグレーションに関連する費用：「アプリケーションソース移行」「データベースミドルウェア自体の移行」「データ移行」  
+1. マイグレーションに関連する費用：「アプリケーションソース移行」「データベースミドルウェア自体の移行」「データ移行」
 2. 新基盤での費用：「ソフトウェアライセンス、基盤費用」
 
 #### Delivery（納期）
@@ -234,7 +234,7 @@ PostgreSQLでも。
 [a]:https://www.pgecons.org/wp-content/uploads/PGECons/2012/WG2/10_Built-inFunctionMigrationResearch/10_Appendix_01_Built-inFunctionComparativeTable(Oracle-PostgreSQL).pdf
 
 
-OracleとPostgreSQLの両方で用意されていますが、機能仕様が全く異なる関数としては`DECODE`があります。  
+OracleとPostgreSQLの両方で用意されていますが、機能仕様が全く異なる関数としては`DECODE`があります。
 OracleではDECODE関数は条件分岐として使われています。構文としては以下です。
 
 <img src="/images/20180529/decode_oracle.png"  class="img-middle-size">
@@ -367,4 +367,4 @@ AWS DMSの詳細は[こちら](https://aws.amazon.com/jp/dms/)を参照してく
 次回は、一般的に利用されているマイグレーションツールと、実際のアプリケーションにてマイグレーションの評価をおこなった例ついて記載していきたいと思います。
 
 * [データベースマイグレーション ～OracleからPostgreSQLへ～　−第２回ー
-](https://future-architect.github.io/articles/20180809/) もぜひ参考ください
+](/articles/20180809/) もぜひ参考ください

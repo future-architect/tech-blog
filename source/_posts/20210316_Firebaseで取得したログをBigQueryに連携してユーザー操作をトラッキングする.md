@@ -38,7 +38,7 @@ lede: "[CP連載2021も折り返しの6本目です！陽光麗らかなある�
 一口にFirebaseと言っても様々な機能の集合体で構成されており、NoSQL DBを提供するCloud Firestore、クライアントアプリへのメッセージ送信機能であるFirebase Cloud Messagingなどプロダクトの数は18に及んでいます(2021.03.12現在)。
 本ブログでもFirebaseのサービスの一つであるCrashlyticsを紹介していました。
 
-* [Serverless連載4: Firebase CrashlyticsでAndroidアプリのエラーログをさくっと収集する](https://future-architect.github.io/articles/20200330/)
+* [Serverless連載4: Firebase CrashlyticsでAndroidアプリのエラーログをさくっと収集する](/articles/20200330/)
 
 各機能はFirebase Consoleを介してGUIで閲覧、操作することが可能です。
 今回はその中の`Google Analytics for Firebase`を用いてAndroidアプリの操作ログを取得していきます。
@@ -70,8 +70,8 @@ lede: "[CP連載2021も折り返しの6本目です！陽光麗らかなある�
 BigQueryの他にも、Crashlytics, FCM, Firebase Remote ConfigなどとGAを連携させることができます。
 ちなみに、BigQueryへのデータ連携は昨年のGCP連載でも話題になっていましたね。
 
-* [GCP連載#4 Cloud Life Sciencesを見てみた](https://future-architect.github.io/articles/20200210/)
-* [GCP連載#7 GCPのData Transfer Serviceを使って簡単にS3からBigQueryにデータ転送をしてみる](https://future-architect.github.io/articles/20200214/)
+* [GCP連載#4 Cloud Life Sciencesを見てみた](/articles/20200210/)
+* [GCP連載#7 GCPのData Transfer Serviceを使って簡単にS3からBigQueryにデータ転送をしてみる](/articles/20200214/)
 
 
 # 試してみる

@@ -248,7 +248,7 @@ lede: "エンタープライズでのミッションクリティカル領域に�
 
 PostgreSQLのパーティションの特性についてここで詳細は記載しませんが制約事項について理解する必要があります。理屈上は正しいが、実装してみると正しくスケールしないということもあるため確認したほうが良いでしょう。以下に参考リンクを載せておきます。
 
-* [PostgreSQLパーティションプルーニングの動作を確認する](https://future-architect.github.io/articles/20181019/)
+* [PostgreSQLパーティションプルーニングの動作を確認する](/articles/20181019/)
 * [PostgreSQL11でのテーブル・パーティショニング機能の改善](http://www.intellilink.co.jp/article/column/oss-postgres11_02.html)
 * [PostgreSQL 12: Partitioning is now faster](https://www.2ndquadrant.com/en/blog/postgresql-12-partitioning/)
 

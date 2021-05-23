@@ -68,7 +68,7 @@ OpenAPIの仕様に従ってアプリケーションが生成される以上、�
 まずは`swagger.yaml`を作成します。
 
 `swagger.yaml`の書き方は[OpenAPI Specification](https://swagger.io/specification/)などに記載があります。
-[スキーマファースト開発のためのOpenAPI（Swagger）設計規約](https://future-architect.github.io/articles/20200409/)もあわせてお読みください。
+[スキーマファースト開発のためのOpenAPI（Swagger）設計規約](/articles/20200409/)もあわせてお読みください。
 `swagger.yaml`の書き方についての詳細な説明は今回は省略します。
 
 hello worldのためのサンプルとなる`swagger.yaml`はgo-swaggerのリポジトリに用意されています。
@@ -142,7 +142,7 @@ serverディレクトリに移動し、下記コマンドでソースコード�
 swagger generate server -a factory -A factory -t gen f ./swagger/swagger.yaml
 ```
 
-オプションの詳細については[go-swaggerを用いたWebアプリケーション開発Tips19選](https://future-architect.github.io/articles/20200630/)のTips2をご覧ください。
+オプションの詳細については[go-swaggerを用いたWebアプリケーション開発Tips19選](/articles/20200630/)のTips2をご覧ください。
 
 今回は`--exclude-main`を使用せずに`main.go`も生成してもらいます。コマンドの実行に成功すると、`server/gen`配下に各種ファイルが生成されます。
 
@@ -259,6 +259,6 @@ go run gen/cmd/factory-server/main.go --host 0.0.0.0 --port 3000
 
 # go-swaggerの関してはこちらの記事もおすすめです
 
-* [go-swaggerを用いたWebアプリケーション開発Tips19選](https://future-architect.github.io/articles/20200630/)
-* [スキーマファースト開発のためのOpenAPI（Swagger）設計規約](https://future-architect.github.io/articles/20200409/)
-* [WAFとして go-swagger を選択してみた](https://future-architect.github.io/articles/20190814/)
+* [go-swaggerを用いたWebアプリケーション開発Tips19選](/articles/20200630/)
+* [スキーマファースト開発のためのOpenAPI（Swagger）設計規約](/articles/20200409/)
+* [WAFとして go-swagger を選択してみた](/articles/20190814/)

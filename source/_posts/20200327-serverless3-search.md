@@ -94,8 +94,8 @@ Goの構造体を作ると、そのメソッドがそのままJSON-RPCの外部I
 
 本ブログで、多賀さんと、武田さんがいろいろ紹介してくれていますので、使ってみました。go-swaggerとStopLight Studioを使いました。結果としてはとても良い体験が得られました。
 
-* 多賀さん: [WAFとして go-swagger を選択してみた](https://future-architect.github.io/articles/20190814/)
-* 武田さん: [本当に使ってよかったOpenAPI (Swagger) ツール](https://future-architect.github.io/articles/20191008/)
+* 多賀さん: [WAFとして go-swagger を選択してみた](/articles/20190814/)
+* 武田さん: [本当に使ってよかったOpenAPI (Swagger) ツール](/articles/20191008/)
 
 Elasticsearchクローンといっても、全部はできないので、インデックスに対するドキュメントの追加、削除、IDでの取得、検索ぐらいを定義しました（PUTはswagger上では定義したけど本体側に更新のAPI作ってなかったので使えません）。
 

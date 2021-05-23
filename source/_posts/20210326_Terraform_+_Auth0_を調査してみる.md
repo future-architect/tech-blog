@@ -25,7 +25,7 @@ https://auth0.com/blog/partners-with-hashicorp-terraform/
 
 ![](/images/20210326/image.png)
 
-Auth0の概要については[Auth0導入編](https://future-architect.github.io/articles/20200122/)をご参照ください。他にも技術ブログには[Auth0関連の記事](https://future-architect.github.io/tags/Auth0/)が沢山あります。
+Auth0の概要については[Auth0導入編](/articles/20200122/)をご参照ください。他にも技術ブログには[Auth0関連の記事](https://future-architect.github.io/tags/Auth0/)が沢山あります。
 
 
 ## Terraformとは
@@ -46,7 +46,7 @@ https://github.com/auth0/auth0-deploy-cli
 
 Auth0が出しているツールで、テナント構成をyamlに落とし込んだり、yamlに書かれたテナント構成を反映するなど、CI/CDを可能にします。
 
-Auth0 Deploy CLIについては、TIG市川さんの[Auth0の設定をバージョン管理し、Auth0 Deploy CLIを利用してデプロイ環境を整える](https://future-architect.github.io/articles/20200702/)をご参照ください。
+Auth0 Deploy CLIについては、TIG市川さんの[Auth0の設定をバージョン管理し、Auth0 Deploy CLIを利用してデプロイ環境を整える](/articles/20200702/)をご参照ください。
 
 Auth0 Deploy CLIには、`dry-run`がサポートされておらず[^8]、**実際に実行してみるまでテナント構成がどうなるのか分からない**、さらに**意図していない変更を検出出来ない**といった課題があります。
 

@@ -39,14 +39,14 @@ YAML(JSON）でWebAPIの定義を記載することで、ドキュメンテー�
 
 # Swaggerを記述する流れ
 
-Swagger(OpenAPI)のYAML定義は生で書くと大変なので、武田さんの[本当に使ってよかったOpenAPI (Swagger) ツール](https://future-architect.github.io/articles/20191008/) 記事で紹介されたツールを利用してYAMLファイルを作成し、それをインプットにサーバサイドのコードを自動生成しています。中にはそれらの文明を捨て生身のYAML職人になった猛者もいます。続いて後述するgo-swaggerでサーバサイドやクライアントサイドのコードを生成・実装・テストし、その中で足りない点を設計にフィードバック（つまりYAMLを修正）し、さらにコードを再生成するといったサイクルを取ることが一般的だと思います。
+Swagger(OpenAPI)のYAML定義は生で書くと大変なので、武田さんの[本当に使ってよかったOpenAPI (Swagger) ツール](/articles/20191008/) 記事で紹介されたツールを利用してYAMLファイルを作成し、それをインプットにサーバサイドのコードを自動生成しています。中にはそれらの文明を捨て生身のYAML職人になった猛者もいます。続いて後述するgo-swaggerでサーバサイドやクライアントサイドのコードを生成・実装・テストし、その中で足りない点を設計にフィードバック（つまりYAMLを修正）し、さらにコードを再生成するといったサイクルを取ることが一般的だと思います。
 
-実際に生成したSwaggerに対する規約は、亀井さんの[スキーマファースト開発のためのOpenAPI（Swagger）設計規約](https://future-architect.github.io/articles/20200409/)の記事を見ると、どういうところに注意すべきか分かって良いと思います。
+実際に生成したSwaggerに対する規約は、亀井さんの[スキーマファースト開発のためのOpenAPI（Swagger）設計規約](/articles/20200409/)の記事を見ると、どういうところに注意すべきか分かって良いと思います。
 
 
 # go-swaggerはWebアプリケーションフレームワーク
 
-[go-swagger](https://github.com/go-swagger/go-swagger)とは、Swaggerファイルを入力にGoのコードを生成することができるツールです。生成されるコードは、go-openapi で管理されているモジュールが利用されています。go-swaggerそのものの技術選定については、多賀さんの[WAFとして go-swagger を選択してみた](https://future-architect.github.io/articles/20190814/) 記事にも記載があります。
+[go-swagger](https://github.com/go-swagger/go-swagger)とは、Swaggerファイルを入力にGoのコードを生成することができるツールです。生成されるコードは、go-openapi で管理されているモジュールが利用されています。go-swaggerそのものの技術選定については、多賀さんの[WAFとして go-swagger を選択してみた](/articles/20190814/) 記事にも記載があります。
 
 go-swaggerがWAF(Webアプリケーションフレームワーク）というのは直感では理解しにくいですが、go-swaggerで生成したサーバサイドのコードは、実質的にechoやginのように多くの機能を持ちます。 例えば、**URLのルーティング**、**入力Validation**、**クエリパラメータ**、フォーム、リクエストヘッダ、リクエストボディなどの **入力modelへのバインディング**、**HTTPレスポンスコード別のmodelの作成**や、**Middlewareの設定専用の関数**など多くをサポートしていますし、**固有のビジネスロジックを書くルール**もgo-swaggerの生成したコードによって決められています。
 

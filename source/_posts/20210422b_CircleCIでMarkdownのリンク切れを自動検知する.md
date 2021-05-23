@@ -64,7 +64,7 @@ CircleCI の jobs 内で、markdown-link-check を呼び出します。
 
 CircleCI のチェックで、リンク切れファイルが**1つでも**存在する場合は Task failed で落としてもらうために、`xargs` を利用します。xargs を利用することで、対象ファイル全てに一括でリンターチェックが適用できます。（-exec の場合、1ファイルごとに処理されます。）
 
-- 引用: [今さらながらfindパイセンについてまとめてみた（‐execオプション）](https://future-architect.github.io/articles/20210331/)
+- 引用: [今さらながらfindパイセンについてまとめてみた（‐execオプション）](/articles/20210331/)
 
 ```bash -execとxargsの違い
 # -exex
@@ -172,5 +172,5 @@ Success!
 ## 参照記事
 
 - [markdown-link-check](https://github.com/tcort/markdown-link-check#config-file-format)
-- [今さらながらfindパイセンについてまとめてみた](https://future-architect.github.io/articles/20210331/)
+- [今さらながらfindパイセンについてまとめてみた](/articles/20210331/)
 

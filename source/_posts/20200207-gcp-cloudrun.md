@@ -41,7 +41,7 @@ Cloud Functionsは基本的に、1つのリクエストごとにインスタン�
 
 日本語のCloud Runを紹介しているサイトではまだベータ扱いの操作になっているものも多いのですが（本家のGCPの日本語ドキュメントもまだ更新されていない）[Cloud Runは昨年の11月にGAになり](https://cloud.google.com/run/docs/release-notes)、ベータが取れました。SLAも99.95%になっています。
 
-・・・というのは性能指標だけを見た場合の比較ですが、Cloud RunにはVPCに繋げられないという問題があります。今年のうちには使えるようになるらしいです。このエントリーは今後に超期待ということでの先行検証ぐらいに見ておいていただければと思います。Cloud FunctionsをVPCに接続する方法はこのブログの[Let's Try GCP #2 ～Cloud FunctionをVPC connectorと一緒に使ってみる～](https://future-architect.github.io/articles/20190927/)で紹介しています。
+・・・というのは性能指標だけを見た場合の比較ですが、Cloud RunにはVPCに繋げられないという問題があります。今年のうちには使えるようになるらしいです。このエントリーは今後に超期待ということでの先行検証ぐらいに見ておいていただければと思います。Cloud FunctionsをVPCに接続する方法はこのブログの[Let's Try GCP #2 ～Cloud FunctionをVPC connectorと一緒に使ってみる～](/articles/20190927/)で紹介しています。
 
 # Cloud Runで管理画面のウェブサービスを作る
 
@@ -447,7 +447,7 @@ $ gcloud run deploy --image asia.gcr.io/${GCP_PROJECT}/${IMAGE_NAME}
 
 最後のコマンドを起動すると、マネージドで動かすかAnthosで動かすか、どのリージョンで動かすか、名前を何にするかを聞いてきます。それに回答したらURLが表示されるので、それにアクセスすると動作が確認できます。初回は認証なしでアクセスできるかどうか、というのも聞かれました。
 
-かんたんにユーザーに使ってもらう方法としては、[Let's Try GCP #1 ～Cloud Run Buttonを使った楽々コンテナデプロイをやってみた～](https://future-architect.github.io/articles/20190909/)で紹介するCloud Run Buttonもあります。
+かんたんにユーザーに使ってもらう方法としては、[Let's Try GCP #1 ～Cloud Run Buttonを使った楽々コンテナデプロイをやってみた～](/articles/20190909/)で紹介するCloud Run Buttonもあります。
 
 # 感想
 

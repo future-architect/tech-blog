@@ -21,7 +21,7 @@ lede: "Open Policy Agent（OPA）は汎用的なポリシーエンジンで、[R
 
 こんにちは、TIG DXユニット真野です。
 
-[CNCF連載](https://future-architect.github.io/articles/20200928/)2回目はOpen Policy Agent がテーマです。前回は伊藤さんによる、[k3sを知る、動かす、感じる](https://future-architect.github.io/articles/20200929/)でした。
+[CNCF連載](/articles/20200928/)2回目はOpen Policy Agent がテーマです。前回は伊藤さんによる、[k3sを知る、動かす、感じる](/articles/20200929/)でした。
 
 
 * https://www.openpolicyagent.org/
@@ -261,7 +261,7 @@ func main() {
 
 Open API Specを用いてチームで開発する際、API定義の設定方法で揺れることは無いでしょうか？　以下のようなブログ記事が出るくらい、フューチャーでは設計の揺れを無くす努力をしています。
 
-* [スキーマファースト開発のためのOpenAPI（Swagger）設計規約](https://future-architect.github.io/articles/20200409/)
+* [スキーマファースト開発のためのOpenAPI（Swagger）設計規約](/articles/20200409/)
 
 一方でこの手の規約は生み出してしまえば、チェックするのはLinterにやらせたいものです。上記の設計規約の一部をOPAで実装してみたいと思います。Open API SpecはYAML or JSONで記載するので入力としてはOPAにフィットすると思います。
 
@@ -295,15 +295,15 @@ deny_tags_none[msg] {
 ```
 
 operationIdのcamelCaseのチェック方法は、あまり良い手じゃないですが、snake_caseでないことと、最初の1文字が小文字であることだけチェックします（単語の区切りがムズカシイので）。他にも、`split`、`object.get` など多数の組み込み関数を利用しています。
-   
-```prolog operationIdのチェック      
+
+```prolog operationIdのチェック
 package test
 
-# アンダースコアが含まれないことをチェック                                 
+# アンダースコアが含まれないことをチェック
 deny_opeId_snake_case[msg] {
     some path, method
     opeId := input.paths[path][method].operationId
-    
+
     count(split(opeId, "_")) != 1                           # snake_caseじゃないこと
     msg := sprintf("path(%v) method(%v) operationId must be camelCase: %v", [path, method, opeId])
 }
@@ -312,7 +312,7 @@ deny_opeId_snake_case[msg] {
 deny_opeId_not_camel_case[msg] {
     some path, method
     opeId := input.paths[path][method].operationId
-    
+
     substring(opeId, 0, 1) != lower(substring(opeId, 0, 1)) # 最初の1文字が小文字
     msg := sprintf("path(%v) method(%v) operationId must be camelCase: %v", [path, method, opeId])
 }
@@ -321,7 +321,7 @@ deny_opeId_not_camel_case[msg] {
 deny_opeId_startwith_http_method[msg] {
     some path, method
     opeId := input.paths[path][method].operationId
-	
+
     indexof(opeId, method) != 0  # HTTPメソッドから始まっていない
     msg := sprintf("path(%v) method(%v) operationId must be startwith http method: %v", [path, method, opeId])
 }

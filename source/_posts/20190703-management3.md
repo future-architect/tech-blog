@@ -25,7 +25,7 @@ lede: "OSSのBIツールであるMetabaseを利用して、Redmineのデータ�
 <img src="/images/20190703/photo_20190703_02.png" style="border:solid 1px #000000">
 参考：http://www.redmine.org/projects/redmine/issues/report
 
-これを何とかしようと、[以前の投稿](https://future-architect.github.io/articles/20160920/)では、Kibana+Timelionを使ってRedmineデータをグラフ表示する方法を紹介しました。
+これを何とかしようと、[以前の投稿](/articles/20160920/)では、Kibana+Timelionを使ってRedmineデータをグラフ表示する方法を紹介しました。
 
 ただ、Kibanaを利用する場合、一度Elasticsearchにデータを登録しないといけないので、手間なのですよね。。
 
@@ -239,8 +239,8 @@ https://metabase.com/docs/latest/users-guide/start.html
 
 シリーズとして連載しています。こちらもぜひどうぞ。
 
-* [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！](https://future-architect.github.io/articles/20160920/)
-* [マネージャーがうれしいRedmineデータのEVM表示方法を公開します！！](https://future-architect.github.io/articles/20170119/)
-* [マネージャーがうれしいRedmineデータのダッシュボード表示方法を公開します！！](https://future-architect.github.io/articles/20170510/)
+* [マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！](/articles/20160920/)
+* [マネージャーがうれしいRedmineデータのEVM表示方法を公開します！！](/articles/20170119/)
+* [マネージャーがうれしいRedmineデータのダッシュボード表示方法を公開します！！](/articles/20170510/)
 * マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！（Metabase編）
 

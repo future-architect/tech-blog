@@ -33,7 +33,7 @@ Futureでは約一年前にコミュニケーションツールとして採用�
 
 さて、そうなるとRedmineからSlackへ通知したくなりますね。
 
-以前[RedmineからGoogle Hangouts Chatへ連携するプラグイン](https://future-architect.github.io/articles/20190620/)を紹介しましたが今回そのSlack版を作成しましたので紹介します！
+以前[RedmineからGoogle Hangouts Chatへ連携するプラグイン](/articles/20190620/)を紹介しましたが今回そのSlack版を作成しましたので紹介します！
 
 ### 既存redmine slackプラグインとの違い
 

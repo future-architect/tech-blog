@@ -19,7 +19,7 @@ lede: "前回記事「[CloudEndure Migration - 導入編]」の続きです。�
 こんにちは。
 2020年1月中途入社、TIGの八巻です。
 
-前回記事「[CloudEndure Migration - 導入編](https://future-architect.github.io/articles/20201021/)」の続きです。
+前回記事「[CloudEndure Migration - 導入編](/articles/20201021/)」の続きです。
 今回は、実際にCloudEndure Migrationを使った移行を実践したいと思います。
 
 初期設定や用語等は、前回記事をご確認ください。
@@ -190,7 +190,7 @@ Saving to: ‘./installer_linux.py’
 IPアドレス「52.72.172.158」に接続しています。
 これは、CloudEndure Service ManagerのIPアドレスです。
 
-インストーラーが取得できない場合は、[導入編](https://future-architect.github.io/articles/20201021/)にも記載していますが、
+インストーラーが取得できない場合は、[導入編](/articles/20201021/)にも記載していますが、
 ネットワーク要件を満たしているか確認してください。
 
 ### エージェントのインストーラーを実行

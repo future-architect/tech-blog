@@ -24,7 +24,7 @@ MONETマーケットプレイスAPIを使ってみた連載の第1弾では[MONE
 
 <img src="/images/20210517a/top_page_20210316.png" alt="MONETマーケットプレイストップページ" width="1200" height="554" loading="lazy">
 
-MONETマーケットプレイスAPIを使ってみた連載の[第1弾](https://future-architect.github.io/articles/20210404/)でも触れていますが、ここでもう一度MONETマーケットプレイスのおさらいをします。
+MONETマーケットプレイスAPIを使ってみた連載の[第1弾](/articles/20210404/)でも触れていますが、ここでもう一度MONETマーケットプレイスのおさらいをします。
 
 [MONETマーケットプレイス](https://developer.monet-technologies.co.jp/)は、MaaSビジネスの実現に必要なソリューションをAPIとして提供しているサービスです。オンデマンドバスの配車システムをはじめ、多様な業界・業種の企業から提供されるデータやシステムのAPIを購入して、新たなサービスの開発に活用することができます。
 

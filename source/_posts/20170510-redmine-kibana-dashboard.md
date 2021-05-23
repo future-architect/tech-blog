@@ -80,7 +80,7 @@ C:\elastic
 ### JDBCドライバ設定
 次に、JDBCドライバを用意します。
 
-[前々回](https://future-architect.github.io/articles/20160920/)ダウンロードした「mysql-connector-java-5.1.39-bin.jar」というファイルを、
+[前々回](/articles/20160920/)ダウンロードした「mysql-connector-java-5.1.39-bin.jar」というファイルを、
 「C:\elastic\logstash-5.4.0\bin」以下に配置します。
 
 次に、「redmine.txt」というファイルを作成。中身は下記のようにします。（★を含む箇所は皆様の環境に合わせた値へ変えてください。）
@@ -127,7 +127,7 @@ output {
 }
 ```
 
-中に記載されているSQLでは、下記7つの値を取得します。なお、pv、ec、acについては、[前回の記事:EVMとは？](https://future-architect.github.io/articles/20170119/#EVMとは？)をご参照ください。
+中に記載されているSQLでは、下記7つの値を取得します。なお、pv、ec、acについては、[前回の記事:EVMとは？](/articles/20170119/#EVMとは？)をご参照ください。
 
 | SQL上の項目名 | Redmine上の項目名 　|
 |:-----------|:-----------------|
@@ -314,7 +314,7 @@ Kibanaが起動しました。
 
 ここで、EVMグラフを作成します。
 
-内容は[前回](https://future-architect.github.io/articles/20170119/)のEVMグラフと一緒。
+内容は[前回](/articles/20170119/)のEVMグラフと一緒。
 
 まず、「Timelion」画面が開くので、「Interval」に”1d”を指定。
 

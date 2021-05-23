@@ -108,7 +108,7 @@ https://github.com/aws/aws-sdk-go/blob/d8a5a9febe5602f134648c18e9f83546284cda35/
 |   4   | `MaxRetryDelay`    | リトライ時の最大の待ち時間               | 300 (秒)           |
 |   5   | `MaxThrottleDelay` | リトライスロットリング時の最大の待ち時間 | 300 (秒)           |
 
-[^3]: リトライスロットリングが何かという説明は[Introducing Retry Throttling](https://aws.amazon.com/jp/blogs/developer/introducing-retry-throttling/)や[スロットリングとの付き合い方](https://future-architect.github.io/articles/20200121/)を参照
+[^3]: リトライスロットリングが何かという説明は[Introducing Retry Throttling](https://aws.amazon.com/jp/blogs/developer/introducing-retry-throttling/)や[スロットリングとの付き合い方](/articles/20200121/)を参照
 
 # `RetryRules` を差し替える
 

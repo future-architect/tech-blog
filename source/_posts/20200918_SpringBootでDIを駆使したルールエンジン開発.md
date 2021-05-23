@@ -15,7 +15,7 @@ author: 渡邉拓
 featured: false
 lede: "はじめまして、2018年新卒入社の渡邉です。第5弾はGlyphFeedsCMSにおけるSpringを駆使したルールエンジンについてです！新聞業界の多種多様に変化する業務体系に対してどのようにシステムを構築したかご紹介致します。ニュース（＝コンテンツ）を世の中に配信していく過程において、新聞社には大きく次のアクターが関わります。"
 ---
-[GlyphFeeds連載企画](https://future-architect.github.io/articles/20200914/)第5弾の記事となります。
+[GlyphFeeds連載企画](/articles/20200914/)第5弾の記事となります。
 
 # はじめに
 はじめまして、2018年新卒入社の渡邉です。
@@ -113,7 +113,7 @@ GlyphFeedsで管理する素材データに対し、画面などから特定の�
 細かい部分はお見せできなくて申し訳ないのですが、少しでもイメージが沸くようにルールエンジン個別処理のインターフェース定義と個別処理、処理グループ実行処理の実装サンプル（大枠だけですが💦）を掲載します。
 
 
-```Java WfInstructedProcess.java（個別処理のインターフェース） 
+```Java WfInstructedProcess.java（個別処理のインターフェース）
 public interface WfInstructedProcess<T extends BaseProcessParam> {
 
 	// パラメータチェックおよび解析用のメソッド
@@ -125,7 +125,7 @@ public interface WfInstructedProcess<T extends BaseProcessParam> {
 ```
 
 
-```Java SampleProcess.java（個別処理の実装クラス） 
+```Java SampleProcess.java（個別処理の実装クラス）
 import org.springframework.stereotype.Component;
 
 @Component("Proc01") // Bean IDにルールエンジン定義と対応する処理IDを指定
@@ -147,7 +147,7 @@ public class SampleProcess implements WfInstructedProcess<SampleParam> {
 }
 ```
 
-```Java ProcessGroupExecLogic.java（処理グループ実行ロジック） 
+```Java ProcessGroupExecLogic.java（処理グループ実行ロジック）
 @Component
 public class ProcessGroupExecLogic {
 

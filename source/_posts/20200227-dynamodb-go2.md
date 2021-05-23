@@ -20,7 +20,7 @@ lede: "DynamoDB×Go連載企画の第2弾の記事となります。本記事で
 ## はじめに
 
 [DynamoDB×Go連載企画](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)第2弾の記事となります。
-[DynamoDB×Go連載#1 GoでDynamoDBでおなじみのguregu/dynamoを利用する](https://future-architect.github.io/articles/20200225/) では [guregu/dynamo](https://github.com/guregu/dynamo) を利用したDynamoDBの基本操作をご紹介しました。
+[DynamoDB×Go連載#1 GoでDynamoDBでおなじみのguregu/dynamoを利用する](/articles/20200225/) では [guregu/dynamo](https://github.com/guregu/dynamo) を利用したDynamoDBの基本操作をご紹介しました。
 
 本記事ではサードパーティ製のライブラリを利用せずaws-sdkを素で利用した場合のDynamoDBの基本操作について見ていきましょう。
 なお、公式のドキュメントは下記になりますので、より詳細な情報はこちらを参照してください。
