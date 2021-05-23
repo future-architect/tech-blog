@@ -23,14 +23,14 @@ https://auth0.com/blog/partners-with-hashicorp-terraform/
 
 ## Auth0とは
 
-![](/images/20210326/image.png)
+<img src="/images/20210326/image.png" loading="lazy">
 
 Auth0の概要については[Auth0導入編](/articles/20200122/)をご参照ください。他にも技術ブログには[Auth0関連の記事](https://future-architect.github.io/tags/Auth0/)が沢山あります。
 
 
 ## Terraformとは
 
-![](/images/20210326/image_2.png)
+<img src="/images/20210326/image_2.png" loading="lazy">
 
 TerraformとはHashiCorpによって開発されたオープンソースのクラウド管理ツールです。
 
@@ -378,7 +378,7 @@ resource "auth0_rule" "set_env" {
 2年間本当にお世話になりました。ありがとうございました！
 
 
-![](/images/20210326/kobayashi.jpg)
+<img src="/images/20210326/kobayashi.jpg" loading="lazy">
 
 
 [^1]: TIG: Technology Innovation Groupの略で、フューチャーの中でも特にIT技術に特化した部隊です。DXユニット: TIGの中にありデジタルトランスフォーメーションに関わる仕事を推進していくチームです。

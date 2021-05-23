@@ -61,7 +61,7 @@ Consumer group とは、複数の Consumer をまとめて扱う単位で、Even
 例えば、メール配信用とSlack配信用で同一 Event Hub から別々に受信処理をしたい場合は、Consumer group Mail と Consumer group Slack と分けて作成することで実現できます。その際、offset 管理を別々に実施しないとメッセージが欠けたり重複したりしてしまいます。
 
 そのため、offset の管理単位として Consumer group が利用されています。
-![](/images/20210129/azure_eventhubs_consumer_group.png)
+<img src="/images/20210129/azure_eventhubs_consumer_group.png" loading="lazy">
 
 > [Azure アーキテクチャ アイコン-コンシューマーグループ](https://docs.microsoft.com/ja-jp/azure/event-hubs/event-hubs-features#consumer-groups) からの画像
 

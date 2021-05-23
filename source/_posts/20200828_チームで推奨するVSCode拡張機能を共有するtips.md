@@ -30,16 +30,16 @@ TIG DXユニットの市川です。
 
 まず、VSCodeを起動してインストールを推奨したい拡張機能のページにアクセスします。（今回はESLintを例に説明します。）
 
-![](/images/20200828/image.png)
+<img src="/images/20200828/image.png" loading="lazy">
 
 そのあと、下記画像のようにコマンドパレットを開き、`Extensions: Add to Recommended Extensions (Workspace Folder)` を選択します。
 
-![](/images/20200828/image_2.png)
+<img src="/images/20200828/image_2.png" loading="lazy">
 
 すると、`.vscode/extensions.json` が新規作成され、ESLintの拡張機能が`recommendations` に追加されていることがわかります。
 また、`unwantedRecommendations` の項目も作成されてしますが、こちらはプロジェクトで推奨しない拡張機能を指定することが可能です。
 
-![](/images/20200828/image_3.png)
+<img src="/images/20200828/image_3.png" loading="lazy">
 
 この手順を繰り返し、プロジェクトに必要な拡張機能を`recommendations` に追加していきます。
 
@@ -50,7 +50,7 @@ TIG DXユニットの市川です。
 VSCode起動後、まず ctrl + O (Macの方は⌘ + O) を押下して、対象のアプリケーションを選択し、ディレクトリを開きます。
 下記の順で操作することで、推奨する拡張機能の候補が表示されます。
 
-![](/images/20200828/recommended.png)
+<img src="/images/20200828/recommended.png" loading="lazy">
 
 下記画像の④のマーククリックし、拡張機能をインストールしてください。
 もしVSCodeの使用に慣れており、独自で拡張機能を導入している場合は、下記に記載している拡張機能の概要を確認し、必要なものは緑色のinstallをクリックすることで、個別にインストールすることも可能です。

@@ -12,7 +12,7 @@ author: 富山龍之介
 featured: true
 lede: "私の使用するテキストエディタはVim一択でしたが、最近はVSCodeに浮気気味です。（言わずもがなVimプラグインは入れていますが）今回はVSCodeでGo言語用のデバッグ環境をテーマに執筆してみたいと思います！"
 ---
-![](/images/20201117/image.png)
+<img src="/images/20201117/image.png" loading="lazy">
 
 # はじめに
 こんにちは。TIG/DXユニットの富山です。
@@ -31,14 +31,14 @@ lede: "私の使用するテキストエディタはVim一択でしたが、最�
 ## Step 1：プラグインのインストール
 
 Googleが公開しているVSCode用のGoプラグインである、[Go for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=golang.Go)をインストールします。（2020年6月に開発管理がMicrosoftからGoogleのGo開発チームへ移管されました）。
-![](/images/20201117/image_2.png)
+<img src="/images/20201117/image_2.png" loading="lazy">
 
 インストールが終わったら、Goプラグインに必要な各種ツールをインストールしていきます。
 
 1. コマンドパレットを開く（Windows: `Ctrl + Shift` + `p` / Mac: `Command` + `Shift` + `p` ）
 2. `>Go: Install/Update Tools` と入力する。
 3. 表示されるツールから任意のツールにチェックを入れる。
-![](/images/20201117/image_3.png)
+<img src="/images/20201117/image_3.png" loading="lazy">
 4. `OK` ボタンを押下
 
 VSCode上のターミナルに下記表示がされたら成功です。
@@ -130,7 +130,7 @@ func main() {
 1. VSCodeの `RUN` コンソール画面に移動
 2. `create a launch.json file.` を押下
 3. VSCode中央上部に `Select Environment` と表示されるので、 `Go Dlv (Experimental)` を選択
-![](/images/20201117/image_4.png)
+<img src="/images/20201117/image_4.png" loading="lazy">
 
 上記 3終了後に `.vscode/launch.json` ファイルが生成されます。
 
@@ -180,13 +180,13 @@ func main() {
 9行目にブレークポイントを設定してみます。（行番号の左側をクリックで設定）
 
 赤丸が該当行左側に表示されたら、設定完了です。
-![](/images/20201117/image_5.png)
+<img src="/images/20201117/image_5.png" loading="lazy">
 
 ブレークポイントの設定が終わったら、 `F5`キーで実行してみます。
 
 RUNコンソールの`VARIABLES`部分にて、ブレークポイントで設定した行の変数の中身が確認できていますね。これは便利です。
 
-![](/images/20201117/image_6.png)
+<img src="/images/20201117/image_6.png" loading="lazy">
 また、VSCode画面中央上部に表示されているパネルでContinueをはじめ、Restartなどの操作ができます。
 
 

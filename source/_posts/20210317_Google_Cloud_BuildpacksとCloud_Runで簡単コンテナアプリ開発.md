@@ -89,7 +89,7 @@ Cloud Runにデプロイする時はContainer Registryからデプロイを行�
 1. Cloud BuildでコンテナをビルドしてContainer Registryへ保存する
 2. ローカルでビルドしてContainer Registryへpushする。
 
-![](/images/20210317/builcpack.png)
+<img src="/images/20210317/builcpack.png" loading="lazy">
 
 １の方がローカルを汚さずに済んだり、ローカルPCの能力に依存せずにビルドできるので、今回は前者で進めます。
 
@@ -116,7 +116,7 @@ $ gcloud run deploy --image=gcr.io/[project-id]/node --platform managed
 これでデプロイが終わればコンソールからCloud Runの画面に遷移して、URLをクリックすると、ローカルで見ていた画面と同じく`hello, world`が出力されているかと思います。
 これで、ローカル、コンテナアプリ、Cloud Runの３つの状態で同じアプリを利用できました。
 
-![](/images/20210317/image.png)
+<img src="/images/20210317/image.png" loading="lazy">
 
 
 ## まとめ

@@ -28,7 +28,7 @@ TIG DXユニットの真野です。ここ数年は産業向けのIoT（例え�
 
 某IoTをテーマとした案件で、Kinesisを用いたストリーミングETLなパイプラインを構築するにあたって、下図のようにKinesisの後段はGoとLambdaを採用しました。Kinesisが多段になっているのは、Rawデータと加工済みデータを別システムで利用したかったためです。
 
-![](/images/20200727/abstract.png)
+<img src="/images/20200727/abstract.png" loading="lazy">
 
 最初にKinesisにPublishするECSはJavaのKPL（Kinesis Producer Library）を用いており、当然Aggregation Format(後述します)を利用していますが、後続のGoアプリでレコードを **DeAggregation** する処理と、後続のKinesisへの再度レコードを **Aggregation** する方法があまり見当たらなかったので、実装例を残します。
 
@@ -248,7 +248,7 @@ func main() {
 
 下図のような環境を構築して動かしてみます。デプロイ方法はリポジトリのREADMEを参考ください。
 
-![](/images/20200727/1 (2).png)
+<img src="/images/20200727/1 (2).png" loading="lazy">
 
 
 

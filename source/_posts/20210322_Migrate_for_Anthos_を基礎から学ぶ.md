@@ -93,7 +93,7 @@ Windows 向けの診断ツールは Linux 向けに比べて簡素に結果を�
 
 ## 移行処理クラスタの作成
 Migrate for Anthos の実処理を行う GKE あるいは Anthos クラスタの設定を進めていきます。
-![](/images/20210322/setting-up-workflow.png)
+<img src="/images/20210322/setting-up-workflow.png" loading="lazy">
 
 ※図は[こちらの公式Doc](https://cloud.google.com/migrate/anthos/docs/setting-up-overview)から拝借しました
 
@@ -229,7 +229,7 @@ $ migctl doctor
 ※本章では Linux VM の移行を前提として記載を進めます。
 
 ## ワークロードの Migration
-![](/images/20210322/image.png)
+<img src="/images/20210322/image.png" loading="lazy">
 
 ※図は[こちらの公式Doc](https://cloud.google.com/migrate/anthos/docs/migrating-linux-vm-overview)から拝借しました
 

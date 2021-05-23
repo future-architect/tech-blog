@@ -92,7 +92,7 @@ npm install -S cheetah-grid
 
 ## 実装した画面と全体ソース
 今回実装した画面は以下です。
-![](/images/20200924/2020-09-23_20h26_14.png)
+<img src="/images/20200924/2020-09-23_20h26_14.png" loading="lazy">
 この画面全体のソースコードは以下です。
 
 ```html sample.vue
@@ -199,7 +199,7 @@ export default {
          * @param {object} rec 行データ
          * @return {void}
          */
-        onDelete (rec) { 
+        onDelete (rec) {
             const vm = this
             vm.$delete(vm.records, vm.records.indexOf(rec));
         },
@@ -234,7 +234,7 @@ export default {
         onChangedValueRec (event) {
 //          alert(`カラムの値が変わったよ：${event.value}`)
         },
-        
+
         /**
          * カラム1一括反映ボタンクリックイベント
          * @returns {void}
@@ -288,7 +288,7 @@ export default {
 ## 範囲ペースト機能
 まずは範囲ペースト機能です。クリップボードにコピーしたTSVデータを貼り付けてGrid上に反映することができます。
 
-```html 
+```html
       <c-grid ref="grid"
               :data="records"
               :frozen-col-count="3"
@@ -305,11 +305,11 @@ export default {
 
 `Ctrl+V`でペーストして反映します。
 
-![](/images/20200924/capture-range-paste_(1).gif)
+<img src="/images/20200924/capture-range-paste_(1).gif" loading="lazy">
 
 また、以下のようにExcel操作でよく使う`Ctrl+down`で全選択してコピーするような一括ペーストも`c-grid`上で可能になっています。
 
-![](/images/20200924/capture-copy-and-paste-row_(1).gif)
+<img src="/images/20200924/capture-copy-and-paste-row_(1).gif" loading="lazy">
 
 この範囲ペースト機能を利用すればWeb上でExcelライクな操作が可能となり、既存の仕組みがExcel運用だったとしても`c-grid`へ置き換えることも現実的な選択肢となりうると思います。
 
@@ -350,7 +350,7 @@ export default {
         },
 ```
 
-![](/images/20200924/capture-inpute-all.gif)
+<img src="/images/20200924/capture-inpute-all.gif" loading="lazy">
 
 仕組みは簡単で、一括反映ボタンの`click`イベントにて`c-grid`で表示しているデータセットの値を`c-gird`外の`inputAllColumn1`で置き換えています。
 ここでミソなのが、**再描画**（`vm.$refs.grid.invalidate()`）です。
@@ -406,7 +406,7 @@ export default {
           )
         },
 ```
-![](/images/20200924/capture-add-row_(1).gif)
+<img src="/images/20200924/capture-add-row_(1).gif" loading="lazy">
 実装としては、IDの最大値＋１を計算し、`records`へ追加しています。これだけで`c-grid`に新たな行を追加することが可能です。
 
 ### 入力データのバリデーション

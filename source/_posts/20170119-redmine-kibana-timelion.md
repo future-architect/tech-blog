@@ -27,7 +27,7 @@ lede: "Redmineにはデータの可視化機能が標準で搭載されていな
 
 **◆EVMグラフ例**
 
-![](/images/20170119/photo_20170119_40.png)
+<img src="/images/20170119/photo_20170119_40.png" loading="lazy">
 
 
 では早速、Kibana+Timelionを使ってみましょう。
@@ -55,7 +55,7 @@ lede: "Redmineにはデータの可視化機能が標準で搭載されていな
 - メンバーが稼働した時間（Actual Cost：**AC**）
 - 開発が完了した作業量（Earned Value：**EV**）
 
-![](/images/20170119/photo_20170119_00.png)
+<img src="/images/20170119/photo_20170119_00.png" loading="lazy">
 
 これらの数値を別々に把握できると、下記が別々に管理できそうです。
 
@@ -73,7 +73,7 @@ lede: "Redmineにはデータの可視化機能が標準で搭載されていな
 
 チケット番号#4の進捗が50%の状況ですね。
 
-![](/images/20170119/photo_20170119_49.png)
+<img src="/images/20170119/photo_20170119_49.png" loading="lazy">
 
 この場合、**PV**の累計は"**32h**"、**EV**の累計は"**28h**"。PVに対して**EV**が"**4h**"足りていないことが分かります。
 
@@ -84,7 +84,7 @@ lede: "Redmineにはデータの可視化機能が標準で搭載されていな
 
 今度は作業時間を付記してみました。
 
-![](/images/20170119/photo_20170119_50.png)
+<img src="/images/20170119/photo_20170119_50.png" loading="lazy">
 
 この場合、**AC**の累計は"**28h**"です。
 
@@ -109,7 +109,7 @@ EVMを使うことで多角的にプロジェクトを把握する事ができ�
 ## 1.環境構築
 
 **環境構成図**
-![](/images/20170119/photo_201720160928_03.png)
+<img src="/images/20170119/photo_201720160928_03.png" loading="lazy">
 
 今回もELK+Timelionを利用して、Redmineデータの可視化環境を構築します。
 
@@ -220,7 +220,7 @@ C:\elastic
 
 `logstash.bat -f redmine.txt`
 
-![](/images/20170119/photo_20170119_29.png)
+<img src="/images/20170119/photo_20170119_29.png" loading="lazy">
 
 取り込みが完了しました。
 
@@ -229,47 +229,47 @@ C:\elastic
 
 `kibana.bat`
 
-![](/images/20170119/photo_20170119_16.png)
+<img src="/images/20170119/photo_20170119_16.png" loading="lazy">
 
 Kibanaが起動しました。
 
 では、Kibanaを表示します。ブラウザで `http://localhost:5601`を開く。
 
-![](/images/20170119/photo_20170119_17.png)
+<img src="/images/20170119/photo_20170119_17.png" loading="lazy">
 
 [Configure an index pattern]という画面が開くので、[Time-field name]に"due_date"を指定します。
 
 そして、[Create]をクリック。
 
-![](/images/20170119/photo_20170119_30.png)
+<img src="/images/20170119/photo_20170119_30.png" loading="lazy">
 
 そして、左側の[Timelion]をクリックすると、Timelionの画面が開きます。
 
-![](/images/20170119/photo_20170119_21.png)
+<img src="/images/20170119/photo_20170119_21.png" loading="lazy">
 
 グラフが出ましたね！
 
 次は、少し見やすくするために、グラフエリアを最大化します。
 グラフにカーソルを当てると[Full screen]ボタンが表示されるのでクリック。
 
-![](/images/20170119/photo_20170119_22.png)
+<img src="/images/20170119/photo_20170119_22.png" loading="lazy">
 
 するとグラフが最大化されます。
 そして、次は表示期間を変更します。右上[Last 15 minutes]ををクリック。
 
-![](/images/20170119/photo_20170119_23.png)
+<img src="/images/20170119/photo_20170119_23.png" loading="lazy">
 
 すると日付が選べます。今回は[Last 1 Year]をクリック。
 
-![](/images/20170119/photo_20170119_08.png)
+<img src="/images/20170119/photo_20170119_08.png" loading="lazy">
 
 次に、画面右上あたりの[Last 1 Year]をクリック。
 
-![](/images/20170119/photo_20170119_24.png)
+<img src="/images/20170119/photo_20170119_24.png" loading="lazy">
 
 グラフが大きく見やすくなりましたね。
 
-![](/images/20170119/photo_20170119_25.png)
+<img src="/images/20170119/photo_20170119_25.png" loading="lazy">
 
 ## 3.EVM 表示
 
@@ -277,7 +277,7 @@ Kibanaが起動しました。
 `.es(metric='sum:pv', timefield='due_date').cusum().label('[累積]pv')`
 に変更します。
 
-![](/images/20170119/photo_20170119_38.png)
+<img src="/images/20170119/photo_20170119_38.png" loading="lazy">
 
 PVの累計が期日別に表示されました。
 
@@ -291,7 +291,7 @@ PVの累計が期日別に表示されました。
 `.es(metric='sum:pv', timefield='due_date').cusum().label('[累積]pv'),.es(metric='sum:ev', timefield='updated_on').cusum().label('[累積]ev')`
 に変更します。
 
-![](/images/20170119/photo_20170119_39.png)
+<img src="/images/20170119/photo_20170119_39.png" loading="lazy">
 
 すると、EVの累計が更新日別に表示されます。
 
@@ -305,7 +305,7 @@ PVの累計が期日別に表示されました。
 `.es(metric='sum:pv', timefield='due_date').cusum().label('[累積]pv'),.es(metric='sum:ev', timefield='updated_on').cusum().label('[累積]ev'),.es(metric='sum:ac', timefield='updated_on').cusum().label('[累積]ac')`
 に変更します。
 
-![](/images/20170119/photo_20170119_40.png)
+<img src="/images/20170119/photo_20170119_40.png" loading="lazy">
 
 すると、ACの累計が更新日別に表示されます。
 
@@ -315,21 +315,21 @@ PVの累計が期日別に表示されました。
 
 左下の[Exit full screen]をクリックし、グラフの大きさを元に戻します。
 
-![](/images/20170119/photo_20170119_41.png)
+<img src="/images/20170119/photo_20170119_41.png" loading="lazy">
 
 そして、右上の[Add]をクリック。
 
-![](/images/20170119/photo_20170119_42.png)
+<img src="/images/20170119/photo_20170119_42.png" loading="lazy">
 
 グラフが追加されました。
 
-![](/images/20170119/photo_20170119_43.png)
+<img src="/images/20170119/photo_20170119_43.png" loading="lazy">
 
 そして、`.es(*)`という記載を
 `.es(metric='sum:ev', timefield='updated_on').cusum().divide(.es(metric='sum:ac', timefield='updated_on').cusum()).label('cpi').yaxis(min=0.75, max=1.25)`
 に変更すると。
 
-![](/images/20170119/photo_20170119_48.png)
+<img src="/images/20170119/photo_20170119_48.png" loading="lazy">
 
 CPIが表示されました。
 

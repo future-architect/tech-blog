@@ -70,7 +70,7 @@ https://cloud.google.com/about/locations?hl=ja#network
 
 こちらの [Compute Engine リージョンとゾーン](https://cloud.google.com/compute/docs/regions-zones?hl=ja) に記載の全Region を対象にします。
 ※すいません、ムンバイだけ、QuotaがデフォルトでCPUS:0となっており、上げるリクエストを出したんですが、拒否されてしまいました。その関係で、ムンバイだけ計測が出来ませんでした🙇‍♂️
-![](/images/20200813/2020-08-02_233921.png)
+<img src="/images/20200813/2020-08-02_233921.png" loading="lazy">
 
 ###
 
@@ -87,7 +87,7 @@ https://cloud.google.com/about/locations?hl=ja#network
 - 青：20ms。サクサク
 - 黄：60ms。ギリギリ我慢できるレベル
 - 赤：それ以上。これはサービスとしてはよろしくない
-![](/images/20200813/2020-08-02_231622.jpg)
+<img src="/images/20200813/2020-08-02_231622.jpg" loading="lazy">
 
 # 考察
 

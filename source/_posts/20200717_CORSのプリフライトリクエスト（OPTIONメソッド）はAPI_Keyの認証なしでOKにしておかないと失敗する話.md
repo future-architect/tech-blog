@@ -36,14 +36,14 @@ CORSとは **オリジン間リソース共有**（Cross-Origin Resource Sharing
 
 `'Access-Control-Allo-Origin' header is present on the requested resource.` といったメッセージをブラウザのデベロッパーツールのコンソールで一度は見かけた人も多いのではないでしょうか？
 
-![](/images/20200717/thumbnail.png)
+<img src="/images/20200717/thumbnail.png" loading="lazy">
 
 
 # CORSのプリフライトリクエストについて
 
 もし、WebAPIのリクエストに `x-api-key` のようなフィールドを用いて認証を行っている場合は、CORSの仕様では実際のHTTPリクエストを行う前に、 **プリフライトリクエスト** という、 **OPTIONS** メソッドでサーバに要求が行われます。
 
-![](/images/20200717/preflight_correct.png)
+<img src="/images/20200717/preflight_correct.png" loading="lazy">
 
 [オリジン間リソース共有 (CORS)](https://developer.mozilla.org/ja/docs/Web/HTTP/CORS#Preflighted_requests) から引用
 
@@ -114,7 +114,7 @@ Vary: Access-Control-Request-Headers
 
 Chromeブラウザだけかもしれませんが、プリフライトリクエストはデベロッパーツール上からは省略されていて分かりにくいです。これは `chrome://flags/#out-of-blink-cors` で`Out of blink CORS` を Disableにすれば表示することができます。
 
-![](/images/20200717/image.png)
+<img src="/images/20200717/image.png" loading="lazy">
 
 また、脳内でブラウザの気持ちになることができるのであれば、先ほどのcurlで適切なリクエストヘッダを付与することでサーバサイドが想定通りか確認することができます。
 
@@ -123,11 +123,11 @@ Chromeブラウザだけかもしれませんが、プリフライトリクエ�
 
 上記で色々切り分けていくと、原因はアプリケーションコード側ではなく、**WAF**(ウェブアプリケーションファイアウォール)側にありました。今回の構成は以下のように、連携先のフロントエンド側ごとにAPI Keyを発行して、それをWAFで認証する仕組みでした。私が確認したのは開発環境であり、プロダクションやステージングとは環境差異があったようです。
 
-![](/images/20200717/CORSとWAFブログ用.png)
+<img src="/images/20200717/CORSとWAFブログ用.png" loading="lazy">
 
 APIキーは `x-api-key:aZ12kXCqGrZ9QTnqDtid1P6j2J7luB3v`のようなイメージでリクエストヘッダに付与するルールで、これが付与されていないとWAF側でブロックします（403 Forbiddenを返します）。
 
-![](/images/20200717/cors_sequence.png)
+<img src="/images/20200717/cors_sequence.png" loading="lazy">
 
 プリフライトリクエストをWAFがブロックすのは想定外で、考慮が漏れていました。分かったときは「なるほど！」とちょっと大きな声を上げました。WAFの設定はどちらかと言えばインフラ側のメンバーが設定したのでお互いの考慮が漏れやすいポイントでもあった気がします。
 
@@ -151,13 +151,13 @@ WAFの変更後のルール：
 
 今回、WAFはAWS WAFを利用していたので、2のプリフライトリクエストかどうかのチェックは `String and regex match conditions`のフィルターで、HTTP Methodを選択できるため、`Match type`を `Exactly matches`を選択し、Value to matchに `OPTIONS` を設定します。
 
-![](/images/20200717/image.png)
+<img src="/images/20200717/image.png" loading="lazy">
 
 あとは、web ACLに先ほど作成したPreflight-request-checkのルールをAPI Keyのルールに追加し、`Default action`に`Block all requests that don't match any rules` を選択すれば、API Key認証を残しつつ、しかしプリフライトリクエストを受け付けることができます。
 
 この対応で無事WebAPIをブラウザが利用することができました！
 
-![](/images/20200717/68747470733a2f2.png)
+<img src="/images/20200717/68747470733a2f2.png" loading="lazy">
 
 
 
