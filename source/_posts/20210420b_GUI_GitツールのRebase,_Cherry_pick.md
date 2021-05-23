@@ -31,21 +31,21 @@ GitのBranch作成やCheckout, Commit, Pushまで使えた方向けに、次の�
 `feature` ブランチは個人の開発ブランチです。`master` ブランチは状況により `develop` ブランチなどに適宜読みかえください。
 
 ### 初期状態
-![初期状態のブランチ](/images/20210420b/commit_base.png)
+<img src="/images/20210420b/commit_base.png" alt="初期状態のブランチ" loading="lazy">
 
 ### masterブランチへRebase
 `git rebase master` に相当
-![Rebase動作イメージ](/images/20210420b/commit_rebase_master.png)
+<img src="/images/20210420b/commit_rebase_master.png" alt="Rebase動作イメージ" loading="lazy">
 
 
 ### コミットをまとめる(Squash)
 `git rebase -i` に相当
-![Squash動作イメージ](/images/20210420b/commit_rebase_squash.png)
+<img src="/images/20210420b/commit_rebase_squash.png" alt="Squash動作イメージ" loading="lazy">
 
 
 ### 別ブランチのコミットを持ってくる(Cherry-pick)
 `git cherry-pick` に相当
-![Cherry-pick動作イメージ](/images/20210420b/2021-03-26-16-34-37.png)
+<img src="/images/20210420b/2021-03-26-16-34-37.png" alt="Cherry-pick動作イメージ" loading="lazy">
 
 ## Sourcetree
 
@@ -55,7 +55,7 @@ GitのBranch作成やCheckout, Commit, Pushまで使えた方向けに、次の�
 2. リベースしたい先(masterブランチ)で右クリックし、「リベース...」を選択
 3. 「リベースの確認」ダイアログが立ち上がり、「OK」をクリック
 4. featureブランチがmasterブランチから生えていることを確認
-![Sourcetree Rebase操作動画](/images/20210420b/sourcetree_rebase_master.gif)
+<img src="/images/20210420b/sourcetree_rebase_master.gif" alt="Sourcetree Rebase操作動画" loading="lazy">
 
 
 ### コミットをまとめる(Squash)
@@ -68,7 +68,7 @@ GitのBranch作成やCheckout, Commit, Pushまで使えた方向けに、次の�
 6. コミットメッセージを編集し「OK」ボタンを押し、メッセージが変更されたことを確認
 7. 「OK」ボタンを押してリベースを確定する
 8. Sourcetree画面に反映されない場合には「F5」を押し更新
-![Sourcetree Squash操作動画](/images/20210420b/sourcetree_rebase_squash.gif)
+<img src="/images/20210420b/sourcetree_rebase_squash.gif" alt="Sourcetree Squash操作動画" loading="lazy">
 
 
 ### 別ブランチのコミットを持ってくる(Cherry-pick)
@@ -78,7 +78,7 @@ GitのBranch作成やCheckout, Commit, Pushまで使えた方向けに、次の�
 3. 「チェリーピック」を選択
 4. チェリーピックダイアログが立ち上がる。「OK」を選択
 5. featureブランチに持ってきたコミットが追加されてることを確認
-![Sourcetree Cherry-pick操作動画](/images/20210420b/sourcetree_cherrypick.gif)
+<img src="/images/20210420b/sourcetree_cherrypick.gif" alt="Sourcetree Cherry-pick操作動画" loading="lazy">
 
 
 ## Visual Studio Code with Git Graphプラグイン
@@ -88,7 +88,7 @@ GitのBranch作成やCheckout, Commit, Pushまで使えた方向けに、次の�
 1. 以下のプラグインをインストール
     [Git Graph - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 2. Git Graph画面を開く
-![VS Code動作動画](/images/20210420b/gitgraph_open.gif)
+<img src="/images/20210420b/gitgraph_open.gif" alt="VS Code動作動画" loading="lazy">
 
 ### masterブランチへRebase
 
@@ -96,7 +96,7 @@ GitのBranch作成やCheckout, Commit, Pushまで使えた方向けに、次の�
 2. リベースしたい先(masterブランチ)で右クリックし、「Rebase current branch on this Commit...」を選択
 3. ダイアログが立ち上がり、「Yes, rebase」をクリック
 4. featureブランチがmasterブランチから生えていることを確認
-![VS Code動作動画](/images/20210420b/gitgraph_rebase_master.gif)
+<img src="/images/20210420b/gitgraph_rebase_master.gif" alt="VS Code動作動画" loading="lazy">
 
 ### コミットをまとめる(Squash)
 [Issue](https://github.com/mhutchie/vscode-git-graph/issues/410)が上がっているが、GUI単独では現時点でできない。
@@ -109,14 +109,14 @@ GitのBranch作成やCheckout, Commit, Pushまで使えた方向けに、次の�
 3. 「Cherry Pick...」を選択
 4. ダイアログが立ち上がり、「Yes, cherry pick」を選択
 5. featureブランチに持ってきたコミットが追加されてることを確認
-![VS Code動作動画](/images/20210420b/gitgraph_cherrypick.gif)
+<img src="/images/20210420b/gitgraph_cherrypick.gif" alt="VS Code動作動画" loading="lazy">
 
 ## IntelliJ IDEA
 
 ### 事前準備
 
 「View」メニューから「Tool Windows」⇒「Git」と選択しGitの画面を表示する
-![IntelliJ IDEAのGitプラグインのインストール](/images/20210420b/intellij_open.gif)
+<img src="/images/20210420b/intellij_open.gif" alt="IntelliJ IDEAのGitプラグインのインストール" loading="lazy">
 
 
 ### masterブランチへRebase
@@ -124,7 +124,7 @@ GitのBranch作成やCheckout, Commit, Pushまで使えた方向けに、次の�
 1. リベースしたい元(featureブランチ)をチェックアウト
 2. 左のブランチ一覧からリベースしたい先(masterブランチ)で右クリックし、「Rebase Current onto Selected」を選択
 3. featureブランチがmasterブランチから生えていることを確認
-![IntelliJの操作動画](/images/20210420b/intellij_rebase_master.gif)
+<img src="/images/20210420b/intellij_rebase_master.gif" alt="IntelliJの操作動画" loading="lazy">
 
 ### コミットをまとめる(Squash)
 
@@ -135,7 +135,7 @@ GitのBranch作成やCheckout, Commit, Pushまで使えた方向けに、次の�
 5. コミットメッセージを編集しエディタ外をクリックし、メッセージが変更されたことを確認
 6. 「Start Rebasing」ボタンを押してリベースを確定する
 7. コミットがまとまったことを確認
-![IntelliJの操作動画](/images/20210420b/intellij_rebase_squash.gif)
+<img src="/images/20210420b/intellij_rebase_squash.gif" alt="IntelliJの操作動画" loading="lazy">
 
 ## おわりに
 

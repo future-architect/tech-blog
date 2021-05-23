@@ -14,7 +14,7 @@ author: 棚井龍之介
 featured: false
 lede: "認証情報を Lambda の環境変数に渡す要件が発生したため認証情報を KMS で暗号化して、リポジトリには暗号化した値を登録し、Lambda 内で復号化する構成を取りました。"
 ---
-![アイキャッチ](/images/20210413a/Screen_Shot_2021-03-24_at_2.18.57.png)
+<img src="/images/20210413a/Screen_Shot_2021-03-24_at_2.18.57.png" alt="アイキャッチ" loading="lazy">
 
 # はじめに
 フューチャーの棚井龍之介です。
@@ -197,7 +197,7 @@ resource "aws_lambda_function" "kms_lambda" {
 ```
 
 手動で設定を行う場合は環境変数の設定から暗号化設定を有効化します。
-![環境変数の編集画面](/images/20210413a/lambda.png)
+<img src="/images/20210413a/lambda.png" alt="環境変数の編集画面" loading="lazy">
 
 ## Lambda で復号化
 以下のコードを Lambda にデプロイして、復号化結果を取得してみます。

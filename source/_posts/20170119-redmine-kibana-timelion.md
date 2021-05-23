@@ -13,7 +13,7 @@ featured: false
 lede: "Redmineにはデータの可視化機能が標準で搭載されていないという課題があります。そこで、Kibana＋Timelionを使ってRedmineデータをEVM表示する方法を紹介します"
 ---
 
-![アイキャッチ](/images/20170119/top.jpg)
+<img src="/images/20170119/top.jpg" alt="アイキャッチ" loading="lazy">
 
 ## はじめに
 

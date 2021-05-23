@@ -108,7 +108,7 @@ Google Hangoutsは任意の値をスレッドIDとすることができるため
    * https://api.slack.com/apps/
 3. Slack App作成
    * 画面右上の「Create New App」をクリックしてください。
-   ![2021-03-02_17h02_40.png](/images/20210413b/20210302_050412_MUu9IrrIbg7w.png)
+   <img src="/images/20210413b/20210302_050412_MUu9IrrIbg7w.png" alt="2021-03-02_17h02_40.png" loading="lazy">
 4. Slack App基本情報の入力
    * 立ち上がったポップアップへ以下情報を入力して、「Create App」をクリックして、保存してください。
    | 項目名 |値 | 説明 |
@@ -116,21 +116,21 @@ Google Hangoutsは任意の値をスレッドIDとすることができるため
    | App Name | Slack App名 ||
    | Development Slack Workspace | 連携するSlackチャンネルのワークスペース ||
 
-   ![2021-03-02_17h35_28.png](/images/20210413b/20210311_061735_szaJQUXknPxD.png)
+   <img src="/images/20210413b/20210311_061735_szaJQUXknPxD.png" alt="2021-03-02_17h35_28.png" loading="lazy">
 5. 「OAuth & Permissions」画面を開く
     * 画面の左側メニューの「Features」->「OAuth & Permissions」をクリックしてください。
-    ![2021-03-02_20h17_33.png](/images/20210413b/20210311_061919_Y8ExQo1I03HK.png)
+    <img src="/images/20210413b/20210311_061919_Y8ExQo1I03HK.png" alt="2021-03-02_20h17_33.png" loading="lazy">
 6. Scopes追加
     * 画面の中央に「Scopes」->「Bot Token Scopes」->「Add an OAuth Scope」をクリックして、chat:write、chat:write.customize、chat:write.publicのscopeを追加してください。
-    ![2021-03-02_20h30_16.png](/images/20210413b/20210302_083053_jNMHi35XtJ4D.png)
+    <img src="/images/20210413b/20210302_083053_jNMHi35XtJ4D.png" alt="2021-03-02_20h30_16.png" loading="lazy">
 7. Bot User OAuth Token作成
     * 画面の上に「OAuth Tokens & Redirect URLs」->「Install to Workspace」をクリックしてください。
-    ![2021-03-02_20h39_02.png](/images/20210413b/20210302_084904_6h6zUh2LRNeE.png)
+    <img src="/images/20210413b/20210302_084904_6h6zUh2LRNeE.png" alt="2021-03-02_20h39_02.png" loading="lazy">
     立ち上がったポップアップの「許可する」をクリックして、Bot User OAuth Tokenを作成します。
-    ![2021-03-02_20h53_11.png](/images/20210413b/20210311_062417_BXwWoDuY3G67.png)
+    <img src="/images/20210413b/20210311_062417_BXwWoDuY3G67.png" alt="2021-03-02_20h53_11.png" loading="lazy">
 8. Bot User OAuth Tokenをコピー
     * 「OAuth Tokens for Your Team」-> 「Bot User OAuth Token」のトークン内容をメモしてください。（「Copy」をクリック）
-    ![2021-03-02_20h56_42.png](/images/20210413b/20210302_090112_KthIlVZmu6RK.png)
+    <img src="/images/20210413b/20210302_090112_KthIlVZmu6RK.png" alt="2021-03-02_20h56_42.png" loading="lazy">
 
 ​
 ### 3. Redmine設定​
@@ -144,7 +144,7 @@ Google Hangoutsは任意の値をスレッドIDとすることができるため
 5. 「Slack Disabled」を「いいえ」に選択してください。
 6. 「保存」をクリックして、設定内容を保存してくだくさい。
 
-![2021-03-03_16h38_35.png](/images/20210413b/20210311_063301_O4jfcZ1FSAny.png)
+<img src="/images/20210413b/20210311_063301_O4jfcZ1FSAny.png" alt="2021-03-03_16h38_35.png" loading="lazy">
 
 #### 3-2. 特定子プロジェクトだけ通知を無効
 
@@ -157,7 +157,7 @@ Google Hangoutsは任意の値をスレッドIDとすることができるため
 3. 「Slack Disabled」を「はい」に選択してください。
 4. 「保存」をクリックして、設定内容を保存してください。
 
-![2021-03-04_11h11_29.png](/images/20210413b/20210311_063536_RFkCB7QcO9e8.png)
+<img src="/images/20210413b/20210311_063536_RFkCB7QcO9e8.png" alt="2021-03-04_11h11_29.png" loading="lazy">
 
 #### 3-3. 特定ユーザだけ通知を無効
 
@@ -167,24 +167,24 @@ Google Hangoutsは任意の値をスレッドIDとすることができるため
 
 設定はビルドユーザでログインしてビルドユーザの個人設定画面で行ってください。
 ​
-![2021-03-04_11h14_25.png](/images/20210413b/20210304_111712_yt9XAeY0BE7p.png)
+<img src="/images/20210413b/20210304_111712_yt9XAeY0BE7p.png" alt="2021-03-04_11h14_25.png" loading="lazy">
 
 
 ## 動作確認
 ​
 ### チケット新規起票
 
-![2021-03-04_11h32_12.png](/images/20210413b/20210311_064251_fBozRNNlpJMZ.png)
+<img src="/images/20210413b/20210311_064251_fBozRNNlpJMZ.png" alt="2021-03-04_11h32_12.png" loading="lazy">
 
 ### チケット更新
 
-![2021-03-04_11h48_25.png](/images/20210413b/20210311_064454_UEQgnwhbNw6p.png)
+<img src="/images/20210413b/20210311_064454_UEQgnwhbNw6p.png" alt="2021-03-04_11h48_25.png" loading="lazy">
 
 ### Slackスレッドで議論
 
 ​一例ですが、Redmineの更新を受けてSlackスレッドで議論することで対応をスムーズに進めることができます。
 
-![2021-03-16_15h18_43.png](/images/20210413b/20210316_034609_GO1fXyegzuce.png)
+<img src="/images/20210413b/20210316_034609_GO1fXyegzuce.png" alt="2021-03-16_15h18_43.png" loading="lazy">
 
 
 ## おわりに
