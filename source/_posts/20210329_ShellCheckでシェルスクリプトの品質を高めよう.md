@@ -14,7 +14,7 @@ featured: true
 lede: "シェルスクリプト連載の第一弾です。シェルスクリプトは強力かつ便利で、いろいろなところで使われています。ただ、自由度が高い一方で、ちょっとしたミスを犯しやすく、かつミスに気づきにくい、ということも多いです。また、ミスに気づいたときには大きな影響が及んでいる、ということもあるでしょう。"
 ---
 
-![eye-catch-shell](/images/20210329/eye-catch.webp)
+<img src="/images/20210329/eye-catch.webp" alt="eye-catch-shell" loading="lazy">
 
 > [Hans](https://pixabay.com/ja/users/hans-2/)による[Pixabay](https://pixabay.com/ja/)からの画像
 
@@ -24,7 +24,7 @@ lede: "シェルスクリプト連載の第一弾です。シェルスクリプ�
 
 本記事では、シェルスクリプトの品質を高めるために [ShellCheck](https://github.com/koalaman/shellcheck) というツールを使って、シェルスクリプトの品質や安全性を高めよう、という趣旨の記事です。
 
-[![koalaman/shellcheck - GitHub](https://gh-card.dev/repos/koalaman/shellcheck.svg)](https://github.com/koalaman/shellcheck)
+[<img src="https://github.com/koalaman/shellcheck" alt="koalaman/shellcheck - GitHub](https://gh-card.dev/repos/koalaman/shellcheck.svg)" loading="lazy">
 
 
 ## `ShellCheck` を使うと何がうれしいの？
