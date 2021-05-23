@@ -1,3 +1,4 @@
+---
 title: "HTTP検索条件、GETにするか？POSTにするか？"
 date: 2021/05/18 00:00:00
 postid: a
@@ -16,31 +17,31 @@ lede: "RESTfullとかRESTishな方針でWebAPIの横断検索を設計する際�
 
 TIG DXユニット[^1]真野です。
 
-[^1]: Technology Innovation Group（TIG）は、「最先端、且つ先進的なテクノロジーのプロフェッショナル集団」、「プロジェクト品質と生産性の向上」、「自社サービス事業の立ち上げ」を主なミッションとする、技術部隊です。DXユニットとはデジタルトランスフォーメーションを推進するチームで、IoTやらMaaSなどのテクノロジーカットでビジネス転換を行っています。
+[^1]: Technology Innovation Group（TIG）は、「最先端、且つ先進的なテクノロジーのプロフェッショナル集団」、「プロジェクト品質と生産性の向上」、「自社サービス事業の立ち上げ」を主なミッションとする、技術部隊です。DXユニットとはデジタルトランスフォーメーションを推進するチームで、IoTやらMaaSなどのテクノロジーカットでビジネス転換を支援しています。
 
-RESTfullとかRESTishな方針でWebAPIの横断検索を設計する際にチーム内で方針について議論したやり取りの備忘記事です。
+RESTfullとかRESTishな方針でWebA PIの横断検索を設計する際にチーム内で方針について議論したやり取りの備忘記事です。
 
-注意としてB2C向けなWebAPIを提供するというよりは、主に企業間または企業内部で使われるようなAPIの設計のバイアスがあると思います。LSUDs（Large Set of Unknown Developers）かSSKDs（Small Set of Known Developers）で言えば、確実にSSKDs脳で記事が書かれています。
+注意としてB2C向けなWeb APIを提供するというよりは、主に企業間または企業内部で使われるようなAPIの設計のバイアスがあります。LSUDs（Large Set of Unknown Developers）かSSKDs（Small Set of Known Developers）で言えば、確実にSSKDs脳で記事が書かれています。
 
 
 ## REST API
 
-広く使われているため日本語記事も多数です。[実践RESTful HTTP - InfoQ](https://www.infoq.com/jp/articles/designing-restful-http-apps-roth/) や、[0からREST APIについて調べてみた](https://qiita.com/masato44gm/items/dffb8281536ad321fb08) など良さそうな記事が沢山でてくるの読むと良いかなと思います。一般的な設計方法はやや古いですが[Web API: The Good Parts](https://www.oreilly.co.jp/books/9784873116860/)の書籍が短くまとまっているためサクッと目を通す人が多いかなと思います。
+広く使われているため日本語記事も多数です。[実践RESTful HTTP - InfoQ](https://www.infoq.com/jp/articles/designing-restful-http-apps-roth/) や、[0からREST APIについて調べてみた](https://qiita.com/masato44gm/items/dffb8281536ad321fb08) など良さそうな記事が沢山でてくるの読むと良いでしょう。一般的な設計方法はやや古いですが[Web API: The Good Parts](https://www.oreilly.co.jp/books/9784873116860/)の書籍が短くまとまっているためサクッと目を通す人が多いかなと思います。
 
 ## 背景と論点
 
 <img src="/images/20210518a/choice-2692575_640.jpg" alt="アイキャッチ" width="640" height="237" loading="lazy">
 
-<a href="https://pixabay.com/ja/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2692575">Gerd Altmann</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2692575">Pixabay</a>からの画像
+> <a href="https://pixabay.com/ja/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2692575">Gerd Altmann</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2692575">Pixabay</a>からの画像
 
 やりたいことの背景です。
 
-* **WebAPIで横断的な検索条件を指定したい**
+* **Web APIで横断的な検索条件を指定したい**
     * アプリケーションドメインとしてネストを含む構造化が必要
         * JSONで指定できるようにしたい
 * URLのクエリパラメータにすることも考えたが、検索条件だけURLエンコードにするのは特殊すぎるので避けたい
     * あと、最大URL長を超える可能性がゼロではないので避けておきたい
-* 既存はRESTishなWebAPIであるため、ここだけgRPCとかGraphQLにするのは状況的に不可
+* 既存はRESTishなWeb APIであるため、ここだけgRPCとかGraphQLにするのは状況的に不可
 
 このため、 **検索条件はリクエストボディにJSONで指定する** ことにします。リクエストボディにJSONをもたせること自体は、OpenAPIでも普通に記述できますし一般的でしょう。
 
