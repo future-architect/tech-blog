@@ -1,11 +1,12 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "future-tech-blog",
+  "version": "0.1.0",
   "private": true,
   "hexo": {
     "version": "5.4.0"
   },
   "dependencies": {
+    "googleapis": "^73.0.0",
     "hexo": "^5.4.0",
     "hexo-footnotes": "^1.0.2",
     "hexo-fs": "^3.1.0",

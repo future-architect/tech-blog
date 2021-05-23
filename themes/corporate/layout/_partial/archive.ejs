@@ -18,11 +18,18 @@
       <% } %>
     </section>
   <% } %>
+
     <aside>
       <section>
         <div class="margin-bottom-20 nav">
+          <h2>最近の人気記事</h2>
+          <div class="widget-wrap">
+            <%- popular_posts() %>
+          </div>
+        </div>
+        <div class="margin-bottom-20 nav">
           <h2>注目の記事</h2>
-          <%- partial('../_partial/featured-post.ejs', {limit:10}) %>
+          <%- partial('../_partial/featured-post.ejs', {limit:5}) %>
         </div>
         <div class="blog-tags margin-bottom-20">
           <h2>タグから記事を探す</h2>
