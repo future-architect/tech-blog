@@ -13,7 +13,7 @@ featured: false
 lede: "go-swaggerの具体的な実装方法を紹介します。はじめにgo-swaggerのインストールを行います"
 ---
 
-<img src="/images/20200824/top.png" class="img-small-size">
+<img src="/images/20200824/top.png" class="img-small-size" loading="lazy">
 
 The Gopher character is based on the Go mascot designed by [Renée French](http://reneefrench.blogspot.com/).
 

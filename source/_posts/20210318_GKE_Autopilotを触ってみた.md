@@ -42,7 +42,7 @@ GKE(Google Kubernetes Engine)とは、GoogleがGCPのプロダクトの一つと
 
 # GKE Autopilot
 
-<img src="/images/20210318/aircraft.jpg">
+<img src="/images/20210318/aircraft.jpg" loading="lazy">
 
 > <a href="https://pixabay.com/ja/users/fotosforyou_rk-2368449/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1327820">Ralph Klein</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1327820">Pixabay</a>からの画像
 

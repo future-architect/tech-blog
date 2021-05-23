@@ -21,7 +21,7 @@ lede: "今回はFuture Tech Blog『これさえあればサービス構成図が
 
 
 # インタビューした人 木村優里さん
-<img src="/images/20200308/写真①.JPG" class="img-middle-size">
+<img src="/images/20200308/写真①.JPG" class="img-middle-size" loading="lazy">
 
 
 > 経営とITをデザインするフューチャー歴6年目。アーキテクトチームで業務を行う傍ら、Future発OSSのロゴデザインを担当し、2016年「これさえあればシステム構成図が大体描けるアイコンセット」をFuture Tech Blogにて公開する。あまり知られていないが、上記記事は弊社Tech Blogのはてブ数第1位。（2020年2月現在）社内外の後押しを受けてバージョンアップした「これさえあればサービス構成図がだいたい描けるアイコンセット」を2020年に公開。社内ではデザインの勉強会を幾度か開催している。
@@ -44,7 +44,7 @@ lede: "今回はFuture Tech Blog『これさえあればサービス構成図が
 
 社内ツールのアイコン作成が進むうちに、折角だからシステム構成図を書くために必要な **他のアイコンも一通り作成しようよ**、ということになりまして。それがアイコンセットを作成するに至った、最初のきっかけです。
 
-<img src="/images/20200308/写真②.JPG" class="img-middle-size">
+<img src="/images/20200308/写真②.JPG" class="img-middle-size" loading="lazy">
 
 
 それまではシステム構成図作成に必要なアイコンを探す手間があり、見つけてもテイストがバラバラで使いづらいということがあったので、**このアイコンセットをダウンロードすれば必要なアイコンがだいたい一式そろえばいいな**と思って作成しました。
@@ -77,7 +77,7 @@ https://future-architect.github.io/articles/20160721/
 フューチャーの誰かが宣伝したというわけではなく、たまたま使っていたようで。プロジェクトメンバーがミーティングの場でお客様が作成したシステム構成図に見覚えがあり、「**これ、木村さんのアイコンでは？**」となって、教えてくれました。
 単純に使ってもらえているのが嬉しかったですし、前回作成から期間も経ちアイコン追加のリクエストもあったので、バージョンアップする話になりました。
 
-<img src="/images/20200308/図①.png" class="img-middle-size">
+<img src="/images/20200308/図①.png" class="img-middle-size" loading="lazy">
 
 2016年に公開した作ったアイコン
 
@@ -97,7 +97,7 @@ https://future-architect.github.io/articles/20160721/
 
 また社外でも汎用的に使いやすいように、**46種類のアイコンを追加し、色違いを含めてトータルで107種類の様々なバリエーション** のアイコンを、PNG形式とSVG形式で用意しました。
 
-<img src="/images/20200308/図②.png" class="img-middle-size">
+<img src="/images/20200308/図②.png" class="img-middle-size" loading="lazy">
 
 
 今回新たに公開したアイコン
@@ -121,7 +121,7 @@ https://future-architect.github.io/articles/20160721/
 
 実際に周りに聞いてみると興味ある人がいたので、今回は人を募ってチームでやる形になりました。チームの全体ミーティングの場でメンバー募集してみたところ、 **有志の活動にも関わらず何人も集まってくれて、嬉しかったですね。**
 
-<img src="/images/20200308/写真③.JPG" class="img-middle-size">
+<img src="/images/20200308/写真③.JPG" class="img-middle-size" loading="lazy">
 
 <br>
 
@@ -157,7 +157,7 @@ https://future-architect.github.io/articles/20160721/
 
 普段はITコンサルとしてシステムを作っていく仕事をしていますが、今後はより人間にも着目して視野を広げていきたいです。
 
-<img src="/images/20200308/写真⑤.JPG" class="img-middle-size">
+<img src="/images/20200308/写真⑤.JPG" class="img-middle-size" loading="lazy">
 
 
 
@@ -167,5 +167,5 @@ https://future-architect.github.io/articles/20160721/
 
 ---
 
-<img src="/images/20200308/インタビュア.jpg" class="img-middle-size">
+<img src="/images/20200308/インタビュア.jpg" class="img-middle-size" loading="lazy">
 

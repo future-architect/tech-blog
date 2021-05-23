@@ -20,7 +20,7 @@ lede: "私はフロントエンドエンジニアとして約1年くらいVue2�
 
 とても面白く良い雑誌なので是非定期購入をおすすめします｡
 
-<img src="/images/20210203/TH320_9784297118112.jpg" class="img-small-size">
+<img src="/images/20210203/TH320_9784297118112.jpg" class="img-small-size" loading="lazy">
 
 * https://gihyo.jp/magazine/wdpress/archive/2021/vol120
 

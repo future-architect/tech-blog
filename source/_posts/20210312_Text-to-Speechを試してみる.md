@@ -19,7 +19,7 @@ lede: "昨年に続きGCP連載企画の参加です。私個人としてはGCP�
 
 # Text-to-Speechとは
 
-<img src="/images/20210312/Cloud_Text-to-Speech.png">
+<img src="/images/20210312/Cloud_Text-to-Speech.png" loading="lazy">
 
 > https://cloud.google.com/blog/ja/products/ai-machine-learning/cloud-text-to-speech-expands-its-number-of-voices-now-covering-33-languages-and-variants より
 
@@ -37,7 +37,7 @@ lede: "昨年に続きGCP連載企画の参加です。私個人としてはGCP�
 
 ## 1.新しいプロジェクトの作成
 
-<img src="/images/20210312/00create_prj.png" class="img-middle-size" style="border:solid 1px #000000">
+<img src="/images/20210312/00create_prj.png" class="img-middle-size" style="border:solid 1px #000000" loading="lazy">
 
 
 適当にプロジェクト名を入力して作成します。
@@ -45,19 +45,19 @@ lede: "昨年に続きGCP連載企画の参加です。私個人としてはGCP�
 ## 2.Cloud Text-to-Speech APIの有効化
 [クイックスタート ページ内](https://cloud.google.com/text-to-speech/docs/quickstart-protocol?hl=ja)のAPIを有効にするボタン]をクリックして有効にします。
 
-<img src="/images/20210312/01pre.png" class="img-middle-size" style="border:solid 1px #000000">
+<img src="/images/20210312/01pre.png" class="img-middle-size" style="border:solid 1px #000000" loading="lazy">
 
 
 ## 3.認証の設定
 必要なロールはありませんということなのでロールを選択せず作成します。
 
-<img src="/images/20210312/02pre.png" class="img-large-size" style="border:solid 1px #000000">
+<img src="/images/20210312/02pre.png" class="img-large-size" style="border:solid 1px #000000" loading="lazy">
 
-<img src="/images/20210312/03pre.png" class="img-large-size" style="border:solid 1px #000000">
+<img src="/images/20210312/03pre.png" class="img-large-size" style="border:solid 1px #000000" loading="lazy">
 
-<img src="/images/20210312/04pre.png" class="img-middle-size" style="border:solid 1px #000000">
+<img src="/images/20210312/04pre.png" class="img-middle-size" style="border:solid 1px #000000" loading="lazy">
 
-<img src="/images/20210312/05pre.png" class="img-middle-size" style="border:solid 1px #000000">
+<img src="/images/20210312/05pre.png" class="img-middle-size" style="border:solid 1px #000000" loading="lazy">
 
 JSONファイルがダウンロードされるので適切な場所に保存します。のちにこのJSONファイルのパスを環境変数に設定することになります。
 
@@ -65,13 +65,13 @@ JSONファイルがダウンロードされるので適切な場所に保存し�
 [このページ](https://cloud.google.com/sdk/docs/install?hl=ja)に則りインストールします。
 
 
-<img src="/images/20210312/05sdk.png" class="img-middle-size" style="border:solid 1px #000000">
+<img src="/images/20210312/05sdk.png" class="img-middle-size" style="border:solid 1px #000000" loading="lazy">
 
-<img src="/images/20210312/06sdk.png" class="img-middle-size" style="border:solid 1px #000000">
+<img src="/images/20210312/06sdk.png" class="img-middle-size" style="border:solid 1px #000000" loading="lazy">
 
-<img src="/images/20210312/07sdk.png" class="img-middle-size" style="border:solid 1px #000000">
+<img src="/images/20210312/07sdk.png" class="img-middle-size" style="border:solid 1px #000000" loading="lazy">
 
-<img src="/images/20210312/08sdk.png" class="img-middle-size" style="border:solid 1px #000000">
+<img src="/images/20210312/08sdk.png" class="img-middle-size" style="border:solid 1px #000000" loading="lazy">
 
 環境にもよると思いますが割と時間かかります。コーヒーでも飲んで待ちましょう。
 
@@ -85,7 +85,7 @@ JSONファイルがダウンロードされるので適切な場所に保存し�
 
 ブラウザが起動するのでアクセスを許可します。
 
-<img src="/images/20210312/15sdk.png" style="border:solid 1px #000000">
+<img src="/images/20210312/15sdk.png" style="border:solid 1px #000000" loading="lazy">
 
 無事に完了しました。
 

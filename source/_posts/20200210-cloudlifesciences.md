@@ -22,12 +22,12 @@ lede: "本記事を書くためのモチベーションとしては、現在は�
 本記事を書くためのモチベーションとしては昔話をすこし挟みます。現在はインフラやネットワークエンジニアとして日々働いていますが、大学時代は化学を専攻し大学院では感染症を専門に研究していました。最終的に遺伝子を触ることなく修了しましたが、生物系に少しでも在籍していたこともあり、今回はわずかな記憶を頼りながら調べています。この記事が最終的にかつての研究の何かに使えたかもしれないと私の中で知識が落とし込めればいいなと考えています。
 
 ## [Cloud Life Sciences](https://cloud.google.com/life-sciences)について
-<img src="/images/20200210/1.png" class="img-very-small-size">
+<img src="/images/20200210/1.png" class="img-very-small-size" loading="lazy">
 
 GCPの中ではビッグデータに属するサービスになります。大規模な生物医学データの処理を費用対効果が高くできることがウリで、対象ユーザーは`ライフ サイエンス機関と学術研究機関向け`となっています。特に強く謳われているのが、研究に集中できることと結果の再現性にです。遺伝子情報は特に大きなデータ量になるので、得たデータの検証をスピードアップさせることは研究スピード全体を上げることにも繋がります。
 
 また、アーキテクチャは以下になっており、サービス単体としてではなく、1つのプラットフォームとして動くようです。
-<img src="/images/20200210/photo_20200210_01.png">
+<img src="/images/20200210/photo_20200210_01.png" loading="lazy">
 (引用：https://cloud.google.com/life-sciences/?hl=ja)
 
 ### VCF
@@ -97,7 +97,7 @@ bq ls --format=pretty GOOGLE_CLOUD_PROJECT:BIGQUERY_DATASET
 ### BigQueryに読み込ませる
 
 こちらでは公開プロジェクトのデータを使ってバリアントの分析を行います。データを用いるプロジェクトは[Illumina Platinum Genomes](https://www.illumina.com/platinumgenomes.html)、テーブル名は`platinum_genomes_deepvariant_variants_20180823`になります。実際のテーブルを５件出力しました。
-<img src="/images/20200210/photo_20200210_02.png">
+<img src="/images/20200210/photo_20200210_02.png" loading="lazy">
 
 実際に流すクエリは以下になります。
 

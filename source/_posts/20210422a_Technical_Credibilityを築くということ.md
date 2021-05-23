@@ -25,7 +25,7 @@ lede: "私は新卒でフューチャーへ入社しITの世界でのキャリ�
 
 ## Technical Credibilityとはなにか
 
-<img src="/images/20210422a/climbing-4514507_640.jpg" class="img-middle-size">
+<img src="/images/20210422a/climbing-4514507_640.jpg" class="img-middle-size" loading="lazy">
 
 > <a href="https://pixabay.com/ja/users/rappellingusa-13786882/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4514507">Rappellingusa</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4514507">Pixabay</a>からの画像
 

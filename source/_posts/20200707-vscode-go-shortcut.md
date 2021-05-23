@@ -47,14 +47,14 @@ VSCode を開いて以下ショートカットキーで出てきます。
 
 ### 1. Go: Restart Language Server
 
-<img src="/images/20200707/photo_20200707_01.png">
+<img src="/images/20200707/photo_20200707_01.png" loading="lazy">
 
 gopls を再起動するコマンドです。
 コードを実装していて、何かしらうまく動かない (おかしなエラーが出る、補完が効かなくなる、etc) 場合に即座に試します。 **大体治ります** 。
 
 ### 2. Go: Generate Unit Tests For Function
 
-<img src="/images/20200707/photo_20200707_02.png">
+<img src="/images/20200707/photo_20200707_02.png" loading="lazy">
 
 カーソル直下の関数のテストコードを自動生成してくれます。
 デフォルトで Table Driven Test の形で生成してくれるため、生成後はテストケースを追加するだけで Unit Test が書けてしまいます。
@@ -102,7 +102,7 @@ func TestAdd(t *testing.T) {
 
 ### 3. Go: Generate Interface Stubs
 
-<img src="/images/20200707/photo_20200707_03.png">
+<img src="/images/20200707/photo_20200707_03.png" loading="lazy">
 
 
 特定の interface を実装するためのメソッドを自動生成してくれます。
@@ -135,7 +135,7 @@ func (x XXXReader) Read(p []byte) (n int, err error) {
 
 ### 4. Go: Fill Struct
 
-<img src="/images/20200707/photo_20200707_04.png">
+<img src="/images/20200707/photo_20200707_04.png" loading="lazy">
 
 カーソル下の struct を field を初期値で穴埋めする形で自動生成してくれます。
 
@@ -167,7 +167,7 @@ field 定義がたくさんあり、どれが必要かわからなくなった�
 
 ### 5. Go: Add Tags To Struct Fields
 
-<img src="/images/20200707/photo_20200707_05.png">
+<img src="/images/20200707/photo_20200707_05.png" loading="lazy">
 
 
 カーソル下の struct にタグを付与します。
@@ -185,7 +185,7 @@ type Hoge struct {
 
 ### 6. Go: Test Function At Cursor
 
-<img src="/images/20200707/photo_20200707_06.png">
+<img src="/images/20200707/photo_20200707_06.png" loading="lazy">
 
 
 カーソル下のテスト関数のみのテストを実行してくれます。
@@ -193,7 +193,7 @@ type Hoge struct {
 
 ### 7. Go: Install/Update Tools
 
-<img src="/images/20200707/photo_20200707_07.png">
+<img src="/images/20200707/photo_20200707_07.png" loading="lazy">
 
 
 Go extension で利用している コマンドを install/update します。

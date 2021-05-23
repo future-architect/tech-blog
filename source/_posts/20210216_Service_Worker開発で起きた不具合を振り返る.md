@@ -19,7 +19,7 @@ TIGの川端です。
 
 先日、Vue.js + Service Worker開発案件が終わりました。その振り返りとして、Service Worker開発で起きた不具合と対応方法を記載します。
 
-<img src="/images/20210216/thumbnail.png" class="img-middle-size">
+<img src="/images/20210216/thumbnail.png" class="img-middle-size" loading="lazy">
 
 <a href="https://pixabay.com/ja/users/templune-1493489/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2044932">Diego Velázquez</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2044932">Pixabay</a>からの画像
 

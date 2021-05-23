@@ -28,7 +28,7 @@ lede: "はじめまして。フューチャーのインターンEngineer Campに
 今回のインターンで私は、SQLフォーマッタの作成に取り組みました。
 SQLフォーマッタとは以下のようにSQLのインデントなど整形するツールのことです。
 
-<img src="/images/20200919/formatter.jpg" class="img-middle-size">
+<img src="/images/20200919/formatter.jpg" class="img-middle-size" loading="lazy">
 
 SQLフォーマッタを用いることで、SQLの見た目を整える手間を削減したり、チームで統一感があるコーディングを実現できます。
 
@@ -107,11 +107,11 @@ PrettierプラグインとしてSQLフォーマッタの開発を行ったので
 
 フォーマット前のSQLコードです。とても見にくい…。
 
-<img src="/images/20200919/before.jpg" class="img-middle-size">
+<img src="/images/20200919/before.jpg" class="img-middle-size" loading="lazy">
 
 フォーマット後のSQLコードです。見やすい！
 
-<img src="/images/20200919/after.jpg" class="img-middle-size">
+<img src="/images/20200919/after.jpg" class="img-middle-size" loading="lazy">
 
 各カラムや条件式が整えられ、見やすくなっています。また、最後のWHERE句のような、式中にコメントがある場合もうまくフォーマットが行われています。
 

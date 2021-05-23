@@ -148,7 +148,7 @@ https://github.com/future-architect/coding-standards
 
 ## 参考：イメージキャラクターについて
 
-<img src="/images/20160902/photo_20160902_01.png" alt="フューチャーコーディング規約のイメージキャラクター" style="width:200px;" />
+<img src="/images/20160902/photo_20160902_01.png" alt="フューチャーコーディング規約のイメージキャラクター" style="width:200px;" / loading="lazy">
 
 ### 特徴
 

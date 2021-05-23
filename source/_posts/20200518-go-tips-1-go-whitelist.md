@@ -13,7 +13,7 @@ featured: false
 lede: "ホワイトリストProxy申請するときのGo依存ライブラリURLドメインの調べ方を記載します。"
 ---
 
-<img src="/images/20200518/Go-Logo_LightBlue.png" class="img-small-size">
+<img src="/images/20200518/Go-Logo_LightBlue.png" class="img-small-size" loading="lazy">
 
 # はじめに
 
@@ -32,7 +32,7 @@ go.modでrequireしているドメインへのアクセスを全て許可した�
 # 結論
 
 * インターネットアクセスできる環境にて`go mod download -v`でアクセス先を全て表示させる。
-* この時、ライブラリによってはrequireドメインではないリポジトリにリダイレクトされているので、アクセス許可ドメインとして見逃さないこと。(ハマりポイント)　
+* この時、ライブラリによってはrequireドメインではないリポジトリにリダイレクトされているので、アクセス許可ドメインとして見逃さないこと。(ハマりポイント)
   * ↓の場合だとrequire先は`cloud.google.com`だがライブラリダウンロード自体は`code.googlesource.com`から実施される。
 
 ```bash

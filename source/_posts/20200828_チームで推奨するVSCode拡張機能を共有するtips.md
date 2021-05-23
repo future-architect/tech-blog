@@ -55,7 +55,7 @@ VSCode起動後、まず ctrl + O (Macの方は⌘ + O) を押下して、対象
 下記画像の④のマーククリックし、拡張機能をインストールしてください。
 もしVSCodeの使用に慣れており、独自で拡張機能を導入している場合は、下記に記載している拡張機能の概要を確認し、必要なものは緑色のinstallをクリックすることで、個別にインストールすることも可能です。
 
-<img src="/images/20200828/extension_install.png" class="img-middle-size">
+<img src="/images/20200828/extension_install.png" class="img-middle-size" loading="lazy">
 
 # 最後に
 

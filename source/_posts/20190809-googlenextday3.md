@@ -24,9 +24,9 @@ lede: "Google Cloud Next ’19 in Tokyo Day3にも少し顔を出していたの
 
 # 会場への道のり & 会場の様子
 Day2に参加した私はすでに会場への道をマスターしており、道中で「これブログに使えるかな？」などと考えながら写真を撮る余裕がありました。
-<img src="/images/20190809/photo_20190809_01.jpeg">
+<img src="/images/20190809/photo_20190809_01.jpeg" loading="lazy">
 ↑行きしなに東京タワーをパシャリ。変わらずの炎天下でしたが会場着後は快適な空調のおかげで穏やかな気持ちでセッション聴講できました！
-<img src="/images/20190809/photo_20190809_02.jpeg">
+<img src="/images/20190809/photo_20190809_02.jpeg" loading="lazy">
 ↑こちらはEXPO会場のとある一角。バーコーナー的な感じでしょうか。写真ではお水のみですが、時間帯によってはお菓子も並んでいました。個人的には`揚一番`を陳列してくれていた点に全力で称賛を送りたいと思います!!（何個も食べてすいません...揚一番大好きです！！）
 
 
@@ -196,12 +196,12 @@ CEOの方々と話す機会があるが、「3年後のIT投資戦略をたて�
 * 負荷が高くなったらどうする？ = オートスケーリング
 
 #### Anthosのテクノロジースタック
-<img src="/images/20190809/photo_20190809_03.jpeg">
+<img src="/images/20190809/photo_20190809_03.jpeg" loading="lazy">
 
 * ベースにGKEとIstioがいて、その上にControl Planeがある
 
 ### Anthosのもたらす価値・提供機能
-<img src="/images/20190809/photo_20190809_04.jpeg">
+<img src="/images/20190809/photo_20190809_04.jpeg" loading="lazy">
 
 ##### コンテナオーケストレーション - GKE/GKE On-prem
 * k8sは宣言型APIで設定する
@@ -248,7 +248,7 @@ CEOの方々と話す機会があるが、「3年後のIT投資戦略をたて�
 * 複数クラウドでDRを組むなども可能になる
 
 ### まとめ
-<img src="/images/20190809/photo_20190809_05.jpeg">
+<img src="/images/20190809/photo_20190809_05.jpeg" loading="lazy">
 
 * 2019/09/03にGoogle Cloud Kubernetes Dayやります(私も楽しみです！)
 

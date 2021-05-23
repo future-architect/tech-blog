@@ -135,4 +135,4 @@ RUN apk add --update \
 
 我らが渋川さん及び社員一同大喜びでした、ありがとうございます。
 
-<img src="/images/20201010/image_4.png" class="img-middle-size">
+<img src="/images/20201010/image_4.png" class="img-middle-size" loading="lazy">

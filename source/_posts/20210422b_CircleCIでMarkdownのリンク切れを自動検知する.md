@@ -13,7 +13,7 @@ featured: false
 lede: "私のチームでは、「システムの設計情報」や「実装に関わる業務知識」などを、`README.md` に整理して GitHub 管理しています。設計資料や業務系のドキュメントが蓄積され、何度も更新され続けることに伴い、「あれ、この資料のリンクが切れてる。オリジナルのファイルはどこだっけ？」と探す機会が増えてきました。本来ならば PullRequest のレビュー時に気付くべきですが、ファイル名のちょっとしたスペルミスや資料パスの変更などだと、目視でのチェックには限界があります。"
 ---
 
-<img src="/images/20210422b/chain-312403_640.png" class="img-small-size">
+<img src="/images/20210422b/chain-312403_640.png" class="img-small-size" loading="lazy">
 
 > <a href="https://pixabay.com/ja/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=312403">Clker-Free-Vector-Images</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=312403">Pixabay</a>から
 
@@ -30,7 +30,7 @@ lede: "私のチームでは、「システムの設計情報」や「実装に�
 
 ## 完成版コード
 
-<a href="https://github.com/r-ryu/markdown-link-checker"><img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/r-ryu/markdown-link-checker.png" width="460px"></a>
+<a href="https://github.com/r-ryu/markdown-link-checker"><img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/r-ryu/markdown-link-checker.png" width="460px"></a loading="lazy">
 
 https://github.com/r-ryu/markdown-link-checker
 
