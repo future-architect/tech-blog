@@ -71,14 +71,16 @@ async function fetchGoogleAnalytics() {
   });
 
   // hold cache
+  let data = [];
   res.data.reports[0].data.rows.forEach(row => {
-    gaCache.data.push({
+    data.push({
       path: row.dimensions[0],
       pv: row.metrics[0].values[0],
       title: row.dimensions[1]
     })
     console.log(row.dimensions[0], row.dimensions[1], row.metrics[0].values[0]);
   });
+  gaCache.data = data;
 }
 
 // call google analytics api
