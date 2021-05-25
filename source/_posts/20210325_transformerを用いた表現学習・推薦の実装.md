@@ -3,7 +3,7 @@ date: 2021/03/25 00:00:00
 postid: ""
 tag:
   - TensorFlow
-  - MachineLearning
+  - 機械学習
   - Word2Vec
   - Transformer
   - riiid
