@@ -4,7 +4,6 @@ postid: ""
 tag:
   - Vue.js
   - Electron
-  - クロスプラットフォーム
 category:
   - Programming
 thumbnail: /images/20210107/thumbnail.png

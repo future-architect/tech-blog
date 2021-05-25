@@ -4,7 +4,7 @@ postid: ""
 tag:
   - TypeScript
   - JavaScript
-  - Frontend
+  - フロントエンド
   - webpack
   - Node.js
   - Parcel
@@ -79,7 +79,7 @@ fusebox({
 }).runDev();
 ```
 
-テンプレートのところのHTMLはこんな感じで、CSSとJavaScriptの成果物を$なプレースホルダーに埋め込むようになっています。　
+テンプレートのところのHTMLはこんな感じで、CSSとJavaScriptの成果物を$なプレースホルダーに埋め込むようになっています。
 
 ```html
 <!DOCTYPE html>

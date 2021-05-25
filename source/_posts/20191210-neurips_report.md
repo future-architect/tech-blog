@@ -5,6 +5,7 @@ tag:
   - 機械学習
   - NeurIPS
   - 参加レポート
+  - インターン
 category:
   - DataScience
 author: 上野貴史

@@ -3,7 +3,7 @@ date: 2019/11/29 13:58:44
 postid: ""
 tag:
   - GCP
-  - 登壇資料
+  - GCPUG
   - 登壇レポート
 category:
   - Infrastructure

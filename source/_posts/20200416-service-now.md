@@ -5,7 +5,7 @@ tag:
   - ServiceNow
   - Terraform
   - Go
-  - Workflow
+  - ワークフロー
 category:
   - Infrastructure
 thumbnail: /images/20200416/thumbnail.png

@@ -4,7 +4,8 @@ postid: ""
 tag:
   - AWS
   - Electron
-  - 登壇資料
+  - 登壇レポート
+  - JulyTechFesta
   - Vue.js
 category:
   - Programming

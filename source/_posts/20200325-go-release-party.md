@@ -3,7 +3,6 @@ date: 2020/03/25 14:44:32
 postid: ""
 tag:
   - Go
-  - 登壇資料
   - 登壇レポート
 category:
   - Programming

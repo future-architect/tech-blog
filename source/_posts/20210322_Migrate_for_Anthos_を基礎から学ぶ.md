@@ -5,7 +5,6 @@ tag:
   - GCP
   - クラウドマイグレーション
   - Anthos
-  - 移行ツール
 category:
   - Infrastructure
 thumbnail: /images/20210322/thumbnail.png

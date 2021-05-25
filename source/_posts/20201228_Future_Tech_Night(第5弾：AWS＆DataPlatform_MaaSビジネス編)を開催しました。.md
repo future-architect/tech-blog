@@ -4,9 +4,7 @@ postid: ""
 tag:
   - AWS
   - データレイク
-  - 勉強会
   - 登壇レポート
-  - 開催レポート
   - TechNight
 category:
   - Programming

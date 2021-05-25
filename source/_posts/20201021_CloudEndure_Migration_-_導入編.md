@@ -3,10 +3,8 @@ date: 2020/10/21 00:00:00
 postid: ""
 tag:
   - AWS
-  - 移行ツール
   - CloudEndure
   - クラウドマイグレーション
-  - クラウドリフト
 category:
   - Infrastructure
 thumbnail: /images/20201021/thumbnail.png

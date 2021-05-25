@@ -3,7 +3,6 @@ date: 2020/09/21 00:00:00
 postid: ""
 tag:
   - インターン
-  - 採用
 category:
   - Infrastructure
 thumbnail: /images/20200921/thumbnail.png

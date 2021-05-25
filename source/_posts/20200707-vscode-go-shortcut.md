@@ -4,7 +4,6 @@ postid: ""
 tag:
   - Go
   - VSCode
-  - ショートカット
 category:
   - Programming
 thumbnail: /images/20200707/thumbnail.png

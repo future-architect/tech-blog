@@ -4,7 +4,7 @@ postid: ""
 tag:
   - TypeScript
   - 出版
-  - Frontend
+  - フロントエンド
   - 書籍
 category:
   - Programming

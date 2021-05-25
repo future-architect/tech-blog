@@ -3,7 +3,6 @@ date: 2020/06/25 10:34:33
 postid: ""
 tag:
   - JavaScript
-  - JSON
   - ChromeExtension
 category:
   - Programming

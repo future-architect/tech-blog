@@ -3,7 +3,6 @@ date: 2018/12/05 23:18:17
 postid: ""
 tag:
   - AWS
-  - Spark
   - Glue
 category:
   - Infrastructure

@@ -4,7 +4,6 @@ postid: a
 tag:
   - Go
   - GoConference
-  - 登壇資料
   - 登壇レポート
 category:
   - Programming

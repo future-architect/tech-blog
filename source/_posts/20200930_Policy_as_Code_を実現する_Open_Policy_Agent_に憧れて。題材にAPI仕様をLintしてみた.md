@@ -3,7 +3,6 @@ date: 2020/09/30 00:00:00
 postid: ""
 tag:
   - CNCF
-  - CloudNative
   - OpenPolicyAgent
   - Swagger
   - OpenAPI

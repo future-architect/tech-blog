@@ -5,8 +5,6 @@ tag:
   - ルールエンジン
   - SpringBoot
   - Java
-  - Spring
-  - DI
   - GlyphFeeds
 category:
   - Programming

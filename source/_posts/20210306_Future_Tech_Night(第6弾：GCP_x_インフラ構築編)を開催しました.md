@@ -3,10 +3,8 @@ date: 2021/03/06 00:00:00
 postid: ""
 tag:
   - GCP
-  - 勉強会
   - 登壇レポート
   - TechNight
-  - 開催レポート
 category:
   - Infrastructure
 thumbnail: /images/20210306/thumbnail.png

@@ -2,7 +2,6 @@ title: GoとSuffixArray
 date: 2020/08/07 00:00:00
 postid: ""
 tag:
-  - データ構造
   - Go
   - アルゴリズム
   - 文字列処理

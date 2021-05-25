@@ -2,7 +2,7 @@ title: "Future AI EXPO 開催！"
 date: 2018/03/01 12:01:22
 postid: ""
 tag:
-  - Conference
+  - 展示会
   - 機械学習
 category:
   - DataScience

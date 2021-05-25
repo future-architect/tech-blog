@@ -5,7 +5,6 @@ tag:
   - GCP
   - Python
   - OpenCensus
-  - Monitoring
   - CloudOperations
   - CloudRun
 category:

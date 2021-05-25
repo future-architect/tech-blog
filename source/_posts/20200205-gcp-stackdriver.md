@@ -5,7 +5,6 @@ tag:
   - GCP
   - OpenCensus
   - Go
-  - Monitoring
   - GCP連載
   - CloudOperations
 category:

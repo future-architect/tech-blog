@@ -4,9 +4,7 @@ postid: ""
 tag:
   - AWS
   - CloudEndure
-  - 移行ツール
   - クラウドマイグレーション
-  - クラウドリフト
 category:
   - Infrastructure
 thumbnail: /images/20201120/thumbnail.png
