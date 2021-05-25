@@ -8,6 +8,7 @@
   "dependencies": {
     "googleapis": "^73.0.0",
     "hexo": "^5.4.0",
+    "hexo-filter-mathjax": "^0.7.0",
     "hexo-footnotes": "^1.0.2",
     "hexo-fs": "^3.1.0",
     "hexo-generator-archive": "^1.0.0",
@@ -17,7 +18,6 @@
     "hexo-generator-index": "^2.0.0",
     "hexo-generator-seo-friendly-sitemap": "0.2.1",
     "hexo-generator-tag": "^1.0.0",
-    "hexo-math": "^4.0.0",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-marked": "^4.0.0",
     "hexo-renderer-stylus": "^2.0.1",

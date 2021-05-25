@@ -14,6 +14,7 @@ thumbnail: /images/20210325/thumbnail.png
 author: 金子剛士
 featured: true
 lede: "自然言語処理でよく使われるWord2VecやTransformerをログデータやテーブルデータの予測・分析に活用するためのオレオレベースラインの紹介を行います。対象読者は既にWord2VecやTransformerについて知識があり、その上自身で改造を行いたい人や..."
+mathjax: true
 ---
 
 こんにちは！SAIGの金子です。
@@ -67,7 +68,7 @@ TensorFlow Recommendersのretrievalタスクを参考に、ユーザーの履歴
 ## 前処理
 ユーザーがどの問題を解いてどの回答をしたかを配列で管理するための処理をしています。
 
-content_idが問題番号に対応していて、それぞれ最大で4つの選択肢を持つため、{% mathjax %} choice\_id = content\_id * 4 + user\_answer{% endmathjax %}でユーザーの回答履歴を保存しています。なお、今回のコードではユーザーがどの選択肢を選んだかの情報は考慮しません。
+content_idが問題番号に対応していて、それぞれ最大で4つの選択肢を持つため、$ choice\_id = content\_id * 4 + user\_answer$ でユーザーの回答履歴を保存しています。なお、今回のコードではユーザーがどの選択肢を選んだかの情報は考慮しません。
 
 ## Sampler
 訓練データを作成するクラスです。
@@ -92,7 +93,7 @@ self-attentionを行うクラスです。
 ## Model
 上記のtokenizer, Encoder, TopModelをまとめるためのクラスです。
 
-ここにまとめておくことで、学習時にapply_gradientが楽にできるようになります。また、今回はbatch sizeをN倍すると予測の出力が{% mathjax %}N^2{% endmathjax %}倍になってしまうことに対応するため、n_splitという変数を設定しています。
+ここにまとめておくことで、学習時にapply_gradientが楽にできるようになります。また、今回はbatch sizeをN倍すると予測の出力が $N^2$ 倍になってしまうことに対応するため、n_splitという変数を設定しています。
 
 # 結果
 ## 事前学習
