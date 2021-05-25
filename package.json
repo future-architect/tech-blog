@@ -8,6 +8,7 @@
   "dependencies": {
     "googleapis": "^73.0.0",
     "hexo": "^5.4.0",
+    "hexo-easy-tags-plugin": "^1.1.0",
     "hexo-filter-mathjax": "^0.7.0",
     "hexo-footnotes": "^1.0.2",
     "hexo-fs": "^3.1.0",
