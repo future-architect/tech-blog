@@ -4,6 +4,7 @@ postid: ""
 tag:
   - Go
   - GoTips連載
+  - 設計
 category:
   - Programming
 thumbnail: /images/20200522/thumbnail.png
