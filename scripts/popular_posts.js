@@ -22,8 +22,7 @@ hexo.extend.helper.register('popular_posts', function() {
     .slice(0, 10);
 
   const snsCnt = hexo.extend.helper.get('totalSNSCnt').bind(hexo);
-  const links = popularPost.map(post => `
-    <li><span>${post.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${snsCnt(post.permalink)}</span> <a href="/${post.path}" title="${post.lede}">${post.title}</a></li>`).join("\n")
+  const links = popularPost.map(post => `<li><span>${post.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${snsCnt(post.permalink)}</span> <a href="/${post.path}" title="${post.lede}">${post.title}</a></li>`).join("\n")
 
   return `
   <div class="widget">
@@ -35,6 +34,7 @@ hexo.extend.helper.register('popular_posts', function() {
 });
 
 const { google } = require('googleapis');
+const { texttospeech } = require("googleapis/build/src/apis/texttospeech");
 
 const auth = new google.auth.GoogleAuth({
   scopes: 'https://www.googleapis.com/auth/analytics.readonly',
@@ -78,11 +78,9 @@ async function fetchGoogleAnalytics() {
       pv: row.metrics[0].values[0],
       title: row.dimensions[1]
     })
-    console.log(row.dimensions[0], row.dimensions[1], row.metrics[0].values[0]);
   });
   gaCache.data = data;
 }
 
 // call google analytics api
 fetchGoogleAnalytics();
-

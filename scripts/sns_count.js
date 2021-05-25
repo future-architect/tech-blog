@@ -1,5 +1,6 @@
 const fetch = require('sync-fetch');
 const fs = require("fs");
+const beforeDate = 3; // N日前までさかのぼってキャッシュ更新
 
 let [pocketCnt, hatebuCnt, fbCnt, twCnt] = [{}, {}, {}, {}];
 let [currentPocket, currentHatebu, currentFb, currentTw] = [{}, {}, {}, {}];
@@ -39,7 +40,7 @@ const fetchableDate = (url)=> {
     const ymd = path.replace("/", "").substring(0, 9);
 
     let dt = new Date();
-    var pastDate = dt.getDate() - 5;
+    var pastDate = dt.getDate() - beforeDate;
     dt.setDate(pastDate);
 
     const y = dt.getFullYear();
