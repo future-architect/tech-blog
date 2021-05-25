@@ -5,6 +5,7 @@ tag:
   - Spanner
   - GCP
   - DockerCompose
+  - エミュレータ
 category:
   - Infrastructure
 thumbnail: /images/20210323/thumbnail.png
