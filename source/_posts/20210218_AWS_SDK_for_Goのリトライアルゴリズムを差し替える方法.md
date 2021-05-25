@@ -5,7 +5,6 @@ tag:
   - Go
   - リトライ
   - AWS
-  - スロットリング
   - アルゴリズム
 category:
   - Programming
