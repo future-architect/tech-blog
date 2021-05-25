@@ -7,7 +7,7 @@ tag:
   - GCP
   - Firebase
   - Android
-  - アプリ
+  - モバイルアプリ
 category:
   - Programming
 thumbnail: /images/20200330/thumbnail.png

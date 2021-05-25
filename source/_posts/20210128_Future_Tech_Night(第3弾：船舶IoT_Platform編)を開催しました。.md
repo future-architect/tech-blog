@@ -3,9 +3,6 @@ date: 2021/01/28 00:00:00
 postid: ""
 tag:
   - AWS
-  - 登壇資料
-  - 勉強会
-  - 開催レポート
   - 登壇レポート
   - TechNight
 category:

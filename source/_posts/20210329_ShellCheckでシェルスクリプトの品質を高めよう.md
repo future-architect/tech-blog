@@ -5,7 +5,6 @@ tag:
   - ShellScript
   - Linter
   - ShellCheck
-  - 静的解析
 category:
   - Infrastructure
 thumbnail: /images/20210329/thumbnail.png

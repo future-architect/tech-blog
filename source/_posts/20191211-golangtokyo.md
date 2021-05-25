@@ -3,8 +3,6 @@ date: 2019/12/11 13:10:53
 postid: ""
 tag:
   - Go
-  - 登壇資料
-  - 勉強会
   - golang.tokyo
   - 登壇レポート
 category:

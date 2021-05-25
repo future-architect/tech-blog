@@ -4,7 +4,6 @@ postid: ""
 tag:
   - Java
   - コーディング規約
-  - エンタープライズ
 category:
   - Programming
 thumbnail: /images/20160902/thumbnail_20160902.png

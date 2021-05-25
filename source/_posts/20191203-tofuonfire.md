@@ -4,10 +4,7 @@ postid: ""
 tag:
   - Go
   - GoConference
-  - スポンサー
-  - PDF
   - スクレイピング
-  - アドベントカレンダー
 category:
   - Programming
 author: 澁川喜規

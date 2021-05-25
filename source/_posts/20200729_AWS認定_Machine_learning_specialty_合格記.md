@@ -3,7 +3,7 @@ date: 2020/07/29 00:00:00
 postid: ""
 tag:
   - AWS
-  - MachineLearning
+  - 機械学習
   - 合格記
 category:
   - DataScience

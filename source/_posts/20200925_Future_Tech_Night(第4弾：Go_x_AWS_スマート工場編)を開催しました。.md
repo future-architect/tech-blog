@@ -5,10 +5,8 @@ tag:
   - 工場
   - Go
   - AWS
-  - 勉強会
   - TechNight
-  - 開催レポート
-  - TechNight
+  - 登壇レポート
 category:
   - Programming
 thumbnail: /images/20200925/thumbnail.png

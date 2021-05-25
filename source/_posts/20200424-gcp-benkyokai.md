@@ -4,7 +4,7 @@ postid: ""
 tag:
   - GCP
   - 初心者向け
-  - 登壇資料
+  - 社内勉強会
   - BigQuery
   - Kubernetes
 category:

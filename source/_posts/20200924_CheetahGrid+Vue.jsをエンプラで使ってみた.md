@@ -4,7 +4,6 @@ postid: ""
 tag:
   - CheetahGrid
   - Vue.js
-  - エンタープライズ
 category:
   - Infrastructure
 thumbnail: /images/20200924/thumbnail.png

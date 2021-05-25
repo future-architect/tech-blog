@@ -4,8 +4,7 @@ postid: b
 tag:
   - Docker
   - TechNight
-  - 開催レポート
-  - 登壇資料
+  - 登壇レポート
   - Go
   - OSS
   - OSS推進タスクフォース

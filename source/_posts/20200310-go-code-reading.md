@@ -4,6 +4,7 @@ postid: ""
 tag:
   - Go
   - CodeReading
+  - 社内勉強会
 category:
   - Programming
 author: 辻大志郎

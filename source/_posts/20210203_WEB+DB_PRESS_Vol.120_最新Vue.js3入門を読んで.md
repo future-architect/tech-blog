@@ -4,7 +4,6 @@ postid: ""
 tag:
   - Vue.js
   - Vue3
-  - 書評
   - 書籍
 category:
   - Programming

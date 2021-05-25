@@ -3,8 +3,7 @@ date: 2021/02/16 00:00:00
 postid: ""
 tag:
   - JavaScript
-  - Frontend
-  - ServiceWorker
+  - フロントエンド
   - Vue.js
 category:
   - Programming

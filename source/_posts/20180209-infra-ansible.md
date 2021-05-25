@@ -4,7 +4,6 @@ postid: ""
 tag:
   - Ansible
   - Infrastructure
-  - 登壇資料
   - 登壇レポート
   - IaC
 category:

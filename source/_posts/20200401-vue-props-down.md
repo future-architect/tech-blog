@@ -3,8 +3,8 @@ date: 2020/04/01 10:30:55
 postid: ""
 tag:
   - Vue.js
-  - Frontend
-  - フロントエンド記事集中投稿
+  - フロントエンド
+  - フロントエンド
   - 初心者向け
 category:
   - Programming

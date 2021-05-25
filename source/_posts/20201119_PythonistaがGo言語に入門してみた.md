@@ -5,7 +5,7 @@ tag:
   - Python
   - Go
   - 入門
-  - からGoへ
+  - 他言語からGoへ
 category:
   - Programming
 thumbnail: /images/20201119/thumbnail.png

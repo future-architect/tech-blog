@@ -5,7 +5,6 @@ tag:
   - 登壇レポート
   - OpenPolicyAgent
   - CNCF
-  - CloudNative
 category:
   - Infrastructure
 thumbnail: /images/20210313/thumbnail.png

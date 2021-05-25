@@ -3,10 +3,8 @@ date: 2020/05/11 08:43:07
 postid: ""
 tag:
   - UI/UX
-  - Frontend
-  - AtomicDesign
+  - フロントエンド
   - Figma
-  - フロントエンド記事集中投稿
 category:
   - Design
 thumbnail: /images/20200511/thumbnail.png

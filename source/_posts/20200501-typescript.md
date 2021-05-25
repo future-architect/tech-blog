@@ -4,22 +4,19 @@ postid: ""
 tag:
   - React
   - Redux
-  - Frontend
+  - フロントエンド
   - TypeScript
-  - フロントエンド記事集中投稿
 category:
   - Programming
 thumbnail: /images/20200501/thumbnail.png
 author: 澁川喜規
 featured: true
-lede: "フロントエンド記事集中投稿ウィークの3本目です。"
+lede: "プロダクションコードでたくさんRedux周りにもreducerなどを実装しなくてはいけなくなったときの次のステップとして、Redux Toolkitの紹介をします。"
 ---
-フロントエンド記事集中投稿ウィークの3本目です。
 
-* [Vue.jsのslotの機能を初心者にわかるように解説してみた](/articles/20200428/)
-* [Reduxを分かりやすく解説してみた](/articles/20200429/)
+前日の丸野さんが[Reduxを分かりやすく解説してみた](/articles/20200429/)というReduxの基本的な紹介を行いました。Reduxはコンパクトなライブラリながらよく考えられた仕組みです。Jetpack ComposeやらFlutterやら、ReactインスパイアなGUIフレームワークも増えているので、JavaScript（TypeScriptではなく） + Reduxをやってみるのは、ウェブに限らず、今後のユーザーインタフェース関連のコードを触るための理解力向上には良いと思います。
 
-前日の丸野さんがReduxの基本的な記事でした。Reduxはコンパクトなライブラリながらよく考えられた仕組みです。Jetpack ComposeやらFlutterやら、ReactインスパイアなGUIフレームワークも増えているので、JavaScript（TypeScriptではなく） + Reduxをやってみるのは、ウェブに限らず、今後のユーザーインタフェース関連のコードを触るための理解力向上には良いと思います。本エントリーは、実際にプロダクションコードでたくさんRedux周りにもreducerなどを実装しなくてはいけなくなったときの次のステップとして、Redux Toolkitの紹介をします。
+本エントリーは、プロダクションコードでたくさんRedux周りにもreducerなどを実装しなくてはいけなくなったときの次のステップとして、Redux Toolkitの紹介をします。
 
 たいてい、Reduxは導入コストが大きく、コードを複雑にしてしまうため「ある程度大きくなってから」「小さいうちは入れる必要ない」みたいに言われます。僕もそう思っていて、丸野さんが参加されているプロジェクトの最初では、最初は素のReactで、1-2ヶ月してみんなが慣れてきたらReduxを入れるという2段階で導入したりもしました。
 

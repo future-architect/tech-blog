@@ -3,7 +3,6 @@ date: 2021/02/27 00:00:00
 postid: ""
 tag:
   - セミナー
-  - 最適化
 category:
   - Culture
 thumbnail: /images/20210227/thumbnail.jpg

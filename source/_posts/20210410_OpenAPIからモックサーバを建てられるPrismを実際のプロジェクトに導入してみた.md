@@ -10,7 +10,7 @@ category:
   - Programming
 thumbnail: /images/20210410/thumbnail.png
 author:  大岩潤矢
-featured: true
+featured: false
 lede: "参加しているプロジェクトで、OpenAPI定義ファイルからモックサーバを建てることができるOSSツール「Prism」を導入することになりました。この記事では、Prism導入の手順や、躓いた点などを紹介します。"
 ---
 

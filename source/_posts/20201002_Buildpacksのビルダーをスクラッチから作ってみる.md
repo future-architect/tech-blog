@@ -6,7 +6,6 @@ tag:
   - Buildpacks
   - Docker
   - Python
-  - CloudNative
   - コンテナデプロイ
   - コンテナビルド
 category:

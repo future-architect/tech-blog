@@ -4,8 +4,7 @@ postid: ""
 tag:
   - React
   - Redux
-  - Frontend
-  - フロントエンド記事集中投稿
+  - フロントエンド
   - 初心者向け
 category:
   - Programming
@@ -14,8 +13,6 @@ author: 丸野大輔
 featured: true
 lede: "はじめまして、2019年4月入社_FRX_DigitalLibraryチームの丸野です。研修修了後PJにアサインされて約4ヶ月ほどReact.jsを使って開発を行ってきましたが、Reduxの理解にとても苦しみました。そこで今回はReduxの概要を噛み砕いて説明していきます。同じ悩みを持つ人の理解の助けになればと思います。"
 ---
-
-フロントエンド記事集中投稿ウィークの2本目です。
 
 # はじめに
 

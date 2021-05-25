@@ -4,7 +4,6 @@ postid: ""
 tag:
   - HTTP
   - Web
-  - 登壇資料
   - 署名付きURL
   - APIMeetup
   - 登壇レポート

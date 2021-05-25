@@ -2,9 +2,10 @@ title: "NeurIPS 2019 参加報告"
 date: 2019/12/10 16:22:02
 postid: ""
 tag:
-  - MachineLearning
+  - 機械学習
   - NeurIPS
   - 参加レポート
+  - インターン
 category:
   - DataScience
 author: 上野貴史

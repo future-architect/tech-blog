@@ -6,7 +6,7 @@ tag:
   - Java
   - 翻訳
   - 入門
-  - からGoへ
+  - 他言語からGoへ
 category:
   - Programming
 author:

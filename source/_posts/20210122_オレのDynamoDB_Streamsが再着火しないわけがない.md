@@ -4,7 +4,6 @@ postid: ""
 tag:
   - AWS
   - DynamoDB
-  - DynamoDBStream
   - Go
   - トラブルシュート
 category:

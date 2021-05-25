@@ -2,9 +2,9 @@ title: "その値、Vue.jsは監視していますか？～Vue.jsで値が更新
 date: 2020/03/16 11:49:57
 postid: ""
 tag:
-  - Frontend
+  - フロントエンド
   - Vue.js
-  - フロントエンド記事集中投稿
+  - フロントエンド
   - 初心者向け
 category:
   - Programming

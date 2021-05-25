@@ -3,7 +3,7 @@ date: 2017/05/26 16:15:31
 postid: ""
 tag:
   - Python
-  - MachineLearning
+  - 機械学習
   - DeepLearning
   - データ分析
   - 顔認証

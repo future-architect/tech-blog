@@ -3,7 +3,6 @@ date: 2021/04/22 00:00:00
 postid: a
 tag:
   - 新人向け
-  - 技術的信頼
   - 技術習得
 category:
   - Culture

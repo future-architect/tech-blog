@@ -4,8 +4,7 @@ postid: c
 tag:
   - Go
   - TechNight
-  - 開催レポート
-  - 登壇資料
+  - 登壇レポート
   - OpenAPI
   - Swagger
 category:
