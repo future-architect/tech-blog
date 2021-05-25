@@ -11,6 +11,7 @@ thumbnail: /images/20200807/thumbnail.png
 author: 辻大志郎
 featured: true
 lede: "Go は標準ライブラリが充実しているとよく言われます。標準ライブラリだけで、HTTP サーバを作れたり、暗号化処理や、JSON や CSV といったデータ形式を扱うことができます"
+mathjax: true
 ---
 
 <img src="/images/20200807/suffixarray.png" class="img-small-size" loading="lazy">
@@ -119,11 +120,11 @@ suffix: anana, match: an
 
 https://play.golang.org/p/JFNugaoB26N
 
-このパターンマッチングは元の文字列 T の長さを {% mathjax %}n{% endmathjax %} として、マッチングしたい文字列 P の長さを {% mathjax %}m{% endmathjax %} とすると {% mathjax %}O(m \log n){% endmathjax %} 時間でマッチングできます。Go の [sort.Search](https://golang.org/pkg/sort/#Search) 関数はソートされた配列やスライスに対して条件を満たす最小の index を二分探索することができます。上記の実装では、suffix における prefix の先頭 `len(p)` 文字目までの部分文字列とマッチングしたい文字列 `p` を [strings.Compare](https://golang.org/pkg/strings/#Compare) で比較し、結果が 0 以上と 1 となる最小の index [^3]を探索しています。Suffix Array に対して二分探索を行うことによって、パターンマッチングするときは、元の文字列の長さに対して、対数時間でおさえることができます。
+このパターンマッチングは元の文字列 T の長さを $n$ として、マッチングしたい文字列 P の長さを $m$ とすると $O(m \log n)$ 時間でマッチングできます。Go の [sort.Search](https://golang.org/pkg/sort/#Search) 関数はソートされた配列やスライスに対して条件を満たす最小の index を二分探索することができます。上記の実装では、suffix における prefix の先頭 `len(p)` 文字目までの部分文字列とマッチングしたい文字列 `p` を [strings.Compare](https://golang.org/pkg/strings/#Compare) で比較し、結果が 0 以上と 1 となる最小の index [^3]を探索しています。Suffix Array に対して二分探索を行うことによって、パターンマッチングするときは、元の文字列の長さに対して、対数時間でおさえることができます。
 
 ## Suffix Array の構築
 
-Suffix Array を構築することを考えてみます。ナイーブに考えると、長さ {% mathjax %}O(n){% endmathjax %} の文字列 {% mathjax %}n{% endmathjax %} つをソートすることになります。クイックソートの 1 回あたりの平均計算量 {% mathjax %}O(n \log n){% endmathjax %} とあわせて {% mathjax %}O(n^2 \log n){% endmathjax %} 時間になります。いかにして効率よく Suffix Array を構築できるかどうかがアルゴリズムのポイントになります。
+Suffix Array を構築することを考えてみます。ナイーブに考えると、長さ $O(n)$ の文字列 $n$ つをソートすることになります。クイックソートの 1 回あたりの平均計算量 $O(n \log n)$ とあわせて $O(n^2 \log n)$ 時間になります。いかにして効率よく Suffix Array を構築できるかどうかがアルゴリズムのポイントになります。
 
 - ナイーブにソートして構築する実装例
 
@@ -179,11 +180,11 @@ index: 2, suffix: nana
 
 https://play.golang.org/p/J97GtkfWBZp
 
-しかし、構築に {% mathjax %}O(n^2 \log n){% endmathjax %} 時間かかるのでは、例えば 10 万文字程度の文字列の Suffix Array を構築するのにとても時間がかかるため、実用的ではありません。
+しかし、構築に $O(n^2 \log n)$ 時間かかるのでは、例えば 10 万文字程度の文字列の Suffix Array を構築するのにとても時間がかかるため、実用的ではありません。
 
 - ManberとMyersのアルゴリズム
 
-そこで次は Manber と Myers によって示されたアルゴリズムを用いて構築することを考えてみます。基本的な着想はダブリングによるものです。つまり n 文字をソートするときに、まず 1 文字の部分文字列のみをソート、続いて 1 文字の部分文字列でソートした結果を用いて 2 文字の部分文字列をソート、、、と 2k 文字の部分文字列をソートするのに、k 文字の部分文字列でソートした結果を用います。詳しくは蟻本 [^1] を参照ください。蟻本が手もとにない場合は [Suffix Array | Set 2 (nLogn Algorithm)](https://www.geeksforgeeks.org/suffix-array-set-2-a-nlognlogn-algorithm/) などのページでアルゴリズムを確認ください。本記事では Go による実装のみを示します。ダブリングにより比較回数は {% mathjax %}O(\log n){% endmathjax %} 回で 1 回あたりのソートの平均計算量が {% mathjax %}O(n \log n){% endmathjax %} ですから、全体では {% mathjax %}O(n (\log n)^2){% endmathjax %} 時間のアルゴリズムです。
+そこで次は Manber と Myers によって示されたアルゴリズムを用いて構築することを考えてみます。基本的な着想はダブリングによるものです。つまり n 文字をソートするときに、まず 1 文字の部分文字列のみをソート、続いて 1 文字の部分文字列でソートした結果を用いて 2 文字の部分文字列をソート、、、と 2k 文字の部分文字列をソートするのに、k 文字の部分文字列でソートした結果を用います。詳しくは蟻本 [^1] を参照ください。蟻本が手もとにない場合は [Suffix Array | Set 2 (nLogn Algorithm)](https://www.geeksforgeeks.org/suffix-array-set-2-a-nlognlogn-algorithm/) などのページでアルゴリズムを確認ください。本記事では Go による実装のみを示します。ダブリングにより比較回数は $O(\log n)$ 回で 1 回あたりのソートの平均計算量が $O(n \log n)$ ですから、全体では $O(n (\log n)^2)$ 時間のアルゴリズムです。
 
 - 蟻本ベースの Go による Suffix Array を構築する実装
 
@@ -389,13 +390,13 @@ ok      github.com/d-tsuji/go-sandbox      9.362s
 
 ローカル環境でのベンチマークテストの結果によると、標準ライブラリは、私が実装した Manber と Myers のアルゴリズムに比べて、約 100 倍程度高速であることが分かります。
 
-実は標準ライブラリの Suffix Array の構築アルゴリズムは SAIS[^2] という Ge Nong、Sen Zhang、Wai Hong Chen によって提案された高速なアルゴリズムを用いています。SAIS の計算量は {% mathjax %}O(n){% endmathjax %} です。さらにいくつかのチューニングを施しており、詳しくは [index/suffixarray/sais.go](https://golang.org/src/index/suffixarray/sais.go) のドキュメントを確認ください。
+実は標準ライブラリの Suffix Array の構築アルゴリズムは SAIS[^2] という Ge Nong、Sen Zhang、Wai Hong Chen によって提案された高速なアルゴリズムを用いています。SAIS の計算量は $O(n)$ です。さらにいくつかのチューニングを施しており、詳しくは [index/suffixarray/sais.go](https://golang.org/src/index/suffixarray/sais.go) のドキュメントを確認ください。
 
-ベンチマークでは約 100 倍程度の処理時間の違いがありましたが、上記の Manber と Myers のアルゴリズムの計算量が {% mathjax %}O(n (\log n)^2){% endmathjax %} で SAIS の計算量が {% mathjax %}O(n){% endmathjax %} ですから、100 倍程度の差は自然です。SAIS を実装している Go の標準ライブラリが優秀であることが分かります。
+ベンチマークでは約 100 倍程度の処理時間の違いがありましたが、上記の Manber と Myers のアルゴリズムの計算量が $O(n (\log n)^2)$ で SAIS の計算量が $O(n)$ ですから、100 倍程度の差は自然です。SAIS を実装している Go の標準ライブラリが優秀であることが分かります。
 
 ## まとめ
 
-Go の標準ライブラリで私が面白いと思った `suffixarray` パッケージを紹介しました。`suffixarray` パッケージの構築アルゴリズムの計算量は {% mathjax %}O(n){% endmathjax %} で非常に高速です。その他に Manber と Myers による計算量 {% mathjax %}O(n (\log n)^2){% endmathjax %} の構築アルゴリズムを用いた Go による実装を紹介しました。
+Go の標準ライブラリで私が面白いと思った `suffixarray` パッケージを紹介しました。`suffixarray` パッケージの構築アルゴリズムの計算量は $O(n)$ で非常に高速です。その他に Manber と Myers による計算量 $O(n (\log n)^2)$ の構築アルゴリズムを用いた Go による実装を紹介しました。
 
 ## 参考
 

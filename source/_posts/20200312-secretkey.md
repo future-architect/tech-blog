@@ -9,6 +9,7 @@ category:
 author: 村瀬善則
 featured: false
 lede: "「公開鍵で暗号化されたデータは対応する秘密鍵でしか復号できない」。最初にこの説明を聞いた時にそんな鍵がありえるのか？と疑問に思いました。技術力もなかった当時は不思議で仕方ありませんでした。自分で利用することもないし、知識として覚えておこうぐらいの感覚でいたのですがある程度技術力がついた今日では、常日頃からHTTPSや..."
+mathjax: true
 ---
 
 # はじめに
@@ -41,18 +42,18 @@ RSA暗号を解説しているページはたくさんありますが、この�
 RSA暗号ではべき乗と余り(mod)を利用します。
 暗号化する際はとある数EとNを利用します。
 
-{% mathjax  %} 暗号文=平文^E \quad mod \quad N {% endmathjax  %}
+$ 暗号文=平文^E \quad mod \quad N $
 
 復号する際も式は同様ですがEの代わりにDを利用します。
 
 
-{% mathjax  %}平文=暗号文^D \quad mod \quad N{% endmathjax  %}
+$平文=暗号文^D \quad mod \quad N$
 
 
 式から暗号文を削除すると以下の式が成り立ちます。
 
 
-{% mathjax  %}平文=平文^{ED} \quad mod \quad N{% endmathjax  %}
+$平文=平文^{ED} \quad mod \quad N$
 
 
 # とりあえずだまされたと思って確認
@@ -61,11 +62,11 @@ RSA暗号ではべき乗と余り(mod)を利用します。
 
 暗号化
 
-{% mathjax %}5^3 \quad mod \quad 33 = 125 \quad mod \quad 33 = 2{% endmathjax  %}
+$5^3 \quad mod \quad 33 = 125 \quad mod \quad 33 = 2$
 
 復号
 
-{% mathjax %}26^7 \quad mod \quad 33 = 8031810176 \quad mod \quad 33\quad = 5{% endmathjax  %}
+$26^7 \quad mod \quad 33 = 8031810176 \quad mod \quad 33\quad = 5$
 
 平文の5が暗号化することで26になり、26を復号することで5に戻りましたね。modが33なので平文が1～32の整数であれば同様に暗号化、復号すれば元の平文に戻すことができます。
 
@@ -79,13 +80,13 @@ RSA暗号ではべき乗と余り(mod)を利用します。
 
 どうして成り立つのかは省略しますがRSA暗号の発明者が発見したぐらいに思ってください。
 
-{% mathjax %}a^{(p−1)(q−1)n+1} ≡ a \quad mod \quad pq {% endmathjax  %}
+$a^{(p−1)(q−1)n+1} ≡ a \quad mod \quad pq$
 
 RSA暗号の肝はこの数式です。NからE,Dを探せばRSAで暗号化、復号ができます。
 
 先の例ではNが33でしたのでそれを素因数分解してp,qは3,11です。ここからE,Dを求めます。
 
-{% mathjax %}ED = (p−1)(q−1)n+1=(3-1)(11-1)×1+1=2*10+1 =21{% endmathjax %}
+$ED = (p−1)(q−1)n+1=(3-1)(11-1)×1+1=2*10+1 =21$
 
 
 ここまで触れていませんでしたがE,Dは素数である必要があります。素数同士のかけ算で21になるE,Dの組み合わせは3,7※ですね。
