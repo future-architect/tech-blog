@@ -10,6 +10,7 @@ hexo.extend.helper.register('featured_posts', function(url, rate, limit) {
 
   const featureds = this.site.posts.reverse()
     .filter(post => post.featured == true && rand(100) < rate)
+    .filter(post => post.permalink !== url) // その記事自身は除く
     .filter(_  => count++ < postsLimit)
     ;
 
