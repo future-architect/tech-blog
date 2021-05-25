@@ -5,8 +5,6 @@ tag:
   - GlyphFeeds
   - CMS
   - AWS
-  - 基幹システム
-  - エンタープライズ
   - インデックス
 category:
   - Business
