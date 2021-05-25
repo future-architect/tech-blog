@@ -1,4 +1,4 @@
-const maxCount = 3;
+const maxCount = 4;
 
 hexo.extend.helper.register('list_related_posts', function() {
   const post = this.post;
