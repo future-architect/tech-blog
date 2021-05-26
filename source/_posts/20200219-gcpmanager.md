@@ -3,7 +3,6 @@ date: 2020/02/19 10:05:30
 postid: ""
 tag:
   - GCP
-  - GCP連載
   - IaC
 category:
   - Infrastructure
@@ -13,7 +12,7 @@ lede: "普段は、Terraform を使っているのですが、ふとCloud Deploy
 ---
 ## はじめに
 
-[GCP 連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)もいよいよ最終日です！
+[GCP 連載](/articles/20200202/)もいよいよ最終日です！
 
 普段は、Terraform を使っているのですが、ふとCloud Deployment Manager を使ったことないことに気づきました。そこで、Cloud Deployment Manager について紹介したいと思います。
 

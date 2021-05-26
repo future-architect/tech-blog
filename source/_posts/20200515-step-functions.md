@@ -4,7 +4,6 @@ postid: ""
 tag:
   - Serverless
   - AWS
-  - Serverless連載
   - DynamoDB
   - StepFunctions
 category:
@@ -16,7 +15,7 @@ lede: "AWS StepFunctionsとLambdaを活用してバッチ処理を行う記事�
 ---
 # はじめに
 
-AWS StepFunctionsとLambdaを活用してバッチ処理を行う記事です。[サーバレス連載企画](https://future-architect.github.io/tags/Serverless%E9%80%A3%E8%BC%89/)の6回目です。
+AWS StepFunctionsとLambdaを活用してバッチ処理を行う記事です。[サーバレス連載企画](/articles/20200322/)の6回目です。
 
 2020年はServerlessアーキテクチャが当たり前のように採用される時代になってきていると実感します。フロントエンドからアクセスされるBackendのAPIはAWS環境だと、AppsyncやAPI Gateway+Lambaの利用、IoTなどイベントドリブンなメッセージに対してはAWS IoT、その後続はKinesisを使い、さらにその後続でLambdaやKinesis AnalyticsでETL処理を行い、データストアとしてDynamoDBやS3に格納するといった一連の流れ全てフルマネージドなサービスに寄せて構築することも当たり前ですし、そういった事例も珍しく無くなってきました。
 
@@ -585,5 +584,5 @@ func HandleRequest(e InEvent) (*OutEvent, error) {
 * StepFunctionsの動的並列実行を利用することでLambdaの実行時間制約に引っかからないように、事前で入力を分割しそれぞれのLambdaに渡す仕組みが作れる
 
 
- [サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)の6本目でした。次は加部さんの[AWSサービストリガによるLambda起動](/articles/20200722/)です。
+ [サーバレス連載](/articles/20200322/)の6本目でした。次は加部さんの[AWSサービストリガによるLambda起動](/articles/20200722/)です。
 

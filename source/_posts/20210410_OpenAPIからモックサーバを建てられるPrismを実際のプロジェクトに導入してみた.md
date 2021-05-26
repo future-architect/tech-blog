@@ -32,7 +32,7 @@ lede: "参加しているプロジェクトで、OpenAPI定義ファイルから
 
 OpenAPIは、もともとはSwaggerという名前で開発が進められていました。2015年に、もともとの開発元であったSmartBear Softwareから、OpenAPI Initiativeへ移されると同時に `Swagger Specification` から `OpenAPI Specification` (以下OASと記載) という名前に変わりました。なお、現在でも「Swagger UI」や「Swagger Editor」などのOpenAPIドキュメントを整備するツール群は `Swagger` の名前が使われています。
 
-このFuture Tech Blogでも、OpenAPIに関する記事が多く公開されています。詳細は[こちら](https://future-architect.github.io/tags/Swagger/)をご覧ください。
+このFuture Tech Blogでも、OpenAPIに関する記事が多く公開されています。詳細は[こちら](/tags/Swagger/)をご覧ください。
 
 ### Prismについて
 

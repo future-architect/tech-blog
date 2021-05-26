@@ -25,7 +25,7 @@ https://auth0.com/blog/partners-with-hashicorp-terraform/
 
 <img src="/images/20210326/image.png" loading="lazy">
 
-Auth0の概要については[Auth0導入編](/articles/20200122/)をご参照ください。他にも技術ブログには[Auth0関連の記事](https://future-architect.github.io/tags/Auth0/)が沢山あります。
+Auth0の概要については[Auth0導入編](/articles/20200122/)をご参照ください。他にも技術ブログには[Auth0関連の記事](/tags/Auth0/)が沢山あります。
 
 
 ## Terraformとは
@@ -36,7 +36,7 @@ TerraformとはHashiCorpによって開発されたオープンソースのク�
 
 クラウド環境のインフラの構成をコードに落とし込むことで、Git管理が可能になり、さらに状態を定義することが可能になるため、状態との差分からクラウド環境のリソース変更部分の表示が可能になるため、設定ミスのリスクを低減が見込めます。
 
-技術ブログでは[Terrafom関連の記事](https://future-architect.github.io/tags/Terraform/)が沢山あるためそちらも合わせてご参照ください。
+技術ブログでは[Terrafom関連の記事](/tags/Terraform/)が沢山あるためそちらも合わせてご参照ください。
 
 また、Terraform以外でAuth0のクラウドリソースをコードに落とし込むツールには`auth0-deploy-cli`が上げられます。
 

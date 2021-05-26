@@ -3,7 +3,6 @@ date: 2020/03/31 09:39:23
 postid: ""
 tag:
   - Serverless
-  - Serverless連載
   - Go
   - GCP
 category:
@@ -554,4 +553,4 @@ Cloud Functionsのログにてメッセージが届いていることが確認�
 今回は主にCloud Pub/Subにフォーカスする形でCloudEventsの実装について紹介させて頂きました。SDKは絶賛開発中なステータスですが、世に蔓延る様々なイベント形式に悩まされる実装者が幸せになれる未来が待っていると思うと非常に楽しみですし、CloudEventsの動向からますます目が離せませんね。
 
 
-[サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)の5本目でした。次は[AWSのStep FunctionsとLambdaでServelessなBatch処理を実現する](/articles/20200515/)です。
+[サーバレス連載](/articles/20200322/)の5本目でした。次は[AWSのStep FunctionsとLambdaでServelessなBatch処理を実現する](/articles/20200515/)です。

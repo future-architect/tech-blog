@@ -139,5 +139,5 @@ https://prettier.io/
 https://www.antlr.org/
 
 
-[^1]: 2-Way SQLの詳細については[こちら](https://future-architect.github.io/uroborosql-doc/background/)のドキュメントをご参照ください。
+[^1]: 2-Way SQLの詳細については[こちら](/uroborosql-doc/background/)のドキュメントをご参照ください。
 

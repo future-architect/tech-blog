@@ -510,8 +510,8 @@ export default {
 [cheetahgrid-performance]:https://future-architect.github.io/cheetah-grid/documents/introduction/
 [cheetahgrid-components]:https://future-architect.github.io/cheetah-grid/documents/api/vue/components/
 [vue-hp]:https://jp.vuejs.org/index.html
-[beginner-link]:https://future-architect.github.io/articles/20200901/
-[beginner-dev-env]:https://future-architect.github.io/articles/20200901/
+[beginner-link]:/articles/20200901/
+[beginner-dev-env]:/articles/20200901/
 [future-hp]:https://www.future.co.jp/
 [tig-hp]:https://www.future.co.jp/recruit/new/about/tech/engineers_corps/
 [motivation-performance]:https://qiita.com/ota-meshi/items/a2b68e132fa7c5a32c3d

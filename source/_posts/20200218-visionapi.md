@@ -3,9 +3,8 @@ date: 2020/02/18 10:16:55
 postid: ""
 tag:
   - GCP
-  - GCP連載
 category:
-  - Infrastructure
+  - DataScience
 author: 村瀬善則
 featured: false
 lede: "Google Cloud の Vision API は REST API や RPC API を使用して強力な事前トレーニング済みの機械学習モデルを提供します。画像にラベルを割り当てることで、事前定義済みの数百万のカテゴリに画像を高速で分類できます。オブジェクトや顔を検出し、印刷テキストや手書き入力を読み取り、有用なメタデータを画像カタログに作成します。Google Cloudの公式ページによりますと事前トレーニング済みの機械学習モデルを利用してラベルの割り当てやOCRとしてすぐに利用できるようですね。"
@@ -13,7 +12,7 @@ lede: "Google Cloud の Vision API は REST API や RPC API を使用して強�
 # はじめに
 こんにちは。TIG DXチームの村瀬です。
 
-今回は[GCP連載企画](/tags/GCP%E9%80%A3%E8%BC%89/)の9日目です。私個人としてはGCPはほとんど利用したことがないので、せっかくだから面白そうなことを試してみようと思い、画像AIのサービスであるVision APIについて試してみることにしました。
+今回は[GCP連載企画](/articles/20200202/)の9日目です。私個人としてはGCPはほとんど利用したことがないので、せっかくだから面白そうなことを試してみようと思い、画像AIのサービスであるVision APIについて試してみることにしました。
 
 # Vision APIとは
 
@@ -259,4 +258,4 @@ curl -H 'Content-Type:application/json' -d '{"requests":[{"image":{"source":{"im
 今回は検証目的でプロジェクトを作成したのでプロジェクトを削除して完了です。
 
 
-[GCP連載企画](/tags/GCP%E9%80%A3%E8%BC%89/)の9日目でした。次は前原さんの[Cloud Build を知ってみよう](/articles/20210315/)です。
+[GCP連載企画](/articles/20200202/)の9日目でした。次は前原さんの[Cloud Build を知ってみよう](/articles/20210315/)です。

@@ -2,8 +2,8 @@ title: "GCP連載#8 gcloud compute sshじゃなくてsshコマンドを使いた
 date: 2020/02/17 10:56:29
 postid: ""
 tag:
-  - GCP連載
   - GCP
+  - 踏み台
 category:
   - Infrastructure
 author: 木村拓海
@@ -13,7 +13,7 @@ lede: "ssh先のGCEインスタンスとクライアント間で、キーペア(
 
 ## はじめに
 
-[GCP連載企画](/tags/GCP%E9%80%A3%E8%BC%89/)の8日目です。
+[GCP連載企画](/articles/20200202/)の8日目です。
 
 いきなりですが、 `gcloud compute ssh`コマンドは便利ですよね。
 
@@ -140,5 +140,5 @@ hoge@test-instance:~$
 これで快適なsshライフ??が送れますね
 
 
-[GCP連載企画](/tags/GCP%E9%80%A3%E8%BC%89/)の8日目でした。次は村瀬さんの[初めてのGCP 画像AI(Vision API)をさわってみた](/articles/20200218/)です。
+[GCP連載企画](/articles/20200202/)の8日目でした。次は村瀬さんの[初めてのGCP 画像AI(Vision API)をさわってみた](/articles/20200218/)です。
 
