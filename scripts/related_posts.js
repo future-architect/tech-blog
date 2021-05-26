@@ -26,7 +26,7 @@ hexo.extend.helper.register('list_related_posts', function() {
       continue;
     }
 
-    result += `<li class="related-posts-item"><span>${relatedPosts[i].date.format('YYYY.MM.DD')}</span><a class="related-posts-link" href=/${relatedPosts[i].path}>${relatedPosts[i].title}</a></li>`;
+    result += `<li class="related-posts-item"><span>${relatedPosts[i].date.format('YYYY.MM.DD')}</span><a class="related-posts-link" href=/${relatedPosts[i].path} title="${relatedPosts[i].lede}">${relatedPosts[i].title}</a></li>`;
   }
 
   return `
