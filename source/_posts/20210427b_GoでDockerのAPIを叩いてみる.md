@@ -7,7 +7,7 @@ tag:
   - 登壇レポート
   - Go
   - OSS
-  - OSS推進タスクフォース
+  - ログ
 category:
   - Programming
 thumbnail: /images/20210427b/thumbnail.png

@@ -8,9 +8,6 @@ tag:
   - webpack
   - Node.js
   - Parcel
-  - Fusebox
-  - ncc
-  - Rome.js
 category:
   - Programming
 author: 澁川喜規

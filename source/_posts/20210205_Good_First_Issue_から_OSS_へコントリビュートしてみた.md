@@ -5,7 +5,6 @@ tag:
   - OSS
   - OSSコントリビュート
   - go-swagger
-  - OSS推進タスクフォース
 category:
   - Programming
 thumbnail: /images/20210205/thumbnail.png

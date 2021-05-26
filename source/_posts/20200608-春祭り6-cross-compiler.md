@@ -2,9 +2,8 @@ title: "とあるマイコンのクロスコンパイラ"
 date: 2020/06/08 10:37:41
 postid: ""
 tag:
-  - clang
-  - コンパイラ
   - マイコン
+  - clang
 category:
   - IoT
 thumbnail: /images/20200608/thumbnail.png

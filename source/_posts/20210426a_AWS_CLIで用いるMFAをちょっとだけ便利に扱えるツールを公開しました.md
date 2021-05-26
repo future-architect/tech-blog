@@ -5,7 +5,6 @@ tag:
   - AWS
   - IAM
   - OSS
-  - OSS推進タスクフォース
   - Go
 category:
   - Programming
