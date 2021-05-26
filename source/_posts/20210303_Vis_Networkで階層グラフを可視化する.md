@@ -40,7 +40,7 @@ mxGraphについて[次の記事](/articles/20210304/)で紹介する予定で�
 
 ## Vis Networkとは
 
-vis.jsという可視化ライブラリに含まれるグラフ可視化ライブラリです。その中でもVis Networkはグラフの可視化に特化したライブラリで、[Vis Network Examples](https://visjs.github.io/vis-network/examples/)にあるように様々なグラフを描画することができます。Vis Networkはcanvasに描画するため描画が高速で、パフォーマンスが要求される場面に有用です。[^1]
+vis.jsという可視化ライブラリに含まれるグラフ可視化ライブラリです。その中でもVis Networkはグラフの可視化に特化したライブラリで、[Vis Network Examples](https://visjs.github.io/vis-network/examples/)にあるように様々なグラフを描画することができます。Vis Networkはcanvasに描画するため描画が高速で、パフォーマンスが要求される場面に有用です。 [^1]
 
 
 # Vis Networkの使い方
@@ -149,7 +149,7 @@ const nodes = new vis.DataSet([
 
 > tooltip（ツールチップ）とは、マウスオーバーした際に表示される枠内の補足説明などのことです。詳細は[こちら](https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%BC%E3%83%AB%E3%83%81%E3%83%83%E3%83%97)の記事などを参考ください。
 
-ノード定義にtitle属性を追加することでtooltipを表示することが出来ます。ドキュメントによるとHTMLを含む文字列を直接セット出来ると書かれていますが、XSS対策[^2]のため9.0.0からできなくなっています。
+ノード定義にtitle属性を追加することでtooltipを表示することが出来ます。ドキュメントによるとHTMLを含む文字列を直接セット出来ると書かれていますが、XSS対策 [^2]のため9.0.0からできなくなっています。
 
 tooltipでHTMLを表示したい場合は[Vis Network \| Other \| Popups](https://visjs.github.io/vis-network/examples/network/other/popups.html)のように HTML Element を直接セットする必要があります。
 
@@ -188,7 +188,7 @@ const nodes = new vis.DataSet([
 
 ## dot言語からのインポート
 
-Vis NetworkではGephiからエクスポートしたデータやdot言語をインポートすることができます。今回は私が先日Graphvizを用いて可視化したグラフ[^3]をVis Networkで表示してみます。
+Vis NetworkではGephiからエクスポートしたデータやdot言語をインポートすることができます。今回は私が先日Graphvizを用いて可視化したグラフ [^3]をVis Networkで表示してみます。
 
 
 <img src="/images/20210303/名称未設定2.png" loading="lazy">
@@ -202,7 +202,7 @@ Graphvizほど洗練されたレイアウトにはなりませんが、非常に
 
 # 注意
 
-開発中にバージョンアップしたときに何も表示されなくなる不具合[^4]に遭遇したことがありました。このようなわかりやすい不具合ならまだいいですが、細かいところで挙動が変わってしまっている可能性もあるのでバージョンアップの際には十分な検証が必要かなと思います。（どのソフトウェアにも言えることではありますが…）
+開発中にバージョンアップしたときに何も表示されなくなる不具合 [^4]に遭遇したことがありました。このようなわかりやすい不具合ならまだいいですが、細かいところで挙動が変わってしまっている可能性もあるのでバージョンアップの際には十分な検証が必要かなと思います。（どのソフトウェアにも言えることではありますが…）
 
 # 課題
 
@@ -234,7 +234,7 @@ vis.jsを使い、ライトに階層グラフを表示・加工出来ること�
 https://www.future.co.jp/recruit/
 
 
-[^1]: フューチャー発のOSSであるCheetah Gridも高速に描画するためにcanvasを使用しています。興味がある方は[Vue\.jsで最速に始めるCheetah Grid \| フューチャー技術ブログ](/articles/20200901/)や[CheetahGrid\+Vue\.jsをエンプラで使ってみた \| フューチャー技術ブログ](/articles/20200924/)を御覧ください
-[^2]: [fix\(xss\)\!: don't set popup content via innerHTML by Thomaash · Pull Request \#1275 · visjs/vis\-network · GitHub](https://github.com/visjs/vis-network/pull/1275)
-[^3]: [Goでコールグラフを自作してみた \- Qiita](https://qiita.com/tanzaku/items/d21ce5c61505a8710fbe#%E8%A7%A3%E6%9E%90%E7%B5%90%E6%9E%9C-%E3%81%9D%E3%81%AE3%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%81%AE%E3%83%8E%E3%83%BC%E3%83%89%E3%82%92%E8%BF%BD%E5%8A%A0)
-[^4]: [None of the examples work on 6\.2\.0? · Issue \#183 · visjs/vis\-network · GitHub](https://github.com/visjs/vis-network/issues/183)
+ [^1]: フューチャー発のOSSであるCheetah Gridも高速に描画するためにcanvasを使用しています。興味がある方は[Vue\.jsで最速に始めるCheetah Grid \| フューチャー技術ブログ](/articles/20200901/)や[CheetahGrid\+Vue\.jsをエンプラで使ってみた \| フューチャー技術ブログ](/articles/20200924/)を御覧ください
+ [^2]: [fix\(xss\)\!: don't set popup content via innerHTML by Thomaash · Pull Request \#1275 · visjs/vis\-network · GitHub](https://github.com/visjs/vis-network/pull/1275)
+ [^3]: [Goでコールグラフを自作してみた \- Qiita](https://qiita.com/tanzaku/items/d21ce5c61505a8710fbe#%E8%A7%A3%E6%9E%90%E7%B5%90%E6%9E%9C-%E3%81%9D%E3%81%AE3%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%81%AE%E3%83%8E%E3%83%BC%E3%83%89%E3%82%92%E8%BF%BD%E5%8A%A0)
+ [^4]: [None of the examples work on 6\.2\.0? · Issue \#183 · visjs/vis\-network · GitHub](https://github.com/visjs/vis-network/issues/183)

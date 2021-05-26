@@ -40,9 +40,9 @@ GKEの場合は、ノードプールを構成するインスタンスグルー�
 起動タイミングはCloud Schedulerで制御する構成です。
 そのため、「0 21 * * *」のようにCRON形式でスケジュールを定義すれば、毎日21時に停止させることができます。
 
-ちなみに、Cloud FunctionをHTTPトリガーにせずPub/Subを挟んでいる理由は、認証を挟みたかったためです。[^1]
+ちなみに、Cloud FunctionをHTTPトリガーにせずPub/Subを挟んでいる理由は、認証を挟みたかったためです。 [^1]
 
-[^1]: 参考: https://cloud.google.com/scheduler/docs/start-and-stop-compute-engine-instances-on-a-schedule
+ [^1]: 参考: https://cloud.google.com/scheduler/docs/start-and-stop-compute-engine-instances-on-a-schedule
 
 
 # デプロイ方法

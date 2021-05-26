@@ -120,7 +120,7 @@ suffix: anana, match: an
 
 https://play.golang.org/p/JFNugaoB26N
 
-このパターンマッチングは元の文字列 T の長さを $n$ として、マッチングしたい文字列 P の長さを $m$ とすると $O(m \log n)$ 時間でマッチングできます。Go の [sort.Search](https://golang.org/pkg/sort/#Search) 関数はソートされた配列やスライスに対して条件を満たす最小の index を二分探索することができます。上記の実装では、suffix における prefix の先頭 `len(p)` 文字目までの部分文字列とマッチングしたい文字列 `p` を [strings.Compare](https://golang.org/pkg/strings/#Compare) で比較し、結果が 0 以上と 1 となる最小の index [^3]を探索しています。Suffix Array に対して二分探索を行うことによって、パターンマッチングするときは、元の文字列の長さに対して、対数時間でおさえることができます。
+このパターンマッチングは元の文字列 T の長さを $n$ として、マッチングしたい文字列 P の長さを $m$ とすると $O(m \log n)$ 時間でマッチングできます。Go の [sort.Search](https://golang.org/pkg/sort/#Search) 関数はソートされた配列やスライスに対して条件を満たす最小の index を二分探索することができます。上記の実装では、suffix における prefix の先頭 `len(p)` 文字目までの部分文字列とマッチングしたい文字列 `p` を [strings.Compare](https://golang.org/pkg/strings/#Compare) で比較し、結果が 0 以上と 1 となる最小の index  [^3]を探索しています。Suffix Array に対して二分探索を行うことによって、パターンマッチングするときは、元の文字列の長さに対して、対数時間でおさえることができます。
 
 ## Suffix Array の構築
 
@@ -184,7 +184,7 @@ https://play.golang.org/p/J97GtkfWBZp
 
 - ManberとMyersのアルゴリズム
 
-そこで次は Manber と Myers によって示されたアルゴリズムを用いて構築することを考えてみます。基本的な着想はダブリングによるものです。つまり n 文字をソートするときに、まず 1 文字の部分文字列のみをソート、続いて 1 文字の部分文字列でソートした結果を用いて 2 文字の部分文字列をソート、、、と 2k 文字の部分文字列をソートするのに、k 文字の部分文字列でソートした結果を用います。詳しくは蟻本 [^1] を参照ください。蟻本が手もとにない場合は [Suffix Array | Set 2 (nLogn Algorithm)](https://www.geeksforgeeks.org/suffix-array-set-2-a-nlognlogn-algorithm/) などのページでアルゴリズムを確認ください。本記事では Go による実装のみを示します。ダブリングにより比較回数は $O(\log n)$ 回で 1 回あたりのソートの平均計算量が $O(n \log n)$ ですから、全体では $O(n (\log n)^2)$ 時間のアルゴリズムです。
+そこで次は Manber と Myers によって示されたアルゴリズムを用いて構築することを考えてみます。基本的な着想はダブリングによるものです。つまり n 文字をソートするときに、まず 1 文字の部分文字列のみをソート、続いて 1 文字の部分文字列でソートした結果を用いて 2 文字の部分文字列をソート、、、と 2k 文字の部分文字列をソートするのに、k 文字の部分文字列でソートした結果を用います。詳しくは蟻本  [^1] を参照ください。蟻本が手もとにない場合は [Suffix Array | Set 2 (nLogn Algorithm)](https://www.geeksforgeeks.org/suffix-array-set-2-a-nlognlogn-algorithm/) などのページでアルゴリズムを確認ください。本記事では Go による実装のみを示します。ダブリングにより比較回数は $O(\log n)$ 回で 1 回あたりのソートの平均計算量が $O(n \log n)$ ですから、全体では $O(n (\log n)^2)$ 時間のアルゴリズムです。
 
 - 蟻本ベースの Go による Suffix Array を構築する実装
 
@@ -390,7 +390,7 @@ ok      github.com/d-tsuji/go-sandbox      9.362s
 
 ローカル環境でのベンチマークテストの結果によると、標準ライブラリは、私が実装した Manber と Myers のアルゴリズムに比べて、約 100 倍程度高速であることが分かります。
 
-実は標準ライブラリの Suffix Array の構築アルゴリズムは SAIS[^2] という Ge Nong、Sen Zhang、Wai Hong Chen によって提案された高速なアルゴリズムを用いています。SAIS の計算量は $O(n)$ です。さらにいくつかのチューニングを施しており、詳しくは [index/suffixarray/sais.go](https://golang.org/src/index/suffixarray/sais.go) のドキュメントを確認ください。
+実は標準ライブラリの Suffix Array の構築アルゴリズムは SAIS [^2] という Ge Nong、Sen Zhang、Wai Hong Chen によって提案された高速なアルゴリズムを用いています。SAIS の計算量は $O(n)$ です。さらにいくつかのチューニングを施しており、詳しくは [index/suffixarray/sais.go](https://golang.org/src/index/suffixarray/sais.go) のドキュメントを確認ください。
 
 ベンチマークでは約 100 倍程度の処理時間の違いがありましたが、上記の Manber と Myers のアルゴリズムの計算量が $O(n (\log n)^2)$ で SAIS の計算量が $O(n)$ ですから、100 倍程度の差は自然です。SAIS を実装している Go の標準ライブラリが優秀であることが分かります。
 
@@ -402,6 +402,6 @@ Go の標準ライブラリで私が面白いと思った `suffixarray` パッ�
 
 - 岡野原大輔 (2012) 『高速文字列解析の世界』岩波書店
 
-[^1]: 秋葉拓哉、岩田陽一、北川宜稔 (2012) 『プログラミングコンテストチャレンジブック [第2版]』 マイナビ出版
-[^2]: [Two Efficient Algorithms for Linear Time Suffix Array Construction](https://ieeexplore.ieee.org/document/5582081)
-[^3]: 文字 a と b を `strings.Compare(a, b)` で辞書順で比較したときに a < b であれば -1、a = b であれば 0、a > b であれば +1 で返り値として取得できます。返り値が 0 以上の index を探索しているため a ≧ b である最小の index が取得できます。
+ [^1]: 秋葉拓哉、岩田陽一、北川宜稔 (2012) 『プログラミングコンテストチャレンジブック [第2版]』 マイナビ出版
+ [^2]: [Two Efficient Algorithms for Linear Time Suffix Array Construction](https://ieeexplore.ieee.org/document/5582081)
+ [^3]: 文字 a と b を `strings.Compare(a, b)` で辞書順で比較したときに a < b であれば -1、a = b であれば 0、a > b であれば +1 で返り値として取得できます。返り値が 0 以上の index を探索しているため a ≧ b である最小の index が取得できます。

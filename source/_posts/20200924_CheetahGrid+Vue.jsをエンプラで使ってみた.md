@@ -18,9 +18,9 @@ lede: "こんにちは！今回は[CheetahGrid][cheetahgrid-hp]＋[Vue.js][vue-h
 
 こんにちは！信田です。
 
-[CheetahGrid][cheetahgrid-hp]＋[Vue.js][vue-hp]でエンプラ系システム[^3]を構築した際の、採用した理由と実装のポイントのご紹介をします。[CheetahGrid][cheetahgrid-hp]について存じ上げないよーとか、触ったことがないよーという方は、[入門編][beginner-link]も御覧ください。
+[CheetahGrid][cheetahgrid-hp]＋[Vue.js][vue-hp]でエンプラ系システム [^3]を構築した際の、採用した理由と実装のポイントのご紹介をします。[CheetahGrid][cheetahgrid-hp]について存じ上げないよーとか、触ったことがないよーという方は、[入門編][beginner-link]も御覧ください。
 
-[^3]: エンタプライズ系システムのこと。 https://www.ipa.go.jp/sec/softwareengineering/std/ent.html
+ [^3]: エンタプライズ系システムのこと。 https://www.ipa.go.jp/sec/softwareengineering/std/ent.html
 
 初めての投稿ですが、最後までお付き合いいただければ嬉しいです。
 
@@ -51,7 +51,7 @@ lede: "こんにちは！今回は[CheetahGrid][cheetahgrid-hp]＋[Vue.js][vue-h
 
 ### 画面描画のパフォーマンス問題
 
-様々な業界のエンプラシステムを構築する上で、必ず一度は苦しむであろうパフォーマンスチューニング。アパレル業界のお客様でも同様でした。例えば、「配分[^1]」と呼ばれるディストリビューター業務があり、一覧部の項目数は店舗✕SKU[^2]でかなりの数になります。結果として、JSFベースの画面では項目分だけ部品が描画されるなどHTMLが膨れ上がり、画面がもさっとしてしまっていました。実際に毎日業務で利用する人にとってはかなりのストレスになります。
+様々な業界のエンプラシステムを構築する上で、必ず一度は苦しむであろうパフォーマンスチューニング。アパレル業界のお客様でも同様でした。例えば、「配分 [^1]」と呼ばれるディストリビューター業務があり、一覧部の項目数は店舗✕SKU [^2]でかなりの数になります。結果として、JSFベースの画面では項目分だけ部品が描画されるなどHTMLが膨れ上がり、画面がもさっとしてしまっていました。実際に毎日業務で利用する人にとってはかなりのストレスになります。
 
 この対応策として、
 
@@ -503,8 +503,8 @@ export default {
 
 パフォーマンスが遅くて困っている方、[CheetahGrid][cheetahgrid-hp]ぜひ試してみてください！
 
-[^1]: 配分：各店舗の売上や在庫、納品の管理や分析を行い、どの店舗にどのような商品をどれだけ割り振るかを決める業務
-[^2]: SKU：Stock Keeping Unit。商品の管理単位。アパレルではブランド・商品番号・サイズ・カラーの組み合わせとすることが多い
+ [^1]: 配分：各店舗の売上や在庫、納品の管理や分析を行い、どの店舗にどのような商品をどれだけ割り振るかを決める業務
+ [^2]: SKU：Stock Keeping Unit。商品の管理単位。アパレルではブランド・商品番号・サイズ・カラーの組み合わせとすることが多い
 
 [cheetahgrid-hp]:https://future-architect.github.io/cheetah-grid/
 [cheetahgrid-performance]:https://future-architect.github.io/cheetah-grid/documents/introduction/

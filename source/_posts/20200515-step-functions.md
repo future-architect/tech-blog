@@ -22,9 +22,9 @@ AWS StepFunctionsとLambdaを活用してバッチ処理を行う記事です。
 
 # サーバレスのバッチ処理
 
-そんな中で、バッチ処理（定時起動やユーザの非同期イベントで処理を行うジョブ）に関してはLambdaではなくECSなどを採用することが多いと思います。理由としてはやはり [LambdaのTimeout時間が最大で15分](https://aws.amazon.com/jp/blogs/news/aws-lambda-timeout-15min/) [^1] であるためです。また、ECSも非同期タスク起動ではなく常駐にしてHTTPリクエストなどでイベントを待ち受けるタイプに関しては、[ALBであれば4000秒（約66分）](https://docs.aws.amazon.com/ja_jp/elasticloadbalancing/latest/application/application-load-balancers.html#connection-idle-timeout) [^1]なため、1h超えの処理時間になりうる機能は採用できないでしょう。ALBではなくNLBを採用するとこの制約からは逃げられるので、SecurityGroupなどの考えがややALBと異なりますがこちらを採用するチームもいらっしゃると思います。もしくは次の [ecs-run-task](https://docs.aws.amazon.com/cli/latest/reference/ecs/run-task.html) で非同期にECSコンテナを呼び出している、という方式をとることも多いのでは無いでしょうか？ 定期実行であれば、ECS Scheduled Tasksを利用することもできるので便利ですよね。
+そんな中で、バッチ処理（定時起動やユーザの非同期イベントで処理を行うジョブ）に関してはLambdaではなくECSなどを採用することが多いと思います。理由としてはやはり [LambdaのTimeout時間が最大で15分](https://aws.amazon.com/jp/blogs/news/aws-lambda-timeout-15min/)  [^1] であるためです。また、ECSも非同期タスク起動ではなく常駐にしてHTTPリクエストなどでイベントを待ち受けるタイプに関しては、[ALBであれば4000秒（約66分）](https://docs.aws.amazon.com/ja_jp/elasticloadbalancing/latest/application/application-load-balancers.html#connection-idle-timeout)  [^1]なため、1h超えの処理時間になりうる機能は採用できないでしょう。ALBではなくNLBを採用するとこの制約からは逃げられるので、SecurityGroupなどの考えがややALBと異なりますがこちらを採用するチームもいらっしゃると思います。もしくは次の [ecs-run-task](https://docs.aws.amazon.com/cli/latest/reference/ecs/run-task.html) で非同期にECSコンテナを呼び出している、という方式をとることも多いのでは無いでしょうか？ 定期実行であれば、ECS Scheduled Tasksを利用することもできるので便利ですよね。
 
-[^1]: 2020/04/26時点の話です。将来的に伸びる可能性が高いとは思っています。
+ [^1]: 2020/04/26時点の話です。将来的に伸びる可能性が高いとは思っています。
 
 # ECS Run Taskについて
 

@@ -16,9 +16,9 @@ featured: true
 lede: "みなさん、Swagger使ってますか？本記事では実際にSwaggerのスキーマ定義を設計していく上で取り決めた規約について書いてみたいと思います。"
 
 ---
-はじめまして。TIG DXユニット[^1]の亀井です。
+はじめまして。TIG DXユニット [^1]の亀井です。
 
-[^1]: Technology Innovation Groupの略で、フューチャーの中でも特にIT技術に特化した部隊です。その中でもDXチームは特にデジタルトランスフォーメーションに関わる仕事を推進していくチームです。
+ [^1]: Technology Innovation Groupの略で、フューチャーの中でも特にIT技術に特化した部隊です。その中でもDXチームは特にデジタルトランスフォーメーションに関わる仕事を推進していくチームです。
 
 # はじめに
 
@@ -35,11 +35,11 @@ Swaggerや周辺ツールについては [某先輩の記事](/articles/20191008
 
 というわけで、今回は下記のツールを利用することを前提として規約を作成しています。
 
-* [go-swagger](https://github.com/go-swagger/go-swagger): Goアプリケーションのハンドラ、リクエスト/レスポンスのドメインモデル、バリデーションフレームワーク[^2]
+* [go-swagger](https://github.com/go-swagger/go-swagger): Goアプリケーションのハンドラ、リクエスト/レスポンスのドメインモデル、バリデーションフレームワーク [^2]
 * [openapi-generator/typescript-axios](https://github.com/OpenAPITools/openapi-generator): フロントエンドのHTTPクライアント、リクエスト/レスポンスのインターフェイス
 * [Prism](https://stoplight.io/open-source/prism): フロントエンド開発時に利用するモックサーバー
 
-[^2]: go-swaggerについては [WAFとして go-swagger を選択してみた](/articles/20190814/) で詳しく紹介されています。
+ [^2]: go-swaggerについては [WAFとして go-swagger を選択してみた](/articles/20190814/) で詳しく紹介されています。
 
 # 設計規約
 

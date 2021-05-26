@@ -11,7 +11,7 @@ author: 小林澪司
 featured: false
 lede: "アルバイトの小林です。案件で認証プラットフォームである[Auth0]を利用しています。Auth0がHashiCorpとのパートナーシップを結び、TerraformでAuth0リソースの管理が可能となりました。"
 ---
-TIG DXユニット[^1] アルバイトの小林です。
+TIG DXユニット [^1] アルバイトの小林です。
 
 案件で認証プラットフォームである[Auth0](https://auth0.com/jp/)を利用しています。
 
@@ -48,7 +48,7 @@ Auth0が出しているツールで、テナント構成をyamlに落とし込�
 
 Auth0 Deploy CLIについては、TIG市川さんの[Auth0の設定をバージョン管理し、Auth0 Deploy CLIを利用してデプロイ環境を整える](/articles/20200702/)をご参照ください。
 
-Auth0 Deploy CLIには、`dry-run`がサポートされておらず[^8]、**実際に実行してみるまでテナント構成がどうなるのか分からない**、さらに**意図していない変更を検出出来ない**といった課題があります。
+Auth0 Deploy CLIには、`dry-run`がサポートされておらず [^8]、**実際に実行してみるまでテナント構成がどうなるのか分からない**、さらに**意図していない変更を検出出来ない**といった課題があります。
 
 
 ## Auth0 Deploy CLI vs Terraform
@@ -66,7 +66,7 @@ Auth0環境の構成をAuth0 Deploy CLIで行う場合とTerraformで行う場�
 #### Auth0 Deploy CLIの弱み
 
 - Auth0専用のツールなのでこのツールの操作方法を独自で覚える必要があります。
-- `dry-run`機能が無いため**意図していない設定変更が生じうる**可能性があります[^9]。
+- `dry-run`機能が無いため**意図していない設定変更が生じうる**可能性があります [^9]。
 
 #### Terraformの強み
 
@@ -151,7 +151,7 @@ Terraformで管理出来るリソースの一覧(リソースタイプ)は↓で
 
 [Docs overview | alexkappa/auth0 | Terraform Registry](https://registry.terraform.io/providers/alexkappa/auth0/latest/docs)
 
-かなりの作業量になるため何らかのツールがあるだろうと探してみたのですが、見つけられませんでした。[^2]
+かなりの作業量になるため何らかのツールがあるだろうと探してみたのですが、見つけられませんでした。 [^2]
 
 加えてこの手順でAuth0のリソースをインポートするに当たって、ある事象でハマってしまいました。
 
@@ -192,15 +192,15 @@ resource "auth0_custom_domain" "main_domain" {
 
 `ID`は識別子です。Auth0 のテナント設定に着目すると、**IDが無くとも設定が判別できます**。
 
-IDが振られているリソースタイプである、`auth0_role`のプロパイダのソースコード[^3]とTerraform公式のimportの説明[^7]を読むと、CLIから受け取ったIDが`d.ID()`に入っている事が分かります。
+IDが振られているリソースタイプである、`auth0_role`のプロパイダのソースコード [^3]とTerraform公式のimportの説明 [^7]を読むと、CLIから受け取ったIDが`d.ID()`に入っている事が分かります。
 
-同様にIDが不明なリソースタイプである、`auth_tenant`のプロパイダのソースコード[^4]を読むと、`auth0_role`では使われていた、`d.ID()`が使われていない事が分かります。そのため、こちらで適当なIDを入れても問題無いことが分かります。
+同様にIDが不明なリソースタイプである、`auth_tenant`のプロパイダのソースコード [^4]を読むと、`auth0_role`では使われていた、`d.ID()`が使われていない事が分かります。そのため、こちらで適当なIDを入れても問題無いことが分かります。
 
 ### リソースタイプとIDの対応表
 
 執筆当時プロパイダのドキュメントに、**どのパラメータを使えばimportが出来るかの情報がほとんど載っていません**。issueにはちらちら書かれていますが、テナント設定のimport方法について書いている人は見つけられませんでした。
 
-そのためリソースタイプとID対応関係について表にまとめてみたので参考にお使い下さい。執筆当時で、この中の全リソースタイプについてimportが出来ている事を確認しています。[^5]
+そのためリソースタイプとID対応関係について表にまとめてみたので参考にお使い下さい。執筆当時で、この中の全リソースタイプについてimportが出来ている事を確認しています。 [^5]
 
 また、`ID`の確認が必要なリソースタイプについては、IDが確認しやすい様にManagement APIのAPI Explorerの該当APIのURLを載せています。
 
@@ -213,7 +213,7 @@ IDの欄に`"id"`と書かれていた場合は**APIを叩いた時のJSONレス
 | auth0\_client           | "client\_id"                                                                                                                                                                                       | [https://auth0.com/docs/api/management/v2#!/Clients/get\_clients](https://auth0.com/docs/api/management/v2#!/Clients/get_clients)                                       |                                                                  |
 | auth0\_client\_grant    | "id"                                                                                                                                                                                                | [https://auth0.com/docs/api/management/v2#!/Client\_Grants/get\_client\_grants](https://auth0.com/docs/api/management/v2#!/Client_Grants/get_client_grants)             |                                                                  |
 | auth0\_connection       | "id"                                                                                                                                                                                                | [https://auth0.com/docs/api/management/v2#!/Connections/get\_connections](https://auth0.com/docs/api/management/v2#!/Connections/get_connections)                       |                                                                  |
-| auth0\_custom\_domain   | "custom\_domain\_id"                                                                                                                                                                                | [https://auth0.com/docs/api/management/v2#!/Custom\_Domains/get\_custom\_domains](https://auth0.com/docs/api/management/v2#!/Custom_Domains/get_custom_domains)         | tfstateの修正が必要[^6]                                                           |
+| auth0\_custom\_domain   | "custom\_domain\_id"                                                                                                                                                                                | [https://auth0.com/docs/api/management/v2#!/Custom\_Domains/get\_custom\_domains](https://auth0.com/docs/api/management/v2#!/Custom_Domains/get_custom_domains)         | tfstateの修正が必要 [^6]                                                           |
 | auth0\_email            | 自由                                                                                                                                                                                                  |                                                                                                                                                                         |                                                                  |
 | auth0\_email\_template  | \[verify\_email,<br>verify\_email\_by\_code,<br>reset\_email,<br>welcome\_email,<br>blocked\_account,<br>stolen\_credentials,<br>enrollment\_email,<br>mfa\_oob\_code,<br>user\_invitation\] のどれか一つ |                                                                                                                                                                         | IDによって、インポートされる項目が異なる、<br>例えば\`verify\_email\`ならば認証メールがインポートされる。 |
 | auth0\_hook             | "id"                                                                                                                                                                                                | [https://auth0.com/docs/api/management/v2#!/Hooks/get\_hooks](https://auth0.com/docs/api/management/v2#!/Hooks/get_hooks)                                               |                                                                  |
@@ -381,14 +381,14 @@ resource "auth0_rule" "set_env" {
 <img src="/images/20210326/kobayashi.jpg" loading="lazy">
 
 
-[^1]: TIG: Technology Innovation Groupの略で、フューチャーの中でも特にIT技術に特化した部隊です。DXユニット: TIGの中にありデジタルトランスフォーメーションに関わる仕事を推進していくチームです。
-[^2]: 執筆中に[terraformer](https://github.com/GoogleCloudPlatform/terraformer)と呼ばれる既存のインフラリソースをリソース定義(.tf)や状態(.tfstate)に落とし込むCLIツールは見つけたのですが、執筆当時はまだ対応リストに記載されていません。
-[^3]: https://github.com/alexkappa/terraform-provider-auth0/blob/master/auth0/resource_auth0_role.go#L86
-[^4]: https://github.com/alexkappa/terraform-provider-auth0/blob/master/auth0/resource_auth0_tenant.go#L256
-[^5]: あくまで全リソースタイプについて確認しているため、リソースタイプのauth0_email_templateのIDは`verify_email`と`reset_email`のみ確認済みです。
-[^6]: このリソースタイプはどうリソースブロックを編集しても`terraform plan`で差分を無くす事が出来ません。`verification_method`がManagement APIの仕様上importされないため、tfstate側がnullと設定されてしまうからです。スキーマ定義を見ると、`Required`と`ForceNew`が付いているためこのままではリソースの再生成が走ってしまいます。そのため、`.tfstate`,`.tf`の両方について`verification_method = "txt"`に強制的に変更することで`terraform plan`で差分を表示させない様に設定出来ます。この問題はプロパイダのリポジトリのissueでも言及されていました。 [Importing auth0_custom_domain resource forces recreation · Issue #294 · alexkappa/terraform-provider-auth0](https://github.com/alexkappa/terraform-provider-auth0/issues/294)
+ [^1]: TIG: Technology Innovation Groupの略で、フューチャーの中でも特にIT技術に特化した部隊です。DXユニット: TIGの中にありデジタルトランスフォーメーションに関わる仕事を推進していくチームです。
+ [^2]: 執筆中に[terraformer](https://github.com/GoogleCloudPlatform/terraformer)と呼ばれる既存のインフラリソースをリソース定義(.tf)や状態(.tfstate)に落とし込むCLIツールは見つけたのですが、執筆当時はまだ対応リストに記載されていません。
+ [^3]: https://github.com/alexkappa/terraform-provider-auth0/blob/master/auth0/resource_auth0_role.go#L86
+ [^4]: https://github.com/alexkappa/terraform-provider-auth0/blob/master/auth0/resource_auth0_tenant.go#L256
+ [^5]: あくまで全リソースタイプについて確認しているため、リソースタイプのauth0_email_templateのIDは`verify_email`と`reset_email`のみ確認済みです。
+ [^6]: このリソースタイプはどうリソースブロックを編集しても`terraform plan`で差分を無くす事が出来ません。`verification_method`がManagement APIの仕様上importされないため、tfstate側がnullと設定されてしまうからです。スキーマ定義を見ると、`Required`と`ForceNew`が付いているためこのままではリソースの再生成が走ってしまいます。そのため、`.tfstate`,`.tf`の両方について`verification_method = "txt"`に強制的に変更することで`terraform plan`で差分を表示させない様に設定出来ます。この問題はプロパイダのリポジトリのissueでも言及されていました。 [Importing auth0_custom_domain resource forces recreation · Issue #294 · alexkappa/terraform-provider-auth0](https://github.com/alexkappa/terraform-provider-auth0/issues/294)
 
-[^7]: [Resources - Import - Terraform by HashiCorp](https://www.terraform.io/docs/extend/resources/import.html#importer-state-function)
-[^8]: [Support Test Mode · Issue #70 · auth0/auth0-deploy-cli](https://github.com/auth0/auth0-deploy-cli/issues/70)issue自体は記載されています。
-[^9]: 一応Auth0 Deploy CLIでは、意図していないリソースの破壊を防ぐために`AUTH0_ALLOW_DELETE`フラグが設定可能です。https://github.com/auth0/auth0-deploy-cli/blob/master/examples/yaml/README.md#config
+ [^7]: [Resources - Import - Terraform by HashiCorp](https://www.terraform.io/docs/extend/resources/import.html#importer-state-function)
+ [^8]: [Support Test Mode · Issue #70 · auth0/auth0-deploy-cli](https://github.com/auth0/auth0-deploy-cli/issues/70)issue自体は記載されています。
+ [^9]: 一応Auth0 Deploy CLIでは、意図していないリソースの破壊を防ぐために`AUTH0_ALLOW_DELETE`フラグが設定可能です。https://github.com/auth0/auth0-deploy-cli/blob/master/examples/yaml/README.md#config
 
