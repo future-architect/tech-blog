@@ -700,3 +700,32 @@ code {
 #footnotelist li {
   padding-top: 1em;
 }
+.toc {
+  padding: 50px 0px 0px 0px;
+}
+.toc ol {
+  padding: 0 0 0 0.8em;
+}
+.toc li {
+  list-style-type: none;
+  margin: 4px 0;
+}
+.toc a {
+  list-style-type: none;
+  margin: 4px 0;
+  display: block;
+  padding: 4px 8px;
+  color: #333;
+  text-decoration: none;
+  line-height: 1;
+}
+.toc a:hover {
+  background-color: #efefef;
+  color: #85837a;
+}
+@media screen and (max-width: 768px){
+  .toc {
+    display:none;
+  }
+}
+
