@@ -47,9 +47,9 @@ lede: "GCPをテーマにした連載企画を始めるということで、初�
 
 Stackdriver Loggingへ直接ログデータを流し込むには、[Logging Client Libraries](https://cloud.google.com/logging/docs/reference/librarie)が存在します。こちらは内部的にStackdriver LoggingのWebAPIのエンドポイントをコールしてログデータを流し込んでくれます。
 
-Logging Client Librariesを利用しなくても、CloudRunやFunction上にアプリケーションをデプロイし、それ上で標準出力/標準エラーでログを出せばStackdriver LoggingにGCPサービス側で連携することができます。CloudRunは標準出力/標準エラーに加えて、 `/var/log` やsyslog(`/dev/log`) に出力しても連携されます[^1]。
+Logging Client Librariesを利用しなくても、CloudRunやFunction上にアプリケーションをデプロイし、それ上で標準出力/標準エラーでログを出せばStackdriver LoggingにGCPサービス側で連携することができます。CloudRunは標準出力/標準エラーに加えて、 `/var/log` やsyslog(`/dev/log`) に出力しても連携されます [^1]。
 
-[^1]: CloudRunのその仕様はドキュメント読むまで気が付かなかったです。https://cloud.google.com/run/docs/logging
+ [^1]: CloudRunのその仕様はドキュメント読むまで気が付かなかったです。https://cloud.google.com/run/docs/logging
 
 また、[Stackdriver Logging Agent](https://cloud.google.com/logging/docs/agent/) というfluentdベースのツールを導入することで、ローカルファイル出力されたログも収集させることができます。
 

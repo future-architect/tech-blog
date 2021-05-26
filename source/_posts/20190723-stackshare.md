@@ -12,7 +12,7 @@ featured: false
 lede: "先日「Future IoT」のstackshareを公開しました。
 Futureとしてstackshareを活用するのは初めての試みとなりますが、本記事では公開に至った経緯や技術スタックの採用戦略について簡単にお伝えできればと思います。"
 ---
-こんにちは。TIG[^1] DXユニット[^2] の武田です。
+こんにちは。TIG [^1] DXユニット [^2] の武田です。
 
 先日「Future IoT」のstackshareを公開しました。
 https://stackshare.io/future-corporation/futureiot
@@ -93,6 +93,6 @@ stackshareについてはひとまず公開してみたというレベルです�
 ぜひDXユニットに興味を持っていただけたら、 Qiita Jobsもご覧いただけると幸いです。
 https://jobs.qiita.com/employers/future/development_teams/109
 
-[^1]: Technology Innovation Groupの略で、フューチャーの中でも特にIT技術に特化した部隊です。
-[^2]: TIGの中でも特にデジタルトランスフォーメーションに関わる仕事を推進していくチームです。
+ [^1]: Technology Innovation Groupの略で、フューチャーの中でも特にIT技術に特化した部隊です。
+ [^2]: TIGの中でも特にデジタルトランスフォーメーションに関わる仕事を推進していくチームです。
 

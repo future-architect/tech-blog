@@ -28,6 +28,13 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
+# hexo-renderer-markdown-it
+markdown:
+  preset: 'default'
+  plugins:
+    - markdown-it-footnote
+
+
 # Authors
 author_generator:
   per_page: 10

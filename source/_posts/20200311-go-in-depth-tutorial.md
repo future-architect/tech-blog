@@ -38,9 +38,9 @@ lede: "Java to Go in-depth tutorialの日本語訳です。原文の著者に許
 * [ゴルーチンとチャネル](./#ゴルーチンとチャネル)
 * [Hello server](./#Hello-server)
 
-## Hello stack[^1]
+## Hello stack [^1]
 
-[^1]: 後入れ先出し（LIFO: Last In First Out; FILO: First In Last Out）の構造
+ [^1]: 後入れ先出し（LIFO: Last In First Out; FILO: First In Last Out）の構造
 
 まずはじめに簡単な例を見ていきましょう。この例ではシンプルな抽象データ型をGoで実装しています。
 
@@ -114,9 +114,9 @@ NOTE: Goでスタックを実装する慣用的な方法は、スライスを直
 
 * Goにはコンストラクタを伴うクラスという概念がありません。インスタンスメソッド、クラスの継承構造、メソッドの動的ルックアップで実現したいことを、Goでは[struct](https://yourbasic.org/golang/structs-explained/)と[interface](https://yourbasic.org/golang/interfaces-explained/)を用いて実現します。
 * Goでは、どんな型に対しても[メソッド](https://yourbasic.org/golang/methods-explained/)を作成することができます。レシーバーをボックス化する必要もありません。レシーバーはJavaでいうところの `this` に対応します。レシーバーには値そのものかポインタが入ります。
-* Javaの `public`や `package-private` に似た２つのアクセスレベルがGoには存在します。トップレベルで宣言された[^2]変数や関数の名前が大文字で始まる場合は `public` 、小文字で始まる場合は `package-private` のアクセスレベルになります。
+* Javaの `public`や `package-private` に似た２つのアクセスレベルがGoには存在します。トップレベルで宣言された [^2]変数や関数の名前が大文字で始まる場合は `public` 、小文字で始まる場合は `package-private` のアクセスレベルになります。
 
-[^2]: `{}` の中で宣言されていない変数・関数をトップレベルで宣言された変数・関数と読んでいる。import文はトップレベルで宣言されている。main packageのmain関数はトップレベルで宣言されている。
+ [^2]: `{}` の中で宣言されていない変数・関数をトップレベルで宣言された変数・関数と読んでいる。import文はトップレベルで宣言されている。main packageのmain関数はトップレベルで宣言されている。
 
 ### 関数型プログラミング
 
@@ -165,8 +165,8 @@ NOTE: Goでスタックを実装する慣用的な方法は、スライスを直
 | var v7 map[string]int   | HashMap<String, Integer> v7; <br> v7 = null;                                      |
 | var v8 func(a int) int  | interface F { <br> &nbsp;&nbsp;&nbsp;&nbsp;int f(int a); <br> } <br> F v8 = null; |
 
-一般的に、宣言ではキーワードの後ろにオブジェクト[^3]の名称が続きます。キーワードとは`const`、`type`、`var`や`func`などです。キーワードの後ろに括弧でまとめて宣言を書くこともできます。
-[^3]: Javaの世界で呼ばれる「オブジェクト」と同義です。
+一般的に、宣言ではキーワードの後ろにオブジェクト [^3]の名称が続きます。キーワードとは`const`、`type`、`var`や`func`などです。キーワードの後ろに括弧でまとめて宣言を書くこともできます。
+ [^3]: Javaの世界で呼ばれる「オブジェクト」と同義です。
 
 ```go
 var (
@@ -303,9 +303,9 @@ for i, v := range a { ... }
 
 上の書き方では、`i`にインデックスが割り当てられ、`v`に配列やスライス、文字列などの要素の連続する値が割り当てられます。
 
-* 文字列の場合は、`i`はバイトごとのインデックスとなり、`v`は`rune`型のUnicodeのコードポイント[^4]となります（`rune`は`int32`のエイリアスです）。
+* 文字列の場合は、`i`はバイトごとのインデックスとなり、`v`は`rune`型のUnicodeのコードポイント [^4]となります（`rune`は`int32`のエイリアスです）。
 * mapでの繰り返しはキー・バリューのペアの反復値を生成しますが、チャネルは反復値を１つだけ生成します。
-[^4]: Unicodeの[コードポイント](https://ja.wikipedia.org/wiki/%E7%AC%A6%E5%8F%B7%E7%82%B9)とは、全ての文字を4桁の16進数で一意に表現したコード体系の値です。
+ [^4]: Unicodeの[コードポイント](https://ja.wikipedia.org/wiki/%E7%AC%A6%E5%8F%B7%E7%82%B9)とは、全ての文字を4桁の16進数で一意に表現したコード体系の値です。
 
 ### BreakとContinue
 
@@ -353,12 +353,12 @@ default:
 
 [defer文](https://yourbasic.org/golang/defer/)を使うことで、呼び出し元の関数がreturnされたタイミングで実行されるべき処理を記述することができます。
 
-* defer宣言された関数は、呼び出し元の関数がどのようにretrunされたかに関わらず実行されます。[^5]
+* defer宣言された関数は、呼び出し元の関数がどのようにretrunされたかに関わらず実行されます。 [^5]
 
-[^5]: panicが発生して、呼び出し元の関数が強制的にreturnされても、defer宣言された関数は実行されます。
+ [^5]: panicが発生して、呼び出し元の関数が強制的にreturnされても、defer宣言された関数は実行されます。
 
-* defer宣言された関数の引数は、defer宣言されたタイミングで計算され、実行時に使用されるまで保存されます。[^6]
-[^6]: サンプルコード ( <https://play.golang.org/p/XDaWkZqEZ9K> )
+* defer宣言された関数の引数は、defer宣言されたタイミングで計算され、実行時に使用されるまで保存されます。 [^6]
+ [^6]: サンプルコード ( <https://play.golang.org/p/XDaWkZqEZ9K> )
 
 ```go
 f, err := os.Open("filename")
@@ -367,13 +367,13 @@ defer f.Close() // fはこの関数がreturnされたときに終了する
 
 ## 定数
 
-Goの定数は[untypedな状態](https://yourbasic.org/golang/untyped-constants/)にすることもできます[^7]。このルールは下記に適用されます。
+Goの定数は[untypedな状態](https://yourbasic.org/golang/untyped-constants/)にすることもできます [^7]。このルールは下記に適用されます。
 
 * 数値リテラル、
 * 型なしの定数のみを用いている式、
 * 型が与えられていない、もしくは初期化式が型なしであるconst式
 
-[^7]: untypedな状態の時は型が決まっておらず、式や代入の中でその定数が用いられる時、型が決定されます。
+ [^7]: untypedな状態の時は型が決まっておらず、式や代入の中でその定数が用いられる時、型が決定されます。
 
 型なしの定数の値は、型のある値が必要になったタイミングで型定義されます。これにより、Goでは明示的な型変換が行われないにも関わらず、定数を比較的自由に扱うことができます。
 
@@ -498,9 +498,9 @@ p.a = 1 // (*p).a = 1 に等しい
 * `i`が省略されていた場合、スライスは0を起点とします。
 * `j`が省略された場合、スライスはaの長さ（len(a)）までの長さとなります。
 
-新しくできたスライスは`a`が参照しているものと同一の配列を参照します。つまり、新しいスライスで要素が変更された場合、`a`の要素も同じように変更されます[^8]。
+新しくできたスライスは`a`が参照しているものと同一の配列を参照します。つまり、新しいスライスで要素が変更された場合、`a`の要素も同じように変更されます [^8]。
 
-[^8]: サンプルコード ( <https://play.golang.org/p/J3JBKvSmYJW> )
+ [^8]: サンプルコード ( <https://play.golang.org/p/J3JBKvSmYJW> )
 
 新しいスライスの容量は、純粋に`a`から`i`を引いた差分となります。配列の容量と配列の長さはイコールです。
 
@@ -511,9 +511,9 @@ var a [10]int
 s = a[:] // s = a[0:len(a)]の短縮形
 ```
 
-もし、`[100]byte`型の値（`byte`100個分の配列、例えばバッファ）を作り、関数に参照渡しをしたいのであれば、`[]byte`型の引数を持つ関数を宣言し、配列をスライスに変えて、その引数に渡してあげるのが良いでしょう[^9]。スライスは、[下記](https://yourbasic.org/golang/go-java-tutorial/#making-values)に書いてあるような`make`関数でも作り出すことができます。
+もし、`[100]byte`型の値（`byte`100個分の配列、例えばバッファ）を作り、関数に参照渡しをしたいのであれば、`[]byte`型の引数を持つ関数を宣言し、配列をスライスに変えて、その引数に渡してあげるのが良いでしょう [^9]。スライスは、[下記](https://yourbasic.org/golang/go-java-tutorial/#making-values)に書いてあるような`make`関数でも作り出すことができます。
 
-[^9]: サンプルコード ( <https://play.golang.org/p/jTKvVIBqwMa> )
+ [^9]: サンプルコード ( <https://play.golang.org/p/jTKvVIBqwMa> )
 
 スライスには組み込み関数`append`が備え付けられており、Javaの`ArrayList`とほぼ同様の機能を持っています。
 

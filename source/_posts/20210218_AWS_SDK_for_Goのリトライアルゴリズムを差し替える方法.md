@@ -23,13 +23,13 @@ lede: "本記事では[AWS SDK for Go]を使ってAWSのAPIをコールする場
 
 `AWS SDK for Go` のバージョンは [`v1.37.6`](https://github.com/aws/aws-sdk-go/releases/tag/v1.37.6) です。
 
-まず `AWS SDK for Go` を使ってAPIをコールする場合は、デフォルトでリトライするようになっています[^1]。そのため `AWS SDK for Go` を使うアプリケーション側でリトライを実装する必要はありません。`AWS SDK for Go` 上の実装は [`client.DefaultRetryer`](https://github.com/aws/aws-sdk-go/blob/v1.37.6/aws/client/default_retryer.go#L12-L36) がリトライを実施します。リトライ時の待ち時間である `time.Duration` を計算するアルゴリズムは `RetryRules` メソッドとして実装されています。
+まず `AWS SDK for Go` を使ってAPIをコールする場合は、デフォルトでリトライするようになっています [^1]。そのため `AWS SDK for Go` を使うアプリケーション側でリトライを実装する必要はありません。`AWS SDK for Go` 上の実装は [`client.DefaultRetryer`](https://github.com/aws/aws-sdk-go/blob/v1.37.6/aws/client/default_retryer.go#L12-L36) がリトライを実施します。リトライ時の待ち時間である `time.Duration` を計算するアルゴリズムは `RetryRules` メソッドとして実装されています。
 
-[^1]: https://docs.aws.amazon.com/ja_jp/general/latest/gr/api-retries.html
+ [^1]: https://docs.aws.amazon.com/ja_jp/general/latest/gr/api-retries.html
 
-待ち時間を計算するアルゴリズムはExponential Backoff And Jitter[^2]です。
+待ち時間を計算するアルゴリズムはExponential Backoff And Jitter [^2]です。
 
-[^2]: https://aws.amazon.com/jp/blogs/architecture/exponential-backoff-and-jitter/
+ [^2]: https://aws.amazon.com/jp/blogs/architecture/exponential-backoff-and-jitter/
 
 - リトライの再試行の待ち時間を計算する `RetryRules` メソッド
 
@@ -103,11 +103,11 @@ https://github.com/aws/aws-sdk-go/blob/d8a5a9febe5602f134648c18e9f83546284cda35/
 | :---: | ------------------ | ---------------------------------------- | ------------------ |
 |   1   | `NumMaxRetries`    | 最大リトライ回数                         | 3 (回)             |
 |   2   | `MinRetryDelay`    | リトライ時の最小の待ち時間               | 30 (ミリ秒)        |
-|   3   | `MinThrottleDelay` | リトライスロットリング[^3]時の最小の待ち時間 | 300 (ミリ秒)       |
+|   3   | `MinThrottleDelay` | リトライスロットリング [^3]時の最小の待ち時間 | 300 (ミリ秒)       |
 |   4   | `MaxRetryDelay`    | リトライ時の最大の待ち時間               | 300 (秒)           |
 |   5   | `MaxThrottleDelay` | リトライスロットリング時の最大の待ち時間 | 300 (秒)           |
 
-[^3]: リトライスロットリングが何かという説明は[Introducing Retry Throttling](https://aws.amazon.com/jp/blogs/developer/introducing-retry-throttling/)や[スロットリングとの付き合い方](/articles/20200121/)を参照
+ [^3]: リトライスロットリングが何かという説明は[Introducing Retry Throttling](https://aws.amazon.com/jp/blogs/developer/introducing-retry-throttling/)や[スロットリングとの付き合い方](/articles/20200121/)を参照
 
 # `RetryRules` を差し替える
 

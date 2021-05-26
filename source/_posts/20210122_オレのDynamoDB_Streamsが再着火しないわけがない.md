@@ -42,9 +42,9 @@ DynamoDB Streamsは、DynamoDBに対する項目の追加、変更、削除を�
 
 ## DynamoDB Streamsをリラン（再実行）したい時
 
-DynamoDB StreamsはAWSのサービスだと珍しく `Exactly Once` [^1] の実行保証で、通常は後続にLambdaを呼び出します。
+DynamoDB StreamsはAWSのサービスだと珍しく `Exactly Once`  [^1] の実行保証で、通常は後続にLambdaを呼び出します。
 
-[^1]: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html に Each stream record appears exactly once in the stream. とある
+ [^1]: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html に Each stream record appears exactly once in the stream. とある
 
 起動が保証されているとはいえ、アプリケーションが不具合を起こしたり、外部連携先のシステム都合でリランしてほしいという要望もあるかと思います（ありました）。
 
