@@ -4,6 +4,7 @@ postid: ""
 tag:
   - Go
   - GoTips連載
+  - ログ
 category:
   - Programming
 thumbnail: /images/20200527/thumbnail.png

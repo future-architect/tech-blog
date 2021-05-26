@@ -5,7 +5,6 @@ tag:
   - Auth0
   - Salesforce
   - SSO
-  - ActiveDirectory
 category:
   - 認証認可
 thumbnail: /images/20210302/thumbnail.png

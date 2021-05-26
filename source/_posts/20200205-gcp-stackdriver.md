@@ -7,6 +7,7 @@ tag:
   - Go
   - GCP連載
   - CloudOperations
+  - ログ
 category:
   - Infrastructure
 author: 真野隼記
