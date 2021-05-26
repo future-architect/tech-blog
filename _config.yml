@@ -28,13 +28,6 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
-# hexo-renderer-markdown-it
-markdown:
-  preset: 'default'
-  plugins:
-    - markdown-it-footnote
-
-
 # Authors
 author_generator:
   per_page: 10
@@ -73,8 +66,6 @@ time_format: HH:mm:ss
 per_page: 10
 pagination_dir: page
 
-# Extensions
-## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
 theme: corporate
 
@@ -90,3 +81,6 @@ feed:
   path: atom.xml
   limit: 20
   hub:
+
+plugins:
+  - hexo-footnotes
