@@ -3,7 +3,6 @@ date: 2021/03/18 00:00:00
 postid: ""
 tag:
   - Kubernetes
-  - GKE
   - GCP
 category:
   - Programming

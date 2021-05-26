@@ -3,7 +3,6 @@ date: 2018/02/09 11:12:14
 postid: ""
 tag:
   - Ansible
-  - Infrastructure
   - 登壇レポート
   - IaC
 category:

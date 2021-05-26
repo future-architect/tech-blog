@@ -3,7 +3,6 @@ title: "declare使ってBashで配列と連想配列"
 date: 2021/04/01 00:00:00
 postid: ""
 tag:
-  - Bash
   - ShellScript
 category:
   - Infrastructure
