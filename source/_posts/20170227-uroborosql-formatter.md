@@ -17,7 +17,7 @@ lede: "弊社謹製のSQLフォーマッターuroboroSQL formatterを公開し�
 # はじめに
 はじめまして、太田です。
 今回、弊社謹製のSQLフォーマッター[**uroboroSQL formatter**](https://github.com/future-architect/uroboroSQL-formatter)を公開しましたので、その紹介をさせていただきます。
-また、[弊社、星が昨年投稿した記事](/articles/20160902/)の中で[Javaのコーディング規約](https://future-architect.github.io/coding-standards/documents/forJava/Javaコーディング規約.html)を公開しましたが、今回その第2弾として、[SQLのコーディング規約（Oracle限定）](https://future-architect.github.io/coding-standards/documents/forSQL/SQLコーディング規約（Oracle）.html)も公開いたしましたので、こちらについても触れたいと思います。
+また、[弊社、星が昨年投稿した記事](/articles/20160902/)の中で[Javaのコーディング規約](/coding-standards/documents/forJava/Javaコーディング規約.html)を公開しましたが、今回その第2弾として、[SQLのコーディング規約（Oracle限定）](/coding-standards/documents/forSQL/SQLコーディング規約（Oracle）.html)も公開いたしましたので、こちらについても触れたいと思います。
 
 <a href="https://github.com/future-architect/uroboroSQL-formatter">
 <img src="/images/20170227/photo_20170227_01.png" class="img-middle-size"  loading="lazy">
@@ -196,7 +196,7 @@ SublimeText3のプラグインをDoma2で利用される場合は下記のよう
 弊社には独自のSQLのコーディング規約が存在し、長年受け継がれメンテナンスを続けています。
 今回、このSQLコーディング規約を公開させていただくことになりました。
 
-[SQLコーディング規約（Oracle）](https://future-architect.github.io/coding-standards/documents/forSQL/SQLコーディング規約（Oracle）.html)
+[SQLコーディング規約（Oracle）](/coding-standards/documents/forSQL/SQLコーディング規約（Oracle）.html)
 
 **uroboroSQL formatter**もこの規約に準拠するよう作成しています。
 
@@ -343,7 +343,7 @@ FROM
 今後もご期待ください。
 
 
-## [SQLコーディング規約](https://future-architect.github.io/coding-standards/documents/forSQL/SQLコーディング規約（Oracle）.html)
+## [SQLコーディング規約](/coding-standards/documents/forSQL/SQLコーディング規約（Oracle）.html)
 今回、SQLのコーディング規約の公開もOracle版だけとなってしまいましたが、PostgreSQL・MySQL対応版も作成中です。
 これらも近いうちに公開したいと考えています。
 

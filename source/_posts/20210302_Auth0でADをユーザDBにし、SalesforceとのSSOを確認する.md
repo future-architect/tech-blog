@@ -25,7 +25,7 @@ lede: "エンタープライズの領域ではAD認証が多く利用されて�
 
 <img src="/images/20210222/top.png" class="img-middle-size" loading="lazy">
 
-[Auth0導入編](/articles/20200122/)をぜひ参照ください。他にも[Auth0関連](https://future-architect.github.io/tags/Auth0/)の記事があります。
+[Auth0導入編](/articles/20200122/)をぜひ参照ください。他にも[Auth0関連](/tags/Auth0/)の記事があります。
 
 
 # Auth0に「Active Directory / LDAP」Connectorを追加

@@ -7,6 +7,7 @@ tag:
   - Swagger
   - OpenAPI
   - Go
+  - Policy-as-Code
 category:
   - Programming
 thumbnail: /images/20200930/thumbnail.png

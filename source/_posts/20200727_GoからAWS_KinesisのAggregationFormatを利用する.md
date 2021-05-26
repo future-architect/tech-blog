@@ -5,7 +5,6 @@ tag:
   - AWS
   - Go
   - Serverless
-  - Serverless連載
   - Lambda
   - IoT
 category:
@@ -15,13 +14,13 @@ author: 真野隼記
 featured: false
 lede: "[サーバレス連載企画]の8回目です。TIG DXユニットの真野です。ここ数年は産業向けのIoT（例えば工場IoTやモビリティIoT）を行っています。[工場をハックするための基本知識] の記事を書いた棚井さんと同じチームに所属しています。[サーバレス連載企画] の第8弾目として、Serverlessの代表格であるAWS LambdaでGoを用いてKinesisに対するKPL/KCL相当の処理についてまとめていきます。"
 ---
-[サーバレス連載企画](https://future-architect.github.io/tags/Serverless%E9%80%A3%E8%BC%89/)の8回目です。
+[サーバレス連載企画](/articles/20200322/)の8回目です。
 
 # はじめに
 
 TIG DXユニットの真野です。ここ数年は産業向けのIoT（例えば工場IoTやモビリティIoT）を行っています。[工場をハックするための基本知識](/articles/20191023/)や[PyConJP 2019に登壇しました](/articles/20200422/) の記事を書いた栗田さんや、[SORACOM USBドングルの自動接続](/articles/20191201/) の記事を書いた棚井さんと同じチームに所属しています。
 
-[サーバレス連載企画](https://future-architect.github.io/tags/Serverless%E9%80%A3%E8%BC%89/) の第8弾目として、Serverlessの代表格であるAWS LambdaでGoを用いてKinesisに対するKPL/KCL相当の処理についてまとめていきます。
+[サーバレス連載企画](/articles/20200322/) の第8弾目として、Serverlessの代表格であるAWS LambdaでGoを用いてKinesisに対するKPL/KCL相当の処理についてまとめていきます。
 
 
 # 背景

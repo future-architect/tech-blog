@@ -270,6 +270,5 @@ $ go run main.go
 
 DynamoDB×Go以外にも多くの連載企画があります。特にGo Cloud連載が今回のテーマに近いです。
 
-* [Go Cloud 連載](https://future-architect.github.io/tags/GoCDK/)
-* [GCP 連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Auth0 連載](https://future-architect.github.io/tags/Auth0/)
+* [Go Cloud 連載](/tags/GoCDK/)
+* [Auth0 連載](/tags/Auth0/)

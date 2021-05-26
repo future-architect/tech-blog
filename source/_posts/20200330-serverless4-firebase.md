@@ -3,7 +3,6 @@ date: 2020/03/30 09:45:42
 postid: ""
 tag:
   - Serverless
-  - Serverless連載
   - GCP
   - Firebase
   - Android
@@ -19,7 +18,7 @@ lede: "こんにちは、Android Developerの佐藤です。モバイルアプ�
 # はじめに
 こんにちは、Android Developerの佐藤です。
 
-[サーバーレス連載](https://future-architect.github.io/tags/Serverless%E9%80%A3%E8%BC%89/)の4回目を担当します！
+[サーバーレス連載](/articles/20200322/)の4回目を担当します！
 モバイルアプリ品質強化の強い味方となってくれるFirebase Crashlyticsを紹介したいと思います！
 
 
@@ -223,4 +222,4 @@ Firebase Crashlyticsは本当にさくっと導入することができます。
 
 ぜひお試しください！
 
-[サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)の4本目でした。次は村田さんの[CloudEventsのGo版SDKをいじってみる](/articles/20200331/)です。
+[サーバレス連載](/articles/20200322/)の4本目でした。次は村田さんの[CloudEventsのGo版SDKをいじってみる](/articles/20200331/)です。

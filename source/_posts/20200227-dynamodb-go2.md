@@ -19,7 +19,7 @@ lede: "DynamoDB×Go連載企画の第2弾の記事となります。本記事で
 
 ## はじめに
 
-[DynamoDB×Go連載企画](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)第2弾の記事となります。
+[DynamoDB×Go連載企画](/tags/DynamoDB%C3%97Go/)第2弾の記事となります。
 [DynamoDB×Go連載#1 GoでDynamoDBでおなじみのguregu/dynamoを利用する](/articles/20200225/) では [guregu/dynamo](https://github.com/guregu/dynamo) を利用したDynamoDBの基本操作をご紹介しました。
 
 本記事ではサードパーティ製のライブラリを利用せずaws-sdkを素で利用した場合のDynamoDBの基本操作について見ていきましょう。
@@ -288,8 +288,8 @@ gureguなどサードパーティ製のライブラリの利用と迷ってい�
 
 それでは、明日の投稿もお楽しみに。
 
-[DynamoDB×Go連載企画](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)以外にも多くの連載企画があります。特にGo Cloud連載が今回のテーマに近いです。
+[DynamoDB×Go連載企画](/tags/DynamoDB%C3%97Go/)以外にも多くの連載企画があります。特にGo Cloud連載が今回のテーマに近いです。
 
-* [Go Cloud 連載](https://future-architect.github.io/tags/GoCDK/)
-* [GCP 連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Auth0 連載](https://future-architect.github.io/tags/Auth0/)
+* [Go Cloud 連載](/tags/GoCDK/)
+* [GCP 連載](/articles/20200202/)
+* [Auth0 連載](/tags/Auth0/)

@@ -24,7 +24,7 @@ TIG DXユニット[^1]真野です。
 > RSS（RDF Site Summary/Rich Site Summary）はXMLを応用したデータ形式の一種で、Webサイト内の新着ページや更新ページのタイトルやURL、更新日時、要約などを一覧形式で記述することができる。
 > - [IT用語辞典](https://e-words.jp/w/RSS%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89.html)
 
-新着記事などの把握のためにサイトが配信しているXMLファイルのことですね。フューチャー技術ブログでは[atom.xml](https://future-architect.github.io/atom.xml)を配信しています。
+新着記事などの把握のためにサイトが配信しているXMLファイルのことですね。フューチャー技術ブログでは[atom.xml](/atom.xml)を配信しています。
 
 さきほどのatom.xmlのリンクを開いた人はほとんどいないと思いますが、`Atom 1.0` という一般的な形式で、記事数は `20件` を上限にして生成しています。本ブログは静的サイトジェネレータに[Hexo](https://hexo.io/)を使っていて、atom.xmlの生成にはメジャーそうだった[hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)のデフォルトで出力しています。今の所この設定に運営の意思は働いていないので、要望/アドバイスがあればTwitterでコメント下さい。今回開発するリーダーではこれを入力に利用します。
 

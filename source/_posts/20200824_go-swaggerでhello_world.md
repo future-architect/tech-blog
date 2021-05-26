@@ -35,7 +35,7 @@ TIG DXチームの伊藤真彦です。
 
 最近の私のメイン業務は[go-swagger](https://github.com/go-swagger/go-swagger)を用いたAPI開発です。
 go-swaggerはOpenAPI(Swagger) からGoのコードを生成するライブラリです。
-フューチャーでは複数案件での採用実績があり、この技術ブログでも[様々な記事](https://future-architect.github.io/tags/go-swagger/)が書かれています。
+フューチャーでは複数案件での採用実績があり、この技術ブログでも[様々な記事](/tags/go-swagger/)が書かれています。
 
 しかし、技術選定としての参考情報やtips集はあるものの、どのように実装していけばAPIが動くのかを理解するドキュメントは少なく、いざ実装となると学習コストがかかってしまいます。
 そこで、今回はストーリーベースでの実装手順を説明します。

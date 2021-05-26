@@ -93,7 +93,7 @@ Terraformに関しては
 - [はじめてのTerraform 0.12 ～環境構築～](/articles/20190816/)
 - [はじめてのTerraform 0.12 ～実践編～](/articles/20190816/)
 
-の記事もあわせて見てみてください。その他にも技術ブログに[Terraform](https://future-architect.github.io/tags/Terraform/)に関する記事がたくさんあります。
+の記事もあわせて見てみてください。その他にも技術ブログに[Terraform](/tags/Terraform/)に関する記事がたくさんあります。
 
 またHashiCorp Learnのドキュメントも参考になります。
 

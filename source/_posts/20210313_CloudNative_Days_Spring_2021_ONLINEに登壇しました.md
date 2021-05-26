@@ -5,6 +5,7 @@ tag:
   - 登壇レポート
   - OpenPolicyAgent
   - CNCF
+  - Policy-as-Code
 category:
   - Infrastructure
 thumbnail: /images/20210313/thumbnail.png

@@ -21,16 +21,16 @@ lede: "DynamoDB×Go連載の第3弾目です。今までは AWS SDK Go やそれ
 
 こんにちは、TIG DXユニット[真野](https://twitter.com/laqiiz)です。この技術ブログの運営もしています。
 
-[DynamoDB×Go連載](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)の第3弾目です。今までは `AWS SDK Go` やそれをラップした`guregu/dynamo` について説明していましたが、 **Go CDK（Go Cloud Development Kit）** を用いたDynamoDB操作について説明します。
+[DynamoDB×Go連載](/tags/DynamoDB%C3%97Go/)の第3弾目です。今までは `AWS SDK Go` やそれをラップした`guregu/dynamo` について説明していましたが、 **Go CDK（Go Cloud Development Kit）** を用いたDynamoDB操作について説明します。
 
 # Go CDKとは？
 
 > Go CDKは2018/07 に Google の Go チームが立ち上げたプロジェクトで、Go アプリケーションを各クラウド間でポータブルにすることを目指して、実装されています。
 
-詳しくは [Go Cloud連載企画](https://future-architect.github.io/tags/GoCDK/) で全7回に渡って概要から各トピックについて説明しています。特に[第1回目](/articles/20191111/) の概要説明から読むことがオススメです。 DynamoDBを含むDocStoreについては[第3回目](/articles/20191113/)の記事を確認ください。
+詳しくは [Go Cloud連載企画](/tags/GoCDK/) で全7回に渡って概要から各トピックについて説明しています。特に[第1回目](/articles/20191111/) の概要説明から読むことがオススメです。 DynamoDBを含むDocStoreについては[第3回目](/articles/20191113/)の記事を確認ください。
 
 * Go CDK（公式）  https://gocloud.dev/
-* [Go Cloud連載企画](https://future-architect.github.io/tags/GoCDK/)
+* [Go Cloud連載企画](/tags/GoCDK/)
 
 ※名称の揺れについてはGo CDKの方が正式名称ですが、ググラビリティが悪いかなと思い（特にAWS CDKと似ている）、連載版は古い呼び方であるGo Cloudを使わせてもらっていました。
 
@@ -339,11 +339,11 @@ DynamoDBのConditional Expressionsほど万能では無いですが、多くの�
 
 
 -----
-[DynamoDB×Go連載企画](https://future-architect.github.io/tags/DynamoDB%C3%97Go/)以外にも多くの連載企画があります。特にGo Cloud連載が今回のテーマに近いです。
+[DynamoDB×Go連載企画](/tags/DynamoDB%C3%97Go/)以外にも多くの連載企画があります。特にGo Cloud連載が今回のテーマに近いです。
 
-* [Go Cloud 連載](https://future-architect.github.io/tags/GoCDK/)
-* [GCP 連載](https://future-architect.github.io/tags/GCP%E9%80%A3%E8%BC%89/)
-* [Auth0 連載](https://future-architect.github.io/tags/Auth0/)
+* [Go Cloud 連載](/tags/GoCDK/)
+* [GCP 連載](/articles/20200202/)
+* [Auth0 連載](/tags/Auth0/)
 
 
 

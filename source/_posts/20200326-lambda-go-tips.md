@@ -5,7 +5,6 @@ tag:
   - Go
   - AWS
   - Serverless
-  - Serverless連載
   - Lambda
 category:
   - Programming
@@ -18,7 +17,7 @@ lede: "サーバレス連載の第2弾はLambdaアプリをGoで開発する中�
 
 こんにちは、TIG/DXユニットの真野です。
 
-[サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)の第2弾は、典型的なAWSサービスであるLambdaアプリをGoで開発する中で調べた内容や、Tipsを紹介します。
+[サーバレス連載](/articles/20200322/)の第2弾は、典型的なAWSサービスであるLambdaアプリをGoで開発する中で調べた内容や、Tipsを紹介します。
 
 ## Lambdaの利用コア数は？
 
@@ -251,5 +250,5 @@ panicということで予期せぬエラーの場合にはStackTraceを出し�
 * Lambda関数のパターンは決まっているのでmiddlewareを用意しても良いかも
 * `errorString null`の`null`はStackTrace項目で、通常は `null` が入るで問題なし
 
-[サーバレス連載](/tags/Serverless%E9%80%A3%E8%BC%89/)の2本目でした。次は澁川さんの[Goでサーバーレス用の検索エンジンwatertowerを作ってみました
+[サーバレス連載](/articles/20200322/)の2本目でした。次は澁川さんの[Goでサーバーレス用の検索エンジンwatertowerを作ってみました
 ](/articles/20200327/)でした。
