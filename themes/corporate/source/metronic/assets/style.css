@@ -763,8 +763,9 @@ Notes
 }
 
 .blog-tags li span {
+  font-size: 0.5em;
   background: #f5f5f5;
-  padding: 3px 0px 3px 0px;
+  padding: 6px 0px 4px 0px;
 }
 
 .blog-tags li a:hover {
@@ -779,7 +780,7 @@ Notes
   color: #424242;
   margin-right: 1px;
   display: inline-block;
-	font-weight: bold;
+  font-size: 0.6em;
 }
 .blog-tags li a:after {
   top: 50%;
@@ -791,8 +792,7 @@ Notes
   display: block;
   margin-top: -12px;
   position: absolute;
-
-  border-left: 12px solid #f5f5f5;
+  border-left: 6px solid #f5f5f5;
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
 }
