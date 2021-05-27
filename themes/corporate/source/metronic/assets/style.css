@@ -509,7 +509,6 @@ Sidebar
   	content: ">";
     -moz-osx-font-smoothing: grayscale;
     display: inline-block;
-    font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     line-height: 1;
@@ -517,9 +516,6 @@ Sidebar
 }
 .breadcrumb a {
 	color: #5f6d7b;
-}
-.breadcrumb > .active {
-	color: #129299;
 }
 
 /* paginations */
