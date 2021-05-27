@@ -6,6 +6,7 @@ tag:
   - AWS
   - DynamoDB
   - StepFunctions
+  - バッチ処理
 category:
   - Programming
 thumbnail: /images/20200515/thumbnail.png

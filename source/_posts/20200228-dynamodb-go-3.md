@@ -7,6 +7,7 @@ tag:
   - DynamoDB×Go
   - DynamoDB
   - GoCDK
+  - バッチ処理
 category:
   - Programming
 thumbnail: /images/20200228/thumbnail.png
