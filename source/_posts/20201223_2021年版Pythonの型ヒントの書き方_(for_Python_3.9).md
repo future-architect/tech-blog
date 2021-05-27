@@ -1,3 +1,4 @@
+---
 title: "2021年版Pythonの型ヒントの書き方 (for Python 3.9)"
 date: 2020/12/23 00:00:00
 postid: ""
