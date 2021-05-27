@@ -1,3 +1,4 @@
+---
 title: "仕事でPythonコンテナをデプロイする人向けのDockerfile (1): オールマイティ編"
 date: 2020/05/13 08:56:40
 postid: ""

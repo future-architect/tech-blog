@@ -1,3 +1,4 @@
+---
 title: "Goのサーバーの管理画面をFlutter Webで作ってみるための調査"
 date: 2021/05/12 00:00:00
 postid: a
