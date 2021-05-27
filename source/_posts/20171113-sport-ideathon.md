@@ -4,6 +4,7 @@ postid: ""
 tag:
   - DesignThinking
   - CoSpaces
+  - プログラミング教育
 category:
   - VR
 thumbnail: /images/20171113/thumbnail_20171113.png

@@ -2,7 +2,6 @@ title: CORSのプリフライトリクエスト（OPTIONメソッド）はAPI Ke
 date: 2020/07/17 00:00:00
 postid: ""
 tag:
-  - CORS
   - Go
   - Web
   - HTTP
