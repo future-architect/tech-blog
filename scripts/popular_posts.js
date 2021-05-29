@@ -64,7 +64,7 @@ async function fetchGoogleAnalytics() {
           ],
           dimensions: [{ name: 'ga:pagePath' }, { name: 'ga:pageTitle' }],
           orderBys: [{ fieldName: 'ga:pageviews', sortOrder: 'DESCENDING' }],
-          pageSize: 30 // レスポンス件数を50件に
+          pageSize: 30 // レスポンス件数
         },
       ],
     },
