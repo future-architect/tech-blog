@@ -5,7 +5,7 @@
         <% if (post.link || post.title){ %>
         <header class="article-header">
           <ul class="blog-info">
-            <li class="blog-info-item"><a href="<%- url_for('/authors/' + post.author || theme.default_author || 'Anonymous') %>"><%- post.author || theme.default_author || 'Anonymous' %></a></li>
+            <%- post_author_link(post) %>
             <li class="blog-info-item"><%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY.MM.DD'}) %></li>
             <li class="blog-info-item"><%- partial('post/tag') %></li>
           </ul>

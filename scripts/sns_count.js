@@ -35,7 +35,7 @@ process.on('exit', function() {
 
 // url example: https://future-architect.github.io/articles/20210519a/
 const fetchableDate = (url)=> {
-  if (url.indexOf("/articles/") > 0) {
+  if (url && url.indexOf("/articles/") > 0) {
     const path = url.split("/articles/")[1];
     const ymd = path.replace("/", "").substring(0, 9);
 
