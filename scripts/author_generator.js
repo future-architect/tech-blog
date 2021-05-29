@@ -59,12 +59,11 @@ hexo.extend.helper.register('list_authors', function() {
 });
 
 hexo.extend.helper.register('post_author_link', function(post) {
-  const authors = [].concat(post.author || theme.default_author || 'Anonymous');
+  const authors = [].concat(post.author || 'Anonymous');
 
   const link = authors.map(author =>
     `<li><a href="/authors/${encodeURI(author)}">${author}</a></li>`
   ).join("")
 
   return `<li class="blog-info-item">${link}</li>`
-  // <li class="blog-info-item"><a href="<%- url_for('/authors/' + post.author || theme.default_author || 'Anonymous') %>"><%- post.author || theme.default_author || 'Anonymous' %></a></li>
 });
