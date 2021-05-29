@@ -192,6 +192,15 @@ hexo.extend.helper.register("get_tw_count", (url) => {
   return respCnt;
 });
 
+
+// http://cloud.feedly.com/v3/feeds/feed%2Fhttps%3A%2F%2Ffuture-architect.github.io%2Fatom.xml
+hexo.extend.helper.register("get_feedly_count", (url) => {
+  const apiURL = `http://cloud.feedly.com/v3/feeds/feed%2Fhttps%3A%2F%2Ffuture-architect.github.io%2Fatom.xml`
+  const resp = fetch(apiURL).json();
+  return resp.subscribers ?? "Follow";
+});
+
+
 hexo.extend.helper.register("totalSNSCnt", (url) => {
   const pocket = pocketCnt[url] || 0;
   const hatebu = hatebuCnt[url] || 0;
