@@ -1,6 +1,7 @@
 <div class="row">
   <main class="blog-posts">
     <section class="archives">
+      <%- list_archives({format: "YYYY", type:"yearly"}) %>
       <ul class="article-list">
         <% page.posts.each(function(post, i){ %>
         <li>
