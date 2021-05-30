@@ -54,7 +54,7 @@ const fetchableDate = (url)=> {
   }
 
   // 1%
-  if (Math.random() * 100 < 0) {
+  if (Math.random() * 100 < 1) {
     return true;
   }
 
