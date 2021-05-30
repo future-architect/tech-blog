@@ -20,13 +20,17 @@ hexo.extend.helper.register('list_related_posts', function() {
     return `<p class="related-posts-none">No related post.</p>`;
   }
 
+  const snsCnt = hexo.extend.helper.get('totalSNSCnt').bind(hexo);
+
+
   let result = "";
   for (var i = 0; i < count; i++) {
     if (relatedPosts[i] == undefined) {
       continue;
     }
 
-    result += `<li class="related-posts-item"><span>${relatedPosts[i].date.format('YYYY.MM.DD')}</span><a class="related-posts-link" href=/${relatedPosts[i].path} title="${relatedPosts[i].lede}">${relatedPosts[i].title}</a></li>`;
+    const related = relatedPosts[i];
+    result += `<li class="related-posts-item"><span>${related.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${snsCnt(related.permalink)}</span><a class="related-posts-link" href=/${related.path} title="${related.lede}">${related.title}</a></li>`;
   }
 
   return `
