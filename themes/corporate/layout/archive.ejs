@@ -1,7 +1,11 @@
 <div class="container">
   <ul class="breadcrumb">
     <li><a href="/">Home</a></li>
-    <% if(is_year()) { %>
+    <% if(is_month()) { %>
+    <li><a href="/articles/">Blog</a></li>
+    <li class="active"><a href="/articles/<%= page.year %>"><%- page.year %>年</a></li>
+    <li class="active"><%- page.month %>月のすべての記事</li>
+    <% } else if(is_year()) { %>
     <li><a href="/articles/">Blog</a></li>
     <li class="active"><%- page.year %>年のすべての記事</li>
     <% } else { %>
