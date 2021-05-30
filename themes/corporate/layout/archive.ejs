@@ -1,7 +1,12 @@
 <div class="container">
   <ul class="breadcrumb">
     <li><a href="/">Home</a></li>
-    <li class="active">Blog</li>
+    <% if(is_year()) { %>
+    <li><a href="/articles/">Blog</a></li>
+    <li class="active"><%- page.year %>年のすべての記事</li>
+    <% } else { %>
+    <li class="active">Blog: すべての記事</li>
+    <% } %>
   </ul>
   <div id="main">
     <%- partial('_partial/archive-all', {pagination: config.archive}) %>
