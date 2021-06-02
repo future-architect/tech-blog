@@ -101,7 +101,7 @@
         }
       })
     }
-    options['image'] = images.filter(path => !(path.endsWith(".svg")));
+    options['image'] = images.filter(path => !(path.endsWith(".svg"))).slice(0, 10);
     if (options['image'].length === 0) {
       options['image'] = '/ogp_techblog.jpg';
     }
