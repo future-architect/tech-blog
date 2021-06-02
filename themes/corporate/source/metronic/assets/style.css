@@ -564,10 +564,15 @@ Notes
 
 .blog-posts .more,
 .blog-sidebar .more {
-	color: #333;
+	color: #129299;
 }
 
-/* Blog Sidebar */
+/* Tag */
+@media screen and (max-width: 768px){
+  .blog-tags {
+    display:none;
+  }
+}
 .blog-tags ul {
   list-style: none;
   margin: 0;
