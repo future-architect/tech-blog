@@ -7,7 +7,7 @@ tag:
 category:
   - Programming
 thumbnail: /images/20210602a/thumbnail.png
-author: masa_ito
+author: 伊藤真彦
 featured: true
 lede: "サーバーレス連載の3記事目ですTIGの伊藤真彦です。GoでLambdaにデプロイするコードを書くにあたり、aws-lambda-goを利用できます。その際のtips紹介記事です。"
 ---
