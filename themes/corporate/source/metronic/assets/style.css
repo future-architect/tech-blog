@@ -566,6 +566,9 @@ Notes
 .blog-sidebar .more {
 	color: #129299;
 }
+.blog-sidebar {
+  padding-bottom: 40px;
+}
 
 /* Tag */
 .blog-tags ul {
