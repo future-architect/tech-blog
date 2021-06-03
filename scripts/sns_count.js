@@ -177,19 +177,20 @@ hexo.extend.helper.register("get_tw_count", (url) => {
       return cnt;
     }
   }
+  return "ツイート";
 
-  const apiURL = `https://jsoon.digitiminimi.com/twitter/count.json?url=${encodeURI(url)}`
-  const resp = fetch(apiURL).json();
-  const respCnt = resp.count + resp.likes;
+  // const apiURL = `https://jsoon.digitiminimi.com/twitter/count.json?url=${encodeURI(url)}`
+  // const resp = fetch(apiURL).json();
+  // const respCnt = resp.count + resp.likes;
 
-  twCnt[url] = respCnt;
-  currentTw[url] = respCnt;
+  // twCnt[url] = respCnt;
+  // currentTw[url] = respCnt;
 
-  if (respCnt == 0) {
-    return "ツイート"
-  }
+  // if (respCnt == 0) {
+  //   return "ツイート"
+  // }
 
-  return respCnt;
+  // return respCnt;
 });
 
 
