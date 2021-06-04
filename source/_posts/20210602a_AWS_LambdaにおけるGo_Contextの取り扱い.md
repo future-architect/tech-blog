@@ -4,6 +4,7 @@ date: 2021/06/02 00:00:00
 postid: a
 tag:
   - Go
+  - Lambda
 category:
   - Programming
 thumbnail: /images/20210602a/thumbnail.png
