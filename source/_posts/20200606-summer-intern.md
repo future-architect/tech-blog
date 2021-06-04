@@ -21,12 +21,13 @@ https://www.future.co.jp/recruit/new/internship/
 * 2020/06/22: Project Campのリンクを追加
 * 2020/09/15: インターン参加記事へのリンクを追加
 * 2020/09/18: インターン参加記事のリンクを3つ追加
+* 2021/06/04: 2021年のインターンURLを追加
 
 # はじめに
 
 こんにちは、真野です。
 
-フューチャーのサマーインターン🌞Summer Camp🏄が6月より募集を開始しました。
+フューチャーのサマーインターン2020🌞Summer Camp🏄が6月より募集を開始しました。
 
 夏季インターンを「Summer Camp」と称して提供しており、現在2つのコースがあります。
 
@@ -39,6 +40,13 @@ https://www.future.co.jp/recruit/new/internship/
 Project Campに興味がある方は、ぜひ未来報の記事をご覧ください。
 
 <iframe class="note-embed" src="https://note.future.co.jp/embed/notes/n3d3b635c4c1b" style="border: 0; display: block; max-width: 99%; width: 494px; padding: 0px; margin: 10px 0px; position: static; visibility: visible;" height="400"></iframe><script async src="https://note.future.co.jp/scripts/embed.js" charset="utf-8"></script>
+
+
+**2021/06/04追記: 2021年のインターン募集も始まりました！**
+
+<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.4219%; padding-top: 120px;"><a href="https://note.com/future_event/n/n76e7e7d4beef" data-iframely-url="//cdn.iframe.ly/LWBBX9B"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
+こちらの記事も見てもらえると嬉しいです。
 
 
 # 2020年はフルリモート開催
@@ -58,7 +66,7 @@ Project Campに興味がある方は、ぜひ未来報の記事をご覧くだ�
 
 
 # 選考プロセス、選考スケジュール
-[マイページ登録](https://job.axol.jp/cr/s/future_22/mypage/login)→エントリーシート提出→プログラミングテスト→面接
+~~[マイページ登録](https://job.axol.jp/cr/s/future_22/mypage/login)~~ →エントリーシート提出→プログラミングテスト→面接
 
 まずは「マイページ登録をして欲しいです！」って採用チームの岡田さん [^1]が言っていました。
 
@@ -69,8 +77,8 @@ Project Campに興味がある方は、ぜひ未来報の記事をご覧くだ�
 締切①　　　　2020年6月14日（日） 23時59分
 締切②(最終)　2020年6月28日（日） 23時59分
 
-  * マイページの登録は6月25日（木）までにご登録ください。
-  * 登録はこちら: https://job.axol.jp/cr/s/future_22/mypage/login
+  * ~~マイページの登録は6月25日（木）までにご登録ください。~~
+  * ~~登録はこちら: https://job.axol.jp/cr/s/future_22/mypage/login~~
 
 
 # その他
@@ -270,7 +278,9 @@ Terraform、Ansibleで実現する完全なInfrastructure as Codeの世界にふ
 # まとめ
 
 なにはともあれマイページにエントリーをお願いします！
-https://job.axol.jp/cr/s/future_22/mypage/login
+~~https://job.axol.jp/cr/s/future_22/mypage/login~~
+
+※終了しました
 
 たくさんのご応募をお待ちしています！　最後まで読んでいただいてありがとうございました。
 
