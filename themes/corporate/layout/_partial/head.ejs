@@ -114,6 +114,7 @@
   <% if (theme.favicon){ %>
   <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
+  <link rel="canonical" href="<%= url.replace("index.html", "") %>">
   <meta content="<%= keywords %>" name="keywords">
   <meta content="<%= author %>" name="author">
 
