@@ -2,17 +2,24 @@
   <ul class="breadcrumb">
     <li><a href="/">Home</a></li>
     <% if(is_month()) { %>
-    <li><a href="/articles/">Blog: すべての記事</a></li>
+    <li><a href="/articles/">Blog</a></li>
     <li class="active"><a href="/articles/<%= page.year %>"><%- page.year %>年</a></li>
-    <li class="active"><%- page.month %>月のすべての記事</li>
+    <li class="active"><%- page.month %>月</li>
     <% } else if(is_year()) { %>
-    <li><a href="/articles/">Blog: すべての記事</a></li>
-    <li class="active"><%- page.year %>年のすべての記事</li>
+    <li><a href="/articles/">Blog</a></li>
+    <li class="active"><%- page.year %>年</li>
     <% } else { %>
-    <li class="active">Blog: すべての記事</li>
+    <li class="active">Blog</li>
     <% } %>
   </ul>
   <div id="main">
+    <% if(is_month()) { %>
+    <h1><%= page.year%>年<%= page.month %>月のすべての記事 <%= count_articles_month(page.year, page.month) %>件</h1>
+    <% } else if(is_year()) { %>
+    <h1><%= page.year%>年のすべての記事 <%= count_articles_year(page.year) %>件</h1>
+    <% } else { %>
+    <h1>すべての記事 <%= count_articles() %>件</h1>
+    <% } %>
     <%- partial('_partial/archive-all', {pagination: config.archive}) %>
   </div>
 </div>
