@@ -1,15 +1,11 @@
 <div class="container">
   <ul class="breadcrumb">
     <li><a href="/">Home</a></li>
-    <li><a href="/authors">authors</a></li>
+    <li><a href="/authors">Authors</a></li>
     <li class="active"><%- page.author %></li>
   </ul>
   <section id="main">
     <h1><%- page.author %>が執筆した記事一覧 <%= count_author(page.author) %>件</h1>
     <%- partial('_partial/archive', {pagination: config.author, index: true}) %>
-    <h2>執筆者一覧</h2>
-    <div class="blog-info">
-    <%- list_authors() %>
-    </div>
   </section>
 </div>

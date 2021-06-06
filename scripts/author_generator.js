@@ -32,6 +32,13 @@ hexo.extend.generator.register("author", function(locals) {
     }, []);
 });
 
+// Authro Root Page
+hexo.extend.generator.register("authors", function(locals) {
+   return  pagination('authors', locals.posts, {
+        layout: ['authors', 'archive', 'index'],
+    });
+});
+
 function author_to_url(author) {
   return ((this.config.author_generator || {}).url_map || {})[author] || author;
 }
@@ -52,7 +59,7 @@ hexo.extend.helper.register('list_authors', function() {
   const authors = postRankings.map(author => `
       <li class="author-list-item">
           <a class="author-list-link" href="/authors/${author_to_url.call(this, author)}">${author}</a>
-          <span class="author-list-count">${count_posts(author)}</span>
+          <span class="author-list-count">${count_posts(author)} 件</span>
       </li>`).join('');
 
   return `<ul class="author-list">${authors}</ul>`;
@@ -67,3 +74,21 @@ hexo.extend.helper.register('post_author_link', function(post) {
 
   return `<li class="blog-info-item">${link}</li>`
 });
+
+// 著者数を表示
+hexo.extend.helper.register('count_authors', function() {
+  const coAuthors = this.site.posts.filter(post => Array.isArray(post.author)).map(post => post.author).flat();
+  const singleAuthors = this.site.posts.filter(post => !Array.isArray(post.author)).map(post => post.author);
+  return coAuthors.concat(singleAuthors).unique().length;
+});
+
+hexo.extend.helper.register('post_author_link', function(post) {
+  const authors = [].concat(post.author || 'Anonymous');
+
+  const link = authors.map(author =>
+    `<li><a href="/authors/${encodeURI(author)}">${author}</a></li>`
+  ).join("")
+
+  return `<li class="blog-info-item">${link}</li>`
+});
+
