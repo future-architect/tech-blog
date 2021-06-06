@@ -34,7 +34,7 @@ hexo.extend.generator.register("author", function(locals) {
 
 // Authro Root Page
 hexo.extend.generator.register("authors", function(locals) {
-   return  pagination('authors', locals.posts, {
+   return  pagination('authors', locals.posts.slice(0, 1), {
         layout: ['authors', 'archive', 'index'],
     });
 });
