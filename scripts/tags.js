@@ -4,7 +4,7 @@ const pagination = require('hexo-pagination');
 
 // /tags
 hexo.extend.generator.register("tags", function(locals) {
-   return  pagination('tags', locals.posts, {
+   return  pagination('tags', locals.posts.slice(0, 1), {
         layout: ['tags', 'archive', 'index'],
     });
 });
