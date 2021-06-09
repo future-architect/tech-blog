@@ -502,8 +502,8 @@
   "https://future-architect.github.io/articles/20210521a/": 2,
   "https://future-architect.github.io/articles/20210523undefined/": 0,
   "https://future-architect.github.io/articles/20210524a/": 2,
-  "https://future-architect.github.io/articles/20210525a/": 72,
-  "https://future-architect.github.io/articles/20210525b/": 3,
+  "https://future-architect.github.io/articles/20210525a/": 76,
+  "https://future-architect.github.io/articles/20210525b/": 4,
   "https://future-architect.github.io/articles/20210526a/": 3,
   "https://future-architect.github.io/articles/20210526b/": 2,
   "https://future-architect.github.io/articles/20200202/": 0,
@@ -517,7 +517,7 @@
   "https://future-architect.github.io/articles/20210601a/": 1,
   "https://future-architect.github.io/articles/20210602a/": 1,
   "https://future-architect.github.io/articles/20210603a/": 2,
-  "https://future-architect.github.io/articles/20210604a/": 47,
+  "https://future-architect.github.io/articles/20210604a/": 48,
   "https://future-architect.github.io/articles/undefined20210604a/": 0,
   "https://future-architect.github.io/articles/undefined20210603a/": 0,
   "https://future-architect.github.io/articles/undefined20210602a/": 0,
@@ -534,5 +534,6 @@
   "https://future-architect.github.io/articles/en/:year:month:day:postid/": 0,
   "https://future-architect.github.io/articles/20210607a/": 2,
   "https://future-architect.github.io/page/48/": 0,
-  "https://future-architect.github.io/articles/20210608a/": 0
+  "https://future-architect.github.io/articles/20210608a/": 0,
+  "https://future-architect.github.io/articles/20210609a/": 0
 }
