@@ -7,13 +7,21 @@ hexo.extend.generator.register("author", function(locals) {
     const posts = locals.posts;
 
     let coworkPosts = new Map();
+    let coworkOnly = []; // 共著しか記事が無い著者の救済用途
     posts.filter(post => Array.isArray(post.author)).forEach(post => {
       post.author.forEach(name => {
         coworkPosts.set(name, [].concat([post]).concat(coworkPosts[name] || []));
+
+        if (posts.map(post => post.author).filter(author => author === name).length == 0) {
+          post.author = name; // 単著に設定し直し
+          coworkOnly.push(post);
+        }
       });
     });
 
-    const authorPosts = posts.map(post => post.author).filter(author => !Array.isArray(author)).unique().map(author => ({name:author, posts:posts.find({author})}));
+
+    const flatPost = posts.data.concat(coworkOnly);
+    let authorPosts = flatPost.map(post => post.author).filter(author => !Array.isArray(author)).unique().map(author => ({name:author, posts:posts.find({author})}));
 
     const generator_config = this.config.author_generator || {};
     const per_page = generator_config.per_page || this.config.per_page || 10;
@@ -37,7 +45,7 @@ hexo.extend.generator.register("author", function(locals) {
     }, []);
 });
 
-// Authro Root Page
+// Author Root Page
 hexo.extend.generator.register("authors", function(locals) {
    return  pagination('authors', locals.posts.slice(0, 1), {
         layout: ['authors', 'archive', 'index'],
@@ -49,14 +57,22 @@ function author_to_url(author) {
 }
 
 hexo.extend.helper.register('list_authors', function() {
+
   let coworkPosts = new Map();
+  let coworkOnly = []; // 共著しか記事が無い著者の救済用途
   this.site.posts.filter(post => Array.isArray(post.author)).forEach(post => {
     post.author.forEach(name => {
       coworkPosts.set(name, [].concat([post]).concat(coworkPosts[name] || []));
+
+      if (this.site.posts.map(post => post.author).filter(author => author === name).length === 0) {
+        post.author = name; // 単著に設定し直し
+        coworkOnly.push(post);
+      }
     });
   });
 
-  const count_posts = author => this.site.posts.filter(post => post.author === author).length + (coworkPosts.get(author) || []).length; // 共著分を追加
+  const flatPost = this.site.posts.data.concat(coworkOnly);
+  const count_posts = author => flatPost.filter(post => post.author === author).length + (coworkPosts.get(author) || []).length; // 共著分を追加
   const compareFunc = (a, b) => count_posts(b) - count_posts(a);
 
   const postRankings = this.site.authors.filter(author => !Array.isArray(author)).sort(compareFunc)
