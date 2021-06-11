@@ -54,7 +54,7 @@
   "https://future-architect.github.io/articles/20210321/": 1,
   "https://future-architect.github.io/articles/20210320/": 0,
   "https://future-architect.github.io/articles/20210319/": 5,
-  "https://future-architect.github.io/articles/20210317/": 6,
+  "https://future-architect.github.io/articles/20210317/": 7,
   "https://future-architect.github.io/articles/20210318/": 4,
   "https://future-architect.github.io/articles/20210316/": 3,
   "https://future-architect.github.io/articles/20210315/": 4,
@@ -486,7 +486,7 @@
   "https://future-architect.github.io/page/45/": 0,
   "https://future-architect.github.io/page/44/": 0,
   "https://future-architect.github.io/articles/20210511b/": 6,
-  "https://future-architect.github.io/articles/20210511a/": 35,
+  "https://future-architect.github.io/articles/20210511a/": 37,
   "https://future-architect.github.io/articles/20210510b/": 2,
   "https://future-architect.github.io/page/46/": 0,
   "https://future-architect.github.io/articles/20210519a/": 1,
@@ -512,9 +512,9 @@
   "https://future-architect.github.io/articles/20210527a/": 19,
   "https://future-architect.github.io/articles/20210528a/": 1,
   "undefined": 0,
-  "https://future-architect.github.io/articles/20210531a/": 1,
+  "https://future-architect.github.io/articles/20210531a/": 2,
   "https://future-architect.github.io/articles/20210531b/": 1,
-  "https://future-architect.github.io/articles/20210601a/": 4,
+  "https://future-architect.github.io/articles/20210601a/": 5,
   "https://future-architect.github.io/articles/20210602a/": 3,
   "https://future-architect.github.io/articles/20210603a/": 1,
   "https://future-architect.github.io/articles/20210604a/": 42,
@@ -536,5 +536,6 @@
   "https://future-architect.github.io/page/48/": 0,
   "https://future-architect.github.io/articles/20210608a/": 1,
   "https://future-architect.github.io/articles/20210609a/": 0,
-  "https://future-architect.github.io/articles/20210610a/": 0
+  "https://future-architect.github.io/articles/20210610a/": 1,
+  "https://future-architect.github.io/articles/20210611a/": 0
 }
