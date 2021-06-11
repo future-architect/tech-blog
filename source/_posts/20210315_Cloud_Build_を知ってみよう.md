@@ -7,7 +7,7 @@ tag:
   - GitOps
   - CI/CD
 category:
-  - CI/CD
+  - DevOps
 thumbnail: /images/20210315/thumbnail.png
 author: 前原応光
 featured: false
