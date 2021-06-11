@@ -6,7 +6,7 @@ tag:
   - Markdown
   - ドキュメント
 category:
-  - CI/CD
+  - DevOps
 thumbnail: /images/20210422b/thumbnail.png
 author: 棚井龍之介
 featured: false
