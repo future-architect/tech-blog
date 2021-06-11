@@ -5,7 +5,7 @@
     <li class="active"><%- page.author %></li>
   </ul>
   <section id="main">
-    <h1><%- page.author %>が執筆した記事一覧 <%= count_author(page.author) %>件</h1>
+    <h1><%- page.author %>が執筆した記事一覧 <%= count_author(page.author) %>件　♡<%= page.authorSNSCnt %></h1>
     <%- partial('_partial/archive', {pagination: config.author, index: true}) %>
   </section>
 </div>

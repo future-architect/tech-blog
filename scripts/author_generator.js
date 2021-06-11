@@ -1,6 +1,7 @@
 'use strict';
 
 const pagination = require('hexo-pagination');
+const {getSNSCnt} = require('./lib/sns');
 
 hexo.extend.generator.register("author", function(locals) {
     const posts = locals.posts;
@@ -21,11 +22,15 @@ hexo.extend.generator.register("author", function(locals) {
       author.posts.data = author.posts.data.concat(coworkPosts.get(author.name) || []); // 共著分を追加
 
       const posts = author.posts.sort('-date');
+
+      const snsCnt = posts.map(post => post.permalink).map(url => getSNSCnt(url)).reduce((acc, cur) => acc + cur);
+
       const data = pagination('authors/' + author_to_url.call(this, author.name), posts, {
           layout: ['author', 'archive', 'index'],
           perPage: per_page,
           data: {
-              author: author.name
+              author: author.name,
+              authorSNSCnt: snsCnt
           }
       });
       return result.concat(data);

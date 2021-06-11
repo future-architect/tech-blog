@@ -1,6 +1,7 @@
 'use strict';
 
 const fs = require("fs");
+const {getSNSCnt} = require('./lib/sns');
 
 let gaCache = {data:[]};
 const cachePath = "cache_ga.json";
@@ -21,8 +22,7 @@ hexo.extend.helper.register('popular_posts', function() {
     .flatMap(gaPage => this.site.posts.data.filter(post => post.permalink.indexOf(gaPage.path) > 0).slice(0, 1))
     .slice(0, 10);
 
-  const snsCnt = hexo.extend.helper.get('totalSNSCnt').bind(hexo);
-  const links = popularPost.map(post => `<li><span>${post.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${snsCnt(post.permalink)}</span> <a href="/${post.path}" title="${post.lede}">${post.title}</a></li>`).join("\n")
+  const links = popularPost.map(post => `<li><span>${post.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${getSNSCnt(post.permalink)}</span> <a href="/${post.path}" title="${post.lede}">${post.title}</a></li>`).join("\n")
 
   return `
   <div class="widget">
