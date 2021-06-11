@@ -1,4 +1,5 @@
 const maxCount = 4;
+const {getSNSCnt} = require('./lib/sns');
 
 hexo.extend.helper.register('list_related_posts', function() {
   const post = this.post;
@@ -20,9 +21,6 @@ hexo.extend.helper.register('list_related_posts', function() {
     return `<p class="related-posts-none">No related post.</p>`;
   }
 
-  const snsCnt = hexo.extend.helper.get('totalSNSCnt').bind(hexo);
-
-
   let result = "";
   for (var i = 0; i < count; i++) {
     if (relatedPosts[i] == undefined) {
@@ -30,7 +28,7 @@ hexo.extend.helper.register('list_related_posts', function() {
     }
 
     const related = relatedPosts[i];
-    result += `<li class="related-posts-item"><span>${related.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${snsCnt(related.permalink)}</span><a class="related-posts-link" href=/${related.path} title="${related.lede}">${related.title}</a></li>`;
+    result += `<li class="related-posts-item"><span>${related.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${getSNSCnt(related.permalink)}</span><a class="related-posts-link" href=/${related.path} title="${related.lede}">${related.title}</a></li>`;
   }
 
   return `

@@ -1,4 +1,5 @@
 var gen = require('random-seed');
+const {getSNSCnt} = require('./lib/sns');
 
 hexo.extend.helper.register('featured_posts', function(url, rate, limit) {
   url = url || 'future'; // seed value
@@ -14,10 +15,8 @@ hexo.extend.helper.register('featured_posts', function(url, rate, limit) {
     .filter(_  => count++ < postsLimit)
     ;
 
-  const snsCnt = hexo.extend.helper.get('totalSNSCnt').bind(hexo);
-
   const links = featureds.map(post => `
-    <li><span>${post.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${snsCnt(post.permalink)}</span> <a href="/${post.path}" title="${post.lede}">${post.title}</a></li>`).join("\n")
+    <li><span>${post.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${getSNSCnt(post.permalink)}</span> <a href="/${post.path}" title="${post.lede}">${post.title}</a></li>`).join("\n")
 
   return `
   <div class="widget">

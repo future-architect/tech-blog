@@ -1,65 +1,9 @@
 const fetch = require('sync-fetch');
-const fs = require("fs");
+const {pocket, hatebu, fb, tw, getSNSCnt} = require('./lib/sns');
+
 const beforeDate = 3; // N日前までさかのぼってキャッシュ更新
 
-let [pocketCnt, hatebuCnt, fbCnt, twCnt] = [{}, {}, {}, {}];
 let [currentPocket, currentHatebu, currentFb, currentTw] = [{}, {}, {}, {}];
-
-const cacheFiles = ["cache_pocket.json", "cache_hatebu.json", "cache_facebook.json", "cache_twitter.json"];
-
-cacheFiles.forEach((path, i) => {
-  if (!fs.existsSync(path)) {
-    return;
-  }
-
-  let cache = fs.readFileSync(path, 'utf-8');
-  if (cache) {
-    if (i == 0) {
-      pocketCnt = JSON.parse(cache);
-    } else if (i == 1) {
-      hatebuCnt = JSON.parse(cache);
-    } else if (i == 2) {
-      fbCnt = JSON.parse(cache);
-    } else if (i == 3) {
-      twCnt = JSON.parse(cache);
-    }
-  }
-});
-
-process.on('exit', function() {
-  fs.writeFileSync("cache_pocket.json", JSON.stringify(pocketCnt, null, 2));
-  fs.writeFileSync("cache_hatebu.json", JSON.stringify(hatebuCnt, null, 2));
-  fs.writeFileSync("cache_facebook.json", JSON.stringify(fbCnt, null, 2));
-  fs.writeFileSync("cache_twitter.json", JSON.stringify(twCnt, null, 2));
-});
-
-// url example: https://future-architect.github.io/articles/20210519a/
-const fetchableDate = (url)=> {
-  if (url && url.indexOf("/articles/") > 0) {
-    const path = url.split("/articles/")[1];
-    const ymd = path.replace("/", "").substring(0, 9);
-
-    let dt = new Date();
-    var pastDate = dt.getDate() - beforeDate;
-    dt.setDate(pastDate);
-
-    const y = dt.getFullYear();
-    const m = ('00' + (dt.getMonth()+1)).slice(-2);
-    const d = ('00' + dt.getDate()).slice(-2);
-    const before = y + m + d;
-
-    if (before <= ymd) {
-      return true;
-    }
-  }
-
-  // 1%
-  if (Math.random() * 100 < 1) {
-    return true;
-  }
-
-  return false;
-}
 
 hexo.extend.helper.register("get_pocket_count", (url) => {
   if (currentPocket[url]) {
@@ -67,7 +11,7 @@ hexo.extend.helper.register("get_pocket_count", (url) => {
   }
 
   if (!fetchableDate(url)) {
-    const cnt = pocketCnt[url];
+    const cnt = pocket[url];
     if (cnt > 0) {
       return cnt
     } else if (cnt == 0) {
@@ -77,7 +21,7 @@ hexo.extend.helper.register("get_pocket_count", (url) => {
 
   const apiURL = `https://widgets.getpocket.com/api/saves?url=${url}`
   const respCnt = fetch(apiURL).json().saves;
-  pocketCnt[url] = respCnt;
+  pocket[url] = respCnt;
   currentPocket[url] = respCnt;
 
   if (respCnt == 0) {
@@ -93,7 +37,7 @@ hexo.extend.helper.register("get_hatebu_count", (url) => {
   }
 
   if (!fetchableDate(url)) {
-    const cnt = hatebuCnt[url];
+    const cnt = hatebu[url];
     if (cnt > 0) {
       return cnt
     } else if (cnt == 0) {
@@ -103,7 +47,7 @@ hexo.extend.helper.register("get_hatebu_count", (url) => {
 
   const apiURL = `https://bookmark.hatenaapis.com/count/entry?url=${encodeURI(url)}`
   const respCnt = fetch(apiURL).json();
-  hatebuCnt[url] = respCnt;
+  hatebu[url] = respCnt;
   currentHatebu[url] = respCnt;
 
   if (respCnt == 0) {
@@ -119,7 +63,7 @@ hexo.extend.helper.register("get_fb_count", (url) => {
   }
 
   if (!fetchableDate(url)) {
-    const cnt = fbCnt[url];
+    const cnt = fb[url];
     if (cnt > 0) {
       return cnt;
     } else if(cnt == 0) {
@@ -152,7 +96,7 @@ hexo.extend.helper.register("get_fb_count", (url) => {
   }
 
   const respCnt = resp?.og_object?.engagement?.count || 0;
-  fbCnt[url] = respCnt;
+  fb[url] = respCnt;
   currentFb[url] = respCnt;
 
   console.log(`finish facebook ${url} ${respCnt}`);
@@ -170,7 +114,7 @@ hexo.extend.helper.register("get_tw_count", (url) => {
   }
 
   if (!fetchableDate(url)) {
-    const cnt = twCnt[url];
+    const cnt = tw[url];
     if (cnt == 0) {
       return "ツイート";
     } else if (cnt > 0) {
@@ -182,7 +126,7 @@ hexo.extend.helper.register("get_tw_count", (url) => {
   const resp = fetch(apiURL).json();
   const respCnt = resp.count + resp.likes;
 
-  twCnt[url] = respCnt;
+  tw[url] = respCnt;
   currentTw[url] = respCnt;
 
   if (respCnt == 0) {
@@ -192,7 +136,6 @@ hexo.extend.helper.register("get_tw_count", (url) => {
   return respCnt;
 });
 
-
 // http://cloud.feedly.com/v3/feeds/feed%2Fhttps%3A%2F%2Ffuture-architect.github.io%2Fatom.xml
 hexo.extend.helper.register("get_feedly_count", (url) => {
   const apiURL = `http://cloud.feedly.com/v3/feeds/feed%2Fhttps%3A%2F%2Ffuture-architect.github.io%2Fatom.xml`
@@ -200,12 +143,34 @@ hexo.extend.helper.register("get_feedly_count", (url) => {
   return resp.subscribers ?? "Follow";
 });
 
-
 hexo.extend.helper.register("totalSNSCnt", (url) => {
-  const pocket = pocketCnt[url] || 0;
-  const hatebu = hatebuCnt[url] || 0;
-  const fb = fbCnt[url] || 0;
-  const tw = twCnt[url] || 0;
-
-  return pocket + hatebu + fb + tw;
+  return getSNSCnt(url);
 });
+
+// url example: https://future-architect.github.io/articles/20210519a/
+const fetchableDate = (url)=> {
+  if (url && url.indexOf("/articles/") > 0) {
+    const path = url.split("/articles/")[1];
+    const ymd = path.replace("/", "").substring(0, 9);
+
+    let dt = new Date();
+    var pastDate = dt.getDate() - beforeDate;
+    dt.setDate(pastDate);
+
+    const y = dt.getFullYear();
+    const m = ('00' + (dt.getMonth()+1)).slice(-2);
+    const d = ('00' + dt.getDate()).slice(-2);
+    const before = y + m + d;
+
+    if (before <= ymd) {
+      return true;
+    }
+  }
+
+  // 1%
+  if (Math.random() * 100 < 1) {
+    return true;
+  }
+
+  return false;
+}
