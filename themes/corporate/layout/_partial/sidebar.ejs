@@ -1,8 +1,10 @@
 <!-- START SIDEBAR  -->
+<% if (is_post()) { %>
 <section class="toc-section">
   <h2 class="margin-top-30">目次</h2>
   <%- toc(page.content, {list_number:false, max_depth:4}) %>
 </section>
+<% } %>
 <section class="category">
 <h2 class="margin-top-30">カテゴリー</h2>
 <%- partial('_widget/category.ejs') %>
