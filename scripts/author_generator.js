@@ -2,6 +2,7 @@
 
 const pagination = require('hexo-pagination');
 const {getSNSCnt} = require('./lib/sns');
+const moment = require('moment');
 
 hexo.extend.generator.register("author", function(locals) {
     let posts = locals.posts;
@@ -71,7 +72,7 @@ hexo.extend.helper.register('post_author_link', function(post) {
   return `<li class="blog-info-item">${link}</li>`
 });
 
-// 著者数を表示
+// 全著者数を表示
 hexo.extend.helper.register('count_authors', function(year='all') {
   if (year === 'all') {
     const coAuthors = this.site.posts.filter(post => Array.isArray(post.author)).map(post => post.author).flat();
@@ -92,3 +93,67 @@ hexo.extend.helper.register('post_author_link', function(post) {
   return `<li class="blog-info-item">${link}</li>`
 });
 
+// チャート表示用のデータを生成
+hexo.extend.helper.register('generate_post_series', function(author) {
+  const acc = generateSeries(this.site.posts, author);
+  const postSeries = acc.map(e => e.count).join(",")
+  return postSeries;
+});
+
+hexo.extend.helper.register('generate_post_month', function(author) {
+  const acc = generateSeries(this.site.posts, author);
+  const postSeries = acc.map(e => e.yyyyMM).join(",")
+  return postSeries;
+});
+
+hexo.extend.helper.register('max_post_month', function(author) {
+  const acc = generateSeries(this.site.posts, author);
+  return Math.max(5, Math.max(...acc.map(item => item.count))); // 最小は5とする
+});
+
+const generateSeries = (posts, author) => {
+  const target = posts.filter(post => post.author === author);
+  const start = moment.min(...target.map(item => item.date)).clone(); // Add操作で副作用があるのでclone
+  const end = moment.max(...target.map(item => item.date));
+
+  let fillingItems = [];
+  for (;;) {
+    const date = start.add(1, 'M')
+    fillingItems.push({
+      yyyyMM: date.format("YYYYMM"),
+      count:0
+    })
+    if (date.format("YYYYMM") === end.format("YYYYMM") || date >= end) {
+      break;
+    }
+  }
+
+  const group = target.reduce((acc, cur) => {
+    const item = acc.find(p => p.yyyyMM === cur.date.format("YYYYMM"));
+    if (item) {
+      item.count++;
+    } else {
+      acc.push({
+        yyyyMM: cur.date.format("YYYYMM"),
+        count: 1
+      });
+    }
+    return acc;
+  }, []);
+
+  const merge = group.concat(fillingItems).reduce((acc, cur) => {
+    const item = acc.find(p => p.yyyyMM === cur.yyyyMM);
+    if (item) {
+      item.count += cur.count;
+    } else {
+      acc.push(cur);
+    }
+    return acc;
+  }, []);
+
+  merge.sort((a, b) => {
+    return a.yyyyMM.localeCompare(b.yyyyMM);
+  });
+
+  return merge;
+}
