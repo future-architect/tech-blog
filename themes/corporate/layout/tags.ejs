@@ -4,7 +4,9 @@
     <li class="active">Tags</li>
   </ul>
   <section id="main">
-    <h1><%- page.tag %> タグから記事を探す <%= count_tags() %>件</h1>
+    <h2>人気のタグから記事を探す</h1>
+    <%- ranking_tags() %>
+    <h2>タグクラウドから記事を探す <%= count_tags() %>件</h1>
     <%- tagcloud() %>
   </section>
 </div>
