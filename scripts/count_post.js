@@ -12,6 +12,7 @@ hexo.extend.helper.register('count_articles_month', function(year, month) {
   return this.site.posts.filter(post => post.date.format("YYYYMM") === year.toString() + mm).length;
 });
 
+// 著者に紐づく投稿件数
 hexo.extend.helper.register('count_author', function(name) {
   return this.site.posts.filter(post => post.author === name).length;
 });
