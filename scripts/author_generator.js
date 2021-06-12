@@ -4,35 +4,25 @@ const pagination = require('hexo-pagination');
 const {getSNSCnt} = require('./lib/sns');
 
 hexo.extend.generator.register("author", function(locals) {
-    const posts = locals.posts;
+    let posts = locals.posts;
 
-    let coworkPosts = new Map();
-    let coworkOnly = []; // 共著しか記事が無い著者の救済用途
     posts.filter(post => Array.isArray(post.author)).forEach(post => {
       post.author.forEach(name => {
-        coworkPosts.set(name, [].concat([post]).concat(coworkPosts[name] || []));
-
-        if (posts.map(post => post.author).filter(author => author === name).length == 0) {
-          post.author = name; // 単著に設定し直し
-          coworkOnly.push(post);
-        }
+        let copy = Object.assign({}, post);
+        copy.author = name; // 単著に設定し直し
+        posts.data.push(copy);
+        posts.length++;
       });
     });
 
-
-    const flatPost = posts.data.concat(coworkOnly);
-    let authorPosts = flatPost.map(post => post.author).filter(author => !Array.isArray(author)).unique().map(author => ({name:author, posts:posts.find({author})}));
+    let authorPosts = posts.map(post => post.author).unique().map(author => ({name:author, posts:posts.find({author})}));
 
     const generator_config = this.config.author_generator || {};
     const per_page = generator_config.per_page || this.config.per_page || 10;
 
     return authorPosts.reduce((result, author) => {
-      author.posts.data = author.posts.data.concat(coworkPosts.get(author.name) || []); // 共著分を追加
-
       const posts = author.posts.sort('-date');
-
       const snsCnt = posts.map(post => post.permalink).map(url => getSNSCnt(url)).reduce((acc, cur) => acc + cur);
-
       const data = pagination('authors/' + author_to_url.call(this, author.name), posts, {
           layout: ['author', 'archive', 'index'],
           perPage: per_page,
@@ -57,26 +47,9 @@ function author_to_url(author) {
 }
 
 hexo.extend.helper.register('list_authors', function() {
-
-  let coworkPosts = new Map();
-  let coworkOnly = []; // 共著しか記事が無い著者の救済用途
-  this.site.posts.filter(post => Array.isArray(post.author)).forEach(post => {
-    post.author.forEach(name => {
-      coworkPosts.set(name, [].concat([post]).concat(coworkPosts[name] || []));
-
-      if (this.site.posts.map(post => post.author).filter(author => author === name).length === 0) {
-        post.author = name; // 単著に設定し直し
-        coworkOnly.push(post);
-      }
-    });
-  });
-
-  const flatPost = this.site.posts.data.concat(coworkOnly);
-  const count_posts = author => flatPost.filter(post => post.author === author).length + (coworkPosts.get(author) || []).length; // 共著分を追加
+  const count_posts = author => this.site.posts.filter(post => post.author === author).length;
   const compareFunc = (a, b) => count_posts(b) - count_posts(a);
-
   const postRankings = this.site.authors.filter(author => !Array.isArray(author)).sort(compareFunc)
-
   const authors = postRankings.map(author => `
       <li class="author-list-item">
           <a class="author-list-link" href="/authors/${author_to_url.call(this, author)}">${author}</a>
@@ -88,11 +61,9 @@ hexo.extend.helper.register('list_authors', function() {
 
 hexo.extend.helper.register('post_author_link', function(post) {
   const authors = [].concat(post.author || 'Anonymous');
-
   const link = authors.map(author =>
     `<li><a href="/authors/${encodeURI(author)}">${author}</a></li>`
   ).join("")
-
   return `<li class="blog-info-item">${link}</li>`
 });
 
@@ -105,11 +76,9 @@ hexo.extend.helper.register('count_authors', function() {
 
 hexo.extend.helper.register('post_author_link', function(post) {
   const authors = [].concat(post.author || 'Anonymous');
-
   const link = authors.map(author =>
     `<li><a href="/authors/${encodeURI(author)}">${author}</a></li>`
   ).join("")
-
   return `<li class="blog-info-item">${link}</li>`
 });
 
