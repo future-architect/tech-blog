@@ -46,11 +46,15 @@ function author_to_url(author) {
   return ((this.config.author_generator || {}).url_map || {})[author] || author;
 }
 
-hexo.extend.helper.register('list_authors', function() {
-  const count_posts = author => this.site.posts.filter(post => post.author === author).length;
+hexo.extend.helper.register('list_authors', function(year='all') {
+  let count_posts = author => this.site.posts.filter(post => post.author === author).length;
+  if (year != 'all') {
+    count_posts = author => this.site.posts.filter(post => post.date.format("YYYY") === year && post.author === author).length;
+  }
+
   const compareFunc = (a, b) => count_posts(b) - count_posts(a);
   const postRankings = this.site.authors.filter(author => !Array.isArray(author)).sort(compareFunc)
-  const authors = postRankings.map(author => `
+  const authors = postRankings.filter(author => count_posts(author) > 0).map(author => `
       <li class="author-list-item">
           <a class="author-list-link" href="/authors/${author_to_url.call(this, author)}">${author}</a>
           <span class="author-list-count">${count_posts(author)} 件</span>
@@ -68,9 +72,15 @@ hexo.extend.helper.register('post_author_link', function(post) {
 });
 
 // 著者数を表示
-hexo.extend.helper.register('count_authors', function() {
-  const coAuthors = this.site.posts.filter(post => Array.isArray(post.author)).map(post => post.author).flat();
-  const singleAuthors = this.site.posts.filter(post => !Array.isArray(post.author)).map(post => post.author);
+hexo.extend.helper.register('count_authors', function(year='all') {
+  if (year === 'all') {
+    const coAuthors = this.site.posts.filter(post => Array.isArray(post.author)).map(post => post.author).flat();
+    const singleAuthors = this.site.posts.filter(post => !Array.isArray(post.author)).map(post => post.author);
+    return coAuthors.concat(singleAuthors).unique().length;
+  }
+
+  const coAuthors = this.site.posts.filter(post =>  post.date.format("YYYY") === year && Array.isArray(post.author)).map(post => post.author).flat();
+  const singleAuthors = this.site.posts.filter(post =>  post.date.format("YYYY") === year && !Array.isArray(post.author)).map(post => post.author);
   return coAuthors.concat(singleAuthors).unique().length;
 });
 

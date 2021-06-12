@@ -5,6 +5,9 @@
   </ul>
   <section id="main">
     <div>
+      <h2><%= date(new Date(), 'YYYY') %>年の投稿者一覧 <%= count_authors(date(new Date(), 'YYYY')) %> 人</h2>
+      <%- list_authors(date(new Date(), 'YYYY')) %>
+
       <h2>執筆者一覧 <%= count_authors() %> 人</h2>
       <%- list_authors() %>
     </div>
