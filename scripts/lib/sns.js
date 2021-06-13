@@ -1,3 +1,5 @@
+'use strict';
+
 const fs = require("fs");
 
 let [pocket, hatebu, fb, tw] = [{}, {}, {}, {}];
@@ -37,10 +39,10 @@ const getSNSCnt = url => {
   return p + h + f + t;
 }
 
-const getTwitterCnt = url => {return pocket[url] || 0;}
-const getFacebookCnt = url => {return hatebu[url] || 0;}
-const getHatebuCnt = url => {return fb[url] || 0;}
-const getPocketCnt = url => {return tw[url] || 0;}
+const getTwitterCnt = url => {return tw[url] || 0;}
+const getFacebookCnt = url => {return fb[url] || 0;}
+const getHatebuCnt = url => {return hatebu[url] || 0;}
+const getPocketCnt = url => {return pocket[url] || 0;}
 
 module.exports = {
   pocket: pocket,
