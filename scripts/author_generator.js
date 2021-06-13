@@ -1,7 +1,7 @@
 'use strict';
 
 const pagination = require('hexo-pagination');
-const {getSNSCnt} = require('./lib/sns');
+const {getSNSCnt,getTwitterCnt,getFacebookCnt,getHatebuCnt,getPocketCnt} = require('./lib/sns');
 const moment = require('moment');
 
 hexo.extend.generator.register("author", function(locals) {
@@ -24,12 +24,20 @@ hexo.extend.generator.register("author", function(locals) {
     return authorPosts.reduce((result, author) => {
       const posts = author.posts.sort('-date');
       const snsCnt = posts.map(post => post.permalink).map(url => getSNSCnt(url)).reduce((acc, cur) => acc + cur);
+      const twitterShare = posts.map(post => post.permalink).map(url => getTwitterCnt(url)).reduce((acc, cur) => acc + cur);
+      const facebookShare = posts.map(post => post.permalink).map(url => getFacebookCnt(url)).reduce((acc, cur) => acc + cur);
+      const hatebu = posts.map(post => post.permalink).map(url => getHatebuCnt(url)).reduce((acc, cur) => acc + cur);
+      const pocket = posts.map(post => post.permalink).map(url => getPocketCnt(url)).reduce((acc, cur) => acc + cur);
       const data = pagination('authors/' + author_to_url.call(this, author.name), posts, {
           layout: ['author', 'archive', 'index'],
           perPage: per_page,
           data: {
               author: author.name,
-              authorSNSCnt: snsCnt
+              authorSNSCnt: snsCnt,
+              twitterShare: twitterShare,
+              facebookShare: facebookShare,
+              hatebu: hatebu,
+              pocket: pocket
           }
       });
       return result.concat(data);

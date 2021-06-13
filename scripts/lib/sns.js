@@ -34,19 +34,22 @@ const getSNSCnt = url => {
   const h = hatebu[url] || 0;
   const f = fb[url] || 0;
   const t = tw[url] || 0;
-
   return p + h + f + t;
 }
 
-// exports.getSNSCnt = getSNSCnt;
-// exports.pocket = pocket;
-// exports.hatebu = hatebu;
-// exports.fb = fb;
-// exports.tw = tw;
+const getTwitterCnt = url => {return pocket[url] || 0;}
+const getFacebookCnt = url => {return hatebu[url] || 0;}
+const getHatebuCnt = url => {return fb[url] || 0;}
+const getPocketCnt = url => {return tw[url] || 0;}
+
 module.exports = {
   pocket: pocket,
   hatebu: hatebu,
   fb: fb,
   tw: tw,
-  getSNSCnt: getSNSCnt
+  getSNSCnt: getSNSCnt,
+  getTwitterCnt:getTwitterCnt,
+  getFacebookCnt: getFacebookCnt,
+  getHatebuCnt:getHatebuCnt,
+  getPocketCnt : getPocketCnt
 };
