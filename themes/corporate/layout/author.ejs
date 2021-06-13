@@ -6,7 +6,7 @@
   </ul>
   <section id="main">
     <h1><%- page.author %>が執筆した記事一覧 <%= count_author(page.author) %>件　♡<%= page.authorSNSCnt %></h1>
-    <div id="chart" style="width:1200px;height:400px;margin: 0 auto"></div>
+    <div id="chart" style="width:100%;min-height:250px"></div>
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js"></script>
     <script type="text/javascript">
       let myChart = echarts.init(document.getElementById('chart'));
