@@ -5,7 +5,15 @@
     <li class="active"><%- page.author %></li>
   </ul>
   <section id="main">
-    <h1><%- page.author %>が執筆した記事一覧 <%= count_author(page.author) %>件　♡<%= page.authorSNSCnt %></h1>
+    <h1 class="author-page"><%- page.author %>さんのページ</h1>
+    <ul class="author-summary">
+      <li><span class="summary-count"><%= count_author(page.author) %></span><br><span class="summary-label">投稿</span></li>
+      <li><span class="summary-count"><%= page.authorSNSCnt %></span><br><span class="summary-label">総シェア数</span></li>
+      <li><span class="summary-count"><%= page.twitterShare %></span><br><span class="summary-label">Twitter Share</span></li>
+      <li><span class="summary-count"><%= page.facebookShare %></span><br><span class="summary-label">Facebook Share</span></li>
+      <li><span class="summary-count"><%= page.hatebu %></span><br><span class="summary-label">はてブ</span></li>
+      <li><span class="summary-count"><%= page.pocket %></span><br><span class="summary-label">Pocket</span></li>
+    </ul>
     <div id="chart" style="width:100%;min-height:250px"></div>
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js"></script>
     <script type="text/javascript">
