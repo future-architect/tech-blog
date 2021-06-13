@@ -1,83 +1,54 @@
+'use strict';
+
 const fetch = require('sync-fetch');
-const {pocket, hatebu, fb, tw, getSNSCnt} = require('./lib/sns');
-
-const beforeDate = 3; // N日前までさかのぼってキャッシュ更新
-
+const {saveCache, pocket, hatebu, fb, tw, setTwitterCnt, setFacebookCnt, setHatebuCnt, setPocketCnt, getSNSCnt} = require('./lib/sns');
+const BEFORE_DATE = 30; // N日前までさかのぼってキャッシュ更新
 let [currentPocket, currentHatebu, currentFb, currentTw] = [{}, {}, {}, {}];
 
-hexo.extend.helper.register("get_pocket_count", (url) => {
+// キャッシュ永続化
+process.on('exit', saveCache);
+
+hexo.extend.helper.register("get_pocket_count", url => {
   if (currentPocket[url]) {
     return currentPocket[url];
   }
-
   if (!fetchableDate(url)) {
-    const cnt = pocket[url];
-    if (cnt > 0) {
-      return cnt
-    } else if (cnt == 0) {
-      return "Pocket"
-    }
+    return pocket[url] ||  "Pocket";
   }
 
-  const apiURL = `https://widgets.getpocket.com/api/saves?url=${url}`
-  const respCnt = fetch(apiURL).json().saves;
-  pocket[url] = respCnt;
+  const respCnt = fetch(`https://widgets.getpocket.com/api/saves?url=${url}`).json().saves;
   currentPocket[url] = respCnt;
+  setPocketCnt(url, respCnt)
 
-  if (respCnt == 0) {
-    return "Pocket";
-  }
-
-  return respCnt;
+  return respCnt || "Pocket";
 });
 
-hexo.extend.helper.register("get_hatebu_count", (url) => {
+hexo.extend.helper.register("get_hatebu_count", url => {
   if (currentHatebu[url]) {
     return currentHatebu[url];
   }
-
   if (!fetchableDate(url)) {
-    const cnt = hatebu[url];
-    if (cnt > 0) {
-      return cnt
-    } else if (cnt == 0) {
-      return "はてな";
-    }
+    return hatebu[url] || "はてな";
   }
 
-  const apiURL = `https://bookmark.hatenaapis.com/count/entry?url=${encodeURI(url)}`
-  const respCnt = fetch(apiURL).json();
-  hatebu[url] = respCnt;
+  const respCnt = fetch(`https://bookmark.hatenaapis.com/count/entry?url=${encodeURI(url)}`).json();
   currentHatebu[url] = respCnt;
+  setHatebuCnt(url, respCnt);
 
-  if (respCnt == 0) {
-    return "はてな";
-  }
-
-  return respCnt;
+  return respCnt || "はてな";
 });
 
-hexo.extend.helper.register("get_fb_count", (url) => {
+hexo.extend.helper.register("get_fb_count", url => {
   if (currentFb[url]) {
     return currentFb[url];
   }
-
   if (!fetchableDate(url)) {
-    const cnt = fb[url];
-    if (cnt > 0) {
-      return cnt;
-    } else if(cnt == 0) {
-      return "シェア";
-    }
+    return fb[url] || "シェア";
   }
 
-  const token = process.env.FB_TOKEN;
-  const apiURL = `https://graph.facebook.com/v10.0/?fields=og_object{engagement}&id=${encodeURI(url)}&access_token=${token}`
-  const resp = fetch(apiURL).json();
-
+  const resp = fetch(`https://graph.facebook.com/v10.0/?fields=og_object{engagement}&id=${encodeURI(url)}&access_token=${process.env.FB_TOKEN}`).json();
   if (resp?.error) {
-    /* response example:
-      {
+    /* {
         "error": {
           "message": "(#4) Application request limit reached",
           "type": "OAuthException",
@@ -88,73 +59,56 @@ hexo.extend.helper.register("get_fb_count", (url) => {
         }
    */
     // 制限にかかった場合は、キャッシュを再利用
-    const cnt = fbCnt[url];
-    if (cnt > 0) {
-      return cnt;
-    }
-    return "シェア";
+    return fb[url] || "シェア";
   }
 
   const respCnt = resp?.og_object?.engagement?.count || 0;
-  fb[url] = respCnt;
   currentFb[url] = respCnt;
+  setFacebookCnt(url, respCnt);
 
   console.log(`finish facebook ${url} ${respCnt}`);
-
-  if (respCnt == 0) {
-    return "シェア";
-  }
-
-  return respCnt;
+  return respCnt || "シェア";
 });
 
-hexo.extend.helper.register("get_tw_count", (url) => {
+hexo.extend.helper.register("get_tw_count", url => {
   if (currentTw[url]) {
     return currentTw[url];
   }
-
   if (!fetchableDate(url)) {
-    const cnt = tw[url];
-    if (cnt == 0) {
-      return "ツイート";
-    } else if (cnt > 0) {
-      return cnt;
-    }
+    return tw[url] ||  "ツイート";
   }
 
-  const apiURL = `https://jsoon.digitiminimi.com/twitter/count.json?url=${encodeURI(url)}`
-  const resp = fetch(apiURL).json();
+  const resp = fetch(`https://jsoon.digitiminimi.com/twitter/count.json?url=${encodeURI(url)}`).json();
   const respCnt = resp.count + resp.likes;
 
-  tw[url] = respCnt;
   currentTw[url] = respCnt;
+  setTwitterCnt(url, respCnt);
 
-  if (respCnt == 0) {
-    return "ツイート"
-  }
-
-  return respCnt;
+  return respCnt || "ツイート";
 });
 
-// http://cloud.feedly.com/v3/feeds/feed%2Fhttps%3A%2F%2Ffuture-architect.github.io%2Fatom.xml
-hexo.extend.helper.register("get_feedly_count", (url) => {
-  const apiURL = `http://cloud.feedly.com/v3/feeds/feed%2Fhttps%3A%2F%2Ffuture-architect.github.io%2Fatom.xml`
-  const resp = fetch(apiURL).json();
+hexo.extend.helper.register("get_feedly_count", url => {
+  const resp = fetch(`http://cloud.feedly.com/v3/feeds/feed%2Fhttps%3A%2F%2Ffuture-architect.github.io%2Fatom.xml`).json();
   return resp.subscribers ?? "Follow";
 });
 
-hexo.extend.helper.register("totalSNSCnt", (url) => {
+hexo.extend.helper.register("totalSNSCnt", url => {
   return getSNSCnt(url);
 });
 
 // url example: https://future-architect.github.io/articles/20210519a/
-const fetchableDate = (url)=> {
+const fetchableDate = url => {
+  if (url && url.indexOf("/page/") > 0) {
+    // ページングのSNS数は常に取得しない
+    return false;
+  }
+
   if (url && url.indexOf("/articles/") > 0) {
     const path = url.split("/articles/")[1];
     const ymd = path.replace("/", "").substring(0, 9);
 
     let dt = new Date();
-    var pastDate = dt.getDate() - beforeDate;
+    var pastDate = dt.getDate() - BEFORE_DATE;
     dt.setDate(pastDate);
 
     const y = dt.getFullYear();

@@ -1,3 +1,5 @@
+'use strict';
+
 const maxCount = 4;
 const {getSNSCnt} = require('./lib/sns');
 

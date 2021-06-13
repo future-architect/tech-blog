@@ -1,3 +1,5 @@
+'use strict';
+
 // https://www.npmjs.com/package/image-size
 const sizeOf = require('image-size');
 

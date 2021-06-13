@@ -24,12 +24,12 @@ cacheFiles.forEach((path, i) => {
   }
 });
 
-process.on('exit', function() {
+const saveCache = () => {
   fs.writeFileSync("cache_pocket.json", JSON.stringify(pocket, null, 2));
   fs.writeFileSync("cache_hatebu.json", JSON.stringify(hatebu, null, 2));
   fs.writeFileSync("cache_facebook.json", JSON.stringify(fb, null, 2));
   fs.writeFileSync("cache_twitter.json", JSON.stringify(tw, null, 2));
-});
+}
 
 const getSNSCnt = url => {
   const p = pocket[url] || 0;
@@ -39,12 +39,17 @@ const getSNSCnt = url => {
   return p + h + f + t;
 }
 
-const getTwitterCnt = url => {return tw[url] || 0;}
-const getFacebookCnt = url => {return fb[url] || 0;}
-const getHatebuCnt = url => {return hatebu[url] || 0;}
-const getPocketCnt = url => {return pocket[url] || 0;}
+const getTwitterCnt = url => tw[url] || 0;
+const getFacebookCnt = url => fb[url] || 0;
+const getHatebuCnt = url => hatebu[url] || 0;
+const getPocketCnt = url => pocket[url] || 0;
+const setTwitterCnt = (url, cnt) => {tw[url] = cnt;}
+const setFacebookCnt = (url, cnt) => {fb[url] = cnt;}
+const setHatebuCnt = (url, cnt) => {hatebu[url] = cnt;}
+const setPocketCnt = (url, cnt) => {pocket[url] = cnt;}
 
 module.exports = {
+  saveCache:saveCache,
   pocket: pocket,
   hatebu: hatebu,
   fb: fb,
@@ -53,5 +58,9 @@ module.exports = {
   getTwitterCnt:getTwitterCnt,
   getFacebookCnt: getFacebookCnt,
   getHatebuCnt:getHatebuCnt,
-  getPocketCnt : getPocketCnt
+  getPocketCnt : getPocketCnt,
+  setTwitterCnt:setTwitterCnt,
+  setFacebookCnt: setFacebookCnt,
+  setHatebuCnt:setHatebuCnt,
+  setPocketCnt : setPocketCnt
 };

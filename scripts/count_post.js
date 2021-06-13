@@ -1,3 +1,5 @@
+'use strict';
+
 // 総投稿件数
 hexo.extend.helper.register('count_articles', function() {
   return this.site.posts.length;

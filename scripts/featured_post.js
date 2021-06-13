@@ -1,3 +1,5 @@
+'use strict';
+
 var gen = require('random-seed');
 const {getSNSCnt} = require('./lib/sns');
 
