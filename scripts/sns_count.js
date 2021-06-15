@@ -9,7 +9,7 @@ let [currentPocket, currentHatebu, currentFb, currentTw] = [{}, {}, {}, {}];
 process.on('exit', saveCache);
 
 hexo.extend.helper.register("get_pocket_count", url => {
-  if (currentPocket[url]) {
+  if (!(currentPocket[url] ?? true) ) {
     return currentPocket[url];
   }
   if (!fetchableDate(url)) {
@@ -24,7 +24,7 @@ hexo.extend.helper.register("get_pocket_count", url => {
 });
 
 hexo.extend.helper.register("get_hatebu_count", url => {
-  if (currentHatebu[url]) {
+  if (!(currentHatebu[url] ?? true)) {
     return currentHatebu[url];
   }
   if (!fetchableDate(url)) {
@@ -39,7 +39,7 @@ hexo.extend.helper.register("get_hatebu_count", url => {
 });
 
 hexo.extend.helper.register("get_fb_count", url => {
-  if (currentFb[url]) {
+  if (!(currentFb[url] ?? true)) {
     return currentFb[url];
   }
   if (!fetchableDate(url)) {
@@ -71,7 +71,7 @@ hexo.extend.helper.register("get_fb_count", url => {
 });
 
 hexo.extend.helper.register("get_tw_count", url => {
-  if (currentTw[url]) {
+  if (!(currentTw[url] ?? true)) {
     return currentTw[url];
   }
   if (!fetchableDate(url)) {
