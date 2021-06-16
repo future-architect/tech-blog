@@ -9,8 +9,8 @@ let [currentPocket, currentHatebu, currentFb, currentTw] = [{}, {}, {}, {}];
 process.on('exit', saveCache);
 
 hexo.extend.helper.register("get_pocket_count", url => {
-  if (!(currentPocket[url] ?? true) ) {
-    return currentPocket[url];
+  if (typeof currentPocket[url] !== "undefined") {
+    return currentPocket[url] ||  "Pocket";
   }
   if (!fetchableDate(url)) {
     return pocket[url] ||  "Pocket";
@@ -24,8 +24,8 @@ hexo.extend.helper.register("get_pocket_count", url => {
 });
 
 hexo.extend.helper.register("get_hatebu_count", url => {
-  if (!(currentHatebu[url] ?? true)) {
-    return currentHatebu[url];
+  if (typeof currentHatebu[url] !== "undefined") {
+    return currentHatebu[url] || "はてな";
   }
   if (!fetchableDate(url)) {
     return hatebu[url] || "はてな";
@@ -39,8 +39,8 @@ hexo.extend.helper.register("get_hatebu_count", url => {
 });
 
 hexo.extend.helper.register("get_fb_count", url => {
-  if (!(currentFb[url] ?? true)) {
-    return currentFb[url];
+  if (typeof currentFb[url] !== "undefined") {
+    return currentFb[url] || "シェア";
   }
   if (!fetchableDate(url)) {
     return fb[url] || "シェア";
@@ -71,8 +71,8 @@ hexo.extend.helper.register("get_fb_count", url => {
 });
 
 hexo.extend.helper.register("get_tw_count", url => {
-  if (!(currentTw[url] ?? true)) {
-    return currentTw[url];
+  if (typeof currentTw[url] !== "undefined") {
+    return currentTw[url] ||  "ツイート";
   }
   if (!fetchableDate(url)) {
     return tw[url] ||  "ツイート";
