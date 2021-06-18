@@ -577,14 +577,6 @@ Pre-Footer and pre-footer elements
   border-bottom: 1px solid #ECEBEB;
   color: #333;
 }
-.sidebar-categories li a:hover {
-  background: none;
-}
-.sidebar-categories li > a:hover,
-.sidebar-categories li.active > a,
-.sidebar-categories li.active:hover > a {
-  color: #129299;
-}
 
 /* Blog Item */
 .blog-item .blog-item-img {
