@@ -169,6 +169,7 @@ module.exports = {
 ```
 
 #### tsconfig.json に"jest"を追記
+
 "compilerOptions"->"types"に`jest`を追加します。
 
 ```json tsconfig.json
@@ -194,6 +195,7 @@ describe("plus test", () => {
 ```
 
 #### npm script追記
+
 テスト用にnpm scriptを追記します。
 package.jsonの"scripts"に`"test": "jest"`を追加しました。これで`npm run test`でテストを起動できます。
 
