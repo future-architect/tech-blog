@@ -14,11 +14,29 @@
   </ul>
   <div id="main">
     <% if(is_month()) { %>
-    <h1><%= page.year%>年<%= page.month %>月のすべての記事 <%= count_articles_month(page.year, page.month) %>件</h1>
+    <h1 class="list-page"><%= page.year%>年<%= page.month %>月のすべての記事 <%= count_articles_month(page.year, page.month) %>件</h1>
     <% } else if(is_year()) { %>
-    <h1><%= page.year%>年のすべての記事 <%= count_articles_year(page.year) %>件</h1>
+    <h1 class="list-page"><%= page.year%>年のすべての記事</h1>
+    <ul class="summary">
+      <% const summary = summary_yearly_term(page.year); %> 
+      <li><span class="summary-count"><%= count_articles_year(page.year) %></span><br><span class="summary-label">投稿</span></li>
+      <li><span class="summary-count"><%= summary.total %></span><br><span class="summary-label">総シェア数</span></li>
+      <li><span class="summary-count"><%= summary.twitter %></span><br><span class="summary-label">Twitter</span></li>
+      <li><span class="summary-count"><%= summary.facebook %></span><br><span class="summary-label">Facebook</span></li>
+      <li><span class="summary-count"><%= summary.hatebu %></span><br><span class="summary-label">はてブ</span></li>
+      <li><span class="summary-count"><%= summary.pocket %></span><br><span class="summary-label">Pocket</span></li>
+    </ul>
     <% } else { %>
-    <h1>すべての記事 <%= count_articles() %>件</h1>
+    <h1 class="list-page">すべての記事</h1>
+    <ul class="summary">
+      <% const summary = summary_all_term(); %> 
+      <li><span class="summary-count"><%= count_articles() %></span><br><span class="summary-label">投稿</span></li>
+      <li><span class="summary-count"><%= summary.total %></span><br><span class="summary-label">総シェア数</span></li>
+      <li><span class="summary-count"><%= summary.twitter %></span><br><span class="summary-label">Twitter</span></li>
+      <li><span class="summary-count"><%= summary.facebook %></span><br><span class="summary-label">Facebook</span></li>
+      <li><span class="summary-count"><%= summary.hatebu %></span><br><span class="summary-label">はてブ</span></li>
+      <li><span class="summary-count"><%= summary.pocket %></span><br><span class="summary-label">Pocket</span></li>
+    </ul>
     <% } %>
     <%- partial('_partial/archive-all', {pagination: config.archive}) %>
   </div>
