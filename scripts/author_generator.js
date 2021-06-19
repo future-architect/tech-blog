@@ -165,3 +165,45 @@ const generateSeries = (posts, author) => {
 
   return merge;
 }
+
+
+/*
+ * 著者一覧ページ
+ */
+hexo.extend.helper.register('max_yearly_authors', function(author) {
+  const acc = generateAuthorsSeriesAll(this.site.posts.filter(p => !Array.isArray(p.author)));
+  return Math.max(100, Math.max(...acc.map(item => item.authors.unique().length))); // 最小は5とする
+});
+
+hexo.extend.helper.register('generate_yearly_authors_series_x', function() {
+  const acc = generateAuthorsSeriesAll(this.site.posts.filter(p => !Array.isArray(p.author)));
+  const postSeries = acc.map(e => e.year).join(",")
+  return postSeries;
+});
+
+hexo.extend.helper.register('generate_yearly_authors_series_y', function() {
+  const acc = generateAuthorsSeriesAll(this.site.posts.filter(p => !Array.isArray(p.author)));
+  const postSeries = acc.map(e => e.authors.unique().length).join(",")
+  return postSeries;
+});
+
+const generateAuthorsSeriesAll = posts => {
+  const group = posts.reduce((acc, cur) => {
+    const item = acc.find(p => p.year === cur.date.format("YYYY"));
+    if (item) {
+      item.authors.push(cur.author);
+    } else {
+      acc.push({
+        year: cur.date.format("YYYY"),
+        authors: [cur.author],
+      });
+    }
+    return acc;
+  }, []);
+
+  group.sort((a, b) => {
+    return a.year.localeCompare(b.year);
+  });
+
+  return group;
+}
