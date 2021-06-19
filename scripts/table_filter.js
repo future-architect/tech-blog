@@ -7,7 +7,7 @@
 // https://github.com/markedjs/marked/blob/e5796ecc435a30f96939e6a7b2229c14264b4bf8/src/Renderer.js#L92
 hexo.extend.filter.register('marked:renderer', function(renderer) {
   renderer.table = function(header, body) {
-    return `<div class="scroll">${table(header, body)}</div>`;
+    return `<div class="scroll">${table(header, body)}</div>\n`;
   };
 });
 
@@ -19,5 +19,5 @@ const table = (header, body) => {
     + header
     + '</thead>\n'
     + body
-    + '</table>\n';
+    + '</table>';
 }

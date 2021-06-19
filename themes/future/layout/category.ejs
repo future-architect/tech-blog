@@ -5,7 +5,17 @@
     <li class="active"><%- page.category %></li>
   </ul>
   <section id="main">
-    <h1><%- page.category %> カテゴリの記事一覧 <%= count_category(page.category) %>件</h1>
+    <h1 class="list-page"><%- page.category %> カテゴリの記事</h1>
+    <ul class="summary">
+      <% const summary = summary_category(page.category); %> 
+      <li><span class="summary-count"><%= count_category(page.category) %></span><br><span class="summary-label">投稿</span></li>
+      <li><span class="summary-count"><%= summary.authors %></span><br><span class="summary-label">著者数</span></li>
+      <li><span class="summary-count"><%= summary.total %></span><br><span class="summary-label">総シェア数</span></li>
+      <li><span class="summary-count"><%= summary.twitter %></span><br><span class="summary-label">Twitter</span></li>
+      <li><span class="summary-count"><%= summary.facebook %></span><br><span class="summary-label">Facebook</span></li>
+      <li><span class="summary-count"><%= summary.hatebu %></span><br><span class="summary-label">はてブ</span></li>
+      <li><span class="summary-count"><%= summary.pocket %></span><br><span class="summary-label">Pocket</span></li>
+    </ul>
     <%- partial('_partial/archive', {pagination: config.category, index: true}) %>
   </section>
 </div>

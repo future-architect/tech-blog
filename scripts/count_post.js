@@ -1,5 +1,7 @@
 'use strict';
 
+const {getSNSCnt,getTwitterCnt,getFacebookCnt,getHatebuCnt,getPocketCnt} = require('./lib/sns');
+
 // 総投稿件数
 hexo.extend.helper.register('count_articles', function() {
   return this.site.posts.length;
@@ -31,3 +33,28 @@ hexo.extend.helper.register('count_category', function(name) {
 hexo.extend.helper.register('join_pagetag', function(name) {
   return this.page.tags.map(tag => tag.name).join(',');
 });
+
+/*
+ * カテゴリページ
+ */
+hexo.extend.helper.register('summary_category', function(category) {
+  const posts = this.site.posts.filter(post => post.categories.map(c => c.name).includes(category));
+
+  const total = posts.map(post => getSNSCnt(post.permalink)).reduce((acc, cur) => acc + cur);
+  const authors = posts.map(post => post.author).flat().unique().length;
+  const tw = posts.map(post => getTwitterCnt(post.permalink)).reduce((acc, cur) => acc + cur);
+  const fb = posts.map(post => getFacebookCnt(post.permalink)).reduce((acc, cur) => acc + cur);
+  const hatebu = posts.map(post => getHatebuCnt(post.permalink)).reduce((acc, cur) => acc + cur);
+  const pocket = posts.map(post => getPocketCnt(post.permalink)).reduce((acc, cur) => acc + cur);
+
+  return {
+    total: total,
+    authors: authors,
+    twitter: tw,
+    facebook: fb,
+    hatebu: hatebu,
+    pocket: pocket
+  };
+});
+
+
