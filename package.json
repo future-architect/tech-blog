@@ -9,7 +9,7 @@
     "googleapis": "^73.0.0",
     "hexo": "^5.4.0",
     "hexo-easy-tags-plugin": "^1.1.0",
-    "hexo-filter-mathjax": "^0.7.0",
+    "hexo-filter-mathjax": "^0.7.1",
     "hexo-fs": "^3.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-author": "^0.0.5",
@@ -24,7 +24,7 @@
     "hexo-server": "^2.0.0",
     "image-size": "^1.0.0",
     "markdown-it": "^12.0.6",
-    "npm": "^7.17.0",
+    "npm": "^7.18.1",
     "random-seed": "^0.3.0",
     "sync-fetch": "^0.3.0"
   },
