@@ -35,7 +35,7 @@ hexo.extend.helper.register('join_pagetag', function(name) {
 });
 
 /*
- * カテゴリページ
+ * カテゴリ個別ページ
  */
 hexo.extend.helper.register('summary_category', function(category) {
   const posts = this.site.posts.filter(post => post.categories.map(c => c.name).includes(category));
@@ -57,4 +57,25 @@ hexo.extend.helper.register('summary_category', function(category) {
   };
 });
 
+/*
+ * タグ個別ページ
+ */
+hexo.extend.helper.register('summary_tag', function(category) {
+  const posts = this.site.posts.filter(post => post.tags.map(t => t.name).includes(category));
 
+  const total = posts.map(post => getSNSCnt(post.permalink)).reduce((acc, cur) => acc + cur);
+  const authors = posts.map(post => post.author).flat().unique().length;
+  const tw = posts.map(post => getTwitterCnt(post.permalink)).reduce((acc, cur) => acc + cur);
+  const fb = posts.map(post => getFacebookCnt(post.permalink)).reduce((acc, cur) => acc + cur);
+  const hatebu = posts.map(post => getHatebuCnt(post.permalink)).reduce((acc, cur) => acc + cur);
+  const pocket = posts.map(post => getPocketCnt(post.permalink)).reduce((acc, cur) => acc + cur);
+
+  return {
+    total: total,
+    authors: authors,
+    twitter: tw,
+    facebook: fb,
+    hatebu: hatebu,
+    pocket: pocket
+  };
+});

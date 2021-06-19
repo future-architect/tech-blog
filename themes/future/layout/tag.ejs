@@ -5,7 +5,17 @@
     <li class="active">Tagged: <%- page.tag %></li>
   </ul>
   <section id="main">
-    <h1><%- page.tag %> タグの記事一覧 <%= count_tag(page.tag) %>件</h1>
+    <h1 class="list-page"><%- page.tag %> タグの記事</h1>
+    <% const summary = summary_tag(page.tag); %> 
+    <ul class="summary">
+      <li><span class="summary-count"><%= count_tag(page.tag) %></span><br><span class="summary-label">投稿</span></li>
+      <li><span class="summary-count"><%= summary.authors %></span><br><span class="summary-label">著者数</span></li>
+      <li><span class="summary-count"><%= summary.total %></span><br><span class="summary-label">総シェア数</span></li>
+      <li><span class="summary-count"><%= summary.twitter %></span><br><span class="summary-label">Twitter</span></li>
+      <li><span class="summary-count"><%= summary.facebook %></span><br><span class="summary-label">Facebook</span></li>
+      <li><span class="summary-count"><%= summary.hatebu %></span><br><span class="summary-label">はてブ</span></li>
+      <li><span class="summary-count"><%= summary.pocket %></span><br><span class="summary-label">Pocket</span></li>
+    </ul>
     <%- partial('_partial/archive', {pagination: config.tag, index: true}) %>
   </section>
 </div>
