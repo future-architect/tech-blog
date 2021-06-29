@@ -3,11 +3,15 @@
     <li><a href="/">Home</a></li>
     <li class="active">Tags</li>
   </ul>
-  <section id="main">
-    <h2>人気のタグから記事を探す</h1>
-    <%- ranking_tags() %>
-    <h2>タグクラウドから記事を探す <%= count_tags() %>件</h1>
-    <%- tagcloud() %>
-  </section>
+  <main class="col-xs-12 col-sm-12 col-md-10">
+    <section id="main">
+      <h2>人気のタグから記事を探す</h1>
+      <%- ranking_tags() %>
+      <h2>タグクラウドから記事を探す <%= count_tags() %>件</h1>
+      <div class="tag-cloud">
+      <%- tagcloud({min_font:12, max_font:26}) %>
+      </div>
+    </section>
+  </main>
 </div>
 

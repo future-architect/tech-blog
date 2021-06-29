@@ -34,7 +34,6 @@ hexo.extend.helper.register('popular_posts', function() {
 });
 
 const { google } = require('googleapis');
-const { texttospeech } = require("googleapis/build/src/apis/texttospeech");
 
 const auth = new google.auth.GoogleAuth({
   scopes: 'https://www.googleapis.com/auth/analytics.readonly',

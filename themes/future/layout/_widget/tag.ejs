@@ -2,7 +2,7 @@
   <div class="widget-wrap">
     <div class="widget">
       <% function addIcon(name){ return "<i>#</i>" + name} %>
-      <%- list_tags({ transform: addIcon, show_count: true}) %>
+      <%- list_toppagetags({ transform: addIcon, show_count: true, minCount: 5}) %>
     </div>
   </div>
 <% } %>
