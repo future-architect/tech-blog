@@ -7,8 +7,8 @@ tag:
 category:
   - Programming
 thumbnail: /images/20210629a/thumbnail.png
-author: ma91n
-featured: 辻大志郎
+author: 辻大志郎
+featured: false
 lede: "今回は身近なところに潜むグラフの例を紹介します。データ構造の一つに「グラフ」があります。グラフは対象物の関係性を数理的に表すものです。世の中の事象をグラフとして定式化することで、問題の見通しがよくなるなど、グラフの応用範囲はとても広く、かつ有用です。グラフそのものの説明については本記事で書ききれる内容ではないので割愛しますが、「グラフ理論」などで検索すればたくさん記事が見つかるでしょう。"
 ---
 TIGの辻 ([@d_tutuz](https://twitter.com/d_tutuz)) です。
