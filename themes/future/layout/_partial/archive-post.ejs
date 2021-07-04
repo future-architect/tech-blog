@@ -11,20 +11,24 @@
   <% } else { %>
   <div class="col-xs-12">
   <% } %>
-    <%- partial('post/title', {class_name: 'archive-article-title'}) %>
+    <div class="archive-post-item">
+      <a href="<%- url_for(post.path) %>">
+        <%- partial('post/title', {class_name: 'archive-post-title'}) %>
+        <div class="blog-item">
+          <div class="lede">
+          <% if (index == true){ %>
+          <%- post.lede || post.excerpt || post.content %>
+          <% } else { %>
+          <%- post.lede || post.excerpt %>
+          <% } %>
+          </div>
+        </div>
+      </a>
+    </div>
     <ul class="blog-info">
       <li class="blog-info-item"><%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY.MM.DD'}) %></li>
       <li class="blog-info-item"><%- partial('post/tag') %></li>
-    </ul>
-      <div class="blog-item">
-        <a href="/<%- post.path %>" class="lede">
-        <% if (index == true){ %>
-        <%- post.lede || post.excerpt || post.content %>
-        <% } else { %>
-        <%- post.lede || post.excerpt %>
-        <% } %>
-        </a>
-      </div>
+    </ul> 
   </div>
   <div class="col-xs-12 archive-social-button">
   <%- partial('social-button', {post: post, feed:false}) %>
