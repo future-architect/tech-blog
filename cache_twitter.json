@@ -307,7 +307,7 @@
   "https://future-architect.github.io/articles/20200317/": 0,
   "https://future-architect.github.io/articles/20200316/": 0,
   "https://future-architect.github.io/articles/20200312/": 0,
-  "https://future-architect.github.io/articles/20200311/": 0,
+  "https://future-architect.github.io/articles/20200311/": 1,
   "https://future-architect.github.io/articles/20200310/": 0,
   "https://future-architect.github.io/articles/20200309/": 0,
   "https://future-architect.github.io/articles/20200228/": 0,
@@ -544,5 +544,6 @@
   "https://future-architect.github.io/articles/20210705a/": 4,
   "https://future-architect.github.io/articles/20210706a/": 3,
   "https://future-architect.github.io/articles/20210707a/": 24,
-  "https://future-architect.github.io/articles/20210708a/": 6
+  "https://future-architect.github.io/articles/20210708a/": 6,
+  "https://future-architect.github.io/articles/20210712a/": 0
 }
