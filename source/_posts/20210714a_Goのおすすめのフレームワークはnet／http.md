@@ -4,7 +4,7 @@ postid: a
 tag:
   - Go
   - 技術選定
-category:
+categories:
   - Programming
 thumbnail: /images/20210714a/thumbnail.png
 author: 澁川喜規
