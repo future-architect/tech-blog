@@ -38,7 +38,9 @@ PostgreSQLには高速にファイルの読み込みを行うCOPY FROMがある�
 # GoとCOPY
 
 <img src="/images/20210727a/top.png" alt="" width="800" height="425" loading="lazy">
+
 by [Renée French](http://reneefrench.blogspot.com/)
+
 
 GoのPostgreSQLドライバには2種類あります。
 
