@@ -11,7 +11,7 @@ category:
   - Programming
 thumbnail: /images/20210630a/thumbnail.jpg
 author: 藤野圭一
-featured: true
+featured: false
 lede: "こんにちは。TIG藤野です。2021/5/21を開催しました。私は、Tomcatコミッタがお送りするちょっとマニアックなTomcatのコンフィグレーション10選というタイトルでお話させていただきました。"
 ---
 ## はじめに

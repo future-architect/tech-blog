@@ -8,7 +8,7 @@ category:
   - Infrastructure
 thumbnail: /images/20210625a/thumbnail.png
 author: 鈴木崇史
-featured: true
+featured: false
 lede: "初めまして。TIG所属の鈴木です。今回GCP認定資格のAssociate Cloud Engineerという資格を取得したので、その体験をブログにします。私は2020年10月に新卒入社し、GCPを使用した案件に携わってます。プログラミングなどIT経験はあったのですが、GCPをはじめとしたクラウド技術やインフラにあまり馴染みがなく、体系的に知識を習得する目的でこの資格を取得しました。"
 ---
 # 初めに
@@ -63,7 +63,7 @@ Udemyの試験は実際の試験よりも少し難しいです。わからなか
 
 - GCEリソースのデプロイ（インスタンスグループ含む）
 - VPCやFirewall ruleの設定
-- Cloud Logging, Cloud Monitoringの構成  
+- Cloud Logging, Cloud Monitoringの構成
 
 あたりは業務でよく見たり、触ったりしていました。また、`gcloud`コマンドは日常的に使うので、コマンドのイディオムも業務の中で習得しました。
 

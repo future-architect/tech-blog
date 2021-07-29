@@ -9,7 +9,7 @@ category:
   - Programming
 thumbnail: /images/20210614b/thumbnail.png
 author: 中川旭
-featured: true
+featured: false
 lede: "フロントエンド記事連載の1記事目です。Vue Testing LibraryはVue.js公式のライブラリであるvue-test-utilをベースとする、DOM Testing LibraryのVue.js用拡張です。Vue Testing Libraryを用いると、Vue.js公式ライブラリであるvue-test-utilと比較して内部構造を意識せずにテストを作成できます。"
 ---
 
@@ -139,7 +139,7 @@ No issues found.
 
 ブラウザで `http://localhost:8080/` を開くと以下のページが表示されます。
 
-<img src="/images/20210614b/image.png" alt="Vue起動画面" height="1200" width="993" loading="lazy"> 
+<img src="/images/20210614b/image.png" alt="Vue起動画面" height="1200" width="993" loading="lazy">
 
 ### Jestの単体テストを動かす
 

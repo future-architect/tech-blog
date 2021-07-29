@@ -10,7 +10,7 @@ category:
   - Infrastructure
 thumbnail: /images/20210527a/thumbnail.png
 author: 村瀬善則
-featured: true
+featured: false
 lede: "こんにちは。TIG村瀬です。2021/4/21を開催しました。私は、運用まで考慮したクラウドアーキテクチャ設計できていますか？というタイトルでお話させていただきました。発表資料は..."
 ---
 # はじめに
