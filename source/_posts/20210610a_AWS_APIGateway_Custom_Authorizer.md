@@ -8,7 +8,7 @@ category:
   - 認証認可
 thumbnail: /images/20210610a/thumbnail.png
 author: 李光焄
-featured: true
+featured: false
 lede: "今回は流行りの認証プロトコルであるOpenID ConnectとOAuth2.0におけるAuthorizerについて話そうと思います。AuthorizerとはAWS APIGatewayにある機能の一つで、外からAPIサーバに送られてくるリクエストを検証することにより、アクセスを制御する機能です。"
 ---
 こんにちは。TIG/DXユニットのLEEです。フューチャーではここ数年、主に認証認可関係の設計や開発などを担当しております。
