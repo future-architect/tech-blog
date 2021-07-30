@@ -5,6 +5,7 @@ tag:
   - ORM
   - Go
   - Vuls
+  - GORM
 category:
   - Programming
 thumbnail: /images/20210609a/thumbnail.png
