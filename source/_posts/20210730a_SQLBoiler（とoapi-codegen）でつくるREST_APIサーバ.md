@@ -503,5 +503,5 @@ SQLBoilerの使い方と、これを使ったREST APIサーバの開発フロー
 
 なお、今回利用したコード、プロジェクトは[こちらのリポジトリ](https://github.com/uhey22e/sqlboiler-restapi-example)にまとめてあります。
 
-次は伊藤真彦さんのgoquです。
+次は伊藤真彦さんの[SQLビルダーgoquの使い方](/articles/20210802a/)です。
 
