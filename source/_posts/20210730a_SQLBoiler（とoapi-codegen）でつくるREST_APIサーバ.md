@@ -5,6 +5,7 @@ tag:
   - Go
   - ORM
   - OpenAPI
+  - コード生成
 category:
   - Programming
 thumbnail: /images/20210730a/thumbnail.png
