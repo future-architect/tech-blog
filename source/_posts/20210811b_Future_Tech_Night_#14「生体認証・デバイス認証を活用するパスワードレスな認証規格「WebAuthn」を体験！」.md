@@ -23,9 +23,9 @@ lede: "2021年7月21日にFuture Tech Night #14～認証認可（IDaaS）勉強�
 
 なお、登壇者の資料は [こちら](https://future.connpass.com/event/218520/presentation/) に公開済みですので、興味があればご参照ください。
 
-一緒にイベントに登壇した山田さんのレポートはも近日公開予定です。
+一緒にイベントに登壇した山田さんのレポートはも公開されています。
 
-* IDaaS(Auth0) vs OSS（Keycloak）vs Managed(Amazon Cognito)で使い勝手を確認
+* [IDaaS(Auth0) vs OSS（Keycloak）vs Managed(Amazon Cognito)で使い勝手を確認](/articles/20210812b/)
 
 参加申し込み数はこれまでのFuture Tech Night史上最多となる190名の申し込みをいただき、大盛況での開催となりました。
 
