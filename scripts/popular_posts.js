@@ -17,8 +17,8 @@ process.on('exit', function () {
   fs.writeFileSync("cache_ga.json", JSON.stringify(gaCache, null, 2));
 });
 
-hexo.extend.helper.register('popular_posts', function() {
-  const popularPost = gaCache.data.filter(gaPage => gaPage.path.indexOf("articles") > 0)
+hexo.extend.helper.register('popular_posts', function(term='weekly') {
+  const popularPost = gaCache[term].filter(gaPage => gaPage.path.indexOf("articles") > 0)
     .flatMap(gaPage => this.site.posts.data.filter(post => post.permalink.indexOf(gaPage.path) > 0).slice(0, 1))
     .slice(0, 10);
 
@@ -44,7 +44,7 @@ const analyticsreporting = google.analyticsreporting({
   auth: auth,
 })
 
-async function fetchGoogleAnalytics() {
+async function fetchGoogleAnalytics(term, start, end) {
   const res = await analyticsreporting.reports.batchGet({
     requestBody: {
       reportRequests: [
@@ -52,8 +52,8 @@ async function fetchGoogleAnalytics() {
           viewId: '117039269',
           dateRanges: [
             {
-              startDate: '14daysAgo',
-              endDate: '1daysAgo',
+              startDate: start,
+              endDate: end,
             },
           ],
           metrics: [
@@ -78,8 +78,10 @@ async function fetchGoogleAnalytics() {
       title: row.dimensions[1]
     })
   });
-  gaCache.data = data;
+  gaCache[term] = data;
 }
 
 // call google analytics api
-fetchGoogleAnalytics();
+fetchGoogleAnalytics('weekly', '7daysAgo', '1daysAgo');
+fetchGoogleAnalytics('monthly', '30daysAgo', '1daysAgo');
+fetchGoogleAnalytics('yearly', '365daysAgo', '1daysAgo');
