@@ -5,6 +5,7 @@ tag:
   - Go
   - GoTips連載
   - 設計
+  - エラーハンドリング
 category:
   - Programming
 thumbnail: /images/20200522/thumbnail.png
