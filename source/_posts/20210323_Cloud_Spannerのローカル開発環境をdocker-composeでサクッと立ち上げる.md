@@ -48,7 +48,7 @@ Spannerは、Google Cloudが提供する"強力な一貫性と水平方向の拡
 ということで、本記事ではGCPが公式で提供してくれている [Spanner エミュレータ](https://cloud.google.com/spanner/docs/emulator?hl=ja) を使って開発環境を立ち上げます！(エミューレータあってよかったありがとう!)
 
 gcloud CLIとdockerイメージでの提供がありますが、今回はdocker-composeで利用する例を紹介します。
-サンプルコードはこちら: [**tarosaiba/compose-spanner**](https://github.com/tarosaiba/compose-spanner)
+サンプルコードはこちら: [**tarosaiba/docker-compose-spanner**](https://github.com/tarosaiba/docker-compose-spanner)
 
 以下2点工夫したポイントです。
 * 通常、Spannerエミュレータ起動後にインスタンスの作成手順(`gcloud spanner instances create`)が必要になりますが、docker-compose立ち上げ時に自動でインスタンス作成されるようにしています
