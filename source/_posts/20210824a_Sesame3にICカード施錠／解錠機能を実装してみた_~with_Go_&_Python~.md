@@ -18,6 +18,8 @@ lede: "夏の自由研究ブログ連載2021の第2本目の投稿として、Se
 
 Photo by <a href="https://unsplash.com/@davidclode?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Clode</a> on <a href="https://unsplash.com/s/photos/python-programming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>. The Gopher character is based on the Go mascot designed by [Renee French](http://reneefrench.blogspot.com/).
 
+※本記事で紹介している認証方法はFelicaのIDmのみを使用しております。IDm単体での認証はセキュリティ上望ましくないため、本記事を参考にされる方はご注意ください。
+
 ## 0. はじめに
 
 はじめまして、2021年4月入社TIG/DXユニット所属の宮永です。
@@ -90,7 +92,7 @@ PythonでカードリーダーによるIDmの読み取りと`SECRET_KEY`の暗�
 ### 4.1 システム概要図
 以下システムの概要図です。
 
-Raspberry Piにカードリーター、スピーカーを接続しています。PythonでカードーリーダーからFelicaのIDmを取得し、暗号化したSECRET_KEYとAPI_TOKENをGo側に渡します。また、IDmの検知をユーザーに通知音で知らせています。GOではCANDY HOUSEが公開しているWeb APIに向けてHTTPリクエストを行います。リクエストに応じて、SESAME3を開閉することができるという構成になっています。
+Raspberry Piにカードリーダー、スピーカーを接続しています。PythonでカードーリーダーからFelicaのIDmを取得し、暗号化したSECRET_KEYとAPI_TOKENをGo側に渡します。また、IDmの検知をユーザーに通知音で知らせています。GOではCANDY HOUSEが公開しているWeb APIに向けてHTTPリクエストを行います。リクエストに応じて、SESAME3を開閉することができるという構成になっています。
 
 <img src="/images/20210824a/image.png" alt="システム構成図" width="1200" height="933" loading="lazy">
 
@@ -401,7 +403,7 @@ def ismyID(id):
     return bool(id==ANDROIDO or id ==SUICA)
 
 if __name__ == '__main__':
-
+     # セサミ3インスタンスの作成
      mySesame3 = MySesame3()
      try:
         while True:
@@ -412,7 +414,6 @@ if __name__ == '__main__':
             # NFCの入力を検知したらスピーカーから通知音を出す
             subprocess.call("aplay notify.wav" ,shell=True)
             if ismyID(detectedID):
-                # セサミ3インスタンスの作成
                 # secret_keyを暗号化
                 mySesame3.encyptmyKey()
                 # 施錠と解錠の実行
@@ -453,4 +454,4 @@ Sesame3のWeb APIを利用して、Felicaによる施錠解錠の機能を実装
 
 今回認証に使用したIDmはスマホアプリでも簡単に取得することができます。そのため、IDm単体に認証を任せてしまうのはセキュリティの観点から適切ではありません。実用に耐えうるにはさらなる工夫が求められます。とはいえ、GoとPythonを使って楽しみながらコーディングできたため、夏休みの自由研究の目的は達成できたと思います。
 
-次は大野さんによる[最高の持ち歩きキーボード考]です。
+次は大野さんによる[最高の持ち歩きキーボード考](https://future-architect.github.io/articles/2021082)です。
