@@ -4,6 +4,7 @@ postid: ""
 tag:
   - TensorFlow
   - 機械学習
+  - Word2Vec
 category:
   - DataScience
 thumbnail: /images/20210325/thumbnail.png
