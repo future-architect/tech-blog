@@ -3,6 +3,7 @@ date: 2019/07/03 09:00:00
 postid: ""
 tag:
   - Metabase
+  - BI
   - Redmine
   - マネジメント
   - 可視化
