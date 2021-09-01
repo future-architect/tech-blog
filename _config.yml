@@ -31,15 +31,15 @@ skip_render:
 
 # Authors
 author_generator:
-  per_page: 10
+  per_page: 20
   url_map:
 
 category_generator:
-  per_page: 10
+  per_page: 20
   order_by: -date
 
 tag_generator:
-  per_page: 10
+  per_page: 20
   order_by: -date
 
 # Writing
