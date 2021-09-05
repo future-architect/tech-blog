@@ -13,7 +13,7 @@
       </div>
       <% if (page.posts.length){ %>
       <div id="page-nav" class="pagination">
-        <%- paginator({prev_text: 'Prev', next_text: 'Next', end_size: '2'}) %>
+        <%- paginator({prev_text:'Prev', next_text:'Next', mid_size:3, end_size:2, show_all:false}) %>
       </div>
       <% } %>
     </section>
