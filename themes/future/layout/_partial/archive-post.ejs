@@ -1,10 +1,8 @@
 <div class="row card">
-  <a href="<%- url_for(post.path) %>">
-    <div class="col-md-4 col-sm-4 img_wrap">
-      <% if (post.thumbnail) { %>
-      <img src="<%= post.thumbnail %>" class="img-responsive" alt="" <%= image_size_attribute(post.thumbnail) %> loading="lazy">
-      <% } %>
-    </div>
+  <a href="<%- url_for(post.path) %>" title="<%= post.title %>" class="col-md-4 col-sm-4 img_wrap">
+    <% if (post.thumbnail) { %>
+    <img src="<%= post.thumbnail %>" class="img-responsive" alt="" <%= image_size_attribute(post.thumbnail) %> loading="lazy">
+    <% } %>
   </a>
   <% if (post.thumbnail) { %>
   <div class="col-md-8 col-sm-8">
@@ -28,7 +26,7 @@
     <ul class="blog-info">
       <li class="blog-info-item"><%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY.MM.DD'}) %></li>
       <li class="blog-info-item"><%- partial('post/tag') %></li>
-    </ul> 
+    </ul>
   </div>
   <div class="col-xs-12 archive-social-button">
   <%- partial('social-button', {post: post, feed:false}) %>
