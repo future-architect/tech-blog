@@ -132,6 +132,9 @@ Header and header elements
 .breadcrumb a {
 	color: #5f6d7b;
 }
+.breadcrumb .active {
+  color: #424242;
+}
 
 /* paginations */
 .pagination {
