@@ -4,6 +4,7 @@ postid: a
 tag:
   - PostgreSQL
   - Go
+  - ORM
 category:
   - Programming
 thumbnail: /images/20210916a/thumbnail.png
