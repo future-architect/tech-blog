@@ -1,4 +1,4 @@
-title: "静的サイトジェネレータを用いたサイト運営で学んだJavaScriptのコレクション操作入門"
+title: "JavaScriptのコレクション操作入門"
 date: 2021/06/23 00:00:00
 postid: a
 tag:
@@ -55,7 +55,7 @@ const articles = [
         snsCount: 426
     },
     {
-        name:"ES2021／ES2022を知ろう", 
+        name:"ES2021／ES2022を知ろう",
         tags:["フロントエンド", "JavaScript"],
         snsCount: 63
     }
