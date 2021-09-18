@@ -1,7 +1,13 @@
 <% if (post.tags && post.tags.length){ %>
   <ul>
   <% post.tags.forEach(function(tag, i){ %>
-    <li><a href="/<%= tag.path %>" title="<%= tag.name %>タグの記事へ"><%= tag.name %></a><% if (i != post.tags.length - 1){ %></li> <% } %>
+    <%
+      let displayTagName = tag.name;
+      if (displayTagName === "Go") { // Lighthouse対応
+        displayTagName = "Go言語";
+      }
+     %>
+    <li><a href="/<%= tag.path %>" title="<%= tag.name %>タグの記事へ"><%= displayTagName %></a><% if (i != post.tags.length - 1){ %></li> <% } %>
   <% }); %>
   </ul>
 <% } %>
