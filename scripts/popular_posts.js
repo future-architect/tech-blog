@@ -20,7 +20,7 @@ process.on('exit', function () {
 hexo.extend.helper.register('popular_posts', function(term='weekly') {
   const popularPost = gaCache[term].filter(gaPage => gaPage.path.indexOf("articles") > 0)
     .flatMap(gaPage => this.site.posts.data.filter(post => post.permalink.indexOf(gaPage.path) > 0).slice(0, 1))
-    .slice(0, 10);
+    .slice(0, 15);
 
   const links = popularPost.map(post => `<li><span>${post.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${getSNSCnt(post.permalink)}</span> <a href="/${post.path}" title="${post.lede}">${post.title}</a></li>`).join("\n")
 
