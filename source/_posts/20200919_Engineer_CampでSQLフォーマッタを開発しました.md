@@ -68,22 +68,22 @@ ANTLRはパーサ（構文解析器）を生成するためのOSSです。パー
 
 今回作成したフォーマッタによる、フォーマット処理の流れを下図に示します。
 
-<img src="/images/20200919/format-flow1.PNG" loading="lazy">
+<img src="/images/20200919/format-flow1.png" loading="lazy">
 
 フォーマット処理は2つのステップからなり、パーサとプリンタという2つのプログラムを用います。
 
 第1ステップでは、パーサがフォーマット対象のSQLコードを受け取り、コードをASTという表現に変換します。
 
-<img src="/images/20200919/format-flow2.PNG" loading="lazy">
+<img src="/images/20200919/format-flow2.png" loading="lazy">
 
 
 第2ステップでは、プリンタがASTを受け取り、ASTの情報をもとにフォーマットされたコードを出力します。
 
-<img src="/images/20200919/format-flow3.PNG" loading="lazy">
+<img src="/images/20200919/format-flow3.png" loading="lazy">
 
 この2ステップを組み合わせることで、SQLを入力として受け取り、成形したものを出力するという、フォーマッタの動作が実現できます！
 
-<img src="/images/20200919/format-flow4.PNG" loading="lazy">
+<img src="/images/20200919/format-flow4.png" loading="lazy">
 
 
 # 行った作業

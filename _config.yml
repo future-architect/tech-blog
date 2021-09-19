@@ -91,10 +91,17 @@ deploy:
   branch: master
 
 feed:
-  type: atom
-  path: atom.xml
+  type:
+    - atom
+    - rss2
+  path:
+    - atom.xml
+    - rss2.xml
   limit: 20
+  content_limit: 140
+  content_limit_delim: ' '
   hub:
+  icon: feed_icon.png
 
 plugins:
   - hexo-footnotes
