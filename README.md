@@ -11,12 +11,6 @@
 HexoはNode.js製なので、未インストールな方は下記を参考にして下さい。
 http://qiita.com/taipon_rock/items/9001ae194571feb63a5e
 
-## Node.jsプロキシ設定
-
-```
-$ npm config set proxy http://proxy.future.co.jp:8000
-```
-
 ## setup
 
 ```
