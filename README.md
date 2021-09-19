@@ -4,29 +4,6 @@
 * 静的サイトジェネレータ：Hexo
 * 分析：Google Analytics
 
-# Hexo 環境構築手順
-
-## Node.jsインストール
-
-HexoはNode.js製なので、未インストールな方は下記を参考にして下さい。
-http://qiita.com/taipon_rock/items/9001ae194571feb63a5e
-
-## setup
-
-```
-# install hexo
-  $ npm install hexo-cli -g --save
-  $ hexo init blog
-  $ cd blog
-  $ npm install
-
-# run sever(`ctrl * C` で停止)
-  $ hexo server
-
-# browser
-  $ http://localhost:4000
-```
-
 ## SNSカウントを表示させるために、Facebook開発者用のトークンが必要
 
 1. 開発者キーが必要
@@ -54,13 +31,9 @@ https://graph.facebook.com?id=https%3A%2F%2Ffuture-architect.github.io%2Farticle
 
 ```
 $ cd ../
-$ git clone https://github.com/future-architect/tech-blog.git
+$ git clone --depth 1 https://github.com/future-architect/tech-blog.git
 $ cd tech-blog
 $ npm install
-$ npm install hexo-generator-feed --save
-$ npm install hexo-generator-seo-friendly-sitemap --save
-$ npm install hexo-footnotes --save
-$ npm install hexo-math --save
 
 $ hexo server
  --> http://localhost:4000 にページが表示されたら完了
