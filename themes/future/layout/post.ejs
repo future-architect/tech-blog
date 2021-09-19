@@ -5,9 +5,6 @@
     <li class="active">Post</li>
   </ul>
   <section id="main">
-    <div class="github-edit">
-      <a href="https://github.com/future-architect/tech-blog/edit/master/source/<%= page.source %>" title="Suggest Edits"><i class="github-edit-icon"></i></a>
-    </div>
     <%- partial('_partial/post/title', {class_name: 'article-title', post: page, index: false}) %>
     <%- partial('_partial/article', {post: page, index: false}) %>
   </section>
