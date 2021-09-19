@@ -42,8 +42,8 @@ $ hexo server
 ## Deploy
 
 ```sh
-# Windows Only（管理者権限が必要）
-mklink public ..\future-architect.github.io
+# Windows Only
+mklink /J public ..\future-architect.github.io
 
 hexo g
 cd public
