@@ -61,7 +61,11 @@ git push origin HEAD
 pngquantをインストールする
 
 ```sh
+# ディレクトリ横断
 pngquant */*.png --skip-if-larger --ext .png --force
+
+# 特定ディレクトリ配下
+pngquant *.png --skip-if-larger --ext .png --force
 ```
 
 jpegoptimをインストールする
