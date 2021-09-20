@@ -42,8 +42,12 @@ $ hexo server
 ## Deploy
 
 ```sh
-# Windows Only（管理者権限が必要）
-mklink public ..\future-architect.github.io
+cd ../
+git clone --depth 1 https://github.com/future-architect/future-architect.github.io
+
+# Windows Only
+cd tech-blog
+mklink /J public ..\future-architect.github.io
 
 hexo g
 cd public
@@ -66,5 +70,6 @@ https://github.com/XhmikosR/jpegoptim-windows/releases/
 
 ```sh
 # jpegoptimに再帰的オプションがなかったためbatファイルでラップした
+# 月次で実行する
 jpegoptimall.bat
 ```
