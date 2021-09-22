@@ -91,7 +91,7 @@ func HandleInvalid(ctx context.Context) int {
 
 答えは "実行時エラー" になります。AWSのコンソールから実行すると以下のようなエラーメッセージが出力されます。
 
-![](/images/20210603a/image.png)
+<img src="/images/20210603a/image.png" alt="実行時エラー表示" loading="lazy">
 
 ## 静的解析による関数シグネチャチェック
 

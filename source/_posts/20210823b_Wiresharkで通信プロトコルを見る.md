@@ -156,7 +156,6 @@ round-trip min/avg/max/stddev = 7.234/8.086/8.456/0.438 ms
 このとき、Wiresharkでは5つの通信全てをキャッチしています。
 `icmp`で表示を絞り込むと...
 
-![](/images/20210823b/)
 <img src="/images/20210823b/3_icmp_1.png" alt="" width="" height="" loading="lazy">
 
 各通信ごとに「Echo (ping) Request」と「Echo (ping) Reply」を送り合っていることが分かります。

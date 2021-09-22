@@ -17,7 +17,7 @@ lede: "今回は流行りの認証プロトコルであるOpenID ConnectとOAuth
 
 # Authorizerとは
 
-!["カスタムオーソライザの動作フロー"](/images/20210610a/custom-auth-workflow.png)
+<img alt="カスタムオーソライザの動作フロー" src="/images/20210610a/custom-auth-workflow.png" loading="lazy">
 
 [Authorizer](https://docs.aws.amazon.com/ja_jp/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html)とはAWS APIGatewayにある機能の一つで、外からAPIサーバに送られてくるリクエストを検証することにより、アクセスを制御する機能です。OAuth2.0のプロトコルにおいては、AuthorizerはJWTなどTokenを検証することで、APIサーバ、つまり `ResourceServer` を保護する役割を持っています。
 
