@@ -77,3 +77,20 @@ https://github.com/XhmikosR/jpegoptim-windows/releases/
 # 月次で実行する
 jpegoptimall.bat
 ```
+
+## textlint
+
+Installation
+
+```sh
+> npm install textlint --global
+> npm install textlint-rule-preset-ja-technical-writing --global
+> npm install textlint-rule-spellcheck-tech-word --global
+```
+
+Lint
+
+```sh
+> textlint source/_posts
+```
+
