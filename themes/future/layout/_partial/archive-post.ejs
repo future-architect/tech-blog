@@ -1,11 +1,11 @@
-<div class="row card">
-  <a href="<%- url_for(post.path) %>" title="<%= post.title %>" class="col-md-4 col-sm-4 img_wrap">
+<div class="row article-card">
+  <a href="<%- url_for(post.path) %>" title="<%= post.title %>" class="col-sm-4 col-md-4 img_wrap">
     <% if (post.thumbnail) { %>
     <img src="<%= post.thumbnail %>" class="img-responsive" alt="" <%= image_size_attribute(post.thumbnail) %> loading="lazy">
     <% } %>
   </a>
   <% if (post.thumbnail) { %>
-  <div class="col-md-8 col-sm-8">
+  <div class="col-sm-8 col-md-8">
   <% } else { %>
   <div class="col-xs-12">
   <% } %>
