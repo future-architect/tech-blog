@@ -1,16 +1,14 @@
 <% if (site.categories.length){ %>
-<div class="widget-wrap">
-  <div class="widget">
-    <ul class="nav sidebar-categories margin-bottom-40">
-    <% site.categories.forEach(function(cat) {
-    let className = "";
-    if (is_category(cat.name)) {
-      className = "category-list-current"
-    }
-    %>
-      <li class="<%= className %>"><a href="<%= url_for(cat.path) %>"><%= cat.name %> (<%= cat.length %>)</a></li>
-    <% }); %>
-    </ul>
-  </div>
+<div class="widget">
+  <ul class="nav sidebar-categories margin-bottom-40">
+  <% site.categories.forEach(function(cat) {
+  let className = "";
+  if (is_category(cat.name)) {
+    className = "category-list-current"
+  }
+  %>
+    <li class="<%= className %>"><a href="<%= url_for(cat.path) %>"><%= cat.name %> (<%= cat.length %>)</a></li>
+  <% }); %>
+  </ul>
 </div>
 <% } %>
