@@ -1,3 +1,4 @@
+---
 title: "AWS初心者向けNW構築ハンズオン-Internal編-"
 date: 2021/08/31 00:00:00
 postid: a

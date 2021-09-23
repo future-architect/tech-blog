@@ -1,3 +1,4 @@
+---
 title: "AWS Certified Solutions Architect - Professional合格体験記"
 date: 2021/06/07 00:00:00
 postid: a

@@ -1,3 +1,4 @@
+---
 title: "Future Tech Night(第4弾：Go x AWS スマート工場編)を開催しました。"
 date: 2020/09/25 00:00:00
 postid: ""

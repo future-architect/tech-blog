@@ -1,3 +1,4 @@
+---
 title: "GCPのRegion間レイテンシからサービスのRegion集約を考察する"
 date: 2020/08/13 00:00:00
 postid: ""

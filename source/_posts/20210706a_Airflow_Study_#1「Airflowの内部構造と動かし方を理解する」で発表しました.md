@@ -1,3 +1,4 @@
+---
 title: "Airflow Study #1「Airflowの内部構造と動かし方を理解する」で発表しました"
 date: 2021/07/06 00:00:00
 postid: a

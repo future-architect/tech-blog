@@ -1,3 +1,4 @@
+---
 title: "Go1.14のRelease Partyに登壇しました🎉"
 date: 2020/03/25 14:44:32
 postid: ""

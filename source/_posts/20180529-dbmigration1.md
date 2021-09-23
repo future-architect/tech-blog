@@ -1,3 +1,4 @@
+---
 title: "データベースマイグレーション ～OracleからPostgreSQLへ～　ー第１回ー"
 date: 2018/05/29 11:06:05
 postid: ""

@@ -1,3 +1,4 @@
+---
 title: "フューチャーでSlack Enterprise Gridの導入を進めた話"
 date: 2021/07/12 00:00:00
 postid: a

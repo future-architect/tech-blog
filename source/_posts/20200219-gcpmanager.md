@@ -1,3 +1,4 @@
+---
 title: "GCP連載#10 Terraform ではなくCloud Deployment Manager を使ってみよう"
 date: 2020/02/19 10:05:30
 postid: ""

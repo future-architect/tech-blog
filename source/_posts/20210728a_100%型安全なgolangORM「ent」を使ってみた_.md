@@ -1,3 +1,4 @@
+---
 title: "100%型安全なgolangORM「ent」を使ってみた"
 date: 2021/07/28 00:00:00
 postid: a

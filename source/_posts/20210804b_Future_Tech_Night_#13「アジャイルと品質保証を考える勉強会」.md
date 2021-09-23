@@ -1,3 +1,4 @@
+---
 title: "Future Tech Night #13「アジャイルと品質保証を考える勉強会」"
 date: 2021/08/04 00:00:01
 postid: b

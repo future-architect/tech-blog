@@ -1,3 +1,4 @@
+---
 title: "GCP連載#9 初めてのGCP 画像AI(Vision API)をさわってみた"
 date: 2020/02/18 10:16:55
 postid: ""

@@ -1,3 +1,4 @@
+---
 title: "GoとPoatgreSQLでCOPY"
 date: 2021/07/27 00:00:00
 postid: a

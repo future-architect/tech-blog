@@ -1,3 +1,4 @@
+---
 title: "TypeScriptでReactをやるときは、小さいアプリでもReduxを最初から使ってもいいかもねというお話"
 date: 2020/05/01 10:19:34
 postid: ""

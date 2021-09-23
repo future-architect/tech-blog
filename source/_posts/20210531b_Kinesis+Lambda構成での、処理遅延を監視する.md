@@ -1,3 +1,4 @@
+---
 title: "Kinesis+Lambda構成での、処理遅延を監視する"
 date: 2021/05/31 00:00:01
 postid: b

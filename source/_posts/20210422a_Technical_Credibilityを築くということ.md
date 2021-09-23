@@ -1,3 +1,4 @@
+---
 title: "Technical Credibilityを築くということ"
 date: 2021/04/22 00:00:00
 postid: a

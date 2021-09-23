@@ -1,3 +1,4 @@
+---
 title: "monotone minima による高速化について"
 date: 2021/07/07 00:00:00
 postid: a
