@@ -1,3 +1,4 @@
+---
 title: "CircleCIでMarkdownのリンク切れを自動検知する"
 date: 2021/04/22 00:00:01
 postid: b

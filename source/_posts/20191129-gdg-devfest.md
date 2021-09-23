@@ -1,3 +1,4 @@
+---
 title: "GDG DevFest in 信州2019に登壇しました"
 date: 2019/11/29 13:58:44
 postid: ""

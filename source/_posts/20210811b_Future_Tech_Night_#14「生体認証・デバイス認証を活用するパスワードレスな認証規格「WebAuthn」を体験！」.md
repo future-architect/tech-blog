@@ -1,3 +1,4 @@
+---
 title: "Future Tech Night #14「生体認証・デバイス認証を活用するパスワードレスな認証規格「WebAuthn」を体験！」"
 date: 2021/08/11 00:00:01
 postid: b

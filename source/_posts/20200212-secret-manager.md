@@ -1,3 +1,4 @@
+---
 title: "GCP連載#5【もう鍵なくさない】GCPのSecret ManagerとBerglasで幸せになる"
 date: 2020/02/12 09:14:36
 postid: ""

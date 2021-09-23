@@ -1,3 +1,4 @@
+---
 title: "Future Tech Night #14〜IDaaS/OSS/Managed比較〜"
 date: 2021/08/12 00:00:01
 postid: b

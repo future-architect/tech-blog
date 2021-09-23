@@ -1,3 +1,4 @@
+---
 title: "Google Cloud Next ’19 in Tokyo Day2 セッションレポート"
 date: 2019/08/04 09:00:00
 postid: ""

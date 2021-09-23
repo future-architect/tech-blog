@@ -1,3 +1,4 @@
+---
 title: "FlutterアプリをDeployGateで公開するためのいろいろ"
 date: 2021/07/20 00:00:02
 postid: b

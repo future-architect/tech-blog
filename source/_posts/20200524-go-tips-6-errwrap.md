@@ -1,3 +1,4 @@
+---
 title: "Go Tips連載6: Error wrappingされた各クラウドSDKの独自型エラーを扱う"
 date: 2020/05/23 11:12:30
 postid: ""

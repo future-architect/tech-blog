@@ -1,3 +1,4 @@
+---
 title: "Policy as Code を実現する Open Policy Agent に憧れて。ポリシーコードでAPI仕様をLintする"
 date: 2020/09/30 00:00:00
 postid: ""

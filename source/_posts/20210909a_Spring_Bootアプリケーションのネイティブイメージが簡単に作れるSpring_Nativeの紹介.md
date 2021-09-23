@@ -1,3 +1,4 @@
+---
 title: "Spring Bootアプリケーションのネイティブイメージが簡単に作れるSpring Nativeの紹介"
 date: 2021/09/09 00:00:00
 postid: a

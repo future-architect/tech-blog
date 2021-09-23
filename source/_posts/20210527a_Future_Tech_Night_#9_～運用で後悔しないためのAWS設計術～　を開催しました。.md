@@ -1,3 +1,4 @@
+---
 title: "Future Tech Night #9 ～運用で後悔しないためのAWS設計術～　を開催しました。"
 date: 2021/05/27 00:00:00
 postid: a

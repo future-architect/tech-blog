@@ -1,3 +1,4 @@
+---
 title: "GitHub上のChangeLogをCircleCIから自動生成する"
 date: 2021/07/08 00:00:00
 postid: a

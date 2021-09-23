@@ -1,3 +1,4 @@
+---
 title: AWS認定 Machine learning specialty 合格記
 date: 2020/07/29 00:00:00
 postid: ""

@@ -1,3 +1,4 @@
+---
 title: "GCP連載#4 Cloud Life Sciencesを見てみた"
 date: 2020/02/10 11:53:19
 postid: ""

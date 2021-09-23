@@ -1,3 +1,4 @@
+---
 title: "リモートワークを促進させるDaily Stand-up Meeting"
 date: 2020/01/29 10:02:04
 postid: ""

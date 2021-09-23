@@ -1,3 +1,4 @@
+---
 title: "Future Tech Night #12～Serverless x Goの可能性～で発表しました"
 date: 2021/07/13 00:00:00
 postid: a

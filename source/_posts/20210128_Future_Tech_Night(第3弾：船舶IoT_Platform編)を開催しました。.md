@@ -1,3 +1,4 @@
+---
 title: "Future Tech Night(第3弾：船舶IoT Platform編)を開催しました。"
 date: 2021/01/28 00:00:00
 postid: ""

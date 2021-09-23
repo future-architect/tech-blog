@@ -1,3 +1,4 @@
+---
 title: "GoとAWS LambdaのためのMakefile"
 date: 2020/10/22 00:00:00
 postid: ""

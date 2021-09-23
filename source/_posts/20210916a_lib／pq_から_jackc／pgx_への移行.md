@@ -1,3 +1,4 @@
+---
 title: "lib/pq から jackc/pgx への移行"
 date: 2021/09/16 00:00:00
 postid: a

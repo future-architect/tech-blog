@@ -1,3 +1,4 @@
+---
 title: "RedmineとGitLabの連携プラグインを開発しました！"
 date: 2021/09/08 00:00:00
 postid: a

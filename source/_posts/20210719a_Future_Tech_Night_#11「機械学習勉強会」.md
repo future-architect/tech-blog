@@ -1,3 +1,4 @@
+---
 title: "Future Tech Night #11「機械学習勉強会」"
 date: 2021/07/19 00:00:00
 postid: a

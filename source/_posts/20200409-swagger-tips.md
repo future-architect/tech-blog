@@ -1,3 +1,4 @@
+---
 title: "スキーマファースト開発のためのOpenAPI（Swagger）設計規約"
 date: 2020/04/09 10:38:04
 postid: ""
