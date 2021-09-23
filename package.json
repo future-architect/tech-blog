@@ -6,7 +6,7 @@
     "version": "5.4.0"
   },
   "dependencies": {
-    "googleapis": "^73.0.0",
+    "googleapis": "^87.0.0",
     "hexo": "^5.4.0",
     "hexo-easy-tags-plugin": "^1.1.0",
     "hexo-filter-mathjax": "^0.7.1",
@@ -19,19 +19,19 @@
     "hexo-generator-seo-friendly-sitemap": "0.2.1",
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-marked": "^4.0.0",
+    "hexo-renderer-marked": "^4.1.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
     "image-size": "^1.0.0",
-    "markdown-it": "^12.0.6",
-    "npm": "^7.18.1",
+    "markdown-it": "^12.2.0",
+    "npm": "^7.24.0",
     "random-seed": "^0.3.0",
     "rss-parser": "^3.12.0",
     "sync-fetch": "^0.3.0"
   },
   "devDependencies": {
     "textlint": "^12.0.2",
-    "textlint-rule-preset-ja-technical-writing": "^6.0.0",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0",
     "textlint-rule-spellcheck-tech-word": "^5.0.0"
   }
 }
