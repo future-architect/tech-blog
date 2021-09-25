@@ -21,7 +21,7 @@ hexo.extend.helper.register('generate_techcast_post', function() {
   return `
   <div class="class="widget-wrap">
   <div class="widget">
-    <ul class="nav">
+    <ul class="nav techcast">
       ${feedHTML}
     </ul>
   </div>
