@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="ja" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="ja" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="ja">
-<!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <!--
@@ -111,9 +107,8 @@
   <% if (theme.rss){ %>
   <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
-  <% if (theme.favicon){ %>
   <link rel="icon" href="<%- theme.favicon %>">
-  <% } %>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="canonical" href="<%= url.replace("index.html", "") %>">
   <meta content="<%= keywords %>" name="keywords">
   <meta content="<%= author %>" name="author">
