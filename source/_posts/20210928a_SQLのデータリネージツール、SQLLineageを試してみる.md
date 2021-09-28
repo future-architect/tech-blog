@@ -6,6 +6,7 @@ tag:
   - Python
   - データリネージュ
   - データガバナンス
+  - SQL
 category:
   - Programming
 thumbnail: /images/20210928a/thumbnail.png
@@ -91,17 +92,17 @@ $ sqllineage -g -e "insert into db1.table1 select * from db2.table2"
 
 ```sql join.sql
 INSERT INTO table1 (name, text)
-  SELECT 
+  SELECT
    'test'       AS name,
-    t3.text     AS text  
-  FROM 
+    t3.text     AS text
+  FROM
    table2 t2
   INNER JOIN table3 t3 ON t2.id = t3.id
 ```
 
 `-f`オプションでファイルを指定できます。
 
-```sh 
+```sh
 $ sqllineage -g -f join.sql
 * SQLLineage Running on http://localhost:5000/?f=join.sql
 ```
@@ -146,18 +147,18 @@ sqllineageは内部的には[andialbrecht/sqlparse](https://github.com/andialbre
 
 ```sql multiple.sql
 INSERT INTO tbl3 (name, text)
-  SELECT 
+  SELECT
    'test'       AS name,
-    t1.text     AS text  
-  FROM 
+    t1.text     AS text
+  FROM
    tbl1 t1
   INNER JOIN tbl2 t2 ON t1.id = t2.id
 ;
 INSERT INTO tbl5 (name, text)
-  SELECT 
+  SELECT
    'test'       AS name,
-    t3.text     AS text  
-  FROM 
+    t3.text     AS text
+  FROM
    tbl3 t3
   INNER JOIN tbl4 t4 ON t3.id = t4.id
 ;
