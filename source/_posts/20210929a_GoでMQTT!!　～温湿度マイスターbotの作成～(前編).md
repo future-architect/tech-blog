@@ -406,6 +406,6 @@ TimeStampに注目すると、2秒毎に新規データが蓄積されている�
 
 前編では温湿度センサーDHT22より取得したデータをMQTTでAWS IoTにPublishするところまでを行いました。
 
-後編ではAWS IoTで受け取ったデータをDynamoDBに連携します。
+[後編](/articles/20210930a/)ではAWS IoTで受け取ったデータをDynamoDBに連携します。
 
 DynamoDBに蓄積されたデータをBoto3によって取得し、Slackbotで配信するところまで行います。
