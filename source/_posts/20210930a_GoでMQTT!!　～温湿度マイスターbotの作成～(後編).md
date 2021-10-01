@@ -8,6 +8,7 @@ tag:
   - IoT
   - Python
   - MQTT
+  - BOT
 category:
   - IoT
 thumbnail: /images/20210930a/thumbnail.png
@@ -536,3 +537,7 @@ AWS IoTを使用したのは初めてだったのですが、公式のドキュ�
 
 AWS以外のクラウドサービスのMQTTサポートなどの使い勝手も気になってきたため、近々まとめられればと思います。
 
+
+**（2021.10.1）続編が公開されました**
+
+* [PythonでMQTT!! ～Alexaでコマンドを送信する～  | フューチャー技術ブログ](/articles/20211001a/)
