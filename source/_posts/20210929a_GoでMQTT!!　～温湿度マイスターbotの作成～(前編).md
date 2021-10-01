@@ -8,6 +8,7 @@ tag:
   - IoT
   - Python
   - MQTT
+  - BOT
 category:
   - IoT
 thumbnail: /images/20210929a/thumbnail.png
