@@ -573,7 +573,7 @@ def worker():
     plt.savefig("室内温湿度.jpg")
 
     client = WebClient(
-        token="xoxb-1261967949297-2468996447665-FPu2QEJOb33wuN1IVJYWt5a9")
+        token="xoxb-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
     response = client.chat_postMessage(text=" Temp : " + str(Temperature[-1]) + "℃, Humid : " + str(
         Humidity[-1]) + "%, message : " + fukai, channel="#home")
     response = client.files_upload(
