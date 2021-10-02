@@ -270,15 +270,14 @@ Alexa Home Skillを作成する前にAmazon　Developerアカウントを作成�
 ここで一度Alexa Developerコンソールに戻って設定を行います。
 以下、Wikiに記載されている手順です。
 
->
-- Lambda ARN default = enter your Lambda ARN noted from the previous step
-- Authorization URI = https://www.amazon.com/ap/oa
-- Client ID = your client ID from LWA noted in a previous step
-- Scope: profile (click Add Scope first to add)
-- Access Token URI: https://api.amazon.com/auth/o2/token
-- Client Secret: your client secret from LWA noted in a previous step
-- Client Authentication Scheme: HTTP Basic (Recommended)
-- Click Save
+> - Lambda ARN default = enter your Lambda ARN noted from the previous step
+> - Authorization URI = https://www.amazon.com/ap/oa
+> - Client ID = your client ID from LWA noted in a previous step
+> - Scope: profile (click Add Scope first to add)
+> - Access Token URI: https://api.amazon.com/auth/o2/token
+> - Client Secret: your client secret from LWA noted in a previous step
+> - Client Authentication Scheme: HTTP Basic (Recommended)
+> - Click Save
 
 作成したスキルを選択後「スマートホーム」という画面でLambad関数のArnを設定します。
 
