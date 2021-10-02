@@ -5,12 +5,11 @@
         <% if (post.link || post.title){ %>
         <header class="article-header">
           <ul class="blog-info">
-            <%- post_author_link(post) %>
             <li class="blog-info-item"><%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY.MM.DD'}) %></li>
+            <%- post_author_link(post) %>
             <li class="blog-info-item"><%- partial('post/tag') %></li>
           </ul>
-          <%- partial('_partial/post/category') %>
-        </header>
+          </header>
         <% } %>
         <div class="article-entry" itemprop="articleBody">
           <% if (post.excerpt && index){ %>
