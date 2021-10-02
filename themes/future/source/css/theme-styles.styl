@@ -263,7 +263,7 @@ body.page-header-fixed .header {
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 25px;
-  border-radius: 6px
+  border-radius: 8px
 }
 /******************************
  見出し
@@ -489,12 +489,10 @@ tbody tr:nth-child(odd) {
   border-radius: 5px; // 角丸
   tab-size: 2em;
 }
-
 /* リンクの折り返し */
 article a {
   word-wrap: break-word;
   word-break: break-all;
-  width: 100%;
 }
 .blog-sidebar a {
 	color: #424242;
@@ -578,12 +576,10 @@ code {
 .nav-flex a:hover, .nav-flex a:focus {
   background-color: #efefef;
 }
-
 /* iframely */
 .iframely-embed {
   margin-bottom: 25px;
 }
-
 /* タブレットで発生する右側の余白を削除 */
 .wrap {
   overflow: hidden;
@@ -592,15 +588,90 @@ code {
 .blog-info ul {
   padding-inline-start: 10px;
 }
-.article-header .blog-info .blog-info-item time {
-  padding-left: 10px;
-}
 .blog-info-item a {
-  padding-left:10px;
+  padding: 2px 10px 2px 10px;
 }
-.blog-info-item:first-child a {
+.blog-info-item:first-child > a {
   padding-left:0px;
 }
+.publish-date {
+  color: #616161;
+  font-weight: bold;
+}
+
+/* Tag */
+.blog-tags ul {
+  padding: 0;
+}
+.blog-tags li {
+  display: inline-block;
+}
+.tag-list-link {
+  color: #616161;
+  position: relative;
+  margin: 0 16px 7px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: 4px;
+  margin-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  padding-right: 8px;
+  padding-left: 8px;
+  background-color: #f5f5f3;
+  border: solid 2px #f5f5f3;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 12px;
+  font-size: .75rem;
+  color: #616161;
+  line-height: 1.4;
+}
+.tag-list-link:hover,  .tag-list-link:focus{
+  background: var(--main-font-color);
+  color: #fff;
+  text-decoration: none;
+}
+.blog-tags li a span {
+  font-size: 0.5em;
+  margin-left:5px;
+}
+
+/* Blog Sidebar categories BEGIN */
+.sidebar-categories li a {
+  padding: 10px 0;
+  border-bottom: 1px solid #ECEBEB;
+  color: #424242;
+}
+
+/* Blog Item */
+.blog-item .blog-item-img {
+  margin: 6px 0 25px;
+}
+.blog-item blockquote {
+  padding: 6px 10px;
+  border-left: 6px solid #005282;
+}
+.blog-item .blog-info {
+  margin: 20px 0;
+  padding: 8px 0;
+  border-top: solid 1px #ECEBEB;
+  border-bottom: solid 1px #ECEBEB;
+}
+ .blog-info-item {
+  padding-left: 4px;
+}
+.blog-info-item:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+.blog-info-item ul li:first-child {
+  padding-left: 4px;
+}
+.blog-info-item ul li {
+  margin-right: 10px;
+}
+
 
 #footnotelist li {
   padding-top: 1em;
@@ -706,6 +777,10 @@ code {
   font-weight: bold;
 }
 
+.post-author {
+  color: #616161;
+  font-weight: bold;
+}
 .author-list {
   padding-inline-start: 0px;
   display: flex;

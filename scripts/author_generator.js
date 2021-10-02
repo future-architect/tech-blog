@@ -72,14 +72,6 @@ hexo.extend.helper.register('list_authors', function(year='all') {
   return `<ul class="author-list">${authors}</ul>`;
 });
 
-hexo.extend.helper.register('post_author_link', function(post) {
-  const authors = [].concat(post.author || 'Anonymous');
-  const link = authors.map(author =>
-    `<li><a href="/authors/${encodeURI(author)}">${author}</a></li>`
-  ).join("")
-  return `<li class="blog-info-item">${link}</li>`
-});
-
 // 全著者数を表示
 hexo.extend.helper.register('count_authors', function(year='all') {
   if (year === 'all') {
@@ -96,7 +88,7 @@ hexo.extend.helper.register('count_authors', function(year='all') {
 hexo.extend.helper.register('post_author_link', function(post) {
   const authors = [].concat(post.author || 'Anonymous');
   const link = authors.map(author =>
-    `<li><a href="/authors/${encodeURI(author)}">${author}</a></li>`
+    `<li><a href="/authors/${encodeURI(author)}" title="${author}さんの記事一覧へ" class="post-author">${author}</a></li>`
   ).join("")
   return `<li class="blog-info-item">${link}</li>`
 });

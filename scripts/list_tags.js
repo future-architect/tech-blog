@@ -4,7 +4,7 @@
 // https://github.com/noraj/hexo/blob/master/lib/plugins/helper/list_tags.js
 
 
-function listTags(tags, options) {
+function listTopPageTags(tags, options) {
   if (!options && (!tags || !Object.prototype.hasOwnProperty.call(tags, 'length'))) {
     options = tags;
     tags = this.site.tags;
@@ -42,18 +42,18 @@ function listTags(tags, options) {
 
       result += `<a class="${className}-list-link" href="${this.url_for(tag.path)}${suffix}" rel="tag">`;
       result += transform ? transform(tag.name) : tag.name;
-      result += '</a>';
 
       if (showCount) {
         result += `<span class="${className}-list-count">${tag.length}</span>`;
       }
+      result += '</a>'; // spanがaタグの中に入るように修正
 
       result += '</li>';
     });
 
     if (minCount > 1) {
         result += `<li>`
-        result += `<a href="/tags">`;
+        result += `<a href="/tags" style="color:#424242;">`;
         result += "タグ一覧へ";
         result += '</a>';
         result += '</li>';
@@ -81,4 +81,4 @@ function listTags(tags, options) {
   return result;
 }
 
-hexo.extend.helper.register('list_toppagetags', listTags);
+hexo.extend.helper.register('list_toppagetags', listTopPageTags);
