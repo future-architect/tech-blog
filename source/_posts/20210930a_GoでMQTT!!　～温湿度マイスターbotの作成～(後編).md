@@ -139,8 +139,8 @@ def query_table(executed_time):
     begin = executed_time - datetime.timedelta(days=7)
     response = dynamodb_table.query(
         KeyConditionExpression=Key('device_id').eq('01') & Key('timestamp').between(
-            begin.strftime('%Y-%m-%d %H:%M:%S'),
-            executed_time.strftime('%Y-%m-%d %H:%M:%S')))
+            begin.isoformat(sep = "T",timespec="milliseconds"),
+            executed_time.isoformat(sep = "T",timespec="milliseconds")))
     data = response['Items']
     return data
 
@@ -272,8 +272,8 @@ def generate_figure(Timestamp, Temperature, Humidity):
     fig = plt.figure()
     ax1 = fig.add_subplot(111)
     ln1 = ax1.plot(
-        Timestamp[:],
-        Temperature[:],
+        Timestamp,
+        Temperature,
         marker='o',
         markeredgewidth=1.,
         markeredgecolor='k',
@@ -281,8 +281,8 @@ def generate_figure(Timestamp, Temperature, Humidity):
         label=r'$Temperature$')
     ax2 = ax1.twinx()
     ln2 = ax2.plot(
-        Timestamp[:],
-        Humidity[:],
+        Timestamp,
+        Humidity,
         marker='o',
         markeredgewidth=1.,
         markeredgecolor='k',
@@ -393,8 +393,8 @@ def query_table(executed_time):
     begin = executed_time - datetime.timedelta(days=7)
     response = dynamodb_table.query(
         KeyConditionExpression=Key('device_id').eq('01') & Key('timestamp').between(
-            begin.strftime('%Y-%m-%d %H:%M:%S'),
-            executed_time.strftime('%Y-%m-%d %H:%M:%S')))
+            begin.isoformat(sep = "T",timespec="milliseconds"),
+            executed_time.isoformat(sep = "T",timespec="milliseconds")))
     data = response['Items']
     return data
 
@@ -459,8 +459,8 @@ def generate_figure(Timestamp, Temperature, Humidity):
     fig = plt.figure()
     ax1 = fig.add_subplot(111)
     ln1 = ax1.plot(
-        Timestamp[:],
-        Temperature[:],
+        Timestamp,
+        Temperature,
         marker='o',
         markeredgewidth=1.,
         markeredgecolor='k',
@@ -468,8 +468,8 @@ def generate_figure(Timestamp, Temperature, Humidity):
         label=r'$Temperature$')
     ax2 = ax1.twinx()
     ln2 = ax2.plot(
-        Timestamp[:],
-        Humidity[:],
+        Timestamp,
+        Humidity,
         marker='o',
         markeredgewidth=1.,
         markeredgecolor='k',
