@@ -491,8 +491,8 @@ def query_table(now):
     begin = now - datetime.timedelta(days=7)
     response = dynamodb_table.query(
         KeyConditionExpression=Key("device_id").eq('01') & Key("timestamp").between(
-            begin.strftime("%Y-%m-%d %H:%M:%S"),
-            now.strftime("%Y-%m-%d %H:%M:%S")))
+            begin.isoformat(sep = "T",timespec="milliseconds"),
+            now.isoformat(sep = "T",timespec="milliseconds")))
     data = response["Items"]
     return data
 
@@ -541,8 +541,8 @@ def worker():
     fig = plt.figure()
     ax1 = fig.add_subplot(111)
     ln1 = ax1.plot(
-        Timestamp[:],
-        Temperature[:],
+        Timestamp,
+        Temperature,
         marker='o',
         markeredgewidth=1.,
         markeredgecolor='k',
@@ -550,8 +550,8 @@ def worker():
         label=r"$Temperature$")
     ax2 = ax1.twinx()
     ln2 = ax2.plot(
-        Timestamp[:],
-        Humidity[:],
+        Timestamp,
+        Humidity,
         marker='o',
         markeredgewidth=1.,
         markeredgecolor='k',
