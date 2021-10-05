@@ -7,6 +7,7 @@ tag:
   - TechNight
   - 保守運用
   - 登壇レポート
+  - AWS設計
 category:
   - Infrastructure
 thumbnail: /images/20210527a/thumbnail.png
