@@ -52,7 +52,7 @@ Nyle 小宮さん
 FUTURE 棚井さん
 無料でIaCを試す AWS×Terraform×LocalStack
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSedBlRfsZ4fVuKUt6Rs5iUTeIq_BQ7PsYU9cvDVozcWJeXzxo2yTh2NaOekoZAjg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSedBlRfsZ4fVuKUt6Rs5iUTeIq_BQ7PsYU9cvDVozcWJeXzxo2yTh2NaOekoZAjg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
 ## #4
@@ -65,7 +65,7 @@ CloudFormationを使用したシームレスな開発の話
 FUTURE 真野さん
 冪等じゃないジョブがなぜ僕を困らせたのか
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSdSiwGRRkeC106NiMlng2GFyXuAI_ZmqrkN_aQDAn8AXORsLJi9Ft8Z0MpMKIZy1CDRJKcCw8Sp3Wy/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSdSiwGRRkeC106NiMlng2GFyXuAI_ZmqrkN_aQDAn8AXORsLJi9Ft8Z0MpMKIZy1CDRJKcCw8Sp3Wy/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ## #6
 Nyle 工藤さん
