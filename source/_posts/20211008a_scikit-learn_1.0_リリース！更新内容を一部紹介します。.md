@@ -14,7 +14,7 @@ author: 玉木竜二
 featured: false
 lede: "2021年9月24日にscikit-learn 1.0がリリースされました。私が大学院生のころ、scikit-learnのサンプルを動かすところから機械学習を勉強したので、ついに1.0かとなんだか感慨深い気持ちがありますから、個人的に気になった以下の4つの内容を紹介しようと思います。"
 ---
-こんにちは、TIG所属の玉木です。この記事はPython連載の7本目の記事になります。
+こんにちは、TIG所属の玉木です。この記事は[Python連載](/articles/20210927b/)の7本目の記事になります。
 
 2021年9月24日にscikit-learn 1.0がリリースされました。私が大学院生のころ、scikit-learnのサンプルを動かすところから機械学習を勉強したので、ついに1.0かとなんだか感慨深い気持ちがあります([この記事](/articles/20210511a/)で紹介しているPython 機械学習プログラミングです)。本記事ではリリースから少し時間が経ってしまいましたが、[リリースハイライト](https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_1_0_0.html)、[チェンジログ](https://scikit-learn.org/stable/whats_new/v1.0.html)から、個人的に気になった以下の4つの内容を紹介しようと思います。
 
