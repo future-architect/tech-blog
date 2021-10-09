@@ -13,7 +13,7 @@ category:
 thumbnail: /images/20211008b/thumbnail.jpg
 author: 川村英之
 featured: false
-lede: "。みなさん、Azureの勉強をどうやっていますか？本を買う、Webで情報収集、有料のセミナーなど様々な方法がありますが、Microsoft Learnはご存じでしょうか？私事ですが、このサイトを利用することでAzureの知識を身につけ、資格取得にもつなげることができました。"
+lede: "みなさん、Azureの勉強をどうやっていますか？本を買う、Webで情報収集、有料のセミナーなど様々な方法がありますが、Microsoft Learnはご存じでしょうか？私事ですが、このサイトを利用することでAzureの知識を身につけ、資格取得にもつなげることができました。"
 ---
 
 TIGの川村英之です。
