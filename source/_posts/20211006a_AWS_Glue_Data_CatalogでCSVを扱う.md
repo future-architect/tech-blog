@@ -6,6 +6,7 @@ tag:
   - Glue
   - Python
   - AWS
+  - データカタログ
 category:
   - Programming
 thumbnail: /images/20211006a/thumbnail.png
