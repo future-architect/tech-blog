@@ -4,6 +4,7 @@ date: 2020/06/06 14:32:59
 postid: ""
 tag:
   - インターン
+  - インターン2020
 category:
   - Culture
 thumbnail: /images/20200606/thumbnail.png
