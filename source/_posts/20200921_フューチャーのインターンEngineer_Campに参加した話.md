@@ -1,9 +1,10 @@
 ---
-title: "フューチャーのインターンEngineer Campに参加した話"
+title: "フューチャーのインターンEngineer Camp2020に参加した話"
 date: 2020/09/21 00:00:00
 postid: ""
 tag:
   - インターン
+  - インターン2021
 category:
   - Infrastructure
 thumbnail: /images/20200921/thumbnail.png

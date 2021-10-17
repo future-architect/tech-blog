@@ -1,9 +1,10 @@
 ---
-title: "Future Engineer Camp 2021に参加しました！"
+title: "Future Engineer Camp 2021（IoTプラットフォーム）に参加しました！"
 date: 2021/09/22 00:00:00
 postid: a
 tag:
   - インターン
+  - インターン2021
   - IoTプラットフォーム
 category:
   - Culture
