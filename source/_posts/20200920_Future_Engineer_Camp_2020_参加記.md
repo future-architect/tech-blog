@@ -1,10 +1,11 @@
 ---
-title: "Future Engineer Camp 2020 参加記"
+title: "Engineer Camp 2020（スマートファクトリー） 参加記"
 date: 2020/09/20 00:00:00
 postid: ""
 tag:
   - Go
   - インターン
+  - インターン2020
   - 工場
 category:
   - Programming
