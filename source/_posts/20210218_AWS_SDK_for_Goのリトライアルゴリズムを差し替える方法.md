@@ -217,4 +217,4 @@ func init() {
 上記のようにリトライアルゴリズムを差し替えることができます。もちろん `client.DefaultRetryer` を使って、リトライの設定(`client.DefaultRetryer` の `MaxRetryDelay` など)を変えることによってリトライの待ち時間の計算に影響を及ぼすこともできます。`AWS SDK for Go` が提供するデフォルトのリトライアルゴリズム・設定ではパフォーマンス上の問題があるケースなど、リトライのアルゴリズムや設定を差し替えたい場合に本記事が参考になれば幸いです。
 
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200121/index.html" data-iframely-url="//cdn.iframe.ly/raMwXJI?iframe=card-small"></a></div></div>
+* [スロットリングとの付き合い方 | フューチャー技術ブログ](/articles/20200121/)

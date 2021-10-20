@@ -39,8 +39,7 @@ lede: "みなさん、コンテナを利用してアプリケーション開発�
 
 CN Buildpacksについて実際に検証を行っている記事もありますので、こちらもご覧ください。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201002/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20201002%2F&key=42622142e53a4cc5ab36703bcee5415f"></a></div></div>
-
+* [Buildpacksのビルダーをスクラッチから作ってみる | フューチャー技術ブログ](/articles/20201002/)
 
 ## 環境について
 - Dockerがインストールされていること
