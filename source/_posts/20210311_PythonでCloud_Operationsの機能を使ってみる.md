@@ -6,6 +6,7 @@ tag:
   - GCP
   - Python
   - OpenCensus
+  - OpenTelemetry
   - CloudOperations
   - CloudRun
 category:
