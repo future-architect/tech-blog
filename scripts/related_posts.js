@@ -30,12 +30,12 @@ hexo.extend.helper.register('list_related_posts', function() {
     }
 
     const related = relatedPosts[i];
-    result += `<li class="related-posts-item"><span>${related.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${getSNSCnt(related.permalink)}</span><a class="related-posts-link" href=/${related.path} title="${related.lede}">${related.title}</a></li>`;
+    result += `<li class="related-posts-item"><span>${related.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${getSNSCnt(related.permalink)}</span><a href=/${related.path} title="${related.lede}">${related.title}</a></li>`;
   }
 
   return `
   <div class="widget">
-    <ul class="nav related-posts">${result}</ul>
+    <ul class="nav related-post-link">${result}</ul>
   </div>`;
 });
 
