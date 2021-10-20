@@ -177,8 +177,5 @@ Auth0のSalesforce設定ページにチュートリアルページあるので�
 ログインできれば成功です。
 お疲れ様でした。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 35.9551%; padding-top: 120px;"><a href="https://future-architect.github.io/articles/20210222/index.html" data-iframely-url="//cdn.iframe.ly/MKovoVl"></a></div></div>
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200123/index.html" data-iframely-url="//cdn.iframe.ly/6rr8LwH?iframe=card-small"></a></div></div>
-
-<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+* [Auth0で認証成功後に任意のWebページを表示させたい | フューチャー技術ブログ](/articles/20210222/)
+* [Auth0 EmailまたはSMSを使ったパスワードレス認証を設定する | フューチャー技術ブログ](/articles/20200123/)

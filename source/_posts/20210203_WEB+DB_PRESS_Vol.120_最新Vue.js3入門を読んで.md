@@ -179,6 +179,4 @@ Vue3の新機能である <teleport> を試しましょう
 * https://gihyo.jp/magazine/wdpress/archive/2021/vol120
 
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201013/index.html" data-iframely-url="//cdn.iframe.ly/SAxxrkF?iframe=card-small"></a></div></div>
-
-<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+* [2020年秋にVue.jsのアプリケーションを作るなら、押さえておきたい5つのポイント | フューチャー技術ブログ](/articles/20201013/)

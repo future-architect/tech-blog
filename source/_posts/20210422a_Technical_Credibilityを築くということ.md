@@ -25,9 +25,8 @@ lede: "私は新卒でフューチャーへ入社しITの世界でのキャリ�
 
 ## Technical Credibilityとはなにか
 
-<img src="/images/20210422a/climbing-4514507_640.jpg" class="img-middle-size" loading="lazy">
-
-> <a href="https://pixabay.com/ja/users/rappellingusa-13786882/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4514507">Rappellingusa</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4514507">Pixabay</a>からの画像
+<img src="/images/20210422a/climbing-4514507_640.jpg"　alt="" title="Rappellingusaによるixabayからの画像
+" class="img-middle-size" loading="lazy">
 
 Technical Credibilityとは無理やり日本語に訳すと技術的信頼？信頼度？となります。Technical Credibilityの厳密な説明や定義が少ししにくいのですが、技術力やそのナレッジを通して信頼を得ていくこと、そのプロセス、と自分は解釈しています。
 
@@ -35,9 +34,7 @@ Technical Credibilityとは無理やり日本語に訳すと技術的信頼？�
 
 こうした技術的なやり取りを通じてお客さんの信頼を得ていくプロセスをTechnical Credibilityを得る、とここでは表現したいと思います。
 
-ソリューションアーキテクトの仕事そのものについてはこちらのエントリがとても参考になります。またこちらのエントリにもTechnical Credibilityの大切さについての言及があるのでこちらもぜひおすすめです。
-
-<iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fimai-factory.hatenablog.com%2Fentry%2F2017%2F12%2F12%2F192439" style="border: 0; width: 100%; height: 190px;" allowfullscreen scrolling="no"></iframe>
+ソリューションアーキテクトの仕事そのものについてはこちらのエントリがとても参考になります。また[こちらのエントリ](https://imai-factory.hatenablog.com/entry/2017/12/12/192439)にもTechnical Credibilityの大切さについての言及があるのでこちらもぜひおすすめです。
 
 フューチャーは経営とITをデザインするという言葉が示す通り、ソフトウェアエンジニアであってもお客様の業務を理解し、一緒にシステムを作り上げていくことが求められます。そのためTechnical Credibilityの考え方が同じく重要だと考えています。
 
@@ -68,14 +65,9 @@ ITの世界に限らずTechnical Credibilityは私たちの日常のいたると
 
 例えばこのように普段使っている便利な小技だったり、やってみて分かったはまりどころ、がっつり業務導入した知見などを技術ブログとして共有することも社内、社外問わず自分のラベリングを作るのに効果的な手法ですね。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200116/index.html" data-iframely-url="//cdn.iframe.ly/AJ0a9bh?iframe=card-small"></a></div></div>
-
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200803/index.html" data-iframely-url="//cdn.iframe.ly/vWZNkTt?iframe=card-small"></a></div></div>
-
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201013/index.html" data-iframely-url="//cdn.iframe.ly/SAxxrkF?iframe=card-small"></a></div></div>
-
+* [実践Drawio | フューチャー技術ブログ](/articles/20200116/)
+* [産業用機器向けフィールドネットワークModbusで温湿度センシング | フューチャー技術ブログ](/articles/20200803/)
+* [2020年秋にVue.jsのアプリケーションを作るなら、押さえておきたい5つのポイント | フューチャー技術ブログ](/articles/20201013/)
 
 ### 常に最新の情報をキャッチアップする
 
@@ -111,9 +103,7 @@ Architecture Decision Records(以下ADRs)をご存じでしょうか。私はロ
 
 具体的なADRの例ですがADRの具体的な作り方はこちらがとても分かりやすく整理されていておすすめです。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://scrapbox.io/kawasima/%25E5%25AE%259F%25E8%25B7%25B5ADR" data-iframely-url="//cdn.iframe.ly/ca2LjZK"></a></div></div>
-
-<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+* [実践ADR - kawasima](https://scrapbox.io/kawasima/%E5%AE%9F%E8%B7%B5ADR)
 
 ## おわりに
 

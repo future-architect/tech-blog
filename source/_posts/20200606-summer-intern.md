@@ -39,17 +39,10 @@ https://www.future.co.jp/recruit/new/internship/
 それぞれに良いところがありますが、せっかく技術ブログで紹介するので **Engineer Camp** について細かく説明します。
 
 
-Project Campに興味がある方は、ぜひ未来報の記事をご覧ください。
+Project Campに興味がある方は、ぜひ[未来報の記事](https://note.future.co.jp/embed/notes/n3d3b635c4c1b)をご覧ください。
 
-<iframe class="note-embed" src="https://note.future.co.jp/embed/notes/n3d3b635c4c1b" style="border: 0; display: block; max-width: 99%; width: 494px; padding: 0px; margin: 10px 0px; position: static; visibility: visible;" height="400"></iframe><script async src="https://note.future.co.jp/scripts/embed.js" charset="utf-8"></script>
-
-
-**2021/06/04追記: 2021年のインターン募集も始まりました！**
-
-<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.4219%; padding-top: 120px;"><a href="https://note.com/future_event/n/n76e7e7d4beef" data-iframely-url="//cdn.iframe.ly/LWBBX9B"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
-
-こちらの記事も見てもらえると嬉しいです。
-
+* **2021/06/04追記**: [2021年のインターン募集](https://note.com/future_event/n/n76e7e7d4beef)も始まりました！
+  * ⇛終わりました
 
 # 2020年はフルリモート開催
 
