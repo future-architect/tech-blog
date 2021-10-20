@@ -3,7 +3,10 @@ title: "OpenTelemetryとgo-chiを繋げてみる"
 date: 2021/10/20 00:00:00
 postid: a
 tag:
-  - opentelemetry
+  - OpenTelemetry
+  - go-chi
+  - Go
+  - CNCF
 category:
   - Programming
 thumbnail: /images/20211020a/thumbnail.png
