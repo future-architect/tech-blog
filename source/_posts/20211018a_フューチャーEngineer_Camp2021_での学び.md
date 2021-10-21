@@ -1,5 +1,5 @@
 ---
-title: "Engineer Camp2021（スマートファクトリーチーム）での学び"
+title: "Engineer Camp2021（スマートファクトリー）での学び"
 date: 2021/10/18 00:00:00
 postid: a
 tag:
