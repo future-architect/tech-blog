@@ -23,8 +23,6 @@ lede: "フューチャーでは、FigmaやAdobe XDなどのデザインツール
 
 それに対して、Figma→Flutterの変換は公式で開発 or 推奨されているツールが無く、様々な個人・企業が出しているツールからどれかを選択して利用する必要があります。この記事では、**Figma→Flutterの変換をサポートする主なツールを紹介し、実際にそれらを使ってFlutterコードを出力した結果の比較を行っていきます。**「Figmaからのコード生成って色々な方法があって何が良いのかよく分からん！」という人の参考になれば嬉しいです。
 
-
-
 # Figma→Flutterを実現する方法
 
 FigmaからFlutter用のdartコードを生成する方法は主に以下の2パターンが存在するようです。
@@ -33,7 +31,6 @@ FigmaからFlutter用のdartコードを生成する方法は主に以下の2パ
 1. Figmaプラグインではない外部のサービスを利用する方法
 
 それぞれを紹介していきます。
-
 
 ### Figmaのプラグインを使う方法
 
@@ -140,7 +137,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 |出力対象(Figma)|Figma to Code|FigmaToFlutter|Assistant by Grida|
 |---|---|---|---|
-<img src="/images/20211021a/スクリーンショット_2021-10-11_13.47.58.png" alt="スクリーンショット_2021-10-11_13.47.58.png" width="340" height="231" loading="lazy">
+|<img src="/images/20211021a/スクリーンショット_2021-10-11_13.47.58.png" alt="ログインフォーム" width="340" height="231" loading="lazy">| <img src="/images/20211021a/login_figma2code.png" alt="figma to code結果" width="357" height="698" loading="lazy"> |  <img src="/images/20211021a/login_figma2flutter.png" alt="figma to flutter" width="357" height="698" loading="lazy"> | <img src="/images/20211021a/login_assistantByGrida.png" alt="assistanbe by grid結果" width="357" height="698" loading="lazy"> |
 
 ログインフォーム全体を出力対象として、各プラグインで出力した結果を上に示しています。
 出力結果がプラグインによって全く異なるため、一つづつ見てきましょう。
@@ -157,8 +154,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 |出力対象(Figma)|Figma to Code|FigmaToFlutter|Assistant by Grida|
 |---|---|---|---|
-<img src="/images/20211021a/スクリーンショット_2021-10-11_14.00.39.png" alt="スクリーンショット_2021-10-11_14.00.39.png" width="338" height="154" loading="lazy">
-|
+|<img src="/images/20211021a/スクリーンショット_2021-10-11_14.00.39.png" alt="ログインボタン" width="338" height="154" loading="lazy">| <img src="/images/20211021a/button_figma2code.png" alt="figma to code結果" width="357" height="698" loading="lazy">| <img src="/images/20211021a/button_figma2flutter.png" alt="figma to flutter結果" width="357" height="698" loading="lazy"> | <img src="/images/20211021a/button_assistantByGrida.png" alt="Assistant by Grida結果" width="357" height="698" loading="lazy">    |
 
 ログインのボタン（青いボタンとログインのテキスト）を出力対象として、各プラグインで出力した結果を上に示しています。出力結果を一つづつ見てきましょう。
 
@@ -174,7 +170,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 |出力対象(Figma)|Figma to Code|FigmaToFlutter|Assistant by Grida|
 |---|---|---|---|
-<img src="/images/20211021a/スクリーンショット_2021-10-11_14.05.06.png" alt="スクリーンショット_2021-10-11_14.05.06.png" width="338" height="73" loading="lazy">
+|<img src="/images/20211021a/スクリーンショット_2021-10-11_14.05.06.png" alt="Figmaログインボックスのみ" width="338" height="73" loading="lazy"> | <img src="/images/20211021a/box_figma2code.png" alt="figma to code結果" width="357" height="698" loading="lazy"> | <img src="/images/20211021a/box_figma2flutter.png" alt="figma to flutter結果" width="357" height="698" loading="lazy"> | <img src="/images/20211021a/box_assistantByGrida.png" alt="assistant by grida結果" width="357" height="698" loading="lazy"> |
 
 最後に、ログインのボタンの箱（青い角丸の四角）部分のみを出力対象として、各プラグインで出力した結果を上に示しています。
 
@@ -189,8 +185,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
 |出力対象(Figma)|Figma to Code|FigmaToFlutter|Assistant by Grida|
 |---|---|---|---|
-<img src="/images/20211021a/Logo.png" alt="Logo.png" width="1200" height="513" loading="lazy">
-<img src="/images/20211021a/スクリーンショット_2021-10-11_18.47.00.png" alt="スクリーンショット_2021-10-11_18.47.00.png" width="74" height="67" loading="lazy">
+|<img src="/images/20211021a/Logo.png" alt="ロゴ" width="1200" height="513" loading="lazy">|<img src="/images/20211021a/png_figma2code.png" alt="figma to code結果" width="357" height="698" loading="lazy"> |<img src="/images/20211021a/png_figma2flutter.png" alt="figma to flutter結果" width="357" height="698" loading="lazy"> | <img src="/images/20211021a/png_assistantByGrida.png" alt="assistant by grida結果" width="357" height="698" loading="lazy"> |
+|<img src="/images/20211021a/SVGロゴ.png" alt="svgロゴ" width="74" height="67" loading="lazy">|<img src="/images/20211021a/svg_figma2code.png" alt="figma to code結果" width="357" height="698" loading="lazy"> |<img src="/images/20211021a/svg_figma2flutter.png" alt="figma to flutter結果" width="357" height="698" loading="lazy"> |<img src="/images/20211021a/svg_assistantByGrida.png" alt="assistant by grida結果" width="357" height="698" loading="lazy"> |
 
 ラスター画像、ベクター画像をそれぞれ出力対象として、各プラグインで出力した結果を上に示しています。
 
