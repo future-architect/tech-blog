@@ -4,6 +4,7 @@ date: 2021/10/22 00:00:00
 postid: a
 tag:
   - GoogleDrive
+  - GoogleWorkspace
   - サービスアカウント
   - Go
   - GCP
