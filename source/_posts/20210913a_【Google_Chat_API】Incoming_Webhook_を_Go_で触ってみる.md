@@ -5,7 +5,7 @@ postid: a
 tag:
   - Go
   - BOT
-  - GSuite
+  - GoogleWorkspace
   - GoogleChat
 category:
   - Programming

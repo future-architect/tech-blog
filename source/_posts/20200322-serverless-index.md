@@ -21,7 +21,7 @@ lede: "AWSのLambdaに代表されるサーバレスアプリは実行時のみ�
 
 ## サーバレスとは
 
-<img src="/images/20200322/lightning-bolt-1203953_640.png" alt="アイキャッチ" width="640" height="360" loading="lazy">
+<img src="/images/20200322/lightning-bolt-1203953_640.png" alt="" width="640" height="360" loading="lazy">
 
 サーバレスを説明するためによく使われるのが以下の2つではないでしょうか？
 

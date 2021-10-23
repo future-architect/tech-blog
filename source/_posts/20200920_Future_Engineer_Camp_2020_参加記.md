@@ -15,9 +15,7 @@ featured: false
 lede: "皆さん、こんにちは。Future Engineer Camp 2020に参加しました齋藤です。インターンシップやその前のできごとを書いていきます。"
 ---
 
-<img src="/images/20200920/factory-3550550_1280.png" loading="lazy">
-
-<a href="https://pixabay.com/ja/users/ArtsyBee-462611/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3550550">Oberholster Venita</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3550550">Pixabay</a>からの画像
+<img src="/images/20200920/factory-3550550_1280.png" alt="" title="Oberholster VenitaによるPixabayからの画像">
 
 # はじめに
 
