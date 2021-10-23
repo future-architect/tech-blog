@@ -15,9 +15,7 @@ featured: false
 lede: "AWSのIAMユーザのセキュリティ上、IAMユーザにMFAを導入するケースがあります。MFAを有効にしているIAMユーザでGUI経由でログインする場合は、ログイン時に認証情報が求められて、MFAデバイスが出力するトークンを入力することでログインできます。一方AWS CLIを用いてリソースにアクセス場合はコマンド発行時に認証情報は求められません。代わりに以下のような記事にかかれているような..."
 ---
 
-<img src="/images/20210426a/access-3579221_640.jpg" class="img-middle-size" loading="lazy">
-
-> <a href="https://pixabay.com/ja/users/mohamed_hassan-5229782/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3579221">mohamed Hassan</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3579221">Pixabay</a>からの画像
+<img src="/images/20210426a/access-3579221_640.jpg" alt="" title="mohamed HassanによるPixabayからの画像" class="img-middle-size">
 
 こんにちは、辻です。
 

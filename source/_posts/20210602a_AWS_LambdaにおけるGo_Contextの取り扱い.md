@@ -22,9 +22,7 @@ GoでLambdaにデプロイするコードを書くにあたり、[aws-lambda-go]
 
 # AWS LambdaにおけるGo Contextの取り扱い
 
-<img src="/images/20210602a/lambda-39473.png" alt="" width="300" height="310" loading="lazy">
-
-<a href="https://pixabay.com/ja/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=39473">Clker-Free-Vector-Images</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=39473">Pixabay</a>からの画像
+<img src="/images/20210602a/lambda-39473.png" alt="" title="Clker-Free-Vector-ImagesによるPixabayからの画像" width="300" height="310" loading="lazy">
 
 ```go main.go
 package main
