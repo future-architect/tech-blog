@@ -10,7 +10,7 @@ category:
   - Infrastructure
 thumbnail: /images/20180209/thumbnail_20180209.png
 author: 齋場俊太朗
-featured: true
+featured: false
 lede: "エンプラ&オンプレでもAnsible導入成功したのでユーザー会で発表してきた"
 ---
 エンプラ&オンプレでもAnsible導入成功したのでユーザー会で発表してきた
