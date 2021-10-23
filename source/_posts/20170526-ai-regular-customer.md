@@ -11,7 +11,7 @@ tag:
 category:
   - DataScience
 author: 小池優希
-featured: true
+featured: false
 lede: "AI(機械学習・Deep Learning等)を用いて、 **大量にある顔画像の中から同一人物をクラスタリングし、頻出する顔画像の抽出** を行い、常連さんの判定を行いたいと思います。"
 ---
 # はじめに

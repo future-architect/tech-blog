@@ -10,10 +10,10 @@ tag:
 category:
   - DB
 author: 杉江伸祐
-featured: true
+featured: false
 lede: "重要なアルゴリズムであるにもかかわらず、まとまった情報が少ないSQL実行時のブルームフィルタ(Bloom Filter)アルゴリズムについて紹介します。"
 ---
-<img src="/images/20161102/photo_20161102_00.png" class="img-small-size" loading="lazy">
+<img src="/images/20161102/photo_20161102_00.png" class="img-small-size" alt="">
 
 
 # **1. 初めに**

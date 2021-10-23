@@ -12,7 +12,7 @@ category:
   - Programming
 thumbnail: /images/20200630/thumbnail.png
 author: 真野隼記
-featured: true
+featured: false
 lede: "業務でヘビーユーズしているgo-swaggerについての開発Tipsをまとめました。"
 
 ---

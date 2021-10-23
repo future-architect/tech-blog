@@ -8,7 +8,7 @@ category:
   - DataScience
 thumbnail: /images/20170310/thumbnail_20170310.jpg
 author: 米谷悠
-featured: true
+featured: false
 lede: "データサイエンス領域における基礎の一つとして統計学があります。本Blogでは日常のニュースで報道される数字を統計学的に説明することによって、統計学の基本的な考え方に触れていきたいと思います。"
 mathjax: true
 ---

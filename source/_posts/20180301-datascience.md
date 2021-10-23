@@ -9,7 +9,7 @@ category:
   - DataScience
 thumbnail: /images/20180301/thumbnail_20180301.jpeg
 author: 貞光九月
-featured: true
+featured: false
 lede: "Future AI EXPO 開催！"
 ---
 こんにちは、「元」フューチャーアーキテクトR&Dチームの貞光です。

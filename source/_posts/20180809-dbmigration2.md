@@ -10,7 +10,7 @@ category:
   - DB
 thumbnail: /images/20180809/thumbnail.png
 author: 岸田聡
-featured: true
+featured: false
 lede: "データベースマイグレーションツールの紹介と実際にシステムで稼働しているデータベース環境とアプリケーション（SQL）を使ってマイグレーションの評価をした例と、データベースマイグレーションを検討するための方針について説明します"
 ---
 ## 1. 初めに
