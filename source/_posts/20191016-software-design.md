@@ -6,6 +6,8 @@ tag:
   - 機械学習
   - アルゴリズム
   - 出版
+  - 書籍
+  - SoftwareDesign
   - 線形代数
 category:
   - DataScience
