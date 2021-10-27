@@ -260,6 +260,7 @@ go run gen/cmd/factory-server/main.go --host 0.0.0.0 --port 3000
 
 # go-swaggerの関してはこちらの記事もおすすめです
 
+* [LambdaとGoを使ったサーバーレスWebAPI開発実践入門](/articles/20200927/)
 * [go-swaggerを用いたWebアプリケーション開発Tips19選](/articles/20200630/)
 * [スキーマファースト開発のためのOpenAPI（Swagger）設計規約](/articles/20200409/)
 * [WAFとして go-swagger を選択してみた](/articles/20190814/)
