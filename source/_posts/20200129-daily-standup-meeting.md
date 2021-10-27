@@ -6,6 +6,7 @@ tag:
   - 会議
   - マネジメント
   - チーム開発
+  - リモートワーク
 category:
   - Management
 author: 村田靖拓
