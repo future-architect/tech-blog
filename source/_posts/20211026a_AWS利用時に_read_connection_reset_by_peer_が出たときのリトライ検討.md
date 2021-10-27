@@ -1,5 +1,5 @@
 ---
-title: "AWS利用時に read tcp xxxx->xxxx read: connection reset by peer が出たときのリトライ検討"
+title: "AWS利用時に read: connection reset by peer が出たときのリトライ検討"
 date: 2021/10/26 00:00:00
 postid: a
 tag:
