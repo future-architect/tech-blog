@@ -6,6 +6,7 @@ tag:
   - Vue.js
   - Vue3
   - 書籍
+  - 書評
 category:
   - Programming
 thumbnail: /images/20210203/thumbnail.jpg
