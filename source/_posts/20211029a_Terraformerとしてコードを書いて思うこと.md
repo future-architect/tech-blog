@@ -6,6 +6,7 @@ tag:
   - Terraform
   - 設計
   - IaC
+  - 可読性
 category:
   - Infrastructure
 thumbnail: /images/20211029a/thumbnail.png

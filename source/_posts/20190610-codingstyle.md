@@ -5,6 +5,7 @@ postid: ""
 tag:
   - コーディング規約
   - コードレビュー
+  - 可読性
 category:
   - Programming
 author: 王紹宇
