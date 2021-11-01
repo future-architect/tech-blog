@@ -2,7 +2,7 @@
 
 const fetch = require('sync-fetch');
 const {saveCache, pocket, hatebu, fb, tw, setTwitterCnt, setFacebookCnt, setHatebuCnt, setPocketCnt, getSNSCnt} = require('./lib/sns');
-const BEFORE_DATE = 120; // N日前までさかのぼってキャッシュ更新
+const BEFORE_DATE = 7; // N日前までさかのぼってキャッシュ更新
 const FETCH_DISABLE = false;
 let [currentPocket, currentHatebu, currentFb, currentTw] = [{}, {}, {}, {}];
 
