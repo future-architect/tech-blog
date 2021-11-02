@@ -6,6 +6,8 @@ tag:
   - Go
   - Web
   - HTTP
+  - トラブルシュート
+  - CORS
 category:
   - Infrastructure
 thumbnail: /images/20200717/thumbnail.png

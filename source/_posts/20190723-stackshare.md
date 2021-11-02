@@ -6,6 +6,7 @@ tag:
   - IoT
   - 技術選定
   - FutureIoT
+  - ベンダーロックイン
 category:
   - IoT
 author: 武田大輝

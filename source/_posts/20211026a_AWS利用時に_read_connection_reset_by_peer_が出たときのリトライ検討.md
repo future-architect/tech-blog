@@ -7,6 +7,7 @@ tag:
   - Network
   - リトライ
   - Go
+  - トラブルシュート
 category:
   - Programming
 thumbnail: /images/20211026a/thumbnail.png
