@@ -6,6 +6,7 @@ tag:
   - JavaScript
   - フロントエンド
   - Vue.js
+  - トラブルシュート
 category:
   - Programming
 thumbnail: /images/20210216/thumbnail.png

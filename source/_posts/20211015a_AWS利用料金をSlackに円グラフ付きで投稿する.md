@@ -6,6 +6,7 @@ tag:
   - AWS
   - Slack
   - Go
+  - 可視化
 category:
   - Infrastructure
 thumbnail: /images/20211015a/thumbnail.png
