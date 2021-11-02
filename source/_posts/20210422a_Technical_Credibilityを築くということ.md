@@ -5,6 +5,7 @@ postid: a
 tag:
   - 新人向け
   - 技術習得
+  - ビジネス
 category:
   - Culture
 thumbnail: /images/20210422a/thumbnail.jpg
