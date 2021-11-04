@@ -6,6 +6,7 @@ tag:
   - AWS
   - Network
   - 初心者向け
+  - VPC
   - VPC_Reachability_Analyzer
 category:
   - Infrastructure
