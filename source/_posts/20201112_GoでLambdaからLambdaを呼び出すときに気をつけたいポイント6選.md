@@ -6,6 +6,7 @@ tag:
   - AWS
   - Go
   - Lambda
+  - VPC
 category:
   - Programming
 thumbnail: /images/20201112/thumbnail.png

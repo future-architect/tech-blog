@@ -5,6 +5,8 @@ postid: a
 tag:
   - AWS
   - Network
+  - VPC
+  - 技術選定
 category:
   - Infrastructure
 thumbnail: /images/20210618a/thumbnail.png

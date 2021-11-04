@@ -6,6 +6,7 @@ tag:
   - AWS
   - APIGateway
   - Go
+  - VPC
 category:
   - Programming
 thumbnail: /images/20210924a/thumbnail.png
