@@ -8,6 +8,7 @@ tag:
   - AWS
   - TechNight
   - 登壇レポート
+  - StepFunctions
 category:
   - Programming
 thumbnail: /images/20200925/thumbnail.png

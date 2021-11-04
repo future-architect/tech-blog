@@ -8,6 +8,7 @@ tag:
   - リトライ
   - Go
   - トラブルシュート
+  - Kinesis
 category:
   - Programming
 thumbnail: /images/20211026a/thumbnail.png

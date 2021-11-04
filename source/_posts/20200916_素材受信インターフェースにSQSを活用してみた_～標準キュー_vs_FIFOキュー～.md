@@ -6,6 +6,8 @@ tag:
   - AWS
   - SQS
   - GlyphFeeds
+  - 技術選定
+  - S3
 category:
   - Infrastructure
 thumbnail: /images/20200916/thumbnail.png

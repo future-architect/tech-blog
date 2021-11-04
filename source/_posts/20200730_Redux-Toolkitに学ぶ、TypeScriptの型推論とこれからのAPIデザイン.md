@@ -4,6 +4,8 @@ date: 2020/07/30 00:00:00
 postid: ""
 tag:
   - TypeScript
+  - Redux
+  - React
 category:
   - Programming
 thumbnail: /images/20200730/thumbnail.png

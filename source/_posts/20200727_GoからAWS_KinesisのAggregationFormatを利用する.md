@@ -8,6 +8,7 @@ tag:
   - Serverless
   - Lambda
   - IoT
+  - Kinesis
 category:
   - Programming
 thumbnail: /images/20200727/thumbnail.png
