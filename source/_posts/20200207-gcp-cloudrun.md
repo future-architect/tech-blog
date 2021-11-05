@@ -7,6 +7,7 @@ tag:
   - GCP
   - Serverless
   - CloudRun
+  - go-chi
 category:
   - Programming
 author: 澁川喜規
