@@ -7,6 +7,7 @@ tag:
   - Swagger
   - OpenAPI
   - go-swagger
+  - 技術選定
 category:
   - Programming
 author: 多賀聡一朗
@@ -18,7 +19,7 @@ lede: "Go のWebアプリケーションフレームワークを検討した際�
 こんにちは、TIG DXチーム [^1]の多賀です。
 2019年7月にキャリア入社しました。
 
- [^1]: Technology Innovation Groupの略で、フューチャーの中でも特にIT技術に特化した部隊です。その中でもDXチームは特にデジタルトランスフォーメーションに関わる仕事を推進していくチームです。
+[^1]: Technology Innovation Groupの略で、フューチャーの中でも特にIT技術に特化した部隊です。その中でもDXチームは特にデジタルトランスフォーメーションに関わる仕事を推進していくチームです。
 
 ## 概要
 
