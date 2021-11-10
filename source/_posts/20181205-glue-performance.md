@@ -5,6 +5,7 @@ postid: ""
 tag:
   - AWS
   - Glue
+  - 性能検証
 category:
   - Infrastructure
 author: 千葉駿
