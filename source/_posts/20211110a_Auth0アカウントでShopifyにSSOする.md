@@ -47,10 +47,13 @@ Auth0のアカウントも必要になります。こちらも無料のものが
 
 **目次**
 
-1. Shopifyアカウントでマルチパスを有効にする
-2. Auth0アプリケーションを作成し、URIを設定する
-3. Auth0ルールを追加して、マルチパストークンを作成する
-4. ShopifyテーマにAuth0リンクを設定する
+[1. Shopifyアカウントでマルチパスを有効にする](https://future-architect.github.io/articles/20211110a/#Shopify%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%83%9E%E3%83%AB%E3%83%81%E3%83%91%E3%82%B9%E3%82%92%E6%9C%89%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B)
+
+[2. Auth0アプリケーションを作成し、URIを設定する](https://future-architect.github.io/articles/20211110a/#Auth0%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%80%81URI%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B)
+
+[3. Auth0ルールを追加して、マルチパストークンを作成する](https://future-architect.github.io/articles/20211110a/#Auth0%E3%83%AB%E3%83%BC%E3%83%AB%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%A6%E3%80%81%E3%83%9E%E3%83%AB%E3%83%81%E3%83%91%E3%82%B9%E3%83%88%E3%83%BC%E3%82%AF%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B)
+
+[4. ShopifyテーマにAuth0リンクを設定する](https://future-architect.github.io/articles/20211110a/#Shopify%E3%83%86%E3%83%BC%E3%83%9E%E3%81%ABAuth0%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B)
 
 ## Shopifyアカウントでマルチパスを有効にする
 
