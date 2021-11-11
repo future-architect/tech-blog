@@ -6,8 +6,9 @@ tag:
   - Ansible
   - 登壇レポート
   - IaC
+  - DevOps
 category:
-  - Infrastructure
+  - DevOps
 thumbnail: /images/20180209/thumbnail_20180209.png
 author: 齋場俊太朗
 featured: false
