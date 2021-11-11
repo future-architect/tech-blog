@@ -5,8 +5,9 @@ postid: a
 tag:
   - AWS
   - 合格記
+  - DevOps
 category:
-  - Infrastructure
+  - DevOps
 thumbnail: /images/20210825a/thumbnail.png
 author: 伊藤真彦
 featured: false

@@ -6,6 +6,7 @@ tag:
   - GCP
   - CloudBuild
   - GitOps
+  - DevOps
   - CI/CD
 category:
   - DevOps
