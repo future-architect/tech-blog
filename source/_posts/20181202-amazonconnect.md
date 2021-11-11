@@ -4,6 +4,8 @@ date: 2018/12/02 14:21:59
 postid: ""
 tag:
   - AWS
+  - ハンズオン
+  - コールセンター
 category:
   - Infrastructure
 author: 市川諒

@@ -9,6 +9,7 @@ tag:
   - Python
   - MQTT
   - BOT
+  - ハンズオン
 category:
   - IoT
 thumbnail: /images/20210930a/thumbnail.png
