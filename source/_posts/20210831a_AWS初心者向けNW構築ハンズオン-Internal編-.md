@@ -8,6 +8,7 @@ tag:
   - 初心者向け
   - VPC
   - VPC_Reachability_Analyzer
+  - ハンズオン
 category:
   - Infrastructure
 thumbnail: /images/20210831a/thumbnail.png

@@ -5,6 +5,7 @@ postid: ""
 tag:
   - AWS
   - データレイク
+  - ハンズオン
 category:
   - Infrastructure
 author: 柳澤隆太郎
