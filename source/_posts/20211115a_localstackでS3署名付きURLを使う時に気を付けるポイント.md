@@ -7,6 +7,7 @@ tag:
   - LocalStack
   - S3
   - 署名付きURL
+  - CORS
 category:
   - Infrastructure
 thumbnail: /images/20211115a/thumbnail.png
