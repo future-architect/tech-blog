@@ -5,7 +5,7 @@ postid: ""
 tag:
   - IoT
   - DesignThinking
-  - Hackathon
+  - ハッカソン
 category:
   - IoT
 thumbnail: /images/20160420/thumbnail_20160420.jpg
