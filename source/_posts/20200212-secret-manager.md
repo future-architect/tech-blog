@@ -6,6 +6,7 @@ tag:
   - GCP
   - Python
   - Go
+  - 暗号
 category:
   - Infrastructure
 author: 市川諒

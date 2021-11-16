@@ -3,8 +3,9 @@ title: "ハッカソン道中記#4～リケジョ、ITと外遊びしてみた�
 date: 2016-05-30 08:40:24
 postid: ""
 tag:
-  - Hackathon
+  - ハッカソン
   - DesignThinking
+  - IoT
 category:
   - IoT
 thumbnail: /images/20160530/thumbnail_20160530.jpg

@@ -5,7 +5,7 @@ postid: ""
 tag:
   - DesignThinking
   - Unity
-  - Hackathon
+  - ハッカソン
 category:
   - VR
 thumbnail: /images/20160511/thumbnail_20160511.jpg
