@@ -9,6 +9,7 @@ tag:
   - Go
   - トラブルシュート
   - Kinesis
+  - TCP/IP
 category:
   - Programming
 thumbnail: /images/20211026a/thumbnail.png
