@@ -6,6 +6,7 @@ tag:
   - Go
   - Lambda
   - Linter
+  - 静的解析
 category:
   - Programming
 thumbnail: /images/20210603a/thumbnail.jpg
