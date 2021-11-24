@@ -10,7 +10,7 @@ tag:
 category:
   - Programming
 thumbnail: /images/20211124a/thumbnail.png
-author: shibukawa
+author: 澁川喜規
 featured: false
 lede: "最近、趣味開発でフロントエンドをいじる場合とか、Reactの技術サポートで手っ取り早く使い捨ての環境を作る場合は次の組み合わせで作っています。[Vite.jsでReact + TypeScriptプロジェクト作成。Tailwind CSS。これにESLintとPrettierを入れて完了です。。"
 ---
