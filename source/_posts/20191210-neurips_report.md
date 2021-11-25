@@ -5,6 +5,7 @@ postid: ""
 tag:
   - 機械学習
   - NeurIPS
+  - 学会
   - 参加レポート
   - インターン
 category:
