@@ -6,6 +6,7 @@ tag:
   - Go
   - GoConference
   - スクレイピング
+  - カンファレンス
 category:
   - Programming
 author: 澁川喜規

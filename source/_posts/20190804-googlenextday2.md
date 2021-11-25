@@ -6,6 +6,7 @@ tag:
   - GCP
   - 参加レポート
   - GoogleCloudNext
+  - カンファレンス
 category:
   - Infrastructure
 author: 村田靖拓
