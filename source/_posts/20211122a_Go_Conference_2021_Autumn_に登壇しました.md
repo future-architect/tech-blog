@@ -7,6 +7,7 @@ tag:
   - GoConference
   - 登壇レポート
   - 静的解析
+  - カンファレンス
 category:
   - Programming
 thumbnail: /images/20211122a/thumbnail.png

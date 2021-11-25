@@ -7,6 +7,7 @@ tag:
   - OpenPolicyAgent
   - CNCF
   - Policy-as-Code
+  - カンファレンス
 category:
   - Infrastructure
 thumbnail: /images/20210313/thumbnail.png

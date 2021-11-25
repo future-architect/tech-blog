@@ -7,6 +7,7 @@ tag:
   - GoConference
   - 登壇レポート
   - TCP/IP
+  - カンファレンス
 category:
   - Programming
 thumbnail: /images/20210430a/thumbnail.png
