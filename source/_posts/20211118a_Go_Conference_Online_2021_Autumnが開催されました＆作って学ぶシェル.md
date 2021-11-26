@@ -8,6 +8,7 @@ tag:
   - 登壇レポート
   - ShellScript
   - システムプログラム
+  - カンファレンス
 category:
   - Programming
 thumbnail: /images/20211118a/thumbnail.png

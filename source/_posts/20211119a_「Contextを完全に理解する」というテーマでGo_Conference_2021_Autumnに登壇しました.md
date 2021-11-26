@@ -7,6 +7,7 @@ tag:
   - CodeReading
   - GoConference
   - 登壇レポート
+  - カンファレンス
 category:
   - Programming
 thumbnail: /images/20211119a/thumbnail.png
