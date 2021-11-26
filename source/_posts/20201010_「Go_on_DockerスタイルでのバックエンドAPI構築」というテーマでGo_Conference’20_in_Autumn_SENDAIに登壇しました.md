@@ -7,6 +7,7 @@ tag:
   - GoConference
   - Docker
   - 登壇レポート
+  - カンファレンス
 category:
   - Programming
 thumbnail: /images/20201010/thumbnail.png
