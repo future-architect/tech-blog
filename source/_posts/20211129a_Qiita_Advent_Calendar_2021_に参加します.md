@@ -6,7 +6,7 @@ tag:
   - TechBlog
   - アドベントカレンダー
 category:
-  - 宮永崇史
+  - Culture
 thumbnail: /images/20211129a/thumbnail.jpg
 author: 宮永崇史
 featured: false
