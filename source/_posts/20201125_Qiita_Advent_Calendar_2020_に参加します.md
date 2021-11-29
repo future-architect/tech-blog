@@ -5,6 +5,7 @@ postid: ""
 tag:
   - アドベントカレンダー
   - TechBlog
+  - Qiita
 category:
   - Culture
 thumbnail: /images/20201125/thumbnail.png
