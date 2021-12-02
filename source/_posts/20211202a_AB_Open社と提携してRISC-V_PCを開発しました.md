@@ -15,9 +15,9 @@ lede: "フューチャーはAB Open社と協力し、無料のオープンソー
 ---
 ## はじめに
 
-この度、フューチャーはAB Open社と協力し、無料のオープンソースであるRISC-Vアーキテクチャを活
-用した独自PCを開発しましたのでご報告します。ITコンサルティング企業のフューチャーがなぜRISC-
-VベースのPC開発に携わっているのか疑問をお持ちの方も多いかと思いますので、経緯にも触れます。
+この度、フューチャーはAB Open社と協力し、無料のオープンソースであるRISC-Vアーキテクチャを活用した独自PCを開発しましたのでご報告します。
+
+ITコンサルティング企業のフューチャーがなぜRISC-VベースのPC開発に携わっているのか疑問をお持ちの方も多いかと思いますので、経緯にも触れます。
 
 ## RISC-Vとは
 
@@ -34,9 +34,7 @@ RISC-VはCPU命令セットアーキテクチャ（Instruction Set Architecture:
 
 <img src="/images/20211202a/future_rvpc_promo_3.jpg" alt="future_rvpc_promo_3.jpg" width="1200" height="802" loading="lazy">
 
-開発したPCは、RISC-VのパイオニアであるSiFive社のHiFive Unmatchedを使用しています。CPUは
-SiFive U740 SoC、メモリは16GBという構成です。最初の写真を見てわかるように、フロントパネルを
-持っていることが大きな特徴で、ど真ん中に「フューチャー」のロゴが印字されていています！
+開発したPCは、RISC-VのパイオニアであるSiFive社のHiFive Unmatchedを使用しています。CPUはSiFive U740 SoC、メモリは16GBという構成です。最初の写真を見てわかるように、フロントパネルを持っていることが大きな特徴で、ど真ん中に「フューチャー」のロゴが印字されていています！
 
 * [HiFive Unmatched](https://www.sifive.com/boards/hifive-unmatched)
 * SiFive U740 SoC（64bit 4コア+1コア）
@@ -64,7 +62,7 @@ SiFive U740 SoC、メモリは16GBという構成です。最初の写真を見�
 
 出会いのキッカケですが、完全なRISC-V PCを世界で最初に組み立てた企業の1つとして有名だったAB Open社に、以前からRISC-Vに高い関心をもっていた当社副社長CSOの石橋さんが声をかけたことから始まり、意気投合してプロジェクトが始まりました。それぞれのモノづくりへの強い思いとこだわりを示しながら開発が進められたそうです。
 
-AB Open社のマネージングディレクターであるAndrew Backさんは「RISC-Vアーキテクチャへの関心は日々高まっているため、このプロジェクトはRISC-Vのポテンシャルを示すのに役に立つと思います。最新テクノロジーを採用するフューチャーと一緒にできたことを光栄に思います」と話しており、良い協力関係が気づけたかなと感じています。
+AB Open社のマネージングディレクターであるAndrew Backさんは「RISC-Vアーキテクチャへの関心は日々高まっているため、このプロジェクトはRISC-Vのポテンシャルを示すのに役に立つと思います。最新テクノロジーを採用するフューチャーと一緒にできたことを光栄に思います」と話しており、良い協力関係が築けたかなと感じています。
 
 
 ## なぜ開発にしようと考えたか
@@ -82,5 +80,5 @@ https://events.linuxfoundation.org/riscv-summit/
 
 ## 参考
 
-* https://abopen.com/news/future-corporation-partners-with-ab-open-for-unique-risc-v-pc-project/
+https://abopen.com/news/future-corporation-partners-with-ab-open-for-unique-risc-v-pc-project/
 
