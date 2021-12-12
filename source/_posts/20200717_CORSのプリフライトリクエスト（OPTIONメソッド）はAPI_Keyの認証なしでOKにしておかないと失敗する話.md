@@ -12,7 +12,6 @@ category:
   - Infrastructure
 thumbnail: /images/20200717/thumbnail.png
 author: 真野隼記
-featured: false
 lede: こんにちは、TIG DXユニットの真野です。この技術ブログの運営や、ここ数年は産業向けのIoT（例えば工場IoTやモビリティIoT）を行っています。本エントリーのネタを書くキッカケになったのは、[GCP連載#7 GCPのData Transfer Serviceを使って簡単にS3からBigQueryにデータ転送をしてみる]多芸な加部さんと某IoTな案件のバックエンドの接続テストをしているときに気がついたネタです。
 ---
 # はじめに

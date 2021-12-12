@@ -13,7 +13,6 @@ category:
   - Programming
 thumbnail: /images/20200925/thumbnail.png
 author: 辻大志郎
-featured: false
 lede: "こんにちは、TIGの栗田、伊藤、辻です。先日2020/9/25にオンラインにてFuture Tech Nightという社外勉強会を開催しました。今回は第4弾としてGoとAWSを使って工場制御する最新プロジェクトの事例を紹介しました。"
 ---
 

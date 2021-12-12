@@ -9,7 +9,6 @@ category:
   - Infrastructure
 thumbnail: /images/20210906a/thumbnail.png
 author: 渡邉光
-featured: false
 lede: "こんにちは、2019年新卒入社筋肉エンジニアの渡邉光です。先日、AWS認定資格の一つであるAWS Certified Developer - Associate（AWS DVA）を受験し、無事に合格することができました。合格するまでに自分が実施したことや感想を皆さんに共有できたらと思います。"
 ---
 こんにちは、2019年新卒入社筋肉エンジニアの渡邉光です。

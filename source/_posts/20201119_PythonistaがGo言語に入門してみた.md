@@ -11,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20201119/thumbnail.png
 author: 村上知優
-featured: true
 lede: "私の所属しているプロジェクトでは、Go言語を使ってWeb APIを構築しています。私は元々Pythonを主に書いていましたが、Go言語を書くのは初めてでした。そんな私がPythonからGo言語へ入門する際に、苦労した経験や発見を共有したいと思います！"
 ---
 <img src="/images/20201119/language-python.png" loading="lazy">

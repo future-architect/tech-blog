@@ -8,7 +8,6 @@ tag:
 category:
   - Culture
 author: 前原応光
-featured: false
 lede: "Elastic{ON}への参加のためにサンフランシスコにやって来ましたので、まず現地レポートをお届けします！"
 ---
 

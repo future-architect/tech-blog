@@ -11,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20210924a/thumbnail.png
 author: 真野隼記
-featured: false
 lede: " Gateway+Lambda という構成でWebAPI開発を行う際、ちょっと便利に使える疎通方法をまとめます。API GatewayですがPublicなエンドポイントがあれば `curl`コマンドや`Postman`を用いての動作検証も容易だと思います。"
 ---
 # はじめに

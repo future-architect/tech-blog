@@ -10,7 +10,6 @@ category:
   - Management
 thumbnail: /images/20170119/thumbnail_20170119.jpg
 author: 近藤雅章
-featured: false
 lede: "Redmineにはデータの可視化機能が標準で搭載されていないという課題があります。そこで、Kibana＋Timelionを使ってRedmineデータをEVM表示する方法を紹介します"
 ---
 

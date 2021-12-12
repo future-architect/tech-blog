@@ -9,7 +9,6 @@ tag:
 category:
   - Infrastructure
 author: 柳澤隆太郎
-featured: false
 lede: "あるプロジェクトでデータ分析基盤を開発することになり、データレイクを中心としたソリューションについて学ぶためにAWS Datalake Hands-onに参加してきました"
 ---
 

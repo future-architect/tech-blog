@@ -14,7 +14,6 @@ category:
   - IoT
 thumbnail: /images/20210929a/thumbnail.png
 author: 宮永崇史
-featured: false
 lede: "今回はAWSサービスのうちの一つAWS IoTを使用してRaspberryPiとのMQTTによる通信を行います。最終的には室内の快適な温湿度を教えてくれる「温湿度マイスターbot」を作成します。"
 ---
 <img src="/images/20210929a/サムネイル1.png" alt="Louis Reed on unsplash.com Unsplash" title="" width="1200" height="676" loading="lazy">
@@ -111,7 +110,7 @@ DHT22という温湿度センサをRaspberryPi3B+に取り付けて2時間ごと
 1. DHT22から温湿度情報を取得する
 2. AWS IoTを使用してRaspberryPiからのPublish動作確認
 3. DHT22の温湿度情報をAWS IoTへPublish
-4. AWS IoTで取得した温湿度情報をDynamoDBに連携　
+4. AWS IoTで取得した温湿度情報をDynamoDBに連携
 5. Boto3を使用してDynamoDBからデータをQuery、データ整形
 6. 取得データをmatplotlibで可視化
 7. 作成したプロット図をSlack APIで画像投稿

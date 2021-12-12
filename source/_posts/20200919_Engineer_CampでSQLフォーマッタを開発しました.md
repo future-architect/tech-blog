@@ -14,7 +14,6 @@ category:
   - Programming
 thumbnail: /images/20200919/thumbnail.jpg
 author: 中村祥大
-featured: false
 lede: "はじめまして。フューチャーのインターンEngineer Campに参加した中村と申します。この記事では、今回のインターンで私が取り組んだ内容を紹介します。今回のインターンで私は、SQLフォーマッタの作成に取り組みました。"
 ---
 

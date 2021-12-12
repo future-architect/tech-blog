@@ -12,7 +12,6 @@ category:
   - Programming
 thumbnail: /images/20210303/thumbnail.png
 author: 山田修路
-featured: false
 lede: "業務で階層グラフを可視化する機会があったので、階層グラフの可視化について共有させていただこうと思います。グラフとは関係を抽象化したもので、線グラフや棒グラフなどのチャートとは異なる概念です。"
 ---
 

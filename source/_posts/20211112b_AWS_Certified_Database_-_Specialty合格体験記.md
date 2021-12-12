@@ -10,7 +10,6 @@ category:
   - Infrastructure
 thumbnail: /images/20211112b/thumbnail.png
 author: 伊藤真彦
-featured: true
 lede: "TIGの伊藤真彦です。AWS Certified Database - Specialtyに合格しました。これにて2021年に受験できる11資格を全て制覇しました。来年SAP on AWS - 専門知識が登場する事が確定していますが、ひとまず完全制覇です。"
 ---
 

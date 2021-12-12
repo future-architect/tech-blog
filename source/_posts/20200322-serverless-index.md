@@ -9,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20200322/thumbnail.png
 author: 真野隼記
-featured: false
 lede: "AWSのLambdaに代表されるサーバレスアプリは実行時のみ稼働するため、サーバー稼働によるあらゆるコストから解放され、システム開発の工数を減らすことができます。例えば何らかのAPIを提供する場合でも、API GatewayとLambdaを組み合わせることで提供可能です。"
 ---
 

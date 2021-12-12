@@ -13,7 +13,6 @@ category:
   - Programming
 thumbnail: /images/20211118a/thumbnail.png
 author: 澁川喜規
-featured: false
 lede: "Go Conference Online 2021 Autumnが開催されました。スタッフのみなさん、登壇者、参加者のみなさん、お疲れ様でした。フューチャーは今回もブロンズスポンサーでした。、渋川の発表内容を紹介します。タイトルは「Learning Computer Systems by Crafting: Shell 〜作って学ぶシェル〜」で、シェルの動作の紹介をしつつ、自分で実装してみるには、という感じの解説でした。"
 ---
 Go Conference Online 2021 Autumnが開催されました。スタッフのみなさん、登壇者、参加者のみなさん、お疲れ様でした。フューチャーは今回もブロンズスポンサーでした。また、フューチャーからは伊藤（真）、辻、渋川の三人が登壇しました。

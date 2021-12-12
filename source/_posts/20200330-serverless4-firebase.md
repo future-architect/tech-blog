@@ -12,7 +12,6 @@ category:
   - Programming
 thumbnail: /images/20200330/thumbnail.png
 author: 佐藤尚至
-featured: true
 lede: "こんにちは、Android Developerの佐藤です。モバイルアプリ品質強化の強い味方となってくれるFirebase Crashlyticsを紹介したいと思います！Firebaseとは、AndroidやiOSなどのモバイルアプリのバックエンド機能を提供してくれるサービスです。提供されているサービスは..."
 ---
 

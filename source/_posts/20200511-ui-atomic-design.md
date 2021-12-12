@@ -10,7 +10,6 @@ category:
   - Design
 thumbnail: /images/20200511/thumbnail.png
 author: 平川裕蔵
-featured: true
 lede: "今回はPJの現場でUXとUIのデザインを通して、Atomic Designの導入はどのような結果を生んだのか、Atomic Design導入に際しての課題や取り組み方のコツなんかをお伝えできればと思います。z"
 ---
 # 今回はUIと少しUXのお話です

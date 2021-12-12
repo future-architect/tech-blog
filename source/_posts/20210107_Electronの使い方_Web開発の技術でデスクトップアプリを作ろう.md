@@ -9,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20210107/thumbnail.png
 author: 伊藤真彦
-featured: true
 lede: "Electronは、GitHubが開発したオープンソースのソフトウェアフレームワークです。ChromiumとNode.jsをコアとして採用する事で、Web開発と同じようにHTML,CSS,JavaScriptを用いて開発したものを.."
 ---
 

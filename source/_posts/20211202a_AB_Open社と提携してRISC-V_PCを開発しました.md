@@ -10,7 +10,6 @@ category:
   - IoT
 thumbnail: /images/20211202a/thumbnail.jpg
 author: 真野隼記
-featured: false
 lede: "フューチャーはAB Open社と協力し、無料のオープンソースであるRISC-Vアーキテクチャを活用した独自PCを開発しましたのでご報告します。ITコンサルティング企業のフューチャーがなぜRISC-VベースのPC開発に携わっているのか疑問をお持ちの方も多いかと思いますので、経緯にも触れます。"
 ---
 ## はじめに

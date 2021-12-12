@@ -12,7 +12,6 @@ category:
   - Programming
 thumbnail: /images/20200327/thumbnail.png
 author: 澁川喜規
-featured: false
 lede: "クラウドサービスが充実してくるにつれて、サーバーレスではいろいろなことができるようになっています。HTTPサーバーは動きますし、RDBやNoSQLなストレージも使えますし、PubSubみたいなサービスも利用できます。これらを駆使するとそこそこ複雑な処理も記述できます。一方で、上から下までサーバーレスにしようとするとできないものもいくつかあります。例えば、RDBも使えるといっても制約があり、LambdaやCloud ..."
 ---
 

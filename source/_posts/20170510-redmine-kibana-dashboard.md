@@ -12,7 +12,6 @@ category:
   - Management
 thumbnail: /images/20170510/thumbnail_20170510.jpg
 author: 近藤雅章
-featured: false
 lede: "Redmineにはデータの可視化機能が標準で搭載されていないという課題があります。そこで、Kibanaを使ってRedmineデータを可視化するダッシュボードを構築する方法を紹介します"
 ---
 

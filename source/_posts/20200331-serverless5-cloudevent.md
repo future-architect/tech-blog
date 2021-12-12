@@ -10,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20200331/thumbnail.png
 author: 村田靖拓
-featured: true
 lede: "サーバレス連載企画の第5回はCloudEvents(https://cloudevents.io/)を取り上げたいと思います。CloudEventsとは様々存在するイベントを統一的に扱いたいとの思いから登場した統一仕様です。2019.10.24にCNCF(https://www.cncf.io/)のIncubatorプロジェクトに昇格したらしく、同時にv1.0のSpecificationがリリースされています。"
 ---
 

@@ -10,7 +10,6 @@ category:
   - Culture
 thumbnail: /images/20201125/thumbnail.png
 author: 伊藤太斉
-featured: false
 lede: "師走と呼ばれる12月、忙しくなる季節が今年もやってまいりました。そんな12月にフューチャーは今年もQiita主催のアドベントカレンダーに参加します"
 ---
 # はじめに

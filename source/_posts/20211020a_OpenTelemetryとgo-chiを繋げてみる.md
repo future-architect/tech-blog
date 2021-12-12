@@ -11,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20211020a/thumbnail.png
 author: 澁川喜規
-featured: false
 lede: "OpenTelemetryのGoのTraceがstableになり、1.0がリリースされました。最初の1.0宣言からはだいぶ時間がかかりましたが、Go/Javaなどさまざまな言語の開発が同時進行で、共通のプロトコルも決めて、なおかつさまざまな拡張のAPIを提供して、さらにその拡張も現時点で300以上も提供されているあたり..."
 ---
 OpenTelemetryのGoのTraceがstableになり、1.0がリリースされました。最初の1.0宣言からはだいぶ時間がかかりましたが、Go/Javaなどさまざまな言語の開発が同時進行で、共通のプロトコルも決めて、なおかつさまざまな拡張のAPIを提供して、さらに[その拡張も現時点で300以上も提供されている](https://opentelemetry.io/registry/)あたり、かなり巨大な風呂敷をどかーんと広げたような感じがします。

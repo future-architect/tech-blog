@@ -11,7 +11,6 @@ category:
   - Infrastructure
 thumbnail: /images/20210518a/thumbnail.jpg
 author: 真野隼記
-featured: true
 lede: "RESTfullとかRESTishな方針でWebAPIの横断検索を設計する際にチーム内で方針について議論したやり取りの備忘記事です。"
 ---
 ## はじめに

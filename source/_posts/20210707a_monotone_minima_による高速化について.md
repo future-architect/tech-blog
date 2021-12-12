@@ -9,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20210707a/thumbnail.png
 author: 山田太樹
-featured: false
 lede: "私は学生時代競技プログラミングに打ち込んでおりました｡今回フューチャー技術ブログでアルゴリズムの記事を書く機会を頂きとても嬉しいです！よろしくお願いします！本記事では､最適化問題を解く上でのシンプルな高速化手法である monotone minima について説明します｡"
 mathjax: true
 ---

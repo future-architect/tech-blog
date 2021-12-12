@@ -9,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20210525b/thumbnail.gif
 author: 山田勇一
-featured: false
 lede: "Draｗ.io（Diagrams.net）はとても便利ですが、VScodeやプラグインと組み合わせると更に便利になります。特に便利と感じた機能を紹介します。ここ数年、GitHubでドキュメント（Markdown）を管理するケースが増えており、Markdownに埋め込む編集可能な図として、Draｗ.ioのメタ情報を埋め込んだ画像を利用しています。"
 ---
 # 概要

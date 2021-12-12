@@ -9,7 +9,6 @@ category:
   - Design
 thumbnail: /images/20210915a/thumbnail.png
 author: 澁川喜規
-featured: false
 lede: "モバイル開発をする場合、デザインはAdobe XDかFigmaか何かしらのワイヤフレームツールを使うと思います。本エントリーではそれらをもとにアプリケーションを作成したときのTipsを紹介します。なお、デザインする人はステークホルダーの人に共有したりすると思うので有料版のXDの方が良いと思いますが、Flutter開発する人はXDファイルを持っている or 共有してもらえたら、スターター版で大丈夫です。"
 ---
 

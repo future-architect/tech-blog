@@ -11,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20201206/thumbnail.png
 author: 多賀聡一朗
-featured: true
 lede: "AWS マネージド Airflow  が 2020/11/24 にリリースされました。 [Introducing Amazon Managed Workflows for Apache Airflow サービスを利用するにあたって知りたかったことを調査し、FAQ ベースで整理しましたので公開します。"
 ---
 

@@ -9,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20210712a/thumbnail.png
 author: 山上燦
-featured: false
 lede: "TIGの山上・村田です。いきなりですが、みなさんはコミュニケーションツール（チャットツール）何を使っていますでしょうか。フューチャーでは2020年のはじめに社内公式のチャットツールとしてSlack Enterprise Gridを導入しました"
 ---
 # はじめに

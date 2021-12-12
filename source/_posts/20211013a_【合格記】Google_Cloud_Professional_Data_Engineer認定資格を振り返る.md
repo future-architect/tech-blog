@@ -10,7 +10,6 @@ category:
   - Infrastructure
 thumbnail: /images/20211013a/thumbnail.png
 author: 玉木竜二
-featured: false
 lede: "TIGの玉木です。先日Professional Data Engineer認定資格を取得しました。この記事ではその振り返りをします。新卒から3年半ほど機械学習モデリングを行っており、ここ半年はAWSでサーバーサイドの実装を主に担当しています。業務でGCPを扱ったことはありませんが、社内で「みんなで資格とっていきましょう！」のような機運があり、以前から機械学習とも関係があるデータエンジニアリングに興味があったため、今回Professional Data Engineer認定資格を受けることにしました。"
 ---
 

@@ -9,7 +9,6 @@ category:
   - Infrastructure
 thumbnail: /images/20200514/thumbnail.png
 author: 澁川喜規
-featured: true
 lede: "Goではそこそこ実績も増えつつある気がするdistroless。シェルが入っていないくて、ログインされることもなく安全というGoogle製のDockerイメージです。Python3はまだexperimentalですが、実は小さいと言われるalpine版よりも、イメージサイズが半分ぐらいだったりもします。distrolessでは3.7しかないので、3.7のイメージ同士の比較です。"
 ---
 

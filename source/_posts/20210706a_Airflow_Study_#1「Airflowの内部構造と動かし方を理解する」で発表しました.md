@@ -9,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20210706a/thumbnail.png
 author: 多賀聡一朗
-featured: false
 lede: "「Airflow Breeze を使ったローカル環境構築」について発表してきました。当ブログでの Airflow 関連の記事を見ていただき、お声がけいただいたということで、大変嬉しく思うとともに、色々ブログ記事書いてきて良かったなと思っています。"
 ---
 

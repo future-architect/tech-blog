@@ -10,7 +10,6 @@ category:
   - Infrastructure
 thumbnail: /images/20211013b/thumbnail.png
 author: 伊藤真彦
-featured: false
 lede: "TIGの伊藤真彦です。来たる11月13日に[Go Conference 2021 Autumn]に、技術ブログでもお馴染みの澁川さん、辻さんと共に登壇させていただくことになりました。楽しい発表になるように頑張ります。宣伝を挟みましたが、AWS Certified Advanced Networking - Specialtyに合格しましたので、今回も合格体験記を書きます。"
 ---
 TIGの伊藤真彦です。

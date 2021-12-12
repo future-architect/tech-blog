@@ -12,7 +12,6 @@ category:
   - Programming
 thumbnail: /images/20211022a/thumbnail.png
 author: 真野隼記
-featured: false
 lede: "Google DriveにアップロードされたExcelファイルを利用したちょっとしたジョブを実装する機会があり、処理を動かしたいのがAWSなど別のプラットフォームであったため、サービスアカウントを用いてGoogle Drive APIにアクセスするGoプログラムを作りました。"
 ---
 ## はじめに

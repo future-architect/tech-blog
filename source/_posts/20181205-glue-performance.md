@@ -9,7 +9,6 @@ tag:
 category:
   - Infrastructure
 author: 千葉駿
-featured: true
 lede: "大量データをさばくために、Glueの性能についてあれやこれややった検証結果の一部を公開します"
 ---
 

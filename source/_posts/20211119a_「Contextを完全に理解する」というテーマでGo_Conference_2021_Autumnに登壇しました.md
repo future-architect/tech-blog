@@ -12,7 +12,6 @@ category:
   - Programming
 thumbnail: /images/20211119a/thumbnail.png
 author: 伊藤真彦
-featured: false
 lede: "Go Conference 2021 Autumnに登壇させていただきました、リモート登壇です。contextはGoでアプリケーションを実装する上でお世話にならない方が少ないくらいのパッケージだと思います。"
 ---
 TIGの伊藤真彦です

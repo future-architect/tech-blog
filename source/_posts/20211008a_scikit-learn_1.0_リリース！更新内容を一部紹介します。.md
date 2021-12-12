@@ -11,7 +11,6 @@ category:
   - DataScience
 thumbnail: /images/20211008a/thumbnail.png
 author: 玉木竜二
-featured: false
 lede: "2021年9月24日にscikit-learn 1.0がリリースされました。私が大学院生のころ、scikit-learnのサンプルを動かすところから機械学習を勉強したので、ついに1.0かとなんだか感慨深い気持ちがありますから、個人的に気になった以下の4つの内容を紹介しようと思います。"
 ---
 こんにちは、TIG所属の玉木です。この記事は[Python連載](/articles/20210927b/)の7本目の記事になります。

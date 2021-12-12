@@ -11,7 +11,6 @@ category:
   - Infrastructure
 thumbnail: /images/20211029a/thumbnail.png
 author: 伊藤太斉
-featured: false
 lede: "ここ最近はほぼ1からコード設計をして運用まで持っていくこともあり、「より腐りにくい、より息の長いコード」というものを考えるようになりました。Terraformだからこその「定期メンテを簡易にするためには」「より簡単に変更するためには」をひたすら突き詰めていった結果、アツい気持ちが生まれ、今回は筆を取っています。"
 ---
 

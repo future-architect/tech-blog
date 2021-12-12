@@ -11,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20210730a/thumbnail.png
 author: 筒井悠平
-featured: false
 lede: "GoのORマッパー連載、折り返して5日目です。SQLBoilerを使用したDBスキーマ駆動なREST APIサーバの開発ワークフローを紹介します。"
 ---
 ライブリッツの筒井です。

@@ -12,7 +12,6 @@ category:
   - Infrastructure
 thumbnail: /images/20211111a/thumbnail.png
 author: 伊藤真彦
-featured: true
 lede: "先日社内の同じチームの加藤さんに誘っていただき、チームメンバーと4人でAWS GameDay Inlineに参加させていただきました。今回は参加レポートを書きます。"
 ---
 

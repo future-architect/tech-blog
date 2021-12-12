@@ -9,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20210121/thumbnail.png
 author: 澁川喜規
-featured: true
 lede: "ソフトウェアの世界では、ツールや言語の進歩があって、もはや古い知識になっているにも関わらず、古い知識がベストプラクティスと呼ばれて蔓延し続けている例があります。Dockerだと「RUNをまとめよう」というのがそうです。かつては..."
 ---
 TIG/DXの渋川です。

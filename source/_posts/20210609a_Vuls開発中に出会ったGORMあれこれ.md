@@ -11,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20210609a/thumbnail.png
 author: MaineK00n
-featured: false
 lede: "はじめまして、中岡と申します。現在はフューチャー発OSSのVuls開発をメインに、CSIGでアルバイトをしています。- ORMを触るときは発行されるクエリが意図したものか確認する"
 ---
 # Vuls開発中に出会ったGORMあれこれ
