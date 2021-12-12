@@ -14,7 +14,6 @@ category:
   - Programming
 thumbnail: /images/20211026a/thumbnail.png
 author: 真野隼記
-featured: false
 lede: "DynamoDBやKinesis Data Streamsなどを利用するサービスをそれなりの期間で稼働させているとポツポツ下記のようなエラーが発生することが分かりました。RequestError: send request failedcaused by: Post ...: read tcp 169.254.0.1:55638->3.113.218.4:443: read: connection reset by peer"
 ---
 <img src="/images/20211026a/loop-button.png" alt="" title="febrian eka saputraによるPixabayからの画像" width="632" height="433">

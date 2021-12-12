@@ -12,7 +12,6 @@ category:
   - Culture
 thumbnail: /images/20200421/thumbnail.jpeg
 author: 澁川喜規
-featured: true
 lede: "Real World HTTP 第2版が2020/04/20に出版されました。第2版が出版されるというのは、初版をみなさまが買ってくださったおかげです。どうもありがとうございます。紙媒体は先行入荷する書店さんではすでに入っているようです。オライリーのウェブサイトから電子版を購入することもできます。"
 ---
 

@@ -12,7 +12,6 @@ category:
   - Programming
 thumbnail: /images/20211104a/thumbnail.png
 author: 澁川喜規
-featured: false
 lede: "秋のブログ週間連載の6本目です。FutureにはCheetah Gridという最速のウェブフロントエンド用のテーブルコンポーネントがあります。会社のお仕事コードは基本的にVue.jsが採用されることが多く、Cheetah GridもVue.js版のコンポーネントも提供されています。僕はなぜかReact案件が多くて慣れていることもあり、ちょっとしたコードもReactで書きたいと思っています。ちょっとしたツールを実装する上でかっこよくて性能が良いテーブルコンポーネントも欲しいのでCheetah GridのReact版が欲しいなとずっと思っていたので、今回作ってみました。"
 ---
 [秋のブログ週間](/articles/20211027a/)連載の6本目です。

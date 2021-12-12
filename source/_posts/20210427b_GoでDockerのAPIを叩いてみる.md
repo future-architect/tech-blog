@@ -13,7 +13,6 @@ category:
   - Programming
 thumbnail: /images/20210427b/thumbnail.png
 author: 澁川喜規
-featured: false
 lede: "Future Tech Night #7で「GoでDockerのAPIを叩いてみる」という発表をしてきました。近年、コンテナの利用はますます増えています。実行環境としても、クラウドサービスでコンテナをホストするサービスは増えています。コンテナを動かすサービスもあれば、K8Sの利用も増えています。Kubernetesも最小のビルディングブロックはコンテナです。K8SのKnativeベースのGCP Cloud Runが僕の最近のお気に入りです。AWS Lambdaもコンテナを実行できるようになりました"
 ---
 [Future Tech Night #7](https://future.connpass.com/event/206387/)で「GoでDockerのAPIを叩いてみる」という発表をしてきました。

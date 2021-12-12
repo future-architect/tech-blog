@@ -9,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20200325/thumbnail.png
 author: 辻大志郎
-featured: true
 lede: "こんにちは。TIG の辻です。先日開催された Go 1.14 Release Party に TIG DX ユニットから渋川、辻が登壇しました。今回の Release Party は COVID-19 により初のオンラインでの開催になりました。見逃した方は youtube にアップロードされている動画: https://www.youtube.com/watch?v=IWyDR08pUU4&feature=youtu.be を見てみてください！"
 ---
 

@@ -11,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20200501/thumbnail.png
 author: 澁川喜規
-featured: true
 lede: "プロダクションコードでたくさんRedux周りにもreducerなどを実装しなくてはいけなくなったときの次のステップとして、Redux Toolkitの紹介をします。"
 ---
 

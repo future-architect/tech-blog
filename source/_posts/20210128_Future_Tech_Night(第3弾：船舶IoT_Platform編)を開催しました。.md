@@ -10,7 +10,6 @@ category:
   - Culture
 thumbnail: /images/20210128/thumbnail.png
 author: 矢野颯太
-featured: false
 lede: "2020/8/17にオンラインにてFuture Tech Nightという社外勉強会を開催しました。今回は第3弾としてAWS＆DataPlatform を活用した、船舶IoTプロジェクトの事例を紹介しました。"
 ---
 # はじめに

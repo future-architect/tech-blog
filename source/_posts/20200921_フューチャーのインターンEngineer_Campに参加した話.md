@@ -9,7 +9,6 @@ category:
   - Infrastructure
 thumbnail: /images/20200921/thumbnail.png
 author: 岡部公亮
-featured: false
 lede: "はじめまして。フューチャーのインターンEngineer Campに参加させていただいた岡部です。今回はタイトルにもある通り、2020年エンジニアキャンプのインターンの内容、学びについてお話しさせていただきます。"
 ---
 

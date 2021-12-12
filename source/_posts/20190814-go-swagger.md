@@ -11,7 +11,6 @@ tag:
 category:
   - Programming
 author: 多賀聡一朗
-featured: false
 lede: "Go のWebアプリケーションフレームワークを検討した際に、 `go-swagger` が良いのではと思い、比較調査してみました。
 結果、実際に選択し導入しています。"
 ---

@@ -10,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20210916a/thumbnail.png
 author: 筒井悠平
-featured: false
 lede: "GoのORマッパー連載、おまけ記事です。特に示し合わせた訳では無いのですが、RDBは全員がPostgreSQLを使っていましたね。さて、今回の連載記事のいくつかでも言及されていた、jackc/pgx について簡単に紹介します。"
 ---
 

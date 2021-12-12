@@ -9,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20170412/thumbnail_20170412.png
 author: 前川喜洋
-featured: false
 lede: "Elixir Conf Japan 2017 参加レポート"
 ---
 

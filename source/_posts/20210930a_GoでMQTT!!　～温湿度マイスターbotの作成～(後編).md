@@ -14,7 +14,6 @@ category:
   - IoT
 thumbnail: /images/20210930a/thumbnail.png
 author: 宮永崇史
-featured: false
 lede: "AWS IoTを使用したMQTTのチュートリアルはAWS公式からも詳細なハンズオン記事が出ています。本記事はこちらのハンズオンを基にGo言語を使用してMQTTによる通信を行いました。(公式の記事はPythonで実装されています。)"
 mathjax: true
 ---
@@ -53,12 +52,12 @@ AWS IoTを使用したMQTTのチュートリアルはAWS公式からも詳細な
 1. DHT22から温湿度情報を取得する
 2. AWS IoTを使用してRaspberryPiからのPublish動作確認
 3. DHT22の温湿度情報をAWS IoTへPublish　　　　　　　　👈ココまでやりました。
-4. AWS IoTで取得した温湿度情報をDynamoDBに連携　
+4. AWS IoTで取得した温湿度情報をDynamoDBに連携
 5. Boto3を使用してDynamoDBからデータをQuery、データ整形
 6. 取得データをmatplotlibで可視化
 7. 作成したプロット図をSlack APIで画像投稿
 
-本記事では**「4. AWS IoTで取得した温湿度情報をDynamoDBに連携」**から取り組みます。　
+本記事では**「4. AWS IoTで取得した温湿度情報をDynamoDBに連携」**から取り組みます。
 
 ## 4. AWS IoTで取得した温湿度情報をDynamoDBに連携
 

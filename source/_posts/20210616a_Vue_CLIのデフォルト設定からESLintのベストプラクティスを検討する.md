@@ -10,7 +10,6 @@ category:
   - Infrastructure
 thumbnail: /images/20210616a/thumbnail.png
 author: 伊藤真彦
-featured: false
 lede: "TIGの伊藤真彦です。この記事はフロントエンド連載の3記事目です。今回は愛用しているVue CLIを利用して、フロントエンドアプリケーションの詳細な設定について調査してみました。"
 ---
 TIGの伊藤真彦です。

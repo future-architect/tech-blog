@@ -10,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20210927b/thumbnail.png
 author: 澁川喜規
-featured: false
 lede: "最近社内でも使う人が徐々に増えている？Pythonの連載記事を開始しようと思います。本エントリーではPythonドキュメントの日本語訳プロジェクトに参加してみた話を紹介します。"
 ---
 最近社内でも使う人が徐々に増えている？Pythonの連載記事を開始しようと思います。

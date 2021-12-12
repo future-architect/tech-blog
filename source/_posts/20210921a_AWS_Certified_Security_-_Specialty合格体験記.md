@@ -9,7 +9,6 @@ category:
   - Infrastructure
 thumbnail: /images/20210921a/thumbnail.png
 author: 伊藤真彦
-featured: false
 lede: "TIGの伊藤真彦です。先日AWS Certified Security - Specialtyに合格しました。今回も合格体験記を残しておきます。"
 ---
 TIGの伊藤真彦です。

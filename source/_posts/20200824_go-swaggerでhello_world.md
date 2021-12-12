@@ -10,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20200824/thumbnail.png
 author: 伊藤真彦
-featured: false
 lede: "go-swaggerの具体的な実装方法を紹介します。はじめにgo-swaggerのインストールを行います"
 ---
 

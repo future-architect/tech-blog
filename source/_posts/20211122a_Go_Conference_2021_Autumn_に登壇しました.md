@@ -12,7 +12,6 @@ category:
   - Programming
 thumbnail: /images/20211122a/thumbnail.png
 author: 辻大志郎
-featured: true
 lede: "Go Conference Online 2021 Autumnに登壇しました。Go Conference Autumn には2019年にも登壇しているので、2年ぶり2度目の出場になります。2019年はGoの特徴である並行処理に焦点を当てた、Goによる並列のシミュレーテッドアニーニングの実装、というマニアックな内容でしたが、今回はGoの静的解析、という身近なテーマで登壇しました。"
 ---
 こんにちは、TIGの辻です。渋川、伊藤と同じく [Go Conference Online 2021 Autumn](https://gocon.jp/2021autumn/) に登壇しました。Go Conference Autumn には2019年にも登壇しているので、2年ぶり2度目の出場になります。

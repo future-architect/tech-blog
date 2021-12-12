@@ -12,7 +12,6 @@ category:
   - Programming
 thumbnail: /images/20200515/thumbnail.png
 author: 真野隼記
-featured: false
 lede: "AWS StepFunctionsとLambdaを活用してバッチ処理を行う記事です。"
 ---
 # はじめに

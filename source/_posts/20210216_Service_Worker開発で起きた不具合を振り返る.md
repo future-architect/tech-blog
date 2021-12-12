@@ -11,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20210216/thumbnail.png
 author: 川端一輝
-featured: false
 lede: "Service Worker開発で起きた不具合と対応方法を記載します。Service Workerは、ブラウザがWebページとは別にバックグラウンドで実行するJavaScriptになります。"
 ---
 # はじめに

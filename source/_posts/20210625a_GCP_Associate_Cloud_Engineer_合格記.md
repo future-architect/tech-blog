@@ -9,7 +9,6 @@ category:
   - Infrastructure
 thumbnail: /images/20210625a/thumbnail.png
 author: 鈴木崇史
-featured: false
 lede: "初めまして。TIG所属の鈴木です。今回GCP認定資格のAssociate Cloud Engineerという資格を取得したので、その体験をブログにします。私は2020年10月に新卒入社し、GCPを使用した案件に携わってます。プログラミングなどIT経験はあったのですが、GCPをはじめとしたクラウド技術やインフラにあまり馴染みがなく、体系的に知識を習得する目的でこの資格を取得しました。"
 ---
 # 初めに

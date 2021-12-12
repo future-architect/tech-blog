@@ -11,7 +11,6 @@ category:
   - Infrastructure
 thumbnail: /images/20211015a/thumbnail.png
 author: 中山楓太
-featured: false
 lede: "AWSの利用料金をSlackに通知する仕組みを作成したので共有したいと思います。私が参加しているプロジェクトでは、毎月AWSにいくらかかっているのか、加えてそれぞれのサービスは全体のコストの内どのぐらいの割合を占めているのか知りたいという話があり、今回AWSから利用額を取得しSlackに通知する仕組みを作る流れとなりました。"
 ---
 # はじめに

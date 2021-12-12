@@ -1,6 +1,6 @@
 'use strict';
 
-const maxCount = 4;
+const maxCount = 6;
 const {getSNSCnt} = require('./lib/sns');
 
 hexo.extend.helper.register('list_related_posts', function() {

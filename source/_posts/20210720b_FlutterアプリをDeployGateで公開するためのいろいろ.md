@@ -9,7 +9,6 @@ category:
   - Infrastructure
 thumbnail: /images/20210721b/thumbnail.png
 author: 澁川喜規
-featured: false
 lede: "Flutterで環境を一度作ってしまえば、Android StudiからAndroidエミュレータ でもiOSシミュレータでもどんどん起動できるので、デバッグはとてもやりやすいです。ですが、Flutterで作るということはスマートフォン向けのアプリなので実機テストもしたいですよね？ 今回はDeployGateを使うことになったのですが、FlutterとDeployGateそのものずばりな情報が見つからなかったので、その情報をまとめます。"
 ---
 

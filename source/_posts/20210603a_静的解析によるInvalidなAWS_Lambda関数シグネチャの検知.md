@@ -11,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20210603a/thumbnail.jpg
 author: 辻大志郎
-featured: false
 lede: です。本記事では[AWS Lambda]の関数シグネチャを静的解析することで、より安全にAWS Lambdaを実装する方法を紹介します。"
 ---
 

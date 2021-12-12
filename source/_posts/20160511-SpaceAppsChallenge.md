@@ -10,7 +10,6 @@ category:
   - VR
 thumbnail: /images/20160511/thumbnail_20160511.jpg
 author: 川久保由紀
-featured: false
 lede: "IT歴約1年、社会人2年目新人女子のわたしがハッカソンに挑んだ全てをお伝えします！"
 ---
 <img src="/images/20160511/photo_20160511_01.png" class="img-middle-size" loading="lazy">

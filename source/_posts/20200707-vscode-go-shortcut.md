@@ -9,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20200707/thumbnail.png
 author: 多賀聡一朗
-featured: true
 lede: "最近 Go 開発本体への加入が発表されるなど、盛り上がっている VSCode の Go extension ですが、私も基本は VSCode + Go extension を利用して開発しています。開発する際によく利用するコマンドがいくつかありますので、まとめました。"
 ---
 

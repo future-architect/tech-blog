@@ -11,7 +11,6 @@ category:
   - 認証認可
 thumbnail: /images/20211110a/thumbnail.png
 author: 武田拓己
-featured: false
 lede: "私が参画した案件で、Auth0に登録されているエンドユーザ向けのアカウントを用いてShopifyにSSOする検証を行ったので、今回はその方法をご紹介します。"
 ---
 <img src="/images/20211110a/サムネイル.png" alt="サムネイル.png" width="462" height="288" loading="lazy">

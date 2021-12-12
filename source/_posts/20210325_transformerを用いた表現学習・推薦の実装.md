@@ -10,7 +10,6 @@ category:
   - DataScience
 thumbnail: /images/20210325/thumbnail.png
 author: 金子剛士
-featured: true
 lede: "自然言語処理でよく使われるWord2VecやTransformerをログデータやテーブルデータの予測・分析に活用するためのオレオレベースラインの紹介を行います。対象読者は既にWord2VecやTransformerについて知識があり、その上自身で改造を行いたい人や..."
 mathjax: true
 ---

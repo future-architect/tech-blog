@@ -12,7 +12,6 @@ category:
   - Infrastructure
 thumbnail: /images/20211115a/thumbnail.png
 author: 伊藤真彦
-featured: true
 lede: "AWS S3を利用してファイルをアップロード、ダウンロードするフロントエンドアプリケーションの実装を行ったのですが、その際ハマったポイントがいくつかあったのでまとめます。AWSの機能をローカル環境で模擬するツールでお馴染みのLocalStackですが、AWS S3の機能も模擬できるようになっています。"
 ---
 

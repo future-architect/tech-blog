@@ -10,7 +10,6 @@ tag:
 category:
   - Infrastructure
 author: 村田靖拓
-featured: false
 lede: "Google Cloud Next ’19 in Tokyo Day2 にチームメンバーで参加しましたので参加レポートをお送りします。"
 ---
 ## はじめに

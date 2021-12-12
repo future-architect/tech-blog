@@ -10,7 +10,6 @@ category:
   - IoT
 thumbnail: /images/20160530/thumbnail_20160530.jpg
 author: 川久保由紀
-featured: false
 lede: "音楽フェス好きなリケジョが、ファッション×アウトドア×IoTがテーマなBEAMSハッカソンに参加しました！"
 ---
 <img src="/images/20160530/photo_20160530_01.png" loading="lazy">

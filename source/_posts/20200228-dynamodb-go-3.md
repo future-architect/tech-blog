@@ -13,7 +13,6 @@ category:
   - Programming
 thumbnail: /images/20200228/thumbnail.png
 author: 真野隼記
-featured: false
 lede: "DynamoDB×Go連載の第3弾目です。今までは AWS SDK Go やそれをラップしたguregu/dynamo について説明していましたが、 Go CDK（Go Cloud Development Kit） を用いたDynamoDB操作について説明します。"
 ---
 

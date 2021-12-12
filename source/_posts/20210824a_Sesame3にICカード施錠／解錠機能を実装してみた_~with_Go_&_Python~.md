@@ -11,7 +11,6 @@ category:
   - IoT
 thumbnail: /images/20210824a/thumbnail.png
 author: 宮永崇史
-featured: false
 lede: "夏の自由研究ブログ連載2021の第2本目の投稿として、Sesame3にFelicaによる施錠解錠を実装しました。Sesame3はCANDY HOUSE JAPANが開発、販売しているスマートロックです。Sesame3本体に加えてwifiモジュールを購入すると、外出先から鍵の施錠/解錠を行うことができます。"
 -----
 

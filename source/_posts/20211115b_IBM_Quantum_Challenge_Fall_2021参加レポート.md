@@ -11,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20211115b/thumbnail.png
 author: 宮永崇史
-featured: true
 lede: "こんにちは。TIG/DXユニット所属の宮永です。本記事は2021年10月27日~11月5日に開催された[IBM Quantum Challenge Fall 2021]の参加レポートです。イベントで出題された問題は[GitHubリポジトリ]に格納されているため、参考にしてください。"
 mathjax: true
 ---

@@ -10,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20210623a/thumbnail.png
 author: 真野隼記
-featured: false
 lede: "この記事ではこのフューチャー技術ブログを機能拡張する過程で学んだコレクション操作で利用頻度が高い順にまとめます。ブログ運営（？）の保守運用な雰囲気が少しでも伝わればなと思います。"
 ---
 # はじめに

@@ -10,7 +10,6 @@ category:
   - DataScience
 thumbnail: /images/20210719a/thumbnail.png
 author: 玉木竜二
-featured: false
 lede: "6月18日にFuture Tech Night #11 ～機械学習勉強会～を開催しました。私は「ワクチン推定精度世界一へ！異分野技術で世界に貢献」というタイトルで、貞光が「複雑・巨大なITシステムをグラフベースの深層学習で自動解析」というタイトルでそれぞれお話させていただきました。"
 ---
 # はじめに

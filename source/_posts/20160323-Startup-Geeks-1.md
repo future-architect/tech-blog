@@ -8,7 +8,6 @@ category:
   - Culture
 thumbnail: /images/20160323/thumbnail_20160323.png
 author: 小川達
-featured: false
 ---
 Startup Geeks #1開催報告
 こんにちわ。FutureArchitectの小川です。

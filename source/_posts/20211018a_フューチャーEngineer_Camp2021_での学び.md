@@ -10,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20211018a/thumbnail.png
 author: 森下俊平
-featured: false
 lede: "こんにちは。フューチャーの夏季インターンシップEngineer Camp 2021に参加した森下です。このインターンシップを通じて得た経験や学んだことをお話ししていきます。"
 ---
 # はじめに

@@ -11,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20210517a/thumbnail.png
 author: 越島亮介
-featured: false
 lede: "MONETマーケットプレイスで購入したAPIとFlutterを使って簡単なスマホアプリを作ってみます。"
 ---
 # はじめに
