@@ -47,7 +47,7 @@ hexo.extend.helper.register('generate_qiita_orgs', function() {
     return item.isoDate.split("T")[0];
   }
 
-  const feedHTML = feeds.slice(0, 5).map(item => `<li><span class="news-date">${newsDate(item)}</span> <span class="news-category">${newsCategory(item)}</span> <a href="${item.link}" title="${item.title}" target="_blank" rel="noopener" class="news-title">${item.title}</a></li>`).join("\n");
+  const feedHTML = feeds.slice(0, 5).map(item => `<li><span class="news-date">${newsDate(item)}</span><span class="news-category">${newsCategory(item)}</span><a href="${item.link}" title="${item.title}" target="_blank" rel="noopener" class="news-title">${item.title}</a></li>`).join("\n");
 
   return `
   <div class="class="widget-wrap">
