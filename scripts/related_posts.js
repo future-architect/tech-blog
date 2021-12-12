@@ -23,6 +23,17 @@ hexo.extend.helper.register('list_related_posts', function() {
     return `<p class="related-posts-none">No related post.</p>`;
   }
 
+  const currentTime = new Date();
+  const pastDate = currentTime.getDate() - 30; // 4week
+  currentTime.setDate(pastDate);
+
+  const label = post => {
+    if (currentTime.toISOString() <= post.date.toISOString()) {
+      return `<span class="newitem">NEW</span>`;
+    }
+    return "";
+  }
+
   let result = "";
   for (var i = 0; i < count; i++) {
     if (relatedPosts[i] == undefined) {
@@ -30,7 +41,7 @@ hexo.extend.helper.register('list_related_posts', function() {
     }
 
     const related = relatedPosts[i];
-    result += `<li class="related-posts-item"><span>${related.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${getSNSCnt(related.permalink)}</span><a href=/${related.path} title="${related.lede}">${related.title}</a></li>`;
+    result += `<li class="related-posts-item"><span>${related.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${getSNSCnt(related.permalink)}</span>${label(related)}<a href=/${related.path} title="${related.lede}">${related.title}</a></li>`;
   }
 
   return `

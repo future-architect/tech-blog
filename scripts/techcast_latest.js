@@ -16,12 +16,12 @@ rssParser.parseURL('https://anchor.fm/s/2890e980/podcast/rss')
 
 hexo.extend.helper.register('generate_techcast_post', function() {
   const currentTime = new Date();
-  var pastDate = currentTime.getDate() - 7; // 1week
+  const pastDate = currentTime.getDate() - 15; // 2week
   currentTime.setDate(pastDate);
 
   const label = item => {
     if (currentTime.toISOString() <= item.isoDate) {
-      return `<span class="techcast-newitem">NEW</span>`;
+      return `<span class="newitem">NEW</span>`;
     }
     return "";
   }
