@@ -5,6 +5,7 @@ postid: ""
 tag:
   - Docker
   - Python
+  - コンテナビルド
 category:
   - Infrastructure
 thumbnail: /images/20200513/thumbnail.png
