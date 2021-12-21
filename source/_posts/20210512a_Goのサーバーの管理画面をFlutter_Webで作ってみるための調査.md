@@ -7,6 +7,7 @@ tag:
   - Go
   - ケンオール
   - SPA
+  - flutter_web
 category:
   - Programming
 thumbnail: /images/20210512a/thumbnail.png
