@@ -28,9 +28,12 @@
           <%- partial('social-button', {feed:false}) %>
           </section>
           <aside>
-            <section class="related-post margin-bottom-20 nav">
+            <section class="related-post margin-bottom-40 nav">
               <h2 id="related"><a href="#related" class="headerlink" title="関連記事"></a>関連記事</h2>
               <%- list_related_posts(post) %>
+            </section>
+            <section class="reference-post margin-bottom-40 nav">
+              <%- list_reference_posts(post) %>
             </section>
           </aside>
         </footer>
