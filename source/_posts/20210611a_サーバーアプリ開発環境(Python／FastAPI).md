@@ -90,6 +90,10 @@ $ poetry add --dev mypy black flake8
 
 ツールの実行はまとめて行いたい、みたいなことがありますが、poetryにはツールランチャーの機能はないので、taskipyを入れます。
 
+```bash
+$ poetry add taskipy
+```
+
 https://tech.515hikaru.net/post/2020-02-25-poetry-scripts/
 
 次のように定義することで、コマンド名とかを覚えなくても良いようにします。
@@ -280,7 +284,7 @@ RUN apt-get update \
 
 ```bash
 $ docker build -t sample-server .
-$ docker run --rm -it -p 8000:8000 sample-server .
+$ docker run --rm -it -p 8000:8000 sample-server
 ```
 
 # Pythonネタで過去に書いた記事です
