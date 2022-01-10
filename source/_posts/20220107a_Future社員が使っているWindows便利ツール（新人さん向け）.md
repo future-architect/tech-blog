@@ -6,6 +6,7 @@ tag:
   - 便利ツール
   - 新入社員
   - 初心者向け
+  - 環境構築
 category:
   - Infrastructure
 thumbnail: /images/20220107a/thumbnail.gif
