@@ -4,6 +4,9 @@ date: 2022/01/11 00:00:00
 postid: a
 tag:
   - AWS
+  - 技術選定
+  - StepFunctions
+  - Airflow
 category:
   - Programming
 thumbnail: /images/20220111a/thumbnail.png
