@@ -6,6 +6,7 @@ tag:
   - Go
   - デバッグ
   - VSCode
+  - 環境構築
 category:
   - Programming
 thumbnail: /images/20201117/thumbnail.png
