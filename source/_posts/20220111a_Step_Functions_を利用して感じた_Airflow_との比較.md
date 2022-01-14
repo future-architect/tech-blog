@@ -10,7 +10,7 @@ tag:
 category:
   - Programming
 thumbnail: /images/20220111a/thumbnail.png
-author: m_green14
+author: 多賀聡一朗
 lede: "TIG 所属の多賀です。AWS 上でのワークフロー構築のため、Step Functions を直近で導入しました。 "
 ---
 # Step Functions を利用して感じた Airflow との比較
