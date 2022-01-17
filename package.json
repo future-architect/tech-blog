@@ -23,7 +23,7 @@
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
     "image-size": "^1.0.0",
-    "markdown-it": "^12.2.0",
+    "markdown-it": "^12.3.2",
     "npm": "^7.24.0",
     "random-seed": "^0.3.0",
     "rss-parser": "^3.12.0",
