@@ -4,9 +4,9 @@ date: 2020/05/12 09:48:20
 postid: ""
 tag:
   - Vue.js
+  - フロントエンド
   - CMS
-  - フロントエンド
-  - フロントエンド
+  - HeadlessCMS
 category:
   - Programming
 thumbnail: /images/20200512/thumbnail.png
