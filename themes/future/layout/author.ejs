@@ -5,7 +5,7 @@
     <li class="active"><%- page.author %></li>
   </ul>
   <section id="main" class="margin-top-30">
-    <h1 class="list-page"><%- page.author %>さんのページ</h1>
+    <h1 class="list-page"><%- page.author %><span class="author-sub-text">さんのページ</span></h1>
     <ul class="summary">
       <li><span class="summary-count"><%= count_author(page.author) %></span><br><span class="summary-label">投稿</span></li>
       <li><span class="summary-count"><%= page.authorSNSCnt %></span><br><span class="summary-label">総シェア数</span></li>
@@ -14,6 +14,7 @@
       <li><span class="summary-count"><%= page.hatebu %></span><br><span class="summary-label">はてブ</span></li>
       <li><span class="summary-count"><%= page.pocket %></span><br><span class="summary-label">Pocket</span></li>
     </ul>
+    <%- get_profile(page.author) %>
     <div id="chart" style="width:95%;min-height:250px"></div>
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js" integrity="sha384-QqZssazD9IzPiEJz2lyFewTMgYObqDWxBfCX5k5E4n4fH7ygMIqp6A6Ek8HIrRyQ" crossorigin="anonymous"></script>
     <script type="text/javascript">
