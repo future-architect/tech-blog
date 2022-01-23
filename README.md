@@ -4,6 +4,10 @@
 * 静的サイトジェネレータ：Hexo
 * 分析：Google Analytics
 
+## ユーザプロフィールを追加する方法
+
+* _profile.yml に追加
+
 ## setup
 ### SNSカウントを表示させるために、Facebook開発者用のトークンが必要
 
