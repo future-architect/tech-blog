@@ -1,3 +1,4 @@
+---
 title: "Vue.js最初の難関、「props down, event up」を初心者にわかるように解説してみた"
 date: 2020/04/01 10:30:55
 postid: ""
@@ -10,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20200401/thumbnail.png
 author: 東郷聡志
-featured: true
 lede: "今回はVue.jsの最初の難関（だと思っている）「props down, event up」について、初心者が読んでもわかるような資料を用意してみようと思います。
 プロジェクトで独自のコンポーネントを作ったり、会社として用意しているコンポーネントの利用、改良ができるようになってもらいたいという思いから、その導入を解説しようということです。"
 ---

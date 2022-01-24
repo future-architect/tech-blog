@@ -1,3 +1,4 @@
+---
 title: "go-swaggerを用いたWebアプリケーション開発Tips19選"
 date: 2020/06/30 10:06:15
 postid: ""
@@ -11,7 +12,6 @@ category:
   - Programming
 thumbnail: /images/20200630/thumbnail.png
 author: 真野隼記
-featured: true
 lede: "業務でヘビーユーズしているgo-swaggerについての開発Tipsをまとめました。"
 
 ---

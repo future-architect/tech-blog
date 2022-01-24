@@ -1,3 +1,4 @@
+---
 title: "Slack×GASの日報テンプレBOTを実務に導入してみた"
 date: 2020/08/17 00:00:00
 postid: ""
@@ -10,7 +11,6 @@ category:
   - Infrastructure
 thumbnail: /images/20200817/thumbnail.png
 author: 仁木美来
-featured: false
 lede: "こんにちは。TIGメディアユニットの仁木です。Slackに投稿するための日報をBOT化・自動化したので自由研究企画に混ぜてもらい記事にすることにしました。毎日共通で書かなければいけないタイトルなどの固定項目やスケジュールの記載を自動化することで、作成時間を短縮し、重要な部分に時間を割けるようになりました"
 ---
 

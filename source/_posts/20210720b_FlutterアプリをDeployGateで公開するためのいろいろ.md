@@ -1,3 +1,4 @@
+---
 title: "FlutterアプリをDeployGateで公開するためのいろいろ"
 date: 2021/07/20 00:00:02
 postid: b
@@ -8,7 +9,6 @@ category:
   - Infrastructure
 thumbnail: /images/20210721b/thumbnail.png
 author: 澁川喜規
-featured: false
 lede: "Flutterで環境を一度作ってしまえば、Android StudiからAndroidエミュレータ でもiOSシミュレータでもどんどん起動できるので、デバッグはとてもやりやすいです。ですが、Flutterで作るということはスマートフォン向けのアプリなので実機テストもしたいですよね？ 今回はDeployGateを使うことになったのですが、FlutterとDeployGateそのものずばりな情報が見つからなかったので、その情報をまとめます。"
 ---
 
@@ -50,7 +50,7 @@ iOSは``ios/Runner/Info.plist``に次のタグのペアを書きます。
 
 適当に絵を描きました
 
-![](/images/20210721b/スクリーンショット_2021-07-19_19.28.14.png)
+<img src="/images/20210721b/スクリーンショット_2021-07-19_19.28.14.png" alt="適当な絵" loading="lazy">
 
 pngファイルをエクスポートして、assetsフォルダ以下におき、アイコンとスプラッシュのそれぞれで同じ画像を参照するようにします。
 
@@ -93,8 +93,9 @@ $ flutte pub run flutter_native_splash:create
 
 Android Studio上で実行すると、Androidエミュレータ上にインストールされるアイコンが変わりますし、起動画面も変わりました。
 
-![](/images/20210721b/スクリーンショット_2021-07-19_19.22.27.png)
-![](/images/20210721b/スクリーンショット_2021-07-19_19.24.19.png)
+<img src="/images/20210721b/スクリーンショット_2021-07-19_19.22.27.png" alt="Androidエミュレータ上のアイコン" loading="lazy">
+
+<img src="/images/20210721b/スクリーンショット_2021-07-19_19.24.19.png" alt="起動画面" loading="lazy">
 
 # DeployGate用のSDKの追加
 

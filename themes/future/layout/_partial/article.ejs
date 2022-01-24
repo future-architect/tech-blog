@@ -1,16 +1,15 @@
 <div class="row">
-  <main class="col-md-9 col-sm-9 blog-posts">
+  <main class="col-md-9 blog-posts">
     <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %> blog-item" itemscope itemprop="blogPost">
       <div class="article-inner">
         <% if (post.link || post.title){ %>
         <header class="article-header">
           <ul class="blog-info">
-            <%- post_author_link(post) %>
             <li class="blog-info-item"><%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY.MM.DD'}) %></li>
+            <%- post_author_link(post) %>
             <li class="blog-info-item"><%- partial('post/tag') %></li>
           </ul>
-          <%- partial('_partial/post/category') %>
-        </header>
+          </header>
         <% } %>
         <div class="article-entry" itemprop="articleBody">
           <% if (post.excerpt && index){ %>
@@ -29,20 +28,19 @@
           <%- partial('social-button', {feed:false}) %>
           </section>
           <aside>
-            <section class="related-post margin-bottom-20 nav">
-              <h2>関連記事</h2>
+            <section class="related-post margin-bottom-40 nav">
+              <h2 id="related"><a href="#related" class="headerlink" title="関連記事"></a>関連記事</h2>
               <%- list_related_posts(post) %>
             </section>
-            <section class="featured-post margin-bottom-20 nav">
-              <h2>注目の記事</h2>
-              <%- partial('featured-post', {limit:4}) %>
+            <section class="reference-post margin-bottom-40 nav">
+              <%- list_reference_posts(post) %>
             </section>
           </aside>
         </footer>
       </div>
     </article>
   </main>
-  <aside class="col-md-3 col-sm-3 blog-sidebar">
+  <aside class="col-md-3 blog-sidebar">
     <%- partial('sidebar') %>
   </aside>
 </div>

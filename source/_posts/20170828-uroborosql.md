@@ -1,3 +1,4 @@
+---
 title: "uroboroSQL x Spring BootによるWebアプリケーション開発"
 date: 2017/08/28 12:00:00
 postid: ""
@@ -10,8 +11,6 @@ category:
   - Programming
 thumbnail: /images/20170828/thumbnail_20170828.jpg
 author: 星賢一
-featured: true
-
 lede: "弊社発のOSSプロダクト「uroboroSQL」をSpring Boot上で動かすサンプルアプリケーションを作ってみました。"
 -------------------------------------------------------------------------------------------------------
 

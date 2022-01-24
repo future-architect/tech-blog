@@ -1,13 +1,14 @@
+---
 title: "フューチャーでSlack Enterprise Gridの導入を進めた話"
 date: 2021/07/12 00:00:00
 postid: a
 tag:
   - Slack
+  - リモートワーク
 category:
   - Programming
 thumbnail: /images/20210712a/thumbnail.png
 author: 山上燦
-featured: false
 lede: "TIGの山上・村田です。いきなりですが、みなさんはコミュニケーションツール（チャットツール）何を使っていますでしょうか。フューチャーでは2020年のはじめに社内公式のチャットツールとしてSlack Enterprise Gridを導入しました"
 ---
 # はじめに

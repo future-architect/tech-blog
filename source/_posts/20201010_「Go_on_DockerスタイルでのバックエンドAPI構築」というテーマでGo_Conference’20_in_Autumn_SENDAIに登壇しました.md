@@ -1,3 +1,4 @@
+---
 title: "「Go on DockerスタイルでのバックエンドAPI構築」というテーマでGo Conference’20 in Autumn SENDAIに登壇しました"
 date: 2020/10/10 00:00:00
 postid: ""
@@ -6,12 +7,12 @@ tag:
   - GoConference
   - Docker
   - 登壇レポート
+  - カンファレンス
 category:
   - Programming
 thumbnail: /images/20201010/thumbnail.png
 author: 伊藤真彦
-featured: false
-lede: "TIGの伊藤真彦です先日[Go Conference’20 in Autumn SENDAI]に登壇させていただきました、リモート登壇の為残念ながら現地には行きませんでした。![image.png]発表資料はこちらです。"
+lede: "TIGの伊藤真彦です先日[Go Conference’20 in Autumn SENDAI]に登壇させていただきました、リモート登壇の為残念ながら現地には行きませんでした。発表資料はこちらです。"
 ---
 TIGの伊藤真彦です
 

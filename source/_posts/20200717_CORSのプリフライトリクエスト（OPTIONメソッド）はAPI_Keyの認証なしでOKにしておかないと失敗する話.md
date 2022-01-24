@@ -1,3 +1,4 @@
+---
 title: CORSのプリフライトリクエスト（OPTIONメソッド）はAPI Keyの認証なしでOKにしておかないと失敗する話
 date: 2020/07/17 00:00:00
 postid: ""
@@ -5,11 +6,12 @@ tag:
   - Go
   - Web
   - HTTP
+  - トラブルシュート
+  - CORS
 category:
   - Infrastructure
 thumbnail: /images/20200717/thumbnail.png
 author: 真野隼記
-featured: false
 lede: こんにちは、TIG DXユニットの真野です。この技術ブログの運営や、ここ数年は産業向けのIoT（例えば工場IoTやモビリティIoT）を行っています。本エントリーのネタを書くキッカケになったのは、[GCP連載#7 GCPのData Transfer Serviceを使って簡単にS3からBigQueryにデータ転送をしてみる]多芸な加部さんと某IoTな案件のバックエンドの接続テストをしているときに気がついたネタです。
 ---
 # はじめに

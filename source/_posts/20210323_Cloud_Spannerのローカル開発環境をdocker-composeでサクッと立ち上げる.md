@@ -1,3 +1,4 @@
+---
 title: "Cloud Spannerのローカル開発環境をdocker-composeでサクッと立ち上げる"
 date: 2021/03/23 00:00:00
 postid: ""
@@ -10,7 +11,6 @@ category:
   - Infrastructure
 thumbnail: /images/20210323/thumbnail.png
 author: 齋場俊太朗
-featured: true
 lede: "Cloud Spannerのローカル開発環境をdocker-composeでサクッと立ち上げる手順を紹介します。Cloud Spannerを用いた開発を行う方、また興味あるから少し触ってみたいという方にもおすすめです。簡単にCloud Spanner について紹介させていただきます。"
 ---
 # はじめに

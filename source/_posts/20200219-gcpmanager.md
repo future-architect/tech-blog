@@ -1,3 +1,4 @@
+---
 title: "GCP連載#10 Terraform ではなくCloud Deployment Manager を使ってみよう"
 date: 2020/02/19 10:05:30
 postid: ""
@@ -7,7 +8,6 @@ tag:
 category:
   - Infrastructure
 author: 前原応光
-featured: false
 lede: "普段は、Terraform を使っているのですが、ふとCloud Deployment Manager を使ったことないことに気づきました。そこで、Cloud Deployment Manager について紹介したいと思います。"
 ---
 ## はじめに

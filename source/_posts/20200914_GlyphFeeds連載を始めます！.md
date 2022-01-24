@@ -1,3 +1,4 @@
+---
 title: "GlyphFeeds連載を始めます！"
 date: 2020/09/14 00:00:00
 postid: ""
@@ -10,7 +11,6 @@ category:
   - Business
 thumbnail: /images/20200914/thumbnail.jpg
 author: 山上燦
-featured: false
 lede: "はじめまして。2012年新卒入社の山上です。TIGメディアユニットのリーダーを務めています。AWSをフル活用したコンテンツマネジメントシステム（以下、CMS）を中核に持つクラウドサービス「GlyphFeeds」を開発し、様々なクライアントへの導入をリードしています。今回の連載では、GlyphFeedsの技術について紹介していきます。"
 ---
 

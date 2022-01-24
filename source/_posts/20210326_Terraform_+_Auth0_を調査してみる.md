@@ -1,3 +1,4 @@
+---
 title: "Terraform + Auth0 を調査してみる"
 date: 2021/03/26 00:00:00
 postid: ""
@@ -8,7 +9,6 @@ category:
   - Infrastructure
 thumbnail: /images/20210326/thumbnail.png
 author: 小林澪司
-featured: false
 lede: "アルバイトの小林です。案件で認証プラットフォームである[Auth0]を利用しています。Auth0がHashiCorpとのパートナーシップを結び、TerraformでAuth0リソースの管理が可能となりました。"
 ---
 TIG DXユニット [^1] アルバイトの小林です。

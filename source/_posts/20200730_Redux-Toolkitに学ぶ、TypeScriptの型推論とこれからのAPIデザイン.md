@@ -1,13 +1,15 @@
+---
 title: Redux-Toolkitに学ぶ、TypeScriptの型推論とこれからのAPIデザイン
 date: 2020/07/30 00:00:00
 postid: ""
 tag:
   - TypeScript
+  - Redux
+  - React
 category:
   - Programming
 thumbnail: /images/20200730/thumbnail.png
 author: 澁川喜規
-featured: true
 lede: "TypeScriptは、JavaScriptのさまざまなフリーダムな書き方を受け入れ、漸進的な型付けを行えるようにするという~~狂った~~高難易度な目的のために作成されているのですが、そろそろ、TypeScriptファーストで、利用者にとって使いやすいAPIみたいな方向性で使われることも増えるのでは、という思いを強く持ちました。「"
 ---
 

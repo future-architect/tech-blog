@@ -1,3 +1,4 @@
+---
 title: "Good First Issue から OSS へコントリビュートしてみた"
 date: 2021/02/05 00:00:00
 postid: ""
@@ -9,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20210205/thumbnail.png
 author: 多賀聡一朗
-featured: true
 lede: "TIG DXチームの多賀です。[Good First Issue] にコントリビュートしてみたので、経験談について記載してみます。[Good First Issue]で定義されており、初めてのコントリビュートに向いている Issue につけられるラベルです。"
 ---
 ## 概要

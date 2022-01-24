@@ -1,3 +1,4 @@
+---
 title: "Go Tips連載3: ファイルを扱うちょっとしたスクリプトをGoで書くときのTips5選"
 date: 2020/05/20 09:43:46
 postid: ""
@@ -8,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20200520/thumbnail.png
 author: 辻大志郎
-featured: false
 lede: "筆者は普段ファイルを扱って何か簡単な処理をする場合は、シェルスクリプトで実装することが多かったのですが、実は Go で書くと簡単に、かつ Testable でスクリプトちっくに書くことでできて、幸せになるんじゃないか？と最近考えています。"
 ---
 

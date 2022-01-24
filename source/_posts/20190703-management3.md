@@ -1,3 +1,4 @@
+---
 title: "マネージャーがうれしいRedmineデータのグラフ表示方法を公開します！！（Metabase編） "
 date: 2019/07/03 09:00:00
 postid: ""
@@ -11,7 +12,6 @@ category:
   - Management
 thumbnail: /images/20190703/photo_20190703_01.jpeg
 author: 近藤雅章
-featured: false
 lede: "OSSのBIツールであるMetabaseを利用して、Redmineのデータをグラフ表示する方法を紹介します"
 ---
 <img src="/images/20190703/photo_20190703_01.jpeg" loading="lazy">

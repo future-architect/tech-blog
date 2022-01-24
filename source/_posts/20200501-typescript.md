@@ -1,3 +1,4 @@
+---
 title: "TypeScriptでReactをやるときは、小さいアプリでもReduxを最初から使ってもいいかもねというお話"
 date: 2020/05/01 10:19:34
 postid: ""
@@ -10,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20200501/thumbnail.png
 author: 澁川喜規
-featured: true
 lede: "プロダクションコードでたくさんRedux周りにもreducerなどを実装しなくてはいけなくなったときの次のステップとして、Redux Toolkitの紹介をします。"
 ---
 

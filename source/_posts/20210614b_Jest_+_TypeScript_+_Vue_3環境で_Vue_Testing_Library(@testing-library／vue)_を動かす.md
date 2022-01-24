@@ -1,3 +1,4 @@
+---
 title: "Jest + TypeScript + Vue 3環境で Vue Testing Library(@testing-library／vue) を動かす"
 date: 2021/06/14 00:00:01
 postid: b
@@ -9,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20210614b/thumbnail.png
 author: 中川旭
-featured: false
 lede: "フロントエンド記事連載の1記事目です。Vue Testing LibraryはVue.js公式のライブラリであるvue-test-utilをベースとする、DOM Testing LibraryのVue.js用拡張です。Vue Testing Libraryを用いると、Vue.js公式ライブラリであるvue-test-utilと比較して内部構造を意識せずにテストを作成できます。"
 ---
 

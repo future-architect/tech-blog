@@ -1,3 +1,4 @@
+---
 title: "FlutterでMONETマーケットプレイスAPIを使ってみた"
 date: 2021/05/17 00:00:00
 postid: a
@@ -10,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20210517a/thumbnail.png
 author: 越島亮介
-featured: false
 lede: "MONETマーケットプレイスで購入したAPIとFlutterを使って簡単なスマホアプリを作ってみます。"
 ---
 # はじめに

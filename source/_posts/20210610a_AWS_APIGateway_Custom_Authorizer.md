@@ -1,3 +1,4 @@
+---
 title: "AWS APIGateway Custom Authorizer入門"
 date: 2021/06/10 00:00:00
 postid: a
@@ -8,7 +9,6 @@ category:
   - 認証認可
 thumbnail: /images/20210610a/thumbnail.png
 author: 李光焄
-featured: false
 lede: "今回は流行りの認証プロトコルであるOpenID ConnectとOAuth2.0におけるAuthorizerについて話そうと思います。AuthorizerとはAWS APIGatewayにある機能の一つで、外からAPIサーバに送られてくるリクエストを検証することにより、アクセスを制御する機能です。"
 ---
 こんにちは。TIG/DXユニットのLEEです。フューチャーではここ数年、主に認証認可関係の設計や開発などを担当しております。
@@ -17,7 +17,7 @@ lede: "今回は流行りの認証プロトコルであるOpenID ConnectとOAuth
 
 # Authorizerとは
 
-!["カスタムオーソライザの動作フロー"](/images/20210610a/custom-auth-workflow.png)
+<img alt="カスタムオーソライザの動作フロー" src="/images/20210610a/custom-auth-workflow.png" loading="lazy">
 
 [Authorizer](https://docs.aws.amazon.com/ja_jp/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html)とはAWS APIGatewayにある機能の一つで、外からAPIサーバに送られてくるリクエストを検証することにより、アクセスを制御する機能です。OAuth2.0のプロトコルにおいては、AuthorizerはJWTなどTokenを検証することで、APIサーバ、つまり `ResourceServer` を保護する役割を持っています。
 

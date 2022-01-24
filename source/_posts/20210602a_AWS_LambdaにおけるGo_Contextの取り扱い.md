@@ -9,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20210602a/thumbnail.png
 author: 伊藤真彦
-featured: false
 lede: "サーバーレス連載の3記事目ですTIGの伊藤真彦です。GoでLambdaにデプロイするコードを書くにあたり、aws-lambda-goを利用できます。その際のtips紹介記事です。"
 ---
 
@@ -22,9 +21,7 @@ GoでLambdaにデプロイするコードを書くにあたり、[aws-lambda-go]
 
 # AWS LambdaにおけるGo Contextの取り扱い
 
-<img src="/images/20210602a/lambda-39473.png" alt="" width="300" height="310" loading="lazy">
-
-<a href="https://pixabay.com/ja/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=39473">Clker-Free-Vector-Images</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=39473">Pixabay</a>からの画像
+<img src="/images/20210602a/lambda-39473.png" alt="" title="Clker-Free-Vector-ImagesによるPixabayからの画像" width="300" height="310" loading="lazy">
 
 ```go main.go
 package main

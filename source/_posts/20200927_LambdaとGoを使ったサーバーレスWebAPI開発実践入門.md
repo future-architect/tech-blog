@@ -1,3 +1,4 @@
+---
 title: "LambdaとGoを使ったサーバーレスWebAPI開発実践入門"
 date: 2020/09/27 00:00:00
 postid: ""
@@ -7,11 +8,11 @@ tag:
   - Serverless
   - go-swagger
   - Terraform
+  - 入門
 category:
   - Programming
 thumbnail: /images/20200927/thumbnail.png
 author: 辻大志郎
-featured: false
 lede: "こんにちは、TIGの辻です。業務アプリケーションのビジネスロジックをサーバーレスで実装することも増えてきました。[AWSサービストリガによるLambda関数起動]の記事にもあるようにAPI GatewayとLambda関数を組み合わせてHTTPサーバを提供することも容易にできます。バックエンドのWebAPIをLambda関数で動かすユースケースがよくあるパターンです。Lambda関数とアプリケーションロジックの実装は密結合になりやすいですが、HTTPサーバで動作するように実装して、Lambda関数として組み込むと、従来のHTTPサーバを実装するノウハウを活かしつつ、サーバレスで動作するバックエンドのWebAPIを構築できます。本記事ではGoを用いてサーバレスなWebAPIサーバをAWS上に1から構築するチュートリアルです。"
 ---
 # はじめに
@@ -21,6 +22,10 @@ lede: "こんにちは、TIGの辻です。業務アプリケーションのビ�
 業務アプリケーションのビジネスロジックをサーバーレスで実装することも増えてきました。[AWSサービストリガによるLambda関数起動](/articles/20200722/)の記事にもあるようにAPI GatewayとLambda関数を組み合わせてHTTPサーバを提供することも容易にできます。バックエンドのWebAPIをLambda関数で動かすユースケースがよくあるパターンです。Lambda関数とアプリケーションロジックの実装は密結合になりやすいですが、HTTPサーバで動作するように実装して、Lambda関数として組み込むと、従来のHTTPサーバを実装するノウハウを活かしつつ、サーバレスで動作するバックエンドのWebAPIを構築できます。
 
 本記事ではGoを用いてサーバレスなWebAPIサーバをAWS上に1から構築するチュートリアルです。
+
+go-swaggerに閉じた入門記事として、以下もおすすめです。
+
+* [go-swaggerでhello world | フューチャー技術ブログ](/articles/20200824/)
 
 # 概要
 

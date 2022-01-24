@@ -1,3 +1,4 @@
+---
 title: "Buildpacksのビルダーをスクラッチから作ってみる"
 date: 2020/10/02 00:00:00
 postid: ""
@@ -12,7 +13,6 @@ category:
   - Infrastructure
 thumbnail: /images/20201002/thumbnail.png
 author: 澁川喜規
-featured: false
 lede: "TIGの渋川です。[CNCF連載]の第4回は、CNCFのSandboxプロジェクトのBuildpacksについて紹介します。* https://buildpacks.io"
 ---
 <img src="/images/20201002/buildpacks-horizontal-color.png" loading="lazy">

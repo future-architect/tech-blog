@@ -1,3 +1,4 @@
+---
 title: "ServiceNow+Terraform(+Go) によるインフラ構築自動化"
 date: 2020/04/16 21:30:49
 postid: ""
@@ -10,7 +11,6 @@ category:
   - Infrastructure
 thumbnail: /images/20200416/thumbnail.png
 author: 西田好孝
-featured: true
 lede: "さて、皆さん、ServiceNow(以降：SNOW)というSaaSはご存知でしょうか？Salesforceと非常によく似ておりますが、米国発の SaaS, aPaaS サービスです。米国では割とポピュラーなサービスとして位置づけられていますが、日本ではまだまだです。が、伸び率は今年度は4割近くと、利用ユーザがすごい勢いで伸びています。そんな中、お客様内でSNOWを利用していて、それと関連する領域をFutureが担当するケースも増えてくるかと思いますので、今回は本ブログでSNOWについて少しだけ紹介したいと思います。SNOW とは？の説明は、言葉だけだと概念過ぎてわかりづらいので、現状、私が直面している課題の解決案ベースで解説していきたいと思います。"
 ---
 

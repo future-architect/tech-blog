@@ -1,3 +1,4 @@
+---
 title: "Reduxを分かりやすく解説してみた"
 date: 2020/04/29 17:05:22
 postid: ""
@@ -10,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20200429/thumbnail.png
 author: 丸野大輔
-featured: true
 lede: "はじめまして、2019年4月入社_FRX_DigitalLibraryチームの丸野です。研修修了後PJにアサインされて約4ヶ月ほどReact.jsを使って開発を行ってきましたが、Reduxの理解にとても苦しみました。そこで今回はReduxの概要を噛み砕いて説明していきます。同じ悩みを持つ人の理解の助けになればと思います。"
 ---
 
@@ -33,7 +33,7 @@ Reduxとは、React.jsで使用するstateつまりアプリケーションの�
 簡単にReduxの概念の下記に図式化してみました
 
 
-<img src="/images/20200429/1.png" loading="lazy">
+<img src="/images/20200429/1.png" alt="Redux概念図" loading="lazy">
 
 
 **State**：アプリケーションの状態
@@ -47,7 +47,7 @@ Reduxとは、React.jsで使用するstateつまりアプリケーションの�
 ## ①ActionCreatorsによってActionを生成する
 * ユーザーのインプットによってComponent上からAction作成依頼が飛びActionCreatorでActionが作成されます
 
-<img src="/images/20200429/2.png" class="img-small-size" loading="lazy">
+<img src="/images/20200429/2.png" alt="Action作成" class="img-small-size" loading="lazy">
 
 
 * 今回はStateの更新を目的としたActionを想定いたします
@@ -83,7 +83,7 @@ import { testFunctionA } from "testActionCreator";
 
 ## ②Actionをdispatchする
 
-<img src="/images/20200429/3.png" class="img-small-size" loading="lazy">
+<img src="/images/20200429/3.png" alt="Actionのディスパッチ" class="img-small-size" loading="lazy">
 
 
 * Actionを生成するだけではStore内のStateを更新することは出来ません

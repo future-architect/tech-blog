@@ -1,3 +1,4 @@
+---
 title: "LambdaをカスタムDockerランタイムで開発する方法"
 date: 2021/09/14 00:00:00
 postid: a
@@ -12,7 +13,6 @@ category:
   - Programming
 thumbnail: /images/20210914a/thumbnail.png
 author: 伊藤真彦
-featured: false
 lede: "普段からAWS Lambdaにはお世話になっているのですが、初めてカスタムランタイムを動かす仕事が舞い込んできました。AWS Lambdaでは下記のランタイムがサポートされています。"
 ---
 

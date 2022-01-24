@@ -1,3 +1,4 @@
+---
 title: "静的解析によるInvalidなAWS Lambda関数シグネチャの検知"
 date: 2021/06/03 00:00:00
 postid: a
@@ -5,11 +6,11 @@ tag:
   - Go
   - Lambda
   - Linter
+  - 静的解析
 category:
   - Programming
 thumbnail: /images/20210603a/thumbnail.jpg
 author: 辻大志郎
-featured: false
 lede: です。本記事では[AWS Lambda]の関数シグネチャを静的解析することで、より安全にAWS Lambdaを実装する方法を紹介します。"
 ---
 
@@ -91,7 +92,7 @@ func HandleInvalid(ctx context.Context) int {
 
 答えは "実行時エラー" になります。AWSのコンソールから実行すると以下のようなエラーメッセージが出力されます。
 
-![](/images/20210603a/image.png)
+<img src="/images/20210603a/image.png" alt="実行時エラー表示" loading="lazy">
 
 ## 静的解析による関数シグネチャチェック
 

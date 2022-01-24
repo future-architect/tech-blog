@@ -1,13 +1,14 @@
+---
 title: "AWS Datalake Hands-on(2019 May)メモ"
 date: 2019/07/02 09:00:00
 postid: ""
 tag:
   - AWS
   - データレイク
+  - ハンズオン
 category:
   - Infrastructure
 author: 柳澤隆太郎
-featured: false
 lede: "あるプロジェクトでデータ分析基盤を開発することになり、データレイクを中心としたソリューションについて学ぶためにAWS Datalake Hands-onに参加してきました"
 ---
 

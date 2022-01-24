@@ -3,6 +3,7 @@
 const fetch = require('sync-fetch');
 const {saveCache, pocket, hatebu, fb, tw, setTwitterCnt, setFacebookCnt, setHatebuCnt, setPocketCnt, getSNSCnt} = require('./lib/sns');
 const BEFORE_DATE = 14; // N日前までさかのぼってキャッシュ更新
+const FETCH_DISABLE = process.env.FETCH_DISABLE === "true";
 let [currentPocket, currentHatebu, currentFb, currentTw] = [{}, {}, {}, {}];
 
 // キャッシュ永続化
@@ -100,6 +101,10 @@ hexo.extend.helper.register("totalSNSCnt", url => {
 const fetchableDate = url => {
   if (url && url.indexOf("/page/") > 0) {
     // ページングのSNS数は常に取得しない
+    return false;
+  }
+
+  if (FETCH_DISABLE) {
     return false;
   }
 

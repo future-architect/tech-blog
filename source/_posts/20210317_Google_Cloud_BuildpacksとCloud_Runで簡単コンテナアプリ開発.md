@@ -1,3 +1,4 @@
+---
 title: "Google Cloud BuildpacksとCloud Runで簡単コンテナアプリ開発"
 date: 2021/03/17 00:00:00
 postid: ""
@@ -11,7 +12,6 @@ category:
   - Programming
 thumbnail: /images/20210317/thumbnail.png
 author: 伊藤太斉
-featured: false
 lede: "みなさん、コンテナを利用してアプリケーション開発していますか？最近は新規開発になると大体アーキテクチャを検討する段階で「アプリケーションをコンテナ化するか」と話題になるのではないでしょうか？単純にコンテナをデプロイして利用するだけならまだしも、Kubernetesをベースとしてアプリケーションを動かすとなると..."
 ---
 こんにちは。TIGの[伊藤太斉](https://twitter.com/kaedemalu)です。
@@ -38,8 +38,7 @@ lede: "みなさん、コンテナを利用してアプリケーション開発�
 
 CN Buildpacksについて実際に検証を行っている記事もありますので、こちらもご覧ください。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201002/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20201002%2F&key=42622142e53a4cc5ab36703bcee5415f"></a></div></div>
-
+* [Buildpacksのビルダーをスクラッチから作ってみる | フューチャー技術ブログ](/articles/20201002/)
 
 ## 環境について
 - Dockerがインストールされていること

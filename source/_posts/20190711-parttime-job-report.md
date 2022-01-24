@@ -1,3 +1,4 @@
+---
 title: "アルバイト生から見たフューチャーのTIG DXユニット"
 date: 2019/07/12 09:00:00
 postid: ""
@@ -8,7 +9,6 @@ tag:
 category:
   - Culture
 author: 棚井龍之介
-featured: false
 lede: "アルバイトの視点から見た「Future ってこんな会社なんだ」について紹介いたします。"
 ---
 

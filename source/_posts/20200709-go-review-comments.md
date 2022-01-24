@@ -1,3 +1,4 @@
+---
 title: "GoでWebアプリ開発時にあるあるだったレビューコメント"
 date: 2020/07/09 11:09:27
 postid: ""
@@ -9,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20200709/thumbnail.png
 author: 真野隼記
-featured: true
 lede: "最近Goで主にバックエンドのWebAPIや、AWS Lambdaで動くETLアプリ、たまにCLIツールを開発する時に、2回以上同じ指摘したコメントをまとめてます。Go言語特有ぽいところを中心にしています。レビュイーのスキルセットは.."
 ---
 

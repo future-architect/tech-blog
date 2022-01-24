@@ -1,3 +1,4 @@
+---
 title: "Azure Event Hubs の EventProcessorClientを利用した Consumer 実装"
 date: 2021/01/29 00:00:00
 postid: ""
@@ -8,8 +9,7 @@ category:
   - Programming
 thumbnail: /images/20210129/thumbnail.png
 author: 多賀聡一朗
-featured: false
-lede: "Azure が提供されている Event Hubs の Consumer 処理実装の EventProcessorClient について調査する機会があったため、整理した内容を公開いたします。![EventHubs_logo.png]> [Azure アーキテクチャ アイコン] からの画像"
+lede: "Azure が提供されている Event Hubs の Consumer 処理実装の EventProcessorClient について調査する機会があったため、整理した内容を公開いたします。EventHubs_logo.png> Azure アーキテクチャ アイコン"
 ---
 ## 概要
 

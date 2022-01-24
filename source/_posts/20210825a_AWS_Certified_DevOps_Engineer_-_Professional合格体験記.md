@@ -1,14 +1,15 @@
+---
 title: "AWS Certified DevOps Engineer - Professional合格体験記"
 date: 2021/08/25 00:00:00
 postid: a
 tag:
   - AWS
   - 合格記
+  - DevOps
 category:
-  - Infrastructure
+  - DevOps
 thumbnail: /images/20210825a/thumbnail.png
 author: 伊藤真彦
-featured: false
 lede: "TIGの伊藤真彦です。先日AWS Certified DevOps Engineer – Professionalを受験し合格できました。これにて専門知識以外はコンプリートしました、Machine learning specialtyも合格しているので7冠です。"
 ---
 TIGの伊藤真彦です。

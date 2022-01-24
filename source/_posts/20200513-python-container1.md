@@ -5,11 +5,11 @@ postid: ""
 tag:
   - Docker
   - Python
+  - コンテナビルド
 category:
   - Infrastructure
 thumbnail: /images/20200513/thumbnail.png
 author: 澁川喜規
-featured: true
 lede: "Pythonで書かれたアプリケーションをDockerイメージにする堅い方法の紹介です。イメージサイズを少しでも削ろう！とかではなくて実用性重視の方向です。今回は第一弾ということで、Debianベースのイメージを使う方法を紹介します。"
 ---
 Pythonで書かれたアプリケーションをDockerイメージにする堅い方法の紹介です。イメージサイズを少しでも削ろう！とかではなくて実用性重視の方向です。今回は第一弾ということで、Debianベースのイメージを使う方法を紹介します。

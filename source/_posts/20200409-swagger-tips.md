@@ -1,3 +1,4 @@
+---
 title: "スキーマファースト開発のためのOpenAPI（Swagger）設計規約"
 date: 2020/04/09 10:38:04
 postid: ""
@@ -12,7 +13,6 @@ category:
   - Programming
 thumbnail: /images/20200409/thumbnail.png
 author: 亀井隆徳
-featured: true
 lede: "みなさん、Swagger使ってますか？本記事では実際にSwaggerのスキーマ定義を設計していく上で取り決めた規約について書いてみたいと思います。"
 
 ---

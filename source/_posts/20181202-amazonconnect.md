@@ -1,12 +1,14 @@
+---
 title: "AmazonConnect BootCampセッションでハンズオン受けてきた話"
 date: 2018/12/02 14:21:59
 postid: ""
 tag:
   - AWS
+  - ハンズオン
+  - コールセンター
 category:
   - Infrastructure
 author: 市川諒
-featured: false
 lede: "AmazonConnect BootCampセッションでハンズオン受けた知識を活かし、実際にコールセンターを作ってみました"
 ---
 

@@ -1,3 +1,4 @@
+---
 title: "Goのデバッグ環境 on VSCode"
 date: 2020/11/17 00:00:00
 postid: ""
@@ -5,11 +6,11 @@ tag:
   - Go
   - デバッグ
   - VSCode
+  - 環境構築
 category:
   - Programming
 thumbnail: /images/20201117/thumbnail.png
 author: 富山龍之介
-featured: true
 lede: "私の使用するテキストエディタはVim一択でしたが、最近はVSCodeに浮気気味です。（言わずもがなVimプラグインは入れていますが）今回はVSCodeでGo言語用のデバッグ環境をテーマに執筆してみたいと思います！"
 ---
 <img src="/images/20201117/image.png" loading="lazy">
@@ -194,13 +195,12 @@ RUNコンソールの`VARIABLES`部分にて、ブレークポイントで設定
 
 VSCodeのGo周りでは多賀さんの記事もオススメです。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201117/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20201117%2F&amp;key=eed90a27f7b47e9333aee373cceb6203&amp;iframe=card-small"></a></div></div>
+* [Goのデバッグ環境 on VSCode | フューチャー技術ブログ](/articles/20201117/)
 
 市川さんの記事のVSCodeの拡張機能の共有方法すると便利です。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200828/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20200828%2F&amp;key=eed90a27f7b47e9333aee373cceb6203&amp;iframe=card-small"></a></div></div>
+* [チームで推奨するVSCode拡張機能を共有するtips | フューチャー技術ブログ](/articles/20200828/)
 
-<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 # おわりに
 これでデバッグ用にPrint文を埋め込んだままcommitしてしまう自分にオサラバです👋

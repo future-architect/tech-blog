@@ -1,3 +1,4 @@
+---
 title: "Terraform Associate合格記"
 date: 2020/06/29 10:03:42
 postid: ""
@@ -8,7 +9,6 @@ category:
   - Infrastructure
 thumbnail: /images/20200629/thumbnail.png
 author: 伊藤太斉
-featured: false
 lede: "5/24に受験したHashiCorpから出た資格の1つである、Terraform Associateを受験したときの記事になります。結果としては無事に合格したので、受験前、そして受験当日のことを今回取り扱おうと思います。"
 ---
 

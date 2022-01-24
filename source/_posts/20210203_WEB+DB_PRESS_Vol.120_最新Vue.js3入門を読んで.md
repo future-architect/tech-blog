@@ -1,3 +1,4 @@
+---
 title: "WEB+DB PRESS Vol.120 最新Vue.js3入門を読んで"
 date: 2021/02/03 00:00:00
 postid: ""
@@ -5,11 +6,11 @@ tag:
   - Vue.js
   - Vue3
   - 書籍
+  - 書評
 category:
   - Programming
 thumbnail: /images/20210203/thumbnail.jpg
 author: 久保勇暉
-featured: false
 lede: "私はフロントエンドエンジニアとして約1年くらいVue2でのフロントエンド開発を行っています。そんなVue3を全く触ったことにのないエンジニアが読んだ｢WEB+DB PRESS Vol.120｣に掲載されている｢最新Vue.js3入門｣の記事感想文となります｡ "
 ---
 # はじめに
@@ -178,6 +179,4 @@ Vue3の新機能である <teleport> を試しましょう
 * https://gihyo.jp/magazine/wdpress/archive/2021/vol120
 
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20201013/index.html" data-iframely-url="//cdn.iframe.ly/SAxxrkF?iframe=card-small"></a></div></div>
-
-<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+* [2020年秋にVue.jsのアプリケーションを作るなら、押さえておきたい5つのポイント | フューチャー技術ブログ](/articles/20201013/)

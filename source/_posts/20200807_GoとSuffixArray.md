@@ -1,3 +1,4 @@
+---
 title: GoとSuffixArray
 date: 2020/08/07 00:00:00
 postid: ""
@@ -9,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20200807/thumbnail.png
 author: 辻大志郎
-featured: true
 lede: "Go は標準ライブラリが充実しているとよく言われます。標準ライブラリだけで、HTTP サーバを作れたり、暗号化処理や、JSON や CSV といったデータ形式を扱うことができます"
 mathjax: true
 ---

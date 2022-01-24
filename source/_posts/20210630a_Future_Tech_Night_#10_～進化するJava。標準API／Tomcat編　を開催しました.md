@@ -1,3 +1,4 @@
+---
 title: "Future Tech Night #10 ～進化するJava。標準API／Tomcat編　を開催しました"
 date: 2021/06/30 00:00:00
 postid: a
@@ -11,7 +12,6 @@ category:
   - Programming
 thumbnail: /images/20210630a/thumbnail.jpg
 author: 藤野圭一
-featured: false
 lede: "こんにちは。TIG藤野です。2021/5/21を開催しました。私は、Tomcatコミッタがお送りするちょっとマニアックなTomcatのコンフィグレーション10選というタイトルでお話させていただきました。"
 ---
 ## はじめに

@@ -1,3 +1,4 @@
+---
 title: "CloudNative Days Spring 2021 ONLINEに登壇しました"
 date: 2021/03/13 00:00:00
 postid: ""
@@ -6,11 +7,11 @@ tag:
   - OpenPolicyAgent
   - CNCF
   - Policy-as-Code
+  - カンファレンス
 category:
   - Infrastructure
 thumbnail: /images/20210313/thumbnail.png
 author: 伊藤太斉
-featured: false
 lede: "こんにちは。TIGの伊藤太斉です。今回は先日開催されました、CloudNative Days Spring 2021 ONLINEに登壇しましたので、その内容について書いていきます。はじめにイベントの概要について簡単に説明します。"
 ---
 こんにちは。TIGの伊藤太斉です。
@@ -157,6 +158,4 @@ OPAはリソースを使用する範囲を決めるという文脈ではかな�
 
 ## オススメの連載です
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://future-architect.github.io/articles/20200928/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ffuture-architect.github.io%2Farticles%2F20200928&amp;key=42622142e53a4cc5ab36703bcee5415f"></a></div></div>
-
-<script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+* [CNCF連載始めます | フューチャー技術ブログ](/articles/20200928/)

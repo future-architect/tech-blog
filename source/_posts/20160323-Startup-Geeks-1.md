@@ -1,3 +1,4 @@
+---
 title: 'Startup_Geeks#1'
 date: 2016-03-23 13:49:26
 postid: ""
@@ -7,7 +8,6 @@ category:
   - Culture
 thumbnail: /images/20160323/thumbnail_20160323.png
 author: 小川達
-featured: false
 ---
 Startup Geeks #1開催報告
 こんにちわ。FutureArchitectの小川です。

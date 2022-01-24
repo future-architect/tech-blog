@@ -1,16 +1,16 @@
+---
 title: "【Google Chat API】Incoming Webhook を Go で触ってみる"
-date: 2021/09/13 00:00:00z
+date: 2021/09/13 00:00:00
 postid: a
 tag:
   - Go
   - BOT
-  - GSuite
+  - GoogleWorkspace
   - GoogleChat
 category:
   - Programming
 thumbnail: /images/20210913a/thumbnail.png
 author: 山本雄樹
-featured: false
 lede: "こんにちは、Engineer Campにてインターン中の山本です。ブログへの投稿は２本目になります。Google Chat APIに関しての記事となります。業務でGoogle Chat上で通知システムを作成する必要があったのですが、実装するにあたりいくつかのハードルがありました。"
 ---
 # はじめに

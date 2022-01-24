@@ -1,3 +1,4 @@
+---
 title: "go-swaggerでhello world"
 date: 2020/08/24 00:00:00
 postid: ""
@@ -9,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20200824/thumbnail.png
 author: 伊藤真彦
-featured: false
 lede: "go-swaggerの具体的な実装方法を紹介します。はじめにgo-swaggerのインストールを行います"
 ---
 
@@ -259,6 +259,7 @@ go run gen/cmd/factory-server/main.go --host 0.0.0.0 --port 3000
 
 # go-swaggerの関してはこちらの記事もおすすめです
 
+* [LambdaとGoを使ったサーバーレスWebAPI開発実践入門](/articles/20200927/)
 * [go-swaggerを用いたWebアプリケーション開発Tips19選](/articles/20200630/)
 * [スキーマファースト開発のためのOpenAPI（Swagger）設計規約](/articles/20200409/)
 * [WAFとして go-swagger を選択してみた](/articles/20190814/)

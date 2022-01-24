@@ -6,11 +6,11 @@ tag:
   - HTTP
   - Web
   - WebAPI
+  - 設計
 category:
   - Infrastructure
 thumbnail: /images/20210518a/thumbnail.jpg
 author: 真野隼記
-featured: true
 lede: "RESTfullとかRESTishな方針でWebAPIの横断検索を設計する際にチーム内で方針について議論したやり取りの備忘記事です。"
 ---
 ## はじめに
@@ -30,9 +30,7 @@ RESTfullとかRESTishな方針でWebA PIの横断検索を設計する際にチ�
 
 ## 背景と論点
 
-<img src="/images/20210518a/choice-2692575_640.jpg" alt="アイキャッチ" width="640" height="237" loading="lazy">
-
-> <a href="https://pixabay.com/ja/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2692575">Gerd Altmann</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2692575">Pixabay</a>からの画像
+<img src="/images/20210518a/choice-2692575_640.jpg" alt="アイキャッチ" title="Gerd AltmannによるPixabayからの画像" width="640" height="237" loading="lazy">
 
 やりたいことの背景です。
 
@@ -128,6 +126,13 @@ SEARCH自体はWebDAV（サーバー上のファイルを読み取りや編集�
 * https://httptoolkit.tech/blog/http-search-method/
 
 もし、本当にSEARCHが実現したとすると、この記事であるような議論が出ることもなくなると思いますので期待です。
+
+**2021.11.25追記**
+
+Queryメソッドについて記載がありましたので追記しました。
+
+* [新しいHTTPメソッド、QUERYメソッドの仕様 - ASnoKaze blog](https://asnokaze.hatenablog.com/entry/2021/11/09/231858)
+
 
 
 ## 結論

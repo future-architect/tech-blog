@@ -1,3 +1,4 @@
+---
 title: "エンプラ&オンプレでもAnsible導入成功したのでユーザー会で発表してきた"
 date: 2018/02/09 11:12:14
 postid: ""
@@ -5,11 +6,11 @@ tag:
   - Ansible
   - 登壇レポート
   - IaC
+  - DevOps
 category:
-  - Infrastructure
+  - DevOps
 thumbnail: /images/20180209/thumbnail_20180209.png
 author: 齋場俊太朗
-featured: true
 lede: "エンプラ&オンプレでもAnsible導入成功したのでユーザー会で発表してきた"
 ---
 エンプラ&オンプレでもAnsible導入成功したのでユーザー会で発表してきた
@@ -21,10 +22,12 @@ lede: "エンプラ&オンプレでもAnsible導入成功したのでユーザ�
 # 発表内容
 
 * 2017/8/28(月) 3社共同企画 Ansible 夏祭り
+
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/1HlAM9KhjgeejI" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/taroshun/3ansible" title="新卒3年目のぼくが、でぶおぷす???なインフラおじさん方にAnsibleを導入してみた" target="_blank">新卒3年目のぼくが、でぶおぷす???なインフラおじさん方にAnsibleを導入してみた</a> </strong> from <strong><a href="https://www.slideshare.net/taroshun" target="_blank">Shuntaro Saiba</a></strong> </div>
 
 
 * 2017/12/21(木) Ansible Night in Tokyo
+
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/BuEj51P21HL3yF" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/taroshun/3ojisanansible" title="新卒3年目のぼくが、でぶおぷす???なエンプラ金融PJにAnsibleを導入してみた" target="_blank">新卒3年目のぼくが、でぶおぷす???なエンプラ金融PJにAnsibleを導入してみた</a> </strong> from <strong><a href="https://www.slideshare.net/taroshun" target="_blank">Shuntaro Saiba</a></strong> </div>
 
 

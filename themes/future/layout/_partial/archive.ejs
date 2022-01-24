@@ -20,8 +20,8 @@
   <% } %>
 
     <aside>
-      <section>
-        <h2 class="bottom-content-header">人気記事</h2>
+      <section class="popular-articles">
+        <h2 id="popular" class="bottom-content-header"><a href="#popular" class="headerlink" title="人気記事"></a>人気記事</h2>
         <div class="margin-bottom-20 nav tabs">
           <input id="weekly" type="radio" name="tab_item" checked>
           <label tabindex="0" class="tab_item" for="weekly">週間</label>
@@ -30,23 +30,17 @@
           <input id="yearly" type="radio" name="tab_item">
           <label tabindex="0" class="tab_item" for="yearly">年間</label>
           <div class="tab_content" id="popular_weekly">
-            <div class="widget-wrap">
-              <%- popular_posts('weekly') %>
-            </div>
+            <%- popular_posts('weekly') %>
           </div>
           <div class="tab_content" id="popular_monthly">
-            <div class="widget-wrap">
-              <%- popular_posts('monthly') %>
-            </div>
+            <%- popular_posts('monthly') %>
           </div>
           <div class="tab_content" id="popular_yearly">
-            <div class="widget-wrap">
-              <%- popular_posts('yearly') %>
-            </div>
+            <%- popular_posts('yearly') %>
           </div>
         </div>
         <div class="blog-tags margin-bottom-20">
-          <h2 class="bottom-content-header">タグから記事を探す</h2>
+          <h2 id="searchbytag" class="bottom-content-header"><a href="#searchbytag" class="headerlink" title="タグから記事を探す"></a>タグから記事を探す</h2>
           <%- partial('../_widget/tag.ejs') %>
         </div>
       </section>

@@ -1,3 +1,4 @@
+---
 title: "Go Tips 連載7:【golangci-lint】lint issueを新たに作り出さないためのTips"
 date: 2020/05/25 09:30:35
 postid: ""
@@ -9,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20200525/top.png
 author: 佐藤尚至
-featured: false
 lede: "今回はgolangci-lintを取り上げます。Goのコード品質のベースラインを上げる目的でgolngci-lintというlintアグリゲーターを利用されているかたも多いかと思います。コードベースがlint issueのないクリーンな状態に保たれていることが望ましいのですが、必ずしもそういった状態を維持できるとはかぎりません。"
 ---
 

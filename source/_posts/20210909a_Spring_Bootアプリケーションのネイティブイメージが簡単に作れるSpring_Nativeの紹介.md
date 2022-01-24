@@ -1,3 +1,4 @@
+---
 title: "Spring Bootアプリケーションのネイティブイメージが簡単に作れるSpring Nativeの紹介"
 date: 2021/09/09 00:00:00
 postid: a
@@ -9,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20210909a/thumbnail.png
 author: 本田紘規
-featured: false
 lede: "こんにちは、2021年新卒入社の本田です。Spring Bootアプリケーションのネイティブイメージが簡単に作れる[Spring Native]について調べてみたので、それを紹介します。Spring NativeとはSpring Bootアプリケーションをほとんど変更することなく、ネイティブイメージを生成することを目指したプロジェクトです。ネイティブイメージの実行はJVMによる実行と比べて..."
 ---
 ## はじめに
@@ -141,5 +141,5 @@ GraalVMにはCommunity EditionとEnterprise Editonがあり、性能はEnterpris
 1. Spring Native Documentation, https://docs.spring.io/spring-native/docs/current/reference/htmlsingle/
 1. GraalVM https://www.graalvm.org/
 1. Toshiaki Maki, JSUG勉強会 2021年その1: Spring Nativeの紹介 #jsug, https://t.co/iRR5vaK7CX?amp=1
-1. きしだなおき、吉田真也、山田貴裕、蓮沼賢志、阪田浩一、前多賢太郎, みんなのJava, 技術評論社, 2020　
+1. きしだなおき、吉田真也、山田貴裕、蓮沼賢志、阪田浩一、前多賢太郎, みんなのJava, 技術評論社, 2020
 

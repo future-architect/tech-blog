@@ -1,3 +1,4 @@
+---
 title: "Go Tips連載2: Golandで環境変数をさっと貼る方法 "
 date: 2020/05/19 21:52:54
 postid: ""
@@ -9,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20200519/thumbnail.png
 author: 真野隼記
-featured: false
 lede: "今回はGoでアプリ開発するときにお世話になっている人が多い、GolandのTipsを紹介します。"
 ---
 

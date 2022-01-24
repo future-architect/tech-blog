@@ -1,3 +1,4 @@
+---
 title: "GCP Associate Cloud Engineer 合格記"
 date: 2021/06/25 00:00:00
 postid: a
@@ -8,7 +9,6 @@ category:
   - Infrastructure
 thumbnail: /images/20210625a/thumbnail.png
 author: 鈴木崇史
-featured: false
 lede: "初めまして。TIG所属の鈴木です。今回GCP認定資格のAssociate Cloud Engineerという資格を取得したので、その体験をブログにします。私は2020年10月に新卒入社し、GCPを使用した案件に携わってます。プログラミングなどIT経験はあったのですが、GCPをはじめとしたクラウド技術やインフラにあまり馴染みがなく、体系的に知識を習得する目的でこの資格を取得しました。"
 ---
 # 初めに
@@ -20,7 +20,7 @@ GCP認定資格のAssociate Cloud Engineerという資格を取得したので�
 
 クラウド初心者の方の参考になれば幸いです。
 
-![](/images/20210625a/bn4yy8ed_d05ba41e45d95bc3d98ec85ee8a62ecf44de3647b0db9109e3ded817fadef7a0_badge.png)
+<img src="/images/20210625a/bn4yy8ed_d05ba41e45d95bc3d98ec85ee8a62ecf44de3647b0db9109e3ded817fadef7a0_badge.png" alt="資格バッチ" loading="lazy">
 
 # Asociate Cloud Engineerとは？
 GCPで提供される各サービス(GCE, GKE, BigQuery...など）の基本的な使い方・使い所を問われる、GCP認定資格の中でもエントリーレベルの試験です。以下に公式の試験概要が記載されています。

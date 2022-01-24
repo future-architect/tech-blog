@@ -1,15 +1,16 @@
+---
 title: "ShellCheckでシェルスクリプトの品質を高めよう"
 date: 2021/03/29 00:00:00
 postid: ""
 tag:
   - ShellScript
-  - Linter
   - ShellCheck
+  - Linter
+  - 静的解析
 category:
   - Infrastructure
 thumbnail: /images/20210329/thumbnail.png
 author: 辻大志郎
-featured: true
 lede: "シェルスクリプト連載の第一弾です。シェルスクリプトは強力かつ便利で、いろいろなところで使われています。ただ、自由度が高い一方で、ちょっとしたミスを犯しやすく、かつミスに気づきにくい、ということも多いです。また、ミスに気づいたときには大きな影響が及んでいる、ということもあるでしょう。"
 ---
 

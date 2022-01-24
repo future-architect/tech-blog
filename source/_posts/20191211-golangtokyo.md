@@ -1,3 +1,4 @@
+---
 title: "golang.tokyoで発表してきました"
 date: 2019/12/11 13:10:53
 postid: ""
@@ -8,7 +9,6 @@ tag:
 category:
   - Programming
 author: 辻大志郎
-featured: false
 lede: "こんにちは。TIG の辻です。先日開催された golang.tokyo #28 に当社から2名、登壇しましたのでそのレポートをします。LT 景品で頂いた CNCF のキャラクターです。かわいいです。"
 ---
 

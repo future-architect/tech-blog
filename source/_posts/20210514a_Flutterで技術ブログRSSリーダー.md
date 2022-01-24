@@ -1,3 +1,4 @@
+---
 title: "Flutterで技術ブログRSSリーダー"
 date: 2021/05/14 00:00:01
 postid: a
@@ -8,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20210514a/thumbnail.png
 author: 真野隼記
-featured: false
 lede: "FlutterでRSSを用いてフューチャー技術ブログリーダーを作ろうと思います。"
 ---
 # はじめに

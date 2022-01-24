@@ -1,3 +1,4 @@
+---
 title: "CypressでAPIの実行、異常系のテストを行う"
 date: 2021/08/10 00:00:01
 postid: b
@@ -9,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20210810b/thumbnail.jpg
 author: 伊藤真彦
-featured: false
 lede: "フューチャー技術ブログでも何度か取り上げているCypressですが、私も最近触り始めました。今回取り上げたいテーマは、フロントエンドアプリケーションで、特定の画面に表示する情報をサーバーから取得する機能や、ボタンを押すとバックエンドサーバーなどにHTTPリクエストを送信するような機能が実装されている場合の話です。"
 ---
 

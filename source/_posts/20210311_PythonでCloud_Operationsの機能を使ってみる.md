@@ -1,3 +1,4 @@
+---
 title: "PythonでCloud Operationsの機能を使ってみる"
 date: 2021/03/11 00:00:00
 postid: ""
@@ -5,13 +6,13 @@ tag:
   - GCP
   - Python
   - OpenCensus
+  - OpenTelemetry
   - CloudOperations
   - CloudRun
 category:
   - Programming
 thumbnail: /images/20210311/thumbnail.png
 author: 澁川喜規
-featured: false
 lede: "DebuggerとProfilerを試してみます。本当は仕事で使っているGoでやってみようと思ったのですが、Debuggerのドキュメントをみたら、現時点でGoはまだ実験的サポートで..."
 ---
 

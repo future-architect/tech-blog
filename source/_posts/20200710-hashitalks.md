@@ -1,3 +1,4 @@
+---
 title: "HashiTalks: Japanに登壇しました"
 date: 2020/07/10 10:19:54
 postid: ""
@@ -9,7 +10,6 @@ category:
   - Infrastructure
 thumbnail: /images/20200710/thumbnail.png
 author: 伊藤太斉
-featured: false
 lede: "本記事の内容はHashiTalks: Japanに登壇したのでその時に話したことを書いていきます。大きめなイベントには初の登壇だったのでなかなかドキドキしましたが、なんとかやりきりました。"
 ---
 

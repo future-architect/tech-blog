@@ -1,3 +1,4 @@
+---
 title: "GKE Autopilotを触ってみた"
 date: 2021/03/18 00:00:00
 postid: ""
@@ -8,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20210318/thumbnail.jpg
 author: 関靖秀
-featured: false
 lede: "テーマは、2021年2月24日に公開されたGKE Autopilotです。この記事は、Kubernetesに触ったことがない方でもわかるように、最も簡単な構成で試してみました。Kubernetesを触ったことがない方にもみていただけるとありがたく思います。"
 ---
 # はじめに
@@ -41,9 +41,7 @@ GKE(Google Kubernetes Engine)とは、GoogleがGCPのプロダクトの一つと
 
 # GKE Autopilot
 
-<img src="/images/20210318/aircraft.jpg" loading="lazy">
-
-> <a href="https://pixabay.com/ja/users/fotosforyou_rk-2368449/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1327820">Ralph Klein</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1327820">Pixabay</a>からの画像
+<img src="/images/20210318/aircraft.jpg" alt="" title="Ralph KleinによるPixabayからの画像" loading="lazy">
 
 さて、ここからが本題です。
 

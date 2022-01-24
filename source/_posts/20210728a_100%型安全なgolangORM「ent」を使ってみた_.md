@@ -1,3 +1,4 @@
+---
 title: "100%型安全なgolangORM「ent」を使ってみた"
 date: 2021/07/28 00:00:00
 postid: a
@@ -8,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20210728a/thumbnail.png
 author: 宮崎将太
-featured: false
 lede: "golang ORM連載の2記事目となります。はじめまして、TIGの宮崎将太です。突然ですがみなさん、ORMは何を使用していますか？"
 ---
 # はじめに

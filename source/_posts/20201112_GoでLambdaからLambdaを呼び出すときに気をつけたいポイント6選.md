@@ -1,3 +1,4 @@
+---
 title: "GoでLambdaからLambdaを呼び出すときに気をつけたいポイント6選"
 date: 2020/11/12 00:00:00
 postid: ""
@@ -5,11 +6,11 @@ tag:
   - AWS
   - Go
   - Lambda
+  - VPC
 category:
   - Programming
 thumbnail: /images/20201112/thumbnail.png
 author: 辻大志郎
-featured: false
 lede: "TIGの辻です。サーバーレスなアプリケーションを開発するときにAWS LambdaやCloud RunといったFaaSはとても重宝します。デプロイする関数のコードは1つの関数がモノリシックな大きな関数にならないように、小さな関数を組み合わせて実装するのが基本です。いくつかのユースケースでAWS LambdaからAWS Lambdaを同期的に呼び出したいケースがあったのですが、開発者が意識しておいたほうがいいようなハマりどころがいくつかありました。本記事ではGoで[AWS LambdaからAWS Lambdaを同期的に呼び出すとき]のハマりどころやTipsを紹介します。以下のような構成です"
 ---
 # はじめに

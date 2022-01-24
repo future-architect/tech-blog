@@ -1,3 +1,4 @@
+---
 title: "Future Tech Cast をはじめました"
 date: 2020/11/16 00:00:00
 postid: ""
@@ -8,7 +9,6 @@ category:
   - Culture
 thumbnail: /images/20201116/thumbnail.png
 author: 真野隼記
-featured: false
 lede: "この度フューチャー技術ブログから派生して、Future Tech Cast という名前でポッドキャストを始めましたのでご報告です。"
 ---
 # はじめに

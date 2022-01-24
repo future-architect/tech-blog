@@ -1,3 +1,4 @@
+---
 title: "OpenAPIからモックサーバを建てられるPrismを実際のプロジェクトに導入してみた"
 date: 2021/04/10 00:00:00
 postid: ""
@@ -10,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20210410/thumbnail.png
 author:  大岩潤矢
-featured: false
 lede: "参加しているプロジェクトで、OpenAPI定義ファイルからモックサーバを建てることができるOSSツール「Prism」を導入することになりました。この記事では、Prism導入の手順や、躓いた点などを紹介します。"
 ---
 

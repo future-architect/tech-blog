@@ -1,3 +1,4 @@
+---
 title: "WAFとして go-swagger を選択してみた"
 date: 2019/08/14 10:30:07
 postid: ""
@@ -6,10 +7,10 @@ tag:
   - Swagger
   - OpenAPI
   - go-swagger
+  - 技術選定
 category:
   - Programming
 author: 多賀聡一朗
-featured: false
 lede: "Go のWebアプリケーションフレームワークを検討した際に、 `go-swagger` が良いのではと思い、比較調査してみました。
 結果、実際に選択し導入しています。"
 ---
@@ -17,7 +18,7 @@ lede: "Go のWebアプリケーションフレームワークを検討した際�
 こんにちは、TIG DXチーム [^1]の多賀です。
 2019年7月にキャリア入社しました。
 
- [^1]: Technology Innovation Groupの略で、フューチャーの中でも特にIT技術に特化した部隊です。その中でもDXチームは特にデジタルトランスフォーメーションに関わる仕事を推進していくチームです。
+[^1]: Technology Innovation Groupの略で、フューチャーの中でも特にIT技術に特化した部隊です。その中でもDXチームは特にデジタルトランスフォーメーションに関わる仕事を推進していくチームです。
 
 ## 概要
 

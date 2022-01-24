@@ -1,3 +1,4 @@
+---
 title: "MONETマーケットプレイス × OSS活用でさっくりデモアプリ開発"
 date: 2021/08/26 00:00:00
 postid: a
@@ -12,7 +13,6 @@ category:
   - Programming
 thumbnail: /images/20210826a/thumbnail.gif
 author: kazuma-takeuchi
-featured: false
 lede: "MONET Technologies Inc. の竹内です。このたび、フューチャー技術ブログに寄稿させていただいています。今回は、弊社のMONETマーケットプレイス上のプロダクトを使って、MaaSアプリをイメージしたデモアプリを作ってみました。今回イメージしたデモアプリは「イベント会場へのマルチモーダル移動経路検索&予約&搭乗Webアプリ」です。"
 ---
 

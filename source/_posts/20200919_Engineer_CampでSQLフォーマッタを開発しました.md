@@ -1,9 +1,11 @@
-title: "Engineer CampでSQLフォーマッタを開発しました"
+---
+title: "Engineer Camp2020でSQLフォーマッタを開発しました"
 date: 2020/09/19 00:00:00
 postid: ""
 tag:
   - SQL
   - インターン
+  - インターン2021
   - ANTLR4
   - 構文解析
   - VSCode
@@ -12,7 +14,6 @@ category:
   - Programming
 thumbnail: /images/20200919/thumbnail.jpg
 author: 中村祥大
-featured: false
 lede: "はじめまして。フューチャーのインターンEngineer Campに参加した中村と申します。この記事では、今回のインターンで私が取り組んだ内容を紹介します。今回のインターンで私は、SQLフォーマッタの作成に取り組みました。"
 ---
 

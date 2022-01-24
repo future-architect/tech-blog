@@ -1,3 +1,4 @@
+---
 title: "RedmineとGitLabの連携プラグインを開発しました！"
 date: 2021/09/08 00:00:00
 postid: a
@@ -10,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20210908a/thumbnail.png
 author: 高橋健
-featured: false
 lede: "RedmineとGitLabリポジトリを連携するRedmine GitLab Adapter Pluginを開発しましたので紹介させていただきます。"
 ---
 

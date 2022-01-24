@@ -1,13 +1,14 @@
-title: "フューチャーのインターンEngineer Campに参加した話"
+---
+title: "フューチャーのインターンEngineer Camp2020（モビリティサービスプラットフォーム）に参加した話"
 date: 2020/09/21 00:00:00
 postid: ""
 tag:
   - インターン
+  - インターン2021
 category:
   - Infrastructure
 thumbnail: /images/20200921/thumbnail.png
 author: 岡部公亮
-featured: false
 lede: "はじめまして。フューチャーのインターンEngineer Campに参加させていただいた岡部です。今回はタイトルにもある通り、2020年エンジニアキャンプのインターンの内容、学びについてお話しさせていただきます。"
 ---
 

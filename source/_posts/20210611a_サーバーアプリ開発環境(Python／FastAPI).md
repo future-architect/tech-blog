@@ -1,3 +1,4 @@
+---
 title: "サーバーアプリ開発環境(Python／FastAPI)"
 date: 2021/06/11 00:00:00
 postid: a
@@ -9,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20210611a/thumbnail.png
 author: 澁川喜規
-featured: true
 lede: "Pythonでお仕事する前提で、現在のところで自分が最適と考えるチーム開発のための環境整備についてまとめてみました。今までももろもろ散発的に記事に書いたりしていたのですが、Poetryで環境を作ってみたのと、過去のもろもろの情報がまとまったものが個人的にも欲しかったのでまとめました。"
 ---
 
@@ -89,6 +89,10 @@ $ poetry add --dev mypy black flake8
 ```
 
 ツールの実行はまとめて行いたい、みたいなことがありますが、poetryにはツールランチャーの機能はないので、taskipyを入れます。
+
+```bash
+$ poetry add taskipy
+```
 
 https://tech.515hikaru.net/post/2020-02-25-poetry-scripts/
 
@@ -208,7 +212,7 @@ INFO:     Application startup complete.```
 
 これを作っておくと、Run and DebugアイコンをクリックしたときにRUNのところに表示されますので、▷ボタンを押すとデバッガーでアプリが起動します。あとはブレークポイントを置いたりステップ実行したり、変数をみたり、自由自在です。
 
-![](/images/20210611a/スクリーンショット_2021-06-11_12.35.24.png)
+<img src="/images/20210611a/スクリーンショット_2021-06-11_12.35.24.png" alt="デバッガーでアプリの起動" loading="lazy">
 
 # サーバーのDocker化
 
@@ -280,7 +284,7 @@ RUN apt-get update \
 
 ```bash
 $ docker build -t sample-server .
-$ docker run --rm -it -p 8000:8000 sample-server .
+$ docker run --rm -it -p 8000:8000 sample-server
 ```
 
 # Pythonネタで過去に書いた記事です

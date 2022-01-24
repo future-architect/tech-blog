@@ -1,3 +1,4 @@
+---
 title: "AWS Certified Solutions Architect - Professional合格体験記"
 date: 2021/06/07 00:00:00
 postid: a
@@ -8,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20210607a/thumbnail.png
 author: 伊藤真彦
-featured: false
 lede: "TIGの伊藤真彦です。先日AWS Certified Solutions Architect - Professionalを受験し合格できました。合格までの学習方法を共有します。"
 ---
 

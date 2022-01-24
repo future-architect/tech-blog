@@ -1,3 +1,4 @@
+---
 title: "マネージャーがうれしいRedmineデータのダッシュボード表示方法を公開します！！"
 date: 2017/05/10 18:00:00
 postid: ""
@@ -11,11 +12,10 @@ category:
   - Management
 thumbnail: /images/20170510/thumbnail_20170510.jpg
 author: 近藤雅章
-featured: true
 lede: "Redmineにはデータの可視化機能が標準で搭載されていないという課題があります。そこで、Kibanaを使ってRedmineデータを可視化するダッシュボードを構築する方法を紹介します"
 ---
 
-<img src="/images/20170510/photo_20170510_00.jpg" loading="lazy">
+<img src="/images/20170510/photo_20170510_00.jpg" alt="">
 
 ## はじめに
 

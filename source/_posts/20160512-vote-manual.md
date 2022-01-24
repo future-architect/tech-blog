@@ -1,13 +1,14 @@
+---
 title: "Space Apps Challenge 2016への投票方法"
 date: 2016-05-12 09:05:59
 postid: ""
 tag:
-  - Hackathon
+  - ハッカソン
+  - 宇宙
 category:
   - VR
 thumbnail: /images/20160512/thumbnail_20160512.jpg
 author: 真野隼記
-featured: false
 lede: "Space Apps Challenge 2016 のPeople's Choiceの投票方法をまとめました"
 ---
 # Space Apps Challengeとは

@@ -1,15 +1,15 @@
+---
 title: "ハッカソン道中記#2～世界はチャンスであふれてる～"
 date: 2016-04-20 21:25:28
 postid: ""
 tag:
   - IoT
   - DesignThinking
-  - Hackathon
+  - ハッカソン
 category:
   - IoT
 thumbnail: /images/20160420/thumbnail_20160420.jpg
 author: 清田侑
-featured: false
 lede: "こんにちは。FutureArchitectの清田です。
 先日、弊社デザインワークスチームにて、2度目のハッカソン挑戦となるSPAJAM2016に参加しました。
 今回はその様子をお伝えしたいと思います。"

@@ -1,3 +1,4 @@
+---
 title: "CloudEndure Migration - 実践編"
 date: 2020/11/20 00:00:00
 postid: ""
@@ -9,7 +10,6 @@ category:
   - Infrastructure
 thumbnail: /images/20201120/thumbnail.png
 author: 八巻達紀
-featured: false
 lede: "前回記事「[CloudEndure Migration - 導入編]」の続きです。今回は、実際にCloudEndure Migrationを使った移行を実践したいと思います。"
 ---
 # はじめに

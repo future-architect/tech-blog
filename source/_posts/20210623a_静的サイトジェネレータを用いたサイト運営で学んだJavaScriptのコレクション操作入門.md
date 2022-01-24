@@ -1,3 +1,4 @@
+---
 title: "JavaScriptのコレクション操作入門"
 date: 2021/06/23 00:00:00
 postid: a
@@ -9,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20210623a/thumbnail.png
 author: 真野隼記
-featured: false
 lede: "この記事ではこのフューチャー技術ブログを機能拡張する過程で学んだコレクション操作で利用頻度が高い順にまとめます。ブログ運営（？）の保守運用な雰囲気が少しでも伝わればなと思います。"
 ---
 # はじめに
@@ -150,7 +150,7 @@ console.log(awsArticles);
 
 利用されているタグの利用回数を表示させたい場合があります。2021.06.23時点のフューチャー技術ブログだと以下みたいに表示されていますね。
 
-![](/images/20210623a/image.png)
+<img src="/images/20210623a/image.png" alt="タグの件数表示" loading="lazy">
 
 これも `articles` に対して算出します。先程の指定したタグを持つ記事を抽出する処理を用いたヘルパー関数 `flatMap` を用いると楽です。
 

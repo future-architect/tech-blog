@@ -1,3 +1,4 @@
+---
 title: "AWS初心者向けNW構築ハンズオン-Internal編-"
 date: 2021/08/31 00:00:00
 postid: a
@@ -5,12 +6,13 @@ tag:
   - AWS
   - Network
   - 初心者向け
+  - VPC
   - VPC_Reachability_Analyzer
+  - ハンズオン
 category:
   - Infrastructure
 thumbnail: /images/20210831a/thumbnail.png
 author: 加藤周平
-featured: false
 lede: "AWS初心者にとって、最初に躓きやすい部分がNWの構築かと思います。インスタンス立ててみたけど、これってどうやると他のノードと通信できるんだっけ？なんとなく通信できたけど、なんでだ？といった辺り、なんとなく有耶無耶なままにしていませんか。今回は2020年12月にローンチされたReachability Analyzerを利用して、AWS初心者向けのNW構築ハンズオン-Internal編-をやってみたいと思います。"
 ---
 # はじめに

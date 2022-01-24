@@ -1,3 +1,4 @@
+---
 title: "SpringBootでDIを駆使したルールエンジン開発"
 date: 2020/09/18 00:00:00
 postid: ""
@@ -10,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20200918/thumbnail.png
 author: 渡邉拓
-featured: false
 lede: "はじめまして、2018年新卒入社の渡邉です。第5弾はGlyphFeedsCMSにおけるSpringを駆使したルールエンジンについてです！新聞業界の多種多様に変化する業務体系に対してどのようにシステムを構築したかご紹介致します。ニュース（＝コンテンツ）を世の中に配信していく過程において、新聞社には大きく次のアクターが関わります。"
 ---
 [GlyphFeeds連載企画](/articles/20200914/)第5弾の記事となります。

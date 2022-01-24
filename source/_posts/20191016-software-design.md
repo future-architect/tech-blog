@@ -1,3 +1,4 @@
+---
 title: "Software Design 後記"
 date: 2019/10/16 08:56:31
 postid: ""
@@ -5,11 +6,12 @@ tag:
   - 機械学習
   - アルゴリズム
   - 出版
+  - 書籍
+  - SoftwareDesign
   - 線形代数
 category:
   - DataScience
 author: 上野貴史
-featured: false
 lede: "2019年は幸運なことに、技術評論社のSoftware Designという雑誌に3回も機械学習関連の記事を執筆する機会を頂きました。本記事では3回分の記事を振り返りながら、機械学習を学ぶ際のちょっとしたTipsを紹介したいと思います。"
 ---
 # はじめに

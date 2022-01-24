@@ -1,3 +1,4 @@
+---
 title: "DynamoDBをS3へExportして、Glue+AthenaでSQLを実行する"
 date: 2021/04/03 00:00:00
 postid: ""
@@ -12,7 +13,6 @@ category:
   - Programming
 thumbnail: /images/20210403/thumbnail.png
 author: 棚井龍之介
-featured: false
 lede: "DynamoDBを頻繁に利用しており、連日DynamoDBコンソール画面と睨めっこをしています。DynamoDBのコンソール画面は特定のデータをピンポイントで探すには優秀ですが、データ集計には全く向いていません。"
 ---
 <img src="/images/20210403/Screen_Shot_2021-03-14_at_1.09.08.png" alt="チャットのやり取り" loading="lazy">

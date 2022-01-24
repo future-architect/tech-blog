@@ -1,3 +1,4 @@
+---
 title: "GoがApple Siliconにネイティブ対応したのでベンチマークをとってみました"
 date: 2020/12/03 00:00:00
 postid: ""
@@ -7,7 +8,6 @@ category:
   - Programming
 thumbnail: /images/20201203/thumbnail.png
 author: 澁川喜規
-featured: true
 lede: "ARMなMacが出るとWWDCで発表されてから首を長くしてまっていて、発表と同時にMacBook Proを買って、アプリケーションのARMネイティブ対応されました。業務利用が多い言語のうちの一つということで、手元のPCで軽くベンチマークをとってみました。使った機種は3つです。* 2020モデルのM1のMacBook Pro"
 ---
 

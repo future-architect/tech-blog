@@ -1,3 +1,4 @@
+---
 title: "SORACOM USBドングルの自動接続"
 date: 2019/12/01 12:02:03
 postid: ""
@@ -9,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20191201/thumbnail.png
 author: 棚井龍之介
-featured: false
 lede: "自動化できる業務ならば極力自動化したいというのは万国共通だとは思いますが、例えばWebページであれば Selenium によるUI操作自動化が可能です。しかし、PCにインストールされたGUIアプリには、Webページの「idタグ」に相当するものがなく、UIの自動化は難しいと考えていました。今回、業務で利用しているWindowsのGUIアプリを「マウスで手動クリック」から「コードで自動操作」に切り替える機会があったので、そのときの試行錯誤を紹介します"
 ---
 

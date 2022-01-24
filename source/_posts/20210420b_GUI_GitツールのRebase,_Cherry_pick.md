@@ -1,3 +1,4 @@
+---
 title: "GUI GitツールのRebase, Cherry pick"
 date: 2021/04/20 00:00:00
 postid: b
@@ -10,7 +11,6 @@ category:
   - Infrastructure
 thumbnail: /images/20210420b/thumbnail.png
 author: 市川燿
-featured: true
 lede: "Gitを使っての開発で、指定のツールや好みのGitクライアントを使っていると思います。ターミナルの黒画面でGitコマンドを使うのはちょっと不安、GUI画面から画面を確認しながらGitを操作したい方向けの記事です。GitのBranch作成やCheckout, Commit, Pushまで使えた方向けに、次の段階としてRebase, Cherry Pickなどの実行方法を説明します。"
 ---
 

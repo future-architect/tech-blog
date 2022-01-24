@@ -1,3 +1,4 @@
+---
 title: "CloudEndure Migration - 導入編"
 date: 2020/10/21 00:00:00
 postid: ""
@@ -9,7 +10,6 @@ category:
   - Infrastructure
 thumbnail: /images/20201021/thumbnail.png
 author: 八巻達紀
-featured: false
 lede: "こんにちは。2020年1月中途入社、TIGの八巻です。現在、クラウドリフトのプロジェクトにて、オンプレミス環境のサーバーをクラウドへ移行するため、AWSの移行サービスであるCloudEndureについて調査しました。"
 ---
 # はじめに

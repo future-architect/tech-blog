@@ -1,3 +1,4 @@
+---
 title: "Go Tips連載1: ホワイトリストProxy申請するときのGo依存ライブラリURLドメインの調べ方"
 date: 2020/05/18 09:55:52
 postid: ""
@@ -9,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20200518/thumbnail.png
 author: 宮崎将太
-featured: false
 lede: "ホワイトリストProxy申請するときのGo依存ライブラリURLドメインの調べ方を記載します。"
 ---
 

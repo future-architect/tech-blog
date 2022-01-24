@@ -1,3 +1,4 @@
+---
 title: "Serverless連載6: AWSのStep FunctionsとLambdaでServelessなBatch処理を実現する"
 date: 2020/05/15 22:25:58
 postid: ""
@@ -11,7 +12,6 @@ category:
   - Programming
 thumbnail: /images/20200515/thumbnail.png
 author: 真野隼記
-featured: false
 lede: "AWS StepFunctionsとLambdaを活用してバッチ処理を行う記事です。"
 ---
 # はじめに

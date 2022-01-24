@@ -1,3 +1,4 @@
+---
 title: "AWS Certified Solutions Architect - Associate 合格体験記"
 date: 2021/08/18 00:00:01
 postid: b
@@ -8,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20210818b/thumbnail.png
 author: 市川浩暉
-featured: false
 lede: "TIGの市川浩暉です。先日、業務の合間を縫って少しづつ勉強を進めていた、AWS Certified Solutions Architect - Associate（AWS SAA）を受験し、合格することができました。今回は合格までの学習方法と試験を受けた感想を共有したいと思います。この記事がこれから受験する人の一助となれば幸いです。"
 ---
 こんにちは、TIGの市川浩暉です。

@@ -1,3 +1,4 @@
+---
 title: "Flutter Swagger統合"
 date: 2021/05/11 00:00:01
 postid: b
@@ -10,7 +11,6 @@ category:
   - Infrastructure
 thumbnail: /images/20210511b/thumbnail.png
 author: 宮崎将太
-featured: false
 lede: "Dart/Flutter連載の2記事目です。はじめまして、TIGの宮崎将太です。突然ですがみなさん、Swagger使いたいですよね。"
 ---
 # はじめに

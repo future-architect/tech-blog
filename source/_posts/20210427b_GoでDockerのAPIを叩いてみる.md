@@ -1,3 +1,4 @@
+---
 title: "GoでDockerのAPIを叩いてみる"
 date: 2021/04/27 00:00:03
 postid: b
@@ -12,8 +13,7 @@ category:
   - Programming
 thumbnail: /images/20210427b/thumbnail.png
 author: 澁川喜規
-featured: false
-lede: "Future Tech Night #7で「GoでDockerのAPIを叩いてみる」という発表をしてきました。近年、コンテナの利用はますます増えています。実行環境としても、クラウドサービスでコンテナをホストするサービスは増えています。コンテナを動かすサービスもあれば、K8Sの利用も増えています。Kubernetesも最小のビルディングブロックはコンテナです。K8SのKnativeベースのGCP Cloud Runが僕の最近のお気に入りです。![スクリーンショット 2021-03-18 23.43.23.png]AWS Lambdaもコンテナを実行できるようになりました"
+lede: "Future Tech Night #7で「GoでDockerのAPIを叩いてみる」という発表をしてきました。近年、コンテナの利用はますます増えています。実行環境としても、クラウドサービスでコンテナをホストするサービスは増えています。コンテナを動かすサービスもあれば、K8Sの利用も増えています。Kubernetesも最小のビルディングブロックはコンテナです。K8SのKnativeベースのGCP Cloud Runが僕の最近のお気に入りです。AWS Lambdaもコンテナを実行できるようになりました"
 ---
 [Future Tech Night #7](https://future.connpass.com/event/206387/)で「GoでDockerのAPIを叩いてみる」という発表をしてきました。
 

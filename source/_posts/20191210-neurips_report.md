@@ -1,15 +1,16 @@
+---
 title: "NeurIPS 2019 参加報告"
 date: 2019/12/10 16:22:02
 postid: ""
 tag:
   - 機械学習
   - NeurIPS
+  - 学会
   - 参加レポート
   - インターン
 category:
   - DataScience
 author: 上野貴史
-featured: false
 lede: "こんにちは、Strategic AI Group(SAIG)の田中、上野です。私たちは現在、NeurIPSという学会に参加するためにカナダに来ています。NeurIPS(Conference on Neural Information Processing Systems)は、機械学習分野のトップカンファレンスで、今年が33回目の開催となります。"
 ---
 

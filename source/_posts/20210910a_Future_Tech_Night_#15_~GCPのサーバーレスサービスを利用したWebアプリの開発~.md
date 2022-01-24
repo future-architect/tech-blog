@@ -1,3 +1,4 @@
+---
 title: "Future Tech Night #15 ~GCPのサーバーレスサービスを利用したWebアプリの開発~"
 date: 2021/09/10 00:00:00
 postid: a
@@ -9,7 +10,6 @@ category:
   - Infrastructure
 thumbnail: /images/20210910a/thumbnail.png
 author: 伊藤太斉
-featured: false
 lede: "Future Tech Night #15への登壇レポートと、内容についての解説です。"
 ---
 こんにちは。TIGの[伊藤太斉](https://twitter.com/kaedemalu)です。

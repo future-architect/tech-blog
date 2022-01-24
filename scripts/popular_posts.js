@@ -22,7 +22,18 @@ hexo.extend.helper.register('popular_posts', function(term='weekly') {
     .flatMap(gaPage => this.site.posts.data.filter(post => post.permalink.indexOf(gaPage.path) > 0).slice(0, 1))
     .slice(0, 12);
 
-  const links = popularPost.map(post => `<li><span>${post.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${getSNSCnt(post.permalink)}</span> <a href="/${post.path}" title="${post.lede}">${post.title}</a></li>`).join("\n")
+  const currentTime = new Date();
+  const pastDate = currentTime.getDate() - 30; // 4week
+  currentTime.setDate(pastDate);
+
+  const label = post => {
+    if (currentTime.toISOString() <= post.date.toISOString()) {
+      return `<span class="newitem">NEW</span>`;
+    }
+    return "";
+  }
+
+  const links = popularPost.map(post => `<li><span>${post.date.format('YYYY.MM.DD')}</span><span class="snscount">&#9825;${getSNSCnt(post.permalink)}</span>${label(post)} <a href="/${post.path}" title="${post.lede}">${post.title}</a></li>`).join("\n")
 
   return `
   <div class="widget">

@@ -1,3 +1,4 @@
+---
 title: "GoとPoatgreSQLでCOPY"
 date: 2021/07/27 00:00:00
 postid: a
@@ -9,7 +10,6 @@ category:
   - Programming
 thumbnail: /images/20210727a/thumbnail.png
 author: 澁川喜規
-featured: false
 lede: "データベースでパフォーマンスが大きな問題になりがちなのが、バッチでのデータのインサートと、複雑なクエリーです。が、今回は後者は置いといて、前者のデータの取り込みについて扱います。データの挿入の高速化は最近、ちょびっと大事かなと思うところがあります。というのも..."
 ---
 [GoのORマッパー連載](/articles/20210726a/)の2日目の記事です。

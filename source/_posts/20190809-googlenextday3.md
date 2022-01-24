@@ -1,3 +1,4 @@
+---
 title: "Google Cloud Next '19 in Tokyo Day3 セッションレポート"
 date: 2019/08/09 08:29:54
 postid: ""
@@ -5,10 +6,10 @@ tag:
   - GCP
   - 参加レポート
   - GoogleCloudNext
+  - カンファレンス
 category:
   - Infrastructure
 author: 村田靖拓
-featured: false
 lede: "Google Cloud Next ’19 in Tokyo Day3にも少し顔を出していたのでそちらの参加レポートをお送りします。"
 ---
 

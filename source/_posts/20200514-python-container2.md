@@ -1,18 +1,19 @@
+---
 title: "仕事でPythonコンテナをデプロイする人向けのDockerfile (2): distroless編"
 date: 2020/05/14 08:51:53
 postid: ""
 tag:
   - Python
   - Docker
+  - コンテナビルド
 category:
   - Infrastructure
 thumbnail: /images/20200514/thumbnail.png
 author: 澁川喜規
-featured: true
 lede: "Goではそこそこ実績も増えつつある気がするdistroless。シェルが入っていないくて、ログインされることもなく安全というGoogle製のDockerイメージです。Python3はまだexperimentalですが、実は小さいと言われるalpine版よりも、イメージサイズが半分ぐらいだったりもします。distrolessでは3.7しかないので、3.7のイメージ同士の比較です。"
 ---
 
-<img src="/images/20200514/top.png" alt="アイキャッチのDockerfileコード" width="1260" height="675" loading="lazy">
+<img src="/images/20200514/top.png" alt="" width="1260" height="675" loading="lazy">
 
 
 [前回のエントリー](/articles/20200513/)では、Debianベースの堅実な仕事向けのDockerイメージ作成方法について紹介しました。

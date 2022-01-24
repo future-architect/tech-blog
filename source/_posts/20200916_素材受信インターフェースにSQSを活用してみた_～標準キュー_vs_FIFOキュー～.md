@@ -1,3 +1,4 @@
+---
 title: "素材受信インターフェースにSQSを活用してみた ～標準キュー vs FIFOキュー～"
 date: 2020/09/16 00:00:00
 postid: ""
@@ -5,11 +6,12 @@ tag:
   - AWS
   - SQS
   - GlyphFeeds
+  - 技術選定
+  - S3
 category:
   - Infrastructure
 thumbnail: /images/20200916/thumbnail.png
 author: 出口豊
-featured: false
 lede: "はじめまして、2017年新卒入社、TIG所属の出口です。今回は、GlyphFeedsの素材受信インターフェース構築を介してAmazon Simple Queue Service  の検証について紹介します。"
 ---
 

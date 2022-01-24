@@ -1,3 +1,4 @@
+---
 title: "GoとAWS LambdaのためのMakefile"
 date: 2020/10/22 00:00:00
 postid: ""
@@ -10,7 +11,6 @@ category:
   - Programming
 thumbnail: /images/20201022/thumbnail.webp
 author: 筒井悠平
-featured: false
 lede: "筒井です。GoとAWS LambdaのためのMakefileを整理しました。Lambda Functionの増加と同時に増えていくターゲットにはオサラバです。"
 ---
 

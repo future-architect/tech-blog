@@ -1,3 +1,4 @@
+---
 title: "あなたのGoアプリ/ライブラリのパッケージ構成もっとシンプルでよくない？"
 date: 2020/05/28 09:49:19
 postid: ""
@@ -8,7 +9,6 @@ category:
   - Programming
 thumbnail: /images/20200528/thumbnail.png
 author: 澁川喜規
-featured: true
 lede: "Goでプロジェクトのフォルダ構成どうしよう、とググると見つかるStandard Go Project Layout(https://github.com/golang-standards/project-layout)。とはいえ、これはかなりコード量を増やしてしまう恐れがありますので、導入する場合のデメリットも考えておく方が良いです。"
 ---
 

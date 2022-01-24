@@ -1,14 +1,15 @@
+---
 title: "Qiita Advent Calendar 2020 に参加します"
 date: 2020/11/25 00:00:00
 postid: ""
 tag:
   - アドベントカレンダー
   - TechBlog
+  - Qiita
 category:
   - Culture
 thumbnail: /images/20201125/thumbnail.png
 author: 伊藤太斉
-featured: false
 lede: "師走と呼ばれる12月、忙しくなる季節が今年もやってまいりました。そんな12月にフューチャーは今年もQiita主催のアドベントカレンダーに参加します"
 ---
 # はじめに
@@ -17,10 +18,7 @@ lede: "師走と呼ばれる12月、忙しくなる季節が今年もやって�
 
 師走と呼ばれる12月、忙しくなる季節が今年もやってまいりました。そんな12月にフューチャーは今年もQiita主催のアドベントカレンダーに参加します。
 
-<img src="/images/20201125/advent-calendar-1865325_1280.png" loading="lazy">
-
-<a href="https://pixabay.com/ja/users/pixaline-1569622/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1865325">Pixaline</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1865325">Pixabay</a>からの画像
-
+<img src="/images/20201125/advent-calendar-1865325_1280.png" alt="" title="PixalineによるPixabayからの画像">
 
 ## アドベントカレンダーとは
 

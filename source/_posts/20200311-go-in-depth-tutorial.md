@@ -1,3 +1,4 @@
+---
 title: "JavaプログラマーのためのGo言語入門"
 date: 2020/03/11 09:39:47
 postid: ""
@@ -12,7 +13,6 @@ category:
 author:
   - 柏木祥子
   - 佐藤尚至
-featured: true
 lede: "Java to Go in-depth tutorialの日本語訳です。原文の著者に許諾を得て翻訳・公開いたします。このチュートリアルは、JavaプログラマーがすばやくGo言語にキャッチアップできるようにすることを目的としています。"
 ---
 ## JavaプログラマーのためのGo言語入門

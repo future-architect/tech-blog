@@ -3,12 +3,13 @@ Template Name: Metronic - Responsive Website Template build with Twitter Bootstr
 */
 
 :root {
-  --main-font-color: #00838F;
+  --main-font-color: #292929;
+  --a-color: #0072E5;
 }
 
 /* General body settings */
 body {
-	color: #3e4d5c;
+	color: #424242;
 	direction: ltr;
 	font: 400 13px 'Open Sans', Arial, sans-serif;
 	background: #fff;
@@ -22,31 +23,25 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 10px;
 }
 
-.article-entry h1:hover ::before {
+h1:hover ::before,
+h2:hover ::before,
+h3:hover ::before {
   content:'#';
   margin-left: -0.8em;
   position: absolute;
 }
-.article-entry h2:hover ::before {
-  content:'#';
-  margin-left: -0.8em;
-  position: absolute;
-}
-.article-entry h3:hover ::before {
-  content:'#';
-  margin-left: -0.8em;
-  position: absolute;
-}
-.article-entry h1:hover code:before{
+h1:hover code:before,
+h2:hover code:before,
+h3:hover code:before,
+h1:hover span:before,
+h2:hover span:before,
+h3:hover span:before,
+h1:hover i:before,
+h2:hover i:before,
+h3:hover i:before,
+.article-title > a:before {
   content:none;
 }
-.article-entry h2:hover code:before{
-  content:none;
-}
-.article-entry h3:hover code:before{
-  content:none;
-}
-
 h1 {
 	margin-bottom: 15px;
 }
@@ -58,15 +53,23 @@ h1 {
 Fix link outlines after click
 ***/
 a {
-  color: var(--main-font-color);
+  color: var(--a-color);
 }
 a, a:focus, a:hover, a:active {
 	outline: 0;
  	text-decoration: none;
 }
 a:hover, a:focus {
-  color: var(--main-font-color);
+	color: var(--a-color);
 	text-decoration: underline;
+}
+.article-entry a {
+	text-decoration: none;
+}
+.article-entry a:hover,
+.article-entry a:focus {
+	text-decoration: underline;
+	transition-duration: 0.1s;
 }
 
 /***
@@ -141,11 +144,6 @@ Header and header elements
 .breadcrumb a {
 	color: #5f6d7b;
 }
-.breadcrumb .active {
-  color: #424242;
-}
-
-/* paginations */
 .pagination {
 	border-radius: 0;
 	margin: 0;
@@ -299,20 +297,18 @@ Pre-Footer and pre-footer elements
 }
 .blog-info {
   list-style: none;
-  margin: 15px 0 12px 0;
+  margin: 24px 0 12px 0;
   padding-left:0;
 }
 .blog-info li {
   padding: 0;
   color: #555;
   font-size: 13px;
-  margin-right: 8px;
   display: inline-block;
 }
 .blog-info li i {
   color: var(--main-font-color);
 }
-
 .blog-posts .pagination li {
 	margin-left: -12px;
 	margin-right: 17px;
@@ -325,102 +321,12 @@ Pre-Footer and pre-footer elements
   padding-bottom: 40px;
 }
 
-/* Tag */
-.blog-tags ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.blog-tags li {
-  position: relative;
-  margin: 0 16px 7px 0;
-  display: inline-block;
-}
-.blog-tags li a {
-  color: #424242;
-  background: #f5f5f5;
-  display: inline-block;
-  padding: 3px 5px 3px 3px;
-}
-.blog-tags li span {
-  font-size: 0.5em;
-  background: #f5f5f5;
-  padding: 6px 0px 4px 0px;
-}
-.blog-tags li a:hover, .blog-tags li a:focus {
-  color: #fff;
-  background: var(--main-font-color);
-  text-decoration: none;
-}
-.blog-tags li a:hover i, .blog-tags li a:focus i {
-  color: #fff;
-}
-.blog-tags li i {
-  color: #424242;
-  margin-right: 1px;
-  display: inline-block;
-  font-size: 1em;
-}
-.blog-tags li a:after {
-  top: 50%;
-  width: 0;
-  left: 100%;
-  height: 0;
-  z-index: 2;
-  content: " ";
-  display: block;
-  margin-top: -12px;
-  position: absolute;
-  border-left: 6px solid #f5f5f5;
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
-}
-.blog-tags li a:hover:after, .blog-tags li a:focus:after {
-  border-left-color: var(--main-font-color);
-}
-
-/* Blog Sidebar categories BEGIN */
-.sidebar-categories li a {
-  padding: 10px 0;
-  border-bottom: 1px solid #ECEBEB;
-  color: #333;
-}
-
-/* Blog Item */
-.blog-item .blog-item-img {
-  margin: 6px 0 25px;
-}
-.blog-item blockquote {
-  margin: 12px 15px 14px;
-  border-color: var(--main-font-color);
-  padding: 6px 10px
-}
-.blog-item .blog-info {
-  margin: 20px 0;
-  padding: 8px 0;
-  border-top: solid 1px #ECEBEB;
-  border-bottom: solid 1px #ECEBEB;
-}
- .blog-info-item {
-  padding-left: 4px;
-}
-.blog-info-item:first-child {
-  padding-left: 0;
-  border-left: none;
-}
-.blog-info-item ul li:first-child {
-  padding-left: 4px;
-}
-.blog-info-item ul li {
-  margin-right: 10px;
-}
-
 /*
   style-responsive.css
   https://purifycss.online/
 */
 @media (max-width:992px){
-  .sidebar-menu a:focus{color:#333!important;text-decoration:none}
+  .sidebar-menu a:focus{color:#424242!important;text-decoration:none}
 }
 @media (max-width:767px){
   .pre-header .pull-right{
@@ -437,8 +343,10 @@ Pre-Footer and pre-footer elements
   .pagination{float:left!important;padding-top:10px}
   .pagination>li{margin-left:0;margin-right:5px}
   .pre-footer .margin-bottom-40{margin-bottom:0}
-  .blog-posts h2{padding-top:15px}
   .footer img{margin-bottom:10px}
+}
+@media (max-width:576px){
+  .blog-posts h2{padding-top:15px}
 }
 @media (max-width:480px){
   .pre-header .list-inline li{
@@ -480,18 +388,23 @@ aside h2 {
   font-weight: 700;
 }
 
-.featured-post, .related-post {
+.featured-post,
+.related-post {
   padding: 30px 0px 0px 0px;
-  border-top: 1px solid #ebebeb;
 }
-.featured-post h2, .related-post h2{
+.featured-post h2,
+.related-post h2{
   font-size: 25px;
 }
-.featured-post-link a, .related-post a {
+.featured-post-link a,
+.related-post-link a {
   font-size: 1.2em;
+  color: #424242;
+  margin-left: 10px;
 }
-.featured-post-link li, .related-post li {
-  padding: 6px 0px 0px 0px;
+.featured-post-link li,
+.related-post-link li {
+  padding: 6px 0px 6px 0px;
 }
 .snscount {
   padding: 0px 10px 0px 10px;
