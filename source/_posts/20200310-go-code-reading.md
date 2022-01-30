@@ -5,6 +5,7 @@ postid: ""
 tag:
   - Go
   - CodeReading
+  - 勉強会
   - 社内勉強会
 category:
   - Programming
