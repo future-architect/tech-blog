@@ -11,7 +11,7 @@ tag:
 category:
   - Programming
 thumbnail: /images/20220204a/thumbnail.png
-author:
+author: 宮永崇史
 lede: "AWS Step Functionsの動的並列処理をローカルで実行する方法をハンズオン形式でまとめました。"
 ---
 <img src="/images/20220204a/eyecatch_stepfunctions.png" alt="" width="1003" height="498" loading="lazy">
