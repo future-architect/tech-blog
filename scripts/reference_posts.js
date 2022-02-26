@@ -2,7 +2,8 @@
 
 hexo.extend.helper.register('list_reference_posts', function() {
 
-  const referencePosts = this.site.posts.data.filter(p => p.content.includes(this.post.path));
+  const referencePosts = this.site.posts.data.filter(p => p.content.includes(this.post.path))
+    .filter(p => p.path !== this.post.path); // その記事で自分セルフリンクされている場合は除去
 
   if (referencePosts.length == 0) {
     return "";
