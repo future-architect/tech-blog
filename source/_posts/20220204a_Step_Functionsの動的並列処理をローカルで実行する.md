@@ -665,7 +665,7 @@ def lambda_handler(event, context) -> str:
 以下はdemo-scatter内のMakefileの例です。
 
 ```Makefile
-.PHONY: clean zip  delete cretae update
+.PHONY: clean zip  delete create update
 PROJECT_DIR=$(shell pwd)
 DEPLOY_PACKAGES_DIR=deploy-packages
 
