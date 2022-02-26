@@ -580,7 +580,7 @@ Lambdaのzip化やLocalStackへのデプロイは`Makefile`で管理します。
 以下作成した`Makefile`です。
 
 ```Makefile Makefile
-.PHONY: clean zip  delete cretae update invoke log test bucket download json
+.PHONY: clean zip  delete create update invoke log test bucket download json
 PROJECT_DIR=$(shell pwd)
 DEPLOY_PACKAGES_DIR=deploy-packages
 

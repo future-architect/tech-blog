@@ -16,7 +16,7 @@
     <% if(is_month()) { %>
     <h1 class="list-page"><%= page.year%>年<%= page.month %>月のすべての記事 <%= count_articles_month(page.year, page.month) %>件</h1>
     <% } else if(is_year()) { %>
-    <h1 class="list-page"><%= page.year%>年のすべての記事</h1>
+    <h1 class="list-page"><%= page.year%><span class="list-sub-text"> 年のすべての記事</span></h1>
     <ul class="summary">
       <li><span class="summary-count">平均<%= ave_posts(page.year) %></span><br><span class="summary-label">投稿/月</span></li>
     </ul>
@@ -62,6 +62,17 @@
     </ul>
     <% } else { %>
     <h1 class="list-page">すべての記事</h1>
+    <section class="archives">
+    <%
+      const trans = (str, path=page.path) => {
+      if (path.indexOf(str) > 0) {
+        return `<span class="archive-list-current">${str}</span>`;
+      }
+      return str;
+      }
+    %>
+    <%- list_archives({format: "YYYY", type:"yearly", transform:trans}) %>
+
     <ul class="summary">
       <li><span class="summary-count">平均<%= ave_posts(page.year) %></span><br><span class="summary-label">投稿/四半期</span></li>
     </ul>

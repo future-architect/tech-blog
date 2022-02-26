@@ -1,15 +1,5 @@
 <div class="row">
   <main class="blog-posts">
-    <section class="archives">
-      <%
-        const trans = (str, path=page.path) => {
-        if (path.indexOf(str) > 0) {
-          return `<span class="archive-list-current">${str}</span>`;
-        }
-        return str;
-        }
-      %>
-      <%- list_archives({format: "YYYY", type:"yearly", transform:trans}) %>
       <ul class="article-list">
         <% page.posts.each(function(post, i){ %>
         <li>
