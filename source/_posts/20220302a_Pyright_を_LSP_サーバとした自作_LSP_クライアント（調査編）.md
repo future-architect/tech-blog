@@ -16,7 +16,7 @@ lede: "Language Server Protocol の理解として、Pyright を LSP サーバ�
 ---
 # はじめに
 
-Language Server Protocol の理解として、Pyright を LSP サーバとした自作クライアントの作成を行いました（[Pyright を LSP サーバとした自作 LSP クライアント（実装編）](/articles/20220301a/)）。その際、Pyright に解析を行わせるための初期化方法がドキュメントには書かれていなかったので、VSCode 拡張用のクライアントをトレースして調査することにしました。
+Language Server Protocol の理解として、Pyright を LSP サーバとした自作クライアントの作成を行いました（Pyright を LSP サーバとした自作 LSP クライアント（実装編））。その際、Pyright に解析を行わせるための初期化方法がドキュメントには書かれていなかったので、VSCode 拡張用のクライアントをトレースして調査することにしました。
 
 # 調査方法
 
@@ -114,6 +114,6 @@ Pyright を VSCode 拡張としてデバッグ実行します。VSCode のサイ
 
 # まとめ
 
-以上から、Pyright の初期化は下図のようにして行われることがわかりました。実際の実装は [TODO: Pyright を LSP サーバとした自作 LSP クライアント（実装編）](https://qiita.com/kkuga/private/8d6d0a27ea1ca8c36d13)で扱っていますので、合わせて読んでいただければと思います。
+以上から、Pyright の初期化は下図のようにして行われることがわかりました。実際の実装はPyright を LSP サーバとした自作 LSP クライアント（実装編）で扱っていますので、合わせて読んでいただければと思います。
 
 <img src="/images/20220302a/スクリーンショット_(19).PNG" alt="シーケンス図" width="807" height="529" loading="lazy">
