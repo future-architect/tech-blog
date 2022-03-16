@@ -1,5 +1,5 @@
 ---
-title: "Future Tech Night #19「CodePipelineを用いたECS on EC2でのBlue/Greenデプロイメント」"
+title: "Future Tech Night #19 CodePipelineを用いたECS on EC2でのBlue/Greenデプロイメント"
 date: 2022/03/14 00:00:00
 postid: a
 tag:
