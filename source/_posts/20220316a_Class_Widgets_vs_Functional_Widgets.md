@@ -17,6 +17,8 @@ lede: "FlutterでWidgetを開発するとき、Stateless WidgetやStateful Widge
 
 ## はじめに
 
+[Dart/Flutter連載](https://future-architect.github.io/articles/20220315a/) の2本目です
+
 FlutterでWidgetを開発するとき、Stateless WidgetやStateful Widgetを継承したクラスを作成することが一般的だと思います。一方でクラスを定義せずとも、Widgetを返却するFunctionを定義することで同様のことが実現できるのでは？と考えたことはないでしょうか。
 
 本記事では前者をClass Widget, 後者をFunctional Widgetと称して以下説明をしていきます。
