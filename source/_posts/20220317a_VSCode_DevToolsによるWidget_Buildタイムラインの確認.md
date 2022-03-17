@@ -15,7 +15,7 @@ lede: "VS CodeのDevToolsをを使用したWidget Buildの可視化について�
 # はじめに
 
 こんにちは。TIGの藤田です。
-[Dart/Flutter連載](https://future-architect.github.io/articles/20220315a/) の3日目として、VSCodeの[DevTools](https://docs.flutter.dev/development/tools/devtools/overview)を使用したWidget Buildの可視化についてご紹介します。
+[Dart/Flutter連載](https://future-architect.github.io/articles/20220315a/) の2日目として、VSCodeの[DevTools](https://docs.flutter.dev/development/tools/devtools/overview)を使用したWidget Buildの可視化についてご紹介します。
 
 Flutterアプリの開発では、Widgetのビルド単位を考えてコードを記述/改修すると思います。
 [AndroidStudioのPerformance機能](https://docs.flutter.dev/development/tools/android-studio#show-performance-data)を使ってWidgetのリビルドを確認している例は見かけるのですが、VSCodeでの確認方法を見かけなかったため調べてみました。予想以上に高機能で、今回使わなかった機能も含めて活用どころがありそうです。
