@@ -114,7 +114,7 @@ class PageState extends State<Page> with TickerProviderStateMixin {
 
 画面はこのようになります。Overlayされたグラフの上段がRaster(GPU)スレッド, 下段がUIスレッドを表しています。16msおきに補助ラインが引かれていますが、[おおよそ16msを超えるFrameは描画されずにJankとなります](https://docs.flutter.dev/perf/rendering/ui-performance#interpreting-the-graphs)。UIスレッド側に多くのJankが見られることから、この実装には課題がありそうだと分かります。
 
-<img src="/images/20220317a/83854e5c-c719-6331-6f55-ef03e48c3359.gif" alt="" width="960" height="2000" loading="lazy">
+<img src="/images/20220317a/83854e5c-c719-6331-6f55-ef03e48c3359.gif" alt="" width="560" height="2000" loading="lazy">
 
 Frame実行時間のタイムラインを見ても、UIグラフに赤色のJank（slow frame）が多くなっています。
 <img src="/images/20220317a/test1.png" alt="test1.png" width="1200" height="141" loading="lazy">
@@ -186,7 +186,7 @@ class PageState extends State<Page> with TickerProviderStateMixin {
 ```
 
 アプリ画面は以下になります。下段UIスレッドから、Jankがほぼなくなりました。少し見にくいですが、各グラフに平均実行時間が表示されていて、GPUスレッドは5.4ms/frame, UIスレッドは7.9ms/frameとなっています。（改修前は、GPUスレッドが4.1ms/frame, UIスレッドが19.7ms/frameでした。）
-<img src="/images/20220317a/5538b10a-158a-bd17-b27f-09f0f4c22222.gif" alt="" width="960" height="2000" loading="lazy">
+<img src="/images/20220317a/5538b10a-158a-bd17-b27f-09f0f4c22222.gif" alt="" width="480" height="1000" loading="lazy">
 
 Frame実行時間のタイムラインを見ても、UIグラフに赤色のJank（slow frame）が見られません。平均43FPSとなっており、改修前の28FPSより改善しています。
 <img src="/images/20220317a/test4.png" alt="test4.png" width="1200" height="129" loading="lazy">
