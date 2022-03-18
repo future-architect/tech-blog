@@ -130,7 +130,7 @@ Visual Studioだけじゃなくて、QtみたいにWindows SDKも使えたり、
 
 Flutterは使用するリソースがマルチプラットフォームな環境の割には少なそうなので、この手の常駐アプリにはよさそうです。常駐アプリでリソースを食いまくるのはみんな嫌がりますしね。
 
-まず、Flutterはアプリ＝ウインドウ＝アクティブなので、ウインドウ非表示のままアプリを実行し続けるということがデフォルトではできません。そこは、パッケージの[bitsdojo_window](https://pub.dev/documentation/bitsdojo_window/latest/)の力を借りる必要があります。また、システムトレイは[system_tray(https://pub.dev/packages/system_tray)を利用しました。こちらはシステムトレイにアイコンを表示しつつ、コンテキストメニューを表示したり、アイコンを動的に切り替えたりといったことができます。
+まず、Flutterはアプリ＝ウインドウ＝アクティブなので、ウインドウ非表示のままアプリを実行し続けるということがデフォルトではできません。そこは、パッケージの[bitsdojo_window](https://pub.dev/documentation/bitsdojo_window/latest/)の力を借りる必要があります。また、システムトレイは[system_tray](https://pub.dev/packages/system_tray)を利用しました。こちらはシステムトレイにアイコンを表示しつつ、コンテキストメニューを表示したり、アイコンを動的に切り替えたりといったことができます。
 
 今回はWindowsに特化して説明しますが、各ライブラリはmacOSやLinuxにも対応しています。そちらは紹介しませんので興味のある方はそれぞれのライブラリのドキュメントを参照してください。
 
