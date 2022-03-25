@@ -6,10 +6,10 @@ tag:
   - Flutter
   - FlutterFlow
   - Design
-  - NoCodeTool
-  - LowCodePlatform
+  - ノーコード
+  - ローコード
 category:
-  - Infrastructure
+  - Programming
 thumbnail: /images/20220325a/thumbnail.png
 author: 宮崎将太
 lede: "Flutter連載6回目としてFlutterFlowについて調べてみました。GoogleI/O'21でFlutterFlowというFlutterのノーコードのサービスが発表されました。"
