@@ -182,14 +182,7 @@ final loadingServiceProvider =
 
 /// LoadingService represents interfaces to control the progress indicator.
 class LoadingService extends StateNotifier<bool> {
-  LoadingService._() : super(false);
-
-  /// Returns a singleton [LoadingService] instance.
-  factory LoadingService() {
-    return _instance;
-  }
-
-  static final _instance = LoadingService._();
+  LoadingService() : super(false);
 
   int _count = 0;
 
@@ -302,5 +295,5 @@ https://github.com/datake914/flutter_global_indicator_demo
 インジケータの制御を共通化したいという想いから色々試行錯誤してこのような実装にたどり着きましたが、もっとスマートな方法があるよって方は是非コメントいただければと思います。
 
 [^1]: Navigator2.0で宣言的なナビゲーションが可能になりましたが、ダイアログ表示は依然として命令的になります
-[^2]: c.f. https://github.com/flutter/flutter/issues/33566
+[^2]: cf. https://github.com/flutter/flutter/issues/33566
 
