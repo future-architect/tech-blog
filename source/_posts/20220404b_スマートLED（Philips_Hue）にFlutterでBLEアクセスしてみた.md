@@ -118,13 +118,13 @@ https://github.com/ma91n/flutter-hue-led-sample
 
 Lチカです。照明のON/OFFでカメラのフォーカスが変わってしまっていますが、ついたり消えたりしているのがわかります。手ブレですが、撮影中に飼い猫がじゃれついてきているためにいつもより多めに発生しています。
 
-<video src="/images/20220404b/Lチカ.mp4" controls></video>
+<video src="/images/20220404b/Lチカ.mp4" controls width="50%"></video>
 
 ### 色変更
 
 適当にRGBで指定した色に変更するようにしてています。
 
-<video src="/images/20220404b/色変更.mp4" controls></video>
+<video src="/images/20220404b/色変更.mp4" controls width="50%"></video>
 
 
 

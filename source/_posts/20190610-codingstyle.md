@@ -6,6 +6,8 @@ tag:
   - コーディング規約
   - コードレビュー
   - 可読性
+  - 新人向け
+  - 入門
 category:
   - Programming
 author: 王紹宇
