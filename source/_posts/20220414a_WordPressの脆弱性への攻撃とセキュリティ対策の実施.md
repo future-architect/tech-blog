@@ -4,7 +4,7 @@ date: 2022/04/14 00:00:00
 postid: a
 tag:
   - WordPress
-  - 静寂性
+  - 脆弱性
   - Vuls
   - FutureVuls
 category:
@@ -232,12 +232,14 @@ https://future-architect.github.io/articles/20200623/
 今回は検索を行うElasticsearch、データをグラフィカルに可視化するKibana、特定のログを収集するFilebeat Moduleを使用しaudit logおよびApacheのエラーログの確認を行いました。
 
 ### 検知・防御の実施
-```setenforce 0```でSELinuxをPermissiveモードにしアクセス可否のログが記録されるようにしておきます。
+`setenforce 0` でSELinuxをPermissiveモードにしアクセス可否のログが記録されるようにしておきます。
+
 ```
 [root@localhost ~]# setenforce 0
 [root@localhost ~]# getenforce
 Permissive
 ```
+
 攻撃クライアントから攻撃をし、テストファイルが削除されていることを確認後、ブラウザからKibanaへアクセスします。
 Analytics → Dashboardと進み、検索から[Filebeat Auditd]Audit Events ECSのタイトルを選択します。
 
