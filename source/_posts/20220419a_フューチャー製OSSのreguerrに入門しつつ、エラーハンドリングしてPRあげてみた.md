@@ -28,9 +28,9 @@ reguerrはエラーハンドリング向けのソースコードを自動生成�
 # 入門してみる
 
 ## 下準備
-まずはフューチャーのGitHubリポジトリから[reguerr](https://github.com/future-architect/reguerr)をチェックアウトし、readmeに沿ってコマンドをインストールします。
+まずはフューチャーのGitHubリポジトリ上[reguerr](https://github.com/future-architect/reguerr)のreadmeに沿ってコマンドをインストールします。
 ```sh
-$ go install <Your Path>/github.com/future-architect/reguerr/cmd/reguerr
+$ go install github.com/future-architect/reguerr/cmd/reguerr
 ```
 以下のようにヘルプコマンドが実行できればインストール成功です。
 ```sh
