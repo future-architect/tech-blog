@@ -11,7 +11,7 @@ category:
   - Infrastructure
 thumbnail: /images/20220509a/thumbnail.png
 author: 村田靖拓
-lede: "3月17日に開催された「Future Tech Night #21 Google Cloud: データエンジニア＋MLOps」のセッションサマリと補足事項について触れていきます。当日のセッションは2つありましたが、私の記事では「JSON関数と共に歩む、BigQueryを使った超汎化型データ活用基盤」のセッションについて記載します。「Vertex AIによるフルマネージドなMLOps導入」のセッションについては真鍋さんの記事をお待ち下さい。登壇時の資料および動画がそれぞれ以下にアップロードされています。"
+lede: "3月17日に開催された「Future Tech Night #21 Google Cloud: データエンジニア＋MLOps」のセッションサマリと補足事項について触れていきます。当日のセッションは2つありましたが、私の記事では「JSON関数と共に歩む、BigQueryを使った超汎化型データ活用基盤」のセッションについて記載します。"
 ---
 こんにちは、TIGの村田です。
 本記事では、3月17日に開催された「Future Tech Night #21 Google Cloud: データエンジニア＋MLOps」のセッションサマリと補足事項について触れていきます。
