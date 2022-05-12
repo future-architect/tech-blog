@@ -3,7 +3,7 @@ title: "Serverless連載6: AWSのStep FunctionsとLambdaでServelessなBatch処�
 date: 2020/05/15 22:25:58
 postid: ""
 tag:
-  - Serverless
+  - サーバーレス
   - AWS
   - DynamoDB
   - StepFunctions

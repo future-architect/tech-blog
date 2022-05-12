@@ -3,7 +3,7 @@ title: "Serverless連載4: Firebase CrashlyticsでAndroidアプリのエラー�
 date: 2020/03/30 09:45:42
 postid: ""
 tag:
-  - Serverless
+  - サーバーレス
   - GCP
   - Firebase
   - Android

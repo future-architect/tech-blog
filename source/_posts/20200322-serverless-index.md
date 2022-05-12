@@ -3,7 +3,7 @@ title: "Serverless連載を始めます（2020）"
 date: 2020/03/22 09:56:50
 postid: ""
 tag:
-  - Serverless
+  - サーバーレス
   - インデックス
 category:
   - Programming

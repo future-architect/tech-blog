@@ -5,7 +5,7 @@ postid: ""
 tag:
   - AWS
   - Go
-  - Serverless
+  - サーバーレス
   - Lambda
   - IoT
   - Kinesis

@@ -5,7 +5,7 @@ postid: ""
 tag:
   - Go
   - GCP
-  - Serverless
+  - サーバーレス
   - CloudRun
   - go-chi
 category:

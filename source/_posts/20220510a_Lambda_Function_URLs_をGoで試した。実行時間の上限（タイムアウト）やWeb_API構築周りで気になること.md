@@ -6,7 +6,7 @@ tag:
   - Lambda
   - LambdaFunctionURLs
   - Go
-  - サーバレス
+  - サーバーレス
   - タイムアウト
 category:
   - Programming

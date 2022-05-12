@@ -4,7 +4,7 @@ date: 2020/03/27 09:51:22
 postid: ""
 tag:
   - Go
-  - Serverless
+  - サーバーレス
   - AWS
   - GoCDK
   - DynamoDB

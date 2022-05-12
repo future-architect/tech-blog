@@ -5,7 +5,7 @@ postid: ""
 tag:
   - Go
   - AWS
-  - Serverless
+  - サーバーレス
   - Lambda
 category:
   - Programming
