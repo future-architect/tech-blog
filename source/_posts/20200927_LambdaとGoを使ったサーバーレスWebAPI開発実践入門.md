@@ -5,7 +5,7 @@ postid: ""
 tag:
   - Go
   - AWS
-  - Serverless
+  - サーバーレス
   - go-swagger
   - Terraform
   - 入門

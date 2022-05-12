@@ -5,7 +5,7 @@ postid: b
 tag:
   - Kinesis
   - Lambda
-  - Serverless
+  - サーバーレス
   - 保守運用
 category:
   - Infrastructure

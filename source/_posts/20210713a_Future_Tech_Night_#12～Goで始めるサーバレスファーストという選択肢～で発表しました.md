@@ -5,7 +5,7 @@ postid: a
 tag:
   - 登壇レポート
   - AWS
-  - Serverless
+  - サーバーレス
   - TechNight
 category:
   - Infrastructure

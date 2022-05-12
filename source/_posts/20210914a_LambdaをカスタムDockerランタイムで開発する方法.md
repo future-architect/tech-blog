@@ -5,7 +5,7 @@ postid: a
 tag:
   - AWS
   - Lambda
-  - サーバレス
+  - サーバーレス
   - Docker
   - Oracle
   - Go
