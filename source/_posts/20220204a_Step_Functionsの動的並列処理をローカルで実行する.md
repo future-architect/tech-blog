@@ -99,7 +99,7 @@ S3バケットには予め以下の構造をもつJSONファイルを配置し�
 ## ScatterLambda
 ScatterLambdaでは上記のJSONファイルを取り込み、DataFrameに変換します。その後、DataFrameをSegmentLamdaが15分以内に処理できる単位に分割します。
 
-分割したファイルはpikcleファイルでS3バケットに格納します。
+分割したファイルはpickleファイルでS3バケットに格納します。
 
 ## SegmentLambda
 
