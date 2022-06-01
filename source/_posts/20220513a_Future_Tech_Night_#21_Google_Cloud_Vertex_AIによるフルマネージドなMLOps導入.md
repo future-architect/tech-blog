@@ -9,7 +9,7 @@ tag:
   - TechNight
   - 登壇レポート
 category:
-  - InfrasDataSciencetructure
+  - DataScience
 thumbnail: /images/20220513a/thumbnail.png
 author: 真鍋優
 lede: "「Future Tech Night #21 Google Cloud: データエンジニア＋MLOps」に登壇させていただきましたので、その内容について触れていきたいと思います。"
