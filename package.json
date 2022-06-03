@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "hexo": {
-    "version": "6.0.0"
+    "version": "6.2.0"
   },
   "dependencies": {
     "googleapis": "^92.0.0",
