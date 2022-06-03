@@ -3,7 +3,7 @@ title: "Pipenv+LocalStackで作るLambda開発環境"
 date: 2022/02/02 00:00:00
 postid: a
 tag:
-  - LoclStack
+  - LocalStack
   - AWS
   - Lambda
   - 開発環境
