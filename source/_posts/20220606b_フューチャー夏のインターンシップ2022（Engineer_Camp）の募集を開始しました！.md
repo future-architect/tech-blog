@@ -26,7 +26,9 @@ lede: "フューチャーのサマーインターン2022 Summer Engineer Camp�
 
 それぞれに良いところがありますが、ここでは Engineer Camp のメニューについて紹介します。
 
-Project Campに興味がある方は、未来報の記事をご覧ください。
+Project Campに興味がある方は、下記の記事をご覧ください。
+
+* [【対象：新卒】サマーインターン＜Project Camp＞｜採用イベント情報 | フューチャー株式会社｜note](https://note.com/future_event/n/nb94191ebdd53)
 
 
 ## 実施概況
