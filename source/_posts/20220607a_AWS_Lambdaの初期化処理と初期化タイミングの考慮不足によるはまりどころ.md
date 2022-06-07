@@ -106,7 +106,7 @@ func main() {
 
 イメージ図は以下になります。
 
-<img src="/images/20220607a/.png" alt="対向システムが同時接続数が1" width="872" height="462" loading="lazy">
+<img src="/images/20220607a/before.png" alt="対向システムが同時接続数が1" width="872" height="462" loading="lazy">
 
 ログから原因は以下のように推測しています。
 
@@ -120,6 +120,8 @@ func main() {
 本ケースではTCP通信の確立は初期化処理ではなく、Lambdaハンドラ関数内で行うようにしました。意図しないタイミングで初期化処理が行われ、対向システムと通信が確立されることを防ぐためです。
 
 結果として、この対応以降は同様のTCP通信が確立できなくなる事象は発生しておらず、期待した動作を得ることができました。
+
+<img src="/images/20220607a/after.png" alt="毎回TCPコネクションをオープン・クローズする" width="872" height="462" loading="lazy">
 
 ## まとめ
 
