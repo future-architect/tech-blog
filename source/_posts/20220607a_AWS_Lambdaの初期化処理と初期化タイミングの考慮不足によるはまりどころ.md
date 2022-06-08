@@ -129,3 +129,4 @@ func main() {
 
 [^6]: その他、実行タイミングに依存するデータはLambdaのグローバル変数に保存するべきではない、というような一般的な注意ポイントもありますが、本記事では割愛します。詳細は https://aws.amazon.com/jp/blogs/news/operating-lambda-performance-optimization-part-2/ などを参照ください。
 
+[失敗談連載2022](/articles/20220601a/)の次は、久保さんの[ユーザー要望で要件が増えてく〜アジャイル開発での落とし穴〜](/articles/20220608a/)です。
