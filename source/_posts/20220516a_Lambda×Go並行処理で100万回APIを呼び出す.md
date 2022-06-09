@@ -25,7 +25,7 @@ lede: "こんにちは。TIG DXチームの後藤です。2021年7月に新卒�
 
 <img src="/images/20220516a/Image_from_iOS.jpg" alt="構成図" width="852" height="362" loading="lazy">
 
-ちなみに、1Web API呼び出し大体30ms~80msほどかかります。
+ちなみに、1Web API呼び出しに大体30ms~80msほどかかります。
 
 # AWS Lambda
 AWS Lambdaはマネージドサービスでありサーバーの運用管理が必要なく、プログラムが実行された時間に対してのみ課金がされるので、開発コスト、運用コスト、金銭面を考えると非常に使い勝手がいいサービスです。実際に私の所属しているチームではLambdaを積極的に活用しています。そんな便利なLambdaですが、実行時間に制約があり最大で15分までの処理しか行うことができず、15分以上の時間がかかる処理を行う場合にはEC2などの別の環境を用意する必要があります。
@@ -56,7 +56,10 @@ var wg sync.WaitGroup
 for _, line := range lines {
     wg.Add(1)
     go func(wg *sync.WaitGroup, line CsvLine) {
-        defer wg.Done()
+        defer func() {
+            <-semaphore
+            wg.Done()
+        }()
         if err := postRequest(ctx, line); err != nil {
             log.Printf("post request error: %v", err)
         }
@@ -88,7 +91,10 @@ for _, line := range lines {
     semaphore <- struct{}{}
     wg.Add(1)
     go func(wg *sync.WaitGroup, line CsvLine) {
-        defer wg.Done()
+        defer func() {
+            <-semaphore
+            wg.Done()
+        }()
         if err := postRequest(ctx, line); err != nil {
             log.Printf("post request error: %v", err)
         }
