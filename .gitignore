@@ -7,4 +7,4 @@ public*
 .deploy*/
 .vscode/
 .idea/
-cache_*.json
+#cache_*.json
