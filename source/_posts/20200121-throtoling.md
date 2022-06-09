@@ -6,6 +6,7 @@ tag:
   - AWS
   - GCP
   - リトライ
+  - スロットリング
 category:
   - Infrastructure
 author: 村瀬善則
