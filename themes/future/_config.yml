@@ -18,8 +18,8 @@ featured_count: 10
 # 一覧画面のタグ表示
 tag_display_min_count: 15
 
-# Integrations
-google_analytics: UA-74047147-1
+# Integrations(GA4 プロパティ)
+google_analytics: G-X1C28R8H0M
 
 # Social
 social:
