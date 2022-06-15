@@ -6,10 +6,10 @@
     "version": "6.2.0"
   },
   "dependencies": {
-    "googleapis": "^92.0.0",
-    "hexo": "^6.0.0",
+    "googleapis": "^102.0.0",
+    "hexo": "^6.2.0",
     "hexo-easy-tags-plugin": "^1.1.0",
-    "hexo-filter-mathjax": "^0.8.0",
+    "hexo-filter-mathjax": "^0.8.1",
     "hexo-fs": "^3.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-author": "^0.0.5",
@@ -19,19 +19,19 @@
     "hexo-generator-seo-friendly-sitemap": "0.2.1",
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^4.1.0",
-    "hexo-renderer-stylus": "^2.0.1",
+    "hexo-renderer-marked": "^5.0.0",
+    "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
     "image-size": "^1.0.1",
     "js-yaml": "^4.1.0",
-    "markdown-it": "^12.3.2",
-    "npm": "^8.11.0",
+    "markdown-it": "^13.0.1",
+    "npm": "^8.12.1",
     "random-seed": "^0.3.0",
     "rss-parser": "^3.12.0",
-    "sync-fetch": "^0.3.1"
+    "sync-fetch": "^0.4.1"
   },
   "devDependencies": {
-    "textlint": "^12.1.0",
+    "textlint": "^12.1.1",
     "textlint-rule-preset-ja-technical-writing": "^7.0.0",
     "textlint-rule-spellcheck-tech-word": "^5.0.0"
   }
