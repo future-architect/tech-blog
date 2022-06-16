@@ -7,6 +7,7 @@ tag:
   - CMS
   - AWS
   - インデックス
+  - メディア業界
 category:
   - Business
 thumbnail: /images/20200914/thumbnail.jpg
