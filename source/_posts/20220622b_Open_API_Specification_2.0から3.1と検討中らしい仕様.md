@@ -1,5 +1,5 @@
 ---
-title: "Open API Specification 2.0から3.1と検討中らしい仕様"
+title: "Open API Specification 3.1と気になる仕様策定"
 date: 2022/06/22 00:00:01
 postid: b
 tag:
