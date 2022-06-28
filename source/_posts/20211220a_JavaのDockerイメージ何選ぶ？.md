@@ -146,7 +146,7 @@ GraalVMの場合はネイティブイメージになるのでその後はラン�
 | 11 | oopenjdk:11-jdk-slim-bullseye  | openjdk:11-jre-slim-bullseye  |
 | 11 distroless | openjdk:11-jdk-slim-bullseye | gcr.io/distroless/java11-debian11 |
 | 17 (Azure用) | mcr.microsoft.com/java/jdk:17-zulu-debian10 |  mcr.microsoft.com/java/jre-headless:17-zulu-debian10 |
-| 17 distroless | oopenjdk:17-jdk-slim-bullseye  | gcr.io/distroless/java11-debian17 |
+| 17 distroless | oopenjdk:17-jdk-slim-bullseye  | gcr.io/distroless/java17-debian11 |
 
 
 # 参考
