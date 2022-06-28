@@ -661,7 +661,7 @@ def lambda_handler(event, context) -> str:
 
 # LocalStackへのデプロイ
 それでは作成したそれぞれのLambda関数をLocalStackにデプロイします。
-デプロイの方法は先程紹介した[こちらの記事](https://qiita.com/orangekame3/private/9abed652b26dd4eb1afd)にまとめた方法を採用します。各Lambda関数のディレクトリ内に以下のようなMakefileを作成します。
+デプロイの方法は先程紹介した[こちらの記事](https://future-architect.github.io/articles/20220202a/)にまとめた方法を採用します。各Lambda関数のディレクトリ内に以下のようなMakefileを作成します。
 以下はdemo-scatter内のMakefileの例です。
 
 ```Makefile
