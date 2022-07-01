@@ -126,8 +126,8 @@ const fetchableDate = url => {
     }
   }
 
-  // 5% は再取得する
-  if (Math.random() * 100 < 5) {
+  // 3% は再取得する
+  if (Math.random() * 100 < 3) {
     return true;
   }
 
