@@ -82,7 +82,7 @@ public class HealthController{
 }
 ```
 
-SpringBootはデフォルトではアプリケーションと同一のパッケージかその下しかコンポーネントを探しに行かないので、スキャン先を教えてあげます。
+SpringBootはデフォルトではアプリケーションと同一のパッケージかその下しかコンポーネントを探しに行かないので、スキャン先を教えてあげます。登録は``@ComponentScan``アノテーションを使うか、``@SpringBootApplication``にパラメータを渡すか、どちらかの方法でできます。
 
 ```java /src/main/java/jp/co/future/app/MyApplication.java
 import org.springframework.context.annotation.ComponentScan;
@@ -117,7 +117,7 @@ public class DemoApplication {
 共有ライブラリの方は、先ほどの実装から``@RestController``を抜くだけです。
 
 ```java /src/main/java/jp/co/future/common/HealthBaseController.java
-package jp.co.future.app;
+package jp.co.future.common;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
