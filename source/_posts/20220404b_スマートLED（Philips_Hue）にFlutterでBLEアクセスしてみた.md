@@ -6,6 +6,7 @@ tag:
   - Lチカ
   - BLE
   - Flutter
+  - Bluetooth
 category:
   - IoT
 thumbnail: /images/20220404b/thumbnail.png
