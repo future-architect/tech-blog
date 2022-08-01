@@ -4,6 +4,7 @@ date: 2020/05/21 22:23:40
 postid: ""
 tag:
   - Go
+  - GoDoc
   - ドキュメント
   - GoTips連載
 category:
