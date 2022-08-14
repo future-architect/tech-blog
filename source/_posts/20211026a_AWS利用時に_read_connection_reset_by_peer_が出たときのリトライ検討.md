@@ -200,6 +200,12 @@ var kc = kinesis.New(session.Must(
 			Retryer: CustomRetryer{
 				DefaultRetryer: client.DefaultRetryer{
 					NumMaxRetries: client.DefaultRetryerMaxNumRetries,
+
+					// その他のデフォルト値も必要であれば設定しておく
+					MinRetryDelay:    client.DefaultRetryerMinRetryDelay,
+					MinThrottleDelay: client.DefaultRetryerMinThrottleDelay,
+					MaxRetryDelay:    client.DefaultRetryerMaxRetryDelay,
+					MaxThrottleDelay: client.DefaultRetryerMaxThrottleDelay,
 				},
 			},
 		}),
