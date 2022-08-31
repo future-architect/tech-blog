@@ -11,7 +11,7 @@ tag:
 category:
   - Programming
 thumbnail: /images/20220829a/thumbnail.png
-author: ma91n
+author: 真野隼記
 lede: "夏休み自由研究連載の5本目です。go-fuse でLocalStackでローカル環境にエミュレートされるS3バケットをマウントするツールを開発しました。"
 ---
 # はじめに
