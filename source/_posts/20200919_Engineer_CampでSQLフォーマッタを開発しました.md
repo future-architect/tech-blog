@@ -10,6 +10,7 @@ tag:
   - 構文解析
   - VSCode
   - コアテク
+  - フォーマッター
 category:
   - Programming
 thumbnail: /images/20200919/thumbnail.jpg

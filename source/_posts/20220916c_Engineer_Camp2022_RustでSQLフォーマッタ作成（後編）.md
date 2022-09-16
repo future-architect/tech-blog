@@ -6,8 +6,10 @@ tag:
   - SQL
   - インターン
   - インターン2022
+  - フォーマッター
+  - Rust
 category:
-  - Cuture
+  - Culture
 thumbnail: /images/20220916c/thumbnail.png
 author: 川渕皓太
 lede: "作成したフォーマッタの実装について説明します。前編でも示しましたが、今回作成したフォーマッタの処理の流れを再度示します。"
@@ -26,7 +28,7 @@ lede: "作成したフォーマッタの実装について説明します。前�
 
 ### Rust
 
-<img src="/images/20220916c/rustacean.png" alt="" width="1200" height="800" loading="lazy">
+<img src="/images/20220916c/rustacean.png" alt="" width="400" height="266" loading="lazy">
 
 高速で、かつwasm-packなどのライブラリを用いてWebAssembly化することができることから、様々なプラットフォームで動作するため、Rustを採用しました。
 

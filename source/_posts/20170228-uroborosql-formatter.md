@@ -6,6 +6,8 @@ tag:
   - SQL
   - uroboroSQL
   - コーディング規約
+  - フォーマッター
+  - SublimeText
 category:
   - DB
 thumbnail: /images/20170227/thumbnail_20170227.png
