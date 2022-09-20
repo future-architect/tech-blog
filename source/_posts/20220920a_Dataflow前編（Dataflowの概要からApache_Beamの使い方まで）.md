@@ -6,13 +6,15 @@ tag:
   - Dataflow
   - ApacheBeam
   - インターン
-  - インターンン2022
+  - インターン2022
 category:
   - Infrastructure
 thumbnail: "/images/20220920a/thumbnail.png"
 author: "平野甫"
 lede: "フューチャーのインターンEngineer Campに参加した平野と申します。今回のインターンでは、Google Cloud Platform (GCP)のサービスとして提供されているDataflowについて調査し、その仕組みや使い方についてこの技術ブログにまとめることに取り組みました。"
 ---
+
+<img src="/images/20220920a/dataflow_top1.png" alt="" width="1000" height="655">
 
 # はじめに
 
@@ -32,7 +34,7 @@ lede: "フューチャーのインターンEngineer Campに参加した平野と
     * GPUを使う上での事前準備と基本的な使い方
     * Pub/Sub・BigQueryとの連携例
 
-という構成になっています。後編も公開予定です。
+という構成になっています。[後編](/articles/20220920b/)も公開しています。
 
 # Dataflowとは
 
@@ -300,7 +302,7 @@ if __name__ == "__main__":
 
 # 最後に
 
-ここまでお読みいただきありがとうございます。稚拙な文章で読みづらい箇所が多々あったかと思います。よければ後編（近日公開予定）もお読みいただければと思います。
+ここまでお読みいただきありがとうございます。稚拙な文章で読みづらい箇所が多々あったかと思います。よければ[後編](/articles/20220920b/)もお読みいただければと思います。
 
 # 参考
 
@@ -308,3 +310,5 @@ if __name__ == "__main__":
 * [How Beam executes a pipeline (公式ドキュメント)](https://beam.apache.org/documentation/runtime/model/)
 * [Python を使用して Dataflow パイプラインを作成する](https://cloud.google.com/dataflow/docs/quickstarts/create-pipeline-python)
 
+
+アイキャッチは<a href="https://pixabay.com/ja/users/paulbr75-2938186/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2471293">Paul Brennan</a>による<a href="https://pixabay.com/ja//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2471293">Pixabay</a>からの画像です。
