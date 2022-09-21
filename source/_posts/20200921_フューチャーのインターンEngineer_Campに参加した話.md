@@ -4,7 +4,8 @@ date: 2020/09/21 00:00:00
 postid: ""
 tag:
   - インターン
-  - インターン2021
+  - インターン2020
+  - MaaS
 category:
   - Infrastructure
 thumbnail: /images/20200921/thumbnail.png
