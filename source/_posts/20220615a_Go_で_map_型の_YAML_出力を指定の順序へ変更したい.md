@@ -6,6 +6,7 @@ tag:
   - Go
   - YAML
   - map
+  - リフレクション
 category:
   - Programming
 thumbnail: /images/20220615a/thumbnail.png
