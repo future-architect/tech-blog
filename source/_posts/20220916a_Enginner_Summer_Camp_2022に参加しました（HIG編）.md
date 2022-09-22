@@ -1,5 +1,5 @@
 ---
-title: "Enginner Summer Camp 2022に参加しました（HIG編）"
+title: "Enginner Camp 2022に参加しました（HIG編）"
 date: 2022/09/16 00:00:00
 postid: a
 tag:
