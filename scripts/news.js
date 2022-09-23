@@ -47,21 +47,25 @@ hexo.extend.helper.register('generate_qiita_orgs', function() {
     }
   });
 
-  const newsCategory = item => {
-    if (item.link.includes("qiita")) {
-      return "【Qiita】"
-    } else {
-      return "【勉強会】"
-    }
-  }
-
   const newsDate = item => {
     return eventDate(item).split("T")[0];
   }
 
-  const feedHTML = feeds.slice(0, maxNewsDisplayCount).map(item => `<li><span class="news-date">${newsDate(item)}</span><span class="news-category">${newsCategory(item)}</span><a href="${item.link}" title="${item.title}" target="_blank" rel="noopener" class="news-title">${item.title}</a></li>`).join("\n");
+  // ニュースは直近14日にしぼりたい
+  let dt = new Date();
+  dt.setDate(dt.getDate() -14);
+
+  const latestFeeds = feeds.filter(item => newsDate(item) >= formatted(dt))
+
+  if (latestFeeds.length == 0) {
+    return ''
+  }
+
+
+  const feedHTML = latestFeeds.slice(0, maxNewsDisplayCount).map(item => `<li><span class="news-date">${newsDate(item)}</span><a href="${item.link}" title="${item.title}" target="_blank" rel="noopener" class="news-title">${item.title}</a></li>`).join("\n");
 
   return `
+  <h2>News</h2>
   <div class="class="widget-wrap">
   <div class="widget">
     <ul class="news">
@@ -72,3 +76,12 @@ hexo.extend.helper.register('generate_qiita_orgs', function() {
   `
 });
 
+const formatted = db => {
+ return db.toLocaleDateString("ja-JP", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  })
+  .split("/")
+  .join("-");
+}
