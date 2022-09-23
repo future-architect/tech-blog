@@ -3,7 +3,7 @@
 hexo.extend.helper.register('list_reference_posts', function() {
 
   const referencePosts = this.site.posts.data.filter(p => p.content.includes(this.post.path))
-    .filter(p => p.path !== this.post.path); // その記事で自分セルフリンクされている場合は除去
+    .filter(p => p.path !== this.post.path).reverse();; // その記事で自分セルフリンクされている場合は除去
 
   if (referencePosts.length == 0) {
     return "";
@@ -24,7 +24,7 @@ hexo.extend.helper.register('list_reference_posts', function() {
   let result = "";
   for (let i = 0; i < Math.min(5, referencePosts.length); i++) {
     const related = referencePosts[i];
-    result += `<li class="reference-posts-item"><a href=/${related.path} title="${related.lede}">${label(related)} ${related.title}</a></li>`;
+    result += `<li class="reference-posts-item"><a href=/${related.path} title="${related.lede}">${related.title}${label(related)}</a></li>`;
   }
 
   return `
