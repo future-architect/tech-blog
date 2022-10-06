@@ -164,6 +164,12 @@ aws labs http adapter response!!
 
 そのため、現在API Gateway + Lambda構成で開発しているアプリも、アプリコードとしてはそのまま Lambda Function URLsに移植できますし、同様に `awslabs/aws-lambda-go-api-proxy` を使っている場合もです。 `awslabs/aws-lambda-go-api-proxy` を使っていれば、ECSでもAPI Gateway Lambdaでも Lambda Function URLs でもコアなアプリコードは同じにできるので、非常に安心ですね。（ECSはproxyなしで生のHTTPサーバを実行するイメージです）
 
+
+**2022.10.6 追記**
+
+[AWS lambda's function URL without API Gateway in Go - Stack Over Flow](https://stackoverflow.com/questions/72795881/aws-lambdas-function-url-without-api-gateway-in-go) にあるように、aws-sdk-for-go における apigateway-requestとlambda-function-urlsの構造体が異なるようで、上記の例だとリクエストパラメータはうまく渡るものの、URLのマッピングがすべて `/` になってしまうというフィードバックが社内のチームから報告を受けました。そのままadaptorをつかうのではなく、 `events.LambdaFunctionURLRequest` に載せ替える一手間がひつようかもしれません。
+
+
 ## まとめ
 
 * Lambda Function URLsのタイムアウトは最長15分になり、API Gatewayを経由するときより伸びた
