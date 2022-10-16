@@ -184,6 +184,25 @@ func download(ctx context.Context, srv *drive.Service, name, id string) error {
 こちらを実行すると、権限付与したフォルダ配下のファイルを全て取得できると思います。
 
 
+## 共有ドライブ（Shared drive）へのアクセス
+
+**2022.10.16追記**
+
+共有ドライブへのアクセスは[Implement shared drive support](https://developers.google.com/drive/api/guides/enable-shareddrives)に記載されているとおり `supportsAllDrives=true` の追加のオプションが必要です。これを指定しないと、権限はあるはずなのに `404: File not found` が出ると思います。
+
+次のようにSuppourtsAllDrives()で設定します。
+
+```go:List()の場合
+	r, err := srv.Files.List().SupportsAllDrives(true).PageSize(1000).
+```
+
+```go:ダウンロードの場合
+	resp, err := srv.Files.Get(id).SupportsAllDrives(true).Context(ctx).Download()
+```
+
+業務利用だと出力先を共有ドライブにすることはよくある運用だと思っており、そしてこのオプションはけっこう抜けがちで、本番疎通時にハマることも多いようなのでご注意ください。
+
+
 ## 指定したフォルダ配下のみのファイルをダウンロードしたい
 
 [Google Drive APIの Files: list](https://developers.google.com/drive/api/v3/reference/files/list)を確認すると`q`オプションで検索対象の絞り込みが可能です。いくつか[検索例](https://developers.google.com/drive/api/v3/search-files)がドキュメントに記載されています。
