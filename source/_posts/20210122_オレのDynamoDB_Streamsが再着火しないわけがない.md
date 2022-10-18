@@ -5,6 +5,7 @@ postid: ""
 tag:
   - AWS
   - DynamoDB
+  - DynamoDBStreams
   - Go
   - トラブルシュート
 category:
