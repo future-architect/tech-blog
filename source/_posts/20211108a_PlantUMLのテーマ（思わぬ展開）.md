@@ -6,6 +6,7 @@ tag:
   - PlantUML
   - OSS
   - 設計
+  - UML
 category:
   - Design
 thumbnail: /images/20211108a/thumbnail.png
