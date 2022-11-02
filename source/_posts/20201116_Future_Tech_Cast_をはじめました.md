@@ -5,6 +5,7 @@ postid: ""
 tag:
   - TechBlog
   - TechCast
+  - ポッドキャスト
 category:
   - Culture
 thumbnail: /images/20201116/thumbnail.png
