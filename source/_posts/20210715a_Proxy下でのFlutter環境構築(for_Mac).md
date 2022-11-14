@@ -30,7 +30,7 @@ TIG DXユニットでアルバイトをしている齋藤です。
 
 予め、`flutter pub get`で必要になるProxyに関する設定を行います。.zshrc等に設定を追記します。
 
-```zsh
+```sh
 # 認証なしの場合
 export http_proxy=http://proxy.example.com:8000
 export https_proxy=$http_proxy
@@ -39,15 +39,18 @@ export HTTPS_PROXY=$http_proxy
 export NO_PROXY=localhost,127.0.0.1
 export no_proxy=$NO_PROXY
 
-# 認証付きの場合
+# 認証付きの場合(※)
 export http_proxy=http://username:password@proxy.example.com:8000
 # 以下同じ
 ```
 
+(※)なお、記号ありパスワードの場合、flutter pub getではURLエンコードせずにそのまま記載するとうまくいくようです。
+`HTTP_PROXY="http://username:password%26@proxy.example.co.jp:8000"` ではなく、 `HTTP_PROXY="http://username:password&@proxy.example.co.jp:8000"` で設定します。
+
 続いてFlutter公式から`flutter_macos_<version_name>-stable.zip`をダウンロードします。
 そして、次のコマンドを実行していきます。Flutterのインストール先は`~/develop`として説明します。
 
-```zsh
+```sh
 cd ~/development
 unzip ~/Downloads/flutter_macos_<version_name>-stable.zip
 
@@ -69,7 +72,7 @@ IDEのAndroid Studioの設定を行います。Android Studioが未インスト�
 
 JDK 1.8.0がなければインストールします。そして、次の設定を.zshrc等に追加します。
 
-```zsh
+```sh
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 ```
 
