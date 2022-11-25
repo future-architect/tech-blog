@@ -22,7 +22,7 @@ lede: "SQLフォーマッタをVSCodeの拡張機能にする作業を行って�
 
 前編ではLSPを用いたVSCodeの拡張機能開発チュートリアルと、チュートリアルに使用したサンプルコードの解説を行います。
 
-後編ではサンプルコードに機能を追加する方法を説明します。
+[後編](/articles/20221125a/)ではサンプルコードに機能を追加する方法を説明します。
 
 # Language Serverとは
 Language Serverとは、自動補完、エラーチェック、型チェックなどの様々な言語機能をIDEに提供するものです。
@@ -471,7 +471,7 @@ connection.onCompletionResolve((item: CompletionItem): CompletionItem => {
 # まとめ
 LSPを用いたVSCodeの拡張機能開発チュートリアルとチュートリアルコードの解説を行いました。
 
-[後編](https://qiita.com/k-kawabt-8u/private/7a7a27c95f4f7c1b85b0)ではlsp-sampleに機能を追加する方法を説明しています。
+[後編](/articles/20221125a/) ではlsp-sampleに機能を追加する方法を説明しています。
 
 # 参考文献
 

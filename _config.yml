@@ -31,15 +31,15 @@ skip_render:
 
 # Authors
 author_generator:
-  per_page: 20
+  per_page: 25
   url_map:
 
 category_generator:
-  per_page: 20
+  per_page: 25
   order_by: -date
 
 tag_generator:
-  per_page: 20
+  per_page: 25
   order_by: -date
 
 # Writing
@@ -74,7 +74,7 @@ time_format: HH:mm:ss
 ## Set per_page to 0 to disable pagination
 index_generator:
   path: ''
-  per_page: 20
+  per_page: 25
   pagination_dir: page
 
 per_page: 0
@@ -97,7 +97,7 @@ feed:
   path:
     - atom.xml
     - rss2.xml
-  limit: 20
+  limit: 25
   content_limit: 140
   content_limit_delim: ' '
   hub:
