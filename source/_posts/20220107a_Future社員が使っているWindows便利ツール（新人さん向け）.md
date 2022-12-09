@@ -21,7 +21,7 @@ lede: "こんにちは。2020年4月入社の青柳です。タイトルにあ�
 ※前提としてwindowsの方向けなので、Macの方はごめんなさい🙇🏼
 
 # everything
-<img src="/images/20220107a/everything.gif" alt="everything" width="1160" height="428" loading="lazy">
+<img src="/images/20220107a/everything2.gif" alt="everything" width="1160" height="428" loading="lazy">
 
 https://forest.watch.impress.co.jp/library/software/everything/
 
