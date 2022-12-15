@@ -110,7 +110,7 @@ FROM
 
 `tree-sitter parse`コマンドで、ソースファイルをパースすることができます。
 
-```shell-session
+```Clojure
 $ tree-sitter parse ./exapmles/simple.sql
 (source_file [0, 0] - [3, 11]
   (select_statement [0, 0] - [3, 11]
@@ -222,7 +222,7 @@ FROM
     STUDENT
 ```
 
-```shell-session
+```Clojure
 $ cargo run ./examples/simple.sql
 source_file [(0, 0)-(1, 12)]
   select_statement [(0, 0)-(0, 9)]
@@ -247,7 +247,7 @@ tree-sitter では文法を `grammar.js` に記述します。clone した tree-
 
 例えば、tree-sitter-sql で WHERE句は以下のように記述されています([where_clauseの定義](https://github.com/m-novikov/tree-sitter-sql/blob/218b672499729ef71e4d66a949e4a1614488aeaa/grammar.js#L909))。
 
-```javascript WHERE句の規則
+```js WHERE句の規則
 where_clause: $ => seq(kw("WHERE"), $._expression)
 ```
 
@@ -259,7 +259,8 @@ where_clause: $ => seq(kw("WHERE"), $._expression)
 ### アンダースコアから始まる規則
 
 規則名の先頭の文字をアンダースコアから始めることで、生成されるCSTにノードとして出現させないように設定することができます([ドキュメント](https://tree-sitter.github.io/tree-sitter/creating-parsers#hiding-rules))。例えば、算術演算や識別子、リテラルなどの式は`_expression`という名前で以下のように定義されています。
-```javascript 式に対応する規則
+
+```js 式に対応する規則
  _expression: $ =>
       choice(
         $.string,
@@ -275,7 +276,7 @@ where_clause: $ => seq(kw("WHERE"), $._expression)
 
 `choice`はtree-sitterのDSLで、引数のうちいずれか1つとマッチすることを意味しています。つまり、この規則は、文字列や`TRUE`、`FALSE`など各式に対応した規則を呼び出し、いずれか一つとマッチすることになります。つまり、ソースファイル中に式が現れるたびに`_expression`が呼び出されています。これがCST上に現れると、例えば`1+2-3`という式のパース結果が以下のようになってしまいます。
 
-```
+```Clojure
 (_expression
   (binary_expression
     (_expression
@@ -292,7 +293,7 @@ where_clause: $ => seq(kw("WHERE"), $._expression)
 
 アンダースコアから始めることで、CST上に現れないように設定でき、以下のようにシンプルな木にすることができます。
 
-```
+```Clojure
 (binary_expression
   (binary_expression
     (number "1")
@@ -316,7 +317,8 @@ NOT X AND Y OR Z
 この式はどのように解釈されるでしょうか？`NOT (X AND (Y OR Z))`や`(NOT X) AND (Y OR Z)`、`((NOT X) AND Y) OR Z`など、複数通りに解釈できてしまうと思います。このように、複数通りの解釈ができてしまうような文法を曖昧な文法といい、そのままではパースできません。
 
 これは、優先度・結合性を文法に記述することで対処できます。tree-sitter-sqlでは優先度をJavascriptの定数として以下のように定義しています。
-```javascript
+
+```js
 const PREC = {
   primary: 8,
   unary: 7,             // 単項演算子
@@ -330,7 +332,7 @@ const PREC = {
 ```
 
 これを用いて、論理式に優先度・結合性を加えて記述した規則は次のようになります。
-```javascript
+```js
     boolean_expression: $ =>
       choice(
         prec.left(PREC.unary, seq(kw("NOT"), $._expression)), // 優先度7
@@ -362,7 +364,7 @@ WHERE
 AND ID      BETWEEN 0   AND 100
 ```
 
-```shell-session
+```Clojure
 $ tree-sitter parse .\examples\between.sql
 (source_file [0, 0] - [7, 0]
   (select_statement [0, 0] - [6, 31]
@@ -400,7 +402,7 @@ BETWEEN述語は次のような構文になっています。[PostgreSQLのド�
 
 率直にDSLに直すと、次のような規則が書けます。
 
-```javascript 率直に書いたBETWEENの規則
+```js 率直に書いたBETWEENの規則
     between_and_expression: $ =>
       seq($._expression, optional(kw("NOT")), kw("BETWEEN"),
           $._expression, kw("AND"), $._expression)
@@ -408,7 +410,7 @@ BETWEEN述語は次のような構文になっています。[PostgreSQLのド�
 
 この規則をSQLの式に対応する規則`_expression`に追加します。
 
-```diff_javascript _expressionへの追加
+```diff _expressionへの追加
     _expression: $ =>
       choice(
         $.string,
@@ -421,7 +423,7 @@ BETWEEN述語は次のような構文になっています。[PostgreSQLのド�
 
 これでBETWEEN述語の規則を追加することができました。拡張した文法をもとにパーサを生成してみましょう。以下のコマンドを実行します。
 
-```shell-session
+```sh
 $ tree-sitter generate
 Unresolved conflict for symbol sequence:
 
@@ -478,7 +480,7 @@ $ tree-sitter generate
 
 先ほど作成した `print-cst`を用いて、パース結果を出力します。
 
-```shell-session
+```Clojure
 $ cd [print-cstのパス]
 $ cargo run ./examples/between.sql
 source_file [(0, 0)-(6, 31)]
@@ -516,7 +518,7 @@ source_file [(0, 0)-(6, 31)]
 
 `test/corpus/between.txt`を作成して、以下のように記述します。
 
-```txt test/corpus/between.txt
+```sql test/corpus/between.txt
 =======================================
 BETWEEN predicates
 =======================================
@@ -556,7 +558,7 @@ AND ID      BETWEEN 0   AND 100
 
 `tree-sitter test`でテストを行います。`-f`フラグを加えることで、特定のテストのみを実行することができます。
 
-```shell-session
+```sh
 $ tree-sitter test -f 'BETWEEN predicates'
   between:
     ✓ BETWEEN predicates
