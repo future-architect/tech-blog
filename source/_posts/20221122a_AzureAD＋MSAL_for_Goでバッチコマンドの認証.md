@@ -6,7 +6,7 @@ tag:
   - Azure
   - AzureAD
   - AD
-  - MASL.js
+  - MSAL.js
   - Go
 category:
   - Programming
