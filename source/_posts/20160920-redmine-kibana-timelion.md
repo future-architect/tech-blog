@@ -7,6 +7,7 @@ tag:
   - Redmine
   - マネジメント
   - 可視化
+  - グラフ
 category:
   - Management
 thumbnail: /images/20160920/thumbnail_20160920.jpg
