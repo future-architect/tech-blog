@@ -25,6 +25,7 @@ tag_dir: tags
 archive_dir: articles
 category_dir: categories
 author_dir: authors
+techcast_dir: techcasts
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
