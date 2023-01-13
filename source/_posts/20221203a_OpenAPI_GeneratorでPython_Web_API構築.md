@@ -4,7 +4,7 @@ date: 2022/12/03 00:00:00
 postid: a
 tag:
   - Swagger
-  - API
+  - WebAPI
   - Python
 category:
   - Programming
