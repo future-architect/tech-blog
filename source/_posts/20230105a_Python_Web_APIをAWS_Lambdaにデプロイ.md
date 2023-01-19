@@ -3,7 +3,7 @@ title: "Python Web APIをAWS Lambdaにデプロイ"
 date: 2023/01/05 00:00:00
 postid: a
 tag:
-  - API
+  - WebAPI
   - AWS
   - Docker
 category:
