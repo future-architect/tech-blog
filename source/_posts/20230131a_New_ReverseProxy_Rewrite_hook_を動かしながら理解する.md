@@ -492,3 +492,4 @@ Go1.20 で追加された Rewrite hook はこの問題に対応するもので�
 - プロキシサーバーのリクエストルーティングで、これまで Director を使っていたところは、これからは Rewrite を使おう
 - Rwrite に渡す ProxyRequest にて SetXForwarded を呼ぶことで、プロキシサーバーの情報 X-Forwarded-For,Host,Proto を自動追加してくれて便利
 
+次は今泉さんの[vetのアップデート](/articles/20230202a/)です。
