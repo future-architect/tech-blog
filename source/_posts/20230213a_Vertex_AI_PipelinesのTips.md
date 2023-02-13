@@ -10,7 +10,7 @@ tag:
 category:
   - DataScience
 thumbnail: /images/20230213a/thumbnail.png
-author: HajimeHirano
+author: 平野甫
 lede: "Vertex AI Pipelinesを利用してみて分かったTipsについて、いくつかピックアップしてまとめました。なお、コードは全てPython・Kubeflowを用いた場合を記載しています。Vertex AI Pipelinesとは、GCP上でMLパイプライン機能を提供するサービスです。サーバーレス方式でMLワークフローをオーケストレートします。"
 mathjax: true
 ---
