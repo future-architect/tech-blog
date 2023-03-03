@@ -109,7 +109,7 @@ Google Cloud は障害の事前検知を行っているため[^4]、検知した
 Google Cloudを使用する上で基礎的な知識を学ぶことができたと思います。
 クラウドサービスを触ったことがなく、Google Cloudをこれから使う方にはぜひ手に取ってみてください。
 
-明日の読書感想連載は工藤さんのSQLアンチパターンです。
+明日の読書感想連載は工藤さんの[SQLアンチパターン](/articles/20230303a/)です。
 
 
 [^1]: https://www.publickey1.jp/blog/22/202221aws2azure3google_cloud3.html
