@@ -307,7 +307,7 @@
   "yearly": [
     {
       "path": "/articles/20201223/",
-      "pv": "51956",
+      "pv": "51953",
       "title": "2021年版Pythonの型ヒントの書き方 (for Python 3.9) | フューチャー技術ブログ"
     },
     {
@@ -347,7 +347,7 @@
     },
     {
       "path": "/articles/20211026a/",
-      "pv": "20495",
+      "pv": "20492",
       "title": "AWS利用時に read: connection reset by peer が出たときのリトライ検討 | フューチャー技術ブログ"
     },
     {
