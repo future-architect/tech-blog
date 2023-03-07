@@ -211,37 +211,39 @@ GitHub CLIのセットアップ完了後ブランチにチェックアウトし�
 以下、実行対象のShellスクリプトです。
 
 ```sh add_label.sh
-# ./add_label.sh　
-#!/bin/sh
-data=`gh pr view --json author,headRefName,assignees --jq .author.name,.headRefName,.assignees[].name`
-labels=`gh pr view --json labels --jq .labels[].name`
+#!/bin/bash
+set -euxo pipefail
+prinfo=$(gh pr view --json author,headRefName --jq .author.login,.headRefName)
+assignees=$(gh pr view --json assignees --jq .assignees[].login)
+labels=$(gh pr view --json labels --jq .labels[].name)
 
-# dataで取得した情報を変数に格納
-set ${data}
-author=${1}
-branch=${2}
-assignees=${3}
+# 取得した情報を配列に変換して変数に格納
+mapfile -t infoarray <<< "$prinfo"
+author="${infoarray[0]}"
+branch="${infoarray[1]}"
 
 # PR作成者を自動アサイン
-if [[ "$assignees" == "" ]]; then
-    echo "assigne" $author
-    gh pr edit --add-assignee $author
+if [[ $assignees == "" ]]; then
+    echo "assigne" "$author"
+    gh pr edit --add-assignee "$author"
 fi
 
-set ${labels}
-attachlabels=("bug" "docs" "refactoring" "enhancement")
+set "${labels}"
+attachlabels=("bug" "docs" "refactoring" "enhancement" "fix")
 # ブランチ名にそってラベル付与
-for name in ${attachlabels[@]}
+for name in "${attachlabels[@]}"
 do
 if [[ $branch == *$name* ]]; then
-    if printf '%s\n' "${labels[@]}" | grep -qx $name; then
-        echo $name "label is already attached"
+    if printf '%s\n' "${labels[@]}" | grep -qx "$name"; then
+        echo "$name" "label is already attached"
     else
-        echo "attach" $name "label"
-        gh pr edit --add-label $name
+        echo "attach" "$name" "label"
+        gh pr edit --add-label "$name"
     fi
 fi
 done
+
+exit 0
 ```
 
 GitHub CLIを利用することで複雑なスクリプトを書かずにすみました。
@@ -280,13 +282,13 @@ Open a pull request in the browser
 これを`jq`をつかってフィルタリングして`author`変数に代入するには以下のようにします。
 
 ```sh
-author=`gh pr view --json author --jq .author.name`
+author=$(gh pr view --json author --jq .author.login)
 ```
 
 `--json`オプションはカンマ区切りで複数指定ができますので以下のようにして一回のリクエストにまとめることができます。
 
 ```sh
-data=`gh pr view --json author,headRefName,assignees --jq .author.name,.headRefName,.assignees[].name`
+prinfo=$(gh pr view --json author,headRefName --jq .author.login,.headRefName)
 ```
 
 あとは事前に設定してあるラベル名にブランチ名が合致しているかを確認して文字列一致していればPullRequestにラベルを付与していきます。
@@ -299,17 +301,17 @@ Shellスクリプト初心者のため、[こちらの記事](https://qiita.com/
 </div>
 
 ```sh
-set ${labels}
-attachlabels=("bug" "docs" "refactoring" "enhancement")
+set "${labels}"
+attachlabels=("bug" "docs" "refactoring" "enhancement" "fix")
 # ブランチ名にそってラベル付与
-for name in ${attachlabels[@]}
+for name in "${attachlabels[@]}"
 do
 if [[ $branch == *$name* ]]; then
-    if printf '%s\n' "${labels[@]}" | grep -qx $name; then
-        echo $name "label is already attached"
+    if printf '%s\n' "${labels[@]}" | grep -qx "$name"; then
+        echo "$name" "label is already attached"
     else
-        echo "attach" $name "label"
-        gh pr edit --add-label $name
+        echo "attach" "$name" "label"
+        gh pr edit --add-label "$name"
     fi
 fi
 done
@@ -348,7 +350,7 @@ gh version 2.23.0 (2023-02-08)
 https://github.com/cli/cli/releases/tag/v2.23.0
 ```
 
-どうやらバージョン2.3.0では`gh pr view --json author`のレスポンスに`name`という属性はなかったようで、ローカルのバージョンとの差分に気づかずにPullRequest作成者の情報の取得ができずに悩んでいました。
+どうやらバージョン2.3.0では`gh pr view --json author`のレスポンスに`name`という属性はなかったようで、ローカルのバージョンとの差分に気づかずにPullRequest作成者の情報の取得ができずに悩んでいました。(スクリプトではnameではなく、loginで取得しています)
 バージョン情報を事前に確認しておくことは大事ですね。
 `- gh/setup`には`version`を指定することができるので、最新のバージョンを確認しつつ指定してください。
 
