@@ -786,6 +786,6 @@ JenkinsでのTerraform CI/CDの記事を書きました。Jenkinsの設定や、
 
 各Cloud Providerのマネージドサービス（AWS CodeBuild / Google Cloud Build）にJenkinsのビルド実行環境を委譲することが主流になっていますが、まだまだJenkinsを利用することもあると思いますので参考になれば幸いです。
 
-次は岸下さんの「Terraformでの機密情報の取り扱い on Google Cloud」記事になります！
+次は岸下さんの[Terraformでの機密情報の取り扱い on Google Cloud](/articles/20230331a/)記事です。
 
 お楽しみを！！
