@@ -75,17 +75,19 @@ hexo.extend.helper.register("get_tw_count", url => {
   if (typeof currentTw[url] !== "undefined") {
     return currentTw[url] ||  "ツイート";
   }
-  if (!fetchableDate(url)) {
-    return tw[url] ||  "ツイート";
-  }
+  return "ツイート";
 
-  const resp = fetch(`https://jsoon.digitiminimi.com/twitter/count.json?url=${encodeURI(url)}`).json();
-  const respCnt = resp.count + resp.likes;
+  // if (!fetchableDate(url)) {
+  //   return tw[url] ||  "ツイート";
+  // }
 
-  currentTw[url] = respCnt;
-  setTwitterCnt(url, respCnt);
+  // const resp = fetch(`https://jsoon.digitiminimi.com/twitter/count.json?url=${encodeURI(url)}`).json();
+  // const respCnt = resp.count + resp.likes;
 
-  return respCnt || "ツイート";
+  // currentTw[url] = respCnt;
+  // setTwitterCnt(url, respCnt);
+
+  // return respCnt || "ツイート";
 });
 
 hexo.extend.helper.register("get_feedly_count", url => {
