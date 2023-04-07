@@ -72,10 +72,12 @@ hexo.extend.helper.register("get_fb_count", url => {
 });
 
 hexo.extend.helper.register("get_tw_count", url => {
-  if (typeof currentTw[url] !== "undefined") {
-    return currentTw[url] ||  "ツイート";
-  }
-  return "ツイート";
+  return tw[url] ||  "ツイート";
+
+  // if (typeof currentTw[url] !== "undefined") {
+  //   return currentTw[url] ||  "ツイート";
+  // }
+  // return "ツイート";
 
   // if (!fetchableDate(url)) {
   //   return tw[url] ||  "ツイート";

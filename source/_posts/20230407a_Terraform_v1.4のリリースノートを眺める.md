@@ -8,7 +8,7 @@ tag:
 category:
   - Infrastructure
 thumbnail: /images/20230407a/thumbnail.png
-author: 藤太斉
+author: 伊藤太斉
 lede: "Terraformのv1.0が出て約2年弱、ついにv1.4までやってきました。Terraformのv1.4のリリースノートの、ENHANCEMENTのうち、私個人が特に気になった機能を見つつ、ユースケースが考えられるものについて探れればと思います。"
 ---
 
