@@ -10,12 +10,12 @@ tag:
 category:
   - DataScience
 thumbnail: /images/20230414a/thumbnail.png
-author: 板野
+author: 板野竜也
 lede: "データ/モデル監視ツールであるVertex AI Model MonitoringとEvidently AIを利用して両者を様々な観点で検証していきます。"
 ---
 # 1. はじめに
 
-こんにちは、フューチャーでアルバイトをしている板野です。\
+こんにちは、フューチャーでアルバイトをしている板野です。
 
 データ/モデル監視ツールであるVertex AI Model MonitoringとEvidently AIを利用して両者を様々な観点で検証していきます。
 

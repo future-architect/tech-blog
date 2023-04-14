@@ -10,7 +10,7 @@ tag:
 category:
   - DataScience
 thumbnail: /images/20230413a/thumbnail.png
-author: 板野
+author: 板野竜也
 lede: "データ/モデル監視ツールであるVertex AI Model MonitoringとEvidently AIを利用し、両者を様々な観点で検証していきたいと思います。Vertex AIのAutoMLで作成した回帰モデルの監視を想定し、ユースケースを交えて両者をそれぞれ検証していきます。"
 ---
 # 1. はじめに
