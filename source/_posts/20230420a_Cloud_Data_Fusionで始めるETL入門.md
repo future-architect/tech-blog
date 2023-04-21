@@ -212,4 +212,4 @@ Cloud Data Fusionの画面から実行した際のログを確認したい時が
 
 ETL/ELTの作成を非エンジニアが担当する場合、GUI形式でパイプラインが組めるので、そういった際には採用候補になりうるサービスだと感じました。
 
-明日は[永井優斗](https://future-architect.github.io/authors/%E6%B0%B8%E4%BA%95%E5%84%AA%E6%96%97/)さんの、「技術書」の読書術 読書感想文 です。
+明日は[永井優斗](https://future-architect.github.io/authors/%E6%B0%B8%E4%BA%95%E5%84%AA%E6%96%97/)さんの、[「技術書」の読書術 読書感想文](/articles/20230421a/) です。
