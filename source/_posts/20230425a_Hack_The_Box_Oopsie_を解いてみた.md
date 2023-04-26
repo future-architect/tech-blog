@@ -271,7 +271,7 @@ export PATH="/tmp:$PATH"
 
 TIER2以降では権限昇格は必要な知識なので、しっかり使えるようになることが大切だと感じました。
 
-明日の記事は、渡邉さんの「Pulumiで始めるIaC入門」です。
+明日の記事は、渡邉さんの[Pulumiで始めるIaC入門](/articles/20230426a/)です。
 
 [^1]: https://qiita.com/kasei-san/items/3edb52359ff288d2f435
 [^2]: https://eng-entrance.com/linux-permission-suid
