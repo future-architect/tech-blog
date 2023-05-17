@@ -9,7 +9,7 @@ tag:
 category:
   - Programming
 thumbnail: /images/20210715a/thumbnail.png
-author: 齋藤賢太
+author: 斎藤賢太
 lede: "以前、当ブログで連載が行われたFlutterですが、先日業務のためにFlutterの環境構築をしようとしたところ、いくつかの障壁がありました。当記事ではProxyがある環境下でMac上にFlutterの環境構築について、ダウンロードから仮想デバイス上での公式デモアプリ（Android）実行まで紹介いたします。"
 ---
 TIG DXユニットでアルバイトをしている齋藤です。

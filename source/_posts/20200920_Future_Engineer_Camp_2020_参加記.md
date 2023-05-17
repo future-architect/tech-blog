@@ -10,7 +10,7 @@ tag:
 category:
   - Programming
 thumbnail: /images/20200920/thumbnail.png
-author: 齋藤賢太
+author: 斎藤賢太
 lede: "皆さん、こんにちは。Future Engineer Camp 2020に参加しました齋藤です。インターンシップやその前のできごとを書いていきます。"
 ---
 
