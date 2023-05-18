@@ -189,4 +189,4 @@ Uncaught RuntimeError: Aborted(Assertion failed: native function `add` called be
 
 今回はEmscriptenを中心に理解を深めることができましたが、今後はWebAssembly自体について詳しく見ていきたいと思います。
 
-次の記事は佐々木さんの「ネットワーク入門にCCNA良いという話」です！
+次の記事は佐々木さんの[ネットワーク入門としてCCNA試験を受験してみた](/articles/20230518a/)です！
