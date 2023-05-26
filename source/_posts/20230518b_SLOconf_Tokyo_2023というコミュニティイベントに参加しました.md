@@ -240,7 +240,7 @@ https://www.theregister.com/2023/05/10/google_cloud_paris_outage_persists/
 
 ### 話された内容
 
-電動キックボードや自転車などのシェアリング事業を展開するLuupで、SREとして働いているぐりもあさんに「LuupにおけるSLOの物語」というタイトルで、Luupで実践しているSLO運用について語っていただきました。
+電動キックボードや自転車などのシェアリング事業を展開するLuupで、SREとして働いているぐりもお。さんに「LuupにおけるSLOの物語」というタイトルで、Luupで実践しているSLO運用について語っていただきました。
 
 - アジェンダ
 	- Luup SREチーム
