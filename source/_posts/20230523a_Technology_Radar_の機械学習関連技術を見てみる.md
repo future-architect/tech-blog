@@ -28,6 +28,7 @@ IT業界に身を置いていると、今の技術トレンドが気になると
 Technology Radarではその名の通り、レーダー状の円の中に個々の注目する技術を表記しています。
 
 <img src="/images/20230523a/image.png" alt="" width="681" height="674" loading="lazy">
+
 https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2023/04/tr_technology_radar_vol_28_en.pdf より引用
 
 ## 分野と層
@@ -107,3 +108,5 @@ panderaも入力データに対してバリデーションを行うPythonライ�
 くぅ～疲れました。普段馴染みのないツールについて調べるのは面白いですが、説明を書くのが難しいですね。
 
 このvolume 28には、有名どころですとChatGPTやGitHub Copilot、Prompt engineeringについても取り上げられていますので、読んでみることをお勧めします。機械学習関係だとLLM（大規模言語モデル）関連の項目もいくつかありましたが、今回は割愛します。皆さんの気になる技術領域で最近何が熱いトピックなのか、Technology Radarで探してみてはいかがでしょうか。
+
+次は清水さんの[iOSアプリのCI入門](/articles/20230524a/) です。
