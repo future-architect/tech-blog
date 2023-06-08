@@ -405,7 +405,7 @@ cargo build --target wasm32-unknown-emscripten --release
 私の環境では大差は見られませんでしたが、動的にメモリを確保する方法は重くなる可能性があるらしい([参考](https://bugs.chromium.org/p/v8/issues/detail?id=3907))ので、動的にメモリを確保する必要がないサービスの場合は避けた方が良いかもしれません。
 </div>
 
-ローカルサーバを立てて実行してみるとちゃんと動きました :tada:
+ローカルサーバを立てて実行してみるとちゃんと動きました 🎉
 <img src="/images/20230602a/format.gif" alt="format.gif" width="1200" height="675" loading="lazy">
 
 ## 速度検証
