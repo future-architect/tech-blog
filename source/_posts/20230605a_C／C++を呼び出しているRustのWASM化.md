@@ -12,6 +12,7 @@ thumbnail: /images/20230602a/thumbnail.png
 author: 川渕皓太
 lede: "C/C++を呼び出しているRustのwasm化について説明します。結論から述べるとemscriptenを使用することでうまくいきました。"
 ---
+
 ## はじめに
 
 こんにちは、Futureでアルバイトをしている川渕です。
@@ -29,8 +30,8 @@ lede: "C/C++を呼び出しているRustのwasm化について説明します。
 
 * WebAssembly(wasm)とは何か
 * Rustをwasm化する主な方法とチュートリアル
-    * wasm-pack
-    * wasm32-unknown-emscripten
+  * wasm-pack
+  * wasm32-unknown-emscripten
 * C/C++を呼んでいるRustのwasm化
 * 性能検証
 
@@ -78,10 +79,7 @@ https://developer.mozilla.org/ja/docs/WebAssembly/Concepts
 1. wasm32-unknown-emscripten
     * emscriptenのインストールが必要
     * C/C++を呼び出している場合はこちらがオススメ
-  <!--
-    1. wasm32-unknown-unknown + wasm-bindgen
-        * C/C++を呼び出しているRustは未対応
-   -->
+
 ## wasm-pack
 
 Rustのwasm化において一番メジャーで簡単な方法です。wasm-packさえインストールすれば自動で全部やってくれるので非常に楽です。内部ではターゲットをwasm32-unknown-unknownとしてビルドし、wasm-bindgen-cliを用いてグルーコードを生成しています。wasm-bindgenとはJavaScriptとRustの型を繋ぐツールのことです。
@@ -91,25 +89,29 @@ Rustのwasm化において一番メジャーで簡単な方法です。wasm-pack
 ### チュートリアル
 
 簡単にwasm-packのチュートリアルを説明します。
-<!--
-各ステップの詳細を知りたい方は[こちら](https://developer.mozilla.org/ja/docs/WebAssembly/Rust_to_wasm)をご覧ください。
--->
 
 1. wasm-packのインストール
-    ```shell
+
+    ```sh
     cargo install wasm-pack
     ```
+
 1. プロジェクトの新規作成
-    ```shell
+
+    ```sh
     wasm-pack new hello-wasm-pack
     ```
+
 1. ビルド
     targetをwebに指定してビルドを実行します。
-    ```shell
+
+    ```sh
     wasm-pack build --target web
     ```
+
 1. wasmの実行
     以下のような`index.html`を作成します。
+
     ```html index.html
     <!DOCTYPE html>
     <html lang="en-US">
@@ -131,13 +133,17 @@ Rustのwasm化において一番メジャーで簡単な方法です。wasm-pack
 
     </html>
     ```
+
     適当な方法でローカルサーバを立てます。(サーバを立てずにwasmを実行するとCORSエラーが発生します。)
     今回はpythonを使う方法でやってみます。
-    ```
+
+    ```sh
     python3 -m http.server 8080
     ```
+
     ブラウザで[http://localhost:8080/](http://localhost:8080/)にアクセスすると画面上にアラートボックスが現れ、`Hello, hello-wasm-pack!`と表示されたら成功です。
-<img src="/images/20230602a/スクリーンショット_2023-03-24_18.40.13.png" alt="スクリーンショット_2023-03-24_18.40.13.png" width="1200" height="739" loading="lazy">
+
+<img src="/images/20230602a/スクリーンショット_2023-03-24_18.40.13.png" alt="" width="1200" height="739" loading="lazy">
 
 ### wasm-packは何をしてくれているのか
 
@@ -156,9 +162,11 @@ wasm-packはビルド時に以下の処理をしてくれています。
   <span class="fa fa-fw fa-check-circle"></span>
 
 wasm32-unknown-unknownの「wasm32」はアドレス空間が32bitであること、1つ目の「unknown」はコンパイルを行うシステムのこと、2つ目の「unknown」はターゲットとしているシステムのことを示しています。つまり、wasm32-unknown-unknownはコンパイルを行うシステムとターゲットとするシステムの両方に制約がなく、どのような実行環境でも動作することを示します。
+
 </div>
 
-### 何故C/C++を呼び出しているとできないのか
+### 何故C/C++
+
 完全には理解できませんでしたが、wasm-packはC/C++の標準ライブラリにリンクする機能が含まれていないようです([参考1](https://stackoverflow.com/questions/75025716/can-wasm-pack-compile-a-rust-project-including-c-code-that-uses-stdlib)、[参考2](https://github.com/rustwasm/wasm-pack/issues/741))。
 
 <div class="note info" style="background: #e5f8e2; padding:16px; margin:24px 12px; border-radius:8px;">
@@ -167,26 +175,8 @@ wasm32-unknown-unknownの「wasm32」はアドレス空間が32bitであるこ�
 C/C++を呼び出しているとwasm-packは使用できないと述べましたが、実は[wasm-packでも頑張ればできる](https://zenn.dev/newgyu/articles/8bff73505c7b35)らしいです。しかし、記事では依存元のソースコードをいじって動くようにしており、できる限り依存元のソースコードは触りたくないため選択肢から除外しました。どうしてもwasm-packを使いたい方はこちらの記事の方法を試してみてはいかがでしょうか。
 </div>
 
-<!--
-# wasm32-unknown-unknown + wasm-bindgen
-ビルドターゲットに`wasm32-unknown-unknown`を追加してwasm化し、wasm-bindgen-cliによって生成されたwasmとJavaScriptの間のデータの受け渡しをwrapする方法です。
-以下のチュートリアルでは自動的に`wasm32-unknown-unknown`の追加、wasm-bindgen-cliのインストール~実行まで行ってくれています。
-
-## チュートリアル
-TODO
-
-1. チュートリアルコードをインストールして実行
-    ```
-    git clone https://github.com/rustwasm/wasm-bindgen.git
-    cd wasm-bindgen/examples/hello_world
-    npm install
-    npm run serve
-    ```
-2. http://localhost:8080/ にアクセスしてアラートが出れば成功
-<img src="/images/20230602a/スクリーンショット_2023-03-08_18.08.01.png" alt="スクリーンショット_2023-03-08_18.08.01.png" width="452" height="133" loading="lazy">
--->
-
 ## wasm32-unknown-emscripten
+
 [emscripten](https://emscripten.org/)のコンパイラ(emcc)を利用してコンパイルを行います。emscriptenとはC/C++をwasmにコンパイルするためのClang/LLVMベースのコンパイラです。
 C/C++を呼んでいる場合はこちらの方法をオススメします。
 
@@ -196,16 +186,21 @@ C/C++を呼んでいる場合はこちらの方法をオススメします。
     Python3をインストールしていない方はインストールしてください。
 2. emscriptenのインストール
       まずemsdkをインストールします
+
       ```shell
       git clone https://github.com/emscripten-core/emsdk.git
       ```
+
       emsdkを利用してemscriptenをインストールします。ここでバージョンを**2.0.24**にしている点に注意してください。(私の環境では最新のemscriptenでは成功しませんでした。)
+
       ```shell
       cd emsdk
       ./emsdk install 2.0.24
       ```
+
       emscriptenを有効にします。emccコマンドが実行できれば成功です。
-      ```shell
+
+      ```sh
       # 使用しているshellに合わせて実行するスクリプトを適宜変更してください
       source ./emsdk_env.sh
       emcc --version
@@ -214,6 +209,7 @@ C/C++を呼んでいる場合はこちらの方法をオススメします。
       # This is free and open source software under the MIT license.
       # There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
       ```
+
       <div class="note warn" style="background: #fdf9e2; padding:16px; margin:24px 12px; border-radius:8px;">
         <span class="fa fa-fw fa-check-circle"></span>
 
@@ -227,19 +223,23 @@ C/C++を呼んでいる場合はこちらの方法をオススメします。
       2. emsdkの`python3`コマンドを探す箇所を削除する
           * 力技です
           * [`emsdk/emsdk`の33~39行目](https://github.com/emscripten-core/emsdk/blob/da9699832b5df4e123403490e499c87000c22654/emsdk#L33-L39)を削除するとうまくいきます
+
       </div>
 
-３. プロジェクトの新規作成
-    ```shell
+3. プロジェクトの新規作成
+
+    ```sh
     cargo new --lib hello-emscripten
     ```
 
-４. ターゲットに`wasm32-unknown-emscripten`を追加
-    ```shell
+4. ターゲットに`wasm32-unknown-emscripten`を追加
+
+    ```sh
     rustup target add wasm32-unknown-emscripten
     ```
 
-５. `Cargo.toml`を以下のように変更
+5. `Cargo.toml`を以下のように変更
+
     ```toml Cargo.toml
     [package]
     name = "hello-emscripten"
@@ -250,7 +250,8 @@ C/C++を呼んでいる場合はこちらの方法をオススメします。
     crate-type = ["cdylib"]
     ```
 
-６. `src/lib.rs`を以下のように変更
+6. `src/lib.rs`を以下のように変更
+
     ```rust src/lib.rs
     use std::ffi::{c_char, CString};
 
@@ -273,12 +274,14 @@ C/C++を呼んでいる場合はこちらの方法をオススメします。
         CString::new(res).unwrap().into_raw()
     }
     ```
+
     [`#[no_mangle]`アトリビュート](https://doc.rust-lang.org/reference/abi.html#the-no_mangle-attribute)を付与することで関数名をマングリングしないようにすることができます。マングリングとはコンパイラが関数名などをユニークな名前に変更することです。(例: `int Add(int a, int b)` →  `_Z3Addii`)
     今回の例では関数greetの名前を勝手に変更してほしくないので`#[no_mangle]`アトリビュートを付与しています。
 
-７. `build.sh`の作成
+7. `build.sh`の作成
     プロジェクトのルートディレクトリに`build.sh`を作成します。
-    ```shell build.sh
+
+    ```sh build.sh
     # 自分の環境のemsdkの場所に合わせてパスに書き換えてください
     # 使用しているshellに合わせて実行するスクリプトを適宜変更してください
     # emccを有効にする
@@ -291,6 +294,7 @@ C/C++を呼んでいる場合はこちらの方法をオススメします。
     # ビルド
     cargo build --target wasm32-unknown-emscripten --release
     ```
+
     emccの設定の詳細は以下の通りです。ドキュメントは[こちら](https://emscripten.org/docs/tools_reference/emcc.html)。
 
 |オプション|説明||
@@ -299,14 +303,17 @@ C/C++を呼んでいる場合はこちらの方法をオススメします。
 |-s EXPORTED_FUNCTIONS=['_greet']|エクスポートする関数の指定|[リンク](https://github.com/emscripten-core/emscripten/blob/fab93a2bff6273c882b0c7fb7b54eccc37276e03/src/settings.js#L969-L978)|
 |-s EXPORTED_RUNTIME_METHODS=ccall|エクスポートするランタイムメソッドの指定|[リンク](https://github.com/emscripten-core/emscripten/blob/fab93a2bff6273c882b0c7fb7b54eccc37276e03/src/settings.js#L868-L875)|
 
-８. ビルドの実行
-    ```
+8. ビルドの実行
+
+    ```sh
     source build.sh
     ```
+
     実行が完了するとプロジェクトのルートディレクトリに`hello-emscripten.js`、`hello-emscripten.wasm`というファイルが生成されます。
 
-９. `index.html`の作成
+9. `index.html`の作成
     以下のような`index.html`を作成します
+
     ```html index.html
     <html>
 
@@ -336,16 +343,19 @@ C/C++を呼んでいる場合はこちらの方法をオススメします。
 
     </html>
     ```
-１０. 実行
+
+10. 実行
     適当な方法でローカルサーバを立てます。今回はpythonを使う方法でやってみます。
-    ```shell
+
+    ```sh
     python3 -m http.server 8080
     ```
+
     ブラウザで[http://localhost:8080/](http://localhost:8080/)にアクセスすると以下のようなページが表示されます。
-<img src="/images/20230602a/スクリーンショット_2023-03-24_15.53.38.png" alt="スクリーンショット_2023-03-24_15.53.38.png" width="986" height="624" loading="lazy">
+<img src="/images/20230602a/スクリーンショット_2023-03-24_15.53.38.png" alt="greet" width="986" height="624" loading="lazy">
     テキストボックスに適当なテキストを入力し、下部のボタンを押します。
     コンソールに"Hello, (入力したテキスト)!"と表示されれば成功です。
-<img src="/images/20230602a/スクリーンショット_2023-03-24_15.59.58.png" alt="スクリーンショット_2023-03-24_15.59.58.png" width="917" height="611" loading="lazy">
+<img src="/images/20230602a/スクリーンショット_2023-03-24_15.59.58.png" alt="Hello, Tom!" width="917" height="611" loading="lazy">
 
 ## SQLフォーマッタのwasm化をやってみる
 
@@ -399,7 +409,9 @@ cargo build --target wasm32-unknown-emscripten --release
 <img src="/images/20230602a/format.gif" alt="format.gif" width="1200" height="675" loading="lazy">
 
 ## 速度検証
+
 napi-rsを用いてNodeアドオン化して拡張機能に載せたフォーマッタ(詳細は[こちら](https://future-architect.github.io/articles/20221228a/))と今回作成したwasmで実行時間の計測を行なってみました。
+
 最適化なしのwasmはビルドの際に`--release`を付与せずにビルドしたものです。
 
 ### 検証方法
@@ -438,7 +450,8 @@ Rustの[最適化レベル](https://doc.rust-lang.org/cargo/reference/profiles.h
 
 ## まとめ
 
-本記事ではC/C++を呼び出しているRustのwasm化について説明しました。
+C/C++を呼び出しているRustのwasm化について説明しました。
+
 本記事には書きませんでしたが、tree-sitter-sqlのパーササイズが大きすぎてコンパイルできない問題などにも遭遇して非常に苦戦していました。最終的にはなんとかwasm化することができたのでよかったです。同様の問題を抱えている方の助けになれば幸いです。
 
 ## 参考文献
