@@ -60,6 +60,24 @@ git commit -m "<message>"
 git push origin HEAD
 ```
 
+## SNSカウントの更新
+
+```sh
+# インストール
+go install github.com/ma91n/snssharecount/cmd/snssharecount@latest
+```
+
+実行
+
+```sh
+# 実行
+set http_proxy=<proxy url>
+set https_proxy=<proxy url>
+
+snssharecount > temp.json
+mv temp.json sns_count_cache.json
+```
+
 ## 画像圧縮
 
 pngquantをインストールする
@@ -74,7 +92,6 @@ pngquant *.png --skip-if-larger --ext .png --force
 
 jpegoptimをインストールする
 https://github.com/XhmikosR/jpegoptim-windows/releases/
-
 
 ```sh
 # jpegoptimに再帰的オプションがなかったためbatファイルでラップした
@@ -97,4 +114,3 @@ Lint
 ```sh
 > textlint source/_posts
 ```
-

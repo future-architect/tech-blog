@@ -1,7 +1,7 @@
 'use strict';
 
 const pagination = require('hexo-pagination');
-const {getSNSCnt,getTwitterCnt,getFacebookCnt,getHatebuCnt,getPocketCnt} = require('./lib/sns');
+const {getSNSCnt, getTwitterCnt, getFacebookCnt, getHatebuCnt, getPocketCnt} = require('./lib/sns');
 const moment = require('moment');
 
 hexo.extend.generator.register("author", function(locals) {
