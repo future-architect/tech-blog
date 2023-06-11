@@ -6,6 +6,7 @@ tag:
   - Kong
   - OAuth
   - openid_connect
+  - APIGateway
 category:
   - 認証認可
 thumbnail: /images/20221006a/thumbnail.png

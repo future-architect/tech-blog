@@ -5,6 +5,7 @@ postid: a
 tag:
   - AWS
   - Lambda
+  - APIGateway
 category:
   - 認証認可
 thumbnail: /images/20210610a/thumbnail.png
