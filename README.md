@@ -65,6 +65,7 @@ git push origin HEAD
 ```sh
 # インストール
 go install github.com/ma91n/snssharecount/cmd/snssharecount@latest
+go install github.com/ma91n/snssharecount/cmd/ga@latest
 ```
 
 実行
@@ -76,6 +77,8 @@ set https_proxy=<proxy url>
 
 snssharecount > temp.json
 mv temp.json sns_count_cache.json
+
+ga > ga_cache.json
 ```
 
 ## 画像圧縮

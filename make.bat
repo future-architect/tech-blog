@@ -3,6 +3,7 @@
 ) else (
     snssharecount > temp.json
     move temp.json sns_count_cache.json
+    ga > ga_cache.json
 
     git add .
     git commit -m "%~1"

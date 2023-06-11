@@ -61,7 +61,6 @@ hexo.extend.helper.register('generate_qiita_orgs', function() {
     return ''
   }
 
-
   const feedHTML = latestFeeds.slice(0, maxNewsDisplayCount).map(item => `<li><span class="news-date">${newsDate(item)}</span><a href="${item.link}" title="${item.title}" target="_blank" rel="noopener" class="news-title">${item.title}</a></li>`).join("\n");
 
   return `
