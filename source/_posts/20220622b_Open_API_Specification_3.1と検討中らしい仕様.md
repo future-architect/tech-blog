@@ -5,6 +5,7 @@ postid: b
 tag:
   - OpenAPI
   - IDL
+  - Swagger
 category:
   - Infrastructure
 thumbnail: /images/20220622b/thumbnail.png
