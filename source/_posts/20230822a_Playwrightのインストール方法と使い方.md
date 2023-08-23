@@ -236,4 +236,4 @@ npx playwright show-report
 
 Playwrightのインストール方法と基本的な使い方を紹介しました。
 
-明日は、武田さんのPlaywrightの環境構築（VSCode Dev Container編）です。
+明日は、武田さんの[Playwrightの環境構築（VSCode Dev Container編）](/articles/20230823a/)です。
