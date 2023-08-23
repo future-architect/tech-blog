@@ -27,7 +27,7 @@ E2Eフレームワークとして高い人気を誇ってきたのがCypressで�
 | 日付 | タイトル | 投稿者 |
 | ----- | ------- | ---------- |
 | 8/22 | 藤戸四恩 | [Playwrightのインストール方法と使い方](/articles/20230822a/) |
-| 8/23 | 武田大輝  | [Playwrightの環境構築（VSCode Dev Container編）] |
+| 8/23 | 武田大輝  | [Playwrightの環境構築（VSCode Dev Container編）](/articles/20230823a/) |
 | 8/24 | 小澤泰河 | (仮)Next.js × Playwright の E2E テスト入門ハンズオン（App Router / Tailwind CSS / Headless UI） |
 | 8/25 | 木戸俊輔 | [イチ押し。Playwrightの快適機能] |
 | 8/28 | 澁川喜規 |[Playwrightのテストランナーを他のテストライブラリと比較する]
