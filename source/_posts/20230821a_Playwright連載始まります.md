@@ -28,11 +28,11 @@ E2Eフレームワークとして高い人気を誇ってきたのがCypressで�
 | ----- | ------- | ---------- |
 | 8/22 | 藤戸四恩 | [Playwrightのインストール方法と使い方](/articles/20230822a/) |
 | 8/23 | 武田大輝  | [Playwrightの環境構築（VSCode Dev Container編）](/articles/20230823a/) |
-| 8/24 | 小澤泰河 | (仮)Next.js × Playwright の E2E テスト入門ハンズオン（App Router / Tailwind CSS / Headless UI） |
-| 8/25 | 木戸俊輔 | [イチ押し。Playwrightの快適機能] |
-| 8/28 | 澁川喜規 |[Playwrightのテストランナーを他のテストライブラリと比較する]
-| 8/29 | 枇榔晃裕 | [PlaywrightをGitHubActions実行したときの初期処理についての試行錯誤]
-| 8/30 | 武田大輝  | [クライアント/サーバ構成でみるPlaywright] |
+| 8/24 | 木戸俊輔 | [イチ押し。Playwrightの快適機能](/articles/20230824a/) |
+| 8/25 | 澁川喜規 |[Playwrightのテストランナーを他のテストライブラリと比較する]
+| 8/28 | 枇榔晃裕 | [PlaywrightをGitHubActions実行したときの初期処理についての試行錯誤]
+| 8/29 | 武田大輝  | [クライアント/サーバ構成でみるPlaywright] |
+| 8/30 | 小澤泰河 | (仮)Next.js × Playwright の E2E テスト入門ハンズオン（App Router / Tailwind CSS / Headless UI） |
 
 ## さいごに
 
