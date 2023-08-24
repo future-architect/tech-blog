@@ -131,3 +131,7 @@ npx playwright test --ui
 ```
 
 <img src="/images/20230823a/Playwright.png" alt="Playwright.png" width="1200" height="738" loading="lazy">
+
+---
+
+次は木戸さんの[イチ押し。Playwrightの快適機能](/articles/20230824a/)です。
