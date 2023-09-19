@@ -347,3 +347,5 @@ TruLens-Evalを本格導入する際は、下記懸念があるため、対応�
   - LLMOps用に[W&B prompt](https://docs.wandb.ai/ja/guides/prompts)を公開。
   - TruLensでサポートされているようなトラッキングシステムを利用できる。
   - MLOpsのシステムと組み合わせることでLLMのファインチューニングの管理も可能。
+
+関連して [Prompt Flowでプロンプト評価の管理を行う](/articles/20230919a/) という記事も公開しました。
