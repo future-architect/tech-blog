@@ -8,6 +8,7 @@ tag:
   - DataEngineer
   - 合格記
   - 資格
+  - Udemy
 category:
   - Infrastructure
 thumbnail: /images/20230915a/thumbnail.png
