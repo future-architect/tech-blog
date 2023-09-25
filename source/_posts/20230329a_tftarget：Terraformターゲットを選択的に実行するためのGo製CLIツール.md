@@ -5,6 +5,8 @@ postid: a
 tag:
   - Terraform
   - OSS
+  - CLI
+  - Go
 category:
   - Programming
 thumbnail: /images/20230329a/thumbnail.jpg
