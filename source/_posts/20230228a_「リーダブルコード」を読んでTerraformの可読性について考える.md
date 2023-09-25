@@ -7,6 +7,7 @@ tag:
   - 書評
   - 読書
   - 可読性
+  - リーダブルコード
 category:
   - Infrastructure
 thumbnail: /images/20230228a/thumbnail.jpg
