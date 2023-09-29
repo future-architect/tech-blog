@@ -3,6 +3,7 @@ title: "stree：S3バケットをtreeするCLIコマンド"
 date: 2023/09/26 00:00:00
 postid: a
 tag:
+  - AWS
   - S3
   - OSS
   - CLI
@@ -33,7 +34,7 @@ lede: "S3バケットをtreeするCLIコマンドを紹介します。"
 
 まずは利用画面を見ていただいたほうがイメージ付きやすいかと思いますのでgif画像を添付します。
 
-<img src="/images/20230926a/demo.gif" alt="demo.gif" width="1200" height="686" loading="lazy">
+<img src="/images/20230926a/demo.gif" alt="demo" width="1200" height="686" loading="lazy">
 
 streeは以下の機能をサポートしています。
 
@@ -45,17 +46,18 @@ streeは以下の機能をサポートしています。
 # インストール方法
 
 GoとHomebrew経由でインストール可能です。
+
 各種ビルド済みのバイナリも公開しているので[Release](https://github.com/orangekame3/stree/releases)から手動インストールもできます。
 
 ## Goによるインストール
 
-```console
+```shell
 go install github.com/orangekame3/stree@latest
 ```
 
 ## Homebrewによるインストール
 
-```shell
+```sh
 brew install orangekame3/tap/stree
 ```
 
@@ -86,15 +88,16 @@ aws_secret_access_key=XXXXXXXXXXXXXXXXX
 ## 基本的なコマンド
 
 バケット名とprofileを指定して、以下のコマンドを実行します。
+
 プロファイルは`--profile(-p)`で指定します。
 
-```shell
+```sh
 stree my-bucket -p my_profile
 ```
 
 以下のような出力が得られます。
 
-```shell
+```sh
 my-bucket
 └── test
     ├── dir1
@@ -122,15 +125,16 @@ my-bucket
 ## プレフィックスを指定
 
 通常のユースケースを考えると、バケットの中には大量のオブジェクトが存在していることが予想されます。
+
 そのため、バケット指定しかできない状況では使い物になりません。バケット名に続けてprefixを指定することで、ユーザーが確認したいパスの情報のみを確認することができます。
 
-```shell
+```sh
 stree my-bucket/test/dir2 -p my_profile
 ```
 
 このコマンドの実行結果は以下のようになります。
 
-```shell
+```sh
 my-bucket
 └── test
     └── dir2
