@@ -49,7 +49,7 @@ GoとHomebrew経由でインストール可能です。
 
 ## Goによるインストール
 
-```shell
+```console
 go install github.com/orangekame3/stree@latest
 ```
 

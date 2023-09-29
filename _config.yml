@@ -55,8 +55,9 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
   auto_detect: false
+  line_number: true
+  line_threshold: 3
   tab_replace:
 
 # Category & Tag
