@@ -53,11 +53,14 @@ render_drafts: false
 post_asset_folder: true
 relative_link: false
 future: true
+
 highlight:
   enable: true
-  line_number: true
   auto_detect: false
-  tab_replace:
+  line_number: false
+  line_threshold: 5 # not work?
+  wrap: true
+  hljs: false
 
 # Category & Tag
 default_category: uncategorized
