@@ -58,9 +58,9 @@ highlight:
   enable: true
   auto_detect: false
   line_number: false
-  line_threshold: 5 # not work?
-  wrap: true
-  hljs: false
+  # line_threshold: 5 # not work?
+  # wrap: true
+  # hljs: false
 
 # Category & Tag
 default_category: uncategorized
@@ -109,3 +109,10 @@ feed:
 
 plugins:
   - hexo-footnotes
+
+server:
+  cache: false
+  serveStatic:
+    cacheControl: false
+    etag: false
+    maxAge: -1

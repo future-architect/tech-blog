@@ -8,7 +8,7 @@
     git add .
     git commit -m "%~1"
     git push origin HEAD
-    hexo g
+    node_modules\.bin\hexo g --force
     cd public
     git add .
     git commit -m "%~1"

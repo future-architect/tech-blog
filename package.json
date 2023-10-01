@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "hexo": {
-    "version": "6.3.0"
+    "version": "5.4.2"
   },
   "dependencies": {
     "googleapis": "^126.0.1",
-    "hexo": "^6.3.0",
+    "hexo": "^5.4.2",
     "hexo-easy-tags-plugin": "^1.1.0",
     "hexo-filter-mathjax": "^0.9.0",
     "hexo-fs": "^4.1.1",
