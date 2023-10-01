@@ -39,7 +39,7 @@ $ git clone --depth 1 https://github.com/future-architect/tech-blog.git
 $ cd tech-blog
 $ npm install
 
-$ hexo server
+$ node_modules\.bin\hexo server
  --> http://localhost:4000 にページが表示されたら完了
 ```
 
@@ -53,7 +53,7 @@ git clone --depth 1 https://github.com/future-architect/future-architect.github.
 cd tech-blog
 mklink /J public ..\future-architect.github.io
 
-hexo g
+node_modules\.bin\hexo generate
 cd public
 git add .
 git commit -m "<message>"
