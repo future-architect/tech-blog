@@ -12,6 +12,8 @@ author: 澁川喜規
 lede: "Goでプロジェクトのフォルダ構成どうしよう、とググると見つかるStandard Go Project Layout(https://github.com/golang-standards/project-layout)。とはいえ、これはかなりコード量を増やしてしまう恐れがありますので、導入する場合のデメリットも考えておく方が良いです。"
 ---
 
+**2023.10.5追記**: Goチームからプロジェクトの目的に応じたディレクトリ構造についてのドキュメントが公式に公開されています。 https://go.dev/doc/modules/layout
+
 Goでプロジェクトのフォルダ構成どうしよう、とググると見つかる[Standard Go Project Layout](https://github.com/golang-standards/project-layout)。とはいえ、これはかなりコード量を増やしてしまう恐れがありますので、導入する場合のデメリットも考えておく方が良いです。
 
 特に、プログラマーは、最初にみたプログラミング言語のフォルダ構成を親だと思う特性があり、Javaや.NETに影響されるとかなり細かくフォルダを切りたくなったり、package privateなど細かく可視性を制御しようとしたりして、なおかつ「privateのテストってどうすべきなんですか？」とか議論を始めたりもしますが、Go先生によれば[これぐらい](https://github.com/golang/go/tree/master/src/os)は1パッケージにファイルをぶっこんでもいいわけです。勇気を持ちましょう。
