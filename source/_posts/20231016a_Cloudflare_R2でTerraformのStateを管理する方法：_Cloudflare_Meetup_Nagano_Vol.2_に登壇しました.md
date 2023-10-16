@@ -6,6 +6,7 @@ tag:
   - Cloudflare
   - Terraform
   - 登壇資料
+  - 登壇レポート
 category:
   - Infrastructure
 thumbnail: /images/20231016a/thumbnail.png
