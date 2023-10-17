@@ -10,6 +10,7 @@ tag:
   - 登壇資料
   - Playwright
   - Cypress
+  - 登壇レポート
 category:
   - Programming
 thumbnail: /images/20230925a/thumbnail.png

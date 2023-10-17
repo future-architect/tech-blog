@@ -6,10 +6,11 @@ tag:
   - Cloudflare
   - Terraform
   - 登壇資料
+  - 登壇レポート
 category:
   - Infrastructure
 thumbnail: /images/20231016a/thumbnail.png
-author: 伊藤 太斉
+author: 伊藤太斉
 lede: "10/14に開催されたCloudflare Meetup Naganoに登壇したので発表内容のサマリとイベントのレポートです。"
 ---
 <img src="/images/20231016a/cloudflare_nagano.png" alt="" width="660" height="371" loading="lazy">
