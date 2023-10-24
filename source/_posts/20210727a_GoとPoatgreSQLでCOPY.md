@@ -6,6 +6,7 @@ tag:
   - SQL
   - PostgreSQL
   - Go
+  - jackc/pgx
 category:
   - Programming
 thumbnail: /images/20210727a/thumbnail.png
