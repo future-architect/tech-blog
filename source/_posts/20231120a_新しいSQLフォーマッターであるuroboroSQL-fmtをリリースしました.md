@@ -5,6 +5,9 @@ postid: a
 tag:
   - Formatter
   - uroboroSQL
+  - wasm
+  - SQL
+  - Rust
 category:
   - DB
 thumbnail: /images/20231120a/thumbnail.gif
