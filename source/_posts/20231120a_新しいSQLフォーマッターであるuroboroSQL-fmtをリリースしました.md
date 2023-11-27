@@ -3,20 +3,22 @@ title: "新しいSQLフォーマッターであるuroboroSQL-fmtをリリース�
 date: 2023/11/20 00:00:00
 postid: a
 tag:
-  - Formatter
+  - フォーマッター
   - uroboroSQL
   - wasm
   - SQL
   - Rust
 category:
   - DB
-thumbnail: /images/20231120a/thumbnail.gif
+thumbnail: /images/20231120a/thumbnail.png
 author: 山田修路
 lede: "新しいSQLフォーマッターであるuroboroSQL-fmtをリリースしました"
 ---
+<img src="/images/20231120a/top.png" alt="" width="630" height="229">
+
 コアテクノロジーグループの山田です。
 
-先日、新しいSQLフォーマッターであるuroboroSQL-fmtをリリースしました 🎉
+先日、新しいSQLフォーマッターである[uroboroSQL-fmt](https://github.com/future-architect/uroborosql-fmt)をリリースしました 🎉
 このツールは弊社が公開している[PostgreSQL向けのSQLコーディング規約](https://future-architect.github.io/coding-standards/documents/forSQL/SQL%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E8%A6%8F%E7%B4%84%EF%BC%88PostgreSQL%EF%BC%89.html)に基づき、SQL文をフォーマットするツールです。  
 
 ### 弊社でのSQLフォーマッター開発の取り組み
@@ -29,10 +31,10 @@ lede: "新しいSQLフォーマッターであるuroboroSQL-fmtをリリース�
 という課題を抱えており、それを解消するため新たなSQLフォーマッターを開発していました。
 
 #### ANTLR+TypeScriptによるSQLフォーマッターの開発
-[Engineer Camp2020](https://future-architect.github.io/articles/20200606/)でANTLRとTypeScriptによるSQLフォーマッターを開発しました。インターンシップ中にSQLがフォーマットできるようになり、この方向性で旧版が抱えていた課題は解決できそうに思えましたが、SQLの構文解析が著しく遅いという問題点がありました。弊社太田が[ANTLRのJavaScript runtimeの不具合を発見](https://github.com/antlr/antlr4/issues/2902)し、かなり高速化されたものの実用的な速さにはならなかったこともありANTLRを用いたSQLフォーマッターの開発はストップしました。
+[Engineer Camp2020](/articles/20200606/)でANTLRとTypeScriptによるSQLフォーマッターを開発しました。インターンシップ中にSQLがフォーマットできるようになり、この方向性で旧版が抱えていた課題は解決できそうに思えましたが、SQLの構文解析が著しく遅いという問題点がありました。弊社太田が[ANTLRのJavaScript runtimeの不具合を発見](https://github.com/antlr/antlr4/issues/2902)し、かなり高速化されたものの実用的な速さにはならなかったこともありANTLRを用いたSQLフォーマッターの開発はストップしました。
 
 インターンシップで行ったことについては以下の記事をご覧ください。
-- [Engineer Camp2020でSQLフォーマッタを開発しました](https://future-architect.github.io/articles/20200919/)
+- [Engineer Camp2020でSQLフォーマッタを開発しました](/articles/20200919/)
 
 #### RustによるSQLフォーマッターの開発
 旧版の課題を解決しつつ十分な速さでフォーマット可能なSQLフォーマッターを開発するため、[Engineer Camp2022](https://future-architect.github.io/articles/20220606b/)でRustによるSQLフォーマッターの開発を開始しました。インターンシップ終了時点で簡単なSQLのフォーマットが可能になり、その後もアルバイトとしてSQLフォーマッター開発に参画していただき、旧版のフォーマッターでは実現できなかったSELECT句のエイリアス補完等の機能、[vscode拡張化](https://marketplace.visualstudio.com/items?itemName=Future.uroborosql-fmt)、[wasm化](https://future-architect.github.io/uroborosql-fmt/)を実現しリリースに至りました。
