@@ -5,7 +5,6 @@ postid: a
 tag:
   - Cloudflare
   - Terraform
-  - 登壇資料
   - 登壇レポート
 category:
   - Infrastructure

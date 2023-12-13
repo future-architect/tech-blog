@@ -7,7 +7,6 @@ tag:
   - プロンプト
   - E2E
   - 技育CAMPアカデミア
-  - 登壇資料
   - Playwright
   - Cypress
   - 登壇レポート
