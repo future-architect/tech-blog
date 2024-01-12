@@ -19,6 +19,25 @@
   }
  },
  {
+  "URL": "https://future-architect.github.io/articles/20240109a/",
+  "Twitter": {
+   "Count": 0,
+   "FetchAt": "0001-01-01T00:00:00Z"
+  },
+  "FaceBook": {
+   "Count": 0,
+   "FetchAt": "2024-01-12T15:56:37.0033844+09:00"
+  },
+  "Hatebu": {
+   "Count": 0,
+   "FetchAt": "2024-01-12T15:56:37.0033844+09:00"
+  },
+  "Pocket": {
+   "Count": 1,
+   "FetchAt": "2024-01-12T15:56:37.0033844+09:00"
+  }
+ },
+ {
   "URL": "https://future-architect.github.io/articles/20231227a/",
   "Twitter": {
    "Count": 0,
@@ -19304,7 +19323,7 @@
   },
   "Feedly": {
    "Count": 684,
-   "FetchAt": "2024-01-09T09:08:54.6808991+09:00"
+   "FetchAt": "2024-01-12T15:56:37.0033844+09:00"
   }
  }
 ]
