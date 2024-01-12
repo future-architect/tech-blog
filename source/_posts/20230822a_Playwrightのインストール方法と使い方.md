@@ -26,7 +26,7 @@ Playwrightをインストールするには、npm yarn pnpmのいずれを使用
 
 今回は、npmを使用します。
 
-Cypressによるテストを構築したいディレクトリ下で、以下のコマンドを実行します。
+Playwrightによるテストを構築したいディレクトリ下で、以下のコマンドを実行します。
 
 ```sh
 $ npm init playwright@latest
