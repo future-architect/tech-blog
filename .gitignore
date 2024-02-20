@@ -7,5 +7,5 @@ public*
 .deploy*/
 .vscode/
 .idea/
-future-*.json
+credential.json
 .envrc
