@@ -7,4 +7,5 @@ public*
 .deploy*/
 .vscode/
 .idea/
-#cache_*.json
+future-*.json
+.envrc

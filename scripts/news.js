@@ -16,7 +16,7 @@ process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 
   let proxyAgent;
   if (process.env.http_proxy) {
-    proxyAgent = new HttpsProxyAgent(process.env.http_proxy);
+    proxyAgent = new HttpsProxyAgent.HttpsProxyAgent(process.env.http_proxy);
   }
 
   const qiitaRssResponse = await fetch(
