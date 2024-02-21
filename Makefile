@@ -15,8 +15,7 @@ g:
 	git commit -m "$(ARG)"
 	git push origin HEAD
 	node_modules/.bin/hexo g --force
-	cd public
-	git add .
-	git commit -m "$(ARG)"
-	git push origin HEAD
+	cd public && git add .
+	cd public && git commit -m "$(ARG)"
+	cd public && git push origin HEAD
 
