@@ -10,11 +10,10 @@ g:
 	echo "refresh sns_count_cache.json"
 	ga > ga_cache.json
 	echo "refresh ga_cache.json"
-	node_modules/.bin/hexo g
+	node_modules/.bin/hexo g --force
 	git add .
 	git commit -m "$(ARG)"
 	git push origin HEAD
-	node_modules/.bin/hexo g --force
 	cd public && git add .
 	cd public && git commit -m "$(ARG)"
 	cd public && git push origin HEAD
