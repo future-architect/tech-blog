@@ -1,5 +1,5 @@
 ---
-title: "Terraform 連載2024を開始します & TerraformにおけるDR戦略を考える"
+title: "Terraform連載2024を開始します & TerraformにおけるDR戦略を考える"
 date: 2024/03/11 00:00:00
 postid: a
 tag:
