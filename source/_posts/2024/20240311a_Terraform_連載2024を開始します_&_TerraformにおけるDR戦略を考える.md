@@ -45,7 +45,7 @@ Terraformとパブリッククラウドの中では利用比率が最も高い�
 | ---- | ---- | ------ |
 | 3/11(月) | 伊藤太斉 | 本インデックス記事 & <br> TerraformにおけるDR戦略を考える |
 | 3/12(火) | 真野隼記 | [hclwriteを用いたtfコード生成入門](/articles/20240312a/) |
-| 3/13(水) | 森大作 | Custom Conditionを使う |
+| 3/13(水) | 森大作 | [Terraformにおける変数の制御について](/articles/20240313a/)|
 | 3/14(木) | 原田達也 | Stateの統合 |
 | 3/15(金) | 岸下優介 | TerraformのState,Variableについて |
 | 3/18(月) | 棚井龍之介 | Terraformの実装を読む |
