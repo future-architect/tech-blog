@@ -14,6 +14,8 @@ lede: "Terraformにおける変数を、構築するインフラの要件に合�
 
 <img src="/images/20240313a/terraform_top.png" alt="" width="900" height="628">
 
+[Terraform 連載2024](/articles/20240311a/)の3本目です。
+
 # はじめに
 
 はじめまして。フューチャーキャリア入社1年半の森と申します。
