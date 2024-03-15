@@ -13,7 +13,7 @@ thumbnail: /images/20240311a/thumbnail.png
 author: 伊藤太斉
 lede: "Terraform連載を開始します。"
 ---
-<img src="/images/20240311a/terraform.png" alt="terraform.png" width="800" height="418" loading="lazy">
+<img src="/images/20240311a/terraform.png" alt="" width="800" height="418" loading="lazy">
 
 こんにちは。技術ブログ運営の伊藤です。
 本日、3/11よりTerraform連載を開始します。
@@ -46,8 +46,8 @@ Terraformとパブリッククラウドの中では利用比率が最も高い�
 | 3/11(月) | 伊藤太斉 | 本インデックス記事 & <br> TerraformにおけるDR戦略を考える |
 | 3/12(火) | 真野隼記 | [hclwriteを用いたtfコード生成入門](/articles/20240312a/) |
 | 3/13(水) | 森大作 | [Terraformにおける変数の制御について](/articles/20240313a/)|
-| 3/14(木) | 原田達也 | Stateの統合 |
-| 3/15(金) | 岸下優介 | TerraformのState,Variableについて |
+| 3/14(木) | 原田達也 | [Stateを統合してみる](/articles/20240314a/)] |
+| 3/15(金) | 岸下優介 | [サービスの多国展開を支えるTerraform構成](/articles/20240315a/) |
 | 3/18(月) | 棚井龍之介 | Terraformの実装を読む |
 | 3/19(火) | 原木翔 | cfn-guard |
 | 3/20(水) | 大岩潤矢 | TBD |
