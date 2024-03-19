@@ -159,16 +159,25 @@ type temporary interface {
 }
 
 func (r CustomRetryer) ShouldRetry(req *request.Request) bool {
-	if origErr := req.Error; origErr != nil {
-		switch origErr.(type) {
-		case temporary:
-			if strings.Contains(origErr.Error(), "read: connection reset") {
-				// デフォルトのSDKではリトライしないが、リトライ可にする
-				return true
-			}
-		}
+	if isErrReadConnectionReset(req.Error); {
+		return true
 	}
 	return r.DefaultRetryer.ShouldRetry(req)
+}
+
+func isErrReadConnectionReset(err error) bool {
+	switch e := err.(type) {
+	case awserr.Error:
+		origErr := e.OrigErr()
+		if origErr != nil {
+			return isErrReadConnectionReset(origErr)
+		}
+	case temporary:
+		if strings.Contains(err.Error(), "read: connection reset by peer") {
+			return true
+		}
+	}
+	return false
 }
 ```
 
@@ -213,6 +222,30 @@ var kc = kinesis.New(session.Must(
 ```
 
 既存のパッケージの機能をそのまま使えるのは安心感があると思います。こういう薄いラッパーが作りやすいのは嬉しい仕組みですね。
+
+## errors.Is() で判定できるのでは？
+
+私は試していませんが、 `syscall.ECONNRESET` を用いて判定もできるかと思います。先ほどのisErrReadConnectionReset()を少し書き換えます。
+
+awserror.Error は `%w` で下のエラーをラップしていないため、 `OrigErr()` に対して判定するのがコツだと思われます。
+
+```diff
+func isErrReadConnectionReset(err error) bool {
+	switch e := err.(type) {
+	case awserr.Error:
+		origErr := e.OrigErr()
+		if origErr != nil {
+			return isErrReadConnectionReset(origErr)
+		}
+	case temporary:
+-		if strings.Contains(err.Error(), "read: connection reset by peer") {
++		if errors.Is(err, syscall.ECONNRESET) {
+			return true
+		}
+	}
+	return false
+}
+```
 
 
 ## さいごに
