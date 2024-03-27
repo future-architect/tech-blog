@@ -52,7 +52,7 @@ Terraformとパブリッククラウドの中では利用比率が最も高い�
 | 3/21(木) | 前原応光 | [Terraform連載2024 テストとモックを使ってみる](/articles/20240321a/) |
 | 3/25(月) | 真鍋優 | [Azure環境Terraform実行におけるリソースプロバイダーについて](/articles/20240325a/) |
 | 3/26(火) | 棚井龍之介 | [Terraformの実装コードを、動かしながら読む](/articles/20240326a/) |
-| 3/27(水) | 大岩潤矢 | TBD |
+| 3/27(水) | 大岩潤矢 | [手動運用しているCloudflareをTerraformでInfrastructure as Codeする](/articles/20240327a/) |
 | 3/28(木) | 小林弘樹 | TBD |
 
 -----
