@@ -7,6 +7,7 @@ tag:
   - Decorator
   - CSV
   - ファイル連携
+  - 共通処理
 category:
   - Programming
 thumbnail: /images/20221021a/thumbnail.png
