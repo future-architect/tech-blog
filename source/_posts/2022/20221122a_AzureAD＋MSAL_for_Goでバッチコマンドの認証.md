@@ -8,6 +8,7 @@ tag:
   - AD
   - MSAL.js
   - Go
+  - EntraID
 category:
   - Programming
 thumbnail: /images/20221122a/thumbnail.png
