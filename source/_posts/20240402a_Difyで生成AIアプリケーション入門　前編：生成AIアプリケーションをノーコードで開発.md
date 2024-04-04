@@ -18,7 +18,7 @@ lede: "DifyとAnthropic Claudeを使って簡単に生成AIアプリケーショ
 [Dify](https://dify.ai/) （DeFiではない）と [Anthropic Claude](https://console.anthropic.com/dashboard) （OpenAI でも OpenRouter 経由の何かでもOK）を使って簡単に生成AIアプリケーションを構築する方法をご紹介します。
 
 * 前編：ノーコードで生成AIアプリケーションを構築するチュートリアル
-* 後編：自作プログラムで機能追加して生成AIの指向性と精度を高めるサンプル
+* [後編](/articles/20240404a/)：自作プログラムで機能追加して生成AIの指向性と精度を高めるサンプル
 
 の2本立ての予定です。
 
@@ -365,7 +365,7 @@ comment on column product.product_name is '商品名';
 * チャットbotに手順(Instruction)を与えて特定の問題領域に特化したチャットbotを作る
 * 既製のToolを使用して自然言語処理以外の機能を獲得する
 
-後編はこれらを進めて以下の内容を書きます。
+[後編](/articles/20240404a/)はこれらを進めて以下の内容を書きます。
 
 * Toolを自作して機能を拡張する
 * 生成AIに自分の生成した回答を自己レビューさせる
