@@ -207,7 +207,7 @@ Generated SQL must be validated using the tool `sqlReview`, then respond only wi
 
 出力をよく見ると、　`"action_input": " ~ "}` の中身が改行付きのSQL文のため、JSONとして破綻しています。 `{"action": $TOOL_NAME, "action_input": $ACTION_INPUT}` の部分が（ReAct方式での）ツール呼び出しのキモなので、この部分に異常があると上手くツールを使用できないようです。
 
-プロンプトに「SQLは1行に纏めよ」と付け加えれば動作はするのですが……。Function Calling 方式を指定できないモデルでは現状スマートな解決策は無さそうです。
+プロンプトに「SQLは1行に纏めよ」と付け加えれば動作はするのですが……。Function Calling 方式を指定できないモデルでは現状スマートな解決策は無さそうです。 [^1]
 
 <img src="/images/20240404a/image_7.png" alt="" width="827" height="259" loading="lazy">
 
@@ -237,3 +237,5 @@ Dify を使ってノーコードで生成AIを使ったアプリケーション�
 RAG（ユーザが入力したプロンプトをAIに投げる前に、関連する情報を抜粋し追記してから生成AIに中継する仕組み）やモデル自体の追加学習によって解決するアプローチもありますがそれはまた別のお話で。
 
 ちなみにただ”RAGとやらを作って使ってみたい”だけであれば Dify では画面上部メニューの「ナレッジ」で作成してアプリ側で「コンテキスト」に追加してやるだけなのですぐにでもできます。RAGの品質を問わなければの話ですが…今回はここまでです。
+
+[^1]: 4月5日に、GPT の Function Calling に相当する機能 "Tool" が Claude に追加されました。 Dify も当日中(!)に対応しました。4月6日現在、まだバージョン付けされた Docker イメージは有りませんが、 `docker-compose.yaml` で `api`,`worker`,`web` の `image` のタグの部分を `main` にすれば一応動作確認はできますので自己責任でどうぞ。複数行に跨るSQLもちゃんとツールに渡されてますね！ <img src="/images/20240404a/image_10.png" alt="" width="759" height="446" loading="lazy">
