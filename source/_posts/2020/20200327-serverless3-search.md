@@ -8,6 +8,8 @@ tag:
   - AWS
   - GoCDK
   - DynamoDB
+  - 全文検索
+  - 自作
 category:
   - Programming
 thumbnail: /images/20200327/thumbnail.png

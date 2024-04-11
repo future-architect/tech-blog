@@ -4,6 +4,7 @@ date: 2020/06/23 10:14:50
 postid: ""
 tag:
   - Elasticsearch
+  - 全文検索
   - 初心者向け
 category:
   - Infrastructure
