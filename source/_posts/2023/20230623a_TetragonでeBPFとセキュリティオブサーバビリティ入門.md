@@ -8,6 +8,7 @@ tag:
   - Tetragon
   - eBPF
   - オブサーバビリティ
+  - Linux
 category:
   - Security
 thumbnail: /images/20230623a/thumbnail.png
