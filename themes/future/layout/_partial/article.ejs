@@ -8,6 +8,7 @@
             <li class="blog-info-item"><%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY.MM.DD'}) %></li>
             <%- post_author_link(post) %>
             <li class="blog-info-item"><%- partial('post/tag') %></li>
+            <li class="blog-info-item"><%= get_ga4_pv(post.path) %> View</li>
           </ul>
           </header>
         <% } %>
