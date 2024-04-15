@@ -74,7 +74,7 @@ GitLensが提供する機能は、一言で表現すると「ソースコード�
 
 Visual StudioのMarketplaceで「[GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)」として配信されているので、VSCodeの拡張機能から追加可能です。
 
-■ 拡張機能 > `id:eamodio.gitlens`
+■ 拡張機能 > `@id:eamodio.gitlens`
 
 <img src="/images/20240415a/コメント_2024-04-15_080229.png" alt="" width="1200" height="385" loading="lazy">
 
