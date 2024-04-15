@@ -6,6 +6,7 @@ tag:
   - CNCF
   - Tinkerbell
   - オンプレミス
+  - Linux
 category:
   - Infrastructure
 thumbnail: /images/20230622a/thumbnail.png

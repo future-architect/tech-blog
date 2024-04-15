@@ -6,6 +6,7 @@ tag:
   - Rust
   - UnitV2
   - M5stack
+  - Linux
 category:
   - IoT
 thumbnail: /images/20211105a/thumbnail.jpeg
