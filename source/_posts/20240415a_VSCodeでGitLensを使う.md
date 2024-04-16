@@ -47,7 +47,7 @@ GitLensは、VSCode内での「Gitを用いた開発」を便利にする拡張�
 以下、[README](https://github.com/gitkraken/vscode-gitlens?tab=readme-ov-file#gitlens--supercharge-git-in-vs-code) 記載の文章を引用し、合わせて翻訳文を記載しました。
 
 > GitLens supercharges your Git experience in VS Code. Maintaining focus is critical, extra time spent context switching or missing context disrupts your flow. GitLens is the ultimate tool for making Git work for you, designed to improve focus, productivity, and collaboration with a powerful set of tools to help you and your team better understand, write, and review code.
-> 
+>
 > GitLensは、VSCodeでのGit作業をより快適なものにします。集中力を維持することは非常に重要です。コンテキストの切り替えに余分な時間を費やしたり、コンテキストを見失ったりすると、作業の流れが乱れてしまいます。GitLensは、集中力、生産性、コラボレーションを向上させるために設計された究極のツールで、あなたやあなたのチームがコードをよりよく理解し、書き、レビューするための強力なツールセットです。
 
 GitLensが提供する機能は、一言で表現すると「ソースコードの編集履歴をエディタ内で確認する」ためのものです。
@@ -74,7 +74,7 @@ GitLensが提供する機能は、一言で表現すると「ソースコード�
 
 Visual StudioのMarketplaceで「[GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)」として配信されているので、VSCodeの拡張機能から追加可能です。
 
-■ 拡張機能 > eamodio.gitlens
+■ 拡張機能 > `@id:eamodio.gitlens`
 
 <img src="/images/20240415a/コメント_2024-04-15_080229.png" alt="" width="1200" height="385" loading="lazy">
 
