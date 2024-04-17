@@ -8,7 +8,7 @@ tag:
 category:
   - Infrastructure
 thumbnail: /images/20240417b/thumbnail.png
-author: 伊藤太斉, 
+author: 伊藤太斉
 lede: "PrometheusはSoundCloud社によって開発されたオープンソースの監視ソフトウェアです。GoogleでKubernetesの前身となったBorgという分散システムがあり..."
 ---
 
