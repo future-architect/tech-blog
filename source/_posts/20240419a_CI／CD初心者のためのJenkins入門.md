@@ -11,12 +11,12 @@ category:
   - DevOps
 thumbnail: /images/20240419a/thumbnail.png
 author: 中邨英里佳
-lede: "業務の中で初めてJenkinsに触れたので、以下のような内容についてまとめたいと思います。"
+lede: "業務の中で初めてJenkinsに触れたので、以下の内容についてまとめたいと思います。"
 ---
 
 [春の入門連載2024](/articles/20240408a/)の10日目です。
 
-## はじめに
+# はじめに
 こんにちは。今回初めてブログを書きます、流通サービスグループの中邨です。
 
 最近、業務で初めてJenkinsに触れたので、以下についてまとめます。**「そもそもJenkinsとは？」「CI/CDって何？」** という人に読んでいただけたら嬉しいです。
@@ -26,7 +26,7 @@ lede: "業務の中で初めてJenkinsに触れたので、以下のような内
 - WSL2上のDockerでJenkinsを動かして簡単なジョブを作ってみる
 
 
-## Jenkinsとは何か？
+# Jenkinsとは何か？
 
 ### Jenkinsで何ができるのか
 
@@ -42,7 +42,7 @@ CI/CDは continuous integration and continuous delivery/continuous deployment �
 
 また、ワンクリックでアプリケーションをデプロイできたり（継続的デリバリー）、開発者が変更をプッシュするたびに実稼働環境に自動でデプロイできたりすると（継続的デプロイ）、デプロイを迅速かつ頻繁に行って品質を高めることができるようになります。
 
-## Jenkinsを初めて触ってみた感想
+# Jenkinsを初めて触ってみた感想
 
 私の主観になりますが、CI/CD初心者が初めてJenkinsを使ってみた感想です。
 
@@ -62,7 +62,7 @@ CI/CDツールをほぼ触ったことがない状態で、既に沢山のジョ
 3. 想定した結果になっているか確かめる
 4. 想定と違ったらコンソールログを読み、エラーの原因を突き止める
 5. ジョブの設定を変更
-6.  → ・・・（以下1からループ）
+6. ・・・（以下1からループ）
 
 また今回は踏み込めなかったのですが、Jenkinsfileと呼ばれるファイルにGroovyでジョブを定義することで、ジョブをコード化することもできるようです。コード化されていればバージョン管理や移植も容易になって良いなと思いました。（Infrastructure as a Codeですね）
 
@@ -70,9 +70,9 @@ CI/CDツールをほぼ触ったことがない状態で、既に沢山のジョ
 
 Jenkinsはその前身を含めると約20年ほど前に誕生した歴史の長いツールですが、他にも様々なCI/CDツールがあり、ツールによってどこが違うのか気になってきました。
 
-ざっくり調べると、専用のサーバを立てて実行する必要があるJenkinsに対して、GithubリポジトリがあればGithub上で利用できるGithub Actionsや、AWS上でCI/CDを完結できるCodeBuildやCodeDeployなどがあり、導入コストや管理のしやすさを比較して選定することが多いようです。
+ざっくり調べると、専用のサーバを立てて実行する必要があるJenkinsに対して、GitHubリポジトリがあればGitHub上で利用できるGitHub Actionsや、AWS上でCI/CDを完結できるCodeBuildやCodeDeployなどがあり、導入コストや管理のしやすさを比較して選定することが多いようです。
 
-## WSL2上のDockerでJenkinsを動かして簡単なジョブを作ってみる
+# WSL2上のDockerでJenkinsを動かして簡単なジョブを作ってみる
 
 以下で行うのは実際のビルドやテストよりずいぶん単純な内容ですが、入門記事なので「Jenkinsでこんなことができる」というイメージの一助になればいいなと思っています。
 
@@ -102,7 +102,7 @@ docker run -p 8080:8080 jenkins/jenkins:2.440.3-lts-jdk17
 
 [公式ドキュメントのセットアップウィザード](https://www.jenkins.io/doc/book/installing/docker/#setup-wizard)の手順に沿ってセットアップします。
 
-※プラグインは推奨を選択、admin以外の管理者ユーザーとJenkins URLはとりあえず作成せずスキップでも大丈夫です。
+※プラグインは推奨を選択、admin以外の管理者ユーザーとJenkins URLはとりあえず作成せずスキップで大丈夫です。
 
 ### コンソールにHello
 
@@ -117,6 +117,12 @@ docker run -p 8080:8080 jenkins/jenkins:2.440.3-lts-jdk17
 4. 「Build Steps」＞「ビルド手順の追加」から「シェルの実行」を選択します。
   <img src="/images/20240419a/image_4.png" alt="" width="1200" height="608" loading="lazy">
 5. シェルスクリプトに以下を記述して保存します。
+
+   ```sh
+   #!/bin/bash
+   echo "Hello"
+   ```
+
   <img src="/images/20240419a/image_5.png" alt="" width="1200" height="615" loading="lazy">
 6. ビルド実行をクリックします。
   <img src="/images/20240419a/image_6.png" alt="" width="1200" height="585" loading="lazy">
@@ -129,14 +135,15 @@ docker run -p 8080:8080 jenkins/jenkins:2.440.3-lts-jdk17
 
 test-job-A、test-job-B を作成し、A、Bの順番に実行してみます。
 
-1. 「test-job-A」の「Build Steps」＞「ビルド後の処理の追加」から「他のプロジェクトのビルド」を選択します。
+1. 最初の例と同様に、フリースタイル・プロジェクトで空のジョブ test-job-A、test-job-B を作成します。
+2. 「test-job-A」の「Build Steps」＞「ビルド後の処理の追加」から「他のプロジェクトのビルド」を選択します。
   <img src="/images/20240419a/image_9.png" alt="" width="1200" height="524" loading="lazy">
-2. 対象プロジェクトに「test-job-B」を入力して保存します。
+3. 対象プロジェクトに「test-job-B」を入力して保存します。
   <img src="/images/20240419a/image_10.png" alt="" width="1200" height="527" loading="lazy">
-3. 「test-job-A」を実行すると、下流プロジェクトの「test-job-B」も実行されていることがわかります。
+4. 「test-job-A」を実行すると、下流プロジェクトの「test-job-B」も実行されていることがわかります。
   <img src="/images/20240419a/image_11.png" alt="" width="1200" height="387" loading="lazy">
 
-#### Gitリポジトリにチェックアウトする
+### Gitリポジトリをチェックアウトする
 
 1. GitHubにとりあえず空のpublicリポジトリを作成します。
   <img src="/images/20240419a/image_12.png" alt="" width="1200" height="598" loading="lazy">
@@ -148,7 +155,7 @@ test-job-A、test-job-B を作成し、A、Bの順番に実行してみます。
 4. ワークスペースの中を見ると、リポジトリの内容（READMEファイル）が取得されています。
   <img src="/images/20240419a/image_15.png" alt="" width="1200" height="513" loading="lazy">
 
-## さいごに
+# さいごに
 
 CI/CDはシステム開発を縁の下で支える存在ですが、ITの入り口からはなかなか見えにくい・機会がないと触りにくい部分なのではないか、と常々思っていました。
 
@@ -158,5 +165,5 @@ CI/CDはシステム開発を縁の下で支える存在ですが、ITの入り�
 
 - https://www.jenkins.io/doc/
 - https://ja.wikipedia.org/wiki/Jenkins
-- https://ja.wikipedia.org/wiki/%E7%B6%99%E7%B6%9A%E7%9A%84%E3%83%87%E3%83%AA%E3%83%90%E3%83%AA%E3%83%BC
+- https://ja.wikipedia.org/wiki/継続的デリバリー
 
