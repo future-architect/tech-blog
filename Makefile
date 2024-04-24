@@ -18,4 +18,3 @@ g:
 	cd public && git add .
 	cd public && git commit -m "$(ARG)"
 	cd public && git push origin HEAD
-
