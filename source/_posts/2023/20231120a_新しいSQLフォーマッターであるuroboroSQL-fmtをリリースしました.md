@@ -45,7 +45,7 @@ lede: "新しいSQLフォーマッターであるuroboroSQL-fmtをリリース�
 - [Language Server Protocolを用いたVSCode拡張機能開発 (前編)](/articles/20221124a/)
 - [Language Server Protocolを用いたVSCode拡張機能開発 (後編)](/articles/20221125a/)
 - [Rust製SQLフォーマッタをnapi-rsを利用してVSCode拡張機能化](/articles/20221228a/)
-- [C/C++を呼び出しているRustのWASM化](o/articles/20230605a/)
+- [C/C++を呼び出しているRustのWASM化](/articles/20230605a/)
 
 ### 旧版と新版の比較
 
