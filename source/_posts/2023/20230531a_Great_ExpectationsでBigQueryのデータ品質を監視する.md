@@ -6,6 +6,7 @@ tag:
   - GreatExpectations
   - BigQuery
   - AI監視
+  - バリデーション
 category:
   - DataScience
 thumbnail: /images/20230531a/thumbnail.png
