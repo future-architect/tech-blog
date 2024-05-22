@@ -1,0 +1,115 @@
+name: Deploy hexo site to Pages repository
+
+on:
+  push:
+    branches:
+      - master
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    env:
+      FB_TOKEN: ${{ secrets.FB_TOKEN }}
+      GOOGLE_APPLICATION_CREDENTIALS: ${{ github.workspace }}/google_application_credentials.json
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detect package manager
+        id: detect-package-manager
+        run: |
+          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
+            echo "manager=yarn" >> $GITHUB_OUTPUT
+            echo "command=install" >> $GITHUB_OUTPUT
+            echo "runner=yarn" >> $GITHUB_OUTPUT
+            exit 0
+          elif [ -f "${{ github.workspace }}/package.json" ]; then
+            echo "manager=npm" >> $GITHUB_OUTPUT
+            echo "command=ci" >> $GITHUB_OUTPUT
+            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
+            exit 0
+          else
+            echo "Unable to determine package manager"
+            exit 1
+          fi
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
+
+      - name: Install dependencies
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+
+      - name: Install Go tools
+        run: |
+          go install github.com/ma91n/snssharecount/cmd/snssharecount@latest
+          go install github.com/ma91n/snssharecount/cmd/ga@latest
+
+      - name: Update SNS counts
+        run: |
+          echo '${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}' > google_application_credentials.json
+          snssharecount > sns_count_cache.json
+          ga > ga_cache.json
+
+      - name: Build with hexo
+        run: ${{ steps.detect-package-manager.outputs.runner }} hexo generate
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: public
+          path: public
+          retention-days: 1
+
+  # Deploy job
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: public
+          path: public
+
+      - name: Get last commit message
+        id: get-commit-message
+        run: |
+          {
+            message=`git log -n 1 --pretty=format:"%s"`
+            echo 'value<<EOF'
+            echo $message
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Checkout deploy target repository
+        uses: actions/checkout@v4
+        with:
+          repository: future-architect/future-architect.github.io
+          token: ${{ secrets.GH_PAT }}
+          path: target
+
+      - name: Deploy to target repository
+        run: |
+          cp -rT public target
+          cd target
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "${{ steps.get-commit-message.outputs.value }}"
+          git push origin HEAD
